@@ -83,7 +83,13 @@ if vs:
     if a != b:
         fails.append(f'latest/: is not v{vs[-1]}')
     version = open(os.path.join(ROOT, 'VERSION'), encoding='utf-8').read().strip()
-    if version in vs:
+    published = {f['name']: f['sha256'] for f in load_json(os.path.join(PUBLISHED, vs[-1], 'manifest.json'))['files']}
+    working = {n: sha256(os.path.join(FILES, n)) for n in published_names() if os.path.exists(os.path.join(FILES, n))}
+    if working != published:
+        # files/ moved on since the newest version: that is what a release publishes, not a failure
+        changed = sorted(n for n in set(working) | set(published) if working.get(n) != published.get(n))
+        notes.append(f'files/ differs from v{vs[-1]} in {len(changed)} file(s) ({", ".join(changed[:5])}{"..." if len(changed) > 5 else ""}): release a new version')
+    elif version in vs:
         tmp = tempfile.mkdtemp()
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'publish.py'), '--into', tmp], capture_output=True, text=True, check=True)

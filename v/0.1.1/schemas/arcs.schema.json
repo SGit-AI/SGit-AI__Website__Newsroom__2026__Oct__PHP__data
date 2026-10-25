@@ -1,0 +1,365 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "arcs": {
+   "items": {
+    "properties": {
+     "claims": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "page": {
+      "type": "string"
+     },
+     "phases": {
+      "type": "array"
+     },
+     "risks": {
+      "type": "array"
+     },
+     "text": {
+      "type": "string"
+     },
+     "topics": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "page",
+     "phases",
+     "risks",
+     "text",
+     "topics"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "claim_to_fix": {
+   "properties": {
+    "fix-authored": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "fix-bailout": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "fix-engine": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "fix-incomplete": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "more-paths": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "only-update": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "versions-old": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "waf": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "required": [
+    "fix-authored",
+    "fix-bailout",
+    "fix-engine",
+    "fix-incomplete",
+    "more-paths",
+    "only-update",
+    "versions-old",
+    "waf"
+   ],
+   "type": "object"
+  },
+  "claim_to_flaw": {
+   "properties": {
+    "ac-high": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "cvss-10": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "fix-bailout": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "fix-engine": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "fix-incomplete": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "more-paths": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "only-update": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "pocs-wrong": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "quarkslab-2024": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "rce-fpm": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "rce-modphp": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "two-cves-9.2": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "versions-old": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "wordpress-drupal": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "required": [
+    "ac-high",
+    "cvss-10",
+    "fix-bailout",
+    "fix-engine",
+    "fix-incomplete",
+    "more-paths",
+    "only-update",
+    "pocs-wrong",
+    "quarkslab-2024",
+    "rce-fpm",
+    "rce-modphp",
+    "two-cves-9.2",
+    "versions-old",
+    "wordpress-drupal"
+   ],
+   "type": "object"
+  },
+  "faces": {
+   "properties": {
+    "analyst": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "appsec": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "board": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "cfo": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "ciso": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "comms": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "cto": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "developer": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "engineer": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "everyone": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "journalist": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "pm": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "researcher": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "security": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "site-owner": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "required": [
+    "analyst",
+    "appsec",
+    "board",
+    "cfo",
+    "ciso",
+    "comms",
+    "cto",
+    "developer",
+    "engineer",
+    "everyone",
+    "journalist",
+    "pm",
+    "researcher",
+    "security",
+    "site-owner"
+   ],
+   "type": "object"
+  },
+  "note": {
+   "type": "string"
+  },
+  "risks": {
+   "items": {
+    "properties": {
+     "claims": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "claims",
+     "id",
+     "name",
+     "text"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "arcs",
+  "claim_to_fix",
+  "claim_to_flaw",
+  "faces",
+  "note",
+  "risks"
+ ],
+ "title": "arcs.json",
+ "type": "object"
+}

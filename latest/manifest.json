@@ -113,14 +113,14 @@
    "group": "graphs",
    "name": "fractal.json",
    "schema": "schemas/fractal.schema.json",
-   "sha256": "351b62898d058fa46e899f10074c7ed4b1a73ca55dbcbe4362ffded8575582e4"
+   "sha256": "9f514182f47514cdad255c98e4142937969b3857bad6f437f59b005d7e9086d2"
   },
   {
    "bytes": 1091910,
    "group": "graphs",
    "name": "graph.json",
    "schema": "schemas/graph.schema.json",
-   "sha256": "00de7052fd2b9b7ae2c0e2099bc43f6b5b44ccefeeacdd771c199f7b749324a9"
+   "sha256": "69a4fe6ff38366d94c4ddaae075218f40194d0d09c8f1730eb6f6aa0d30baa6b"
   },
   {
    "bytes": 431,
@@ -148,14 +148,14 @@
    "group": "grc",
    "name": "grc-graph.json",
    "schema": "schemas/grc-graph.schema.json",
-   "sha256": "aa4adbe93d8a1486116a64998be39c4533953c1f6eff41d8fc3ce0b67782bdb2"
+   "sha256": "6aa3273b8673e0686698fa275c22b72d420de67e131c5c442f23b4dfad286c29"
   },
   {
-   "bytes": 255157,
+   "bytes": 255176,
    "group": "grc",
    "name": "grc-history.json",
    "schema": "schemas/grc-history.schema.json",
-   "sha256": "559c87a612e04cf23d9925c484f551820b12258d62ff65892df76c98cdf3a1e8"
+   "sha256": "a9095b2e2791dcae78297f600cef1f122b717fc80e68a2c7bd3374fa7d7c9046"
   },
   {
    "bytes": 11874,
@@ -358,7 +358,7 @@
    "group": "evidence",
    "name": "wikipedia/php2shell/graph.json",
    "schema": null,
-   "sha256": "9219a4a361283eacf21569fe9e5da683bf4abda542ac863681eaeadd6dca9607"
+   "sha256": "dc0c67a16f259d051b858c7789ea0285d9b605c5630f48a0728eb55296e60b5a"
   },
   {
    "bytes": 5075,
@@ -3267,10 +3267,10 @@
   }
  ],
  "from": {
-  "commit": "b08552eca8cc985a8ba0d715413d20127e64bada",
+  "commit": "d9af616ffd0bc2d8137e8809c877a671a2b3f851",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.21.9"
+  "site_version": "0.22.0"
  },
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.0/",
- "version": "0.1.0"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.1/",
+ "version": "0.1.1"
 }

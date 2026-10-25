@@ -1,0 +1,1792 @@
+{
+ "about": "The pipeline's own record, exported by admin/build/export_loops.py (correspondent@php.newsroom) at each correspondent wake: the evidence vault's commits, every release, the repository's size and the next scheduled wakes. /views/loops/ is built from it, with data/runs/ and data/schedule/.",
+ "exported_at": "2026-10-25T01:14Z",
+ "vault": [
+  {
+   "id": "4153dec1838e",
+   "at": null,
+   "by": "first commit",
+   "subject": "the first commit",
+   "files_added": 0
+  },
+  {
+   "id": "b12e6b952e17",
+   "at": "2026-10-22T08:06Z",
+   "by": "claude-newsroom-lead",
+   "subject": "claude-newsroom-lead: vault protocol, capture tool, BBC live page (3 captures + raw)",
+   "files_added": 26,
+   "files_modified": 0,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "3133f619762a",
+   "at": "2026-10-22T08:07Z",
+   "by": "claude-newsroom-lead",
+   "subject": "claude-newsroom-lead: one source.json per source; tools/index.py builds the manifest",
+   "files_added": 2,
+   "files_modified": 2,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "4dd942654566",
+   "at": "2026-10-22T08:09Z",
+   "by": "claude-newsroom-lead",
+   "subject": "claude-newsroom-lead: per-agent claims and timeline files; seed both from the BBC live page",
+   "files_added": 2,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "1988169025cd",
+   "at": "2026-10-22T08:11Z",
+   "by": "collector-gov",
+   "subject": "collector-gov: NCSC UK alert, NSA X posts + press release, NCSC-NL php2shell",
+   "files_added": 49,
+   "files_modified": 0,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "973cccc43414",
+   "at": "2026-10-22T08:12Z",
+   "by": "collector-gov",
+   "subject": "collector-gov: NCSC UK alert, NSA X posts + press release, NCSC-NL php2shell",
+   "files_added": 7,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "0406c9954fe4",
+   "at": "2026-10-22T08:15Z",
+   "by": "collector-gov",
+   "subject": "collector-gov: CERT-EU, ENISA CNW, CISA alert, CERT-FR, CERT.LV, ACN; CCN/CNCS blocked",
+   "files_added": 73,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "be782bff89bf",
+   "at": "2026-10-22T08:18Z",
+   "by": "collector-gov",
+   "subject": "collector-gov: KEV, ACSC, CCCS, NCSC-NZ, JPCERT, BACS, NCSC-NL portal",
+   "files_added": 93,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "634de193e2ac",
+   "at": "2026-10-22T08:18Z",
+   "by": "",
+   "subject": "Merge current into local",
+   "files_added": 0,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "d5549bc61fd2",
+   "at": "2026-10-22T12:05Z",
+   "by": "collector-gov",
+   "subject": "collector-gov: nine site captures (down pages), rows by claude-newsroom-lead",
+   "files_added": 43,
+   "files_modified": 0,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "f72ad76c99c9",
+   "at": "2026-10-22T12:06Z",
+   "by": "",
+   "subject": "Merge current into local",
+   "files_added": 1195,
+   "files_modified": 2,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "e96281b64dd0",
+   "at": "2026-10-22T12:06Z",
+   "by": "claude-newsroom-lead",
+   "subject": "claude-newsroom-lead: rebuild index",
+   "files_added": 0,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "0f97fe36ab4d",
+   "at": "2026-10-22T12:22Z",
+   "by": "claude-vault-app",
+   "subject": "claude-vault-app: the vault's own app v0.1.0 (index.html, .vault/app.json, app/: reduced screenshots, manifest, versions), README section, notes",
+   "files_added": 349,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "292f563656ab",
+   "at": "2026-10-22T13:33Z",
+   "by": "newsroom.dev",
+   "subject": "newsroom.dev: README: the vault is public read-only; the scan before the key",
+   "files_added": 0,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "326d5001d7b2",
+   "at": "2026-10-22T13:34Z",
+   "by": "newsroom.dev",
+   "subject": "newsroom.dev: README: name the scanned head",
+   "files_added": 0,
+   "files_modified": 1,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "31ccc515c29f",
+   "at": "2026-10-22T14:07Z",
+   "by": "claude-vault-app",
+   "subject": "claude-vault-app: app v0.1.1, the footer says whose content is whose",
+   "files_added": 1,
+   "files_modified": 4,
+   "sources": 0,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "f3c5db0d9873",
+   "at": "2026-10-23T11:01Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 45 sources from the source watch (35 from the 22 Oct queue incl. ncsc-nl-php2shell-software-list-letters, 10 break-in reports; 2 as new captures of recordedfuture-php2shell and securityweek-exploitation-days-be",
+   "files_added": 404,
+   "files_modified": 1,
+   "sources": 45,
+   "snapshots": 0,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "fc0fd62a109f",
+   "at": "2026-10-23T17:41Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 15 sources from the source watch's 08:30 UTC pass, English, naming an organisation or a cause (editor's go; not from the queue): Ars Technica, CRN, Cyber Press, Information Age, SER, The Mandarin, Clarin, Moroc",
+   "files_added": 116,
+   "files_modified": 4,
+   "sources": 15,
+   "snapshots": 0,
+   "claims": 18,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "51debd0e98f0",
+   "at": "2026-10-23T22:54Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 18 sources from the source watch's pack copy (7r83qic5), queue of 23 Oct 22:42 UTC, priority 3 first batch (mechanical selection, each read): 01net, AI4Business, Analytics Insight, Andina, AsiaOne, Bitpage, BDM",
+   "files_added": 132,
+   "files_modified": 3,
+   "sources": 18,
+   "snapshots": 0,
+   "claims": 10,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "c126ca2546a2",
+   "at": "2026-10-23T23:28Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 17 more sources from the source watch's pack copy (7r83qic5), priority 3 second batch (mechanical selection, each read): GinjFo, HardwareCooking, Help Net Security, ICTjournal, IDX Channel, Infopoint Security, ",
+   "files_added": 130,
+   "files_modified": 4,
+   "sources": 17,
+   "snapshots": 0,
+   "claims": 8,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "1845598d9a38",
+   "at": "2026-10-23T23:31Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 18 more sources from the source watch's pack copy (7r83qic5), the last of priority 3 (mechanical selection, each read): Nguoi Quan Sat, Notebookcheck.it, Paperjam, QA Financial, la Repubblica, Security Measures",
+   "files_added": 133,
+   "files_modified": 3,
+   "sources": 18,
+   "snapshots": 0,
+   "claims": 13,
+   "queue_at": null,
+   "wake_at": null
+  },
+  {
+   "id": "b995a28fe67a",
+   "at": "2026-10-24T07:12Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 18 sources from the source watch's pack copy (7r83qic5), priority 4 first batch, scheduled wake of 24 Oct 08:00 (mechanical selection, each read): Site 24, 24 Heures, 2days.kr, Tech Portal, areacucuta, Asahi/PR",
+   "files_added": 138,
+   "files_modified": 3,
+   "sources": 18,
+   "snapshots": 0,
+   "claims": 12,
+   "queue_at": null,
+   "wake_at": "2026-10-24T07:00Z"
+  },
+  {
+   "id": "1f38e70921b2",
+   "at": "2026-10-24T09:50Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 15 sources from the source watch's pack copy (7r83qic5), priority 2 (queue of 24 Oct 09:29 UTC), scheduled wake of 24 Oct 10:30 (mechanical selection, each read): AI Weekly, American Banker, Cyber Security News",
+   "files_added": 118,
+   "files_modified": 3,
+   "sources": 15,
+   "snapshots": 0,
+   "claims": 11,
+   "queue_at": null,
+   "wake_at": "2026-10-24T09:30Z"
+  },
+  {
+   "id": "c8cdb7159f50",
+   "at": "2026-10-24T12:16Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: add 61 newer snapshots from the source watch's pack copy (7r83qic5) as new captures of sources the vault already holds (one folder per URL), scheduled wake of 24 Oct 13:00; each snapshot hash-checked against the watch ",
+   "files_added": 321,
+   "files_modified": 2,
+   "sources": 0,
+   "snapshots": 61,
+   "claims": 0,
+   "queue_at": null,
+   "wake_at": "2026-10-24T12:00Z"
+  },
+  {
+   "id": "6bead0b6c397",
+   "at": "2026-10-24T12:19Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 18 sources from the source watch's pack copy (7r83qic5), priority 4 second batch, scheduled wake of 24 Oct 13:00 (mechanical selection, each read): Addustour, Clubic, CNBC Indonesia, CNBC TV18, Coin Academy, Co",
+   "files_added": 134,
+   "files_modified": 3,
+   "sources": 18,
+   "snapshots": 0,
+   "claims": 8,
+   "queue_at": null,
+   "wake_at": "2026-10-24T12:00Z"
+  },
+  {
+   "id": "9cfe2778c1b0",
+   "at": "2026-10-24T14:51Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 18 sources from the source watch's pack copy (7r83qic5), the 6 priority-2 rows of the 24 Oct 14:21 UTC queue and 12 priority 4, scheduled wake of 24 Oct 15:30 (mechanical selection, each read), and add 3 newer ",
+   "files_added": 157,
+   "files_modified": 3,
+   "sources": 18,
+   "snapshots": 3,
+   "claims": 10,
+   "queue_at": "2026-10-24T14:21Z",
+   "wake_at": "2026-10-24T14:30Z"
+  },
+  {
+   "id": "8c16a64a7cf6",
+   "at": "2026-10-24T17:18Z",
+   "by": "curator@php.newsroom",
+   "subject": "curator@php.newsroom: promote 18 sources from the source watch's pack copy (7r83qic5), the 3 priority-2 rows of the 24 Oct 16:52 UTC queue and 15 priority 4, scheduled wake of 24 Oct 18:00 (mechanical selection, each read): Inc42, iTWire, V",
+   "files_added": 140,
+   "files_modified": 4,
+   "sources": 18,
+   "snapshots": 0,
+   "claims": 12,
+   "queue_at": "2026-10-24T16:52Z",
+   "wake_at": "2026-10-24T17:00Z"
+  }
+ ],
+ "vault_read_at": "2026-10-25T01:14Z",
+ "releases": [
+  {
+   "version": "0.1.0",
+   "at": "2026-10-22T09:27Z",
+   "agent": "",
+   "commit": "3a1e5a3f0",
+   "vault_head": "379e3d7f172a",
+   "latest_capture": null,
+   "sources": 61
+  },
+  {
+   "version": "0.2.0",
+   "at": "2026-10-22T11:38Z",
+   "agent": "",
+   "commit": "050b8a098",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.1",
+   "at": "2026-10-22T11:52Z",
+   "agent": "",
+   "commit": "a1ac43270",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.2",
+   "at": "2026-10-22T12:03Z",
+   "agent": "",
+   "commit": "f545cc9bd",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.3.0",
+   "at": "2026-10-22T13:28Z",
+   "agent": "",
+   "commit": "1755f2e71",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.3",
+   "at": "2026-10-22T13:44Z",
+   "agent": "",
+   "commit": "358cc9dcd",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.4",
+   "at": "2026-10-22T13:48Z",
+   "agent": "",
+   "commit": "e54ae9bca",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.5",
+   "at": "2026-10-22T13:52Z",
+   "agent": "",
+   "commit": "daefaac23",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.6",
+   "at": "2026-10-22T14:05Z",
+   "agent": "claude-journalist",
+   "commit": "56a9cce59",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.6",
+   "at": "2026-10-22T14:26Z",
+   "agent": "",
+   "commit": "7f74ebea7",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.7",
+   "at": "2026-10-22T14:47Z",
+   "agent": "",
+   "commit": "1e5916061",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.7",
+   "at": "2026-10-22T14:48Z",
+   "agent": "claude-journalist",
+   "commit": "ee5e74b74",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.8",
+   "at": "2026-10-22T14:49Z",
+   "agent": "claude-journalist",
+   "commit": "8a190bb8b",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.9",
+   "at": "2026-10-22T14:58Z",
+   "agent": "",
+   "commit": "02398d3f6",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.10",
+   "at": "2026-10-22T14:59Z",
+   "agent": "claude-journalist",
+   "commit": "280c7159e",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.11",
+   "at": "2026-10-22T15:09Z",
+   "agent": "",
+   "commit": "28f57e0ff",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.12",
+   "at": "2026-10-22T15:37Z",
+   "agent": "",
+   "commit": "cdaa6d5f2",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.3.1",
+   "at": "2026-10-22T15:38Z",
+   "agent": "",
+   "commit": "dbb0dcca5",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.13",
+   "at": "2026-10-22T15:55Z",
+   "agent": "",
+   "commit": "336a23184",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.14",
+   "at": "2026-10-22T16:14Z",
+   "agent": "",
+   "commit": "ba1726192",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.3.2",
+   "at": "2026-10-22T16:45Z",
+   "agent": "",
+   "commit": "680bd43e6",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.2.15",
+   "at": "2026-10-22T16:48Z",
+   "agent": "",
+   "commit": "c720c84f2",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.0",
+   "at": "2026-10-22T17:03Z",
+   "agent": "",
+   "commit": "5d77529de",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.1",
+   "at": "2026-10-22T17:14Z",
+   "agent": "claude-journalist",
+   "commit": "8aced9f90",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.2",
+   "at": "2026-10-22T17:47Z",
+   "agent": "",
+   "commit": "4e8a0dba6",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.3",
+   "at": "2026-10-22T17:52Z",
+   "agent": "claude-journalist,",
+   "commit": "a51a9dafc",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.4",
+   "at": "2026-10-22T17:57Z",
+   "agent": "",
+   "commit": "a7fc076a4",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.5",
+   "at": "2026-10-22T17:59Z",
+   "agent": "",
+   "commit": "46173837b",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.6",
+   "at": "2026-10-22T18:01Z",
+   "agent": "",
+   "commit": "7c77e7ad2",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.4.7",
+   "at": "2026-10-22T18:03Z",
+   "agent": "",
+   "commit": "55acfca6e",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.0",
+   "at": "2026-10-22T18:20Z",
+   "agent": "",
+   "commit": "8c5b2729e",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.1",
+   "at": "2026-10-22T18:39Z",
+   "agent": "",
+   "commit": "819ad3066",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.2",
+   "at": "2026-10-22T18:45Z",
+   "agent": "",
+   "commit": "4882d126e",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.3",
+   "at": "2026-10-22T18:49Z",
+   "agent": "",
+   "commit": "c2c3f5af8",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.4",
+   "at": "2026-10-22T18:57Z",
+   "agent": "",
+   "commit": "a1c0c2d72",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.5",
+   "at": "2026-10-22T19:04Z",
+   "agent": "",
+   "commit": "2e0a2bbda",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.6",
+   "at": "2026-10-22T20:35Z",
+   "agent": "",
+   "commit": "26c4140c1",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.7",
+   "at": "2026-10-22T20:43Z",
+   "agent": "",
+   "commit": "8fd03f96c",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.8",
+   "at": "2026-10-22T20:58Z",
+   "agent": "factcheck@php.newsroom",
+   "commit": "c142b2516",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.9",
+   "at": "2026-10-22T21:06Z",
+   "agent": "",
+   "commit": "255af1bcb",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.5.10",
+   "at": "2026-10-22T21:38Z",
+   "agent": "",
+   "commit": "03206b745",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.6.0",
+   "at": "2026-10-22T21:44Z",
+   "agent": "grc@php.newsroom",
+   "commit": "a1fafa027",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.7.0",
+   "at": "2026-10-22T22:13Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "e1bb63bb7",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.8.0",
+   "at": "2026-10-22T23:18Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "5429b20e6",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.8.1",
+   "at": "2026-10-23T00:11Z",
+   "agent": "",
+   "commit": "9327bc924",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.8.2",
+   "at": "2026-10-23T09:58Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "141e241ea",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.8.3",
+   "at": "2026-10-23T10:41Z",
+   "agent": "",
+   "commit": "d06fafcf0",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.8.4",
+   "at": "2026-10-23T11:05Z",
+   "agent": "",
+   "commit": "19d842cbd",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.9.0",
+   "at": "2026-10-23T12:38Z",
+   "agent": "sherpa@php.newsroom,",
+   "commit": "1b79b6b87",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.9.1",
+   "at": "2026-10-23T12:44Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "d26a262de",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.9.2",
+   "at": "2026-10-23T13:27Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "bb5585bf1",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.9.3",
+   "at": "2026-10-23T13:35Z",
+   "agent": "sherpa@php.newsroom,",
+   "commit": "8e8ba1048",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.10.0",
+   "at": "2026-10-23T13:45Z",
+   "agent": "",
+   "commit": "58a0fef64",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.10.1",
+   "at": "2026-10-23T13:53Z",
+   "agent": "researcher@php.newsroom",
+   "commit": "42ceaa962",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.10.2",
+   "at": "2026-10-23T13:54Z",
+   "agent": "",
+   "commit": "cc21e35c9",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.10.3",
+   "at": "2026-10-23T14:11Z",
+   "agent": "sherpa@php.newsroom,",
+   "commit": "2ac142edd",
+   "vault_head": "200d08971937",
+   "latest_capture": "2026-10-22T11:34Z",
+   "sources": 144
+  },
+  {
+   "version": "0.10.4",
+   "at": "2026-10-23T14:52Z",
+   "agent": "claude-journalist",
+   "commit": "7917cca68",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.5",
+   "at": "2026-10-23T14:54Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "f6e42aab4",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.6",
+   "at": "2026-10-23T15:35Z",
+   "agent": "claude-journalist",
+   "commit": "1a25d5f58",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.7",
+   "at": "2026-10-23T15:49Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "5a43cb1b9",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.8",
+   "at": "2026-10-23T16:20Z",
+   "agent": "curator@php.newsroom",
+   "commit": "2af48d72f",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.9",
+   "at": "2026-10-23T16:22Z",
+   "agent": "",
+   "commit": "ae3b1c39b",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.10",
+   "at": "2026-10-23T17:14Z",
+   "agent": "",
+   "commit": "42480fba6",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.11",
+   "at": "2026-10-23T18:01Z",
+   "agent": "sherpa@php.newsroom,",
+   "commit": "c3ccd32e9",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.12",
+   "at": "2026-10-23T20:37Z",
+   "agent": "",
+   "commit": "b8033a143",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.13",
+   "at": "2026-10-23T20:51Z",
+   "agent": "",
+   "commit": "067869bfd",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.14",
+   "at": "2026-10-23T22:05Z",
+   "agent": "",
+   "commit": "d3ca88874",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.15",
+   "at": "2026-10-23T22:24Z",
+   "agent": "researcher@php.newsroom",
+   "commit": "456c5b13b",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.16",
+   "at": "2026-10-23T22:56Z",
+   "agent": "researcher@php.newsroom",
+   "commit": "9fb0e27cf",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.17",
+   "at": "2026-10-23T23:00Z",
+   "agent": "curator@php.newsroom",
+   "commit": "945bf2955",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.18",
+   "at": "2026-10-23T23:34Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "742faac8f",
+   "vault_head": "f3c5db0d9873",
+   "latest_capture": "2026-10-23T01:20Z",
+   "sources": 227
+  },
+  {
+   "version": "0.10.19",
+   "at": "2026-10-24T00:00Z",
+   "agent": "claude-journalist",
+   "commit": "86e1245dc",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.10.20",
+   "at": "2026-10-24T00:05Z",
+   "agent": "claude-journalist",
+   "commit": "2724a512c",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.10.21",
+   "at": "2026-10-24T00:07Z",
+   "agent": "synthetic@php.newsroom",
+   "commit": "159460442",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.10.22",
+   "at": "2026-10-24T00:12Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "2b0275ffc",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.10.23",
+   "at": "2026-10-24T00:22Z",
+   "agent": "synthetic@php.newsroom",
+   "commit": "093b0683c",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.10.24",
+   "at": "2026-10-24T00:24Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "51f1f0020",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.0",
+   "at": "2026-10-24T00:29Z",
+   "agent": "cartographer@php.newsroom",
+   "commit": "1b5939c20",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.1",
+   "at": "2026-10-24T00:32Z",
+   "agent": "",
+   "commit": "79c92ce1e",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.2",
+   "at": "2026-10-24T00:39Z",
+   "agent": "claude-journalist",
+   "commit": "3bcb2c6e5",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.3",
+   "at": "2026-10-24T00:54Z",
+   "agent": "",
+   "commit": "3950bd5ac",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.4",
+   "at": "2026-10-24T00:59Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "a48b6d0e7",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.5",
+   "at": "2026-10-24T01:03Z",
+   "agent": "ontologist@php.newsroom",
+   "commit": "6e0ceaaaa",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.6",
+   "at": "2026-10-24T01:05Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "6f5491b05",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.11.7",
+   "at": "2026-10-24T01:11Z",
+   "agent": "claude-journalist",
+   "commit": "b7acaba1e",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.12.0",
+   "at": "2026-10-24T01:17Z",
+   "agent": "librarian@php.newsroom",
+   "commit": "602feb91d",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.12.1",
+   "at": "2026-10-24T01:20Z",
+   "agent": "claude-journalist",
+   "commit": "8922dcfea",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.13.0",
+   "at": "2026-10-24T01:25Z",
+   "agent": "desk@php.newsroom",
+   "commit": "d2b166a36",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.0",
+   "at": "2026-10-24T01:34Z",
+   "agent": "",
+   "commit": "f93ba6859",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.1",
+   "at": "2026-10-24T01:38Z",
+   "agent": "desk@php.newsroom",
+   "commit": "c79d19f7a",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.2",
+   "at": "2026-10-24T01:40Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "fb6bb9e73",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.3",
+   "at": "2026-10-24T01:42Z",
+   "agent": "claude-journalist",
+   "commit": "67a7b57aa",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.4",
+   "at": "2026-10-24T01:45Z",
+   "agent": "factcheck@php.newsroom",
+   "commit": "fbd1d6364",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.5",
+   "at": "2026-10-24T01:51Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "74e4c08f9",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.6",
+   "at": "2026-10-24T02:10Z",
+   "agent": "factcheck@php.newsroom",
+   "commit": "9980fc894",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.7",
+   "at": "2026-10-24T06:20Z",
+   "agent": "",
+   "commit": "979948f01",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.8",
+   "at": "2026-10-24T06:24Z",
+   "agent": "librarian@php.newsroom",
+   "commit": "bd25f6591",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.9",
+   "at": "2026-10-24T06:51Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "ac5300dc5",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.10",
+   "at": "2026-10-24T07:17Z",
+   "agent": "",
+   "commit": "5e7e0225b",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.11",
+   "at": "2026-10-24T08:02Z",
+   "agent": "factcheck@php.newsroom",
+   "commit": "7c358dc4b",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.12",
+   "at": "2026-10-24T08:17Z",
+   "agent": "",
+   "commit": "15475a4aa",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.13",
+   "at": "2026-10-24T08:32Z",
+   "agent": "desk@php.newsroom",
+   "commit": "0b25b677b",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.14",
+   "at": "2026-10-24T09:44Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "614ef2996",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.15",
+   "at": "2026-10-24T10:12Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "905c8751b",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.16",
+   "at": "2026-10-24T10:18Z",
+   "agent": "",
+   "commit": "1a010c6d8",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.17",
+   "at": "2026-10-24T10:22Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "111524be5",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.18",
+   "at": "2026-10-24T10:51Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "4341d00c3",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.19",
+   "at": "2026-10-24T11:02Z",
+   "agent": "",
+   "commit": "5fc41b789",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.20",
+   "at": "2026-10-24T11:06Z",
+   "agent": "",
+   "commit": "f7f4bfe77",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.22",
+   "at": "2026-10-24T11:16Z",
+   "agent": "",
+   "commit": "37f4e6c8f",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.23",
+   "at": "2026-10-24T11:27Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "e15322cfd",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.24",
+   "at": "2026-10-24T11:37Z",
+   "agent": "",
+   "commit": "c0bef8898",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.24",
+   "at": "2026-10-24T11:45Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "6d3c395f6",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.25",
+   "at": "2026-10-24T11:57Z",
+   "agent": "claude-journalist",
+   "commit": "e38031fb8",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.26",
+   "at": "2026-10-24T12:06Z",
+   "agent": "security@php.newsroom",
+   "commit": "a55c3a217",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.27",
+   "at": "2026-10-24T12:15Z",
+   "agent": "security@php.newsroom",
+   "commit": "0609c7fa1",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.28",
+   "at": "2026-10-24T12:19Z",
+   "agent": "observability@php.newsroom",
+   "commit": "080fb872f",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.29",
+   "at": "2026-10-24T12:26Z",
+   "agent": "conductor@php.newsroom",
+   "commit": "c44ea3fe7",
+   "vault_head": "1845598d9a38",
+   "latest_capture": "2026-10-23T16:04Z",
+   "sources": 295
+  },
+  {
+   "version": "0.14.30",
+   "at": "2026-10-24T12:55Z",
+   "agent": "claude-journalist",
+   "commit": "601ea7e88",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.14.31",
+   "at": "2026-10-24T13:19Z",
+   "agent": "",
+   "commit": "02f3c6cc2",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.0",
+   "at": "2026-10-24T13:35Z",
+   "agent": "claude-story-site",
+   "commit": "c1964345d",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.1",
+   "at": "2026-10-24T14:20Z",
+   "agent": "",
+   "commit": "0749823fe",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.2",
+   "at": "2026-10-24T15:30Z",
+   "agent": "desk@php.newsroom",
+   "commit": "d503eabd6",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.3",
+   "at": "2026-10-24T15:43Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "ff1d54e23",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.4",
+   "at": "2026-10-24T16:07Z",
+   "agent": "factcheck@php.newsroom",
+   "commit": "28d25aabf",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.5",
+   "at": "2026-10-24T16:53Z",
+   "agent": "sherpa@php.newsroom",
+   "commit": "48e8d28af",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.6",
+   "at": "2026-10-24T17:04Z",
+   "agent": "security@php.newsroom",
+   "commit": "21e61c016",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.7",
+   "at": "2026-10-24T18:18Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "3c54da850",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.8",
+   "at": "2026-10-24T18:22Z",
+   "agent": "",
+   "commit": "4fdef6fbd",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.9",
+   "at": "2026-10-24T18:57Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "778e79a7b",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.10",
+   "at": "2026-10-24T19:13Z",
+   "agent": "",
+   "commit": "f24e2b8ee",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.11",
+   "at": "2026-10-24T20:24Z",
+   "agent": "security@php.newsroom",
+   "commit": "d9fa6180d",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.12",
+   "at": "2026-10-24T20:35Z",
+   "agent": "security@php.newsroom",
+   "commit": "3d38ec918",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.13",
+   "at": "2026-10-24T20:41Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "21f0d6ccc",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.14",
+   "at": "2026-10-24T21:16Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "8c81a2b4d",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.15",
+   "at": "2026-10-24T21:32Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "baf4d8bcb",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.16",
+   "at": "2026-10-24T21:39Z",
+   "agent": "observability@php.newsroom",
+   "commit": "2e7fc08a8",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.17",
+   "at": "2026-10-24T21:53Z",
+   "agent": "security@php.newsroom",
+   "commit": "d570dceee",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.18",
+   "at": "2026-10-24T21:57Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "02f344e42",
+   "vault_head": "1f38e70921b2",
+   "latest_capture": "2026-10-24T08:37Z",
+   "sources": 328
+  },
+  {
+   "version": "0.15.19",
+   "at": "2026-10-24T22:08Z",
+   "agent": "journalist@php.newsroom",
+   "commit": "8b70eb4dd",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.15.20",
+   "at": "2026-10-24T22:14Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "bcc830a60",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.15.21",
+   "at": "2026-10-24T22:21Z",
+   "agent": "journalist@php.newsroom",
+   "commit": "9bc9707f0",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.16.0",
+   "at": "2026-10-24T22:28Z",
+   "agent": "claude-story-site",
+   "commit": "3037e8446",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.16.1",
+   "at": "2026-10-24T22:47Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "dd591004c",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.17.0",
+   "at": "2026-10-24T23:02Z",
+   "agent": "ontologist@php.newsroom",
+   "commit": "4eaf6f524",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.17.1",
+   "at": "2026-10-24T23:21Z",
+   "agent": "ontologist@php.newsroom",
+   "commit": "a32e48540",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.17.2",
+   "at": "2026-10-24T23:26Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "0b471ba07",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.17.3",
+   "at": "2026-10-24T23:40Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "cff5ba7f9",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.17.4",
+   "at": "2026-10-25T00:24Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "7e63c5457",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  },
+  {
+   "version": "0.17.5",
+   "at": "2026-10-25T00:52Z",
+   "agent": "correspondent@php.newsroom",
+   "commit": "02b820eac",
+   "vault_head": "8c16a64a7cf6",
+   "latest_capture": "2026-10-24T16:05Z",
+   "sources": 382
+  }
+ ],
+ "repo": {
+  "commits": 303,
+  "files": 3082,
+  "bytes": 92894848,
+  "pages": 954,
+  "twins": 872,
+  "data_files": 510,
+  "data_bytes": 17928777,
+  "build_lines": 7680
+ },
+ "next": {
+  "researcher": {
+   "status": "active",
+   "model": "the session's model",
+   "times_london": [
+    "07:00",
+    "09:30",
+    "12:00",
+    "14:30",
+    "17:00"
+   ],
+   "next": [
+    "2026-10-25T07:00Z",
+    "2026-10-25T09:30Z",
+    "2026-10-25T12:00Z",
+    "2026-10-25T14:30Z",
+    "2026-10-25T17:00Z",
+    "2026-10-26T07:00Z"
+   ]
+  },
+  "curator": {
+   "status": "active",
+   "model": "the session's model",
+   "times_london": [
+    "08:00",
+    "10:30",
+    "13:00",
+    "15:30",
+    "18:00"
+   ],
+   "next": [
+    "2026-10-25T08:00Z",
+    "2026-10-25T10:30Z",
+    "2026-10-25T13:00Z",
+    "2026-10-25T15:30Z",
+    "2026-10-25T18:00Z",
+    "2026-10-26T08:00Z"
+   ]
+  },
+  "journalist": {
+   "status": "active",
+   "model": "Sonnet",
+   "times_london": [
+    "08:40",
+    "11:10",
+    "13:40",
+    "16:10",
+    "18:40"
+   ],
+   "next": [
+    "2026-10-25T08:40Z",
+    "2026-10-25T11:10Z",
+    "2026-10-25T13:40Z",
+    "2026-10-25T16:10Z",
+    "2026-10-25T18:40Z",
+    "2026-10-26T08:40Z"
+   ]
+  },
+  "correspondent": {
+   "status": "active",
+   "model": "Opus",
+   "times_london": [
+    "09:25",
+    "11:55",
+    "14:25",
+    "16:55",
+    "19:25"
+   ],
+   "next": [
+    "2026-10-25T09:25Z",
+    "2026-10-25T11:55Z",
+    "2026-10-25T14:25Z",
+    "2026-10-25T16:55Z",
+    "2026-10-25T19:25Z",
+    "2026-10-26T09:25Z"
+   ]
+  }
+ }
+}
