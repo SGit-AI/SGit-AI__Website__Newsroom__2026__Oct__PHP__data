@@ -1,0 +1,44 @@
+# Deploy this repository to GitHub Pages from dev: run its gate, then publish the repository root. Everything here is
+# pre-built and committed; this workflow verifies it and ships it. Pages source must be "GitHub Actions". The same
+# workflow as v1's (SGit-AI/sgit-ai__website__newsroom__2026__oct__php, .github/workflows/pages.yml), with this
+# repository's gate; a change to it goes to security@php.newsroom's review and the editor's go (CLAUDE.md).
+name: Deploy to GitHub Pages
+on:
+  push:
+    branches: [dev]
+  workflow_dispatch:
+# The gate runs repository code, so it runs with read-only permissions; only the deploy job, which runs no repository
+# code, can write to Pages or mint an OIDC token. Actions are pinned to commit SHAs (the tag is in the comment).
+permissions:
+  contents: read
+# A deploy that has started is never cut off: it finishes, then the newest waiting push deploys.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
+        with:
+          persist-credentials: false
+      - name: Run the gate
+        run: python3 tools/gate.py
+      - uses: actions/upload-pages-artifact@56afc609e74202658d3ffba0e8f6dda462b719fa  # v3.0.1
+        with:
+          path: .
+  deploy:
+    needs: gate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b  # v5.0.0
+      - id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e  # v4.0.5
