@@ -1,0 +1,59 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "rules": {
+   "items": {
+    "properties": {
+     "basis": {
+      "type": "string"
+     },
+     "close": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "of": {
+      "type": "string"
+     },
+     "reach": {
+      "type": [
+       "array",
+       "string"
+      ]
+     },
+     "title": {
+      "type": "string"
+     },
+     "verbs": {
+      "type": "array"
+     },
+     "why": {
+      "type": "string"
+     },
+     "within": {
+      "type": "number"
+     }
+    },
+    "required": [
+     "close",
+     "id",
+     "of",
+     "title",
+     "why"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "rules"
+ ],
+ "title": "grc-gaps.json",
+ "type": "object"
+}

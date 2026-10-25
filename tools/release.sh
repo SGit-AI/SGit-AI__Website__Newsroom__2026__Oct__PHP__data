@@ -19,12 +19,16 @@ if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --i
 fi
 python3 tools/gate.py >/dev/null || { python3 tools/gate.py; echo "release stopped: the gate fails before the release"; exit 1; }
 OLD="$(cat VERSION)"; IFS=. read -r MA MI PA <<< "$OLD"
-if [ -d "v/$OLD" ]; then PA=$((PA+1)); fi
-NEW="$MA.$MI.$PA"; echo "$NEW" > VERSION
-python3 tools/publish.py
-python3 tools/gate.py
+if python3 tools/publish.py --same-as "$OLD"; then
+  NEW="$OLD"; echo "nothing new to publish: v$OLD holds these files already"   # a change to the tools still commits
+else
+  if [ -d "v/$OLD" ]; then PA=$((PA+1)); fi
+  NEW="$MA.$MI.$PA"; echo "$NEW" > VERSION
+  python3 tools/publish.py
+  python3 tools/gate.py
+fi
 git add -A
-if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}' ; then
+if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|\bsk-(or-v1-|proj-|ant-[a-z0-9]+-)?[A-Za-z0-9_]{32,}' ; then
   echo "tripwire: credential shape in the staged diff; release aborted"; exit 1
 fi
 if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "v$NEW: $MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "v$NEW: $MSG"; fi

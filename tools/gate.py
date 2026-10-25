@@ -59,13 +59,14 @@ notes.append(f'{len(slugs)} sources; claims and events cite only those')
 # 4. versions match their manifests; committed versions unchanged
 committed = set()
 try:
-    out = subprocess.run(['git', '-C', ROOT, 'ls-files', '-s', 'v'], capture_output=True, text=True, check=True).stdout
+    # against the last commit, not the index: a staged change is still a change, and a published file removed is one too
+    out = subprocess.run(['git', '-C', ROOT, 'ls-tree', '-r', 'HEAD', '--', 'v'], capture_output=True, text=True, check=True).stdout
     for line in out.splitlines():
-        mode, blob, stage, path = line.split(None, 3)
+        mode, kind, blob, path = line.replace('\t', ' ').split(None, 3)
         committed.add(path)
-        now = subprocess.run(['git', '-C', ROOT, 'hash-object', path], capture_output=True, text=True).stdout.strip()
+        now = subprocess.run(['git', '-C', ROOT, 'hash-object', path], capture_output=True, text=True).stdout.strip() if os.path.exists(os.path.join(ROOT, path)) else ''
         if now != blob:
-            fails.append(f'{path}: a published file changed; a version is immutable, publish a new one')
+            fails.append(f'{path}: a published file changed or went; a version is immutable, publish a new one')
 except (subprocess.CalledProcessError, FileNotFoundError):
     notes.append('git not available: the immutability check was skipped')
 vs = versions()

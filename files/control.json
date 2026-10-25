@@ -488,6 +488,18 @@
    "owner": "editor",
    "status": "open",
    "title": "The six new repositories have not deployed: set each one's Pages source to 'Deploy from a branch: dev, / (root)' (or a deploy workflow, through security), then dev checks every site live"
+  },
+  {
+   "id": "331",
+   "owner": "editor",
+   "status": "waiting",
+   "title": "Interviews and outreach: choose the first wave (the brief proposes Weird Gloop, the PHP security team, the three discovery teams as a panel, NCSC-NL, Alan Woodward), the formats (A the editor live, B written questions, C self-interview, D opinion), and whether agents may run format B in the editor's name"
+  },
+  {
+   "id": "335",
+   "owner": "editor",
+   "status": "open",
+   "title": "The split, for every agent: four decisions before the schedule resumes (the go for step A: records to team and data to data, with export_v1.py as the bridge; or resume against v1 alone; the Pages source of the six; their rulesets), then each agent adds the 'repositories' field to its card at its next wake"
   }
  ],
  "branches": [
@@ -1109,5 +1121,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.7"
+ "version": "0.22.10"
 }

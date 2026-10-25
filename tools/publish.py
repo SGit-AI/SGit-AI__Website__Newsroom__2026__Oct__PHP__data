@@ -110,7 +110,25 @@ def publish(root):
     print(f'published v{version}: {len(manifest["files"])} files')
 
 
+def same_as(version):
+    """True when files/ and schemas/ are, file for file, what v<version> holds: nothing to publish (a new import from a
+    later v1 commit with the same data is not a new version)."""
+    vdir = os.path.join(ROOT, 'v', version)
+    if not os.path.isdir(vdir):
+        return False
+    tmp = os.path.join(ROOT, '.publish-check')
+    shutil.rmtree(tmp, ignore_errors=True)
+    build_version(tmp, version)
+    same = {p: h for p, h in tree(tmp).items() if p != 'manifest.json'} == {p: h for p, h in tree(vdir).items() if p != 'manifest.json'}
+    shutil.rmtree(tmp)
+    return same
+
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('--into', default=ROOT)
-    publish(os.path.abspath(ap.parse_args().into))
+    ap.add_argument('--same-as', default=None, help='exit 0 when nothing would change against this version')
+    a = ap.parse_args()
+    if a.same_as:
+        sys.exit(0 if same_as(a.same_as) else 1)
+    publish(os.path.abspath(a.into))
