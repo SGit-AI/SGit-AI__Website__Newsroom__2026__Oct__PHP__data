@@ -81,6 +81,13 @@
    "sha256": "510a6ebd72f0d0ddc15bb3e39751ff8ab90930151d0a2978986d1b309050fa39"
   },
   {
+   "bytes": 48288,
+   "group": "runtime",
+   "name": "control.json",
+   "schema": "schemas/control.schema.json",
+   "sha256": "11e3910fba9e29f836e4edee3459faaf00a777f281ca9bf4fcc6fe5e740745e8"
+  },
+  {
    "bytes": 21507,
    "group": "ontology",
    "name": "crosswalk.json",
@@ -127,14 +134,14 @@
    "group": "graphs",
    "name": "fractal.json",
    "schema": "schemas/fractal.schema.json",
-   "sha256": "bfc06cc56fc4af6b38602af44ed598e9334f983660ac1419dd2693e94c501adc"
+   "sha256": "20ab35d466f1a0bf256de9d93f801f677e06c20b11ab9321ed7b207644497787"
   },
   {
    "bytes": 1091910,
    "group": "graphs",
    "name": "graph.json",
    "schema": "schemas/graph.schema.json",
-   "sha256": "e98c0862513270bda4d283044254c6481cf5f93d07df9240b2de7a2bb93244d9"
+   "sha256": "81a1b605a70345b2b28472b1b7bfd5bd0c32082300da4a5d3a68198f061c5443"
   },
   {
    "bytes": 431,
@@ -162,14 +169,14 @@
    "group": "grc",
    "name": "grc-graph.json",
    "schema": "schemas/grc-graph.schema.json",
-   "sha256": "9cf961dff3c61767e9188b46b247d41a55bb36c2c7ce6185e3baa76159e51574"
+   "sha256": "741ba07f7c33492657f637c04f1b90aea41a9e122735ea9d399e98d3bc747f6a"
   },
   {
-   "bytes": 255203,
+   "bytes": 255212,
    "group": "grc",
    "name": "grc-history.json",
    "schema": "schemas/grc-history.schema.json",
-   "sha256": "2c9486caa19aff4bda055561642d913d7c95603bf3ca49e99d41d2c6ab8f6a49"
+   "sha256": "7b8f8fa4144a45d9796c9692d9283babed5da4e6766f50cbb272fd5c0fdbfaf2"
   },
   {
    "bytes": 11874,
@@ -218,7 +225,7 @@
    "group": "runtime",
    "name": "items.json",
    "schema": "schemas/items.schema.json",
-   "sha256": "9deb5c2e1139a6185f3ce5eb2ba2dcead49a98582238a2c2a92a96f64934a42e"
+   "sha256": "b78bb49664fa112ad0180c7a471a570c749e379e52879469d73d8e72340a9771"
   },
   {
    "bytes": 43976,
@@ -261,6 +268,13 @@
    "name": "patching.json",
    "schema": "schemas/patching.schema.json",
    "sha256": "f80227819def77caebd320bb9f60a1f614bf40826c1ace8002c10d999e5582fc"
+  },
+  {
+   "bytes": 18250,
+   "group": "runtime",
+   "name": "personas.json",
+   "schema": "schemas/personas.schema.json",
+   "sha256": "49d1e307272a9271337dc56104b23b0ab80d3a739bc83d55af8621311525a9a4"
   },
   {
    "bytes": 134769,
@@ -312,6 +326,13 @@
    "sha256": "60e431e0ff169c50d8c532cdd7ed67d6c16398e506b2abe73860c395f77b4aaf"
   },
   {
+   "bytes": 7668,
+   "group": "runtime",
+   "name": "stack.json",
+   "schema": "schemas/stack.schema.json",
+   "sha256": "70b0c4d760fa13dc99fb7115f8e32f86b215c31024c723514cd33ef2ae39d6ff"
+  },
+  {
    "bytes": 22868,
    "group": "desk",
    "name": "state.json",
@@ -324,6 +345,13 @@
    "name": "story.json",
    "schema": "schemas/story.schema.json",
    "sha256": "e7fd637b6e906897d315edd2516a852d87e6066e6eebe31c50194084fdbe24ed"
+  },
+  {
+   "bytes": 1817,
+   "group": "runtime",
+   "name": "subscriptions.json",
+   "schema": "schemas/subscriptions.schema.json",
+   "sha256": "413fa4c387503ddfad9b6086d3c9943b6ceb3254f10bbd6c07d2021cd48929e1"
   },
   {
    "bytes": 2863,
@@ -386,7 +414,7 @@
    "group": "evidence",
    "name": "wikipedia/php2shell/graph.json",
    "schema": null,
-   "sha256": "2b2c09eb0ca444fba2f2e3dd83e1374279002c80024d3b5478bf5b6f8b7b3aa7"
+   "sha256": "7a3481e0974624d5f08badc83afeb08ddfd1b3b6d1377efa67a63d5dc5863b33"
   },
   {
    "bytes": 5075,
@@ -3295,10 +3323,10 @@
   }
  ],
  "from": {
-  "commit": "336fbc8f795ccb69471fb0ac999619a397bcdf78",
+  "commit": "ec5d411eeb70c3578156237db2f2c9dfe36257a3",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.3"
+  "site_version": "0.22.4"
  },
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.3/",
- "version": "0.1.3"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.4/",
+ "version": "0.1.4"
 }

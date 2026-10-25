@@ -1,5 +1,5 @@
 {
- "about": "Which files the data API publishes, and where each came from in the v1 repository (sgit-ai__website__newsroom__2026__oct__php, data/). A file is listed here, by name, before it is published (group 'runtime': a file the pages' scripts fetch, which the split sites now read from here, not from a copy); tools/import_v1.py copies these and nothing else. A name ending in / is a folder, copied whole. The board, the schedule cards, the run records, the messages and the registers go to the team repository; the readers' copy (personas, glossary, plain English, questions) stays with the site, which the design agent is reworking.",
+ "about": "Which files the data API publishes, and where each came from in the v1 repository (sgit-ai__website__newsroom__2026__oct__php, data/). A file is listed here, by name, before it is published (group 'runtime': a file the pages' scripts fetch, which the split sites now read from here, not from a copy); tools/import_v1.py copies these and nothing else. A name ending in / is a folder, copied whole. The board, the schedule cards, the run records, the messages and the registers go to the team repository; the rest of the readers' copy (glossary, plain English, questions) stays with the site, which the design agent is reworking. personas.json is here because the pages' scripts fetch it.",
  "files": [
   {
    "name": "sources.json",
@@ -214,6 +214,22 @@
   },
   {
    "name": "collaborators.json",
+   "group": "runtime"
+  },
+  {
+   "name": "control.json",
+   "group": "runtime"
+  },
+  {
+   "name": "personas.json",
+   "group": "runtime"
+  },
+  {
+   "name": "stack.json",
+   "group": "runtime"
+  },
+  {
+   "name": "subscriptions.json",
    "group": "runtime"
   }
  ]

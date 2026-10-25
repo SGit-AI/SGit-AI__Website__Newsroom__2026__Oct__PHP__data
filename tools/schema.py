@@ -6,7 +6,7 @@
 
 A schema says what a consumer may rely on: the type of the file, the keys every object has, and the type of each
 value, three levels deep. It is inferred once and then kept: the gate fails when a file stops fitting its schema, so
-a change of shape is a decision (rewrite the schema, bump the minor version) and never an accident. Files inside a
+a change of shape is a decision (rewrite the schema, in its own release, said in its message) and never an accident. Files inside a
 catalogue folder (wikipedia/) are checked as JSON and by their sha256 only.
 """
 import os, sys
