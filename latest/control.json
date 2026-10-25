@@ -481,7 +481,7 @@
    "id": "322",
    "owner": "editor",
    "status": "open",
-   "title": "One repository into six, step 0: create the six repositories (…__PHP__press, __data, __refs, __updates, __team, __site), Pages with Actions and a custom domain each, DNS CNAMEs to sgit-ai.github.io (and next.php.oct.2026.newsroom.sgit.ai for staging), the Claude app and today's rulesets; then one session with all seven attached"
+   "title": "One repository into six, step 0: create the six repositories (…__PHP__press, __data, __refs, __updates, __team, __site), Pages with Actions and a custom domain each, DNS CNAMEs to sgit-ai.github.io (and site.php.oct.2026.newsroom.sgit.ai for staging), the Claude app and today's rulesets; then one session with all seven attached"
   },
   {
    "id": "328",
@@ -1109,5 +1109,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.4"
+ "version": "0.22.5"
 }
