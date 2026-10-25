@@ -1,0 +1,3583 @@
+{
+ "about": "The authority file for parties: one node per person, organisation, agency, outlet, channel or platform, whatever string a source or a row uses for it. Kept by the ontologist (ontologist@php.newsroom). An id from data/actors.json is reused unchanged, so the actor pages and this file name the same node. 'aliases' are the exact publisher strings in data/sources.json; the build refuses a publisher that resolves to no entity. Kinds and verbs are defined in data/ontology.json.",
+ "kept_by": "ontologist",
+ "entities": [
+  {
+   "id": "php-group",
+   "name": "The PHP Group / php.net",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "PHP Group (php.net)",
+    "PHP Lists",
+    "php.net",
+    "news-web.php.net",
+    "PHP"
+   ]
+  },
+  {
+   "id": "php-security-team",
+   "name": "The PHP security team",
+   "kind": "group",
+   "part_of": "php-group",
+   "one_voice": true
+  },
+  {
+   "id": "php-src",
+   "name": "php/php-src",
+   "kind": "project",
+   "part_of": "php-group",
+   "aliases": [
+    "php/php-src on GitHub",
+    "php/php-src (git), read from a clone"
+   ]
+  },
+  {
+   "id": "adoy",
+   "name": "adoy, PHP release manager",
+   "kind": "person",
+   "member_of": "php-group",
+   "aliases": [
+    "php/php-src on GitHub (release by adoy)"
+   ]
+  },
+  {
+   "id": "php-foundation",
+   "name": "The PHP Foundation",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "The PHP Foundation",
+    "thephp.foundation"
+   ]
+  },
+  {
+   "id": "zelenka",
+   "name": "Jakub Zelenka (bukka), PHP security team",
+   "kind": "person",
+   "actor": true,
+   "member_of": "php-security-team",
+   "aliases": [
+    "PHP (php/php-src GitHub security advisory, published by bukka)",
+    "oss-security list (Jakub Zelenka, PHP security team)"
+   ]
+  },
+  {
+   "id": "daubois",
+   "name": "Alexandre Daubois, PHP security team",
+   "kind": "person",
+   "actor": true,
+   "member_of": "php-security-team",
+   "aliases": [
+    "Alexandre Daubois (PHP security team / PHP Foundation)"
+   ]
+  },
+  {
+   "id": "leblanc",
+   "name": "Arnaud Le Blanc and the PHP fix authors",
+   "kind": "group",
+   "actor": true,
+   "member_of": "php-security-team"
+  },
+  {
+   "id": "calif",
+   "name": "Calif",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Calif (Calif Research)"
+   ]
+  },
+  {
+   "id": "austin",
+   "name": "Ryan Austin, Calif",
+   "kind": "person",
+   "works_for": "calif",
+   "aliases": [
+    "Ryan Austin (@lcfr_hax), Calif"
+   ]
+  },
+  {
+   "id": "openai",
+   "name": "OpenAI",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "OpenAI",
+    "OpenAI (@OpenAI)",
+    "OpenAI (Patch the Planet / Daybreak)"
+   ]
+  },
+  {
+   "id": "php2shell-site",
+   "name": "php2shell.com, the joint microsite of OpenAI, Wiz and Calif",
+   "kind": "project",
+   "aliases": [
+    "OpenAI / Wiz / Calif joint microsite (php2shell.com)"
+   ],
+   "by": [
+    "openai",
+    "wiz",
+    "calif"
+   ]
+  },
+  {
+   "id": "wiz",
+   "name": "Wiz Research",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Wiz (Wiz Research)",
+    "Wiz (@wiz_io)",
+    "Wiz Blog",
+    "wiz.io"
+   ]
+  },
+  {
+   "id": "quarkslab",
+   "name": "Quarkslab, OSTIF",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Quarkslab"
+   ]
+  },
+  {
+   "id": "cloudflare",
+   "name": "Cloudflare",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Cloudflare",
+    "blog.cloudflare.com",
+    "cloudflare.com"
+   ]
+  },
+  {
+   "id": "prince",
+   "name": "Matthew Prince, Cloudflare CEO",
+   "kind": "person",
+   "actor": true,
+   "works_for": "cloudflare",
+   "aliases": [
+    "Matthew Prince (@eastdakota), Cloudflare CEO"
+   ]
+  },
+  {
+   "id": "amazon",
+   "name": "Amazon (CJ Moses)",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Amazon (CJ Moses, AWS Security Blog)",
+    "Amazon AWS",
+    "aws.amazon.com"
+   ]
+  },
+  {
+   "id": "chainguard",
+   "name": "Chainguard",
+   "kind": "organisation",
+   "actor": true
+  },
+  {
+   "id": "chainguard-lorenc",
+   "name": "Dan Lorenc, Chainguard",
+   "kind": "person",
+   "actor": true,
+   "works_for": "chainguard"
+  },
+  {
+   "id": "watchtowr",
+   "name": "watchTowr",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "watchTowr",
+    "labs.watchtowr.com",
+    "watchtowr.com"
+   ]
+  },
+  {
+   "id": "imperva",
+   "name": "Imperva Threat Research",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Imperva Threat Research (Nadav Avital, Bar Menachem)"
+   ]
+  },
+  {
+   "id": "fastly",
+   "name": "Fastly",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Fastly"
+   ]
+  },
+  {
+   "id": "akamai",
+   "name": "Akamai",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Akamai Security Research"
+   ]
+  },
+  {
+   "id": "huntress",
+   "name": "Huntress",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Huntress",
+    "huntress.com"
+   ]
+  },
+  {
+   "id": "fortinet",
+   "name": "Fortinet",
+   "kind": "organisation",
+   "aliases": [
+    "Fortinet Community (FortiWeb knowledge base)",
+    "Fortinet"
+   ]
+  },
+  {
+   "id": "weirdgloop",
+   "name": "Weird Gloop (cookmeplox)",
+   "kind": "organisation",
+   "actor": true,
+   "aliases": [
+    "Weird Gloop (cookmeplox)"
+   ]
+  },
+  {
+   "id": "wikimedia",
+   "name": "The Wikimedia Foundation",
+   "kind": "organisation",
+   "aliases": [
+    "wikimediastatus.net"
+   ]
+  },
+  {
+   "id": "edinburgh-council",
+   "name": "The City of Edinburgh Council",
+   "kind": "organisation",
+   "aliases": [
+    "edinburgh.gov.uk"
+   ]
+  },
+  {
+   "id": "oxford-council",
+   "name": "Oxford City Council",
+   "kind": "organisation"
+  },
+  {
+   "id": "vulncheck",
+   "name": "VulnCheck",
+   "kind": "organisation"
+  },
+  {
+   "id": "censys",
+   "name": "Censys",
+   "kind": "organisation"
+  },
+  {
+   "id": "ellio",
+   "name": "ELLIO",
+   "kind": "organisation"
+  },
+  {
+   "id": "unit42",
+   "name": "Palo Alto Networks Unit 42",
+   "kind": "organisation",
+   "part_of": "paloalto"
+  },
+  {
+   "id": "detectors",
+   "name": "Community detection authors",
+   "kind": "group",
+   "actor": true
+  },
+  {
+   "id": "darkfibr",
+   "name": "darkfibr (Mike Haddock)",
+   "kind": "person",
+   "member_of": "detectors",
+   "aliases": [
+    "darkfibr (Mike Haddock), GitHub"
+   ]
+  },
+  {
+   "id": "rjmendez",
+   "name": "rjmendez",
+   "kind": "person",
+   "member_of": "detectors",
+   "aliases": [
+    "rjmendez, GitHub"
+   ]
+  },
+  {
+   "id": "lexsah",
+   "name": "Lexsah",
+   "kind": "person",
+   "member_of": "detectors",
+   "aliases": [
+    "Lexsah, GitHub"
+   ]
+  },
+  {
+   "id": "blevene",
+   "name": "Blevene",
+   "kind": "person",
+   "member_of": "detectors",
+   "aliases": [
+    "Blevene (GitHub gist)"
+   ]
+  },
+  {
+   "id": "silas-cutler",
+   "name": "Silas Cutler",
+   "kind": "person",
+   "aliases": [
+    "Silas Cutler (GitHub gist)"
+   ]
+  },
+  {
+   "id": "feross",
+   "name": "Feross Aboukhadijeh",
+   "kind": "person",
+   "aliases": [
+    "Feross Aboukhadijeh (@feross) on X"
+   ]
+  },
+  {
+   "id": "lopez-kurtz",
+   "name": "David Lopez-Kurtz",
+   "kind": "person",
+   "aliases": [
+    "David Lopez-Kurtz (Substack)"
+   ]
+  },
+  {
+   "id": "woodward",
+   "name": "Alan Woodward, Surrey Centre for Cyber Security",
+   "kind": "person",
+   "actor": true
+  },
+  {
+   "id": "rainbolt",
+   "name": "Aaron Rainbolt",
+   "kind": "person"
+  },
+  {
+   "id": "perez",
+   "name": "Yves-Alexis Perez, Debian",
+   "kind": "person"
+  },
+  {
+   "id": "fischer",
+   "name": "Christian Fischer, Greenbone",
+   "kind": "person"
+  },
+  {
+   "id": "oss-security-replies",
+   "name": "Replies on oss-security: Aaron Rainbolt, Yves-Alexis Perez, Christian Fischer",
+   "kind": "group",
+   "has_members": [
+    "rainbolt",
+    "perez",
+    "fischer"
+   ],
+   "aliases": [
+    "oss-security list (replies: Aaron Rainbolt, Yves-Alexis Perez/Debian, Christian Fischer/Greenbone)"
+   ]
+  },
+  {
+   "id": "coopersmith",
+   "name": "Alan Coopersmith, Oracle",
+   "kind": "person",
+   "aliases": [
+    "oss-security list (Alan Coopersmith, Oracle)"
+   ]
+  },
+  {
+   "id": "openai-community-sps",
+   "name": "'sps', OpenAI Developer Community",
+   "kind": "person",
+   "aliases": [
+    "OpenAI Developer Community (user 'sps', Leader)"
+   ]
+  },
+  {
+   "id": "agencies",
+   "name": "National agencies",
+   "kind": "group",
+   "actor": true
+  },
+  {
+   "id": "nsa",
+   "name": "NSA Cybersecurity",
+   "kind": "agency",
+   "country": "US",
+   "member_of": "agencies",
+   "aliases": [
+    "NSA Cybersecurity (@NSACyber)",
+    "US National Security Agency (NSA)",
+    "NSA Press Room",
+    "nsa.gov"
+   ]
+  },
+  {
+   "id": "cisa",
+   "name": "CISA",
+   "kind": "agency",
+   "country": "US",
+   "member_of": "agencies",
+   "aliases": [
+    "CISA",
+    "US Cybersecurity and Infrastructure Security Agency (CISA)",
+    "cisa.gov"
+   ]
+  },
+  {
+   "id": "ncsc-uk",
+   "name": "UK NCSC",
+   "kind": "agency",
+   "country": "UK",
+   "member_of": "agencies",
+   "aliases": [
+    "UK National Cyber Security Centre (NCSC)",
+    "National Cyber Security Centre",
+    "ncsc.gov.uk"
+   ]
+  },
+  {
+   "id": "cert-eu",
+   "name": "CERT-EU",
+   "kind": "agency",
+   "country": "EU institutions",
+   "member_of": "agencies",
+   "aliases": [
+    "CERT-EU"
+   ]
+  },
+  {
+   "id": "enisa-csirts",
+   "name": "ENISA CSIRTs Network",
+   "kind": "agency",
+   "country": "EU",
+   "member_of": "agencies",
+   "aliases": [
+    "ENISA / EU CSIRTs Network (CNW)"
+   ]
+  },
+  {
+   "id": "cert-fr",
+   "name": "CERT-FR (ANSSI)",
+   "kind": "agency",
+   "country": "FR",
+   "member_of": "agencies",
+   "aliases": [
+    "CERT-FR (ANSSI)"
+   ]
+  },
+  {
+   "id": "cccs",
+   "name": "Canadian Centre for Cyber Security (CCCS)",
+   "kind": "agency",
+   "country": "CA",
+   "member_of": "agencies",
+   "aliases": [
+    "CCCS",
+    "Canadian Centre for Cyber Security (CCCS)"
+   ]
+  },
+  {
+   "id": "acsc",
+   "name": "ASD's ACSC",
+   "kind": "agency",
+   "country": "AU",
+   "member_of": "agencies",
+   "aliases": [
+    "ASD's ACSC",
+    "ASD's ACSC (Australia)",
+    "cyber.gov.au"
+   ]
+  },
+  {
+   "id": "ncsc-nz",
+   "name": "NCSC New Zealand",
+   "kind": "agency",
+   "country": "NZ",
+   "member_of": "agencies",
+   "aliases": [
+    "NCSC New Zealand"
+   ]
+  },
+  {
+   "id": "rijksoverheid",
+   "name": "The Dutch government",
+   "kind": "organisation",
+   "country": "NL",
+   "actor": true,
+   "aliases": [
+    "Rijksoverheid (Dutch government) / NCSC-NL",
+    "overheid.nl"
+   ]
+  },
+  {
+   "id": "ncsc-nl",
+   "name": "NCSC-NL",
+   "kind": "agency",
+   "country": "NL",
+   "member_of": "agencies",
+   "part_of": "rijksoverheid",
+   "aliases": [
+    "NCSC-NL",
+    "NCSC-NL (Netherlands National Cyber Security Centre)",
+    "ncsc.nl"
+   ]
+  },
+  {
+   "id": "acn",
+   "name": "ACN / CSIRT Italia",
+   "kind": "agency",
+   "country": "IT",
+   "member_of": "agencies",
+   "aliases": [
+    "ACN / CSIRT Italia"
+   ]
+  },
+  {
+   "id": "bacs",
+   "name": "Swiss BACS (NCSC)",
+   "kind": "agency",
+   "country": "CH",
+   "member_of": "agencies",
+   "aliases": [
+    "Swiss BACS",
+    "Swiss Federal Office for Cyber Security (BACS / NCSC)"
+   ]
+  },
+  {
+   "id": "cert-lv",
+   "name": "CERT.LV",
+   "kind": "agency",
+   "country": "LV",
+   "member_of": "agencies",
+   "aliases": [
+    "CERT.LV (Latvia)"
+   ]
+  },
+  {
+   "id": "jpcert",
+   "name": "JPCERT/CC",
+   "kind": "agency",
+   "country": "JP",
+   "member_of": "agencies",
+   "aliases": [
+    "JPCERT/CC",
+    "JPCERT/CC (Japan)"
+   ]
+  },
+  {
+   "id": "ccn-cert",
+   "name": "CCN-CERT",
+   "kind": "agency",
+   "country": "ES",
+   "member_of": "agencies",
+   "aliases": [
+    "CCN-CERT (Spain)"
+   ]
+  },
+  {
+   "id": "cncs",
+   "name": "CNCS",
+   "kind": "agency",
+   "country": "PT",
+   "member_of": "agencies",
+   "aliases": [
+    "CNCS (Portugal)"
+   ]
+  },
+  {
+   "id": "valtori",
+   "name": "Valtori and NCSC-FI",
+   "kind": "organisation",
+   "country": "FI",
+   "actor": true,
+   "aliases": [
+    "valtori.fi"
+   ]
+  },
+  {
+   "id": "cve-program",
+   "name": "The CVE Program",
+   "kind": "registry",
+   "aliases": [
+    "CVE Program (CNA: PHP Group)",
+    "CVE Program (cveawg API)",
+    "cve.org",
+    "Mitre"
+   ],
+   "part_of": "mitre"
+  },
+  {
+   "id": "nvd",
+   "name": "NIST National Vulnerability Database",
+   "kind": "registry",
+   "aliases": [
+    "NIST National Vulnerability Database"
+   ]
+  },
+  {
+   "id": "bbc",
+   "name": "BBC News",
+   "kind": "outlet",
+   "actor": true,
+   "aliases": [
+    "BBC News",
+    "bbc.com",
+    "bbc.co.uk"
+   ]
+  },
+  {
+   "id": "thn",
+   "name": "The Hacker News",
+   "kind": "outlet",
+   "actor": true,
+   "aliases": [
+    "The Hacker News",
+    "The Hacker News (Ravie Lakshmanan)",
+    "thehackernews.com"
+   ]
+  },
+  {
+   "id": "the-register",
+   "name": "The Register",
+   "kind": "outlet",
+   "aliases": [
+    "The Register",
+    "theregister.com"
+   ]
+  },
+  {
+   "id": "securityweek",
+   "name": "SecurityWeek",
+   "kind": "outlet",
+   "aliases": [
+    "SecurityWeek"
+   ]
+  },
+  {
+   "id": "cnn",
+   "name": "CNN",
+   "kind": "outlet",
+   "aliases": [
+    "CNN",
+    "cnn.com"
+   ]
+  },
+  {
+   "id": "cyber-express",
+   "name": "The Cyber Express",
+   "kind": "outlet",
+   "aliases": [
+    "The Cyber Express"
+   ]
+  },
+  {
+   "id": "yle",
+   "name": "Yle",
+   "kind": "outlet",
+   "country": "FI",
+   "aliases": [
+    "Yle (Finnish public broadcaster)"
+   ]
+  },
+  {
+   "id": "helsinki-times",
+   "name": "Helsinki Times",
+   "kind": "outlet",
+   "country": "FI",
+   "aliases": [
+    "Helsinki Times"
+   ]
+  },
+  {
+   "id": "scotsman",
+   "name": "The Scotsman",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "The Scotsman (Jack Davies)",
+    "scotsman.com"
+   ]
+  },
+  {
+   "id": "oxford-chronicle",
+   "name": "Oxford Chronicle",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "Oxford Chronicle"
+   ]
+  },
+  {
+   "id": "lbc",
+   "name": "LBC",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "LBC"
+   ]
+  },
+  {
+   "id": "insurance-business",
+   "name": "Insurance Business",
+   "kind": "outlet",
+   "aliases": [
+    "Insurance Business (Matthew Sellers)",
+    "Insurance Business",
+    "insurancebusinessmag.com"
+   ]
+  },
+  {
+   "id": "eadt",
+   "name": "East Anglian Daily Times (PA)",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "East Anglian Daily Times (PA)"
+   ]
+  },
+  {
+   "id": "reuters",
+   "name": "Reuters",
+   "kind": "outlet",
+   "aliases": [
+    "reuters.com"
+   ]
+  },
+  {
+   "id": "bloomberg",
+   "name": "Bloomberg",
+   "kind": "outlet",
+   "aliases": [
+    "Bloomberg"
+   ]
+  },
+  {
+   "id": "newsweek",
+   "name": "Newsweek",
+   "kind": "outlet",
+   "aliases": [
+    "Newsweek",
+    "newsweek.com"
+   ]
+  },
+  {
+   "id": "dark-reading",
+   "name": "Dark Reading",
+   "kind": "outlet",
+   "aliases": [
+    "Dark Reading"
+   ]
+  },
+  {
+   "id": "cybernews",
+   "name": "Cybernews",
+   "kind": "outlet",
+   "aliases": [
+    "Cybernews"
+   ]
+  },
+  {
+   "id": "recorded-future",
+   "name": "Recorded Future",
+   "kind": "organisation",
+   "aliases": [
+    "Recorded Future",
+    "www.recordedfuture.com",
+    "recordedfuture.com"
+   ]
+  },
+  {
+   "id": "the-record",
+   "name": "The Record",
+   "kind": "outlet",
+   "part_of": "recorded-future",
+   "aliases": [
+    "The Record (Recorded Future News)",
+    "therecord.media"
+   ]
+  },
+  {
+   "id": "techzine",
+   "name": "Techzine Global",
+   "kind": "outlet",
+   "aliases": [
+    "Techzine Global"
+   ]
+  },
+  {
+   "id": "itdaily",
+   "name": "ITdaily",
+   "kind": "outlet",
+   "aliases": [
+    "ITdaily (Jens Jonkers)",
+    "ITdaily",
+    "itdaily.be",
+    "itdaily.fr"
+   ]
+  },
+  {
+   "id": "tpo-nl",
+   "name": "TPO.nl",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "TPO.nl",
+    "TPO"
+   ]
+  },
+  {
+   "id": "dutch-it-leaders",
+   "name": "Dutch IT Leaders",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "Dutch IT Leaders"
+   ]
+  },
+  {
+   "id": "actuia",
+   "name": "ActuIA",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "ActuIA"
+   ]
+  },
+  {
+   "id": "php-architect",
+   "name": "php[architect]",
+   "kind": "outlet",
+   "aliases": [
+    "php[architect]"
+   ]
+  },
+  {
+   "id": "wikipedia",
+   "name": "Wikipedia (English)",
+   "kind": "outlet",
+   "aliases": [
+    "Wikipedia (English)",
+    "en.wikipedia.org"
+   ],
+   "part_of": "wikimedia"
+  },
+  {
+   "id": "arctic-wolf",
+   "name": "Arctic Wolf Labs",
+   "kind": "organisation",
+   "aliases": [
+    "Arctic Wolf Labs"
+   ]
+  },
+  {
+   "id": "armis",
+   "name": "Armis",
+   "kind": "organisation",
+   "aliases": [
+    "Armis"
+   ]
+  },
+  {
+   "id": "symantec",
+   "name": "Broadcom (Symantec)",
+   "kind": "organisation",
+   "aliases": [
+    "Broadcom (Symantec) Security"
+   ]
+  },
+  {
+   "id": "cybelangel",
+   "name": "CybelAngel",
+   "kind": "organisation",
+   "aliases": [
+    "CybelAngel"
+   ]
+  },
+  {
+   "id": "equixly",
+   "name": "Equixly",
+   "kind": "organisation",
+   "aliases": [
+    "Equixly"
+   ]
+  },
+  {
+   "id": "lorikeet",
+   "name": "Lorikeet Security",
+   "kind": "organisation",
+   "aliases": [
+    "Lorikeet Security"
+   ]
+  },
+  {
+   "id": "prophet",
+   "name": "Prophet Security",
+   "kind": "organisation",
+   "aliases": [
+    "Prophet Security"
+   ]
+  },
+  {
+   "id": "qualys",
+   "name": "Qualys",
+   "kind": "organisation",
+   "aliases": [
+    "Qualys"
+   ]
+  },
+  {
+   "id": "safeguard",
+   "name": "Safeguard",
+   "kind": "organisation",
+   "aliases": [
+    "Safeguard (vendor blog)"
+   ]
+  },
+  {
+   "id": "sansec",
+   "name": "Sansec",
+   "kind": "organisation",
+   "aliases": [
+    "Sansec",
+    "sansec.io"
+   ]
+  },
+  {
+   "id": "sentinelone",
+   "name": "SentinelOne",
+   "kind": "organisation",
+   "aliases": [
+    "SentinelOne"
+   ]
+  },
+  {
+   "id": "socket",
+   "name": "Socket",
+   "kind": "organisation",
+   "aliases": [
+    "Socket"
+   ]
+  },
+  {
+   "id": "tenable",
+   "name": "Tenable",
+   "kind": "organisation",
+   "aliases": [
+    "Tenable"
+   ]
+  },
+  {
+   "id": "nitter",
+   "name": "nitter.net, an X mirror",
+   "kind": "platform",
+   "aliases": [
+    "nitter.net"
+   ]
+  },
+  {
+   "id": "x",
+   "name": "X (Twitter)",
+   "kind": "platform",
+   "aliases": [
+    "x.com",
+    "twitter.com"
+   ]
+  },
+  {
+   "id": "unnamed",
+   "name": "Unnamed sources",
+   "kind": "unnamed",
+   "note": "Social posts, 'researchers' and others a source does not name. One node on purpose: an unnamed origin is a gap, not a party."
+  },
+  {
+   "id": "this-site",
+   "name": "This site (php.oct.2026.newsroom.sgit.ai)",
+   "kind": "this-site",
+   "note": "Counted from a captured file or a clone; the count is the site's own and says so."
+  },
+  {
+   "id": "gbaf",
+   "name": "Global Banking and Finance Review",
+   "kind": "outlet",
+   "aliases": [
+    "Reuters factbox, via Global Banking and Finance",
+    "globalbankingandfinance.com"
+   ]
+  },
+  {
+   "id": "nukib",
+   "name": "NÚKIB",
+   "kind": "agency",
+   "country": "CZ",
+   "member_of": "agencies",
+   "aliases": [
+    "NÚKIB"
+   ]
+  },
+  {
+   "id": "cisco",
+   "name": "Cisco",
+   "kind": "organisation",
+   "aliases": [
+    "Cisco"
+   ]
+  },
+  {
+   "id": "paloalto",
+   "name": "Palo Alto Networks",
+   "kind": "organisation",
+   "aliases": [
+    "Palo Alto Networks"
+   ]
+  },
+  {
+   "id": "qnap",
+   "name": "QNAP",
+   "kind": "organisation",
+   "aliases": [
+    "QNAP"
+   ]
+  },
+  {
+   "id": "allixsenos",
+   "name": "allixsenos",
+   "kind": "person"
+  },
+  {
+   "id": "phpocalypse-tracker",
+   "name": "PHPocalypse Tracker",
+   "kind": "project",
+   "by": [
+    "allixsenos"
+   ],
+   "aliases": [
+    "PHPocalypse Tracker (allixsenos)"
+   ]
+  },
+  {
+   "id": "unige",
+   "name": "Université de Genève",
+   "kind": "organisation",
+   "country": "CH",
+   "note": "A university; data/sources.json classes its capture as government.",
+   "aliases": [
+    "unige.ch"
+   ]
+  },
+  {
+   "id": "epfl",
+   "name": "EPFL",
+   "kind": "organisation",
+   "country": "CH",
+   "note": "A university; data/sources.json classes its capture as government.",
+   "aliases": [
+    "epfl.ch"
+   ]
+  },
+  {
+   "id": "fr-interieur",
+   "name": "French Ministry of the Interior",
+   "kind": "organisation",
+   "country": "FR",
+   "aliases": [
+    "interieur.gouv.fr"
+   ]
+  },
+  {
+   "id": "prefecture-police",
+   "name": "Préfecture de police (Paris)",
+   "kind": "organisation",
+   "country": "FR",
+   "part_of": "fr-interieur",
+   "aliases": [
+    "prefecturedepolice.interieur.gouv.fr"
+   ]
+  },
+  {
+   "id": "prefecture-nord",
+   "name": "Préfecture du Nord",
+   "kind": "organisation",
+   "country": "FR",
+   "part_of": "fr-interieur",
+   "aliases": [
+    "nord.gouv.fr"
+   ]
+  },
+  {
+   "id": "prefecture-rhone",
+   "name": "Préfecture du Rhône",
+   "kind": "organisation",
+   "country": "FR",
+   "part_of": "fr-interieur",
+   "aliases": [
+    "rhone.gouv.fr"
+   ]
+  },
+  {
+   "id": "ants",
+   "name": "ANTS (France Titres)",
+   "kind": "organisation",
+   "country": "FR",
+   "part_of": "fr-interieur",
+   "aliases": [
+    "ants.gouv.fr"
+   ]
+  },
+  {
+   "id": "latvia-gov",
+   "name": "latvija.gov.lv, the Latvian state portal",
+   "kind": "organisation",
+   "country": "LV",
+   "aliases": [
+    "latvija.gov.lv"
+   ]
+  },
+  {
+   "id": "dpa",
+   "name": "dpa (Deutsche Presse-Agentur)",
+   "kind": "outlet",
+   "country": "DE"
+  },
+  {
+   "id": "mashable",
+   "name": "Mashable",
+   "kind": "outlet",
+   "aliases": [
+    "mashable.com"
+   ]
+  },
+  {
+   "id": "j-cast",
+   "name": "J-CAST News",
+   "kind": "outlet",
+   "country": "JP"
+  },
+  {
+   "id": "yahoo",
+   "name": "Yahoo",
+   "kind": "outlet",
+   "aliases": [
+    "tech.yahoo.com"
+   ]
+  },
+  {
+   "id": "yahoo-japan",
+   "name": "Yahoo! News Japan",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "Yahoo! News Japan (J-CAST)",
+    "Yahoo!ニュース"
+   ]
+  },
+  {
+   "id": "20-minuten",
+   "name": "20 Minuten",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "20 minutes / 20 Minuten",
+    "20min.ch"
+   ]
+  },
+  {
+   "id": "20minutos",
+   "name": "20minutos",
+   "kind": "outlet",
+   "country": "ES",
+   "note": "Spanish; not 20 Minuten (Switzerland).",
+   "aliases": [
+    "20Minutos"
+   ]
+  },
+  {
+   "id": "abc-au",
+   "name": "ABC News (Australia)",
+   "kind": "outlet",
+   "country": "AU",
+   "aliases": [
+    "abc.net.au"
+   ]
+  },
+  {
+   "id": "actu17",
+   "name": "Actu17",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "actu17.fr"
+   ]
+  },
+  {
+   "id": "agconnect",
+   "name": "AG Connect",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "AG Connect"
+   ]
+  },
+  {
+   "id": "bleepingcomputer",
+   "name": "BleepingComputer",
+   "kind": "outlet",
+   "aliases": [
+    "BleepingComputer",
+    "bleepingcomputer.com",
+    "Bleeping Computer"
+   ]
+  },
+  {
+   "id": "boursorama",
+   "name": "Boursorama",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "boursorama.com"
+   ]
+  },
+  {
+   "id": "bursa-hakimiyet",
+   "name": "Bursa Hakimiyet",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Bursa Hakimiyet"
+   ]
+  },
+  {
+   "id": "canaltech",
+   "name": "Canaltech",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "Canaltech"
+   ]
+  },
+  {
+   "id": "clickx",
+   "name": "Clickx",
+   "kind": "outlet",
+   "country": "BE",
+   "aliases": [
+    "www.clickx.be"
+   ]
+  },
+  {
+   "id": "cnn-portugal",
+   "name": "CNN Portugal",
+   "kind": "outlet",
+   "country": "PT",
+   "note": "A brand licensed to TVI (Media Capital); not part of CNN.",
+   "aliases": [
+    "cnnportugal.iol.pt"
+   ]
+  },
+  {
+   "id": "cointelegraph-br",
+   "name": "Cointelegraph Brasil",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "Cointelegraph Brasil"
+   ]
+  },
+  {
+   "id": "delfi-lv",
+   "name": "DELFI",
+   "kind": "outlet",
+   "country": "LV",
+   "aliases": [
+    "DELFI"
+   ]
+  },
+  {
+   "id": "edinburgh-news",
+   "name": "Edinburgh Evening News",
+   "kind": "outlet",
+   "country": "UK",
+   "note": "A separate title on The Scotsman's domain.",
+   "aliases": [
+    "edinburghnews.scotsman.com"
+   ]
+  },
+  {
+   "id": "fortune",
+   "name": "Fortune",
+   "kind": "outlet",
+   "aliases": [
+    "Fortune"
+   ]
+  },
+  {
+   "id": "global-news",
+   "name": "Global News",
+   "kind": "outlet",
+   "country": "CA",
+   "aliases": [
+    "globalnews.ca"
+   ]
+  },
+  {
+   "id": "howtogeek",
+   "name": "How-To Geek",
+   "kind": "outlet",
+   "aliases": [
+    "howtogeek.com"
+   ]
+  },
+  {
+   "id": "impress-watch",
+   "name": "INTERNET Watch (Impress)",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "INTERNET Watch (Impress)"
+   ]
+  },
+  {
+   "id": "insiderpaper",
+   "name": "Insider Paper",
+   "kind": "outlet",
+   "aliases": [
+    "insiderpaper.com"
+   ]
+  },
+  {
+   "id": "jn-pt",
+   "name": "Jornal de Notícias",
+   "kind": "outlet",
+   "country": "PT",
+   "aliases": [
+    "jn.pt"
+   ]
+  },
+  {
+   "id": "journal-du-coin",
+   "name": "Journal du Coin",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Journal Du Coin"
+   ]
+  },
+  {
+   "id": "koran-jakarta",
+   "name": "Koran Jakarta",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Koran Jakarta ®"
+   ]
+  },
+  {
+   "id": "kyodo",
+   "name": "Kyodo News",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "共同網"
+   ]
+  },
+  {
+   "id": "lalibre",
+   "name": "La Libre Belgique",
+   "kind": "outlet",
+   "country": "BE",
+   "aliases": [
+    "La Libre.be"
+   ]
+  },
+  {
+   "id": "letemps",
+   "name": "Le Temps",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "letemps.ch"
+   ]
+  },
+  {
+   "id": "lupa-cz",
+   "name": "Lupa.cz",
+   "kind": "outlet",
+   "country": "CZ",
+   "aliases": [
+    "Lupa.cz"
+   ]
+  },
+  {
+   "id": "orf",
+   "name": "ORF",
+   "kind": "outlet",
+   "country": "AT",
+   "aliases": [
+    "ORF"
+   ]
+  },
+  {
+   "id": "polinews",
+   "name": "Polinews",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "폴리뉴스 Polinews"
+   ]
+  },
+  {
+   "id": "rte",
+   "name": "RTÉ",
+   "kind": "outlet",
+   "country": "IE",
+   "aliases": [
+    "rte.ie"
+   ]
+  },
+  {
+   "id": "rtl-de",
+   "name": "RTL.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "RTL.de"
+   ]
+  },
+  {
+   "id": "rtve",
+   "name": "RTVE",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "RTVE.es"
+   ]
+  },
+  {
+   "id": "salzburg24",
+   "name": "Salzburg24",
+   "kind": "outlet",
+   "country": "AT",
+   "aliases": [
+    "salzburg24"
+   ]
+  },
+  {
+   "id": "sankei",
+   "name": "Sankei Shimbun",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "産経ニュース"
+   ]
+  },
+  {
+   "id": "sapo-tek",
+   "name": "SAPO Tek",
+   "kind": "outlet",
+   "country": "PT",
+   "aliases": [
+    "SAPO Tek"
+   ]
+  },
+  {
+   "id": "security-nl",
+   "name": "Security.NL",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "Security.NL"
+   ]
+  },
+  {
+   "id": "tagesspiegel",
+   "name": "Der Tagesspiegel",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "tagesspiegel.de"
+   ]
+  },
+  {
+   "id": "techtarget",
+   "name": "TechTarget",
+   "kind": "outlet",
+   "aliases": [
+    "TechTarget"
+   ]
+  },
+  {
+   "id": "the-verge",
+   "name": "The Verge",
+   "kind": "outlet",
+   "aliases": [
+    "The Verge"
+   ]
+  },
+  {
+   "id": "tugatech",
+   "name": "TugaTech",
+   "kind": "outlet",
+   "country": "PT",
+   "aliases": [
+    "TugaTech"
+   ]
+  },
+  {
+   "id": "tuttotech",
+   "name": "TuttoTech",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "TuttoTech.net"
+   ]
+  },
+  {
+   "id": "usa-today",
+   "name": "USA Today",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "USA Today"
+   ]
+  },
+  {
+   "id": "watson-ch",
+   "name": "watson",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "Watson"
+   ]
+  },
+  {
+   "id": "wired",
+   "name": "WIRED",
+   "kind": "outlet",
+   "aliases": [
+    "WIRED"
+   ]
+  },
+  {
+   "id": "pa-media",
+   "name": "PA Media (the Press Association)",
+   "kind": "outlet",
+   "country": "UK"
+  },
+  {
+   "id": "01net",
+   "name": "01net",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "01net"
+   ]
+  },
+  {
+   "id": "ai4business",
+   "name": "AI4Business",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "AI4Business"
+   ]
+  },
+  {
+   "id": "andina",
+   "name": "Agencia Andina",
+   "kind": "outlet",
+   "country": "PE",
+   "aliases": [
+    "Agencia Andina"
+   ]
+  },
+  {
+   "id": "analytics-insight",
+   "name": "Analytics Insight",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "Analytics Insight"
+   ]
+  },
+  {
+   "id": "ars-technica",
+   "name": "Ars Technica",
+   "kind": "outlet",
+   "aliases": [
+    "Ars Technica",
+    "arstechnica.com"
+   ]
+  },
+  {
+   "id": "asiaone",
+   "name": "AsiaOne",
+   "kind": "outlet",
+   "country": "SG",
+   "aliases": [
+    "AsiaOne.com"
+   ]
+  },
+  {
+   "id": "bdm",
+   "name": "Blog du Modérateur (BDM)",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "BDM"
+   ]
+  },
+  {
+   "id": "bankinfosecurity",
+   "name": "BankInfoSecurity",
+   "kind": "outlet",
+   "aliases": [
+    "BankInfoSecurity"
+   ]
+  },
+  {
+   "id": "bitpage",
+   "name": "Bitpage.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Bitpage.de"
+   ]
+  },
+  {
+   "id": "borncity",
+   "name": "BornCity",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "BornCity"
+   ]
+  },
+  {
+   "id": "cna-sg",
+   "name": "CNA (Channel NewsAsia)",
+   "kind": "outlet",
+   "country": "SG",
+   "aliases": [
+    "CNA (Channel NewsAsia)",
+    "CNA",
+    "channelnewsasia.com"
+   ]
+  },
+  {
+   "id": "computerworld-es",
+   "name": "Computerworld España",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "COMPUTERWORLD ESPAÑA"
+   ]
+  },
+  {
+   "id": "crn",
+   "name": "CRN",
+   "kind": "outlet",
+   "aliases": [
+    "CRN"
+   ]
+  },
+  {
+   "id": "clarin",
+   "name": "Clarín (English edition)",
+   "kind": "outlet",
+   "country": "AR",
+   "aliases": [
+    "Clarin (English edition)"
+   ]
+  },
+  {
+   "id": "coingape",
+   "name": "Coingape",
+   "kind": "outlet",
+   "aliases": [
+    "Coingape"
+   ]
+  },
+  {
+   "id": "computable",
+   "name": "Computable.nl",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "Computable.nl"
+   ]
+  },
+  {
+   "id": "computer-weekly",
+   "name": "Computer Weekly",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "Computer Weekly"
+   ]
+  },
+  {
+   "id": "critic-arad",
+   "name": "Critic Arad",
+   "kind": "outlet",
+   "country": "RO",
+   "aliases": [
+    "Critic Arad"
+   ]
+  },
+  {
+   "id": "cyber-press",
+   "name": "Cyber Press",
+   "kind": "outlet",
+   "aliases": [
+    "Cyber Press"
+   ]
+  },
+  {
+   "id": "cyberscoop",
+   "name": "CyberScoop",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "CyberScoop"
+   ]
+  },
+  {
+   "id": "diariobitcoin",
+   "name": "DiarioBitcoin",
+   "kind": "outlet",
+   "aliases": [
+    "DiarioBitcoin"
+   ]
+  },
+  {
+   "id": "everyeye",
+   "name": "Everyeye Tech",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Everyeye Tech"
+   ]
+  },
+  {
+   "id": "ginjfo",
+   "name": "GinjFo",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "GinjFo"
+   ]
+  },
+  {
+   "id": "hardwarecooking",
+   "name": "HardwareCooking",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "HardwareCooking"
+   ]
+  },
+  {
+   "id": "help-net-security",
+   "name": "Help Net Security",
+   "kind": "outlet",
+   "aliases": [
+    "Help Net Security"
+   ]
+  },
+  {
+   "id": "ictjournal",
+   "name": "ICTjournal",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "ICTjournal"
+   ]
+  },
+  {
+   "id": "idx-channel",
+   "name": "IDX Channel",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "IDX Channel"
+   ]
+  },
+  {
+   "id": "it-social",
+   "name": "IT Social",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "IT Social"
+   ]
+  },
+  {
+   "id": "india-tv",
+   "name": "India TV News",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "India TV News"
+   ]
+  },
+  {
+   "id": "infopoint-security",
+   "name": "Infopoint Security",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Infopoint Security"
+   ]
+  },
+  {
+   "id": "information-age",
+   "name": "Information Age (ACS)",
+   "kind": "outlet",
+   "country": "AU",
+   "aliases": [
+    "Information Age (ACS)"
+   ]
+  },
+  {
+   "id": "infosecurity-magazine",
+   "name": "Infosecurity Magazine",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "Infosecurity Magazine"
+   ]
+  },
+  {
+   "id": "journal-du-canada",
+   "name": "Journal du Canada",
+   "kind": "outlet",
+   "country": "CA",
+   "aliases": [
+    "Journal Du Canada"
+   ]
+  },
+  {
+   "id": "lessentiel",
+   "name": "L'essentiel",
+   "kind": "outlet",
+   "country": "LU",
+   "aliases": [
+    "L'essentiel"
+   ]
+  },
+  {
+   "id": "lebigdata",
+   "name": "LeBigData.fr",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "LEBIGDATA.FR"
+   ]
+  },
+  {
+   "id": "le-monde-informatique",
+   "name": "Le Monde Informatique",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Le Monde Informatique"
+   ]
+  },
+  {
+   "id": "les-affaires",
+   "name": "Les Affaires",
+   "kind": "outlet",
+   "country": "CA",
+   "aliases": [
+    "Les Affaires"
+   ]
+  },
+  {
+   "id": "linternaute",
+   "name": "Linternaute",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Linternaute.com"
+   ]
+  },
+  {
+   "id": "marketing4ecommerce",
+   "name": "Marketing4eCommerce",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "Marketing4eCommerce"
+   ]
+  },
+  {
+   "id": "medianama",
+   "name": "MediaNama",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "MediaNama"
+   ]
+  },
+  {
+   "id": "morocco-world-news",
+   "name": "Morocco World News",
+   "kind": "outlet",
+   "country": "MA",
+   "aliases": [
+    "Morocco World News"
+   ]
+  },
+  {
+   "id": "news9live",
+   "name": "News9Live",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "News9Live"
+   ]
+  },
+  {
+   "id": "notebookcheck-it",
+   "name": "Notebookcheck.it",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Notebookcheck.it"
+   ]
+  },
+  {
+   "id": "pcmag",
+   "name": "PCMag",
+   "kind": "outlet",
+   "aliases": [
+    "PCMag",
+    "pcmag.com"
+   ]
+  },
+  {
+   "id": "paperjam",
+   "name": "Paperjam",
+   "kind": "outlet",
+   "country": "LU",
+   "aliases": [
+    "Paperjam"
+   ]
+  },
+  {
+   "id": "qa-financial",
+   "name": "QA Financial",
+   "kind": "outlet",
+   "aliases": [
+    "QA Financial"
+   ]
+  },
+  {
+   "id": "seroundtable",
+   "name": "Search Engine Roundtable",
+   "kind": "outlet",
+   "aliases": [
+    "Search Engine Roundtable"
+   ]
+  },
+  {
+   "id": "siliconangle",
+   "name": "SiliconANGLE",
+   "kind": "outlet",
+   "aliases": [
+    "SiliconANGLE"
+   ]
+  },
+  {
+   "id": "techaeris",
+   "name": "Techaeris",
+   "kind": "outlet",
+   "aliases": [
+    "Techaeris"
+   ]
+  },
+  {
+   "id": "economic-times",
+   "name": "The Economic Times",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "The Economic Times"
+   ]
+  },
+  {
+   "id": "indian-express",
+   "name": "The Indian Express",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "The Indian Express"
+   ]
+  },
+  {
+   "id": "the-mandarin",
+   "name": "The Mandarin",
+   "kind": "outlet",
+   "country": "AU",
+   "aliases": [
+    "The Mandarin"
+   ]
+  },
+  {
+   "id": "the-star-my",
+   "name": "The Star",
+   "kind": "outlet",
+   "country": "MY",
+   "aliases": [
+    "The Star"
+   ]
+  },
+  {
+   "id": "the420",
+   "name": "The420.in",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "The420.in"
+   ]
+  },
+  {
+   "id": "trak-in",
+   "name": "Trak.in",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "Trak.in"
+   ]
+  },
+  {
+   "id": "zataz",
+   "name": "ZATAZ",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "ZATAZ"
+   ]
+  },
+  {
+   "id": "cyberkendra",
+   "name": "Cyber Kendra",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "cyberkendra.com"
+   ]
+  },
+  {
+   "id": "repubblica",
+   "name": "la Repubblica",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "la Repubblica"
+   ]
+  },
+  {
+   "id": "nguoiquansat",
+   "name": "Người Quan Sát",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "nguoiquansat.vn"
+   ]
+  },
+  {
+   "id": "shattered",
+   "name": "shattered.io",
+   "kind": "outlet",
+   "aliases": [
+    "shattered.io"
+   ]
+  },
+  {
+   "id": "madonomori",
+   "name": "Mado no Mori (窓の杜)",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "窓の杜"
+   ],
+   "note": "An Impress title, like INTERNET Watch."
+  },
+  {
+   "id": "shinailbo",
+   "name": "Shinailbo (신아일보)",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "신아일보"
+   ]
+  },
+  {
+   "id": "mashable-india",
+   "name": "Mashable India",
+   "kind": "outlet",
+   "country": "IN",
+   "note": "A licensed edition; not part of Mashable.",
+   "aliases": [
+    "Mashable India"
+   ]
+  },
+  {
+   "id": "techtarget-japan",
+   "name": "TechTarget Japan",
+   "kind": "outlet",
+   "country": "JP",
+   "note": "Run by ITmedia under licence; not part of TechTarget.",
+   "aliases": [
+    "TechTargetジャパン"
+   ],
+   "part_of": "itmedia"
+  },
+  {
+   "id": "socradar",
+   "name": "SOCRadar",
+   "kind": "organisation",
+   "aliases": [
+    "SOCRadar"
+   ]
+  },
+  {
+   "id": "rocket-boys",
+   "name": "Rocket Boys LLC (合同会社ロケットボーイズ)",
+   "kind": "organisation",
+   "country": "JP",
+   "aliases": [
+    "合同会社ロケットボーイズ"
+   ]
+  },
+  {
+   "id": "24heures",
+   "name": "24 Heures",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "24 Heures"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "2days-kr",
+   "name": "2days.kr",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "2days.kr"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "american-banker",
+   "name": "American Banker",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "American Banker"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "btc-echo",
+   "name": "BTC-ECHO",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "BTC-ECHO"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "bgonair",
+   "name": "Bgonair",
+   "kind": "outlet",
+   "country": "BG",
+   "aliases": [
+    "Bgonair"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "bursada-bugun",
+   "name": "Bursada Bugün",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Bursada Bugün"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "bao-gia-lai",
+   "name": "Báo Gia Lai điện tử",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "Báo Gia Lai điện tử"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "ceonews-kr",
+   "name": "CEONEWS (Korea)",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "CEONEWS"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "chip-de",
+   "name": "CHIP",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "CHIP"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "channelpartner",
+   "name": "ChannelPartner",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "ChannelPartner"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "clearancejobs",
+   "name": "ClearanceJobs News",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "ClearanceJobs News"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "cybersecuritynews",
+   "name": "Cyber Security News",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "Cyber Security News"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "economedia",
+   "name": "Economedia",
+   "kind": "outlet",
+   "country": "RO",
+   "aliases": [
+    "Economedia"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "estrella-digital",
+   "name": "Estrella Digital",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "Estrella Digital"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "itweb",
+   "name": "ITWeb",
+   "kind": "outlet",
+   "country": "ZA",
+   "aliases": [
+    "ITWeb"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "milton-keynes-citizen",
+   "name": "Milton Keynes Citizen",
+   "kind": "outlet",
+   "country": "GB",
+   "aliases": [
+    "Milton Keynes Citizen"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "notebookcheck",
+   "name": "Notebookcheck",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Notebookcheck"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "peterborough-telegraph",
+   "name": "Peterborough Telegraph",
+   "kind": "outlet",
+   "country": "GB",
+   "aliases": [
+    "Peterborough Telegraph"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "sunderland-echo",
+   "name": "Sunderland Echo",
+   "kind": "outlet",
+   "country": "GB",
+   "aliases": [
+    "Sunderland Echo"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "sussexworld",
+   "name": "SussexWorld",
+   "kind": "outlet",
+   "country": "GB",
+   "aliases": [
+    "SussexWorld"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "techradar",
+   "name": "TechRadar",
+   "kind": "outlet",
+   "country": "GB",
+   "aliases": [
+    "TechRadar"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "the-next-web",
+   "name": "The Next Web",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "The Next Web"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "aiweekly",
+   "name": "AI Weekly",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "aiweekly"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "areacucuta",
+   "name": "Área Cúcuta",
+   "kind": "outlet",
+   "country": "CO",
+   "aliases": [
+    "areacucuta.com"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "boannews",
+   "name": "Boan News",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "boannews"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "aitnews",
+   "name": "AIT News (البوابة التقنية)",
+   "kind": "outlet",
+   "country": "SA",
+   "aliases": [
+    "البوابة التقنية"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "cairo24",
+   "name": "Cairo 24 (القاهرة 24)",
+   "kind": "outlet",
+   "country": "EG",
+   "aliases": [
+    "القاهرة 24"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "site24-ae",
+   "name": "24.ae (موقع 24)",
+   "kind": "outlet",
+   "country": "AE",
+   "aliases": [
+    "موقع 24"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "blocktempo",
+   "name": "BlockTempo (動區動趨)",
+   "kind": "outlet",
+   "country": "TW",
+   "aliases": [
+    "動區動趨"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "asahi-digital",
+   "name": "Asahi Shimbun Digital (朝日新聞デジタル)",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "朝日新聞デジタル"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "ask-corp",
+   "name": "ASK Corporation (株式会社アスク)",
+   "kind": "organisation",
+   "country": "JP",
+   "aliases": [
+    "株式会社アスク"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "chinaz",
+   "name": "Chinaz (站长之家)",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "站长之家"
+   ],
+   "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
+  },
+  {
+   "id": "mitre",
+   "name": "MITRE",
+   "kind": "organisation",
+   "note": "Runs the CVE Program; cve.org is the program, this is the corporation."
+  },
+  {
+   "id": "nyt",
+   "name": "The New York Times",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "nytimes.com"
+   ]
+  },
+  {
+   "id": "wsj",
+   "name": "The Wall Street Journal",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "wsj.com"
+   ]
+  },
+  {
+   "id": "guardian",
+   "name": "The Guardian",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "theguardian.com"
+   ]
+  },
+  {
+   "id": "the-atlantic",
+   "name": "The Atlantic",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "theatlantic.com"
+   ]
+  },
+  {
+   "id": "afr",
+   "name": "Australian Financial Review",
+   "kind": "outlet",
+   "country": "AU",
+   "aliases": [
+    "afr.com"
+   ]
+  },
+  {
+   "id": "brussels-times",
+   "name": "The Brussels Times",
+   "kind": "outlet",
+   "country": "BE",
+   "aliases": [
+    "brusselstimes.com"
+   ]
+  },
+  {
+   "id": "cp24",
+   "name": "CP24",
+   "kind": "outlet",
+   "country": "CA",
+   "aliases": [
+    "cp24.com"
+   ]
+  },
+  {
+   "id": "pc-gamer",
+   "name": "PC Gamer",
+   "kind": "outlet",
+   "aliases": [
+    "pcgamer.com"
+   ]
+  },
+  {
+   "id": "nbc-news",
+   "name": "NBC News",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "nbcnews.com"
+   ]
+  },
+  {
+   "id": "itmedia",
+   "name": "ITmedia",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "itmedia.co.jp"
+   ]
+  },
+  {
+   "id": "csa-sg",
+   "name": "Cyber Security Agency of Singapore",
+   "kind": "agency",
+   "country": "SG",
+   "member_of": "agencies",
+   "aliases": [
+    "csa.gov.sg"
+   ]
+  },
+  {
+   "id": "cpanel",
+   "name": "cPanel",
+   "kind": "organisation",
+   "aliases": [
+    "support.cpanel.net",
+    "cpanel.net"
+   ]
+  },
+  {
+   "id": "cloudlinux",
+   "name": "CloudLinux",
+   "kind": "organisation",
+   "aliases": [
+    "blog.cloudlinux.com",
+    "cloudlinux.com"
+   ]
+  },
+  {
+   "id": "scherzer",
+   "name": "scherzer.dev",
+   "kind": "person",
+   "note": "A personal site; Wikipedia cites its php2shell timeline.",
+   "aliases": [
+    "scherzer.dev"
+   ]
+  },
+  {
+   "id": "ycombinator-hn",
+   "name": "Hacker News (news.ycombinator.com)",
+   "kind": "platform",
+   "note": "The Y Combinator forum, not The Hacker News (thehackernews.com), which is an outlet; Wikipedia cites both.",
+   "aliases": [
+    "Hacker News",
+    "news.ycombinator.com"
+   ]
+  },
+  {
+   "id": "w3techs",
+   "name": "W3Techs",
+   "kind": "organisation",
+   "note": "The usual origin of the 'PHP powers N% of websites' figure; contradiction K-001.",
+   "aliases": [
+    "w3techs.com"
+   ]
+  },
+  {
+   "id": "thenextweb",
+   "name": "The Next Web",
+   "kind": "outlet",
+   "country": "NL",
+   "aliases": [
+    "thenextweb.com"
+   ]
+  },
+  {
+   "id": "internet-archive",
+   "name": "The Internet Archive",
+   "kind": "organisation",
+   "country": "US",
+   "aliases": [
+    "archive.org"
+   ]
+  },
+  {
+   "id": "github",
+   "name": "GitHub",
+   "kind": "platform",
+   "aliases": [
+    "github.com",
+    "GitHub"
+   ],
+   "note": "A platform: it hosts advisories and code that others publish. A reference on it is published by the party the citation names, where that party is known."
+  },
+  {
+   "id": "ai-matters",
+   "name": "AI Matters",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "AI Matters",
+    "aimatters.co.kr"
+   ]
+  },
+  {
+   "id": "harian-jogja",
+   "name": "Harian Jogja",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Berita Oto Tekno - Harianjogja.com",
+    "harianjogja.com"
+   ]
+  },
+  {
+   "id": "dan-tri",
+   "name": "Dân trí",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "Báo Dân trí",
+    "dantri.com.vn"
+   ]
+  },
+  {
+   "id": "cnbc-indonesia",
+   "name": "CNBC Indonesia",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "CNBC Indonesia",
+    "cnbcindonesia.com"
+   ]
+  },
+  {
+   "id": "cnbctv18",
+   "name": "CNBC-TV18",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "CNBCTV18",
+    "cnbctv18.com"
+   ]
+  },
+  {
+   "id": "crypto-id",
+   "name": "Crypto ID",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "CRYPTO ID",
+    "cryptoid.com.br"
+   ]
+  },
+  {
+   "id": "clubic",
+   "name": "Clubic",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Clubic",
+    "clubic.com"
+   ]
+  },
+  {
+   "id": "coin-academy",
+   "name": "Coin Academy",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Coin Academy",
+    "coinacademy.fr"
+   ]
+  },
+  {
+   "id": "coinpedia",
+   "name": "Coinpedia",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "Coinpedia",
+    "coinpedia.org"
+   ]
+  },
+  {
+   "id": "computable-be",
+   "name": "Computable.be",
+   "kind": "outlet",
+   "country": "BE",
+   "aliases": [
+    "Computable.be",
+    "computable.be"
+   ]
+  },
+  {
+   "id": "cryptoast",
+   "name": "Cryptoast",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Cryptoast",
+    "cryptoast.fr"
+   ]
+  },
+  {
+   "id": "cumhuriyet",
+   "name": "Cumhuriyet",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Cumhuriyet",
+    "cumhuriyet.com.tr"
+   ]
+  },
+  {
+   "id": "cyber-daily",
+   "name": "Cyber Daily",
+   "kind": "outlet",
+   "country": "AU",
+   "aliases": [
+    "Cyber Daily",
+    "cyberdaily.au"
+   ]
+  },
+  {
+   "id": "cybersecurity360",
+   "name": "Cyber Security 360",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Cyber Security 360",
+    "cybersecurity360.it"
+   ]
+  },
+  {
+   "id": "defesa-em-foco",
+   "name": "Defesa em Foco",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "Defesa em Foco",
+    "defesaemfoco.com.br"
+   ]
+  },
+  {
+   "id": "die-presse",
+   "name": "Die Presse",
+   "kind": "outlet",
+   "country": "AT",
+   "aliases": [
+    "Die Presse",
+    "diepresse.com"
+   ]
+  },
+  {
+   "id": "digitaltoday",
+   "name": "DigitalToday",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "DigitalToday",
+    "digitaltoday.co.kr"
+   ]
+  },
+  {
+   "id": "donews",
+   "name": "DoNews",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "DoNews",
+    "donews.com"
+   ]
+  },
+  {
+   "id": "donanimhaber",
+   "name": "DonanımHaber",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "DonanımHaber",
+    "donanimhaber.com"
+   ]
+  },
+  {
+   "id": "el-mundo",
+   "name": "El Mundo",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "EL MUNDO",
+    "elmundo.es"
+   ]
+  },
+  {
+   "id": "el-debate",
+   "name": "El Debate",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "El Debate",
+    "eldebate.com"
+   ]
+  },
+  {
+   "id": "el-observador",
+   "name": "El Observador",
+   "kind": "outlet",
+   "country": "UY",
+   "aliases": [
+    "El Observador",
+    "elobservador.com.uy"
+   ]
+  },
+  {
+   "id": "emarketerz",
+   "name": "EmarketerZ",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "EmarketerZ",
+    "emarketerz.fr"
+   ]
+  },
+  {
+   "id": "estadao",
+   "name": "Estadão",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "Estadão",
+    "estadao.com.br"
+   ]
+  },
+  {
+   "id": "europa-press",
+   "name": "Europa Press",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "Europa Press",
+    "europapress.es"
+   ]
+  },
+  {
+   "id": "faz",
+   "name": "Frankfurter Allgemeine Zeitung",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "FAZ",
+    "faz.net"
+   ]
+  },
+  {
+   "id": "feuerwehr-magazin",
+   "name": "Feuerwehr-Magazin",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Feuerwehr-Magazin",
+    "feuerwehrmagazin.de"
+   ]
+  },
+  {
+   "id": "financiarul",
+   "name": "Financiarul",
+   "kind": "outlet",
+   "country": "RO",
+   "aliases": [
+    "Financiarul",
+    "financiarul.ro"
+   ]
+  },
+  {
+   "id": "forbes-tr",
+   "name": "Forbes Türkiye",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Forbes Türkiye",
+    "forbes.com.tr"
+   ]
+  },
+  {
+   "id": "fortune-italia",
+   "name": "Fortune Italia",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Fortune Italia",
+    "fortuneita.com"
+   ]
+  },
+  {
+   "id": "free-press-journal",
+   "name": "Free Press Journal",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "Free Press Journal",
+    "freepressjournal.in"
+   ]
+  },
+  {
+   "id": "gigazine",
+   "name": "GIGAZINE",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "GIGAZINE",
+    "gigazine.net"
+   ]
+  },
+  {
+   "id": "gazzetta-del-sud",
+   "name": "Gazzetta del Sud",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Gazzetta del Sud",
+    "gazzettadelsud.it"
+   ]
+  },
+  {
+   "id": "green-bay-press-gazette",
+   "name": "Green Bay Press-Gazette",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Green Bay Press-Gazette",
+    "greenbaypressgazette.com"
+   ]
+  },
+  {
+   "id": "generation-nt",
+   "name": "Génération NT",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Génération NT",
+    "generation-nt.com"
+   ]
+  },
+  {
+   "id": "inc42",
+   "name": "Inc42",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "Inc42",
+    "inc42.com"
+   ]
+  },
+  {
+   "id": "latin-times",
+   "name": "Latin Times",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Latin Times",
+    "latintimes.com"
+   ]
+  },
+  {
+   "id": "open-access-government",
+   "name": "Open Access Government",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "Open Access Government",
+    "openaccessgovernment.org"
+   ]
+  },
+  {
+   "id": "wired-es",
+   "name": "WIRED en Español",
+   "kind": "outlet",
+   "country": "MX",
+   "aliases": [
+    "WIRED en Español",
+    "es.wired.com"
+   ],
+   "part_of": "wired"
+  },
+  {
+   "id": "yahoo-finance",
+   "name": "Yahoo Finance",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Yahoo Finance",
+    "finance.yahoo.com",
+    "Yahoo Finanza"
+   ]
+  },
+  {
+   "id": "blue-news",
+   "name": "blue News",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "blue News",
+    "bluewin.ch"
+   ]
+  },
+  {
+   "id": "computerhoy",
+   "name": "Computer Hoy",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "computerhoy.20minutos",
+    "computerhoy.20minutos.es"
+   ]
+  },
+  {
+   "id": "detik",
+   "name": "detikcom",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "detikcom",
+    "detik.com",
+    "detikInet"
+   ]
+  },
+  {
+   "id": "express-computer",
+   "name": "Express Computer",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "expresscomputer",
+    "expresscomputer.in"
+   ]
+  },
+  {
+   "id": "itwire",
+   "name": "iTWire",
+   "kind": "outlet",
+   "country": "AU",
+   "aliases": [
+    "itwire",
+    "itwire.com"
+   ]
+  },
+  {
+   "id": "ebn",
+   "name": "EBN",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "www.ebn.co.kr",
+    "ebn.co.kr"
+   ]
+  },
+  {
+   "id": "alghad",
+   "name": "Alghad",
+   "kind": "outlet",
+   "country": "JO",
+   "aliases": [
+    "الغد",
+    "alghad.com"
+   ]
+  },
+  {
+   "id": "addustour",
+   "name": "Ad-Dustour",
+   "kind": "outlet",
+   "country": "JO",
+   "aliases": [
+    "جريدة الدستور",
+    "addustour.com"
+   ]
+  },
+  {
+   "id": "sina-finance",
+   "name": "Sina Finance",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "新浪财经",
+    "finance.sina.com.cn"
+   ]
+  },
+  {
+   "id": "gamemeca",
+   "name": "GameMeca",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "게임메카",
+    "gamemeca.com"
+   ]
+  },
+  {
+   "id": "dailysecu",
+   "name": "Daily Secu",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "데일리시큐",
+    "dailysecu.com"
+   ]
+  },
+  {
+   "id": "fnnews",
+   "name": "Financial News (Korea)",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "파이낸셜뉴스",
+    "fnnews.com"
+   ]
+  },
+  {
+   "id": "note-com",
+   "name": "note (note.com)",
+   "kind": "platform",
+   "country": "JP",
+   "note": "A blogging platform; the author of a post is the party, where known.",
+   "aliases": [
+    "note",
+    "note.com"
+   ]
+  },
+  {
+   "id": "voix",
+   "name": "voix.jp",
+   "kind": "platform",
+   "country": "JP",
+   "note": "A business-card and company-profile site; what it carries is written by the company shown.",
+   "aliases": [
+    "voix",
+    "voix.jp"
+   ]
+  },
+  {
+   "id": "cnbc",
+   "name": "CNBC",
+   "kind": "outlet",
+   "aliases": [
+    "CNBC",
+    "cnbc.com"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "dfir-blog",
+   "name": "The DFIR Blog",
+   "kind": "outlet",
+   "aliases": [
+    "The DFIR Blog",
+    "thedigitalforensics.com"
+   ],
+   "note": "The talk page's citation names it 'The DFIR Blog' at thedigitalforensics.com; the hosts first recorded (thedfirblog.com, dfir.blog) were guesses and are removed (pass of 25 October, 14:05)."
+  },
+  {
+   "id": "washington-post",
+   "name": "The Washington Post",
+   "kind": "outlet",
+   "aliases": [
+    "The Washington Post",
+    "washingtonpost.com"
+   ],
+   "country": "US"
+  },
+  {
+   "id": "elotrolado",
+   "name": "ElOtroLado.net",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "ElOtroLado.net",
+    "elotrolado.net"
+   ]
+  },
+  {
+   "id": "haber7",
+   "name": "Haber 7",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Haber 7",
+    "haber7.com"
+   ]
+  },
+  {
+   "id": "haber-com",
+   "name": "Haber.com",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Haber.com",
+    "haber.com"
+   ],
+   "note": "Not DonanımHaber or Haber 7: a third Turkish site with 'haber' (news) in its name."
+  },
+  {
+   "id": "hwupgrade",
+   "name": "Hardware Upgrade",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Hardware Upgrade",
+    "hwupgrade.it"
+   ]
+  },
+  {
+   "id": "hirstart",
+   "name": "Hírstart",
+   "kind": "outlet",
+   "country": "HU",
+   "aliases": [
+    "Hírstart",
+    "hirstart.hu"
+   ],
+   "note": "A Hungarian news aggregator: its pages relay other outlets."
+  },
+  {
+   "id": "hurriyet",
+   "name": "Hürriyet",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Hürriyet",
+    "hurriyet.com.tr"
+   ]
+  },
+  {
+   "id": "it-finanzmagazin",
+   "name": "IT Finanzmagazin",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "IT Finanzmagazin",
+    "it-finanzmagazin.de"
+   ]
+  },
+  {
+   "id": "ithome-cn",
+   "name": "IT之家",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "IT之家",
+    "ithome.com",
+    "IT Home"
+   ],
+   "note": "IT Home (Ruanmei), China; not the Taiwanese iThome (ithome.com.tw)."
+  },
+  {
+   "id": "ilsole24ore",
+   "name": "Il Sole 24 Ore",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Il Sole 24 Ore",
+    "ilsole24ore.com"
+   ]
+  },
+  {
+   "id": "infomoney",
+   "name": "InfoMoney",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "InfoMoney",
+    "infomoney.com.br"
+   ]
+  },
+  {
+   "id": "infobae",
+   "name": "Infobae",
+   "kind": "outlet",
+   "country": "AR",
+   "aliases": [
+    "Infobae",
+    "infobae.com"
+   ]
+  },
+  {
+   "id": "inibalikpapan",
+   "name": "IniBalikpapan.Com",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "IniBalikpapan.Com",
+    "inibalikpapan.com"
+   ]
+  },
+  {
+   "id": "jawapos",
+   "name": "Jawa Pos",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Jawa Pos",
+    "jawapos.com"
+   ]
+  },
+  {
+   "id": "jeuxvideo",
+   "name": "JeuxVideo.com",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "JeuxVideo.com",
+    "jeuxvideo.com"
+   ]
+  },
+  {
+   "id": "securityaffairs",
+   "name": "Security Affairs",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Security Affairs",
+    "securityaffairs.com"
+   ],
+   "note": "Pierluigi Paganini's security blog, written in English."
+  },
+  {
+   "id": "kathmandu-post",
+   "name": "The Kathmandu Post",
+   "kind": "outlet",
+   "country": "NP",
+   "aliases": [
+    "The Kathmandu Post",
+    "kathmandupost.com"
+   ]
+  },
+  {
+   "id": "wall-street-ro",
+   "name": "Wall-Street.ro",
+   "kind": "outlet",
+   "country": "RO",
+   "aliases": [
+    "Wall-Street.ro",
+    "wall-street.ro"
+   ]
+  },
+  {
+   "id": "actainfo",
+   "name": "actainfo",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "actainfo",
+    "actainfo.it"
+   ]
+  },
+  {
+   "id": "datensicherheit",
+   "name": "datensicherheit.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "datensicherheit.de",
+    "datensicherheit.de"
+   ]
+  },
+  {
+   "id": "dexpose",
+   "name": "dexpose.io",
+   "kind": "organisation",
+   "aliases": [
+    "dexpose.io",
+    "dexpose.io"
+   ],
+   "note": "A threat-exposure vendor writing about its own product area: a vendor, not an outlet."
+  },
+  {
+   "id": "hurbra",
+   "name": "hurbra",
+   "kind": "outlet",
+   "country": "SE",
+   "aliases": [
+    "hurbra",
+    "hurbra.se"
+   ]
+  },
+  {
+   "id": "iphonesoft",
+   "name": "iPhoneSoft",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "iPhoneSoft",
+    "iphonesoft.fr"
+   ]
+  },
+  {
+   "id": "ijiwei",
+   "name": "ijiwei",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "ijiwei",
+    "ijiwei.com",
+    "爱集微"
+   ]
+  },
+  {
+   "id": "it-daily-net",
+   "name": "it-daily.net",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "it-daily.net",
+    "it-daily.net"
+   ],
+   "note": "German IT-Daily; not the Belgian ITdaily (itdaily) or the Korean 아이티데일리 (itdaily-kr)."
+  },
+  {
+   "id": "malwarebytes",
+   "name": "Malwarebytes",
+   "kind": "organisation",
+   "country": "US",
+   "aliases": [
+    "Malwarebytes",
+    "malwarebytes",
+    "malwarebytes.com"
+   ],
+   "note": "A security vendor; its blog is the vendor speaking."
+  },
+  {
+   "id": "telesur-english",
+   "name": "teleSUR English",
+   "kind": "outlet",
+   "country": "VE",
+   "aliases": [
+    "teleSUR English",
+    "telesurenglish.net"
+   ]
+  },
+  {
+   "id": "indigo-dergisi",
+   "name": "İndigo Dergisi",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "İndigo Dergisi",
+    "indigodergisi.com"
+   ]
+  },
+  {
+   "id": "data-max",
+   "name": "データ・マックス",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "データ・マックス",
+    "data-max.co.jp",
+    "Data Max"
+   ]
+  },
+  {
+   "id": "jiji",
+   "name": "時事ドットコム",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "時事ドットコム",
+    "jiji.com",
+    "Jiji.com"
+   ],
+   "note": "The page cited is a press release (PR TIMES) carried on jiji.com: jiji relays it, the issuing company states it."
+  },
+  {
+   "id": "itdaily-kr",
+   "name": "아이티데일리",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "아이티데일리",
+    "itdaily.kr",
+    "IT Daily (Korea)"
+   ],
+   "note": "Korean; not the Belgian ITdaily (itdaily) or the German it-daily.net."
+  },
+  {
+   "id": "hankyung",
+   "name": "한국경제",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "한국경제",
+    "hankyung.com",
+    "The Korea Economic Daily"
+   ]
+  },
+  {
+   "id": "hellot",
+   "name": "헬로티",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "헬로티",
+    "hellot.net",
+    "HelloT"
+   ]
+  }
+ ]
+}

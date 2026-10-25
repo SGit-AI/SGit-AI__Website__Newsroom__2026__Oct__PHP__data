@@ -1,0 +1,143 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "barriers": {
+   "items": {
+    "properties": {
+     "at": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "at_note": {
+      "type": "string"
+     },
+     "gap": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "at",
+     "at_note",
+     "gap",
+     "id",
+     "sources",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "families": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "now": {
+      "type": "string"
+     },
+     "page": {
+      "type": "string"
+     },
+     "question": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "watch": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "now",
+     "page",
+     "question",
+     "sources",
+     "watch"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "ladder": {
+   "items": {
+    "properties": {
+     "family": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "layer": {
+      "type": "string"
+     },
+     "n": {
+      "type": "number"
+     },
+     "of": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "status": {
+      "type": "string"
+     },
+     "value": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "family",
+     "id",
+     "kind",
+     "layer",
+     "of",
+     "sources",
+     "status",
+     "value"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "note": {
+   "type": "string"
+  },
+  "reading": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "barriers",
+  "families",
+  "ladder",
+  "note",
+  "reading"
+ ],
+ "title": "signals.json",
+ "type": "object"
+}

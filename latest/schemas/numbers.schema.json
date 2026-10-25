@@ -1,0 +1,47 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "items": {
+  "properties": {
+   "id": {
+    "type": "string"
+   },
+   "measures": {
+    "type": "string"
+   },
+   "note": {
+    "type": "string"
+   },
+   "of": {
+    "type": "string"
+   },
+   "sources": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "status": {
+    "type": "string"
+   },
+   "value": {
+    "type": "string"
+   },
+   "who": {
+    "type": "string"
+   }
+  },
+  "required": [
+   "id",
+   "measures",
+   "note",
+   "of",
+   "sources",
+   "status",
+   "value",
+   "who"
+  ],
+  "type": "object"
+ },
+ "title": "numbers.json",
+ "type": "array"
+}

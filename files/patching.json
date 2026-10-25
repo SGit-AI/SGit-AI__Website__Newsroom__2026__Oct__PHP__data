@@ -1,0 +1,393 @@
+{
+ "note": "Who can get a fix for php2shell, for which version of PHP, and from whom. Upstream is the PHP project; downstream is everyone who ships PHP to someone else: operating systems, hosting panels, cloud platforms, container images, paid support. The downstream rows are the NCSC-NL inventory's own rows at commit cca173c64ec5 (22 October, 08:40 UTC), each named exactly so the gate can check it is there and has the status quoted. The inventory changes by the hour; these are the statuses at that commit.",
+ "inventory_source": "ncsc-nl-php2shell-software-list",
+ "ladder": [
+  {
+   "branch": "8.5, 8.4, 8.3, 8.2",
+   "upstream": "supported",
+   "fix": "Releases 8.5.12, 8.4.27, 8.3.36 and 8.2.35, with signed tags and Windows binaries; the full engine change",
+   "in_cve": "yes",
+   "downstream": [
+    [
+     "The PHP Group / PHP Windows maintainers",
+     "Official PHP Windows binary ZIP distribution",
+     "Fix"
+    ],
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Noble php8.3-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Debian PHP Maintainers",
+     "Debian trixie PHP 8.4 FPM package",
+     "Fix"
+    ],
+    [
+     "Red Hat",
+     "Red Hat Enterprise Linux 9 php:8.2 module",
+     "Fix"
+    ],
+    [
+     "Docker Official Images maintainers",
+     "Docker Official Image: php",
+     "Fix"
+    ],
+    [
+     "Plesk",
+     "Plesk for Windows",
+     "Vulnerable"
+    ]
+   ],
+   "sources": [
+    "php-net-advisory",
+    "github-php-src-tags",
+    "cve-cve-2026-109618",
+    "ncsc-nl-php2shell-software-list"
+   ]
+  },
+  {
+   "branch": "8.1",
+   "upstream": "end of life",
+   "fix": "A minimal source backport on a branch; no release, no binaries",
+   "in_cve": "no",
+   "downstream": [
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Jammy php8.1-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Heroku / Salesforce",
+     "Heroku PHP buildpack and application runtime",
+     "Fix"
+    ],
+    [
+     "WebPros / cPanel",
+     "cPanel EasyApache 4 / MultiPHP",
+     "Fix"
+    ],
+    [
+     "Plesk",
+     "Plesk Obsidian hosted-site PHP",
+     "Vulnerable"
+    ]
+   ],
+   "sources": [
+    "php-net-advisory",
+    "cisa-alert-php-20261021"
+   ]
+  },
+  {
+   "branch": "8.0",
+   "upstream": "end of life",
+   "fix": "A minimal source backport on a branch; no release, no binaries",
+   "in_cve": "no",
+   "downstream": [
+    [
+     "CloudLinux / TuxCare",
+     "CloudLinux Alt-PHP 8.0 package for Alpine Linux 3.23",
+     "Fix"
+    ],
+    [
+     "WebPros / cPanel",
+     "cPanel EasyApache 4 / MultiPHP",
+     "Fix"
+    ]
+   ],
+   "sources": [
+    "php-net-advisory"
+   ]
+  },
+  {
+   "branch": "7.4",
+   "upstream": "end of life",
+   "fix": "A 17-file commit labelled 'Minimal mitigation for EOL version', on a branch; no release, no binaries",
+   "in_cve": "no",
+   "downstream": [
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Focal php7.4-fpm binary package",
+     "Fix"
+    ],
+    [
+     "CloudLinux / TuxCare",
+     "CloudLinux Alt-PHP 7.4 fixed package set",
+     "Fix"
+    ],
+    [
+     "WebPros / cPanel",
+     "cPanel EasyApache 4 / MultiPHP",
+     "Fix"
+    ]
+   ],
+   "sources": [
+    "github-php-src-branch-7.4-backport",
+    "github-php-src-fix-commit-3584a98bd"
+   ]
+  },
+  {
+   "branch": "7.3 down to 5.x",
+   "upstream": "end of life",
+   "fix": "Nothing: no backport, no branch",
+   "in_cve": "no",
+   "downstream": [
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Bionic php7.2-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Xenial php7.0-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Trusty php5-fpm binary package",
+     "Fix"
+    ]
+   ],
+   "sources": [
+    "ncsc-nl-advisories",
+    "x-wiz-io-php2shell",
+    "certfr-2026-ale-014"
+   ]
+  }
+ ],
+ "models": [
+  {
+   "id": "managed",
+   "name": "Patched for you",
+   "what": "The platform runs PHP and updates it; the customer does nothing.",
+   "rows": [
+    [
+     "Google Cloud",
+     "Google App Engine Standard PHP runtime",
+     "Fix"
+    ]
+   ]
+  },
+  {
+   "id": "redeploy",
+   "name": "Fixed, but you must rebuild and redeploy",
+   "what": "The platform or image publisher has a fixed runtime, and nothing already running changes until its owner rebuilds. 'Existing deployments are not automatically patched' is Google's phrase for App Engine Flexible.",
+   "rows": [
+    [
+     "Heroku / Salesforce",
+     "Heroku PHP buildpack and application runtime",
+     "Fix"
+    ],
+    [
+     "Docker Official Images maintainers",
+     "Docker Official Image: php",
+     "Fix"
+    ],
+    [
+     "Bref project",
+     "Bref PHP Lambda runtime layers",
+     "Fix"
+    ],
+    [
+     "Google Cloud",
+     "Google App Engine Flexible PHP runtime",
+     "Vulnerable"
+    ],
+    [
+     "Google Cloud; customer image publisher",
+     "Google Cloud Run customer PHP container option",
+     "Vulnerable"
+    ]
+   ]
+  },
+  {
+   "id": "package",
+   "name": "A package update from your operating system",
+   "what": "The distribution backports the fix into the PHP version it shipped, and an ordinary system update installs it.",
+   "rows": [
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Noble php8.3-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Debian PHP Maintainers",
+     "Debian trixie PHP 8.4 FPM package",
+     "Fix"
+    ],
+    [
+     "Arch Linux package maintainers",
+     "Arch Linux Extra PHP package",
+     "Fix"
+    ],
+    [
+     "Red Hat",
+     "Red Hat Enterprise Linux 9 php:8.2 module",
+     "Fix"
+    ]
+   ]
+  },
+  {
+   "id": "paid",
+   "name": "Extended support for versions upstream has abandoned",
+   "what": "A commercial supplier backports the fix to an end-of-life version for customers of its extended-support programme: Canonical under Ubuntu Pro and Ubuntu Pro Legacy Support for PHP 5.5, 7.0, 7.2 and 7.4; CloudLinux and TuxCare for 7.4 and 8.0.",
+   "rows": [
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Trusty php5-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Xenial php7.0-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Bionic php7.2-fpm binary package",
+     "Fix"
+    ],
+    [
+     "Canonical / Ubuntu package maintainers",
+     "Ubuntu Focal php7.4-fpm binary package",
+     "Fix"
+    ],
+    [
+     "CloudLinux / TuxCare",
+     "CloudLinux Alt-PHP 7.4 fixed package set",
+     "Fix"
+    ]
+   ]
+  },
+  {
+   "id": "panel",
+   "name": "Through your hosting control panel",
+   "what": "Shared hosting runs the PHP its panel ships, often several versions side by side; the site owner can only pick among them. Here the panels part ways: cPanel backported to 7.4, 8.0 and 8.1; Plesk's end-of-life Linux builds and all its Windows builds were still affected.",
+   "rows": [
+    [
+     "WebPros / cPanel",
+     "cPanel EasyApache 4 / MultiPHP",
+     "Fix"
+    ],
+    [
+     "Plesk",
+     "Plesk Obsidian hosted-site PHP",
+     "Vulnerable"
+    ],
+    [
+     "Plesk",
+     "Plesk for Windows",
+     "Vulnerable"
+    ],
+    [
+     "Hestia Control Panel project",
+     "HestiaCP hosted-site PHP-FPM / MultiPHP option",
+     "Fix"
+    ]
+   ]
+  },
+  {
+   "id": "waiting",
+   "name": "Still waiting on the supplier",
+   "what": "The product embeds its own PHP and its supplier had not shipped a fix at that commit. Most of the inventory is here or further back: 418 of 674 rows were still under investigation.",
+   "rows": [
+    [
+     "Plesk",
+     "Plesk sw-engine internal PHP management runtime",
+     "Vulnerable"
+    ],
+    [
+     "Hestia Control Panel project",
+     "HestiaCP hestia-php internal runtime",
+     "Vulnerable"
+    ],
+    [
+     "CloudLinux",
+     "CloudLinux legacy ea-PHP extended-support packages",
+     "Vulnerable"
+    ]
+   ]
+  }
+ ],
+ "side_effects": [
+  {
+   "what": "Memory errors behave differently",
+   "text": "Before the fix, a request that ran out of memory jumped straight out (a C longjmp). After it, the error is queued and the request unwinds at the next safe point, so code that relied on the old fatal error at the exact allocation sees it slightly later.",
+   "sources": [
+    "github-php-src-fix-commit-3584a98bd",
+    "github-ghsa-w8hw-w9fx-j79w"
+   ]
+  },
+  {
+   "what": "Two new settings",
+   "text": "memory_hard_limit_percent sets a ceiling above memory_limit, where the worker now ends with _exit(); max_multipart_body_parts caps the parts in a form upload. Both have defaults, and a site with very large forms or memory-hungry requests may meet them.",
+   "sources": [
+    "github-php-src-fix-commit-3584a98bd"
+   ]
+  },
+  {
+   "what": "The change is wide",
+   "text": "389 files, 113 of them outside the tests, across the engine and the bundled extensions (standard, mbstring, gd, date, soap, zlib, session): every place that used to abort on a failed allocation was rewritten. The PHP Foundation says the fix required a major change to the engine and took two months.",
+   "sources": [
+    "github-php-src-fix-commit-3584a98bd",
+    "php-foundation-blog-security-release"
+   ]
+  },
+  {
+   "what": "The end-of-life mitigation trades availability for safety",
+   "text": "The 7.4 backport makes every memory error end the worker process at once and switches off the session upload-progress callback. A worker that exits on every out-of-memory error cannot be exploited this way, and restarts more often.",
+   "sources": [
+    "github-php-src-branch-7.4-backport"
+   ]
+  },
+  {
+   "what": "Scanners can call old versions safe",
+   "text": "The CVE records list only 8.2 to 8.5 and default to 'unaffected', so a scanner that reads them will report 7.4 to 8.1 as not affected. The php.net advisory, the backport branches and a Greenbone reply on oss-security say they are.",
+   "sources": [
+    "cve-cve-2026-109618",
+    "php-net-advisory",
+    "openwall-oss-security-109619-thread"
+   ]
+  }
+ ],
+ "why_not_every_version": [
+  {
+   "text": "The bug is in the engine, below any application code, so the fix has to be compiled into PHP itself; there is nothing a site's own code can change.",
+   "sources": [
+    "github-ghsa-w8hw-w9fx-j79w",
+    "github-php-src-fix-commit-3584a98bd"
+   ]
+  },
+  {
+   "text": "The full fix is a refactor of how the engine handles memory errors, 389 files across the engine and its extensions. For the end-of-life 7.4 branch the project wrote a different, smaller change instead of carrying the refactor back.",
+   "sources": [
+    "github-php-src-fix-commit-3584a98bd",
+    "github-php-src-branch-7.4-backport"
+   ]
+  },
+  {
+   "text": "For end-of-life branches the project published source, not releases: someone else has to build, test and ship it. The CVE records do not list those branches at all.",
+   "sources": [
+    "php-net-advisory",
+    "cve-cve-2026-109618"
+   ]
+  },
+  {
+   "text": "Below 7.4 the project published nothing. Fixes for 7.2, 7.0 and 5.5 exist because Canonical maintains those versions for Ubuntu Pro, its commercial extended-support programme.",
+   "sources": [
+    "ncsc-nl-php2shell-software-list"
+   ]
+  },
+  {
+   "text": "CISA's advice for anyone still on 8.1 or older is to take the system offline until it is upgraded.",
+   "sources": [
+    "cisa-alert-php-20261021"
+   ]
+  }
+ ],
+ "open": [
+  "How many live sites run each PHP version. No captured source counts it; W3Techs publishes version shares and is board item 033's first capture.",
+  "What the new settings break in practice. No captured source reports a regression yet; the Fediverse report of an incomplete fix is about security, not compatibility.",
+  "What extended support costs. The inventory shows who sells it, not the price."
+ ]
+}
