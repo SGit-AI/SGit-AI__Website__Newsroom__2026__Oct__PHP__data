@@ -21,7 +21,7 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 | Path | What | Who writes it |
 | --- | --- | --- |
 | `files/` | the working copy: one JSON file per catalogue entry, `wikipedia/` as a folder | until the cutover, only `tools/import_v1.py` (v1 is the source of truth); then each file's writer |
-| `schemas/` | one schema per top-level file, inferred by `tools/schema.py` | changed only on purpose: a widened schema is a minor release, a narrowed one a major |
+| `schemas/` | one schema per top-level file, inferred by `tools/schema.py` | changed only on purpose, in the release that changes the file's shape, and said in its message |
 | `tools/catalogue.json` | which files are published, and their group | dev, on a writer's request |
 | `v/<version>/` | a published version: every file, its schema, `manifest.json` with each sha256 | `tools/publish.py`, via `tools/release.sh` |
 | `latest/`, `versions.json`, `index.html` | the newest version, the history, the front page | `tools/publish.py` |
@@ -31,7 +31,7 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 ```
 python3 tools/import_v1.py --from ../sgit-ai__website__newsroom__2026__oct__php   # until the cutover
 python3 tools/gate.py
-RELEASE_TRAILER="Agent: <you>" tools/release.sh "what changed and why" patch
+RELEASE_TRAILER="Agent: <you>" tools/release.sh "what changed and why"   # 0.1.1, 0.1.2, ...: the last number, every time
 ```
 
 The gate takes seconds: JSON, schemas, provenance (every source a claim cites exists; every risk-graph edge joins two

@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 # Release the data: take in dev, gate, bump, publish, gate again, commit, push. In that order, every time.
-# Usage: tools/release.sh "<one sentence: what changed and why>" [patch|minor|major]
-#   patch: the same shapes, new or corrected values (a new export, a new review)
-#   minor: a new file, or a schema widened (a new key); tools/schema.py --again first
-#   major: a key removed or renamed; consumers move to it on purpose, the old versions stay published
+# Usage: tools/release.sh "<one sentence: what changed and why>"
+# The first release was 0.1.0; every release after it adds one to the last number (0.1.1, 0.1.2, ...), whatever it
+# changes (the editor, 26 October 2026). A change of shape (a new file, a key added or removed) is said in the message,
+# and its schema is rewritten in the same release (tools/schema.py --again); consumers pin the version they read.
 # Never --no-verify, never a force-push, never main. A published version is never changed: this only adds one.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"; cd "$ROOT"
-MSG="${1:?release message required}"; PART="${2:-patch}"
+MSG="${1:?release message required}"
 BRANCH="${RELEASE_BRANCH:-dev}"
 # 0. take in what landed meanwhile; files/ is the only place two writers can collide, so a conflict stops the release
 git fetch -q origin "$BRANCH" 2>/dev/null || true
@@ -19,9 +19,7 @@ if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --i
 fi
 python3 tools/gate.py >/dev/null || { python3 tools/gate.py; echo "release stopped: the gate fails before the release"; exit 1; }
 OLD="$(cat VERSION)"; IFS=. read -r MA MI PA <<< "$OLD"
-if [ -d "v/$OLD" ]; then
-  case "$PART" in major) MA=$((MA+1)); MI=0; PA=0;; minor) MI=$((MI+1)); PA=0;; *) PA=$((PA+1));; esac
-fi
+if [ -d "v/$OLD" ]; then PA=$((PA+1)); fi
 NEW="$MA.$MI.$PA"; echo "$NEW" > VERSION
 python3 tools/publish.py
 python3 tools/gate.py

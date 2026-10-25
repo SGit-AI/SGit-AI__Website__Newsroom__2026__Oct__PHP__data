@@ -60,11 +60,25 @@
    "sha256": "fc2ae52d8cfc06f0a63f8e8de5101e26d7500b1af59a3e3bad73030f8f9daafe"
   },
   {
+   "bytes": 6410,
+   "group": "runtime",
+   "name": "collaborators.json",
+   "schema": "schemas/collaborators.schema.json",
+   "sha256": "5eabfd8f75015b2336f5fcfeedfcbce3e29177084c30c2153160c31aecc0b425"
+  },
+  {
    "bytes": 19756,
    "group": "story",
    "name": "compromise.json",
    "schema": "schemas/compromise.schema.json",
    "sha256": "fb40f0fd88de555727b3779f46d379de7c717ad062c39756c77db57cc6f7a67b"
+  },
+  {
+   "bytes": 4384,
+   "group": "runtime",
+   "name": "contributors.json",
+   "schema": "schemas/contributors.schema.json",
+   "sha256": "510a6ebd72f0d0ddc15bb3e39751ff8ab90930151d0a2978986d1b309050fa39"
   },
   {
    "bytes": 21507,
@@ -113,14 +127,14 @@
    "group": "graphs",
    "name": "fractal.json",
    "schema": "schemas/fractal.schema.json",
-   "sha256": "9f514182f47514cdad255c98e4142937969b3857bad6f437f59b005d7e9086d2"
+   "sha256": "301a0185a2e624c709d880a95523215a69299ae9e1573b3a9c809b20f08891d5"
   },
   {
    "bytes": 1091910,
    "group": "graphs",
    "name": "graph.json",
    "schema": "schemas/graph.schema.json",
-   "sha256": "69a4fe6ff38366d94c4ddaae075218f40194d0d09c8f1730eb6f6aa0d30baa6b"
+   "sha256": "e666eac632fe0e26a586f6da32b00c78d480d26d4009cf4ae76f031f1f026f4c"
   },
   {
    "bytes": 431,
@@ -148,14 +162,14 @@
    "group": "grc",
    "name": "grc-graph.json",
    "schema": "schemas/grc-graph.schema.json",
-   "sha256": "6aa3273b8673e0686698fa275c22b72d420de67e131c5c442f23b4dfad286c29"
+   "sha256": "360aca0f52425413101ad52025c75fc534b226293390e54cf9d0e27ca1810ab1"
   },
   {
-   "bytes": 255176,
+   "bytes": 255194,
    "group": "grc",
    "name": "grc-history.json",
    "schema": "schemas/grc-history.schema.json",
-   "sha256": "a9095b2e2791dcae78297f600cef1f122b717fc80e68a2c7bd3374fa7d7c9046"
+   "sha256": "56f519dc5bbdb19a2dc21963ac61ae237b5332d2b8f67216dc27745ba6dc3405"
   },
   {
    "bytes": 11874,
@@ -198,6 +212,13 @@
    "name": "inventory-history.json",
    "schema": "schemas/inventory-history.schema.json",
    "sha256": "9150b59e17a6b3bae22110b8a088715cec42dd157d11329387587786dd2abd9d"
+  },
+  {
+   "bytes": 213586,
+   "group": "runtime",
+   "name": "items.json",
+   "schema": "schemas/items.schema.json",
+   "sha256": "e3d980a4eb324c40f23afa0c58003f50f448d43d206995cfbe3ceb5b23e39a78"
   },
   {
    "bytes": 43976,
@@ -305,6 +326,13 @@
    "sha256": "e7fd637b6e906897d315edd2516a852d87e6066e6eebe31c50194084fdbe24ed"
   },
   {
+   "bytes": 2863,
+   "group": "runtime",
+   "name": "telemetry.json",
+   "schema": "schemas/telemetry.schema.json",
+   "sha256": "374936d68efa226a29abcb7c9bc6339764e44c1c5a629029866715216cd4ec84"
+  },
+  {
    "bytes": 22519,
    "group": "story",
    "name": "timeline.json",
@@ -358,7 +386,7 @@
    "group": "evidence",
    "name": "wikipedia/php2shell/graph.json",
    "schema": null,
-   "sha256": "dc0c67a16f259d051b858c7789ea0285d9b605c5630f48a0728eb55296e60b5a"
+   "sha256": "f6d85ad2853d93e7465e5e2dadd7d7825be68064a90ec661ce9ec3e9c1f4bf4a"
   },
   {
    "bytes": 5075,
@@ -3267,10 +3295,10 @@
   }
  ],
  "from": {
-  "commit": "d9af616ffd0bc2d8137e8809c877a671a2b3f851",
+  "commit": "57639adf17df1cf52ecb97e52d143e0fb272672b",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.0"
+  "site_version": "0.22.2"
  },
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.1/",
- "version": "0.1.1"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.2/",
+ "version": "0.1.2"
 }

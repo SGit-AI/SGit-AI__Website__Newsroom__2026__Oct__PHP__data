@@ -1,54 +1,220 @@
 {
- "about": "Which files the data API publishes, and where each came from in the v1 repository (sgit-ai__website__newsroom__2026__oct__php, data/). A file is listed here, by name, before it is published; tools/import_v1.py copies these and nothing else. A name ending in / is a folder, copied whole. The board, the schedule cards, the run records, the messages and the registers go to the team repository; the readers' copy (personas, glossary, plain English, questions) stays with the site, which the design agent is reworking.",
+ "about": "Which files the data API publishes, and where each came from in the v1 repository (sgit-ai__website__newsroom__2026__oct__php, data/). A file is listed here, by name, before it is published (group 'runtime': a file the pages' scripts fetch, which the split sites now read from here, not from a copy); tools/import_v1.py copies these and nothing else. A name ending in / is a folder, copied whole. The board, the schedule cards, the run records, the messages and the registers go to the team repository; the readers' copy (personas, glossary, plain English, questions) stays with the site, which the design agent is reworking.",
  "files": [
-  {"name": "sources.json", "group": "evidence"},
-  {"name": "vault.json", "group": "evidence"},
-  {"name": "vault-claims.json", "group": "evidence"},
-  {"name": "vault-timeline.json", "group": "evidence"},
-  {"name": "software.json", "group": "evidence"},
-  {"name": "inventory-history.json", "group": "evidence"},
-  {"name": "source-watch.json", "group": "evidence"},
-  {"name": "pulse.json", "group": "evidence"},
-  {"name": "wikipedia/", "group": "evidence"},
-  {"name": "story.json", "group": "story"},
-  {"name": "claims.json", "group": "story"},
-  {"name": "timeline.json", "group": "story"},
-  {"name": "actors.json", "group": "story"},
-  {"name": "agencies.json", "group": "story"},
-  {"name": "affected.json", "group": "story"},
-  {"name": "exploitation.json", "group": "story"},
-  {"name": "defence.json", "group": "story"},
-  {"name": "impact.json", "group": "story"},
-  {"name": "numbers.json", "group": "story"},
-  {"name": "history.json", "group": "story"},
-  {"name": "patching.json", "group": "story"},
-  {"name": "readings.json", "group": "story"},
-  {"name": "signals.json", "group": "story"},
-  {"name": "compromise.json", "group": "story"},
-  {"name": "code.json", "group": "code"},
-  {"name": "review.json", "group": "code"},
-  {"name": "state.json", "group": "desk"},
-  {"name": "desk.json", "group": "desk"},
-  {"name": "claim-review.json", "group": "desk"},
-  {"name": "loops.json", "group": "desk"},
-  {"name": "outreach.json", "group": "desk"},
-  {"name": "factcheck.json", "group": "factcheck"},
-  {"name": "grc.json", "group": "grc"},
-  {"name": "grc-frameworks.json", "group": "grc"},
-  {"name": "grc-network.json", "group": "grc"},
-  {"name": "grc-tests.json", "group": "grc"},
-  {"name": "grc-basis.json", "group": "grc"},
-  {"name": "grc-gaps.json", "group": "grc"},
-  {"name": "grc-graph.json", "group": "grc", "built_by_v1": true},
-  {"name": "grc-history.json", "group": "grc"},
-  {"name": "graph.json", "group": "graphs", "built_by_v1": true},
-  {"name": "fractal.json", "group": "graphs", "built_by_v1": true},
-  {"name": "arcs.json", "group": "graphs"},
-  {"name": "ontology.json", "group": "ontology"},
-  {"name": "entities.json", "group": "ontology"},
-  {"name": "attribution.json", "group": "ontology"},
-  {"name": "crosswalk.json", "group": "ontology"},
-  {"name": "wikidata-links.json", "group": "ontology"},
-  {"name": "pack-mode.json", "group": "ontology"}
+  {
+   "name": "sources.json",
+   "group": "evidence"
+  },
+  {
+   "name": "vault.json",
+   "group": "evidence"
+  },
+  {
+   "name": "vault-claims.json",
+   "group": "evidence"
+  },
+  {
+   "name": "vault-timeline.json",
+   "group": "evidence"
+  },
+  {
+   "name": "software.json",
+   "group": "evidence"
+  },
+  {
+   "name": "inventory-history.json",
+   "group": "evidence"
+  },
+  {
+   "name": "source-watch.json",
+   "group": "evidence"
+  },
+  {
+   "name": "pulse.json",
+   "group": "evidence"
+  },
+  {
+   "name": "wikipedia/",
+   "group": "evidence"
+  },
+  {
+   "name": "story.json",
+   "group": "story"
+  },
+  {
+   "name": "claims.json",
+   "group": "story"
+  },
+  {
+   "name": "timeline.json",
+   "group": "story"
+  },
+  {
+   "name": "actors.json",
+   "group": "story"
+  },
+  {
+   "name": "agencies.json",
+   "group": "story"
+  },
+  {
+   "name": "affected.json",
+   "group": "story"
+  },
+  {
+   "name": "exploitation.json",
+   "group": "story"
+  },
+  {
+   "name": "defence.json",
+   "group": "story"
+  },
+  {
+   "name": "impact.json",
+   "group": "story"
+  },
+  {
+   "name": "numbers.json",
+   "group": "story"
+  },
+  {
+   "name": "history.json",
+   "group": "story"
+  },
+  {
+   "name": "patching.json",
+   "group": "story"
+  },
+  {
+   "name": "readings.json",
+   "group": "story"
+  },
+  {
+   "name": "signals.json",
+   "group": "story"
+  },
+  {
+   "name": "compromise.json",
+   "group": "story"
+  },
+  {
+   "name": "code.json",
+   "group": "code"
+  },
+  {
+   "name": "review.json",
+   "group": "code"
+  },
+  {
+   "name": "state.json",
+   "group": "desk"
+  },
+  {
+   "name": "desk.json",
+   "group": "desk"
+  },
+  {
+   "name": "claim-review.json",
+   "group": "desk"
+  },
+  {
+   "name": "loops.json",
+   "group": "desk"
+  },
+  {
+   "name": "outreach.json",
+   "group": "desk"
+  },
+  {
+   "name": "factcheck.json",
+   "group": "factcheck"
+  },
+  {
+   "name": "grc.json",
+   "group": "grc"
+  },
+  {
+   "name": "grc-frameworks.json",
+   "group": "grc"
+  },
+  {
+   "name": "grc-network.json",
+   "group": "grc"
+  },
+  {
+   "name": "grc-tests.json",
+   "group": "grc"
+  },
+  {
+   "name": "grc-basis.json",
+   "group": "grc"
+  },
+  {
+   "name": "grc-gaps.json",
+   "group": "grc"
+  },
+  {
+   "name": "grc-graph.json",
+   "group": "grc",
+   "built_by_v1": true
+  },
+  {
+   "name": "grc-history.json",
+   "group": "grc"
+  },
+  {
+   "name": "graph.json",
+   "group": "graphs",
+   "built_by_v1": true
+  },
+  {
+   "name": "fractal.json",
+   "group": "graphs",
+   "built_by_v1": true
+  },
+  {
+   "name": "arcs.json",
+   "group": "graphs"
+  },
+  {
+   "name": "ontology.json",
+   "group": "ontology"
+  },
+  {
+   "name": "entities.json",
+   "group": "ontology"
+  },
+  {
+   "name": "attribution.json",
+   "group": "ontology"
+  },
+  {
+   "name": "crosswalk.json",
+   "group": "ontology"
+  },
+  {
+   "name": "wikidata-links.json",
+   "group": "ontology"
+  },
+  {
+   "name": "pack-mode.json",
+   "group": "ontology"
+  },
+  {
+   "name": "items.json",
+   "group": "runtime"
+  },
+  {
+   "name": "telemetry.json",
+   "group": "runtime"
+  },
+  {
+   "name": "contributors.json",
+   "group": "runtime"
+  },
+  {
+   "name": "collaborators.json",
+   "group": "runtime"
+  }
  ]
 }
