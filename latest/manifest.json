@@ -127,14 +127,14 @@
    "group": "graphs",
    "name": "fractal.json",
    "schema": "schemas/fractal.schema.json",
-   "sha256": "301a0185a2e624c709d880a95523215a69299ae9e1573b3a9c809b20f08891d5"
+   "sha256": "bfc06cc56fc4af6b38602af44ed598e9334f983660ac1419dd2693e94c501adc"
   },
   {
    "bytes": 1091910,
    "group": "graphs",
    "name": "graph.json",
    "schema": "schemas/graph.schema.json",
-   "sha256": "e666eac632fe0e26a586f6da32b00c78d480d26d4009cf4ae76f031f1f026f4c"
+   "sha256": "e98c0862513270bda4d283044254c6481cf5f93d07df9240b2de7a2bb93244d9"
   },
   {
    "bytes": 431,
@@ -162,14 +162,14 @@
    "group": "grc",
    "name": "grc-graph.json",
    "schema": "schemas/grc-graph.schema.json",
-   "sha256": "360aca0f52425413101ad52025c75fc534b226293390e54cf9d0e27ca1810ab1"
+   "sha256": "9cf961dff3c61767e9188b46b247d41a55bb36c2c7ce6185e3baa76159e51574"
   },
   {
-   "bytes": 255194,
+   "bytes": 255203,
    "group": "grc",
    "name": "grc-history.json",
    "schema": "schemas/grc-history.schema.json",
-   "sha256": "56f519dc5bbdb19a2dc21963ac61ae237b5332d2b8f67216dc27745ba6dc3405"
+   "sha256": "2c9486caa19aff4bda055561642d913d7c95603bf3ca49e99d41d2c6ab8f6a49"
   },
   {
    "bytes": 11874,
@@ -218,7 +218,7 @@
    "group": "runtime",
    "name": "items.json",
    "schema": "schemas/items.schema.json",
-   "sha256": "e3d980a4eb324c40f23afa0c58003f50f448d43d206995cfbe3ceb5b23e39a78"
+   "sha256": "9deb5c2e1139a6185f3ce5eb2ba2dcead49a98582238a2c2a92a96f64934a42e"
   },
   {
    "bytes": 43976,
@@ -386,7 +386,7 @@
    "group": "evidence",
    "name": "wikipedia/php2shell/graph.json",
    "schema": null,
-   "sha256": "f6d85ad2853d93e7465e5e2dadd7d7825be68064a90ec661ce9ec3e9c1f4bf4a"
+   "sha256": "2b2c09eb0ca444fba2f2e3dd83e1374279002c80024d3b5478bf5b6f8b7b3aa7"
   },
   {
    "bytes": 5075,
@@ -3295,10 +3295,10 @@
   }
  ],
  "from": {
-  "commit": "57639adf17df1cf52ecb97e52d143e0fb272672b",
+  "commit": "336fbc8f795ccb69471fb0ac999619a397bcdf78",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.2"
+  "site_version": "0.22.3"
  },
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.2/",
- "version": "0.1.2"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.3/",
+ "version": "0.1.3"
 }

@@ -1,0 +1,4 @@
+{
+ "about": "Edges somebody has checked. Every edge of the risk graph says how it is known (data/grc-graph.json, basis): read from a capture (source), from the commit (code), or inferred by an agent (inferred). A row here marks one edge confirmed, by whom and how; the build stops on a row that names an edge the graph does not have, or a person who is not on the team. Add rows; never edit the graph by hand.",
+ "confirmed": []
+}
