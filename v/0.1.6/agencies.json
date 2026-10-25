@@ -1,0 +1,205 @@
+[
+ {
+  "agency": "NSA Cybersecurity",
+  "country": "US",
+  "published": "2026-10-21T13:45:58Z (X post); press release dated 21 Oct",
+  "offline": "yes",
+  "offline_text": "If an immediate update is not feasible, it is recommend[ed] that organizations take the system offline until it can be fully mitigated.",
+  "exploitation": "not stated",
+  "sources": [
+   "nsa-x-2112903220209098897",
+   "nsa-press-php-4630238",
+   "nsa-x-2113068811058622971"
+  ],
+  "note": "The X post says 'be prepared for an update', so it reads as written before or with the patch. The press release names no CVE IDs and calls the pair 'PHP2Shell'."
+ },
+ {
+  "agency": "CISA",
+  "country": "US",
+  "published": "2026-10-21",
+  "offline": "yes",
+  "offline_text": "Organizations that cannot update immediately, or that continue to use PHP 8.1 or earlier unsupported versions, should take PHP-based systems offline until they can be patched or updated.",
+  "exploitation": "none observed at publication; neither CVE in KEV as of catalog 2026.10.21",
+  "sources": [
+   "cisa-alert-php-20261021",
+   "cisa-kev-json",
+   "cisa-home"
+  ],
+  "note": "'A web application firewall may provide some protection until systems are updated or patched.' The most absolute offline advice, and it covers end-of-life versions explicitly."
+ },
+ {
+  "agency": "NCSC",
+  "country": "UK",
+  "published": "2026-10-21 (page modified 2026-10-22T07:30:02Z)",
+  "offline": "after mitigations",
+  "offline_text": "If you are unable to apply the temporary mitigations, or applying them would take too long, you should consider taking the system offline until it can be fully mitigated.",
+  "exploitation": "not stated",
+  "sources": [
+   "ncsc-news-php"
+  ],
+  "note": "Offline is the fourth of six priority actions, after inventory, update and the PHP Foundation's temporary mitigations. The sentence the BBC quotes ('Where immediate remediation is not feasible...') is not on the page as captured; the page changed on 22 October."
+ },
+ {
+  "agency": "CERT-EU",
+  "country": "EU institutions",
+  "published": "2026-10-21 15:20:18 (timezone not stated)",
+  "offline": "isolate",
+  "offline_text": "Where that is not feasible, organisations should consider isolating internet-facing applications from public networks until a fix is applied and verified.",
+  "exploitation": "PoCs circulating; 'raises the likelihood that attackers are already exploiting'",
+  "sources": [
+   "certeu-sa-2026-018"
+  ],
+  "note": "States the fixes were released at 13:30 UTC. Lists the PHP temporary mitigations in full."
+ },
+ {
+  "agency": "ENISA CSIRTs Network",
+  "country": "EU",
+  "published": "2026-10-21",
+  "offline": "none",
+  "offline_text": "The Mitigation field still holds template placeholder text.",
+  "exploitation": "not stated",
+  "sources": [
+   "enisa-cnw-2026-04-php"
+  ],
+  "note": "An index of about 30 national advisories, work in progress: a truncated CVE in the heading and a Dutch 'en'."
+ },
+ {
+  "agency": "CERT-FR (ANSSI)",
+  "country": "FR",
+  "published": "2026-10-21",
+  "offline": "isolate first",
+  "offline_text": "Le CERT-FR recommande d'isoler les équipements affectés puis de procéder à la migration vers une version maintenue...",
+  "exploitation": "not stated",
+  "sources": [
+   "certfr-2026-ale-014"
+  ],
+  "note": "The closest to 'isolate first, then patch'. Lists all 5.x, 6.x, 7.x, 8.0 and 8.1 as affected. Workarounds: session.upload_progress off; block multipart Content-Type at a WAF."
+ },
+ {
+  "agency": "CCCS",
+  "country": "CA",
+  "published": "2026-10-21",
+  "offline": "isolate",
+  "offline_text": "Where immediate remediation is not feasible, organisations should consider isolating internet-facing applications from public networks until a fix can be applied.",
+  "exploitation": "PoC available, no active exploitation identified",
+  "sources": [
+   "cccs-al26-026",
+   "cccs-alerts"
+  ],
+  "note": "The opening of this sentence is the one the BBC attributes to the UK NCSC. The wording is shared across Five Eyes and CERT-EU text."
+ },
+ {
+  "agency": "ASD's ACSC",
+  "country": "AU",
+  "published": "2026-10-21, reviewed 2026-10-22",
+  "offline": "none",
+  "offline_text": "Identify PHP, review php.net, apply updates and mitigations, monitor.",
+  "exploitation": "not aware of successful active exploitation within Australia",
+  "sources": [
+   "acsc-alert-php",
+   "acsc-home"
+  ],
+  "note": "No take-offline or isolation advice. The BBC's 'Australian counterparts' framing is not supported by the page. Parts of the body are still pre-patch text."
+ },
+ {
+  "agency": "NCSC",
+  "country": "NZ",
+  "published": "2026-10-21T20:15Z (09:15 NZDT, 22 Oct); updated 21:20Z",
+  "offline": "none",
+  "offline_text": "Update to PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35; apply the remediation as soon as possible; investigate unauthorised access or compromise.",
+  "exploitation": "'The NCSC is aware of reports of active exploitation.'",
+  "sources": [
+   "ncsc-nz-alert-php",
+   "ncsc-nz-alerts"
+  ],
+  "note": "The only agency to say active exploitation is reported. It does not say whose reports. Time converted from NZDT by this site."
+ },
+ {
+  "agency": "NCSC-NL",
+  "country": "NL",
+  "published": "2026-10-21T15:25Z (README last significant change)",
+  "offline": "none",
+  "offline_text": "If immediate patching is not possible, follow PHP's temporary mitigations... PHP states that these measures are not complete fixes.",
+  "exploitation": "public PoC exists; no active abuse seen (portal banner)",
+  "sources": [
+   "ncsc-nl-php2shell",
+   "ncsc-nl-advisories",
+   "ncsc-nl-php2shell-software-list"
+  ],
+  "note": "Runs the public php2shell GitHub repository with the software inventory the UK NCSC cites, cPanel detection and mitigation scripts, and an SPDX/VEX source list."
+ },
+ {
+  "agency": "ACN / CSIRT Italia",
+  "country": "IT",
+  "published": "2026-10-21",
+  "offline": "none",
+  "offline_text": "Si raccomanda di aggiornare i prodotti vulnerabili.",
+  "exploitation": "not stated",
+  "sources": [
+   "acn-it-php2shell"
+  ],
+  "note": "Update only. Lists the four fixed branches and no end-of-life branches."
+ },
+ {
+  "agency": "BACS (NCSC)",
+  "country": "CH",
+  "published": "2026-10-21 (home-page teaser dated 20 Oct)",
+  "offline": "consider",
+  "offline_text": "Check, particularly for critical applications, whether a temporary disconnection from the internet or taking the system offline is necessary.",
+  "exploitation": "not stated",
+  "sources": [
+   "ch-bacs-warnung-php",
+   "ch-ncsc-home"
+  ],
+  "note": "'Even a web application firewall alone is not sufficient', which contrasts with CISA. Says containers may need to be rebuilt."
+ },
+ {
+  "agency": "CERT.LV",
+  "country": "LV",
+  "published": "2026-10-21T15:25Z; updated 20:00Z (converted from EEST)",
+  "offline": "restrict from abroad",
+  "offline_text": "Systems that cannot be updated must have internet access restricted, with no public availability until the risk is removed.",
+  "exploitation": "automated exploitation attempts seen, none successful",
+  "sources": [
+   "certlv-php-preventive"
+  ],
+  "note": "Latvia geo-blocked several state digital resources from abroad, possibly until 26 October. The unified state website platform was patched by 20:00Z; lsm.lv and 112.lv restored. Translations are this site's."
+ },
+ {
+  "agency": "JPCERT/CC",
+  "country": "JP",
+  "published": "2026-10-22",
+  "offline": "none",
+  "offline_text": "After sufficient testing, apply the fixed version promptly; investigate whether you have been compromised.",
+  "exploitation": "not stated; warns that one detection rule may miss attacks",
+  "sources": [
+   "jpcert-at260033",
+   "jpcert-home"
+  ],
+  "note": "Translations are this site's."
+ },
+ {
+  "agency": "CCN-CERT",
+  "country": "ES",
+  "published": "unknown",
+  "offline": "unknown",
+  "offline_text": "Not read: HTTP 403 bot challenge to every fetch.",
+  "exploitation": "unknown",
+  "sources": [
+   "ccn-cert-al-11-26"
+  ],
+  "note": "The title ('actualización inmediata') points to immediate-update advice. The block is recorded in the vault."
+ },
+ {
+  "agency": "CNCS",
+  "country": "PT",
+  "published": "unknown",
+  "offline": "unknown",
+  "offline_text": "Not read: HTTP 513 browser-verification challenge.",
+  "exploitation": "unknown",
+  "sources": [
+   "cncs-pt-alerta-136114"
+  ],
+  "note": "The block is recorded in the vault."
+ }
+]

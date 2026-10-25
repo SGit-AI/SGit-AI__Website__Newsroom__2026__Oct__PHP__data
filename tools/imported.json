@@ -2,8 +2,8 @@
  "data_as_of": "2026-10-22T08:48Z",
  "evidence_vault_head": "87795d121200",
  "from": {
-  "commit": "30dd7ddd60524be5e46df936bb9c01a3e58a325e",
+  "commit": "f6b51c8740814f080103bc3ae5c81290ec9778cd",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.5"
+  "site_version": "0.22.7"
  }
 }

@@ -2,7 +2,7 @@
 # Release the data: take in dev, gate, bump, publish, gate again, commit, push. In that order, every time.
 # Usage: tools/release.sh "<one sentence: what changed and why>"
 # The first release was 0.1.0; every release after it adds one to the last number (0.1.1, 0.1.2, ...), whatever it
-# changes (the editor, 26 October 2026). A change of shape (a new file, a key added or removed) is said in the message,
+# changes (the editor, 25 October 2026). A change of shape (a new file, a key added or removed) is said in the message,
 # and its schema is rewritten in the same release (tools/schema.py --again); consumers pin the version they read.
 # Never --no-verify, never a force-push, never main. A published version is never changed: this only adds one.
 set -euo pipefail
