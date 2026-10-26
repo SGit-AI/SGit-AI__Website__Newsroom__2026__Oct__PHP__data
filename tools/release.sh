@@ -18,19 +18,30 @@ if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --i
   fi
 fi
 python3 tools/gate.py >/dev/null || { python3 tools/gate.py; echo "release stopped: the gate fails before the release"; exit 1; }
-OLD="$(cat VERSION)"; IFS=. read -r MA MI PA <<< "$OLD"
-if python3 tools/publish.py --same-as "$OLD"; then
-  NEW="$OLD"; echo "nothing new to publish: v$OLD holds these files already"   # a change to the tools still commits
-else
-  if [ -d "v/$OLD" ]; then PA=$((PA+1)); fi
-  NEW="$MA.$MI.$PA"; echo "$NEW" > VERSION
-  python3 tools/publish.py
-  python3 tools/gate.py
-fi
-git add -A
-if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|\bsk-(or-v1-|proj-|ant-[a-z0-9]+-)?[A-Za-z0-9_]{32,}' ; then
-  echo "tripwire: credential shape in the staged diff; release aborted"; exit 1
-fi
-if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "v$NEW: $MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "v$NEW: $MSG"; fi
-git push -q -u origin "HEAD:$BRANCH"
-echo "pushed v$NEW to $BRANCH"
+# Several writers release here within minutes of each other. The version is taken when the push succeeds: a rejected push
+# undoes the commit and the minted version, takes in what landed, numbers again, publishes again. Five tries.
+for attempt in 1 2 3 4 5; do
+  OLD="$(cat VERSION)"; IFS=. read -r MA MI PA <<< "$OLD"
+  if python3 tools/publish.py --same-as "$OLD"; then
+    NEW="$OLD"; echo "nothing new to publish: v$OLD holds these files already"   # a change to the tools still commits
+  else
+    if [ -d "v/$OLD" ]; then PA=$((PA+1)); fi
+    NEW="$MA.$MI.$PA"; echo "$NEW" > VERSION
+    python3 tools/publish.py
+    python3 tools/gate.py
+  fi
+  git add -A
+  if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|\bsk-(or-v1-|proj-|ant-[a-z0-9]+-)?[A-Za-z0-9_]{32,}' ; then
+    echo "tripwire: credential shape in the staged diff; release aborted"; exit 1
+  fi
+  if git diff --cached --quiet; then echo "nothing to release"; exit 0; fi
+  if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "v$NEW: $MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "v$NEW: $MSG"; fi
+  if git push -q -u origin "HEAD:$BRANCH" 2>/dev/null; then echo "pushed v$NEW to $BRANCH"; exit 0; fi
+  echo "push rejected (someone released meanwhile): taking it in and numbering again ($attempt of 5)"
+  git reset -q --soft HEAD~1
+  if [ "$NEW" != "$OLD" ]; then rm -rf "v/$NEW"; fi
+  git checkout -q HEAD -- VERSION versions.json index.html latest 2>/dev/null || true
+  git fetch -q origin "$BRANCH"
+  git merge -q --ff-only "origin/$BRANCH" || { echo "release stopped: your change and someone else's touch the same file; merge origin/$BRANCH by hand and run this again"; exit 3; }
+done
+echo "release stopped: five tries, five releases by others in between; run this again"; exit 3
