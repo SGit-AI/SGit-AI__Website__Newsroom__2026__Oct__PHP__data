@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "22a0c2920b88",
-  "subject": "curator@php.newsroom (scheduled): batch 16, 18 sources from the researcher's queue (2 priority 2, 16 priority 4), 20 claims, no timeline rows; quotes and hashes checked, index rebuilt  +144 ~3  [blobs:+147 trees:+54]",
-  "commits": 35
+  "commit": "2fc7e432584b",
+  "subject": "curator@php.newsroom (scheduled): batch 17, 18 sources from the researcher's queue (1 priority 2, 17 priority 4) and 1 new capture of a held source, 16 claims, no timeline rows; quotes and hashes checked, index rebuilt  +140 ~3  [blobs:+143 trees:+55]",
+  "commits": 36
  },
- "sources": 525,
- "captures": 586,
- "hashed_files": 3429,
+ "sources": 543,
+ "captures": 605,
+ "hashed_files": 3533,
  "primary": 89,
  "blocked": 15,
  "agents": [
@@ -19,6 +19,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-26T12:14Z",
+ "latest_capture": "2026-10-26T14:42Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

@@ -1,0 +1,4340 @@
+{
+ "about": "The public shape of the Pulse vault (pulse@newsroom, for the SGit newsroom), exported by admin/build/export_pulse.py. Ladders, dates, attention counts and the short quotes Pulse recorded, each with the capture it comes from; no capture is copied and no key is kept here.",
+ "vault_id": "4klm5qlt",
+ "agent": "pulse@newsroom",
+ "head": {
+  "commit": "c27972b6de6f",
+  "message": "pulse@newsroom: a rung is 'not reached' only when an open capture shows it; GitHub search API refused (403, session proxy) in every pass so far, so rung 2 and the PR searches are 'not checked', with the blocked sources listed"
+ },
+ "commits": 8,
+ "generated": "20261024T060945Z",
+ "last_run": "20261024T055307Z",
+ "pulse_says": "Every tracked CVE: its evidence of exploitation (the rungs reached, with dates) and the attention it gets (counts), side by side. They are never combined: there is no score, no rank and no advice. Rows are in CVE order. Each row points to its ladder and attention files, which point to the captures.",
+ "rungs": {
+  "1": "A public proof of concept",
+  "2": "A nuclei template that exploits rather than only fingerprints",
+  "3": "A merged Metasploit module",
+  "4": "Exploitation attempts reported by a named party",
+  "5": "A KEV listing (the date added)",
+  "6": "knownRansomwareCampaignUse: Known on KEV",
+  "7": "A national CERT reporting compromises in its country",
+  "8": "A named organisation saying it was compromised through that flaw"
+ },
+ "vulns": [
+  {
+   "cve": "CVE-2015-3306",
+   "vendor": "ProFTPD",
+   "product": "ProFTPD",
+   "flaw": "old flaw, newly listed",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": true,
+   "why_tracked": "KEV catalog 2026.10.21: an old flaw newly listed on 8 October 2026. Evidence of exploitation now, not a new flaw.",
+   "rungs_reached": [
+    1,
+    3,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": "2015-04-13",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "NVD lists references tagged \"Exploit\" (listed, not fetched)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/nvd/cve-2015-3306/20261024T055307Z/text.txt",
+        "sha256": "e1bda56648457c73c33212d66ac02d2a73ad4cf6c79666e87138fb752990761f",
+        "captured": "20261024T055307Z",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2015-3306"
+       }
+      },
+      {
+       "status": null,
+       "date": "2015-04-13",
+       "by": null,
+       "quote": null,
+       "basis": "Exploit-DB search lists 4 entries for the CVE",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/exploit-db/cve-2015-3306/20261022T221133Z/text.txt",
+        "sha256": "d07d40f0bf42bdffd953ff56020f91335359fcc082a053332f4b1f9b876abbb3",
+        "captured": "20261022T221133Z",
+        "url": "https://www.exploit-db.com/search?cve=2015-3306"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "In the Metasploit module index (master)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/metasploit/modules-metadata/20261022T221133Z/text.txt",
+        "sha256": "2f68e2134c3c010446db3a6b1525ca8301660b88657bfb19bdf90f647a8055cc",
+        "captured": "20261022T221133Z",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-08",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-08",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "2.0",
+     "base_score": 10.0
+    },
+    {
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "version": "3.1",
+     "base_score": 10.0
+    }
+   ],
+   "epss": {
+    "score": 0.99497,
+    "percentile": 0.99946,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 12,
+    "news_items_en_us": 11,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 21,
+    "countries": 36,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2015-5477",
+   "vendor": "ISC",
+   "product": "BIND",
+   "flaw": "old flaw, newly listed",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": true,
+   "why_tracked": "KEV catalog 2026.10.21: an old flaw newly listed on 8 October 2026. Evidence of exploitation now, not a new flaw.",
+   "rungs_reached": [
+    1,
+    3,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": "2015-08-01",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "NVD lists references tagged \"Exploit\" (listed, not fetched)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/nvd/cve-2015-5477/20261024T055307Z/text.txt",
+        "sha256": "cc106a47bc6b63e0978a1cfe095f1736c49d1443f1a0e2438dc2ad9f6c76f455",
+        "captured": "20261024T055307Z",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2015-5477"
+       }
+      },
+      {
+       "status": null,
+       "date": "2015-08-01",
+       "by": null,
+       "quote": null,
+       "basis": "Exploit-DB search lists 2 entries for the CVE",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/exploit-db/cve-2015-5477/20261022T221133Z/text.txt",
+        "sha256": "9bb1fa58797e9d4295604e5059a479031794cdb007fd4f97691b1a8937a7e4d9",
+        "captured": "20261022T221133Z",
+        "url": "https://www.exploit-db.com/search?cve=2015-5477"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "In the Metasploit module index (master)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/metasploit/modules-metadata/20261022T221133Z/text.txt",
+        "sha256": "2f68e2134c3c010446db3a6b1525ca8301660b88657bfb19bdf90f647a8055cc",
+        "captured": "20261022T221133Z",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-08",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-08",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "2.0",
+     "base_score": 7.8
+    },
+    {
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "version": "3.1",
+     "base_score": 7.5
+    }
+   ],
+   "epss": {
+    "score": 0.99409,
+    "percentile": 0.99942,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 11,
+    "news_items_en_us": 11,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 19,
+    "countries": 29,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2016-3081",
+   "vendor": "Apache",
+   "product": "Struts",
+   "flaw": "old flaw, newly listed",
+   "kind_of_system": "library",
+   "brand_name": null,
+   "old_flaw_newly_listed": true,
+   "why_tracked": "KEV catalog 2026.10.21: an old flaw newly listed on 8 October 2026. Evidence of exploitation now, not a new flaw.",
+   "rungs_reached": [
+    1,
+    3,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": "2016-05-02",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "NVD lists references tagged \"Exploit\" (listed, not fetched)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/nvd/cve-2016-3081/20261024T055307Z/text.txt",
+        "sha256": "b969cc2790ea826a4d071df12e9167c92bf749420c215faa0c63d0bdea932ca8",
+        "captured": "20261024T055307Z",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2016-3081"
+       }
+      },
+      {
+       "status": null,
+       "date": "2016-05-02",
+       "by": null,
+       "quote": null,
+       "basis": "Exploit-DB search lists 1 entry for the CVE",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/exploit-db/cve-2016-3081/20261022T221133Z/text.txt",
+        "sha256": "723d32202585c850634ce4ea1f2b229c34fa90a75dcdbafaea46a81ff5a216ea",
+        "captured": "20261022T221133Z",
+        "url": "https://www.exploit-db.com/search?cve=2016-3081"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "In the Metasploit module index (master)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/metasploit/modules-metadata/20261022T221133Z/text.txt",
+        "sha256": "2f68e2134c3c010446db3a6b1525ca8301660b88657bfb19bdf90f647a8055cc",
+        "captured": "20261022T221133Z",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-08",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-08",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "2.0",
+     "base_score": 9.3
+    },
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 8.1
+    },
+    {
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "version": "3.1",
+     "base_score": 8.1
+    }
+   ],
+   "epss": {
+    "score": 0.96052,
+    "percentile": 0.99879,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 13,
+    "news_items_en_us": 11,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 23,
+    "countries": 37,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2021-3199",
+   "vendor": "ONLYOFFICE",
+   "product": "Docs",
+   "flaw": "old flaw, newly listed",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": true,
+   "why_tracked": "KEV catalog 2026.10.21: an old flaw newly listed on 8 October 2026. Evidence of exploitation now, not a new flaw.",
+   "rungs_reached": [
+    1,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "NVD lists references tagged \"Exploit\" (listed, not fetched)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/nvd/cve-2021-3199/20261024T055307Z/text.txt",
+        "sha256": "a9418ce29a9fe0db05f406e2a5c2b41193fef7175b8b91c45e2b5087efec8319",
+        "captured": "20261024T055307Z",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2021-3199"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-08",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-08",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "2.0",
+     "base_score": 7.5
+    },
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 9.8
+    },
+    {
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "version": "3.1",
+     "base_score": 9.8
+    }
+   ],
+   "epss": {
+    "score": 0.20136,
+    "percentile": 0.97454,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 13,
+    "news_items_en_us": 11,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 23,
+    "countries": 33,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2023-22894",
+   "vendor": "Strapi",
+   "product": "Strapi",
+   "flaw": "old flaw, newly listed",
+   "kind_of_system": "CMS",
+   "brand_name": null,
+   "old_flaw_newly_listed": true,
+   "why_tracked": "KEV catalog 2026.10.21: an old flaw newly listed on 8 October 2026. Evidence of exploitation now, not a new flaw.",
+   "rungs_reached": [
+    1,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "NVD lists references tagged \"Exploit\" (listed, not fetched)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/nvd/cve-2023-22894/20261024T055307Z/text.txt",
+        "sha256": "23f22edd7e3d80ce0c6e9974ebcef6ecac8690ea237e17ee2c9bd3d53b4126a4",
+        "captured": "20261024T055307Z",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2023-22894"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-08",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-08",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 4.9
+    },
+    {
+     "source": "134c704f-9b21-4f2e-91b3-4a467353bcc0",
+     "version": "3.1",
+     "base_score": 7.2
+    }
+   ],
+   "epss": {
+    "score": 0.03609,
+    "percentile": 0.89437,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 13,
+    "news_items_en_us": 10,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 24,
+    "countries": 37,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2025-61624",
+   "vendor": "Fortinet",
+   "product": "multiple products",
+   "flaw": "path traversal",
+   "kind_of_system": "edge device",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": null,
+       "by": "Fortinet (vendor advisory FG-IR-26-122, published Apr 14, 2026)",
+       "quote": "Known Exploited\tYes",
+       "basis": null,
+       "what_it_is": "The vendor's advisory marks the flaw as known exploited. The page does not date when that field was set.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/security-vendor/fortinet/fg-ir-26-122/20261022T221133Z/text.txt",
+        "sha256": "9e0a95a9bea2fe28fde62c67421b20e3fa8a99ffc8853b7c4ca9138cb54bbca9",
+        "captured": "20261022T221133Z",
+        "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-122"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-16",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-16",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "psirt@fortinet.com",
+     "version": "3.1",
+     "base_score": 6.0
+    },
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 6.5
+    }
+   ],
+   "epss": {
+    "score": 0.01081,
+    "percentile": 0.64866,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 30,
+    "news_items_en_us": 16,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 28,
+    "countries": 42,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-0322",
+   "vendor": "Palo Alto Networks",
+   "product": "PAN-OS",
+   "flaw": "code injection",
+   "kind_of_system": "edge device",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-14",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-14",
+       "by": "Palo Alto Networks (vendor advisory, published 2026-10-14, updated 2026-10-15)",
+       "quote": "Exploitation Status / Very limited exploitation has been observed targeting the Palo Alto Networks management interface.",
+       "basis": null,
+       "what_it_is": "The vendor reporting limited exploitation, with attempt IP addresses listed on the page. No victim is named.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/security-vendor/palo-alto-networks/cve-2026-0322/20261022T221133Z/text.txt",
+        "sha256": "1b2d696412dcf85cf6a8c3ce26052f0f38b9d59048215a7215d5c9148cad30b8",
+        "captured": "20261022T221133Z",
+        "url": "https://security.paloaltonetworks.com/CVE-2026-0322"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-14",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-14",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 7.2
+    },
+    {
+     "source": "psirt@paloaltonetworks.com",
+     "version": "4.0",
+     "base_score": 8.6
+    }
+   ],
+   "epss": {
+    "score": 0.01215,
+    "percentile": 0.68361,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 31,
+    "news_items_en_us": 17,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 22,
+    "countries": 34,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-102764",
+   "vendor": "BeyondTrust",
+   "product": "Remote Support",
+   "flaw": "authentication bypass",
+   "kind_of_system": "remote access",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-15",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-15",
+       "by": "BeyondTrust (vendor post, Oct 15, 2026; last updated October 16), with Mandiant",
+       "quote": "A suspected China-nexus espionage actor exploited a zero-day vulnerability. In collaboration with our Cybersecurity team, Mandiant is publishing its analysis of the same actor and vulnerability today. ... August 29, 2026: The actor exploited a zero-day vulnerability against a single BeyondTrust-hosted Remote Support instance and a single self-hosted Remote Support appliance.",
+       "basis": null,
+       "what_it_is": "The vendor reporting exploitation of two instances, one it hosts and one a customer runs. The customers are not named, so this is not a victim's own statement (rung 8).",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/security-vendor/beyondtrust/bt26-05/20261022T221133Z/text.txt",
+        "sha256": "887662720887235b23ce7ff4892d9672defa3b9c02a92b9d50b6e31d57cd6d3f",
+        "captured": "20261022T221133Z",
+        "url": "https://www.beyondtrust.com/blog/entry/bt26-05"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-16",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-16",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 9.8
+    },
+    {
+     "source": "13061848-ea10-403d-bd75-c83a022c2891",
+     "version": "4.0",
+     "base_score": 9.3
+    }
+   ],
+   "epss": {
+    "score": 0.0118,
+    "percentile": 0.67457,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 48,
+    "news_items_en_us": 24,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 23,
+    "countries": 31,
+    "front_pages": 0,
+    "agency_alerts": 4,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-104935",
+   "vendor": "Ivanti",
+   "product": "Connect Secure",
+   "flaw": "authentication bypass",
+   "kind_of_system": "VPN",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-13",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-13",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "3c1d8aa1-5a33-4ea4-8992-aadd6440af75",
+     "version": "3.1",
+     "base_score": 8.6
+    }
+   ],
+   "epss": {
+    "score": 0.25982,
+    "percentile": 0.97984,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 44,
+    "news_items_en_us": 23,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 19,
+    "countries": 30,
+    "front_pages": 0,
+    "agency_alerts": 3,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-105133",
+   "vendor": "Ahsay",
+   "product": "AhsayCBS",
+   "flaw": "improper authentication",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-14",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-14",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "cna@vuldb.com",
+     "version": "2.0",
+     "base_score": 7.5
+    },
+    {
+     "source": "cna@vuldb.com",
+     "version": "3.1",
+     "base_score": 7.3
+    },
+    {
+     "source": "cna@vuldb.com",
+     "version": "4.0",
+     "base_score": 5.5
+    }
+   ],
+   "epss": {
+    "score": 0.05794,
+    "percentile": 0.93098,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 28,
+    "news_items_en_us": 13,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 25,
+    "countries": 36,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-105134",
+   "vendor": "Ahsay",
+   "product": "AhsayCBS",
+   "flaw": "command injection",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-14",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-14",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "cna@vuldb.com",
+     "version": "2.0",
+     "base_score": 10.0
+    },
+    {
+     "source": "cna@vuldb.com",
+     "version": "3.1",
+     "base_score": 10.0
+    },
+    {
+     "source": "cna@vuldb.com",
+     "version": "4.0",
+     "base_score": 9.3
+    }
+   ],
+   "epss": {
+    "score": 0.3831,
+    "percentile": 0.98568,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 33,
+    "news_items_en_us": 13,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 29,
+    "countries": 47,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-106931",
+   "vendor": "EG Secure Solutions",
+   "product": "SiteGuard Server Edition",
+   "flaw": "OS command injection",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-14",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-14",
+       "by": "EG Secure Solutions (vendor alert, 2026年10月14日)",
+       "quote": "SiteGuard Server Edition の統計機能に、OSコマンドインジェクションの脆弱性（CVE-2026-106931）が見つかりました。すでに悪用が確認されています。",
+       "basis": null,
+       "what_it_is": "The vendor stating exploitation has already been confirmed (\"すでに悪用が確認されています\"). The page adds that customers with support contracts were told individually on 2026年9月29日. No victim is named.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/jp/security-vendor/eg-secure/siteguard-alert-202610-1/20261022T221133Z/text.txt",
+        "sha256": "91e8f0dd365b313cf0c8a65bc040b80b13038558f1132de0c7a9ed7bc10618f0",
+        "captured": "20261022T221133Z",
+        "url": "https://www.eg-secure.co.jp/siteguard/news/alert-202610-1"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-20",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-20",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "vultures@jpcert.or.jp",
+     "version": "3.0",
+     "base_score": 7.8
+    },
+    {
+     "source": "vultures@jpcert.or.jp",
+     "version": "4.0",
+     "base_score": 8.5
+    }
+   ],
+   "epss": {
+    "score": 0.0117,
+    "percentile": 0.67173,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 30,
+    "news_items_en_us": 16,
+    "feeds_checked": 53,
+    "news_feeds_total": 137,
+    "languages": 30,
+    "countries": 49,
+    "front_pages": 0,
+    "agency_alerts": 3,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-109618",
+   "vendor": "PHP Group",
+   "product": "PHP",
+   "flaw": "out-of-memory longjmp (php2shell)",
+   "kind_of_system": "web runtime",
+   "brand_name": "php2shell",
+   "old_flaw_newly_listed": false,
+   "why_tracked": "The reference case: maximum attention. Its record is read from the source watch (vault oq9gflln), never copied.",
+   "rungs_reached": [
+    1,
+    4
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": "2026-10-21",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-22",
+       "by": null,
+       "quote": null,
+       "basis": "Exploit-DB search lists 1 entry for the CVE",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/exploit-db/cve-2026-109618/20261022T221133Z/text.txt",
+        "sha256": "883e76fd75a586ed8f53f68eb59a8ebf46be25b171939c0628456de724ca3ec4",
+        "captured": "20261022T221133Z",
+        "url": "https://www.exploit-db.com/search?cve=2026-109618"
+       }
+      },
+      {
+       "status": "reached",
+       "date": "2026-10-21",
+       "by": "Canadian Centre for Cyber Security (CCCS), citing open-source reporting",
+       "quote": "The Cyber Centre has observed open-source reporting indicating that a Proof of Concept (PoC) is available, with no active exploitation being identified at this time, but that can change quickly.",
+       "basis": null,
+       "what_it_is": "An agency relaying open-source reporting that a PoC is available (alert AL26-026, dated October 21, 2026). Not a PoC Pulse has seen; PoC code is never fetched.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/ca/cert/cccs/cccs-al26-026/20261022T171501Z/text.txt",
+        "sha256": "9e7f44cc73e21ad54d1caf36c5273a289839c76ff1e1ac35bf377e4645ad91a2",
+        "captured": "20261022T171501Z",
+        "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619"
+       }
+      },
+      {
+       "status": "reached",
+       "date": "2026-10-22",
+       "by": "The Hacker News",
+       "quote": "Originally scheduled for coordinated disclosure on October 22, 2026, at 2:00 p.m. UTC, details about the CVE identifiers and a proof-of-concept (PoC) exploit leaked ahead of time, prompting the PHP Foundation to move the release forward by one day.",
+       "basis": null,
+       "what_it_is": "Press report that a PoC leaked before the release; the article is dated Oct 22, 2026.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/in/tech-press/the-hacker-news/thehackernews-php2shell-4days/20261022T181608Z/text.txt",
+        "sha256": "273acad7dd739f2ed9f80616540c020b0031f037a5a413106d875b0f84d7bd50",
+        "captured": "20261022T181608Z",
+        "url": null
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-21",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-21",
+       "by": "watchTowr (its own page)",
+       "quote": "October 21, 2026: watchTowr’s Attacker Eye honeypot network observed exploitation of CVE-2026-109618 and CVE-2026-109619 in the wild.",
+       "basis": null,
+       "what_it_is": "A named security firm reporting exploitation seen on its honeypot network: attempts against honeypots, not a compromise of a named victim.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/sg/research/watchtowr/watchtowr-php2shell/20261022T181608Z/text.txt",
+        "sha256": "55a97edaa433ea7d0b3e5f90927ad37234f32e886e7e9d5b58296433ae956a29",
+        "captured": "20261022T181608Z",
+        "url": null
+       }
+      },
+      {
+       "status": "reached",
+       "date": "2026-10-22",
+       "by": "Amazon Threat Intelligence (MadPot), as reported by Infosecurity Magazine",
+       "quote": "Now the patches have been released, the Amazon Threat Intelligence team has publically confirmed they observed a PHP2Shell exploitation attempt dating October 17. The attempt occurred in MadPot, an internal honeypot system created by Amazon Web Services (AWS) to monitor, study and disrupt global cybercrime.",
+       "basis": null,
+       "what_it_is": "A named party reporting an attempt against its honeypot, relayed by the press. The flaws are named as PHP2Shell, not by CVE.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/gb/news/infosecurity-magazine/news-php2shell-exploitation-attempt/20261022T171501Z/text.txt",
+        "sha256": "4e502c06c4a4da1d060b65219695bc574bbbcb79f33ce3316560c55ba03adca0",
+        "captured": "20261022T171501Z",
+        "url": null
+       }
+      }
+     ],
+     "reported_not_established": [
+      {
+       "status": "contradicted",
+       "date": "2026-10-21",
+       "by": "Canadian Centre for Cyber Security (CCCS)",
+       "quote": "with no active exploitation being identified at this time, but that can change quickly.",
+       "basis": null,
+       "what_it_is": "An agency saying, the same day, that it had identified no active exploitation. Recorded beside the reports above, not weighed against them.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/ca/cert/cccs/cccs-al26-026/20261022T171501Z/text.txt",
+        "sha256": "9e7f44cc73e21ad54d1caf36c5273a289839c76ff1e1ac35bf377e4645ad91a2",
+        "captured": "20261022T171501Z",
+        "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619"
+       }
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": [
+      {
+       "status": "reported, not established",
+       "date": "2026-10-22",
+       "by": "ČVUT (Czech Technical University), quoted by Lupa.cz",
+       "quote": "ČVUT v současnosti řeší kybernetický útok na svou IT infrastrukturu. Jedná se o součást celosvětových pokusů zasáhnout weby s technologií PHP. Aktivní útok se podařilo zastavit",
+       "basis": null,
+       "what_it_is": "A named organisation describing an attack, part of worldwide attempts against PHP sites, that was stopped: an attempt, not a stated compromise through the flaw. Lupa.cz adds it is not yet clear the outage relates to PHP2Shell. Read from the watch's contradiction compromise-cvut, open.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/cz/tech-press/lupa/cvut-cyber-attack/20261022T191510Z/text.txt",
+        "sha256": "0a0abb12fccb6fbccc2b675a8f1b26cc2ab83cfceb120010a8b4cb27effdd337",
+        "captured": "20261022T191510Z",
+        "url": null
+       }
+      },
+      {
+       "status": "reported, not established",
+       "date": "2026-10-21",
+       "by": "DMM, via Sankei",
+       "quote": "to respond to a vulnerability found in external software (as summarised in the watch; DMM would not confirm a link to PHP)",
+       "basis": null,
+       "what_it_is": "A named company's emergency maintenance, no stated link to PHP. Read from the watch's contradiction compromise-dmm, open.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/jp/news/sankei/dmm-service-halt/20261022T191536Z/text.txt",
+        "sha256": "8baf5de68d8527ed2167041c1b91cafb575afa7165abb55cab5566fcd9e2d610",
+        "captured": "20261022T191536Z",
+        "url": null
+       }
+      },
+      {
+       "status": "reported, not established",
+       "date": "2026-10-20",
+       "by": "GMO Internet Group, via J-CAST / Yahoo! News Japan",
+       "quote": "Unauthorised programs found on 20 October on some servers (as summarised in the watch); the article does not name PHP or php2shell",
+       "basis": null,
+       "what_it_is": "A confirmed compromise of named systems with no stated cause. Coincidence in time is not attribution. Read from the watch's contradiction compromise-gmo-fx-vps, open.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/jp/news/yahoo-news-jp/gmo-fx-login-leak/20261022T191523Z/text.txt",
+        "sha256": "f3823c3f22ffbc12645f52b502bdce26ced07bcb0865b7d9fb26529e49c85c0b",
+        "captured": "20261022T191523Z",
+        "url": null
+       }
+      },
+      {
+       "status": "retracted",
+       "date": "2026-10-22",
+       "by": "Valtec, via INTERNET Watch",
+       "quote": "PHPの脆弱性を標的としたサイバー攻撃 (first statement) / 我々のサービス自体の脆弱性 (correction)",
+       "basis": null,
+       "what_it_is": "A first attribution to the PHP flaw, corrected by the company the same day: its own service's flaw was exploited. Read from the watch's contradiction compromise-valtec, resolved.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/jp/tech-press/impress-watch/valtec-php-attack/20261022T191433Z/text.txt",
+        "sha256": "8eb3458dda2e5e8f5ae7763944d9c1d9fe1733285b87b6b21481c02b28d7fd76",
+        "captured": "20261022T191433Z",
+        "url": null
+       }
+      }
+     ]
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 9.8
+    },
+    {
+     "source": "security@php.net",
+     "version": "4.0",
+     "base_score": 9.2
+    }
+   ],
+   "epss": {
+    "score": 0.1162,
+    "percentile": 0.96047,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 295,
+    "news_items_en_us": 175,
+    "feeds_checked": 55,
+    "news_feeds_total": 274,
+    "languages": 30,
+    "countries": 49,
+    "front_pages": 7,
+    "agency_alerts": 64,
+    "offline_advice": 47,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-109619",
+   "vendor": "PHP Group",
+   "product": "PHP",
+   "flaw": "global state into request memory (php2shell)",
+   "kind_of_system": "web runtime",
+   "brand_name": "php2shell",
+   "old_flaw_newly_listed": false,
+   "why_tracked": "The reference case: maximum attention. Its record is read from the source watch (vault oq9gflln), never copied.",
+   "rungs_reached": [
+    1,
+    4
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": "2026-10-21",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-21",
+       "by": "Canadian Centre for Cyber Security (CCCS), citing open-source reporting",
+       "quote": "The Cyber Centre has observed open-source reporting indicating that a Proof of Concept (PoC) is available, with no active exploitation being identified at this time, but that can change quickly.",
+       "basis": null,
+       "what_it_is": "An agency relaying open-source reporting that a PoC is available (alert AL26-026, dated October 21, 2026). Not a PoC Pulse has seen; PoC code is never fetched.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/ca/cert/cccs/cccs-al26-026/20261022T171501Z/text.txt",
+        "sha256": "9e7f44cc73e21ad54d1caf36c5273a289839c76ff1e1ac35bf377e4645ad91a2",
+        "captured": "20261022T171501Z",
+        "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619"
+       }
+      },
+      {
+       "status": "reached",
+       "date": "2026-10-22",
+       "by": "The Hacker News",
+       "quote": "Originally scheduled for coordinated disclosure on October 22, 2026, at 2:00 p.m. UTC, details about the CVE identifiers and a proof-of-concept (PoC) exploit leaked ahead of time, prompting the PHP Foundation to move the release forward by one day.",
+       "basis": null,
+       "what_it_is": "Press report that a PoC leaked before the release; the article is dated Oct 22, 2026.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/in/tech-press/the-hacker-news/thehackernews-php2shell-4days/20261022T181608Z/text.txt",
+        "sha256": "273acad7dd739f2ed9f80616540c020b0031f037a5a413106d875b0f84d7bd50",
+        "captured": "20261022T181608Z",
+        "url": null
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-21",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-21",
+       "by": "watchTowr (its own page)",
+       "quote": "October 21, 2026: watchTowr’s Attacker Eye honeypot network observed exploitation of CVE-2026-109618 and CVE-2026-109619 in the wild.",
+       "basis": null,
+       "what_it_is": "A named security firm reporting exploitation seen on its honeypot network: attempts against honeypots, not a compromise of a named victim.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/sg/research/watchtowr/watchtowr-php2shell/20261022T181608Z/text.txt",
+        "sha256": "55a97edaa433ea7d0b3e5f90927ad37234f32e886e7e9d5b58296433ae956a29",
+        "captured": "20261022T181608Z",
+        "url": null
+       }
+      },
+      {
+       "status": "reached",
+       "date": "2026-10-22",
+       "by": "Amazon Threat Intelligence (MadPot), as reported by Infosecurity Magazine",
+       "quote": "Now the patches have been released, the Amazon Threat Intelligence team has publically confirmed they observed a PHP2Shell exploitation attempt dating October 17. The attempt occurred in MadPot, an internal honeypot system created by Amazon Web Services (AWS) to monitor, study and disrupt global cybercrime.",
+       "basis": null,
+       "what_it_is": "A named party reporting an attempt against its honeypot, relayed by the press. The flaws are named as PHP2Shell, not by CVE.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/gb/news/infosecurity-magazine/news-php2shell-exploitation-attempt/20261022T171501Z/text.txt",
+        "sha256": "4e502c06c4a4da1d060b65219695bc574bbbcb79f33ce3316560c55ba03adca0",
+        "captured": "20261022T171501Z",
+        "url": null
+       }
+      }
+     ],
+     "reported_not_established": [
+      {
+       "status": "contradicted",
+       "date": "2026-10-21",
+       "by": "Canadian Centre for Cyber Security (CCCS)",
+       "quote": "with no active exploitation being identified at this time, but that can change quickly.",
+       "basis": null,
+       "what_it_is": "An agency saying, the same day, that it had identified no active exploitation. Recorded beside the reports above, not weighed against them.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/ca/cert/cccs/cccs-al26-026/20261022T171501Z/text.txt",
+        "sha256": "9e7f44cc73e21ad54d1caf36c5273a289839c76ff1e1ac35bf377e4645ad91a2",
+        "captured": "20261022T171501Z",
+        "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-026-critical-vulnerabilities-impacting-php-cve-2026-109618-cve-2026-109619"
+       }
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": [
+      {
+       "status": "reported, not established",
+       "date": "2026-10-22",
+       "by": "ČVUT (Czech Technical University), quoted by Lupa.cz",
+       "quote": "ČVUT v současnosti řeší kybernetický útok na svou IT infrastrukturu. Jedná se o součást celosvětových pokusů zasáhnout weby s technologií PHP. Aktivní útok se podařilo zastavit",
+       "basis": null,
+       "what_it_is": "A named organisation describing an attack, part of worldwide attempts against PHP sites, that was stopped: an attempt, not a stated compromise through the flaw. Lupa.cz adds it is not yet clear the outage relates to PHP2Shell. Read from the watch's contradiction compromise-cvut, open.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/cz/tech-press/lupa/cvut-cyber-attack/20261022T191510Z/text.txt",
+        "sha256": "0a0abb12fccb6fbccc2b675a8f1b26cc2ab83cfceb120010a8b4cb27effdd337",
+        "captured": "20261022T191510Z",
+        "url": null
+       }
+      },
+      {
+       "status": "reported, not established",
+       "date": "2026-10-21",
+       "by": "DMM, via Sankei",
+       "quote": "to respond to a vulnerability found in external software (as summarised in the watch; DMM would not confirm a link to PHP)",
+       "basis": null,
+       "what_it_is": "A named company's emergency maintenance, no stated link to PHP. Read from the watch's contradiction compromise-dmm, open.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/jp/news/sankei/dmm-service-halt/20261022T191536Z/text.txt",
+        "sha256": "8baf5de68d8527ed2167041c1b91cafb575afa7165abb55cab5566fcd9e2d610",
+        "captured": "20261022T191536Z",
+        "url": null
+       }
+      },
+      {
+       "status": "reported, not established",
+       "date": "2026-10-20",
+       "by": "GMO Internet Group, via J-CAST / Yahoo! News Japan",
+       "quote": "Unauthorised programs found on 20 October on some servers (as summarised in the watch); the article does not name PHP or php2shell",
+       "basis": null,
+       "what_it_is": "A confirmed compromise of named systems with no stated cause. Coincidence in time is not attribution. Read from the watch's contradiction compromise-gmo-fx-vps, open.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/jp/news/yahoo-news-jp/gmo-fx-login-leak/20261022T191523Z/text.txt",
+        "sha256": "f3823c3f22ffbc12645f52b502bdce26ced07bcb0865b7d9fb26529e49c85c0b",
+        "captured": "20261022T191523Z",
+        "url": null
+       }
+      },
+      {
+       "status": "retracted",
+       "date": "2026-10-22",
+       "by": "Valtec, via INTERNET Watch",
+       "quote": "PHPの脆弱性を標的としたサイバー攻撃 (first statement) / 我々のサービス自体の脆弱性 (correction)",
+       "basis": null,
+       "what_it_is": "A first attribution to the PHP flaw, corrected by the company the same day: its own service's flaw was exploited. Read from the watch's contradiction compromise-valtec, resolved.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/jp/tech-press/impress-watch/valtec-php-attack/20261022T191433Z/text.txt",
+        "sha256": "8eb3458dda2e5e8f5ae7763944d9c1d9fe1733285b87b6b21481c02b28d7fd76",
+        "captured": "20261022T191433Z",
+        "url": null
+       }
+      }
+     ]
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 8.1
+    },
+    {
+     "source": "security@php.net",
+     "version": "4.0",
+     "base_score": 9.2
+    }
+   ],
+   "epss": {
+    "score": 0.05991,
+    "percentile": 0.933,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 260,
+    "news_items_en_us": 183,
+    "feeds_checked": 30,
+    "news_feeds_total": 274,
+    "languages": 15,
+    "countries": 24,
+    "front_pages": 7,
+    "agency_alerts": 64,
+    "offline_advice": 47,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-110264",
+   "vendor": "GitLab",
+   "product": "GitLab CE/EE",
+   "flaw": "unauthenticated remote code execution (CVSS 10.0)",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "Seen in the source watch on 22 October: The Hacker News homepage, \"Critical GitLab Flaw (CVSS 10.0) Could Allow Unauthenticated RCE Across 12 Years of Releases\" (watch/sources/in/tech-press/the-hacker-news/homepage). The CVE id is from NVD (published 2026-10-22, all versions from 7.0), matched by the description; the article as captured names no CVE id.",
+   "rungs_reached": [],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "cve@gitlab.com",
+     "version": "3.1",
+     "base_score": 10.0
+    }
+   ],
+   "epss": {
+    "score": 0.00505,
+    "percentile": 0.42271,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 22,
+    "news_items_en_us": 22,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 1,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-110936",
+   "vendor": "Siemens",
+   "product": "Software Center",
+   "flaw": "uncontrolled search path",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-19",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-19",
+       "by": "Siemens (vendor, its ProductCERT news post of October 19, 2026)",
+       "quote": "Siemens has validated that there is an active exploitation of CVE-2026-110936, a DLL side-loading vulnerability in Siemens Software Center.",
+       "basis": null,
+       "what_it_is": "The vendor stating active exploitation. No victim is named.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/de/security-vendor/siemens/news-active-exploitation-cve-2026-110936/20261022T221133Z/text.txt",
+        "sha256": "50da27972b33750d79a020baf3dc705a0690b1f4b928d2dd03b1bc370ea019c5",
+        "captured": "20261022T221133Z",
+        "url": "https://productcert.siemens.com/news/2026/10/19/active-exploitation-of-cve-2026-110936-in-siemens-software-center/"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-20",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-20",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "productcert@siemens.com",
+     "version": "3.1",
+     "base_score": 6.7
+    },
+    {
+     "source": "productcert@siemens.com",
+     "version": "4.0",
+     "base_score": 8.4
+    }
+   ],
+   "epss": {
+    "score": 0.00238,
+    "percentile": 0.14021,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 17,
+    "news_items_en_us": 17,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-21589",
+   "vendor": "Atlassian",
+   "product": "multiple products (Data Center)",
+   "flaw": "files exposed",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": [
+      {
+       "status": "contradicted",
+       "date": null,
+       "by": "Atlassian (CONFSERVER-104488)",
+       "quote": "Affected Atlassian Cloud products have been patched, and our investigation has not found any evidence of exploitation. No Cloud customer action is required.",
+       "basis": null,
+       "what_it_is": "The vendor on its Cloud products; KEV lists the flaw as exploited. The statement covers Cloud, not Data Center.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/au/security-vendor/atlassian/confserver-104488/20261022T221133Z/text.txt",
+        "sha256": "db843633e64f4cc807553159780d20c3d84a6ccfe24d69ef95436cbe9dd4684c",
+        "captured": "20261022T221133Z",
+        "url": "https://jira.atlassian.com/browse/CONFSERVER-104488"
+       }
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-15",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-15",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "nvd@nist.gov",
+     "version": "3.1",
+     "base_score": 7.5
+    },
+    {
+     "source": "security@atlassian.com",
+     "version": "4.0",
+     "base_score": 9.3
+    }
+   ],
+   "epss": {
+    "score": 0.12711,
+    "percentile": 0.96263,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 39,
+    "news_items_en_us": 39,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-31431",
+   "vendor": "Linux",
+   "product": "kernel",
+   "flaw": "local privilege escalation (\"Copy Fail\")",
+   "kind_of_system": "OS",
+   "brand_name": "Copy Fail",
+   "old_flaw_newly_listed": false,
+   "why_tracked": "Seen in the source watch on 22 October: CERT-EU advisory 2026-005 says a public PoC has been released (watch/sources/eu/cert/cert-eu/security-advisories). Disclosed 29 April 2026; in KEV since 2026-05-01.",
+   "rungs_reached": [
+    1,
+    3,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "reached",
+     "date": "2026-04-30",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "NVD lists references tagged \"Exploit\" (listed, not fetched)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/nvd/cve-2026-31431/20261024T055307Z/text.txt",
+        "sha256": "fe48214388ce6f2832f8683f2d160194814895ea42912eb23f71d71e780595b2",
+        "captured": "20261024T055307Z",
+        "url": "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-31431"
+       }
+      },
+      {
+       "status": "reached",
+       "date": "2026-04-30",
+       "by": "CERT-EU (advisory 2026-005, Thursday, April 30, 2026)",
+       "quote": "On 29 April 2026, a high local privilege escalation vulnerability in the Linux kernel, tracked as CVE-2026-31431 and named \"Copy Fail\", was publicly disclosed. ... A public proof-of-concept exploit has been released.",
+       "basis": null,
+       "what_it_is": "An EU CERT stating a public PoC exists.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/eu/cert/cert-eu/security-advisories/20261022T150854Z/text.txt",
+        "sha256": "3bb126bc5e5780283d145f3afab68dafe4460f7c473cb56f63c14208b4359be6",
+        "captured": "20261022T150854Z",
+        "url": "https://cert.europa.eu/publications/security-advisories"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "reached",
+     "date": null,
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": null,
+       "by": null,
+       "quote": null,
+       "basis": "In the Metasploit module index (master)",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/weaponisation/metasploit/modules-metadata/20261022T221133Z/text.txt",
+        "sha256": "2f68e2134c3c010446db3a6b1525ca8301660b88657bfb19bdf90f647a8055cc",
+        "captured": "20261022T221133Z",
+        "url": "https://raw.githubusercontent.com/rapid7/metasploit-framework/master/db/modules_metadata_base.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-05-01",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-05-01",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "416baaa9-dc9f-4396-8d5f-8c081fb06d67",
+     "version": "3.1",
+     "base_score": 7.8
+    },
+    {
+     "source": "0b0ca135-0b70-47e7-9f44-1890c2a1c46c",
+     "version": "3.1",
+     "base_score": 7.8
+    }
+   ],
+   "epss": {
+    "score": 0.03437,
+    "percentile": 0.8891,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 25,
+    "news_items_en_us": 25,
+    "feeds_checked": 55,
+    "news_feeds_total": 274,
+    "languages": 18,
+    "countries": 27,
+    "front_pages": 0,
+    "agency_alerts": 3,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-50522",
+   "vendor": "Microsoft",
+   "product": "SharePoint",
+   "flaw": "deserialization, remote code execution",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "Seen in the source watch on 22 October: CERT-EU advisory 2026-009 reports active exploitation after a public PoC (watch/sources/eu/cert/cert-eu/security-advisories). In KEV since 2026-07-22: older than the two weeks.",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": [
+      {
+       "status": "reported, not established as public",
+       "date": "2026-07-20",
+       "by": "watchTowr, as reported by CERT-EU",
+       "quote": "On 20 July 2026, WatchTowr identified a proof-of-concept exploit code",
+       "basis": null,
+       "what_it_is": "The advisory says a PoC was identified; it does not say the PoC is public.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/eu/cert/cert-eu/security-advisories/20261022T150854Z/text.txt",
+        "sha256": "3bb126bc5e5780283d145f3afab68dafe4460f7c473cb56f63c14208b4359be6",
+        "captured": "20261022T150854Z",
+        "url": "https://cert.europa.eu/publications/security-advisories"
+       }
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-07-23",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-07-23",
+       "by": "watchTowr, as reported by CERT-EU (advisory 2026-009, Thursday, July 23, 2026)",
+       "quote": "On 20 July 2026, WatchTowr identified a proof-of-concept exploit code and subsequently observed active exploitation of CVE-2026-50522, a vulnerability part of an ongoing series of actively exploited flaws affecting on-premise SharePoint Server instances",
+       "basis": null,
+       "what_it_is": "An EU CERT relaying a named firm's observation of active exploitation. No victim is named.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/eu/cert/cert-eu/security-advisories/20261022T150854Z/text.txt",
+        "sha256": "3bb126bc5e5780283d145f3afab68dafe4460f7c473cb56f63c14208b4359be6",
+        "captured": "20261022T150854Z",
+        "url": "https://cert.europa.eu/publications/security-advisories"
+       }
+      }
+     ],
+     "reported_not_established": [
+      {
+       "status": "contradicted",
+       "date": null,
+       "by": "Microsoft MSRC",
+       "quote": "The following table provides an exploitability assessment for this vulnerability at the time of original publication. / Publicly disclosed / No / Exploited / No / Exploitability assessment / Exploitation More Likely",
+       "basis": null,
+       "what_it_is": "The vendor's table \"at the time of original publication\" (14 July), before the exploitation CERT-EU reports from 20 July. Recorded beside it, not weighed against it.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/security-vendor/microsoft-msrc/cve-2026-50522/20261022T221133Z/text.txt",
+        "sha256": "332fd2062bb45158c16fb2ff72c714c1c696b2142b6858e55382721e4a2899d8",
+        "captured": "20261022T221133Z",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-50522"
+       }
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-07-22",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-07-22",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "secure@microsoft.com",
+     "version": "3.1",
+     "base_score": 9.8
+    }
+   ],
+   "epss": {
+    "score": 0.03042,
+    "percentile": 0.8744,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 1,
+    "news_items_en_us": 1,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 4,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-73570",
+   "vendor": "Synacor",
+   "product": "Zimbra Collaboration",
+   "flaw": "remote code execution",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "Seen in the source watch on 22 October: CSIRT Italia bulletin of 5 October 2026 reports multiple compromised systems in Italy (watch/sources/it/cert/acn/csirt-italia). In KEV since 2026-08-21: older than the two weeks, tracked for the national CERT rung.",
+   "rungs_reached": [
+    5,
+    7
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-08-21",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-08-21",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "reached",
+     "date": "2026-10-05",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-05",
+       "by": "CSIRT Italia (ACN), Italy",
+       "quote": "Bollettino - 05/10/26 14:24 / Zimbra ZCS: rilevato sfruttamento di vulnerabilità in versioni non aggiornate / Questo CSIRT ha rilevato, nel contesto nazionale, molteplici compromissioni di sistemi Zimbra Collaboration Suite esposti su rete pubblica, ascrivibili in larga parte allo sfruttamento della vulnerabilità CVE-2026-73570 e, in misura minore, di ulteriori falle note su istanze non aggiornate o obsolete. I vettori analizzati evidenziano l'esecuzione remota di codice con i privilegi dell'utenza applicativa e il mantenimento dell'accesso mediante webshell e attività pianificate.",
+       "basis": null,
+       "what_it_is": "A national CERT reporting multiple compromises of systems in its country, attributed in large part to this CVE, with webshells and scheduled tasks. No victim is named.",
+       "capture": {
+        "vault": "watch:oq9gflln",
+        "path": "raw/it/cert/acn/csirt-italia/20261022T150854Z/text.txt",
+        "sha256": "017a44aaca479c2ddb41f14e111e1ca4d8b023531f9578d71ac6c67252101953",
+        "captured": "20261022T150854Z",
+        "url": "https://www.acn.gov.it/portale/en/csirt-italia"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "cve@mitre.org",
+     "version": "3.1",
+     "base_score": 8.9
+    }
+   ],
+   "epss": {
+    "score": 0.71663,
+    "percentile": 0.99422,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 16,
+    "news_items_en_us": 16,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 2,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-76519",
+   "vendor": "Cisco",
+   "product": "Secure Email Gateway",
+   "flaw": "path traversal",
+   "kind_of_system": "mail gateway",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-14",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-14",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "psirt@cisco.com",
+     "version": "3.1",
+     "base_score": 9.8
+    }
+   ],
+   "epss": {
+    "score": 0.01573,
+    "percentile": 0.75231,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 22,
+    "news_items_en_us": 22,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-96652",
+   "vendor": "Plex",
+   "product": "Media Server",
+   "flaw": "SSRF",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-20",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-20",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "3.1",
+     "base_score": 4.3
+    },
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "4.0",
+     "base_score": 5.3
+    }
+   ],
+   "epss": {
+    "score": 0.00455,
+    "percentile": 0.38559,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 15,
+    "news_items_en_us": 15,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-96654",
+   "vendor": "Plex",
+   "product": "Media Server",
+   "flaw": "encoded URI scheme",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-20",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-20",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "3.1",
+     "base_score": 6.5
+    },
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "4.0",
+     "base_score": 6.9
+    }
+   ],
+   "epss": {
+    "score": 0.00465,
+    "percentile": 0.39325,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 13,
+    "news_items_en_us": 13,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-96655",
+   "vendor": "Plex",
+   "product": "Media Server",
+   "flaw": "SSRF",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-20",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-20",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "3.1",
+     "base_score": 4.3
+    },
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "4.0",
+     "base_score": 5.3
+    }
+   ],
+   "epss": {
+    "score": 0.00455,
+    "percentile": 0.3856,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 13,
+    "news_items_en_us": 13,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-96656",
+   "vendor": "Plex",
+   "product": "Media Server",
+   "flaw": "file name or path control",
+   "kind_of_system": "server app",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-20",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-20",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "3.1",
+     "base_score": 7.2
+    },
+    {
+     "source": "9119a7d8-5eab-497f-8521-727c672e3725",
+     "version": "4.0",
+     "base_score": 8.6
+    }
+   ],
+   "epss": {
+    "score": 0.00816,
+    "percentile": 0.56677,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 16,
+    "news_items_en_us": 16,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  },
+  {
+   "cve": "CVE-2026-96951",
+   "vendor": "Microsoft",
+   "product": "Windows",
+   "flaw": "command injection",
+   "kind_of_system": "OS",
+   "brand_name": null,
+   "old_flaw_newly_listed": false,
+   "why_tracked": "KEV catalog 2026.10.21: added in the two weeks from 8 to 22 October 2026",
+   "rungs_reached": [
+    4,
+    5
+   ],
+   "rungs": [
+    {
+     "n": 1,
+     "rung": "A public proof of concept",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 2,
+     "rung": "A nuclei template that exploits rather than only fingerprints",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "not checked: every source for this rung was blocked or has not been fetched yet",
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 3,
+     "rung": "A merged Metasploit module",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 4,
+     "rung": "Exploitation attempts reported by a named party",
+     "status": "reached",
+     "date": "2026-10-13",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": "reached",
+       "date": "2026-10-13",
+       "by": "Microsoft MSRC (released Oct 13, 2026)",
+       "quote": "Publicly disclosed / No / Exploited / Yes / Exploitability assessment / Exploitation Detected",
+       "basis": null,
+       "what_it_is": "The vendor's exploitability table at original publication. No victim is named.",
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/security-vendor/microsoft-msrc/cve-2026-96951/20261022T221133Z/text.txt",
+        "sha256": "9caa9ad0c199d2955cb688c4c6b0e42e63b8f68c5ea464a20e5876c168338510",
+        "captured": "20261022T221133Z",
+        "url": "https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-96951"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 5,
+     "rung": "A KEV listing (the date added)",
+     "status": "reached",
+     "date": "2026-10-13",
+     "last_checked": null,
+     "note": null,
+     "evidence": [
+      {
+       "status": null,
+       "date": "2026-10-13",
+       "by": null,
+       "quote": null,
+       "basis": "KEV catalog 2026.10.23",
+       "what_it_is": null,
+       "capture": {
+        "vault": "pulse",
+        "path": "raw/us/registry/cisa-kev/kev-json/20261024T055307Z/text.txt",
+        "sha256": "c2c53427f552e3cf31b9feb7e056b56b2530cc00e65d90f1027ec607707af1e3",
+        "captured": "20261024T055307Z",
+        "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+       }
+      }
+     ],
+     "reported_not_established": []
+    },
+    {
+     "n": 6,
+     "rung": "knownRansomwareCampaignUse: Known on KEV",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 7,
+     "rung": "A national CERT reporting compromises in its country",
+     "status": "not reached",
+     "date": null,
+     "last_checked": "20261024T055307Z",
+     "note": null,
+     "evidence": [],
+     "reported_not_established": []
+    },
+    {
+     "n": 8,
+     "rung": "A named organisation saying it was compromised through that flaw",
+     "status": "not checked",
+     "date": null,
+     "last_checked": null,
+     "note": "a victim's own statement is recorded by hand from a capture; none recorded",
+     "evidence": [],
+     "reported_not_established": []
+    }
+   ],
+   "cvss": [
+    {
+     "source": "secure@microsoft.com",
+     "version": "3.1",
+     "base_score": 8.8
+    }
+   ],
+   "epss": {
+    "score": 0.01512,
+    "percentile": 0.74285,
+    "date": "2026-10-23"
+   },
+   "attention": {
+    "news_items": 40,
+    "news_items_en_us": 40,
+    "feeds_checked": 2,
+    "news_feeds_total": 137,
+    "languages": 1,
+    "countries": 1,
+    "front_pages": 0,
+    "agency_alerts": 0,
+    "offline_advice": 0,
+    "window_since": "2026-09-24T06:09:45Z",
+    "about": "items published in the 30 days before the build, deduplicated by link, across the editions checked so far; items_en_us is the Google News and Bing News en-US pair every CVE has, the like-for-like count"
+   }
+  }
+ ]
+}

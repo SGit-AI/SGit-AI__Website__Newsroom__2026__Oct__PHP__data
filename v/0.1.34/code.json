@@ -1,0 +1,191 @@
+{
+ "repo": "https://github.com/php/php-src",
+ "clone_note": "Read from a shallow clone of php/php-src made by this site's agent on 22 October 2026: tags php-8.5.11 and php-8.5.12, branches PHP-8.5, PHP-8.4 and PHP-7.4-CVE-2026-109618-109619. The commit metadata, file lists and the engine hunks are stored in the vault with SHA-256 sums.",
+ "fix": {
+  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
+  "short": "3584a98bd",
+  "subject": "Avoid state corruption via bailout",
+  "author": "Arnaud Le Blanc",
+  "authored": "2026-10-18T15:26:39Z",
+  "committed": "2026-10-21T14:06:22Z",
+  "parent": "512c04e39f674dbf4133b8fbbd381cd8c2df6836",
+  "coauthors": [
+   "Ilija Tovilo",
+   "Jakub Zelenka (bukka)",
+   "Nora Dossche",
+   "Nicolas Grekas"
+  ],
+  "body": [
+   "Replace bailout on OOM with UnwindExit",
+   "Properly reset various globals that may be accessed during startup",
+   "Fix GHSA-w8hw-w9fx-j79w (CVE-2026-109618)",
+   "Fix GHSA-6wmf-4rv5-p3rp (CVE-2026-109619)"
+  ],
+  "files": 389,
+  "insertions": 10689,
+  "deletions": 976,
+  "non_test_files": 113,
+  "by_area": [
+   [
+    "Zend/ (the engine)",
+    96
+   ],
+   [
+    "ext/standard",
+    52
+   ],
+   [
+    "tests/",
+    34
+   ],
+   [
+    "ext/mbstring",
+    30
+   ],
+   [
+    "ext/gd",
+    19
+   ],
+   [
+    "ext/date",
+    17
+   ],
+   [
+    "ext/soap",
+    14
+   ],
+   [
+    "ext/zlib",
+    11
+   ],
+   [
+    "ext/session",
+    5
+   ],
+   [
+    "main/ (request lifecycle, input parsing)",
+    7
+   ],
+   [
+    "sapi/",
+    5
+   ]
+  ],
+  "merge_path": [
+   [
+    "2026-10-21T14:06:22Z",
+    "commit date: the fix enters the public PHP-8.2 branch (committer time; author time is 18 October 15:26 UTC)"
+   ],
+   [
+    "2026-10-21T14:12:35Z",
+    "Ilija Tovilo merges PHP-8.2 into PHP-8.3"
+   ],
+   [
+    "2026-10-21T14:27:03Z",
+    "merges PHP-8.3 into PHP-8.4"
+   ],
+   [
+    "2026-10-21T14:30:04Z",
+    "merges PHP-8.4 into PHP-8.5"
+   ],
+   [
+    "2026-10-21T15:34:31Z",
+    "NEWS entry added (author time 18 October)"
+   ]
+  ]
+ },
+ "backport": {
+  "commit": "712e60f9edfd03f0960fc4fc3c2c375f42b90aa2",
+  "short": "712e60f9e",
+  "branch": "PHP-7.4-CVE-2026-109618-109619",
+  "subject": "Avoid state corruption via bailout",
+  "note_in_commit": "Minimal mitigation for EOL version.",
+  "author": "Arnaud Le Blanc",
+  "authored": "2026-10-18T18:09:54Z",
+  "committed": "2026-10-18T18:10:24Z",
+  "files": 17,
+  "files_list": [
+   "Zend/zend_alloc.c (+68)",
+   "Zend/zend_execute_API.c (+13)",
+   "Zend/zend_hash.c (+13)",
+   "Zend/zend_types.h (26)",
+   "Zend/zend_vm_def.h (+11)",
+   "main/rfc1867.c (+39)",
+   "main/php_variables.c (8)",
+   "main/main.c (+6)",
+   "main/SAPI.c (+5)",
+   "ext/session/session.c (2)",
+   "Zend/zend_API.h, zend_alloc.h, zend_hash.h, zend_llist.c, zend_multiply.h, zend_strtod.c, zend_vm_execute.h"
+  ]
+ },
+ "where": [
+  {
+   "layer": "The language a site is written in (PHP code)",
+   "in_scope": false,
+   "text": "Not where the bug is. A site's own PHP code can be perfect; php2shell.com's phrase is that a 'Hello World' application on an affected version is affected."
+  },
+  {
+   "layer": "The Zend engine (C): memory manager, request start-up and shutdown",
+   "in_scope": true,
+   "text": "Where both bugs are. Zend/zend_alloc.c is PHP's allocator; main/main.c runs a request's start-up and shutdown; main/rfc1867.c parses multipart bodies; main/php_variables.c registers $_GET, $_POST and friends; ext/session/session.c hooks the multipart parser for upload progress. All C."
+  },
+  {
+   "layer": "The SAPI (how PHP is attached to the web server)",
+   "in_scope": true,
+   "text": "Where exploitability differs. mod_php runs request shutdown even when start-up failed, 'before any application-specific code begins execution'; FPM is susceptible by source analysis; the fix touches sapi/ in five files."
+  },
+  {
+   "layer": "The web server, the WAF, the operating system",
+   "in_scope": false,
+   "text": "Not where the bug is, but where the controls are: a WAF matches the request shape, the OS limits what the worker can do once it is code execution."
+  }
+ ],
+ "mechanism": [
+  {
+   "step": "Before the fix",
+   "text": "When a request pushed PHP past memory_limit, the allocator called zend_mm_safe_error, which raised a fatal error inside a zend_try and then called zend_bailout(): a C longjmp back to the request's top-level handler. The jump abandons whatever function was half-way through building request state. On mod_php the request shutdown then runs anyway and reads that half-built state. That is CVE-2026-109618, 'RCE via OOM corruption'. The same longjmp, or any fatal error, could leave global state pointing into request memory that is about to be freed; the next request on the same worker reads it. That is CVE-2026-109619, 'RCE via stale global state'."
+  },
+  {
+   "step": "The attacker's lever",
+   "text": "The attacker needs to make the allocator fail at a moment of their choosing. The confirmed ways are request-shaped: a multipart body with many parts or long headers (rfc1867.c), deeply nested form field names (php_variables.c and the hash table), and the session upload-progress feature, which is on by default and does work inside the multipart parser before the application runs. Several vendors say the exploit also needs to know the running binary's layout on x86_64, which is why the CVSS vector says attack complexity high."
+  },
+  {
+   "step": "After the fix: the soft limit",
+   "text": "zend_mm_check_limit no longer jumps. If an allocation would exceed memory_limit (now the soft limit), it queues a 'delayed OOM' error and lets the allocation succeed. At the next VM safe point zend_handle_delayed_oom runs, throws an UnwindExit that unwinds the PHP frames in an orderly way, and raises the fatal error with the request's state intact. The commit's own comment: 'When the soft limit is to be exceeded, a delayed OOM error is queued. When the hard limit is to be exceeded, the function does not return.'"
+  },
+  {
+   "step": "After the fix: the hard limit",
+   "text": "A new memory_hard_limit_percent setting defines a ceiling above memory_limit. Reaching it calls zend_mm_hard_limit_error and the process ends with _exit(), with no cleanup to corrupt. Allocations that callers can tolerate failing become 'fallible' and return NULL instead of jumping. zend_mm_panic now also uses _exit rather than exit."
+  },
+  {
+   "step": "After the fix: the globals",
+   "text": "shutdown_executor, php_request_shutdown and sapi_deactivate set the pointers they free to NULL or UNDEF ('may be accessed before php_request_startup()'), so a later request cannot find stale state. A new max_multipart_body_parts setting bounds the number of parts the parser will accept; the multipart header parser keeps only Content-Disposition and Content-Type and ignores duplicates; the session upload-progress callback is changed."
+  },
+  {
+   "step": "Why it touched 389 files",
+   "text": "Every place in the engine and the bundled extensions that used to say 'allocation failed, bail out' had to be rewritten to the new contract: queue the error, fail the allocation, or hit the hard limit. That is why ext/standard, mbstring, gd, date and soap are in the diff, and why the PHP Foundation says the fix 'required a major change to the PHP engine' and took two months."
+  },
+  {
+   "step": "The 7.4 branch",
+   "text": "The end-of-life backport is a different, smaller change (17 engine files): it makes every memory error exit the process immediately (zend_mm_safe_error_ex calling _exit) instead of unwinding, resets the same globals, caps multipart parts and disables the session upload-progress callback outright. It is labelled 'Minimal mitigation for EOL version' in the commit. A worker that _exits on every OOM is safe from this bug class and worse at availability."
+  }
+ ],
+ "open": [
+  "Which of the 389 files are the security fix and which are the refactor the fix needed is not separable from the diff alone; the GHSA text and the commit body are the only guide.",
+  "The 2024 trail: the Foundation says a core developer saw the first signs of the OOM problem while fixing a 2024 audit finding. That developer, that fix and that issue are not named in any captured source, and this site's shallow clone does not reach 2024 history.",
+  "Whether the Fediverse report of an incomplete fix in 8.5.12 concerns one of these paths."
+ ],
+ "sources": [
+  "github-php-src-fix-commit-3584a98bd",
+  "github-ghsa-w8hw-w9fx-j79w",
+  "github-ghsa-6wmf-4rv5-p3rp",
+  "php-net-advisory",
+  "github-php-src-branch-7.4-backport",
+  "php-net-changelog-8",
+  "daubois-blog-php2shell-rumors",
+  "fastly-blog-php2shell",
+  "imperva-blog-php2shell",
+  "php2shell-com",
+  "x-openai-php2shell"
+ ]
+}

@@ -1,0 +1,155 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "kept_by": {
+   "type": "string"
+  },
+  "not_asked": {
+   "items": {
+    "properties": {
+     "publisher": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     },
+     "why": {
+      "type": "string"
+     },
+     "words": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "publisher",
+     "source",
+     "why",
+     "words"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "quotes": {
+   "properties": {
+    "about": {
+     "type": "string"
+    },
+    "items": {
+     "type": "array"
+    }
+   },
+   "required": [
+    "about",
+    "items"
+   ],
+   "type": "object"
+  },
+  "requests": {
+   "items": {
+    "properties": {
+     "actor": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "blocked_by": {
+      "type": "array"
+     },
+     "channel": {
+      "type": "object"
+     },
+     "date": {
+      "type": "string"
+     },
+     "evidence": {
+      "type": "string"
+     },
+     "factcheck": {
+      "type": "object"
+     },
+     "id": {
+      "type": "string"
+     },
+     "log": {
+      "type": "array"
+     },
+     "origin": {
+      "type": "string"
+     },
+     "point": {
+      "type": "string"
+     },
+     "publisher": {
+      "type": "string"
+     },
+     "role": {
+      "type": "string"
+     },
+     "said": {
+      "type": "array"
+     },
+     "status": {
+      "type": "string"
+     },
+     "suggested": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "actor",
+     "blocked_by",
+     "channel",
+     "evidence",
+     "factcheck",
+     "id",
+     "log",
+     "point",
+     "publisher",
+     "role",
+     "said",
+     "status",
+     "suggested"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "sender": {
+   "type": "string"
+  },
+  "statuses": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "means": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "means"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "kept_by",
+  "not_asked",
+  "quotes",
+  "requests",
+  "sender",
+  "statuses"
+ ],
+ "title": "outreach.json",
+ "type": "object"
+}

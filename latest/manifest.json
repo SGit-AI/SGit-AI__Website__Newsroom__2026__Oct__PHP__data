@@ -319,11 +319,11 @@
    "sha256": "9c7b12dcfdf5cb460243fa062228277c98646cd7276b8672ae385092aa122c1a"
   },
   {
-   "bytes": 1819451,
+   "bytes": 1892540,
    "group": "evidence",
    "name": "sources.json",
    "schema": "schemas/sources.schema.json",
-   "sha256": "acad3d7f8a2fc58fb6574ac2bde0b5cd376680adc24f6faebcecd5caabda9fb5"
+   "sha256": "7051b43925ca92fbb007b64c1109d48557d8fab7ed780136c988ee395c8e899e"
   },
   {
    "bytes": 7668,
@@ -368,11 +368,11 @@
    "sha256": "511f26151f0d34b4dd3fc49ed0f04342fe2c39ed2b9205b8ab7acfd7f5de5769"
   },
   {
-   "bytes": 169742,
+   "bytes": 179394,
    "group": "evidence",
    "name": "vault-claims.json",
    "schema": "schemas/vault-claims.schema.json",
-   "sha256": "bed1acbe17d17c19819b7bda79755615e2d01a452c7f89afff36d39e3d6efd56"
+   "sha256": "26aa8a6c32a97771e9290bf8cefece4b0d67afa78e4008e69b55b8bf0f11f093"
   },
   {
    "bytes": 32993,
@@ -382,11 +382,11 @@
    "sha256": "fdc9eea9895bcbbf35c469cc7f7526b72b3537d58f072bb68587541d872cb0c5"
   },
   {
-   "bytes": 760,
+   "bytes": 795,
    "group": "evidence",
    "name": "vault.json",
    "schema": "schemas/vault.schema.json",
-   "sha256": "51fed6b6a27694679b7efd4c6f59e755b4526e0225745a2b08f660c134e57411"
+   "sha256": "10661684f31184471658ee2d6b5a3516c0de42599e120c70a01651b41fca92e4"
   },
   {
    "bytes": 42424,
@@ -3341,6 +3341,6 @@
   "vault-claims.json",
   "vault.json"
  ],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.33/",
- "version": "0.1.33"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.34/",
+ "version": "0.1.34"
 }
