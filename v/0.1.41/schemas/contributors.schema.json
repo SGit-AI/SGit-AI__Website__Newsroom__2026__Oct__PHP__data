@@ -1,0 +1,135 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "invitations": {
+   "items": {
+    "properties": {
+     "expires": {
+      "type": "string"
+     },
+     "handle": {
+      "type": "string"
+     },
+     "hash": {
+      "type": "string"
+     },
+     "made": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "role": {
+      "type": "string"
+     },
+     "used": {
+      "type": "number"
+     }
+    },
+    "required": [
+     "expires",
+     "handle",
+     "hash",
+     "made",
+     "note",
+     "role",
+     "used"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kept_by": {
+   "type": "string"
+  },
+  "keys": {
+   "items": {
+    "properties": {
+     "bundle": {
+      "type": "object"
+     },
+     "device": {
+      "type": "string"
+     },
+     "enrolled": {
+      "type": "string"
+     },
+     "fingerprint": {
+      "type": "string"
+     },
+     "handle": {
+      "type": "string"
+     },
+     "invited_by": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "role": {
+      "type": "string"
+     },
+     "signing_fingerprint": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "bundle",
+     "device",
+     "enrolled",
+     "fingerprint",
+     "handle",
+     "invited_by",
+     "role",
+     "signing_fingerprint"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "roles": {
+   "items": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "rules": {
+   "properties": {
+    "devices_per_invitation": {
+     "type": "number"
+    },
+    "invitation_days": {
+     "type": "number"
+    },
+    "may_invite": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    }
+   },
+   "required": [
+    "devices_per_invitation",
+    "invitation_days",
+    "may_invite"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "about",
+  "invitations",
+  "kept_by",
+  "keys",
+  "roles",
+  "rules"
+ ],
+ "title": "contributors.json",
+ "type": "object"
+}

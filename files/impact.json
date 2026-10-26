@@ -311,9 +311,9 @@
    ]
   },
   {
-   "who": "Canada: federal government websites",
+   "who": "Canada: federal government websites, among them Innovation, Science and Economic Development Canada (ISED)",
    "country": "CA",
-   "what": "Taken off the net, per Bitpage.de's situation report of 22 October; one line, no detail or date of its own, and no Canadian source in this list",
+   "what": "Some federal websites taken offline: Minister Evan Solomon confirmed they were down \"as a precaution to protect government systems and Canadians’ information\", ISED among them, and Rajiv Gupta of the Canadian Centre for Cyber Security called PHP \"ubiquitous\"; Bitpage's update of 22 October, 08:30, says ISED still answered \"Service Unavailable\". All as Bitpage.de reports it; the minister's and the Cyber Centre's own words are not captured",
    "when": "2026-10-21",
    "said_by": "Bitpage.de",
    "status": "reported",

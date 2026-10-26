@@ -46,11 +46,11 @@
    "sha256": "e8186cd0a0869ce9559c7cf11eda90e03ce13e6c0397b8cb3cba4ace1727c1bd"
   },
   {
-   "bytes": 38968,
+   "bytes": 39838,
    "group": "story",
    "name": "claims.json",
    "schema": "schemas/claims.schema.json",
-   "sha256": "3d6079bce2efd31ef5b6704c3213d7436137d641ca55a880fdcb8f2d1e3b1714"
+   "sha256": "aaa7f4d8b169dac17e0fe453a9960234a6c5afa4ba2a338b99c1c43f69b100e1"
   },
   {
    "bytes": 8708,
@@ -102,11 +102,11 @@
    "sha256": "06af041d4b3215eeab3e533af84c747d435da42b1541f712b3f6541c16cd6c90"
   },
   {
-   "bytes": 13632,
+   "bytes": 15154,
    "group": "desk",
    "name": "desk.json",
    "schema": "schemas/desk.schema.json",
-   "sha256": "2c7ddef58d7134c72d854a69b38d0b12643e2c9ed1a33e3954a5c41568810175"
+   "sha256": "2c1b67d306b142ccb83a09a412f8928997960f480d658bda2ef6b010a5db988c"
   },
   {
    "bytes": 65137,
@@ -207,11 +207,11 @@
    "sha256": "5196aa19efeb384c548141b82f257fbe2af3204f6e6fc9bc51bd97836db64a1d"
   },
   {
-   "bytes": 19641,
+   "bytes": 20018,
    "group": "story",
    "name": "impact.json",
    "schema": "schemas/impact.schema.json",
-   "sha256": "8debe0009c5748041dfedf1d367c535c49f53aff2afeefee7b4ac64a363f3884"
+   "sha256": "91f2acf4eb52aec94f895e75883620a301af30092b381701eb9abab95875e25c"
   },
   {
    "bytes": 174351,
@@ -274,7 +274,7 @@
    "group": "runtime",
    "name": "personas.json",
    "schema": "schemas/personas.schema.json",
-   "sha256": "6c741256d74f6cdf98c326b61b80b21cea0c26cdf0a5baea7116f5712e6eb3f9"
+   "sha256": "e33a7446dc73059c70e4f68586921ffa5bb88a34220bbb74cfd7f0fd5e42a084"
   },
   {
    "bytes": 134769,
@@ -344,7 +344,7 @@
    "group": "story",
    "name": "story.json",
    "schema": "schemas/story.schema.json",
-   "sha256": "76fd3b892ecddca7d8ecfcfc21420b670e9b02436d5a2298991c5c6f6b609afe"
+   "sha256": "ce35648068d0fe79e24170be8659700c6876560f94df655cba087f7f35258cff"
   },
   {
    "bytes": 1817,
@@ -3342,6 +3342,6 @@
   "site_version": "0.22.32"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.40/",
- "version": "0.1.40"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.41/",
+ "version": "0.1.41"
 }

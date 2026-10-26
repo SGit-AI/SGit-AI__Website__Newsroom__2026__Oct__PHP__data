@@ -87,7 +87,7 @@
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "no-confirmed-compromise left at 12:14 UTC on 26 October on purpose: TechGaming.it names Square Enix with 'unauthorised access', cause not stated (compromise.json); for the correspondent. The other 69 claims not yet re-read."
+   "note": "no-confirmed-compromise refreshed to 14:42 UTC on 26 October by the correspondent (vault 2fc7e432584b, 543 sources): Square Enix is named but the cause is not stated, so the claim stands. The other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
@@ -307,6 +307,22 @@
    "kind": "verdict",
    "journalist_run": "20261026T1114Z-journalist",
    "fixed_in": "data, correspondent's release of 26 October"
+  },
+  {
+   "on": "2026-10-26",
+   "what": "The Canada row (impact, v0.1.35) said Bitpage gives one line with no detail; the same capture quotes Minister Evan Solomon (\"as a precaution to protect government systems and Canadians’ information\"), names ISED and quotes Rajiv Gupta of the Cyber Centre. Row rewritten with every name and quote the page gives. The same miss as the 'name every organisation a list names' correction of 26 October, in a second form: read the whole page, not the first mention.",
+   "file": "data: files/impact.json",
+   "kind": "omission",
+   "journalist_run": "20261026T1610Z-journalist",
+   "fixed_in": "data, correspondent's release of 26 October, 17:20 UTC"
+  },
+  {
+   "on": "2026-10-26",
+   "what": "The journalist left no-confirmed-compromise at 12:14 UTC for the correspondent's call on Square Enix (TechGaming.it: 'unauthorised access', cause not stated). Checked against both captures: the quote is exact, the roundup also covers GitLab and Plex, and Bitpage attributes the Square Enix shutdown to the flaws, 'kein Angriff'. The claim stands; refreshed to 14:42 UTC (543 sources, head 2fc7e432584b), with both sources and the reasoning in its note; personas and story re-stamped. The journalist's handling (row added as unverified, call passed up) was right.",
+   "file": "data: files/claims.json, files/personas.json, files/story.json",
+   "kind": "state",
+   "journalist_run": "20261026T1610Z-journalist",
+   "fixed_in": "data, correspondent's release of 26 October, 17:20 UTC"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."

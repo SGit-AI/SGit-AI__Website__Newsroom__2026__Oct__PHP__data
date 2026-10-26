@@ -71,7 +71,7 @@
    ]
   },
   {
-   "html": "Exploitation attempts are reported from several directions, in millions by Cloudflare's count, but no organisation has said it was compromised through php2shell, as of the evidence vault's latest capture (12:14 UTC on 26 October). Amazon says a honeypot was hit on 17 October, four days before disclosure. Sophos withdrew an earlier claim of a successful compromise; its data showed scanning and a few failed attempts. Four named cases have been tested: Valtec retracted, and ČVUT, GMO and DMM state no php2shell cause. Neither CVE is in CISA's Known Exploited Vulnerabilities catalog at the source watch's last check (08:03 UTC on 23 October). The US, Australia, Germany, Switzerland and Japan say they know of no successful exploitation; New Zealand's NCSC alone says it is <q>aware of reports of active exploitation</q>.",
+   "html": "Exploitation attempts are reported from several directions, in millions by Cloudflare's count, but no organisation has said it was compromised through php2shell, as of the evidence vault's latest capture (14:42 UTC on 26 October). Amazon says a honeypot was hit on 17 October, four days before disclosure. Sophos withdrew an earlier claim of a successful compromise; its data showed scanning and a few failed attempts. Four named cases have been tested: Valtec retracted, and ČVUT, GMO and DMM state no php2shell cause. Neither CVE is in CISA's Known Exploited Vulnerabilities catalog at the source watch's last check (08:03 UTC on 23 October). The US, Australia, Germany, Switzerland and Japan say they know of no successful exploitation; New Zealand's NCSC alone says it is <q>aware of reports of active exploitation</q>.",
    "sources": [
     "x-eastdakota-php2shell-stats",
     "aws-security-blog-madpot",
