@@ -1,0 +1,159 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "items": {
+  "properties": {
+   "added_by": {
+    "type": "string"
+   },
+   "captures": {
+    "items": {
+     "type": "object"
+    },
+    "type": "array"
+   },
+   "has_notes": {
+    "type": "boolean"
+   },
+   "kind": {
+    "type": "string"
+   },
+   "lang": {
+    "type": "string"
+   },
+   "notes": {
+    "type": "string"
+   },
+   "notes_md": {
+    "type": "string"
+   },
+   "primary": {
+    "type": "boolean"
+   },
+   "published": {
+    "type": [
+     "null",
+     "string"
+    ]
+   },
+   "publisher": {
+    "type": "string"
+   },
+   "raw_sha256": {
+    "properties": {
+     "ChangeLog-8.curl.html": {
+      "type": "string"
+     },
+     "archive-2026.curl.html": {
+      "type": "string"
+     },
+     "commit-3584a98bd.NEWS.diff": {
+      "type": "string"
+     },
+     "commit-3584a98bd.engine-main-session.patch": {
+      "type": "string"
+     },
+     "commit-3584a98bd.files.txt": {
+      "type": "string"
+     },
+     "commit-3584a98bd.stat.txt": {
+      "type": "string"
+     },
+     "commit-712e60f9e-PHP-7.4-backport.patch": {
+      "type": "string"
+     },
+     "commit-712e60f9e-PHP-7.4-backport.stat.txt": {
+      "type": "string"
+     },
+     "commits-cca173c64ec5.txt": {
+      "type": "string"
+     },
+     "curl-body.20261022T0814Z.html": {
+      "type": "string"
+     },
+     "curl-headers.20261022T0814Z.txt": {
+      "type": "string"
+     },
+     "cveawg-api.json": {
+      "type": "string"
+     },
+     "feed.atom": {
+      "type": "string"
+     },
+     "headers.20261022T0816Z.txt": {
+      "type": "string"
+     },
+     "initial-data.json": {
+      "type": "string"
+     },
+     "known_exploited_vulnerabilities.20261022T0816Z.json": {
+      "type": "string"
+     },
+     "known_exploited_vulnerabilities.json": {
+      "type": "string"
+     },
+     "merge-path-3584a98bd-to-PHP-8.5.txt": {
+      "type": "string"
+     },
+     "nvd-api-2.0.json": {
+      "type": "string"
+     },
+     "oss-security-2026-10-21-16.html": {
+      "type": "string"
+     },
+     "oss-security-2026-10-21-17.html": {
+      "type": "string"
+     },
+     "oss-security-2026-10-21-23.html": {
+      "type": "string"
+     },
+     "oss-security-2026-10-22-2.html": {
+      "type": "string"
+     },
+     "page.2026-10-22T0755Z.html": {
+      "type": "string"
+     },
+     "php2shell-cca173c64ec5.bundle": {
+      "type": "string"
+     },
+     "software-list-cca173c64ec5.json": {
+      "type": "string"
+     }
+    },
+    "type": "object"
+   },
+   "slug": {
+    "type": "string"
+   },
+   "status": {
+    "type": "string"
+   },
+   "title": {
+    "type": [
+     "null",
+     "string"
+    ]
+   },
+   "url": {
+    "type": "string"
+   }
+  },
+  "required": [
+   "added_by",
+   "captures",
+   "has_notes",
+   "kind",
+   "notes",
+   "primary",
+   "published",
+   "publisher",
+   "raw_sha256",
+   "slug",
+   "status",
+   "title",
+   "url"
+  ],
+  "type": "object"
+ },
+ "title": "sources.json",
+ "type": "array"
+}
