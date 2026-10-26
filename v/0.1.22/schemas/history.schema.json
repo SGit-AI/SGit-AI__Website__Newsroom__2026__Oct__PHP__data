@@ -1,0 +1,189 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "comparators": {
+   "items": {
+    "properties": {
+     "component": {
+      "type": "string"
+     },
+     "cve": {
+      "type": "string"
+     },
+     "kev": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "published": {
+      "type": "string"
+     },
+     "ransomware": {
+      "type": "string"
+     },
+     "response": {
+      "type": "string"
+     },
+     "source": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "component",
+     "cve",
+     "kev",
+     "name",
+     "note",
+     "published",
+     "ransomware",
+     "response",
+     "source"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "comparators_sources": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "kev_catalog": {
+   "properties": {
+    "2026_by_month": {
+     "properties": {
+      "2026-01": {
+       "type": "number"
+      },
+      "2026-02": {
+       "type": "number"
+      },
+      "2026-03": {
+       "type": "number"
+      },
+      "2026-04": {
+       "type": "number"
+      },
+      "2026-05": {
+       "type": "number"
+      },
+      "2026-06": {
+       "type": "number"
+      },
+      "2026-07": {
+       "type": "number"
+      },
+      "2026-08": {
+       "type": "number"
+      },
+      "2026-09": {
+       "type": "number"
+      },
+      "2026-10": {
+       "type": "number"
+      }
+     },
+     "required": [
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08",
+      "2026-09",
+      "2026-10"
+     ],
+     "type": "object"
+    },
+    "entries": {
+     "type": "number"
+    },
+    "per_year": {
+     "properties": {
+      "2021": {
+       "type": "number"
+      },
+      "2022": {
+       "type": "number"
+      },
+      "2023": {
+       "type": "number"
+      },
+      "2024": {
+       "type": "number"
+      },
+      "2025": {
+       "type": "number"
+      },
+      "2026": {
+       "type": "number"
+      }
+     },
+     "required": [
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025",
+      "2026"
+     ],
+     "type": "object"
+    },
+    "php_core": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "php_related": {
+     "type": "number"
+    },
+    "ransomware_known": {
+     "type": "number"
+    },
+    "source": {
+     "type": "string"
+    },
+    "version": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "2026_by_month",
+    "entries",
+    "per_year",
+    "php_core",
+    "php_related",
+    "ransomware_known",
+    "source",
+    "version"
+   ],
+   "type": "object"
+  },
+  "note": {
+   "type": "string"
+  },
+  "reading": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "comparators",
+  "comparators_sources",
+  "kev_catalog",
+  "note",
+  "reading"
+ ],
+ "title": "history.json",
+ "type": "object"
+}

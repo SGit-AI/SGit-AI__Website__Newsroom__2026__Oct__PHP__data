@@ -1,0 +1,79 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "note": {
+   "type": "string"
+  },
+  "readings": {
+   "items": {
+    "properties": {
+     "compiled": {
+      "type": "string"
+     },
+     "file": {
+      "type": "string"
+     },
+     "how": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "leads": {
+      "type": "array"
+     },
+     "model": {
+      "type": "string"
+     },
+     "rows": {
+      "type": "array"
+     },
+     "title": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "compiled",
+     "file",
+     "how",
+     "id",
+     "leads",
+     "model",
+     "rows",
+     "title"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "verdicts": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "note",
+  "readings",
+  "verdicts"
+ ],
+ "title": "readings.json",
+ "type": "object"
+}

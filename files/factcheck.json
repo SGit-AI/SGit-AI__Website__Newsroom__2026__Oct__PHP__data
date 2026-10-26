@@ -2211,8 +2211,8 @@
   },
   {
    "id": "no-confirmed-compromise",
-   "claim_hash": "a6a0832ed7fa98c7",
-   "run": "Run-7",
+   "claim_hash": "7e29253938539073",
+   "run": "Run-8",
    "mode": "vault",
    "kind": "state",
    "level": 4,
@@ -2220,9 +2220,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261025T093507Z",
+   "as_of": "20261025T144000Z",
    "status_fit": "ok",
-   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation.",
+   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -2398,6 +2398,14 @@
      "sha256": "6efd752b24f540730043417e4f8e1837289ad08b2351a62e22a4bc2bdc3e8ad6",
      "result": "carries",
      "excerpt": "no massive successful intrusion had been publicly confirmed as of Thursday",
+     "outside_citation": false
+    },
+    {
+     "source": "larazon-tecnologia-consumo-php-nuevo-fallo-segur",
+     "file": "sources/larazon-tecnologia-consumo-php-nuevo-fallo-segur/captures/20261024T083755Z/text.txt",
+     "sha256": "21b72816e736ca309b04551b94e2e98a6bb02d5619415a05d7e31db3c15ee71e",
+     "result": "partial",
+     "excerpt": "Los ataques contra PHP2Shell ya se cuentan por millones",
      "outside_citation": false
     }
    ],
@@ -9186,6 +9194,19 @@
    "opened": "none",
    "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged since run 6 and explained.",
    "summary": "no-confirmed-compromise still holds at 09:35 UTC on 25 October (A4): the Turkish Presidency's Cyber Security Directorate says e-Devlet is safe, and teleSUR says no massive successful intrusion has been publicly confirmed; none of the 20 new captures names a compromised organisation. Lorikeet Security's blog gives a third planned disclosure date, 24 October, with no source; added to K-010. KEV (2026.10.23) still lists neither CVE; php.net's latest releases are still those of 21 October."
+  },
+  {
+   "id": "Run-8",
+   "site_version": "0.22.26",
+   "vault_commit": "94352a55fbaa",
+   "started": "2026-10-26T08:54Z",
+   "finished": "2026-10-26T09:10Z",
+   "quiet_wakes_before": 0,
+   "checked": "fc.py changed (no-confirmed-compromise, refreshed to 14:40 UTC on 25 October, one new source: La Razon); fc.py check (0 failures); fc.py drift (the same six excerpts as run 6, all explained); KEV; NVD (CVE-2026-115560, no record yet); php.net releases; W3Techs",
+   "opened": "none",
+   "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged since run 6 and explained.",
+   "summary": "no-confirmed-compromise still holds at 14:40 UTC on 25 October (A4): La Razon, the one new source, reports attacks as attempts and names no victim, so it is graded partial. The vault is read from the desk's own pack copy (hsmfer5w): a pull takes 15 seconds, a fresh clone 40. W3Techs still says 69.2%. KEV (2026.10.23) still lists neither CVE; NVD has no record yet for CVE-2026-115560, the third PHP flaw La Razon names; php.net's latest releases are those of 21 October.",
+   "site_export_commit": "94352a55fbaa"
   }
  ],
  "investigations": [
@@ -9755,6 +9776,13 @@
         "value": 69.2,
         "sha256": "918957998f37697d1b1339a20f4b86ccb1ddb90744547325703ffaa2694eeb36",
         "run": "Run-6",
+        "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
+       },
+       {
+        "retrieved_at": "2026-10-26T08:56Z",
+        "value": 69.2,
+        "sha256": "3fc3bc643bf82fd4cda77983dbc283735c98d6e05c46199fb722bb576435fea0",
+        "run": "Run-8",
         "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
        }
       ]
