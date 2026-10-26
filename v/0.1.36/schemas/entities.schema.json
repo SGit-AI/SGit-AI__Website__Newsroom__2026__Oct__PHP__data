@@ -1,0 +1,73 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "entities": {
+   "items": {
+    "properties": {
+     "actor": {
+      "type": "boolean"
+     },
+     "added_by": {
+      "type": "string"
+     },
+     "aliases": {
+      "type": "array"
+     },
+     "by": {
+      "type": "array"
+     },
+     "country": {
+      "type": "string"
+     },
+     "has_members": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "member_of": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "one_voice": {
+      "type": "boolean"
+     },
+     "part_of": {
+      "type": "string"
+     },
+     "works_for": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "kind",
+     "name"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kept_by": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "about",
+  "entities",
+  "kept_by"
+ ],
+ "title": "entities.json",
+ "type": "object"
+}

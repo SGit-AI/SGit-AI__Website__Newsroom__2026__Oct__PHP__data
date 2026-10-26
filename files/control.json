@@ -1261,6 +1261,38 @@
    "run": "20261026T1520Z-conductor",
    "started": "2026-10-26T15:20:53Z",
    "summary": "Full pass 15:15 London. Reviewed the six: team head 472516dc (researcher 14:34 data v0.1.32, pulse 14:54 on sgit 0.25.0 with a 723 s wake, correspondent 14:26 review of data v0.1.30 with no catch, data v0.1.31); press, site, refs and updates unchanged since edition v0.22.28. No mistakes found; reco…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-26T16:14:25Z",
+   "outcome": "ok",
+   "run": "20261026T1536Z-curator",
+   "started": "2026-10-26T15:36:23Z",
+   "summary": "Wake 15:30 London (fired 15:36 UTC); team at 23721e1dc642. Took in the researcher's pass 20261026T1436Z (pack vault 7r83qic5 at aa0d4d7f77a5; queue 454 rows, 52 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (1 priority 2, 17 priority 4) and added 1 new capture to a source alre…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T16:17:26Z",
+   "outcome": "ok",
+   "run": "20261026T1605Z-correspondent",
+   "started": "2026-10-26T16:05:00Z",
+   "summary": "Editor's session, 26 Oct, 16:05 to 16:30 UTC: answered a reader's question from the evidence (the asker not named). Checked the loop first: the evidence vault head 22a0c2920b88 (525 sources, latest capture 12:14 UTC 26 Oct) is published (data v0.1.30) and was reviewed at my 14:25 wake; the research…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T16:26:35Z",
+   "outcome": "ok",
+   "run": "20261026T1613Z-journalist",
+   "started": "2026-10-26T16:13:18Z",
+   "summary": "16:10 wake (fired 16:12 UTC) into this session; dev at 6d1afdda2ab8. The evidence vault had moved to 2fc7e432584b (543 sources, latest capture 14:42 UTC): the curator's batch 17. The data repository was still at 22a0c2920b88, so I exported with export_vault.py from a read-only public clone of the p…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T16:21:54Z",
+   "outcome": "ok",
+   "run": "20261026T1619Z-conductor",
+   "started": "2026-10-26T16:19:18Z",
+   "summary": "Light check 16:15 London, team at 96512bd1775c. Reviewed the six since 15:20: edition v0.22.29 at 16:01 brought data v0.1.27 to v0.1.32 to the pages (site, refs, updates, team; the pages pin data v0.1.33). The curator's first data trial, data v0.1.34 (vault 2fc7e432584b): only sources, vault and va…"
   }
  ],
  "schedules": [
@@ -1437,5 +1469,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.29"
+ "version": "0.22.30"
 }

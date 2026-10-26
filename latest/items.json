@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.29",
+"site": "0.22.30",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -127,10 +127,10 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "27baae1b2664",
-"v": 11,
+"hash": "96f26ee7bab5",
+"v": 12,
 "first": "0.1.0",
-"changed": "0.22.29",
+"changed": "0.22.30",
 "date": "2026-10-26",
 "history": "versions/page-method/index.html"
 },
@@ -811,10 +811,10 @@
 "zone": "research",
 "title": "Impact: offline vs compromised",
 "path": "impact/index.html",
-"hash": "0ef91cbffc5f",
-"v": 13,
+"hash": "f177ee3a9286",
+"v": 14,
 "first": "0.2.0",
-"changed": "0.22.29",
+"changed": "0.22.30",
 "date": "2026-10-26",
 "history": "versions/page-impact/index.html"
 },
@@ -1243,10 +1243,10 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "9e512bf7af66",
-"v": 14,
+"hash": "864ecfb4878f",
+"v": 15,
 "first": "0.3.1",
-"changed": "0.22.29",
+"changed": "0.22.30",
 "date": "2026-10-26",
 "history": "versions/page-summary/index.html"
 },
@@ -1267,10 +1267,10 @@
 "zone": "research",
 "title": "Front page: at a glance",
 "path": "index.html#glance",
-"hash": "d401bfb0fbd9",
-"v": 9,
+"hash": "05c79922b221",
+"v": 10,
 "first": "0.3.2",
-"changed": "0.22.29",
+"changed": "0.22.30",
 "date": "2026-10-26",
 "history": "versions/front-glance/index.html"
 },
@@ -3271,6 +3271,17 @@
 "changed": "0.22.28",
 "date": "2026-10-26T07:11Z"
 },
+"src-cpomagazine-cyber-security-threat-actor-targeted-php": {
+"kind": "source",
+"zone": "research",
+"title": "CPO Magazine: Threat Actor Targeted PHP Vulnerabilities Days Before PHP2Shell Disclosure - CPO Magazine",
+"path": "sources/cpomagazine-cyber-security-threat-actor-targeted-php/index.html",
+"hash": "9c2634553de3",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-26T14:42Z"
+},
 "src-criticarad-php2shell-cve-2026-109618-ghid-patch": {
 "kind": "source",
 "zone": "research",
@@ -4558,6 +4569,17 @@
 "changed": "0.19.2",
 "date": "2026-10-24T16:05Z"
 },
+"src-homodigital-luka-w-php-myslisz-nie-mam-strony-jestem": {
+"kind": "source",
+"zone": "research",
+"title": "HomoDigital: Luka w PHP. Myślisz - nie ma strony, jestem bezpieczny. To mit!",
+"path": "sources/homodigital-luka-w-php-myslisz-nie-mam-strony-jestem/index.html",
+"hash": "6189f768b863",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-26T14:42Z"
+},
 "src-howtogeek-sites-down": {
 "kind": "source",
 "zone": "research",
@@ -5426,6 +5448,17 @@
 "first": "0.10.3",
 "changed": "0.10.3",
 "date": "2026-10-22T08:19Z"
+},
+"src-m-ddaily-page-view-2026102611404279049": {
+"kind": "source",
+"zone": "research",
+"title": "디지털데일리: [PHP 비상] 이번엔 Node.js…연이은 대형 취약점에 웹서버 보안 `빨간불` - 디지털데일리",
+"path": "sources/m-ddaily-page-view-2026102611404279049/index.html",
+"hash": "b614fa200df6",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-26T14:42Z"
 },
 "src-macitynet-php2shell-vulnerabilita-php-siti-offline": {
 "kind": "source",
@@ -7176,6 +7209,28 @@
 "changed": "0.22.29",
 "date": "2026-10-23T16:04Z"
 },
+"src-stock-10jqka-20261022-c680990008-shtml": {
+"kind": "source",
+"zone": "research",
+"title": "同花顺财经股票频道: “PHP2Shell”敲响企业漏洞警钟，奇安信天戟提供一键速查方案",
+"path": "sources/stock-10jqka-20261022-c680990008-shtml/index.html",
+"hash": "d96d4e2d4fef",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
+"src-suaranasional-2026-10-25-bahaya-celah-keamanan-php2she": {
+"kind": "source",
+"zone": "research",
+"title": "Suara Nasional: Bahaya Celah Keamanan PHP2Shell: Komdigi Imbau Pengelola Website Segera Update PHP - Suara Nasional",
+"path": "sources/suaranasional-2026-10-25-bahaya-celah-keamanan-php2she/index.html",
+"hash": "4fd34f81310e",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-25T12:04Z"
+},
 "src-substack-lopezkurtz-patch-is-the-exploit": {
 "kind": "source",
 "zone": "research",
@@ -7186,6 +7241,17 @@
 "first": "0.4.1",
 "changed": "0.19.2",
 "date": "2026-10-25"
+},
+"src-sueddeutsche-wirtschaft-php-sicherheitsluecke-2026-ph": {
+"kind": "source",
+"zone": "research",
+"title": "SZ.de: PHP-Sicherheitslücke \"PHP2Shell\": Zwei kritische Lücken gefährden Webseiten weltweit - Wirtschaft - SZ.de",
+"path": "sources/sueddeutsche-wirtschaft-php-sicherheitsluecke-2026-ph/index.html",
+"hash": "f1123f0bac57",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
 },
 "src-sunderlandecho-must-read-astra-security-launches-free-t": {
 "kind": "source",
@@ -7209,6 +7275,39 @@
 "changed": "0.14.30",
 "date": "2026-10-23T23:25Z"
 },
+"src-tagesanzeiger-php-sicherheitsluecke-millionen-hackeran": {
+"kind": "source",
+"zone": "research",
+"title": "Tages-Anzeiger: PHP-Sicherheitslücke: Millionen Hackerangriffe weltweit",
+"path": "sources/tagesanzeiger-php-sicherheitsluecke-millionen-hackeran/index.html",
+"hash": "8544caf34012",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T08:03Z"
+},
+"src-tageskarte-technologie-detail-webseiten-in-gefahr-p": {
+"kind": "source",
+"zone": "research",
+"title": "www.tageskarte.io: Webseiten in Gefahr: PHP-Sicherheitslücken zwingen Hoteliers und Gastronomen zum Handeln: Tageskarte",
+"path": "sources/tageskarte-technologie-detail-webseiten-in-gefahr-p/index.html",
+"hash": "f1b642f5b853",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
+"src-tagesschau-wirtschaft-digitales-php-panne-100-html": {
+"kind": "source",
+"zone": "research",
+"title": "tagesschau.de: PHP-Bedrohung: Was über die Sicherheitslücke bekannt ist | tagesschau.de",
+"path": "sources/tagesschau-wirtschaft-digitales-php-panne-100-html/index.html",
+"hash": "e8223f726f8f",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
 "src-tagesspiegel-dpa-noch-offline": {
 "kind": "source",
 "zone": "research",
@@ -7219,6 +7318,17 @@
 "first": "0.10.3",
 "changed": "0.15.19",
 "date": "2026-10-24"
+},
+"src-takvim-guncel-2026-10-22-php2shell-guvenlik-aci": {
+"kind": "source",
+"zone": "research",
+"title": "Takvim: Siber alemde PHP2Shell alarmı! 5 soruda Avrupa'da siteleri karartan kriz: Türkiye'de durum ne?",
+"path": "sources/takvim-guncel-2026-10-22-php2shell-guvenlik-aci/index.html",
+"hash": "a1ed98cea2c5",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
 },
 "src-tchina-kyodonews-articles-15266": {
 "kind": "source",
@@ -7242,6 +7352,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-tech-noisy-2026-10-22-php2shell-php-rce-cve-2026-10": {
+"kind": "source",
+"zone": "research",
+"title": "tech-noisy: PHP2Shell - PHP本体の脆弱性2件と修正版8.5.12・影響範囲",
+"path": "sources/tech-noisy-2026-10-22-php2shell-php-rce-cve-2026-10/index.html",
+"hash": "8f242c285c42",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
 "src-techaeris-2026-10-21-php2shell-the-emergency-php-p": {
 "kind": "source",
 "zone": "research",
@@ -7251,6 +7372,28 @@
 "v": 1,
 "first": "0.10.19",
 "changed": "0.10.19",
+"date": "2026-10-23T16:04Z"
+},
+"src-techgaming-internet-sotto-attacco-php2shell-vulnera": {
+"kind": "source",
+"zone": "research",
+"title": "TechGaming.it: Internet sotto attacco: PHP2Shell mette a rischio milioni di siti",
+"path": "sources/techgaming-internet-sotto-attacco-php2shell-vulnera/index.html",
+"hash": "1096d48e5165",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
+"src-technotoday-php2shell-saldirilari-iki-kritik-php-aci": {
+"kind": "source",
+"zone": "research",
+"title": "Technotoday: PHP2Shell Saldırıları: İki Kritik PHP Açığı Nasıl Çalışıyor? - Technotoday",
+"path": "sources/technotoday-php2shell-saldirilari-iki-kritik-php-aci/index.html",
+"hash": "41b507c98e8a",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
 "date": "2026-10-23T16:04Z"
 },
 "src-techtarget-cybersecurity-news-366652444-php2shell-2": {
@@ -7308,6 +7451,61 @@
 "changed": "0.10.3",
 "date": "2026-10-22T18:16Z"
 },
+"src-tekno-kompas-read-2026-10-22-14200007-celah-keamanan": {
+"kind": "source",
+"zone": "research",
+"title": "Kompas Tekno: Celah Keamanan \"PHP2Shell\" Berpotensi Ancam 70 Persen Website di Dunia",
+"path": "sources/tekno-kompas-read-2026-10-22-14200007-celah-keamanan/index.html",
+"hash": "7077cb38a110",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
+"src-teknoblog-php-icin-acil-guncelleme-iki-kritik-guve": {
+"kind": "source",
+"zone": "research",
+"title": "Teknoblog: PHP için acil güncelleme: İki kritik güvenlik açığı kapatıldı",
+"path": "sources/teknoblog-php-icin-acil-guncelleme-iki-kritik-guve/index.html",
+"hash": "4f6ac32722df",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
+"src-teknofilo-php2shell-fallos-php-cierre-webs-actuali": {
+"kind": "source",
+"zone": "research",
+"title": "Teknófilo: PHP2Shell: fallos críticos de PHP provocan cierres de webs",
+"path": "sources/teknofilo-php2shell-fallos-php-cierre-webs-actuali/index.html",
+"hash": "f37f54149fc4",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-23T16:04Z"
+},
+"src-teknologi-bisnis-read-20261023-84-2015221-pengamat-ingatk": {
+"kind": "source",
+"zone": "research",
+"title": "Bisnis Tekno: Pengamat Ingatkan Komdigi, Mitigasi Kerentanan PHP Tak Boleh Sebatas Imbauan",
+"path": "sources/teknologi-bisnis-read-20261023-84-2015221-pengamat-ingatk/index.html",
+"hash": "bb80ca3a7e3f",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-24T08:37Z"
+},
+"src-teknotalk-php2shell-acigi-kron-teknoloji-guvenlik": {
+"kind": "source",
+"zone": "research",
+"title": "TeknoTalk: PHP2Shell Açığı Nedir? Kron Teknoloji’den Kritik Güvenlik Uyarısı!",
+"path": "sources/teknotalk-php2shell-acigi-kron-teknoloji-guvenlik/index.html",
+"hash": "9d4d832e97ea",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-24T13:34Z"
+},
 "src-telesurenglish-php2shell-vulnerabilities": {
 "kind": "source",
 "zone": "research",
@@ -7335,11 +7533,11 @@
 "zone": "research",
 "title": "The Next Web: Millions of PHP2Shell attempts so far, but officials see no break-in",
 "path": "sources/the-next-web-php2shell-no-confirmed-breaches/index.html",
-"hash": "60a9923960aa",
-"v": 1,
+"hash": "5a8137ab3ffd",
+"v": 2,
 "first": "0.14.30",
-"changed": "0.14.30",
-"date": "2026-10-24T08:37Z"
+"changed": "0.22.30",
+"date": "2026-10-26"
 },
 "src-the-register-hackers-pile-on-php2shell": {
 "kind": "source",
@@ -7896,11 +8094,11 @@
 "zone": "stories",
 "title": "Stories: written here",
 "path": "index.html#stories",
-"hash": "6ee87e267334",
-"v": 6,
+"hash": "083d338cc194",
+"v": 7,
 "first": "0.4.1",
-"changed": "0.21.0",
-"date": "2026-10-25"
+"changed": "0.22.30",
+"date": "2026-10-26"
 },
 "home-how": {
 "kind": "front",
@@ -8022,6 +8220,17 @@
 "first": "0.4.1",
 "changed": "0.4.1",
 "date": "2026-10-22"
+},
+"story-has-anyone-been-hacked": {
+"kind": "story",
+"zone": "stories",
+"title": "Has anyone actually been hacked through php2shell? What 525 sources say, five days on",
+"path": "articles/has-anyone-been-hacked/index.html",
+"hash": "8e59aa62e42b",
+"v": 1,
+"first": "0.22.30",
+"changed": "0.22.30",
+"date": "2026-10-26"
 },
 "story-what-wikipedia-knows-about-being-right": {
 "kind": "story",
