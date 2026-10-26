@@ -1,0 +1,8833 @@
+{
+ "source": "https://github.com/NCSC-NL/php2shell",
+ "licence": "EUPL-1.2",
+ "head": "2fdc314ded28",
+ "read_from": "a git clone; every count is from software/software_list_*.md at the commit named",
+ "vault_commit": "cca173c64ec5",
+ "self_check": "at cca173c64ec5 this parser agrees with data/software.json on all 674 rows the vault exported, status for status; it also finds 1 row the vault missed: iBabs / iBabs bestuursportaal (Not vuln)",
+ "classes": [
+  {
+   "id": "inherited",
+   "name": "Affected because it runs on affected PHP",
+   "rule": "Affected when deployed on an affected web-serving PHP runtime"
+  },
+  {
+   "id": "security-vendor",
+   "name": "From a security or network vendor (matched on the supplier)",
+   "rule": "^(Palo Alto Networks|Fortinet|Cisco|F5|Sophos|SonicWall|Barracuda|Check Point|Juniper Networks|Citrix|WatchGuard|Zyxel)\\b"
+  },
+  {
+   "id": "vendor-advisory",
+   "name": "Named in a vendor advisory",
+   "rule": "(advisory|PSIRT|QSA-|lists (these|this|all)|confirms that all|Affected: all|Affected package streams|Affected family|Trusted-party reporting|Vendor advisory names)"
+  },
+  {
+   "id": "fixed",
+   "name": "A fixed build or release",
+   "rule": "(Fixed|Patched|fix|patched)"
+  },
+  {
+   "id": "runtime",
+   "name": "Ships or hosts PHP itself",
+   "rule": "(Hosted PHP option|PHP relationship confirmed.*(package|runtime|image|SAPI)|Optional PHP path)"
+  },
+  {
+   "id": "application",
+   "name": "Runs on PHP; whether it is exposed is not yet assessed",
+   "rule": "PHP relationship confirmed"
+  },
+  {
+   "id": "dev",
+   "name": "Development, CI or admin tooling",
+   "rule": "Dev/CI/admin scope"
+  },
+  {
+   "id": "library",
+   "name": "A library: only the caller's PHP matters",
+   "rule": "Caller PHP runtime only"
+  },
+  {
+   "id": "other-scope",
+   "name": "Another engine, the browser, or history",
+   "rule": "(PHP Wasm scope|Independent engine|Historical scope)"
+  },
+  {
+   "id": "evidence-thin",
+   "name": "Only a requirement or an SBOM says it uses PHP",
+   "rule": "(requirement or (GitHub )?SBOM evidence only)"
+  },
+  {
+   "id": "unclassified",
+   "name": "No rule matched",
+   "rule": ""
+  }
+ ],
+ "head_rows": [
+  [
+   "aaPanel",
+   "aaPanel PHP Project hosting and CLI selection",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Acquia",
+   "Acquia Cloud Platform PHP hosting",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Adiscon / LogAnalyzer project",
+   "Adiscon LogAnalyzer PHP web application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Adobe",
+   "Adobe Commerce",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Adyen",
+   "Adyen API PHP library",
+   "Investigation",
+   "library"
+  ],
+  [
+   "AfterLogic",
+   "AfterLogic WebMail Lite PHP",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Aimeos project",
+   "Aimeos Laravel package",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Aimeos project",
+   "Aimeos TYPO3 extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Akaunting",
+   "Akaunting self-hosted application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Akeneo",
+   "Akeneo PIM Community Edition",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "Alpine Linux package maintainers",
+   "Alpine Linux v3.22 php84 package family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Amazon Web Services",
+   "AWS Elastic Beanstalk PHP platform",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Amazon Web Services",
+   "AWS SDK for PHP v3",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Amazon Web Services; third-party/customer PHP runtime publisher",
+   "AWS Lambda customer PHP custom-runtime option",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "AMPHP project",
+   "AMP asynchronous PHP framework",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Antagonist",
+   "Antagonist DirectAdmin PHP hosting selector",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Apache Friends",
+   "XAMPP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "APCu / PHP extension maintainers",
+   "APCu native PHP user-cache extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "API Platform project",
+   "API Platform Core",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Arch Linux package maintainers",
+   "Arch Linux Extra PHP package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Arch Linux package maintainers",
+   "Arch Linux Extra php-legacy package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Artefactual Systems / AtoM project",
+   "AtoM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Ascensio System SIA / ONLYOFFICE",
+   "ONLYOFFICE integration for Nextcloud",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Auth0",
+   "Auth0 PHP SDK",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Automattic / WordPress.com",
+   "WordPress.com plugin-enabled PHP hosting environment",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "AWS SDK Common Runtime team",
+   "AWS Common Runtime native PHP extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "AWS SDK Common Runtime team",
+   "AWS Common Runtime PHP userland binding package",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Backdrop CMS project",
+   "Backdrop CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "bbPress community / WordPress project",
+   "bbPress",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Behat project",
+   "Behat behavior-driven test framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Belnet",
+   "Belnet FileSender research/education service",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Ben Ramsey / Ramsey project",
+   "Ramsey UUID",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Beyond Code in partnership with Laravel",
+   "Laravel Herd managed native PHP environment",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Blackfire / Platform.sh SAS doing business as Upsun",
+   "Blackfire deterministic PHP Probe native extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Blackfire / Platform.sh SAS doing business as Upsun",
+   "Blackfire PHP SDK client library",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Bolt CMS project",
+   "Bolt CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "BookStack project",
+   "BookStack",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Box / Humbug project",
+   "Box PHAR build and packaging tool",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "BoxBilling project",
+   "BoxBilling",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Bref project",
+   "Bref PHP Lambda runtime layers",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Bref project",
+   "Bref PHP serverless application adapter",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Bref project",
+   "Bref v2 PHP Docker images",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Broadcom",
+   "Carbon Black App Control Server",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "Broadcom",
+   "CloudSOC Cloud Access Security Broker (CASB)",
+   "Investigation",
+   "vendor-advisory"
+  ],
+  [
+   "Broadcom",
+   "Content Analysis",
+   "Investigation",
+   "vendor-advisory"
+  ],
+  [
+   "Broadcom",
+   "Symantec Endpoint Protection Manager (SEPM)",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "BuddyPress community / WordPress project",
+   "BuddyPress",
+   "Investigation",
+   "application"
+  ],
+  [
+   "bunq",
+   "bunq PHP API SDK",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Cachet project",
+   "Cachet",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "CakePHP project",
+   "CakePHP framework",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Bionic php7.2-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Focal php7.4-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Jammy php8.1-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Noble php8.3-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu optional PHP package and SAPI family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Resolute php8.5-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Stonking php8.5-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Trusty php5-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Canonical / Ubuntu package maintainers",
+   "Ubuntu Xenial php7.0-fpm binary package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "CaptainHook / Sebastian Feldmann and contributors",
+   "CaptainHook PHP Git-hook manager",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "CarbonPHP project",
+   "Carbon date/time library",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Catalyst IT / Mahara project",
+   "Mahara",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Centreon",
+   "Centreon Web and central-server PHP interface",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Chamilo Association / Chamilo project",
+   "Chamilo",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Check Point",
+   "Check Point firewall web interfaces",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Checkmk GmbH",
+   "Checkmk Appliance",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "CIRCL, Luxembourg",
+   "CIRCL-operated MISP threat-sharing service",
+   "Investigation",
+   "application"
+  ],
+  [
+   "CircleCI",
+   "CircleCI cimg/php CI runtime image family",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Cisco",
+   "AppDynamics On-Premises Secure Application",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "AppDynamics PHP Agent",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "AppDynamics SaaS Secure Application",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco AI Defense (hybrid on-premises deployment)",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco ASR 5000 Series Software (StarOS)",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Business Process Automation (BPA)",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Catalyst Center (formerly DNA Center)",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Catalyst SD-WAN Manager",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco CX Cloud",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Defense Orchestrator",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Expressway Select Series",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Expressway Series",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Hypershield",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Identity Services Engine (ISE)",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Identity Services Engine (ISE) Portal Builder",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco IoT Control Center",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Meraki Dashboard",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Multicloud Defense",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Nexus Dashboard Insights",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Panoptica",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Policy Suite (CPS)",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Secure Access",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Secure Email Threat Defense",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Ultra Cloud Core - Converged Policy and Charging",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Ultra Cloud Core - Policy Control Function",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Ultra Cloud Core - Subscriber Microservices Infrastructure",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Ultra-Reliable Wireless Backhaul (URWB)",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Umbrella",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Unified Industrial Wireless Software",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco Vulnerability Management (formerly Kenna.VM)",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco WAN Automation Engine (WAE)",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Cisco+ Secure Connect",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Slido",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Cisco",
+   "Webex",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Citrix / NetScaler",
+   "Citrix NetScaler ADC and Citrix NetScaler Gateway",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "CiviCRM project",
+   "CiviCRM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "ClassicPress project",
+   "ClassicPress",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Clever Cloud fork of Caucho Technology Quercus",
+   "Quercus CleverCloud development branch",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Clientexec",
+   "Clientexec",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "Cloudflare",
+   "Cloudflare Pages v1 legacy PHP build image",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "CloudLinux",
+   "CloudLinux ea-PHP fixed packages for CloudLinux 7-10",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "CloudLinux",
+   "CloudLinux legacy ea-PHP extended-support packages",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "CloudLinux / TuxCare",
+   "CloudLinux Alt-PHP / PHP Selector runtime family",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "CloudLinux / TuxCare",
+   "CloudLinux Alt-PHP 7.4 fixed package set",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "CloudLinux / TuxCare",
+   "CloudLinux Alt-PHP 8.0 package for Alpine Linux 3.23",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "CloudLinux / TuxCare",
+   "CloudLinux Alt-PHP fixed packages for CloudLinux 7-10 and Ubuntu 22.04",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Code LTS / William Desportes and contributors",
+   "Doctum PHP API documentation generator",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Codeception / Michael Bodnarchuk and contributors",
+   "Codeception PHP test framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "CodeIgniter Foundation",
+   "CodeIgniter 4 framework",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Combodo",
+   "iTop",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Composer / Packagist project",
+   "Packagist.org open-source web application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Composer / Satis maintainers",
+   "Satis Composer repository generator",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Composer / Satis maintainers",
+   "Satis official PHP container build recipe",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Composer project",
+   "Composer",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Composer project / Docker Official Images",
+   "Composer default Docker runtime image",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Concrete CMS / PortlandLabs",
+   "Concrete CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Contao project",
+   "Contao CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Contao project",
+   "Contao Manager",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Coolify",
+   "Coolify",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Corporation for Digital Scholarship / Omeka project",
+   "Omeka Classic",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Corporation for Digital Scholarship / Omeka project",
+   "Omeka S",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Couchbase, Inc.",
+   "Couchbase native PHP SDK extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Couchbase, Inc.",
+   "Couchbase PHP Composer SDK package",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Couchbase, Inc.",
+   "Couchbase PHP OpenTelemetry integration",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Craft CMS / Pixel & Tonic",
+   "Craft CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Crater Invoice",
+   "Crater",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "CS-Cart",
+   "CS-Cart and Multi-Vendor",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "CyberPanel project",
+   "CyberPanel hosted PHP / LSPHP options",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "daloRADIUS project",
+   "daloRADIUS official Docker distribution recipe",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "daloRADIUS project",
+   "daloRADIUS PHP web management application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Dan Phillimore / Uniter project",
+   "Uniter PHP-to-JavaScript runtime stack",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Datadog / Blackfire integration",
+   "Blackfire PHP continuous-profiler integration using Datadog profiling extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "DDEV project",
+   "DDEV PHP webserver development container",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Debian PHP Maintainers",
+   "Debian trixie PHP 8.4 FPM package",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Delta Controls",
+   "enteliWEB building management system",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Deployer / Anton Medvedev and contributors",
+   "Deployer PHP deployment automation",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "DEVSENSE / Phalanger project",
+   "Phalanger PHP 5.4 compiler for .NET/Mono",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Docker Community / Docker Official Images, not WordPress upstream image ownership",
+   "WordPress Docker Official Image distribution",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Docker Official Images / docker-library PHP maintainers",
+   "Docker Official PHP Apache/mod_php image variant",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Docker Official Images / docker-library PHP maintainers",
+   "Docker Official PHP CLI image variant",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Docker Official Images / docker-library PHP maintainers",
+   "Docker Official PHP FPM image variant",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Docker Official Images / docker-library PHP maintainers",
+   "Docker Official PHP ZTS image variant",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Docker Official Images maintainers",
+   "Docker Official Image: php",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Doctrine project",
+   "Doctrine DBAL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Doctrine project",
+   "Doctrine ORM",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "DokuWiki project",
+   "DokuWiki official Docker distribution",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "DokuWiki project / splitbrain",
+   "DokuWiki",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Dolibarr project",
+   "Dolibarr ERP CRM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Drupal Commerce / Centarro",
+   "Drupal Commerce",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Drupal project",
+   "Drupal",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Drush project",
+   "Drush Drupal administration CLI",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "EasyPHP project",
+   "EasyPHP PHP Devserver Windows bundle",
+   "Investigation",
+   "application"
+  ],
+  [
+   "EC-CUBE project",
+   "EC-CUBE",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "EfficientIP",
+   "EfficientIP DNS and network automation product suite",
+   "Investigation",
+   "vendor-advisory"
+  ],
+  [
+   "EGroupware GmbH / EGroupware project",
+   "EGroupware",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Elastic",
+   "Elasticsearch official PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Endor; linked by Apache Friends",
+   "Endor browser LAMP sandbox / XAMPP for Browsers",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Enhancesoft / osTicket project",
+   "osTicket",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "EspoCRM project",
+   "EspoCRM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "European Commission",
+   "EU Academy Moodle service (2023 evidence)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "European Commission / OpenEuropa contributors",
+   "OpenEuropa Authentication Drupal module",
+   "Investigation",
+   "application"
+  ],
+  [
+   "European Commission / OpenEuropa contributors",
+   "OpenEuropa Content Drupal module",
+   "Investigation",
+   "application"
+  ],
+  [
+   "European Commission / OpenEuropa contributors",
+   "OpenEuropa Task Runner",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "ExpressionEngine project",
+   "ExpressionEngine",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "F5",
+   "BIG-IP APM PHP page templates",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "F5",
+   "BIG-IP TMOS platform PHP",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Facebook / HHVM project",
+   "HHVM 3.30 PHP-compatible legacy line",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Facebook / HipHop project",
+   "HipHop for PHP compiler (HPHPc)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Fedora Project PHP maintainers",
+   "Fedora PHP distribution package family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Feng Office",
+   "Feng Office Community Edition",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FileCloud",
+   "FileCloud Server PHP installation and maintenance",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "FileGator project",
+   "FileGator",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FileRun",
+   "FileRun",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FileRun",
+   "FileRun official Docker image (fixed PHP rebuild)",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "FileSender project",
+   "FileSender",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Firefly III project",
+   "Firefly III",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Flarum project / Flarum Foundation",
+   "Flarum",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Fly.io; customer runtime-image publisher",
+   "Fly.io customer Laravel/PHP Machines deployment",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Forma LMS project",
+   "Forma LMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Fortinet",
+   "FortiADC",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiADC Manager",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiClient Cloud Services",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiDDoS",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiDDoS-F",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiEndpoint",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiMonitor",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiSIEM",
+   "Not vuln",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiSOAR",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Fortinet",
+   "FortiSOAR PaaS",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "FOSSBilling project",
+   "FOSSBilling",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FrankenPHP",
+   "FrankenPHP static builds",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "FreeBSD Project / ports maintainers",
+   "FreeBSD PHP port and mod_php package integration",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "FreeScout project",
+   "FreeScout",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FreshRSS project",
+   "FreshRSS",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "FrontAccounting project",
+   "FrontAccounting",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Froxlor Team",
+   "Froxlor control panel PHP branches",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FusionDirectory",
+   "FusionDirectory",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FusionDirectory",
+   "FusionDirectory Orchestrator",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "FusionPBX project",
+   "FusionPBX PHP management application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Gentoo PHP maintainers",
+   "Gentoo dev-lang/php runtime package family",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "GLPI / Teclib",
+   "GLPI",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "GLPI / Teclib",
+   "GLPI official Docker images (main, 12, 11, 10)",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Google",
+   "Google APIs Client Library for PHP",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Google",
+   "Google Auth Library for PHP",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Google",
+   "Google Cloud Firestore PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Google",
+   "Google Cloud Storage PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Google / googleapis contributors",
+   "Google Cloud PHP client monolith",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Google / Protocol Buffers project",
+   "Protocol Buffers native PHP extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Google / Protocol Buffers project",
+   "Protocol Buffers PHP userland runtime",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Google Cloud",
+   "Google App Engine Flexible PHP runtime",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "Google Cloud",
+   "Google App Engine Standard PHP runtime",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Google Cloud; customer image publisher",
+   "Google Cloud Run customer PHP container option",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "Grav project",
+   "Grav CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Grav project",
+   "Grav official Docker images (getgrav/grav)",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Grokability / Snipe-IT project",
+   "Snipe-IT",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "grommunio GmbH",
+   "grommunio PHP packages for SUSE-based installations",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "grommunio GmbH",
+   "grommunio Web",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "gRPC project",
+   "gRPC native PHP extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "gRPC project",
+   "gRPC PHP Composer support library",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Guzzle project",
+   "Guzzle HTTP client",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Heroku / Salesforce",
+   "Heroku PHP buildpack and application runtime",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Hestia Control Panel project",
+   "HestiaCP hestia-php internal runtime",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Hestia Control Panel project",
+   "HestiaCP hosted-site PHP-FPM / MultiPHP option",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Hewlett Packard Enterprise",
+   "HPE Networking ClearPass Policy Manager",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "HikaShop project",
+   "HikaShop Joomla component",
+   "Investigation",
+   "application"
+  ],
+  [
+   "HippyVM contributors",
+   "HippyVM RPython PHP implementation",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Homebrew maintainers",
+   "Homebrew PHP formula and bottles",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Horde Project",
+   "Horde Groupware Webmail Edition 5",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "HostBill / HostBillApp",
+   "HostBill",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "HumHub",
+   "HumHub",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "iBabs",
+   "iBabs bestuursportaal",
+   "Not vuln",
+   "unclassified"
+  ],
+  [
+   "Ibexa",
+   "Ibexa DXP",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Icinga GmbH",
+   "Icinga Certificate Monitoring",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Icinga GmbH",
+   "Icinga DB Web",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Icinga GmbH",
+   "Icinga Director",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Icinga GmbH",
+   "Icinga PDF Export",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Icinga GmbH",
+   "Icinga Reporting",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Icinga GmbH",
+   "Icinga Web",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "igbinary project",
+   "igbinary native PHP serializer extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "ILIAS Society / ILIAS project",
+   "ILIAS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Imagick project",
+   "Imagick native PHP image extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "iNextrix / ASTPP",
+   "ASTPP v7 PHP billing and management application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Infection project",
+   "Infection PHP mutation-testing tool",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Invision Community / Invision Power Services",
+   "Invision Community Classic",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Invoice Ninja",
+   "Invoice Ninja self-hosted server",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "InvoicePlane project",
+   "InvoicePlane",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "IONOS",
+   "IONOS webhosting PHP and CLI options",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "ISPConfig project",
+   "ISPConfig 3 control panel UI and scripts",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "Issabel",
+   "Issabel 5 PHP communications management",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Jakub Vrana / Adminer project",
+   "Adminer",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "JBMC Software / DirectAdmin",
+   "DirectAdmin CustomBuild hosted PHP",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "JetBrains",
+   "PhpStorm external PHP interpreter integration",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Joomla project",
+   "Joomla 6.x",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Jordi Boggiano / Monolog contributors",
+   "Monolog",
+   "Investigation",
+   "application"
+  ],
+  [
+   "JPHP Group",
+   "JPHP JVM compiler and runtime",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Juniper Networks",
+   "Junos OS J-Web (EX/SRX scope)",
+   "Investigation",
+   "security-vendor"
+  ],
+  [
+   "Kanboard project",
+   "Kanboard",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Kevin Papst / Kimai project",
+   "Kimai",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Kinsta",
+   "Kinsta managed WordPress PHP hosting",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Kirby CMS project",
+   "Kirby CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Klemen Stirn / Hesk",
+   "Hesk Free self-hosted helpdesk",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Kopano / Kopano-dev",
+   "Kopano WebApp",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Krayin",
+   "Krayin CRM",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "Ladybird Web Solution / Faveo",
+   "Faveo Helpdesk Community Edition",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Laminas Project / Linux Foundation",
+   "Laminas MVC",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Laminas Project / Mezzio",
+   "Mezzio",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Lando project",
+   "Lando PHP service plugin images",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Laragon project",
+   "Laragon Full Windows development bundle",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Laravel",
+   "Laravel 13 framework",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Laravel",
+   "Laravel Cloud PHP runtime option",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Laravel",
+   "Laravel Vapor core PHP invocation package",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Laravel",
+   "Laravel Vapor PHP Docker base image family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Laravel; AWS infrastructure",
+   "Laravel Vapor PHP serverless hosting configuration",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "LDAP Account Manager project",
+   "LDAP Account Manager",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Leantime project",
+   "Leantime",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "LibreNMS project",
+   "LibreNMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "libsmbclient-php project",
+   "SMBClient native PHP Samba binding",
+   "Investigation",
+   "application"
+  ],
+  [
+   "libvirt-php contributors / Unraid distribution",
+   "Unraid libvirt-php management binding",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Lime Technology / Unraid",
+   "Unraid PHP management runtime distribution",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "LimeSurvey GmbH / LimeSurvey project",
+   "LimeSurvey Community Edition",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "LiveCodes project",
+   "LiveCodes PHP (Uniter) browser mode",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "LiveCodes project",
+   "LiveCodes PHP (Wasm) browser mode",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Lunar project",
+   "Lunar administration panel",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Lunar project",
+   "Lunar commerce core",
+   "Investigation",
+   "application"
+  ],
+  [
+   "m0n0wall project",
+   "m0n0wall legacy PHP-CGI management appliance",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Mage-OS project",
+   "Mage-OS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Magento / Adobe",
+   "Magento Open Source",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "MailWatch project",
+   "MailWatch for MailScanner",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "MAMP GmbH",
+   "MAMP local server environment",
+   "Investigation",
+   "application"
+  ],
+  [
+   "MantisBT project",
+   "MantisBT",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Matomo",
+   "Matomo On-Premise",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Matomo / InnoCraft",
+   "Matomo Analytics for WordPress",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Matomo team",
+   "Matomo PHP tracking client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Mautic project",
+   "Mautic",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "MediaWiki project",
+   "MediaWiki",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "MessageBird",
+   "MessageBird PHP REST API client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Metaways / tine project",
+   "tine groupware",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Microsoft",
+   "Azure App Service PHP on Linux",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Microsoft Azure Storage",
+   "Microsoft Azure Storage PHP blob client package (retired)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Microsoft Azure Storage",
+   "Microsoft Azure Storage PHP common client package (retired)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Microsoft Azure Storage",
+   "Microsoft Azure Storage PHP file client package (retired)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Microsoft Azure Storage",
+   "Microsoft Azure Storage PHP queue client package (retired)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Microsoft Azure Storage",
+   "Microsoft Azure Storage PHP table client package (retired)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Microsoft Graph Client Tooling",
+   "Microsoft Graph PHP SDK",
+   "Investigation",
+   "library"
+  ],
+  [
+   "MISP project / CIRCL",
+   "MISP 2.5 core PHP server",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Mockery project",
+   "Mockery PHP test-double framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "MODX project",
+   "MODX Revolution",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Mollie",
+   "Mollie Payments for WooCommerce",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Mollie B.V.",
+   "Mollie API PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "MongoDB PHP driver team",
+   "MongoDB native PHP driver extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "MongoDB PHP driver team",
+   "MongoDB PHP userland library",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Monica project",
+   "Monica",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "Montala / ResourceSpace",
+   "ResourceSpace",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Moodle project",
+   "Moodle",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Moodle project / complete-installer packagers",
+   "Moodle Windows complete installer family",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Moodle project / Ralf Krause",
+   "Moodle4Mac complete installer family",
+   "Investigation",
+   "application"
+  ],
+  [
+   "msgpack-php project",
+   "MessagePack native PHP serialization extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "MyBB Group",
+   "MyBB",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "MyBB Group",
+   "MyBB Merge System",
+   "Investigation",
+   "application"
+  ],
+  [
+   "N-able",
+   "Mail Assure / Spam Experts",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "N-able",
+   "N-sight",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "N-able",
+   "Passportal",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "N-able",
+   "Take Control Session routing",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Nagios Enterprises",
+   "Nagios Fusion web component subsystem",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Nagios Enterprises",
+   "Nagios XI web configuration-wizard subsystem",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Neos project",
+   "Neos CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "NetApp",
+   "ONTAP 9",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Netgate / pfSense",
+   "pfSense management components",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Netlify",
+   "Netlify PHP build environment and Composer integration",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Nette community",
+   "Nette Application",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Assets",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Bootstrap",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Caching",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Command Line",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Database",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette DI",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Forms",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette HTTP",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Mail",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette PHP Generator",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Nette community",
+   "Nette RobotLoader",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette SafeStream",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Security",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community",
+   "Nette Utils",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community / Latte",
+   "Latte template engine",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nette community / Tracy",
+   "Tracy debugger",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Nette Foundation / Nette community",
+   "Nette framework metapackage",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Nextcloud",
+   "Nextcloud Office integration app",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nextcloud",
+   "Nextcloud Server",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Nextcloud",
+   "Nextcloud Talk server app",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nextcloud Calendar project",
+   "Nextcloud Calendar server app",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Nextcloud Collectives project",
+   "Nextcloud Collectives server app",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nextcloud Contacts project",
+   "Nextcloud Contacts server app",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Nextcloud Deck project",
+   "Nextcloud Deck",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Nextcloud Docker community volunteers / Docker Official Images",
+   "Nextcloud community Docker image distribution",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Nextcloud GmbH / Nextcloud AIO maintainers",
+   "Nextcloud AIO Nextcloud application container",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Nextcloud Mail project",
+   "Nextcloud Mail server app",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Nextcloud Notes project",
+   "Nextcloud Notes",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Nextcloud Snap maintainers",
+   "Nextcloud Snap bundled PHP runtime",
+   "Investigation",
+   "application"
+  ],
+  [
+   "NextcloudPi project / Nextcloud community",
+   "NextcloudPi turnkey PHP stack",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Nikita Popov / PHP-Parser contributors",
+   "PHP-Parser userland parser",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "NixOS / Nixpkgs maintainers",
+   "Nixpkgs PHP runtime environments",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Observium Limited / Observium project",
+   "Observium",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "October CMS project",
+   "October CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Open eClass project / GUnet",
+   "Open eClass",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Open Social project",
+   "Open Social Drupal installation profile",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Open Web Analytics project",
+   "Open Web Analytics",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "OpenBSD ports maintainers / PHP documentation team",
+   "OpenBSD optional PHP package and ports family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "OpenCart project",
+   "OpenCart",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "OpenConext / SURF",
+   "OpenConext EngineBlock SAML proxy",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "OpenDocMan project",
+   "OpenDocMan",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "OpenEMR project",
+   "OpenEMR",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "OpenMage project",
+   "OpenMage",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "openmediavault project",
+   "openmediavault PHP management backend",
+   "Investigation",
+   "application"
+  ],
+  [
+   "OpenSearch Contributors; inherited Elastic client lineage",
+   "OpenSearch PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "OpenSwoole project",
+   "OpenSwoole native PHP extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "OpenWrt packages feed maintainers",
+   "OpenWrt selectable PHP8 package family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "OPNsense / Deciso",
+   "OPNsense WebGUI and API",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "OrangeHRM Inc.",
+   "OrangeHRM Starter",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Oro Inc.",
+   "OroCommerce",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Oro, Inc.",
+   "OroCRM Community Edition application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "osCommerce",
+   "osCommerce 4",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "osCommerce legacy project",
+   "osCommerce Online Merchant 2.3",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "OVHcloud",
+   "OVHcloud webhosting PHP / .ovhconfig runtime",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "ownCloud / Kiteworks",
+   "ownCloud Classic 11",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "ownCloud / Kiteworks",
+   "ownCloud Server 10",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "OXID eSales",
+   "OXID eShop",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Palo Alto Networks",
+   "PAN-OS",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Palo Alto Networks",
+   "Panorama",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "Pantheon",
+   "Pantheon managed PHP application runtime",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "ParaTest / Brian Scaturro, Filippo Tessarotto and contributors",
+   "ParaTest parallel PHPUnit runner",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Part-DB project",
+   "Part-DB official Docker image (PHP 8.4.27 rebuild)",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Part-DB project",
+   "Part-DB server",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Passbolt SA",
+   "Passbolt API server",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "PayPal",
+   "PayPal Server SDK for PHP",
+   "Investigation",
+   "library"
+  ],
+  [
+   "PCOV / Joe Watkins and contributors",
+   "PCOV PHP native code-coverage driver",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PeachPie / iolevel",
+   "PeachPie PHP compiler and .NET runtime",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "PeachPie / WpDotNet project",
+   "WpDotNet compiled WordPress on PeachPie",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "PEAR project / PHP Group",
+   "PEAR Base System",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PECL XHProf / longxinH and contributors",
+   "XHProf native PHP collection extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PECL XHProf / longxinH and contributors",
+   "XHProf PHP reporting and navigation UI",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PestPHP / Nuno Maduro and contributors",
+   "Pest PHP testing framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Phalcon project",
+   "Phalcon framework PHP extension",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PHAR.io / Arne Blankerts, Sebastian Heuer and contributors",
+   "Phive PHAR installation and verification tool",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Phillips Data / Blesta",
+   "Blesta billing platform",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Phing project / Michiel Rook and contributors",
+   "Phing PHP build system",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHP CS Fixer project",
+   "PHP CS Fixer",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "PHP CS Fixer project",
+   "PHP CS Fixer official PHP container image family",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "PHP Depend project",
+   "PHP Depend source-metrics analyzer",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHP Ev extension project",
+   "Ev native PHP libev binding",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP Event extension project",
+   "Event native PHP libevent binding",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP Gearman extension project",
+   "Gearman native PHP client and worker extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP gnupg extension project",
+   "GnuPG native PHP GPGME binding",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "PHP Mailparse extension project",
+   "Mailparse native PHP MIME parser extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP OAuth extension project",
+   "OAuth native PHP consumer extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP SSH2 extension project",
+   "SSH2 native PHP client binding",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP YAML extension project",
+   "YAML native PHP parser and emitter extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "php-amqp project",
+   "AMQP native PHP messaging client extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP-FIG",
+   "PSR logging interfaces package",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "php-memcached project",
+   "Memcached native PHP client extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHP-PM project",
+   "PHP-PM process manager",
+   "Investigation",
+   "application"
+  ],
+  [
+   "php-rdkafka project",
+   "rdkafka native PHP Kafka client extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Phpactor project",
+   "Phpactor PHP language server and refactoring tool",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "phpBB Limited / phpBB project",
+   "phpBB",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PHPBench / Daniel Leech and contributors",
+   "PHPBench benchmarking framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHPCSStandards / PHP_CodeSniffer project",
+   "PHP_CodeSniffer and PHP Code Beautifier/Fixer",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "phpDocumentor project",
+   "phpDocumentor documentation generator",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "phpIPAM project",
+   "phpIPAM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "phpLDAPadmin / leenooks project",
+   "phpLDAPadmin",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "phpLDAPadmin / leenooks project",
+   "phpLDAPadmin official Docker image",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "phpList project",
+   "phpList",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PHPMailer project",
+   "PHPMailer",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHPMD project",
+   "PHPMD PHP Mess Detector",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "phpMyAdmin project",
+   "phpMyAdmin",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "phpMyFAQ project",
+   "phpMyFAQ",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "phpPgAdmin project",
+   "phpPgAdmin",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PhpRedis project / Michael Grunder and contributors",
+   "PhpRedis native PHP client extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PHPro / GrumPHP contributors",
+   "GrumPHP Git quality-check orchestration",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "phpseclib project",
+   "phpseclib",
+   "Investigation",
+   "application"
+  ],
+  [
+   "PhpSpec project",
+   "PhpSpec specification test runner",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHPStan / Ondrej Mirtes and contributors",
+   "PHPStan static analyzer",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHPStan project",
+   "PHPStan PHPDoc parser library",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHPUnit project",
+   "PHPUnit test framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PHPUnit project / Sebastian Bergmann",
+   "PHPUnit PHP code-coverage library",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "phpVirtualBox project",
+   "phpVirtualBox server-side administration application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Pi-hole project",
+   "Pi-hole v5 legacy PHP web interface",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Pimcore project",
+   "Pimcore Platform",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Plesk",
+   "Plesk for Linux",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Plesk",
+   "Plesk for Linux hosted PHP 7.4 and 8.0-8.5 fixed packages",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Plesk",
+   "Plesk for Windows",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Plesk",
+   "Plesk for Windows hosted PHP 8.2-8.5 fixed packages",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Plesk",
+   "Plesk Obsidian hosted-site PHP",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Plesk",
+   "Plesk plesk-engine internal PHP management runtime for Windows",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Plesk",
+   "Plesk sw-engine internal PHP management runtime",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "PluXml project",
+   "PluXml 5.8 documented branch",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PmWiki project",
+   "PmWiki",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PostfixAdmin project",
+   "PostfixAdmin",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Predis project / Till Kruss and contributors",
+   "Predis PHP Redis and Valkey client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "PrestaShop project",
+   "PrestaShop",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "PrivateBin project",
+   "PrivateBin",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "ProcessWire project",
+   "ProcessWire CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "ProjectSend project",
+   "ProjectSend",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Prophecy / PhpSpec project",
+   "Prophecy PHP mocking library",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Psalm project / Daniil Gentili",
+   "Psalm official custom-PHP container image",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Psalm project / Matthew Brown, Daniil Gentili and contributors",
+   "Psalm PHP static analyzer",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "PsySH / Justin Hileman and contributors",
+   "PsySH interactive PHP shell",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Pterodactyl project",
+   "Pterodactyl Panel PHP application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Public Knowledge Project (PKP)",
+   "Open Journal Systems",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Public Knowledge Project (PKP)",
+   "Open Monograph Press",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Public Knowledge Project (PKP)",
+   "Open Preprint Systems",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Pydio",
+   "Pydio 8 Enterprise Distribution",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "QloApps",
+   "QloApps",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "QNAP",
+   "QNAP Note Station 3",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP PHP7.4 optional application before5.2 migration",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "QNAP",
+   "QNAP QNE (ADRA)",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP QTS built-in PHP runtime",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP QuMagie",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP QuTS hero built-in PHP runtime",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP QuTScloud",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP QVR Surveillance",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "QNAP",
+   "QNAP TVR OS",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "Quest Software",
+   "KACE Systems Management Appliance",
+   "Investigation",
+   "vendor-advisory"
+  ],
+  [
+   "RainLoop Team",
+   "RainLoop Webmail",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "RaspAP project",
+   "RaspAP PHP network-management web GUI",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "ReactPHP project",
+   "ReactPHP EventLoop",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Rector project",
+   "Rector automated PHP refactoring tool",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Red Hat",
+   "Red Hat Enterprise Linux 9 PHP 8.0 packages",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Red Hat",
+   "Red Hat Enterprise Linux 9 PHP RPM/AppStreams",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Red Hat",
+   "Red Hat Enterprise Linux 9 php:8.2 module",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Red Hat",
+   "Red Hat Enterprise Linux 9 php:8.3 module",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Render; customer/base-image publisher",
+   "Render customer PHP Docker hosting",
+   "Vulnerable",
+   "vendor-advisory"
+  ],
+  [
+   "RoadRunner PHP community",
+   "RoadRunner common PHP worker package",
+   "Investigation",
+   "application"
+  ],
+  [
+   "RoadRunner project",
+   "RoadRunner configured PHP worker-pool integration",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Roave",
+   "Roave backward-compatibility checker",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Roundcube project",
+   "Roundcube official 1.7.x-fpm-alpine Docker image",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Roundcube project",
+   "Roundcube Webmail",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Roundcube project",
+   "Roundcube Webmail Docker image family",
+   "Vulnerable",
+   "unclassified"
+  ],
+  [
+   "SalesAgility / SuiteCRM project",
+   "SuiteCRM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Sangoma",
+   "PBXact 17 PHP management edition",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Sangoma / FreePBX project",
+   "FreePBX 17 management framework",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Scalingo",
+   "Scalingo PaaS",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Scalingo",
+   "Scalingo PHP buildpack",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "php-cgi-wasm package (Sean Morris)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "php-cli-wasm package (Sean Morris)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "php-cloud-wasm package (Sean Morris)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "php-dbg-wasm package (Sean Morris)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "php-sdl-wasm package (Sean Morris)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "php-wasm-builder package (Sean Morris)",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Sean Morris / php-wasm project",
+   "Sean Morris php-wasm runtime package",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Securepoint GmbH",
+   "Securepoint Resellerportal",
+   "Investigation",
+   "unclassified"
+  ],
+  [
+   "Semantic MediaWiki project",
+   "Semantic MediaWiki",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Sendy",
+   "Sendy self-hosted application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Serendipity project",
+   "Serendipity Blog System",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Server Side Up",
+   "Server Side Up PHP Docker images, v5.0.2 for PHP 8.2-8.5",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Shaarli community",
+   "Shaarli",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Shivam Mathur / setup-php project",
+   "setup-php GitHub Action external PHP provisioning",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Shlink project",
+   "Shlink",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Shlink project",
+   "Shlink official Docker image",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Shopify",
+   "Shopify API Library for PHP deprecated line",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Shopify",
+   "Shopify App PHP package",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Shopware 5 project / shopware AG lineage",
+   "Shopware 5",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "shopware AG",
+   "Shopware 6",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Silverstripe CMS project",
+   "Silverstripe CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Simple Machines / SMF project",
+   "Simple Machines Forum",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SimpleRisk",
+   "SimpleRisk PHP GRC application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SimpleSAMLphp project",
+   "SimpleSAMLphp",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Slim project",
+   "Slim framework",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SnappyMail project",
+   "SnappyMail",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SolidWorx / SolidInvoice project",
+   "SolidInvoice application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SolidWorx / SolidInvoice project",
+   "SolidInvoice self-contained binary",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Sophos",
+   "MyUTM portal",
+   "Vulnerable",
+   "security-vendor"
+  ],
+  [
+   "SPIP project",
+   "SPIP",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Spryker Systems GmbH",
+   "Spryker Commerce OS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SquirrelMail project",
+   "SquirrelMail legacy documented webmail",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Statamic project",
+   "Statamic CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Statamic project",
+   "Statamic static-site generator",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Stripe and contributors",
+   "Stripe PHP client library",
+   "Investigation",
+   "library"
+  ],
+  [
+   "SugarAI / SugarCRM",
+   "Sugar application server",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Sulu project",
+   "Sulu CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SURF",
+   "SURF Research Access Management EngineBlock proxy",
+   "Investigation",
+   "application"
+  ],
+  [
+   "SURF",
+   "SURF Research Drive Nextcloud server component",
+   "Investigation",
+   "application"
+  ],
+  [
+   "SURF",
+   "SURFconext OpenConext EngineBlock proxy role",
+   "Investigation",
+   "application"
+  ],
+  [
+   "SURF",
+   "SURFdrive Nextcloud server component",
+   "Investigation",
+   "application"
+  ],
+  [
+   "SURF",
+   "SURFfilesender FileSender server component",
+   "Investigation",
+   "application"
+  ],
+  [
+   "SURF / SURFnet",
+   "SURFconext Service Provider Dashboard",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "SUSE",
+   "SUSE Linux Enterprise PHP8 package families",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "SUSE",
+   "SUSE SLE BCI PHP CLI container",
+   "Not vuln",
+   "vendor-advisory"
+  ],
+  [
+   "SUSE",
+   "SUSE SLE BCI PHP-Apache container",
+   "Not vuln",
+   "vendor-advisory"
+  ],
+  [
+   "SUSE",
+   "SUSE SLE BCI PHP-FPM 8 container",
+   "Not vuln",
+   "vendor-advisory"
+  ],
+  [
+   "Swoole project",
+   "Swoole native PHP extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Sylius project",
+   "Sylius",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Sylvain Lassaut / NoiseByNorthwest",
+   "SPX native PHP profiling extension and built-in report UI",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Symfony",
+   "Symfony Console component",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Symfony",
+   "Symfony framework",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Symfony",
+   "Symfony HttpFoundation component",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Symfony",
+   "Symfony HttpKernel component",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Symfony",
+   "Symfony mbstring polyfill",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Symfony",
+   "Symfony Process component",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Symplify",
+   "Easy Coding Standard PHP style tool",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "Synology",
+   "Synology PHP 5.6 archived package family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Synology",
+   "Synology PHP 7.0 archived package family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Synology",
+   "Synology PHP 7.2 archived package family",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Synology",
+   "Synology PHP 7.3 archived package family",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology PHP 7.4 archived package family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology PHP 8.0 archived package family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology PHP 8.1 archived package family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology PHP 8.2 archived package family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology PHP 8.3 archived package family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology PHP 8.4 package distribution",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Synology",
+   "Synology Web Station optional PHP hosting",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "TeamPass project",
+   "TeamPass",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Tenable",
+   "Tenable Enclave Security",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Tenable",
+   "Tenable Security Center (formerly Tenable.sc)",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "TerraMaster",
+   "TerraMaster TOS6 Web Server optional PHP hosting",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Textpattern project",
+   "Textpattern CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "The Cacti Group",
+   "Cacti",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "The PHP Foundation / PHP PIE project",
+   "PHP Installer for Extensions (PIE)",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "The PHP Group",
+   "PHP BCMath",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP built-in development web server",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "The PHP Group",
+   "PHP Bzip2",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Calendar",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Clang fuzzer SAPI",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "The PHP Group",
+   "PHP CLI",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "The PHP Group",
+   "PHP COM and .NET",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP core and Zend Engine",
+   "none",
+   "fixed"
+  ],
+  [
+   "The PHP Group",
+   "PHP core and Zend Engine affected web-serving release scope",
+   "Vulnerable",
+   "unclassified"
+  ],
+  [
+   "The PHP Group",
+   "PHP core and Zend Engine fixed upstream releases",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "The PHP Group",
+   "PHP Ctype",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP cURL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Date/Time",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP DBA",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP dl_test",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "The PHP Group",
+   "PHP DOM",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Embed SAPI",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Enchant",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Exif",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP FFI",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Fileinfo",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Filter",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP FTP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP GD",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Gettext",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP GMP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Hash",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Iconv",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP IMAP extension",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "The PHP Group",
+   "PHP Intl",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP JSON",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP LDAP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Lexbor support bridge",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Libxml bridge",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP LiteSpeed SAPI",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "The PHP Group",
+   "PHP Mbstring",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP MySQLi",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Mysqlnd",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP OCI8 extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP ODBC",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP OPcache",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP OPcache JIT",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "The PHP Group",
+   "PHP OpenSSL extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PCNTL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PCRE",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_DBLIB",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_FIREBIRD",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_MYSQL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_OCI extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_ODBC",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_PGSQL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PDO_SQLITE",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Phar",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP phpdbg",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "The PHP Group",
+   "PHP POSIX",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP PostgreSQL extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Pspell extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Random",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Readline",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Reflection",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Session",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Shmop",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP SimpleXML",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP SNMP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP SOAP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Sockets",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Sodium",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP SPL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP SQLite3",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Standard functions",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Sysvmsg",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Sysvsem",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Sysvshm",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Tidy",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Tokenizer",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP URI",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP XML parser",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP XMLReader",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP XMLWriter",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP XSL",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP zend_test",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "The PHP Group",
+   "PHP Zip",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP Zlib extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "The PHP Group",
+   "PHP-CGI",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "The PHP Group",
+   "PHP-FPM",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "The PHP Group / Apache operators",
+   "Apache PHP module (mod_php)",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "The PHP Group / PHP Windows maintainers",
+   "Official PHP Windows binary ZIP distribution",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "The PHP League",
+   "Flysystem",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Thelia project",
+   "Thelia",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "thirty development llc / thirty bees project",
+   "thirty bees",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Thunder project",
+   "Thunder Drupal distribution",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Tideways / open-source fork contributors",
+   "Tideways XHProf archived native extension fork",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "Tideways GmbH",
+   "Tideways commercial PHP profiling extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Tiki Software Community Association / Tiki project",
+   "Tiki Wiki CMS Groupware",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Totara",
+   "Totara",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "TransIP",
+   "TransIP API PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "TransIP",
+   "TransIP shared webhosting PHP option",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Trend Micro",
+   "Apex Central",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "Trend Micro",
+   "Apex One",
+   "Vulnerable",
+   "fixed"
+  ],
+  [
+   "TurnKey Linux",
+   "TurnKey Linux LAMP appliance PHP stack",
+   "Investigation",
+   "application"
+  ],
+  [
+   "TurnKey Linux",
+   "TurnKey Linux LAPP appliance PHP stack",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "TuxCare / CloudLinux",
+   "TuxCare ELS PHP distribution family",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "TuxCare / CloudLinux",
+   "TuxCare ELS PHP package for CentOS 8.4",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "TuxCare / CloudLinux",
+   "TuxCare ELS PHP package for CentOS 8.5",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "TuxCare / CloudLinux",
+   "TuxCare ELS PHP package for Ubuntu 16.04",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "TuxCare / CloudLinux",
+   "TuxCare ELS PHP package for Ubuntu 18.04",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Twig / Symfony community",
+   "Twig template engine",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Twilio API Team",
+   "Twilio PHP helper SDK",
+   "Investigation",
+   "library"
+  ],
+  [
+   "Twilio SendGrid",
+   "Twilio SendGrid PHP client",
+   "Investigation",
+   "library"
+  ],
+  [
+   "TYPO3 project",
+   "TYPO3 13.4",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "UnoPim",
+   "UnoPim",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "UnoPim",
+   "UnoPim official Docker images (webkul/unopim, webkul/unopim-queue)",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Upsun",
+   "Upsun PHP application containers",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "Utrecht University / Yoda",
+   "Yoda v1.5 legacy PHP web portal",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Uwe Steinmann / SeedDMS project",
+   "SeedDMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Vance Lucas / Graham Campbell / phpdotenv contributors",
+   "phpdotenv",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Vanderbilt University / REDCap Consortium",
+   "REDCap",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Vardot / Varbase project",
+   "Varbase Drupal distribution",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Virtualmin",
+   "Virtualmin hosted PHP execution modes",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "VirtueMart project",
+   "VirtueMart",
+   "Investigation",
+   "application"
+  ],
+  [
+   "VitalPBX",
+   "VitalPBX 4.0 PHP management runtime",
+   "Investigation",
+   "application"
+  ],
+  [
+   "VitalPBX",
+   "VitXi server-side PHP component",
+   "Investigation",
+   "application"
+  ],
+  [
+   "VK / VKCOM KPHP project",
+   "KPHP compiler and native runtime",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "VK / VKCOM KPHP project",
+   "KPHP vkext development PHP extension",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Vtiger",
+   "Vtiger CRM Open Source",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "VuFind project / Villanova University",
+   "VuFind",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "wallabag project",
+   "wallabag",
+   "Investigation",
+   "evidence-thin"
+  ],
+  [
+   "WampServer maintainers / Aviatechno",
+   "WampServer Windows development bundle",
+   "Investigation",
+   "application"
+  ],
+  [
+   "webERP project",
+   "webERP",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Webkul",
+   "Bagisto",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Webkul / UVdesk",
+   "UVdesk Community Helpdesk",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "webonyx / GraphQL-PHP project",
+   "webonyx GraphQL-PHP",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "WebPros / cPanel",
+   "cPanel EasyApache 4 / MultiPHP",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "WebPros / cPanel",
+   "cPanel internal PHP for hooks and AppConfig applications",
+   "Fix",
+   "vendor-advisory"
+  ],
+  [
+   "Whirl-i-Gig / CollectiveAccess project",
+   "CollectiveAccess Providence",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "WHMCS Ltd.",
+   "WHMCS self-hosted application",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Wikimedia / MediaWiki Platform maintainers",
+   "Excimer native PHP interrupting timer and sampling profiler",
+   "Investigation",
+   "fixed"
+  ],
+  [
+   "Wikimedia / MediaWiki project",
+   "Parsoid PHP",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Wikimedia Foundation",
+   "Wikimedia MediaWiki application-server PHP tier",
+   "Investigation",
+   "application"
+  ],
+  [
+   "Winter CMS project",
+   "Winter CMS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "WoltLab GmbH",
+   "WoltLab Suite",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "WooCommerce",
+   "WooCommerce",
+   "Investigation",
+   "application"
+  ],
+  [
+   "WooCommerce",
+   "WooCommerce PayPal Payments",
+   "Investigation",
+   "application"
+  ],
+  [
+   "WooCommerce",
+   "WooCommerce Stripe Payment Gateway",
+   "Investigation",
+   "application"
+  ],
+  [
+   "WooCommerce",
+   "WooPayments merchant plugin",
+   "Investigation",
+   "application"
+  ],
+  [
+   "WordPress Playground contributors",
+   "PHP.wasm browser platform adapter",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "WordPress Playground contributors",
+   "PHP.wasm Node.js platform adapter",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "WordPress Playground contributors",
+   "PHP.wasm universal JavaScript API",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "WordPress Playground contributors",
+   "WordPress Playground browser and local runtime",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "WordPress Playground contributors",
+   "WordPress Playground PHP.wasm binary family",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "WordPress project",
+   "WordPress",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "WP Engine",
+   "WP Engine managed WordPress PHP hosting",
+   "Fix",
+   "fixed"
+  ],
+  [
+   "WP-CLI / WordPress project",
+   "WP-CLI WordPress administration framework",
+   "Investigation",
+   "dev"
+  ],
+  [
+   "X-Cart",
+   "X-Cart 5",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Xdebug / Derick Rethans and contributors",
+   "Xdebug PHP Zend instrumentation extension",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "Xdebug / vscode-php-debug contributors",
+   "VS Code PHP Debug adapter external PHP/Xdebug integration",
+   "Investigation",
+   "runtime"
+  ],
+  [
+   "XenForo Ltd",
+   "XenForo",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "XigmaNAS project",
+   "XigmaNAS bundled PHP components",
+   "Investigation",
+   "application"
+  ],
+  [
+   "YetiForce S.A.",
+   "YetiForce CRM",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Yii Software / Yii project",
+   "Yii 2 framework",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Yii Software / Yii project",
+   "Yii Web extension abandoned prototype",
+   "Investigation",
+   "other-scope"
+  ],
+  [
+   "YOURLS project",
+   "YOURLS",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Zabbix",
+   "Zabbix web frontend",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "Zen Cart project",
+   "Zen Cart",
+   "Vulnerable",
+   "inherited"
+  ],
+  [
+   "ZoneMinder project",
+   "ZoneMinder PHP web and API components",
+   "Investigation",
+   "application"
+  ]
+ ],
+ "snapshots": [
+  {
+   "commit": "0ea689d8e850",
+   "at": "2026-10-21T10:37Z",
+   "rows": 0,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 0,
+    "Investigation": 0,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "1781b17f0eb7",
+   "at": "2026-10-21T11:20Z",
+   "rows": 620,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 0,
+    "Investigation": 620,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "fa324ebe5b53",
+   "at": "2026-10-21T11:41Z",
+   "rows": 620,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 0,
+    "Investigation": 620,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "1e690ffff384",
+   "at": "2026-10-21T12:01Z",
+   "rows": 622,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 2,
+    "Investigation": 620,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "2a5edbab577f",
+   "at": "2026-10-21T12:13Z",
+   "rows": 622,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 3,
+    "Investigation": 619,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "8a41720a54f8",
+   "at": "2026-10-21T12:24Z",
+   "rows": 622,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 5,
+    "Investigation": 617,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z",
+   "rows": 629,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 5,
+    "Investigation": 624,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "60da4d290315",
+   "at": "2026-10-21T12:41Z",
+   "rows": 629,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 5,
+    "Investigation": 624,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "cb58112f6e3e",
+   "at": "2026-10-21T12:57Z",
+   "rows": 629,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 5,
+    "Investigation": 624,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "23dbf42b2bba",
+   "at": "2026-10-21T13:05Z",
+   "rows": 629,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 6,
+    "Investigation": 623,
+    "Not vuln": 0
+   }
+  },
+  {
+   "commit": "cb3182746ed2",
+   "at": "2026-10-21T13:38Z",
+   "rows": 630,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 6,
+    "Investigation": 623,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "2383e9b98b2c",
+   "at": "2026-10-21T14:10Z",
+   "rows": 630,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 8,
+    "Investigation": 621,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "fec0407ebe49",
+   "at": "2026-10-21T14:11Z",
+   "rows": 630,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 8,
+    "Investigation": 621,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "360888300228",
+   "at": "2026-10-21T14:33Z",
+   "rows": 632,
+   "by_status": {
+    "Fix": 0,
+    "Vulnerable": 8,
+    "Investigation": 623,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "b4da5417672d",
+   "at": "2026-10-21T15:30Z",
+   "rows": 633,
+   "by_status": {
+    "Fix": 1,
+    "Vulnerable": 8,
+    "Investigation": 623,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z",
+   "rows": 633,
+   "by_status": {
+    "Fix": 8,
+    "Vulnerable": 9,
+    "Investigation": 615,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "a490b0be270f",
+   "at": "2026-10-21T16:06Z",
+   "rows": 636,
+   "by_status": {
+    "Fix": 11,
+    "Vulnerable": 9,
+    "Investigation": 615,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z",
+   "rows": 636,
+   "by_status": {
+    "Fix": 19,
+    "Vulnerable": 12,
+    "Investigation": 604,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z",
+   "rows": 648,
+   "by_status": {
+    "Fix": 30,
+    "Vulnerable": 13,
+    "Investigation": 604,
+    "Not vuln": 1
+   }
+  },
+  {
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z",
+   "rows": 648,
+   "by_status": {
+    "Fix": 45,
+    "Vulnerable": 20,
+    "Investigation": 579,
+    "Not vuln": 4
+   }
+  },
+  {
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z",
+   "rows": 650,
+   "by_status": {
+    "Fix": 45,
+    "Vulnerable": 31,
+    "Investigation": 569,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z",
+   "rows": 650,
+   "by_status": {
+    "Fix": 45,
+    "Vulnerable": 206,
+    "Investigation": 394,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z",
+   "rows": 664,
+   "by_status": {
+    "Fix": 45,
+    "Vulnerable": 206,
+    "Investigation": 408,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z",
+   "rows": 672,
+   "by_status": {
+    "Fix": 45,
+    "Vulnerable": 206,
+    "Investigation": 416,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "17188006c9a8",
+   "at": "2026-10-22T08:22Z",
+   "rows": 673,
+   "by_status": {
+    "Fix": 45,
+    "Vulnerable": 206,
+    "Investigation": 417,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "86b418d24f3b",
+   "at": "2026-10-22T08:27Z",
+   "rows": 674,
+   "by_status": {
+    "Fix": 46,
+    "Vulnerable": 206,
+    "Investigation": 417,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "cca173c64ec5",
+   "at": "2026-10-22T08:40Z",
+   "rows": 675,
+   "by_status": {
+    "Fix": 46,
+    "Vulnerable": 206,
+    "Investigation": 418,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z",
+   "rows": 675,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 206,
+    "Investigation": 403,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "047f49681080",
+   "at": "2026-10-22T12:30Z",
+   "rows": 675,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 207,
+    "Investigation": 402,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "145eb125f6c9",
+   "at": "2026-10-22T12:57Z",
+   "rows": 675,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 207,
+    "Investigation": 402,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "aa2d52c4f8dd",
+   "at": "2026-10-22T13:08Z",
+   "rows": 676,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 208,
+    "Investigation": 402,
+    "Not vuln": 4,
+    "none": 1
+   }
+  },
+  {
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z",
+   "rows": 707,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 208,
+    "Investigation": 431,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "741faabd9c2a",
+   "at": "2026-10-22T13:17Z",
+   "rows": 707,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 208,
+    "Investigation": 431,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z",
+   "rows": 713,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 429,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "033ba861d336",
+   "at": "2026-10-22T13:57Z",
+   "rows": 713,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 429,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "758f08e8eb19",
+   "at": "2026-10-22T14:13Z",
+   "rows": 715,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 431,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "51b0962ecd42",
+   "at": "2026-10-22T14:41Z",
+   "rows": 715,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 431,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "6e65576e2003",
+   "at": "2026-10-22T15:04Z",
+   "rows": 715,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 431,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z",
+   "rows": 724,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 440,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "7c1b84f732ce",
+   "at": "2026-10-22T22:27Z",
+   "rows": 724,
+   "by_status": {
+    "Fix": 61,
+    "Vulnerable": 216,
+    "Investigation": 440,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "302d139b8b75",
+   "at": "2026-10-22T22:48Z",
+   "rows": 725,
+   "by_status": {
+    "Fix": 62,
+    "Vulnerable": 216,
+    "Investigation": 440,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "b5b6f85fafb4",
+   "at": "2026-10-22T22:50Z",
+   "rows": 725,
+   "by_status": {
+    "Fix": 62,
+    "Vulnerable": 216,
+    "Investigation": 440,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "ecad8f7dbcc8",
+   "at": "2026-10-22T23:54Z",
+   "rows": 725,
+   "by_status": {
+    "Fix": 62,
+    "Vulnerable": 216,
+    "Investigation": 440,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "b6458a205421",
+   "at": "2026-10-23T08:50Z",
+   "rows": 726,
+   "by_status": {
+    "Fix": 63,
+    "Vulnerable": 216,
+    "Investigation": 440,
+    "Not vuln": 6,
+    "none": 1
+   }
+  },
+  {
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z",
+   "rows": 726,
+   "by_status": {
+    "Fix": 84,
+    "Vulnerable": 226,
+    "Investigation": 385,
+    "Not vuln": 30,
+    "none": 1
+   }
+  },
+  {
+   "commit": "bc4c0dddb9f7",
+   "at": "2026-10-23T09:44Z",
+   "rows": 728,
+   "by_status": {
+    "Fix": 86,
+    "Vulnerable": 226,
+    "Investigation": 385,
+    "Not vuln": 30,
+    "none": 1
+   }
+  },
+  {
+   "commit": "f6f57510376f",
+   "at": "2026-10-23T10:43Z",
+   "rows": 728,
+   "by_status": {
+    "Fix": 86,
+    "Vulnerable": 226,
+    "Investigation": 385,
+    "Not vuln": 30,
+    "none": 1
+   }
+  },
+  {
+   "commit": "5669ab341570",
+   "at": "2026-10-23T11:13Z",
+   "rows": 732,
+   "by_status": {
+    "Fix": 86,
+    "Vulnerable": 228,
+    "Investigation": 387,
+    "Not vuln": 30,
+    "none": 1
+   }
+  },
+  {
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z",
+   "rows": 746,
+   "by_status": {
+    "Fix": 108,
+    "Vulnerable": 220,
+    "Investigation": 387,
+    "Not vuln": 30,
+    "none": 1
+   }
+  },
+  {
+   "commit": "b216139f5b83",
+   "at": "2026-10-23T11:48Z",
+   "rows": 749,
+   "by_status": {
+    "Fix": 108,
+    "Vulnerable": 221,
+    "Investigation": 389,
+    "Not vuln": 30,
+    "none": 1
+   }
+  },
+  {
+   "commit": "2fdc314ded28",
+   "at": "2026-10-23T12:50Z",
+   "rows": 751,
+   "by_status": {
+    "Fix": 109,
+    "Vulnerable": 222,
+    "Investigation": 389,
+    "Not vuln": 30,
+    "none": 1
+   }
+  }
+ ],
+ "changes": [
+  {
+   "supplier": "Plesk",
+   "product": "Plesk Obsidian hosted-site PHP",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "1e690ffff384",
+   "at": "2026-10-21T12:01Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk for Linux",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "1e690ffff384",
+   "at": "2026-10-21T12:01Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk for Windows",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "1e690ffff384",
+   "at": "2026-10-21T12:01Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk plesk-engine internal PHP management runtime for Windows",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "1e690ffff384",
+   "at": "2026-10-21T12:01Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk sw-engine internal PHP management runtime",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "1e690ffff384",
+   "at": "2026-10-21T12:01Z"
+  },
+  {
+   "supplier": "CloudLinux / TuxCare",
+   "product": "CloudLinux Alt-PHP / PHP Selector runtime family",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "2a5edbab577f",
+   "at": "2026-10-21T12:13Z"
+  },
+  {
+   "supplier": "CloudLinux",
+   "product": "CloudLinux legacy ea-PHP extended-support packages",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "8a41720a54f8",
+   "at": "2026-10-21T12:24Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP for Windows distribution",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "8a41720a54f8",
+   "at": "2026-10-21T12:24Z"
+  },
+  {
+   "supplier": "F5",
+   "product": "BIG-IP APM PHP page templates",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "F5",
+   "product": "BIG-IP TMOS platform PHP",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiADC",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "Juniper Networks",
+   "product": "Junos OS J-Web (EX/SRX scope)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "NetScaler / Citrix, Cloud Software Group",
+   "product": "NetScaler ADC",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "Palo Alto Networks",
+   "product": "PAN-OS",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "Palo Alto Networks",
+   "product": "Panorama",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b01efe4f6f38",
+   "at": "2026-10-21T12:38Z"
+  },
+  {
+   "supplier": "Citrix / NetScaler",
+   "product": "NetScaler ADC",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "cb58112f6e3e",
+   "at": "2026-10-21T12:57Z"
+  },
+  {
+   "supplier": "Nextcloud",
+   "product": "Nextcloud Server",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "23dbf42b2bba",
+   "at": "2026-10-21T13:05Z"
+  },
+  {
+   "supplier": "iBabs",
+   "product": "iBabs bestuursportaal",
+   "from": "added",
+   "to": "Not vuln",
+   "commit": "cb3182746ed2",
+   "at": "2026-10-21T13:38Z"
+  },
+  {
+   "supplier": "Bref project",
+   "product": "Bref PHP Lambda runtime layers and images",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "2383e9b98b2c",
+   "at": "2026-10-21T14:10Z"
+  },
+  {
+   "supplier": "FrankenPHP",
+   "product": "FrankenPHP static builds",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "2383e9b98b2c",
+   "at": "2026-10-21T14:10Z"
+  },
+  {
+   "supplier": "Trend Micro",
+   "product": "Apex Central",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "360888300228",
+   "at": "2026-10-21T14:33Z"
+  },
+  {
+   "supplier": "Trend Micro",
+   "product": "Apex One",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "360888300228",
+   "at": "2026-10-21T14:33Z"
+  },
+  {
+   "supplier": "Red Hat",
+   "product": "Red Hat Enterprise Linux 9 php:8.2 module",
+   "from": "added",
+   "to": "Fix",
+   "commit": "b4da5417672d",
+   "at": "2026-10-21T15:30Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Noble php8.3-fpm binary package",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Debian PHP Maintainers",
+   "product": "Debian trixie PHP 8.4 FPM package",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Docker Official Images / docker-library PHP maintainers",
+   "product": "Docker Official PHP Apache/mod_php image variant",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Docker Official Images / docker-library PHP maintainers",
+   "product": "Docker Official PHP CLI image variant",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Docker Official Images / docker-library PHP maintainers",
+   "product": "Docker Official PHP FPM image variant",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Docker Official Images / docker-library PHP maintainers",
+   "product": "Docker Official PHP ZTS image variant",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Docker Official Images maintainers",
+   "product": "Docker Official Image: php",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Nextcloud GmbH / Nextcloud AIO maintainers",
+   "product": "Nextcloud AIO Nextcloud application container",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "bec5b547bd27",
+   "at": "2026-10-21T16:03Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Jammy php8.1-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "a490b0be270f",
+   "at": "2026-10-21T16:06Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Resolute php8.5-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "a490b0be270f",
+   "at": "2026-10-21T16:06Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Stonking php8.5-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "a490b0be270f",
+   "at": "2026-10-21T16:06Z"
+  },
+  {
+   "supplier": "Arch Linux package maintainers",
+   "product": "Arch Linux Extra PHP package",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "Google Cloud",
+   "product": "Google App Engine Standard PHP runtime",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk Obsidian hosted-site PHP",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk plesk-engine internal PHP management runtime for Windows",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk sw-engine internal PHP management runtime",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP LiteSpeed SAPI",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP core and Zend Engine",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP-CGI",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP-FPM",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "The PHP Group / Apache operators",
+   "product": "Apache PHP module (mod_php)",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "The PHP Group / PHP Windows maintainers",
+   "product": "Official PHP Windows binary ZIP distribution",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "eea1372e344d",
+   "at": "2026-10-21T17:03Z"
+  },
+  {
+   "supplier": "Arch Linux package maintainers",
+   "product": "Arch Linux Extra php-legacy package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Bref project",
+   "product": "Bref PHP Lambda runtime layers",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Bref project",
+   "product": "Bref v2 PHP Docker images",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Bionic php7.2-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Focal php7.4-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Trusty php5-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu Xenial php7.0-fpm binary package",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "CloudLinux / TuxCare",
+   "product": "CloudLinux Alt-PHP 7.4 fixed package set",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "CloudLinux / TuxCare",
+   "product": "CloudLinux Alt-PHP 8.0 package for Alpine Linux 3.23",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "Red Hat",
+   "product": "Red Hat Enterprise Linux 9 PHP RPM/AppStreams",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP distribution family",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP package for CentOS 8.4",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP package for CentOS 8.5",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP package for Ubuntu 16.04",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP package for Ubuntu 18.04",
+   "from": "added",
+   "to": "Fix",
+   "commit": "1b3c6dd3e26d",
+   "at": "2026-10-21T17:46Z"
+  },
+  {
+   "supplier": "BookStack project",
+   "product": "BookStack",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Bref project",
+   "product": "Bref PHP Lambda runtime layers",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Bref project",
+   "product": "Bref PHP serverless application adapter",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Bref project",
+   "product": "Bref v2 PHP Docker images",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Canonical / Ubuntu package maintainers",
+   "product": "Ubuntu optional PHP package and SAPI family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Gentoo PHP maintainers",
+   "product": "Gentoo dev-lang/php runtime package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Google Cloud",
+   "product": "Google App Engine Flexible PHP runtime",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Google Cloud; customer image publisher",
+   "product": "Google Cloud Run customer PHP container option",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Heroku / Salesforce",
+   "product": "Heroku PHP buildpack and application runtime",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Hestia Control Panel project",
+   "product": "HestiaCP hestia-php internal runtime",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Hestia Control Panel project",
+   "product": "HestiaCP hosted-site PHP-FPM / MultiPHP option",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "ISPConfig project",
+   "product": "ISPConfig 3 control panel UI and scripts",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "JBMC Software / DirectAdmin",
+   "product": "DirectAdmin CustomBuild hosted PHP",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Kevin Papst / Kimai project",
+   "product": "Kimai",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Palo Alto Networks",
+   "product": "PAN-OS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Palo Alto Networks",
+   "product": "Panorama",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Passbolt SA",
+   "product": "Passbolt API server",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Roundcube project",
+   "product": "Roundcube Webmail Docker image family",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "SUSE",
+   "product": "SUSE SLE BCI PHP CLI container",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "SUSE",
+   "product": "SUSE SLE BCI PHP-Apache container",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "SUSE",
+   "product": "SUSE SLE BCI PHP-FPM 8 container",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Shaarli community",
+   "product": "Shaarli",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Shivam Mathur / setup-php project",
+   "product": "setup-php GitHub Action external PHP provisioning",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "WebPros / cPanel",
+   "product": "cPanel EasyApache 4 / MultiPHP",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "WebPros / cPanel",
+   "product": "cPanel internal PHP for hooks and AppConfig applications",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "aaPanel",
+   "product": "aaPanel PHP Project hosting and CLI selection",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "b4ee11d57841",
+   "at": "2026-10-21T18:01Z"
+  },
+  {
+   "supplier": "Drupal project",
+   "product": "Drupal",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "Joomla project",
+   "product": "Joomla 6.x",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "Laravel",
+   "product": "Laravel 13 framework",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "Magento / Adobe",
+   "product": "Magento Open Source",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "MediaWiki project",
+   "product": "MediaWiki",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "Roundcube project",
+   "product": "Roundcube Webmail",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "Symfony",
+   "product": "Symfony framework",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP core and Zend Engine",
+   "from": "Fix",
+   "to": "none",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP core and Zend Engine affected web-serving release scope",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "The PHP Group",
+   "product": "PHP core and Zend Engine fixed upstream releases",
+   "from": "added",
+   "to": "Fix",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "WHMCS Ltd.",
+   "product": "WHMCS self-hosted application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "WordPress project",
+   "product": "WordPress",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "phpMyAdmin project",
+   "product": "phpMyAdmin",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "3b6535ac4863",
+   "at": "2026-10-21T20:40Z"
+  },
+  {
+   "supplier": "API Platform project",
+   "product": "API Platform Core",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Adiscon / LogAnalyzer project",
+   "product": "Adiscon LogAnalyzer PHP web application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Adobe",
+   "product": "Adobe Commerce",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "AfterLogic",
+   "product": "AfterLogic WebMail Lite PHP",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Akaunting",
+   "product": "Akaunting self-hosted application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Artefactual Systems / AtoM project",
+   "product": "AtoM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Backdrop CMS project",
+   "product": "Backdrop CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Bolt CMS project",
+   "product": "Bolt CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "BoxBilling project",
+   "product": "BoxBilling",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "CS-Cart",
+   "product": "CS-Cart and Multi-Vendor",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "CakePHP project",
+   "product": "CakePHP framework",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Catalyst IT / Mahara project",
+   "product": "Mahara",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Centreon",
+   "product": "Centreon Web and central-server PHP interface",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Chamilo Association / Chamilo project",
+   "product": "Chamilo",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "CiviCRM project",
+   "product": "CiviCRM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ClassicPress project",
+   "product": "ClassicPress",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "CodeIgniter Foundation",
+   "product": "CodeIgniter 4 framework",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Combodo",
+   "product": "iTop",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Composer / Packagist project",
+   "product": "Packagist.org open-source web application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Concrete CMS / PortlandLabs",
+   "product": "Concrete CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Contao project",
+   "product": "Contao CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Contao project",
+   "product": "Contao Manager",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Corporation for Digital Scholarship / Omeka project",
+   "product": "Omeka Classic",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Corporation for Digital Scholarship / Omeka project",
+   "product": "Omeka S",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Craft CMS / Pixel & Tonic",
+   "product": "Craft CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "DokuWiki project / splitbrain",
+   "product": "DokuWiki",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Dolibarr project",
+   "product": "Dolibarr ERP CRM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "EC-CUBE project",
+   "product": "EC-CUBE",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "EGroupware GmbH / EGroupware project",
+   "product": "EGroupware",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Enhancesoft / osTicket project",
+   "product": "osTicket",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "EspoCRM project",
+   "product": "EspoCRM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ExpressionEngine project",
+   "product": "ExpressionEngine",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FOSSBilling project",
+   "product": "FOSSBilling",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Feng Office",
+   "product": "Feng Office Community Edition",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FileCloud",
+   "product": "FileCloud Server PHP installation and maintenance",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FileGator project",
+   "product": "FileGator",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FileRun",
+   "product": "FileRun",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FileSender project",
+   "product": "FileSender",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Flarum project / Flarum Foundation",
+   "product": "Flarum",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Forma LMS project",
+   "product": "Forma LMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FreeScout project",
+   "product": "FreeScout",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FrontAccounting project",
+   "product": "FrontAccounting",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Froxlor Team",
+   "product": "Froxlor control panel PHP branches",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FusionDirectory",
+   "product": "FusionDirectory",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FusionDirectory",
+   "product": "FusionDirectory Orchestrator",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "FusionPBX project",
+   "product": "FusionPBX PHP management application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "GLPI / Teclib",
+   "product": "GLPI",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Grav project",
+   "product": "Grav CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Grokability / Snipe-IT project",
+   "product": "Snipe-IT",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Horde Project",
+   "product": "Horde Groupware Webmail Edition 5",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "HostBill / HostBillApp",
+   "product": "HostBill",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ILIAS Society / ILIAS project",
+   "product": "ILIAS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Ibexa",
+   "product": "Ibexa DXP",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Icinga GmbH",
+   "product": "Icinga Web",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Invision Community / Invision Power Services",
+   "product": "Invision Community Classic",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Invoice Ninja",
+   "product": "Invoice Ninja self-hosted server",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "InvoicePlane project",
+   "product": "InvoicePlane",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Jakub Vrana / Adminer project",
+   "product": "Adminer",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Kanboard project",
+   "product": "Kanboard",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Kirby CMS project",
+   "product": "Kirby CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Klemen Stirn / Hesk",
+   "product": "Hesk Free self-hosted helpdesk",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Kopano / Kopano-dev",
+   "product": "Kopano WebApp",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "LDAP Account Manager project",
+   "product": "LDAP Account Manager",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Ladybird Web Solution / Faveo",
+   "product": "Faveo Helpdesk Community Edition",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Laminas Project / Linux Foundation",
+   "product": "Laminas MVC",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Laminas Project / Mezzio",
+   "product": "Mezzio",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Leantime project",
+   "product": "Leantime",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "LibreNMS project",
+   "product": "LibreNMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "LimeSurvey GmbH / LimeSurvey project",
+   "product": "LimeSurvey Community Edition",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "MISP project / CIRCL",
+   "product": "MISP 2.5 core PHP server",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "MODX project",
+   "product": "MODX Revolution",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Mage-OS project",
+   "product": "Mage-OS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "MailWatch project",
+   "product": "MailWatch for MailScanner",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "MantisBT project",
+   "product": "MantisBT",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Matomo",
+   "product": "Matomo On-Premise",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Mautic project",
+   "product": "Mautic",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Metaways / tine project",
+   "product": "tine groupware",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Montala / ResourceSpace",
+   "product": "ResourceSpace",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Moodle project",
+   "product": "Moodle",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "MyBB Group",
+   "product": "MyBB",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Nagios Enterprises",
+   "product": "Nagios Fusion web component subsystem",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Nagios Enterprises",
+   "product": "Nagios XI web configuration-wizard subsystem",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Neos project",
+   "product": "Neos CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Nette Foundation / Nette community",
+   "product": "Nette framework metapackage",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "OXID eSales",
+   "product": "OXID eShop",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Observium Limited / Observium project",
+   "product": "Observium",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "October CMS project",
+   "product": "October CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Open Web Analytics project",
+   "product": "Open Web Analytics",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Open eClass project / GUnet",
+   "product": "Open eClass",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "OpenCart project",
+   "product": "OpenCart",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "OpenConext / SURF",
+   "product": "OpenConext EngineBlock SAML proxy",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "OpenDocMan project",
+   "product": "OpenDocMan",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "OpenMage project",
+   "product": "OpenMage",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "OrangeHRM Inc.",
+   "product": "OrangeHRM Starter",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Oro Inc.",
+   "product": "OroCommerce",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Oro, Inc.",
+   "product": "OroCRM Community Edition application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Part-DB project",
+   "product": "Part-DB server",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Phalcon project",
+   "product": "Phalcon framework PHP extension",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Phillips Data / Blesta",
+   "product": "Blesta billing platform",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Pi-hole project",
+   "product": "Pi-hole v5 legacy PHP web interface",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Pimcore project",
+   "product": "Pimcore Platform",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "PluXml project",
+   "product": "PluXml 5.8 documented branch",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "PmWiki project",
+   "product": "PmWiki",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "PostfixAdmin project",
+   "product": "PostfixAdmin",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "PrestaShop project",
+   "product": "PrestaShop",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "PrivateBin project",
+   "product": "PrivateBin",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ProcessWire project",
+   "product": "ProcessWire CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ProjectSend project",
+   "product": "ProjectSend",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Pterodactyl project",
+   "product": "Pterodactyl Panel PHP application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Public Knowledge Project (PKP)",
+   "product": "Open Journal Systems",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Public Knowledge Project (PKP)",
+   "product": "Open Monograph Press",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Public Knowledge Project (PKP)",
+   "product": "Open Preprint Systems",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Pydio",
+   "product": "Pydio 8 Enterprise Distribution",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "RainLoop Team",
+   "product": "RainLoop Webmail",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "RaspAP project",
+   "product": "RaspAP PHP network-management web GUI",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SPIP project",
+   "product": "SPIP",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SURF / SURFnet",
+   "product": "SURFconext Service Provider Dashboard",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SalesAgility / SuiteCRM project",
+   "product": "SuiteCRM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Sendy",
+   "product": "Sendy self-hosted application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Serendipity project",
+   "product": "Serendipity Blog System",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Shlink project",
+   "product": "Shlink",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Shopware 5 project / shopware AG lineage",
+   "product": "Shopware 5",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Silverstripe CMS project",
+   "product": "Silverstripe CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Simple Machines / SMF project",
+   "product": "Simple Machines Forum",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SimpleRisk",
+   "product": "SimpleRisk PHP GRC application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SimpleSAMLphp project",
+   "product": "SimpleSAMLphp",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Slim project",
+   "product": "Slim framework",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SnappyMail project",
+   "product": "SnappyMail",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SolidWorx / SolidInvoice project",
+   "product": "SolidInvoice application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Spryker Systems GmbH",
+   "product": "Spryker Commerce OS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SquirrelMail project",
+   "product": "SquirrelMail legacy documented webmail",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Statamic project",
+   "product": "Statamic CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "SugarAI / SugarCRM",
+   "product": "Sugar application server",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Sulu project",
+   "product": "Sulu CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Sylius project",
+   "product": "Sylius",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "TYPO3 project",
+   "product": "TYPO3 13.4",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "TeamPass project",
+   "product": "TeamPass",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Textpattern project",
+   "product": "Textpattern CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "The Cacti Group",
+   "product": "Cacti",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Thelia project",
+   "product": "Thelia",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Tiki Software Community Association / Tiki project",
+   "product": "Tiki Wiki CMS Groupware",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Totara",
+   "product": "Totara",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Utrecht University / Yoda",
+   "product": "Yoda v1.5 legacy PHP web portal",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Uwe Steinmann / SeedDMS project",
+   "product": "SeedDMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Vanderbilt University / REDCap Consortium",
+   "product": "REDCap",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Vtiger",
+   "product": "Vtiger CRM Open Source",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "VuFind project / Villanova University",
+   "product": "VuFind",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Webkul",
+   "product": "Bagisto",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Webkul / UVdesk",
+   "product": "UVdesk Community Helpdesk",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Whirl-i-Gig / CollectiveAccess project",
+   "product": "CollectiveAccess Providence",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Winter CMS project",
+   "product": "Winter CMS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "WoltLab GmbH",
+   "product": "WoltLab Suite",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "X-Cart",
+   "product": "X-Cart 5",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "XenForo Ltd",
+   "product": "XenForo",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "YOURLS project",
+   "product": "YOURLS",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "YetiForce S.A.",
+   "product": "YetiForce CRM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Yii Software / Yii project",
+   "product": "Yii 2 framework",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Zabbix",
+   "product": "Zabbix web frontend",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Zen Cart project",
+   "product": "Zen Cart",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "daloRADIUS project",
+   "product": "daloRADIUS PHP web management application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "grommunio GmbH",
+   "product": "grommunio Web",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "iNextrix / ASTPP",
+   "product": "ASTPP v7 PHP billing and management application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "osCommerce",
+   "product": "osCommerce 4",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "osCommerce legacy project",
+   "product": "osCommerce Online Merchant 2.3",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ownCloud / Kiteworks",
+   "product": "ownCloud Classic 11",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "ownCloud / Kiteworks",
+   "product": "ownCloud Server 10",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "phpBB Limited / phpBB project",
+   "product": "phpBB",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "phpIPAM project",
+   "product": "phpIPAM",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "phpLDAPadmin / leenooks project",
+   "product": "phpLDAPadmin",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "phpList project",
+   "product": "phpList",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "phpPgAdmin project",
+   "product": "phpPgAdmin",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "phpVirtualBox project",
+   "product": "phpVirtualBox server-side administration application",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "shopware AG",
+   "product": "Shopware 6",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "thirty development llc / thirty bees project",
+   "product": "thirty bees",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "webERP project",
+   "product": "webERP",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "0a01a4a3a786",
+   "at": "2026-10-21T21:14Z"
+  },
+  {
+   "supplier": "Akeneo",
+   "product": "Akeneo PIM Community Edition",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "Clientexec",
+   "product": "Clientexec",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "FreshRSS project",
+   "product": "FreshRSS",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "HumHub",
+   "product": "HumHub",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "Mail Assure / Spam Experts",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "N-sight",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "Passportal",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "Take Control Session routing",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "OpenEMR project",
+   "product": "OpenEMR",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "Scalingo",
+   "product": "Scalingo PHP buildpack",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "Scalingo",
+   "product": "Scalingo PaaS",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "Sophos",
+   "product": "MyUTM portal",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "phpMyFAQ project",
+   "product": "phpMyFAQ",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "wallabag project",
+   "product": "wallabag",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "fb312f372f05",
+   "at": "2026-10-21T21:22Z"
+  },
+  {
+   "supplier": "Cachet project",
+   "product": "Cachet",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "Coolify",
+   "product": "Coolify",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "Crater Invoice",
+   "product": "Crater",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "Firefly III project",
+   "product": "Firefly III",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "Krayin",
+   "product": "Krayin CRM",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "Monica project",
+   "product": "Monica",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "QloApps",
+   "product": "QloApps",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "UnoPim",
+   "product": "UnoPim",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "682c88a2d1b9",
+   "at": "2026-10-21T21:40Z"
+  },
+  {
+   "supplier": "Quest Software",
+   "product": "KACE Systems Management Appliance",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "17188006c9a8",
+   "at": "2026-10-22T08:22Z"
+  },
+  {
+   "supplier": "Checkmk GmbH",
+   "product": "Checkmk Appliance",
+   "from": "added",
+   "to": "Fix",
+   "commit": "86b418d24f3b",
+   "at": "2026-10-22T08:27Z"
+  },
+  {
+   "supplier": "Securepoint GmbH",
+   "product": "Securepoint Resellerportal",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "cca173c64ec5",
+   "at": "2026-10-22T08:40Z"
+  },
+  {
+   "supplier": "Coolify",
+   "product": "Coolify",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Firefly III project",
+   "product": "Firefly III",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "FreeBSD Project / ports maintainers",
+   "product": "FreeBSD PHP port and mod_php package integration",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Homebrew maintainers",
+   "product": "Homebrew PHP formula and bottles",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Kinsta",
+   "product": "Kinsta managed WordPress PHP hosting",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Laravel",
+   "product": "Laravel Cloud PHP runtime option",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Laravel; AWS infrastructure",
+   "product": "Laravel Vapor PHP serverless hosting configuration",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Netgate / pfSense",
+   "product": "pfSense management components",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "OPNsense / Deciso",
+   "product": "OPNsense WebGUI and API",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "OpenEMR project",
+   "product": "OpenEMR",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "OpenWrt packages feed maintainers",
+   "product": "OpenWrt selectable PHP8 package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Pantheon",
+   "product": "Pantheon managed PHP application runtime",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Scalingo",
+   "product": "Scalingo PHP buildpack",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Scalingo",
+   "product": "Scalingo PaaS",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Upsun",
+   "product": "Upsun PHP application containers",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "f944d1d6e558",
+   "at": "2026-10-22T09:25Z"
+  },
+  {
+   "supplier": "Citrix / NetScaler",
+   "product": "NetScaler ADC",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "047f49681080",
+   "at": "2026-10-22T12:30Z"
+  },
+  {
+   "supplier": "Check Point",
+   "product": "Check Point firewall web interfaces",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "aa2d52c4f8dd",
+   "at": "2026-10-22T13:08Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "AppDynamics On-Premises Secure Application",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "AppDynamics PHP Agent",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "AppDynamics SaaS Secure Application",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco AI Defense (hybrid on-premises deployment)",
+   "from": "added",
+   "to": "Not vuln",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco ASR 5000 Series Software (StarOS)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Business Process Automation (BPA)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco CX Cloud",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Catalyst Center (formerly DNA Center)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Catalyst SD-WAN Manager",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Defense Orchestrator",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Expressway Series",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Hypershield",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Identity Services Engine (ISE)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco IoT Control Center",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Multicloud Defense",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Nexus Dashboard Insights",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Panoptica",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Policy Suite (CPS)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Secure Access",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Secure Email Threat Defense",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra Cloud Core - Converged Policy and Charging",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra Cloud Core - Policy Control Function",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra Cloud Core - Subscriber Microservices Infrastructure",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra-Reliable Wireless Backhaul (URWB)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Umbrella",
+   "from": "added",
+   "to": "Not vuln",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Unified Industrial Wireless Software",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Vulnerability Management (formerly Kenna.VM)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco WAN Automation Engine (WAE)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco+ Secure Connect",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Slido",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Webex",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5ecd81b9b29b",
+   "at": "2026-10-22T13:17Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP Note Station 3",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP QNE (ADRA)",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP QTS built-in PHP runtime",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP QVR Surveillance",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP QuMagie",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP QuTS hero built-in PHP runtime",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP QuTScloud",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "QNAP",
+   "product": "QNAP TVR OS",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "014f80c544ae",
+   "at": "2026-10-22T13:30Z"
+  },
+  {
+   "supplier": "EfficientIP",
+   "product": "EfficientIP DNS and network automation product suite",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "758f08e8eb19",
+   "at": "2026-10-22T14:13Z"
+  },
+  {
+   "supplier": "Entelliweb",
+   "product": "Entelliweb building management system",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "758f08e8eb19",
+   "at": "2026-10-22T14:13Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiADC Manager",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiClient Cloud Services",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiDDoS",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiDDoS-F",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiEndpoint",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiMonitor",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiSIEM",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiSOAR",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiSOAR PaaS",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "94b4b16db9e5",
+   "at": "2026-10-22T15:28Z"
+  },
+  {
+   "supplier": "UnoPim",
+   "product": "UnoPim official Docker images (webkul/unopim, webkul/unopim-queue)",
+   "from": "added",
+   "to": "Fix",
+   "commit": "302d139b8b75",
+   "at": "2026-10-22T22:48Z"
+  },
+  {
+   "supplier": "Server Side Up",
+   "product": "Server Side Up PHP Docker images, v5.0.2 for PHP 8.2-8.5",
+   "from": "added",
+   "to": "Fix",
+   "commit": "b6458a205421",
+   "at": "2026-10-23T08:50Z"
+  },
+  {
+   "supplier": "Amazon Web Services",
+   "product": "AWS Elastic Beanstalk PHP platform",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "AppDynamics On-Premises Secure Application",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "AppDynamics PHP Agent",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "AppDynamics SaaS Secure Application",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco ASR 5000 Series Software (StarOS)",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Business Process Automation (BPA)",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Catalyst SD-WAN Manager",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Defense Orchestrator",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Expressway Series",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Hypershield",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Identity Services Engine (ISE)",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Multicloud Defense",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Nexus Dashboard Insights",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Policy Suite (CPS)",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Secure Access",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Secure Email Threat Defense",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra Cloud Core - Policy Control Function",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra Cloud Core - Subscriber Microservices Infrastructure",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Ultra-Reliable Wireless Backhaul (URWB)",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Vulnerability Management (formerly Kenna.VM)",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco+ Secure Connect",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Webex",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "DDEV project",
+   "product": "DDEV PHP webserver development container",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Delta Controls",
+   "product": "enteliWEB building management system",
+   "from": "added",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "F5",
+   "product": "BIG-IP APM PHP page templates",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "F5",
+   "product": "BIG-IP TMOS platform PHP",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiADC",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiADC Manager",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiEndpoint",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiMonitor",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Fortinet",
+   "product": "FortiSIEM",
+   "from": "Investigation",
+   "to": "Not vuln",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Lime Technology / Unraid",
+   "product": "Unraid PHP management runtime distribution",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Microsoft",
+   "product": "Azure App Service PHP on Linux",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "Mail Assure / Spam Experts",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "N-sight",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "Passportal",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "N-able",
+   "product": "Take Control Session routing",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "NixOS / Nixpkgs maintainers",
+   "product": "Nixpkgs PHP runtime environments",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Render; customer/base-image publisher",
+   "product": "Render customer PHP Docker hosting",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "SUSE",
+   "product": "SUSE Linux Enterprise PHP8 package families",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Sophos",
+   "product": "MyUTM portal",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 7.3 archived package family",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 7.4 archived package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 8.0 archived package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 8.1 archived package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 8.2 archived package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 8.3 archived package family",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology PHP 8.4 package distribution",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Synology",
+   "product": "Synology Web Station optional PHP hosting",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "TransIP",
+   "product": "TransIP shared webhosting PHP option",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Trend Micro",
+   "product": "Apex Central",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Trend Micro",
+   "product": "Apex One",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "UnoPim",
+   "product": "UnoPim",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "WP Engine",
+   "product": "WP Engine managed WordPress PHP hosting",
+   "from": "Investigation",
+   "to": "Fix",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "phpMyFAQ project",
+   "product": "phpMyFAQ",
+   "from": "Investigation",
+   "to": "Vulnerable",
+   "commit": "c3ecfc62d0aa",
+   "at": "2026-10-23T09:34Z"
+  },
+  {
+   "supplier": "Tenable",
+   "product": "Tenable Enclave Security",
+   "from": "added",
+   "to": "Fix",
+   "commit": "bc4c0dddb9f7",
+   "at": "2026-10-23T09:44Z"
+  },
+  {
+   "supplier": "Tenable",
+   "product": "Tenable Security Center (formerly Tenable.sc)",
+   "from": "added",
+   "to": "Fix",
+   "commit": "bc4c0dddb9f7",
+   "at": "2026-10-23T09:44Z"
+  },
+  {
+   "supplier": "Broadcom",
+   "product": "Carbon Black App Control Server",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "5669ab341570",
+   "at": "2026-10-23T11:13Z"
+  },
+  {
+   "supplier": "Broadcom",
+   "product": "CloudSOC Cloud Access Security Broker (CASB)",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5669ab341570",
+   "at": "2026-10-23T11:13Z"
+  },
+  {
+   "supplier": "Broadcom",
+   "product": "Content Analysis",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "5669ab341570",
+   "at": "2026-10-23T11:13Z"
+  },
+  {
+   "supplier": "Broadcom",
+   "product": "Symantec Endpoint Protection Manager (SEPM)",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "5669ab341570",
+   "at": "2026-10-23T11:13Z"
+  },
+  {
+   "supplier": "CloudLinux",
+   "product": "CloudLinux ea-PHP fixed packages for CloudLinux 7-10",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "CloudLinux / TuxCare",
+   "product": "CloudLinux Alt-PHP fixed packages for CloudLinux 7-10 and Ubuntu 22.04",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "FileCloud",
+   "product": "FileCloud Server PHP installation and maintenance",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "FileRun",
+   "product": "FileRun official Docker image (fixed PHP rebuild)",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "FrankenPHP",
+   "product": "FrankenPHP static builds",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "GLPI / Teclib",
+   "product": "GLPI official Docker images (main, 12, 11, 10)",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Grav project",
+   "product": "Grav official Docker images (getgrav/grav)",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Hestia Control Panel project",
+   "product": "HestiaCP hestia-php internal runtime",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Nextcloud GmbH / Nextcloud AIO maintainers",
+   "product": "Nextcloud AIO Nextcloud application container",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Part-DB project",
+   "product": "Part-DB official Docker image (PHP 8.4.27 rebuild)",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk for Linux hosted PHP 7.4 and 8.0-8.5 fixed packages",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk for Windows hosted PHP 8.2-8.5 fixed packages",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk plesk-engine internal PHP management runtime for Windows",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Plesk",
+   "product": "Plesk sw-engine internal PHP management runtime",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Red Hat",
+   "product": "Red Hat Enterprise Linux 9 PHP 8.0 packages",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Red Hat",
+   "product": "Red Hat Enterprise Linux 9 php:8.3 module",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Roundcube project",
+   "product": "Roundcube official 1.7.x-fpm-alpine Docker image",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Shaarli community",
+   "product": "Shaarli",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Shlink project",
+   "product": "Shlink official Docker image",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "TuxCare / CloudLinux",
+   "product": "TuxCare ELS PHP distribution family",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "grommunio GmbH",
+   "product": "grommunio PHP packages for SUSE-based installations",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "phpLDAPadmin / leenooks project",
+   "product": "phpLDAPadmin official Docker image",
+   "from": "added",
+   "to": "Fix",
+   "commit": "44ee95fe19ad",
+   "at": "2026-10-23T11:33Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Expressway Select Series",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "b216139f5b83",
+   "at": "2026-10-23T11:48Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Identity Services Engine (ISE) Portal Builder",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b216139f5b83",
+   "at": "2026-10-23T11:48Z"
+  },
+  {
+   "supplier": "Cisco",
+   "product": "Cisco Meraki Dashboard",
+   "from": "added",
+   "to": "Investigation",
+   "commit": "b216139f5b83",
+   "at": "2026-10-23T11:48Z"
+  },
+  {
+   "supplier": "Citrix / NetScaler",
+   "product": "Citrix NetScaler ADC and Citrix NetScaler Gateway",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "b216139f5b83",
+   "at": "2026-10-23T11:48Z"
+  },
+  {
+   "supplier": "Broadcom",
+   "product": "Symantec Endpoint Protection Manager (SEPM)",
+   "from": "Vulnerable",
+   "to": "Fix",
+   "commit": "2fdc314ded28",
+   "at": "2026-10-23T12:50Z"
+  },
+  {
+   "supplier": "Hewlett Packard Enterprise",
+   "product": "HPE Networking ClearPass Policy Manager",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "2fdc314ded28",
+   "at": "2026-10-23T12:50Z"
+  },
+  {
+   "supplier": "NetApp",
+   "product": "ONTAP 9",
+   "from": "added",
+   "to": "Vulnerable",
+   "commit": "2fdc314ded28",
+   "at": "2026-10-23T12:50Z"
+  }
+ ]
+}

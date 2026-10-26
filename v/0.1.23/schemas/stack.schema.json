@@ -1,0 +1,188 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "controls": {
+   "items": {
+    "properties": {
+     "branches": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "mitigation": {
+      "type": "number"
+     },
+     "sapis": {
+      "type": "array"
+     },
+     "vulns": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "label",
+     "mitigation",
+     "vulns"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "examples": {
+   "items": {
+    "properties": {
+     "components": {
+      "type": "array"
+     },
+     "edges": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "components",
+     "edges",
+     "id",
+     "name"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kinds": {
+   "items": {
+    "properties": {
+     "col": {
+      "type": "number"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "col",
+     "id",
+     "name",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "links": {
+   "items": {
+    "properties": {
+     "from": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "to": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "from",
+     "id",
+     "name",
+     "to"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "pulse": {
+   "type": "string"
+  },
+  "schema": {
+   "type": "string"
+  },
+  "sensitivity": {
+   "items": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "vulns": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "impact": {
+      "type": "string"
+     },
+     "inventory": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "page": {
+      "type": "string"
+     },
+     "product": {
+      "type": "string"
+     },
+     "scope": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "impact",
+     "inventory",
+     "name",
+     "page",
+     "product",
+     "scope",
+     "sources"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "controls",
+  "examples",
+  "kinds",
+  "links",
+  "pulse",
+  "schema",
+  "sensitivity",
+  "vulns"
+ ],
+ "title": "stack.json",
+ "type": "object"
+}
