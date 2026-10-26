@@ -209,6 +209,14 @@
    "group": "runtime"
   },
   {
+   "name": "telemetry-report.json",
+   "group": "runtime"
+  },
+  {
+   "name": "telemetry-public.json",
+   "group": "runtime"
+  },
+  {
    "name": "contributors.json",
    "group": "runtime"
   },

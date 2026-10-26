@@ -2,6 +2,12 @@
  "enabled": true,
  "endpoint": "https://dev.send.sgraph.ai",
  "vault_id": "84wr8mib",
+ "hosts": [
+  "php.oct.2026.newsroom.sgit.ai",
+  "refs.php.oct.2026.newsroom.sgit.ai",
+  "updates.php.oct.2026.newsroom.sgit.ai",
+  "team.php.oct.2026.newsroom.sgit.ai"
+ ],
  "append_token": "43ed24b413cdf8c2405d0b72cddcd36c04fd7ae1ad852b872ed25727b6d61fb3",
  "recipient": {
   "fingerprint": "sha256:8b2b26ff9386078f",

@@ -1,0 +1,189 @@
+{
+ "item": "Q141801185",
+ "label": "PHP2Shell",
+ "description": "2026 security vulnerability in PHP",
+ "modified": "2026-10-24T18:38:02Z",
+ "sitelinks": [
+  "arwiki",
+  "cawiki",
+  "commonswiki",
+  "cswiki",
+  "dawiki",
+  "dewiki",
+  "enwiki",
+  "eswiki",
+  "etwiki",
+  "euwiki",
+  "fawiki",
+  "frwiki",
+  "hewiki",
+  "hiwiki",
+  "idwiki",
+  "jawiki",
+  "kowiki",
+  "lmowiki",
+  "mswiki",
+  "nlwiki",
+  "plwiki",
+  "ptwiki",
+  "ruwiki",
+  "thwiki",
+  "trwiki",
+  "ukwiki",
+  "viwiki",
+  "zhwiki"
+ ],
+ "claims": {
+  "P1269": [
+   {
+    "value": "Q3510521",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P154": [
+   {
+    "value": "PHP2Shell logo.png",
+    "rank": "normal",
+    "type": "commonsMedia"
+   }
+  ],
+  "P1542": [
+   {
+    "value": "Q2299491",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P18": [
+   {
+    "value": "Wikimedia Phabricator PHP2Shell.png",
+    "rank": "normal",
+    "type": "commonsMedia"
+   }
+  ],
+  "P2283": [
+   {
+    "value": "Q59",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P31": [
+   {
+    "value": "Q125498109",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P3587": [
+   {
+    "value": "CVE-2026-109618",
+    "rank": "normal",
+    "type": "external-id"
+   },
+   {
+    "value": "CVE-2026-109619",
+    "rank": "normal",
+    "type": "external-id"
+   }
+  ],
+  "P366": [
+   {
+    "value": "Q2299491",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P373": [
+   {
+    "value": "PHP2Shell",
+    "rank": "normal",
+    "type": "string"
+   }
+  ],
+  "P575": [
+   {
+    "value": "+2026-08-01T00:00:00Z",
+    "rank": "normal",
+    "type": "time"
+   }
+  ],
+  "P61": [
+   {
+    "value": "Q108871753",
+    "rank": "normal",
+    "type": "wikibase-item"
+   },
+   {
+    "value": "Q21708200",
+    "rank": "normal",
+    "type": "wikibase-item"
+   },
+   {
+    "value": "Q141803449",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P6949": [
+   {
+    "value": "+2026-10-20T00:00:00Z",
+    "rank": "normal",
+    "type": "time"
+   }
+  ],
+  "P793": [
+   {
+    "value": "Q133698926",
+    "rank": "normal",
+    "type": "wikibase-item"
+   }
+  ],
+  "P856": [
+   {
+    "value": "https://www.php2shell.com/",
+    "rank": "normal",
+    "type": "url"
+   }
+  ],
+  "P973": [
+   {
+    "value": "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
+    "rank": "normal",
+    "type": "url"
+   },
+   {
+    "value": "https://github.com/php/php-src/security/advisories/GHSA-6wmf-4rv5-p3rp",
+    "rank": "normal",
+    "type": "url"
+   }
+  ]
+ },
+ "labels": {
+  "P1269": "facet of",
+  "P154": "logo image",
+  "P1542": "has effect",
+  "P18": "image",
+  "P2283": "uses",
+  "P31": "instance of",
+  "P3587": "Common Vulnerabilities and Exposures ID",
+  "P366": "has use",
+  "P373": "Commons category",
+  "P575": "time of discovery or invention",
+  "P61": "discoverer or inventor",
+  "P6949": "announcement date",
+  "P793": "significant event",
+  "P856": "official website",
+  "P973": "described at URL",
+  "Q108871753": "Wiz, Inc.",
+  "Q125498109": "named vulnerability",
+  "Q133698926": "code patching",
+  "Q141803449": "Calif",
+  "Q21708200": "OpenAI",
+  "Q2299491": "arbitrary code execution",
+  "Q3510521": "computer security",
+  "Q59": "PHP"
+ },
+ "fetched_at": "2026-10-25T14:08:10Z"
+}

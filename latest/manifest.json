@@ -354,11 +354,25 @@
    "sha256": "413fa4c387503ddfad9b6086d3c9943b6ceb3254f10bbd6c07d2021cd48929e1"
   },
   {
-   "bytes": 2863,
+   "bytes": 9400,
+   "group": "runtime",
+   "name": "telemetry-public.json",
+   "schema": "schemas/telemetry-public.schema.json",
+   "sha256": "7800e181365c2efe1b80688dd428799bd39332590e771810bb9b36092e24dc16"
+  },
+  {
+   "bytes": 4042,
+   "group": "runtime",
+   "name": "telemetry-report.json",
+   "schema": "schemas/telemetry-report.schema.json",
+   "sha256": "f3424fb4047c0d33c5839d7df826eeaddceba2a76b1b061cf10c9b15a11bd8f3"
+  },
+  {
+   "bytes": 3036,
    "group": "runtime",
    "name": "telemetry.json",
    "schema": "schemas/telemetry.schema.json",
-   "sha256": "374936d68efa226a29abcb7c9bc6339764e44c1c5a629029866715216cd4ec84"
+   "sha256": "8b48adfcc412978be13df94d9277b8a5e4c2a15c70ac517640a4c818e26329ce"
   },
   {
    "bytes": 22519,
@@ -3328,6 +3342,6 @@
   "site_version": "0.22.32"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.39/",
- "version": "0.1.39"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.40/",
+ "version": "0.1.40"
 }

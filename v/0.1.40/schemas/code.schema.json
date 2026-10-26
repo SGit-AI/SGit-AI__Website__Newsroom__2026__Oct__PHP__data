@@ -1,0 +1,204 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "backport": {
+   "properties": {
+    "author": {
+     "type": "string"
+    },
+    "authored": {
+     "type": "string"
+    },
+    "branch": {
+     "type": "string"
+    },
+    "commit": {
+     "type": "string"
+    },
+    "committed": {
+     "type": "string"
+    },
+    "files": {
+     "type": "number"
+    },
+    "files_list": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "note_in_commit": {
+     "type": "string"
+    },
+    "short": {
+     "type": "string"
+    },
+    "subject": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "author",
+    "authored",
+    "branch",
+    "commit",
+    "committed",
+    "files",
+    "files_list",
+    "note_in_commit",
+    "short",
+    "subject"
+   ],
+   "type": "object"
+  },
+  "clone_note": {
+   "type": "string"
+  },
+  "fix": {
+   "properties": {
+    "author": {
+     "type": "string"
+    },
+    "authored": {
+     "type": "string"
+    },
+    "body": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "by_area": {
+     "items": {
+      "type": "array"
+     },
+     "type": "array"
+    },
+    "coauthors": {
+     "items": {
+      "type": "string"
+     },
+     "type": "array"
+    },
+    "commit": {
+     "type": "string"
+    },
+    "committed": {
+     "type": "string"
+    },
+    "deletions": {
+     "type": "number"
+    },
+    "files": {
+     "type": "number"
+    },
+    "insertions": {
+     "type": "number"
+    },
+    "merge_path": {
+     "items": {
+      "type": "array"
+     },
+     "type": "array"
+    },
+    "non_test_files": {
+     "type": "number"
+    },
+    "parent": {
+     "type": "string"
+    },
+    "short": {
+     "type": "string"
+    },
+    "subject": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "author",
+    "authored",
+    "body",
+    "by_area",
+    "coauthors",
+    "commit",
+    "committed",
+    "deletions",
+    "files",
+    "insertions",
+    "merge_path",
+    "non_test_files",
+    "parent",
+    "short",
+    "subject"
+   ],
+   "type": "object"
+  },
+  "mechanism": {
+   "items": {
+    "properties": {
+     "step": {
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "step",
+     "text"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "open": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "repo": {
+   "type": "string"
+  },
+  "sources": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "where": {
+   "items": {
+    "properties": {
+     "in_scope": {
+      "type": "boolean"
+     },
+     "layer": {
+      "type": "string"
+     },
+     "text": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "in_scope",
+     "layer",
+     "text"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "backport",
+  "clone_note",
+  "fix",
+  "mechanism",
+  "open",
+  "repo",
+  "sources",
+  "where"
+ ],
+ "title": "code.json",
+ "type": "object"
+}
