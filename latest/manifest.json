@@ -123,11 +123,11 @@
    "sha256": "14a18dc12d832d586f1a8ac05223b6abaad600c9d2484ce6ee79e96596508f99"
   },
   {
-   "bytes": 811357,
+   "bytes": 816296,
    "group": "factcheck",
    "name": "factcheck.json",
    "schema": "schemas/factcheck.schema.json",
-   "sha256": "044cff903982686af93d3f5c3ba0b8dbc510c66a017fc647da888ee67c1df4fe"
+   "sha256": "195207ee07501b61637d51e49df4d27ede938289b7572b754222ce84d3514d34"
   },
   {
    "bytes": 414965,
@@ -3339,6 +3339,6 @@
   "vault-timeline.json",
   "vault.json"
  ],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.28/",
- "version": "0.1.28"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.29/",
+ "version": "0.1.29"
 }

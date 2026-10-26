@@ -2211,8 +2211,8 @@
   },
   {
    "id": "no-confirmed-compromise",
-   "claim_hash": "7e29253938539073",
-   "run": "Run-8",
+   "claim_hash": "2ad42a62f206e318",
+   "run": "Run-9",
    "mode": "vault",
    "kind": "state",
    "level": 4,
@@ -2220,9 +2220,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261025T144000Z",
+   "as_of": "20261026T094000Z",
    "status_fit": "ok",
-   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim.",
+   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -2407,6 +2407,14 @@
      "result": "partial",
      "excerpt": "Los ataques contra PHP2Shell ya se cuentan por millones",
      "outside_citation": false
+    },
+    {
+     "source": "wersm-php2shell-legacy-infrastructure-web-risk",
+     "file": "sources/wersm-php2shell-legacy-infrastructure-web-risk/captures/20261026T013143Z/text.txt",
+     "sha256": "e8ab2d9bb4f16fbe0aaeaaca8be044de7f36eeb785f83f36d6d2cd4ead2cd5e3",
+     "result": "partial",
+     "excerpt": "Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity",
+     "outside_citation": false
     }
    ],
    "quotes_checked": [
@@ -2423,6 +2431,7 @@
     "Evidence-12",
     "Evidence-18",
     "Evidence-3",
+    "Finding-128",
     "Finding-26",
     "Finding-85"
    ],
@@ -3533,20 +3542,20 @@
   },
   {
    "id": "release-time",
-   "claim_hash": "8334b0bd75496a85",
-   "run": "Run-1",
+   "claim_hash": "4bfc624d2663e75f",
+   "run": "Run-9",
    "mode": "vault",
    "kind": "event",
-   "level": 2,
-   "verdict": "holds-in-part",
-   "tension": "disputed",
+   "level": 5,
+   "verdict": "holds",
+   "tension": "measures-differently",
    "contradictions": [
     "K-010"
    ],
    "volatile": false,
-   "as_of": "20261022T081558Z",
+   "as_of": "20261026T094000Z",
    "status_fit": "ok",
-   "reason": "21 October is carried by every primary record. 14:00 UTC was the scheduled time (php.net pre-announcement, oss-security relay, CERT-FR, ACSC 0100 AEDT); only Daubois states it after the event ('Published: 2026-10-21, 14:00 UTC'). The artifacts are stamped earlier and later: GHSA 13:34Z, tags 13:35:38 UTC, CVE records 13:48Z and 13:54Z, GitHub release 14:06:46Z; CERT-EU says 13:30 UTC. 'Disputed' fits.",
+   "reason": "The correspondent reworded the claim on 26 October to what the records show: scheduled for 14:00 UTC on 21 October (php.net pre-announcement, the oss-security relay, the PHP Foundation), published between 13:31 and 13:35 UTC. The release manager's own timeline, from the repositories' history, gives 13:31 (tarballs), 13:33 (announcements), 13:34 (GitHub advisories) and 13:35 (php-src); the GitHub advisory is stamped 13:34:25Z and the tags 13:35:38 UTC, and CERT-EU says 13:30 UTC: independent primary records inside five minutes. Different artifacts carry other times (the GitHub release 14:06:46Z, the CVE records 13:48Z and 13:54Z, php.net feed authoring times), which is why the tension is 'measures-differently', not 'disputed'. K-010 stays open on the original embargo time, not on this claim.",
    "checked": [
     {
      "source": "openwall-oss-security-2026-10-20-34",
@@ -3619,6 +3628,14 @@
      "result": "partial",
      "excerpt": "It also moved the release from October 22nd, 14:00 UTC, to October 21st, 14:00 UTC.",
      "outside_citation": false
+    },
+    {
+     "source": "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell",
+     "file": "sources/scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell/captures/20261025T114552Z/text.txt",
+     "sha256": "ddee9f1e0bb292593c2674f5c54c40a85174c075d2ec55017124b0b23519a5f3",
+     "result": "carries",
+     "excerpt": "13:31: the php/web-php-distributions repository",
+     "outside_citation": false
     }
    ],
    "quotes_checked": [],
@@ -3628,7 +3645,7 @@
     "Finding-99"
    ],
    "mode2": "The php/web-php commit history for the 21 October news entries (actual php.net publication time), and the php-announce mailing list post time.",
-   "display": 2,
+   "display": 5,
    "stale": false
   },
   {
@@ -5383,9 +5400,18 @@
      "sources": [
       "lorikeet-php2shell"
      ]
+    },
+    {
+     "who": "PHP 8.5's release manager, Daniel Scherzer (timeline of 22 October, from the repositories' history)",
+     "when": "2026-10-22",
+     "says": "The coordinated releases were originally scheduled for 14:00 UTC on Thursday, October 22 ... rescheduled ... to Wednesday, October 21, at the same time.",
+     "measures": "the original plan, 14:00 UTC, agreeing with the PHP Foundation; it does not give the 15:00 UTC value",
+     "sources": [
+      "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+     ]
     }
    ],
-   "reading": "The original embargo time has two values, 14:00 UTC (the Foundation, echoed by The Hacker News) and 11:00 ET, which is 15:00 UTC (watchTowr, echoed by CybelAngel and others). The release itself is stamped 13:34 UTC on the GitHub advisories, ahead of the announced 14:00. The ChangeLog still carries the original date. The site should say 'about 14:00 UTC, advisories at 13:34' and give both original times. Run 7: Lorikeet's blog gives a third planned date, 24 October, unsourced and alone in the vault (in its captures of 22 and 25 October); it does not change the reading.",
+   "reading": "The original embargo time has two values, 14:00 UTC (the Foundation, echoed by The Hacker News) and 11:00 ET, which is 15:00 UTC (watchTowr, echoed by CybelAngel and others). The release itself is stamped 13:34 UTC on the GitHub advisories, ahead of the announced 14:00. The ChangeLog still carries the original date. The site should say 'about 14:00 UTC, advisories at 13:34' and give both original times. Run 7: Lorikeet's blog gives a third planned date, 24 October, unsourced and alone in the vault (in its captures of 22 and 25 October); it does not change the reading. Run 9: the release manager's own timeline gives 14:00 UTC for the original plan, the Foundation's value; only the watchTowr/CybelAngel line gives 15:00.",
    "settle": "A PHP project statement of the embargo time, or the pre-announcement's original text.",
    "ticket": "Contradiction-10"
   },
@@ -9040,6 +9066,28 @@
    "links": []
   },
   {
+   "label": "Finding-128",
+   "type": "finding",
+   "status": "open",
+   "title": "Wersm says Palo Alto Networks and Trail of Bits reported confirmed compromises; no primary capture says so",
+   "description": "Wersm (captured 26 October 01:31 UTC) writes, secondhand from TechCrunch: 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity'. Palo Alto's own PSIRT bulletin (captured 22 October 19:17 UTC, sha256 16cb7bd74aee...) says it is 'not aware of any malicious exploitation of this issue against our products'; no capture of Trail of Bits or a TechCrunch article is in the vault. No victim is named, so the site's claim about a named organisation holds. Ask for: the TechCrunch article and any Trail of Bits post, captured. Not changed by the desk.",
+   "severity": "medium",
+   "claims": [
+    "no-confirmed-compromise"
+   ],
+   "sources": [
+    "wersm-php2shell-legacy-infrastructure-web-risk",
+    "paloalto-psirt-cve-2026-109618"
+   ],
+   "pages": [],
+   "url": "",
+   "retrieved_at": "",
+   "sha256": "",
+   "excerpt": "",
+   "run": "Run-9",
+   "links": []
+  },
+  {
    "label": "Gap-1",
    "type": "gap",
    "status": "open",
@@ -9207,6 +9255,19 @@
    "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged since run 6 and explained.",
    "summary": "no-confirmed-compromise still holds at 14:40 UTC on 25 October (A4): La Razon, the one new source, reports attacks as attempts and names no victim, so it is graded partial. The vault is read from the desk's own pack copy (hsmfer5w): a pull takes 15 seconds, a fresh clone 40. W3Techs still says 69.2%. KEV (2026.10.23) still lists neither CVE; NVD has no record yet for CVE-2026-115560, the third PHP flaw La Razon names; php.net's latest releases are those of 21 October.",
    "site_export_commit": "94352a55fbaa"
+  },
+  {
+   "id": "Run-9",
+   "site_version": "data v0.1.28",
+   "vault_commit": "a7ab84771dfc",
+   "site_export_commit": "a7ab84771dfc",
+   "started": "2026-10-26T12:59Z",
+   "finished": "2026-10-26T13:30Z",
+   "quiet_wakes_before": 0,
+   "checked": "fc.py changed (release-time, reworded by the correspondent; no-confirmed-compromise, refreshed to 09:40 UTC on 26 October); fc.py check (0 failures); fc.py drift (the same six, explained); the 23 captures made since 14:40 UTC on 25 October, read for a named compromise; KEV; NVD",
+   "opened": "1 finding (Wersm's unbacked 'confirmed compromises')",
+   "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+   "summary": "release-time re-graded A5 holds: the release manager's own timeline (13:31, 13:33, 13:34, 13:35 UTC) agrees with the GitHub advisory and tags and with CERT-EU inside five minutes; the original plan, 14:00 UTC, is in K-010 from a third source. no-confirmed-compromise still holds at A4 as of 09:40 UTC on 26 October. A new source, Wersm, says Palo Alto Networks and Trail of Bits reported confirmed compromises, secondhand and naming no victim; Palo Alto's own bulletin says it is not aware of any exploitation against its products. Opened as a finding. KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
   }
  ],
  "investigations": [
