@@ -283,6 +283,14 @@
    "kind": "row",
    "journalist_run": "20261024T2126Z-journalist",
    "fixed_in": "the correspondent's release after v0.16.1"
+  },
+  {
+   "on": "2026-10-26",
+   "what": "Offline ledger: The Next Web (citing Bloomberg) and Latin Times, both in the vault since 24 October, name Mizuho, the MUFG group, All Nippon Airways, Japan Airlines, East Japan Railway, Seven-Eleven Japan and the National Tax Agency taking services down on 22 October, in the same sentence as Shizuoka Bank; only Shizuoka Bank was added (25 October). One row added. The earlier Opus passes missed them too.",
+   "file": "data: files/impact.json",
+   "kind": "missing",
+   "journalist_run": "20261025T1134Z-journalist",
+   "fixed_in": "data v0.1.19 or later (correspondent)"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."

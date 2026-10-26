@@ -1,0 +1,20 @@
+{
+ "revid": 1381280358,
+ "parentid": 0,
+ "timestamp": "2026-10-21T07:50:01Z",
+ "editor": {
+  "name": "Ca",
+  "kind": "registered"
+ },
+ "size": 824,
+ "sha1": "1b1fc06ea0bd243e163bd3aa2c8a0a2c6695dd8e",
+ "minor": false,
+ "tags": [
+  "visualeditor",
+  "editcheck-newreference"
+ ],
+ "comment": "[[WP:AES|←]]Created page with ''''PHP2Shell''' ('''CVE-2026-109618 and CVE-2026-109619''') is a [[Vulnerability (computer security)|vulnerability]] reported in October 2026 in common web scripting language [[PHP]].<ref>{{Cite web |last=Goodin |first=Dan |date=2026-10-21 |title=PHP warns it plans to release 2 emergency patches imminently |url=https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/ |access-date=2026-10-21...'",
+ "hidden_chars_removed": 0,
+ "sha256": "d56b0038f60a3ebbc5e181c43b124c9308ecff08d734d3b429fd23a6206cc0ee",
+ "wikitext": "'''PHP2Shell''' ('''CVE-2026-109618 and CVE-2026-109619''') is a [[Vulnerability (computer security)|vulnerability]] reported in October 2026 in common web scripting language [[PHP]].<ref>{{Cite web |last=Goodin |first=Dan |date=2026-10-21 |title=PHP warns it plans to release 2 emergency patches imminently |url=https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/ |access-date=2026-10-21 |website=Ars Technica |language=en}}</ref>\n\nThe vulnerability was rated 9.2 out of 10 under [[Common Vulnerability Scoring System|CVSS]] v4.0.<ref>{{Cite web |title=php.announce: [ANNOUNCE] Upcoming Critical PHP Security Release |url=https://news-web.php.net/php.announce/509 |access-date=2026-10-21 |website=news-web.php.net}}</ref>\n\n== References ==\n{{Reflist}}"
+}

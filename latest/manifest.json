@@ -102,11 +102,11 @@
    "sha256": "06af041d4b3215eeab3e533af84c747d435da42b1541f712b3f6541c16cd6c90"
   },
   {
-   "bytes": 11762,
+   "bytes": 12380,
    "group": "desk",
    "name": "desk.json",
    "schema": "schemas/desk.schema.json",
-   "sha256": "6a495cbdb9d0ea6bacfe436e7281b68579455380b5f9e04b60c0dc5cbf0200d7"
+   "sha256": "a45afb7281bddab7c1f1169e6f802c526fb5a45bb9885393ad0cb67216d85edc"
   },
   {
    "bytes": 65137,
@@ -207,11 +207,11 @@
    "sha256": "5196aa19efeb384c548141b82f257fbe2af3204f6e6fc9bc51bd97836db64a1d"
   },
   {
-   "bytes": 11908,
+   "bytes": 12680,
    "group": "story",
    "name": "impact.json",
    "schema": "schemas/impact.schema.json",
-   "sha256": "7eebe87a65bbe21a2261917abd309de4de8c735b9a109e45ba8dc7b4b68c2e64"
+   "sha256": "1ac125d2a8e8ce869c073af9779745e907b548cd627121ee5dd5c8a6cf735788"
   },
   {
    "bytes": 174351,
@@ -274,7 +274,7 @@
    "group": "runtime",
    "name": "personas.json",
    "schema": "schemas/personas.schema.json",
-   "sha256": "49d1e307272a9271337dc56104b23b0ab80d3a739bc83d55af8621311525a9a4"
+   "sha256": "cfb87fd23491b05ba0cbd55686de5abfe3fec50e3938b1934d6064749e17df08"
   },
   {
    "bytes": 134769,
@@ -3328,6 +3328,6 @@
   "site_version": "0.22.26"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.19/",
- "version": "0.1.19"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.20/",
+ "version": "0.1.20"
 }

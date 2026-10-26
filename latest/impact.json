@@ -185,6 +185,18 @@
    ]
   },
   {
+   "who": "Japan: Mizuho (bank and securities), companies of the MUFG group, All Nippon Airways (boarding passes in Apple Wallet), Japan Airlines, East Japan Railway, Seven-Eleven Japan and the National Tax Agency (some online services)",
+   "country": "JP",
+   "what": "Halted or took down some online services over the PHP flaws on 22 October, as a precaution; All Nippon Airways said it had found no evidence of a breach. The National Tax Agency is named by Latin Times only, Seven-Eleven Japan by The Next Web only",
+   "when": "2026-10-22",
+   "said_by": "The Next Web, citing Bloomberg; Latin Times",
+   "status": "reported",
+   "sources": [
+    "the-next-web-php2shell-no-confirmed-breaches",
+    "latintimes-php2shell-ai-found-bug-hiding-70-web-mil"
+   ]
+  },
+  {
    "who": "Nepal: government portals, the Nepal Rastra Bank's website and web services, the Department of Revenue Investigation's freight-tracking system",
    "country": "NP",
    "what": "Taken offline or suspended as a precaution over the PHP flaws; the Department said it suspended its service because of the risk of exploitation; restoration in stages after patching and testing. The page's headline says 'thousands' of websites but gives no count",
