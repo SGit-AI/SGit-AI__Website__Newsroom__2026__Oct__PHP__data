@@ -81,11 +81,11 @@
    "sha256": "510a6ebd72f0d0ddc15bb3e39751ff8ab90930151d0a2978986d1b309050fa39"
   },
   {
-   "bytes": 71302,
+   "bytes": 71784,
    "group": "runtime",
    "name": "control.json",
    "schema": "schemas/control.schema.json",
-   "sha256": "e1a22a035c853588132f949c33e10f3772d516e6a966da1f9bddc135e89354b1"
+   "sha256": "fcde6bfdda389ae3d3337d8f1a53a087886c22b071d33e900f47642cd924609e"
   },
   {
    "bytes": 21507,
@@ -134,14 +134,14 @@
    "group": "graphs",
    "name": "fractal.json",
    "schema": "schemas/fractal.schema.json",
-   "sha256": "94713def69347f2099ddb1f4645e645031a5401a559b79d59dd23df4ccd7514e"
+   "sha256": "b52f06fdb4fa00ce2f9b499417f5b733442f0ad6e85737b8e98361f4ed1ff33e"
   },
   {
    "bytes": 1317450,
    "group": "graphs",
    "name": "graph.json",
    "schema": "schemas/graph.schema.json",
-   "sha256": "d4d33e866a75ccbc07dbae798afa3acd4de9ad6dc7407b14e25330ff6c842452"
+   "sha256": "5506e3c9cbe17e42f6ca8911c3d37811197d0da9ee552c774f26725c6eda428e"
   },
   {
    "bytes": 431,
@@ -169,14 +169,14 @@
    "group": "grc",
    "name": "grc-graph.json",
    "schema": "schemas/grc-graph.schema.json",
-   "sha256": "d2337739aba9753d143fc6bf7763e4233f099abd96945e9f1639333e0e08d048"
+   "sha256": "06bcc6a7789c891e4b93d56d20849cf43401238db63b580e9e1071c96ebf0df9"
   },
   {
-   "bytes": 256153,
+   "bytes": 256163,
    "group": "grc",
    "name": "grc-history.json",
    "schema": "schemas/grc-history.schema.json",
-   "sha256": "539c8e1e22e2a07194bac9ecf9a44bc8ea6b13d3c073eb052208b07964f3a7b1"
+   "sha256": "b99f2b2cec37d0a5805f84da4f3a5da36bfd18871529d73847f09a0340a0898b"
   },
   {
    "bytes": 11874,
@@ -225,7 +225,7 @@
    "group": "runtime",
    "name": "items.json",
    "schema": "schemas/items.schema.json",
-   "sha256": "1c8474c11df30aa30c6987fbd0f1e4114f95d70e3579e9305223e4cdfb615adf"
+   "sha256": "36e4f953b5aef447a8151011ec5c35791e653233e30455edb339bc63bf434430"
   },
   {
    "bytes": 43976,
@@ -414,7 +414,7 @@
    "group": "evidence",
    "name": "wikipedia/php2shell/graph.json",
    "schema": null,
-   "sha256": "4ffca385e56ab948d2954cda80079073378257914dbc4d74a79794932995e106"
+   "sha256": "4025952ec9b715d954c64ba995bf22ec913b152ec3b852c92cd8d50877fd2025"
   },
   {
    "bytes": 5075,
@@ -3323,11 +3323,11 @@
   }
  ],
  "from": {
-  "commit": "8722647b3c0f931256d5b9b6bf4a5e67a5df3f12",
+  "commit": "a18d3aa60efb9849a8b0ec7cceca600e8b6f3cdb",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.31"
+  "site_version": "0.22.32"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.38/",
- "version": "0.1.38"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.39/",
+ "version": "0.1.39"
 }

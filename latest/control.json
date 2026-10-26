@@ -1301,6 +1301,14 @@
    "run": "20261026T1630Z-correspondent",
    "started": "2026-10-26T16:30:00Z",
    "summary": "Editor's session, 26 Oct. Two deliverables. (1) Added a 'weight behind one answer' section and figure to the has-anyone-been-hacked article (press v1.0.31, deck now 11 slides): 525 sources / 586 captures / 0.92 GB in 3,389 fingerprinted files, 12,887 source-watch snapshots, 325 claims, 269 verdicts…"
+  },
+  {
+   "agent": "sherpa",
+   "finished": "2026-10-26T16:54:03Z",
+   "outcome": "ok",
+   "run": "20261026T1648Z-sherpa",
+   "started": "2026-10-26T16:48:17Z",
+   "summary": "First run on v2, in an interactive session at the editor's request (the schedule is paused). Took in the six repositories: team and press with push, site, data, refs and updates read-only; v1 untouched. sgit-ai v0.25.0 (from 0.24.0): status 2.5 s then 1.6 s on the collaborators clone, 1.6 s then 1.…"
   }
  ],
  "schedules": [
@@ -1477,5 +1485,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.31"
+ "version": "0.22.32"
 }
