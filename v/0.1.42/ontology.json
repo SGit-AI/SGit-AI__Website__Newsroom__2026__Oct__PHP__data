@@ -1,0 +1,801 @@
+{
+ "id": "php-newsroom-story-ontology",
+ "version": "0.5.0",
+ "updated": "2026-10-25",
+ "kept_by": "ontologist",
+ "about": "The ontology of this site's story graph (data/graph.json), in the shape the estate's newsroom ontologies use (portugal-ontology, governance-beat-ontology on newsroom.sgit.ai). The grammar is the estate's (graphs.sgit.ai/v1/grammar/): every edge is a verb with a different, named inverse; no generic association edge; no self-inverse edge, so a tension between claims is a node that flags them; supersede, never delete; weight by independence, not by count. Each verb says whether it is inherited from an estate ontology or proposed here. The build refuses an edge whose verb is not listed, and a node whose kind is not listed.",
+ "inherits_from": [
+  {
+   "site": "graphs.sgit.ai",
+   "page": "https://graphs.sgit.ai/v1/grammar/edge-set.html"
+  },
+  {
+   "site": "newsroom.sgit.ai",
+   "page": "https://newsroom.sgit.ai/governance/data/ontology.json"
+  },
+  {
+   "site": "graphs.sgit.ai",
+   "page": "https://graphs.sgit.ai/v1/altitudes/data/altitudes.json"
+  }
+ ],
+ "language_rule": "A path reads as an English sentence: 'Wiz states claim X', 'claim X cites source Y', 'source Y is published by The Hacker News'.",
+ "node_types": [
+  {
+   "id": "claim",
+   "label": "Claim",
+   "plural": "claims",
+   "altitude": "story",
+   "definition": "One sentence this site carries, with its sources and a status word (data/claims.json)."
+  },
+  {
+   "id": "number",
+   "label": "Number",
+   "plural": "numbers",
+   "altitude": "story",
+   "definition": "A figure someone published, with what it measures (data/numbers.json)."
+  },
+  {
+   "id": "event",
+   "label": "Event",
+   "plural": "events",
+   "altitude": "story",
+   "definition": "A dated moment on the timeline (data/timeline.json)."
+  },
+  {
+   "id": "signal",
+   "label": "Exploitation signal",
+   "plural": "exploitation signals",
+   "altitude": "story",
+   "definition": "One party's report of exploitation, attempts or none seen (data/exploitation.json)."
+  },
+  {
+   "id": "advice",
+   "label": "Advice",
+   "plural": "advice",
+   "altitude": "story",
+   "definition": "What one agency told operators to do, chiefly whether to take systems offline (data/agencies.json)."
+  },
+  {
+   "id": "contradiction",
+   "label": "Tension",
+   "plural": "tensions",
+   "altitude": "story",
+   "definition": "A row of the fact-check desk's contradiction ledger: claims that measure differently, dispute or contradict each other. A node, because the grammar has no self-inverse edge."
+  },
+  {
+   "id": "topic",
+   "label": "Topic",
+   "plural": "topics",
+   "altitude": "story",
+   "definition": "A class in the topic taxonomy of claims."
+  },
+  {
+   "id": "phase",
+   "label": "Phase",
+   "plural": "phases",
+   "altitude": "story",
+   "definition": "A class in the phase taxonomy of the timeline."
+  },
+  {
+   "id": "party",
+   "label": "Party",
+   "plural": "parties",
+   "altitude": "world",
+   "definition": "A person, organisation, agency, outlet, group, registry, platform or project (data/entities.json); its class is in 'class'."
+  },
+  {
+   "id": "source",
+   "label": "Source",
+   "plural": "sources",
+   "altitude": "evidence",
+   "definition": "A page in the evidence vault's manifest (data/sources.json)."
+  },
+  {
+   "id": "capture",
+   "label": "Capture",
+   "plural": "captures",
+   "altitude": "evidence",
+   "definition": "One time the vault saved a source: its files and their hashes. The first fractal layer below a source."
+  },
+  {
+   "id": "cve",
+   "label": "CVE",
+   "plural": "CVEs",
+   "altitude": "anchor",
+   "definition": "An anchor node: a CVE identifier, where the story graph joins the code-review graph (data/review.json) and the outside world (cve.org). It has no authority of its own."
+  }
+ ],
+ "taxonomy": [
+  {
+   "id": "party",
+   "label": "Party classes",
+   "broader": null,
+   "types": [
+    "person",
+    "organisation",
+    "agency",
+    "outlet",
+    "group",
+    "registry",
+    "platform",
+    "project",
+    "unnamed",
+    "this-site"
+   ]
+  },
+  {
+   "id": "signal-class",
+   "label": "Exploitation signal classes",
+   "broader": null,
+   "types": [
+    "attempt-observed",
+    "none-observed",
+    "assessment",
+    "claim",
+    "second-hand"
+   ],
+   "maps": {
+    "attempt": "attempt-observed",
+    "attempts": "attempt-observed",
+    "attack traffic": "attempt-observed",
+    "sensor hit": "attempt-observed",
+    "negative finding": "none-observed",
+    "assessment": "assessment",
+    "claim": "claim",
+    "claim of exploitation": "claim",
+    "statement": "claim",
+    "second-hand": "second-hand"
+   },
+   "note": "data/exploitation.json has fourteen spellings of five classes; the map says which is which and the build refuses a spelling it does not know."
+  }
+ ],
+ "edges": [
+  {
+   "verb": "cites",
+   "inverse": "cited_by",
+   "domain": [
+    "claim",
+    "number",
+    "event",
+    "signal",
+    "advice"
+   ],
+   "range": [
+    "source"
+   ],
+   "reads": "{s} cites {t}",
+   "origin": "inherited",
+   "from": "altitudes.json edge_registry"
+  },
+  {
+   "verb": "states",
+   "inverse": "stated_by",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "claim",
+    "number",
+    "signal"
+   ],
+   "reads": "{s} states {t}",
+   "origin": "proposed",
+   "note": "The originator, from data/attribution.json. The newsroom review's change 10."
+  },
+  {
+   "verb": "relays",
+   "inverse": "relayed_by",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "claim",
+    "number",
+    "signal"
+   ],
+   "reads": "{s} relays {t}",
+   "origin": "proposed",
+   "note": "Passed on, not originated: where a row says so ('via The Hacker News'), or where the fact-check desk found the claim's words in a capture whose publisher is not an origin. A source that is only cited is evidence, never a relay: it may support or contradict. Ten relays of one statement are one origin (board 062, 'restates')."
+  },
+  {
+   "verb": "counts",
+   "inverse": "counted_by",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "claim",
+    "number"
+   ],
+   "reads": "{s} counts {t}",
+   "origin": "proposed",
+   "note": "This site counted it from a captured file or a clone."
+  },
+  {
+   "verb": "published_by",
+   "inverse": "publishes",
+   "domain": [
+    "source"
+   ],
+   "range": [
+    "party"
+   ],
+   "reads": "{s} is published by {t}",
+   "origin": "inherited",
+   "from": "governance-beat-ontology"
+  },
+  {
+   "verb": "syndicates",
+   "inverse": "syndicated_in",
+   "domain": [
+    "source"
+   ],
+   "range": [
+    "party"
+   ],
+   "reads": "{s} syndicates {t}",
+   "origin": "proposed",
+   "note": "The page is another party's wire copy (Reuters, dpa, PA) carried by the outlet that publishes it, from data/attribution.json 'sources'. One wire story on ten sites is one statement: the reason this verb exists."
+  },
+  {
+   "verb": "captured_in",
+   "inverse": "captures",
+   "domain": [
+    "source"
+   ],
+   "range": [
+    "capture"
+   ],
+   "reads": "{s} is captured in {t}",
+   "origin": "inherited",
+   "from": "portugal-ontology"
+  },
+  {
+   "verb": "appears_in",
+   "inverse": "carries",
+   "domain": [
+    "claim"
+   ],
+   "range": [
+    "capture"
+   ],
+   "reads": "{s} appears in {t}",
+   "origin": "inherited",
+   "from": "altitudes.json (Concept to Unit)",
+   "note": "Only where the fact-check desk found the claim's words in that capture's text, with the file's sha256."
+  },
+  {
+   "verb": "flags",
+   "inverse": "flagged_by",
+   "domain": [
+    "contradiction"
+   ],
+   "range": [
+    "claim"
+   ],
+   "reads": "{s} flags {t}",
+   "origin": "inherited",
+   "from": "altitudes.json edge_registry"
+  },
+  {
+   "verb": "advises",
+   "inverse": "advised_by",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "advice"
+   ],
+   "reads": "{s} advises {t}",
+   "origin": "proposed"
+  },
+  {
+   "verb": "classified_as",
+   "inverse": "classifies",
+   "domain": [
+    "claim",
+    "event"
+   ],
+   "range": [
+    "topic",
+    "phase"
+   ],
+   "reads": "{s} is classified as {t}",
+   "origin": "proposed",
+   "note": "The taxonomy axis: points upward."
+  },
+  {
+   "verb": "names",
+   "inverse": "named_in",
+   "domain": [
+    "claim",
+    "number",
+    "event"
+   ],
+   "range": [
+    "cve"
+   ],
+   "reads": "{s} names {t}",
+   "origin": "proposed",
+   "note": "Read from the row's text: a CVE identifier it contains."
+  },
+  {
+   "verb": "part_of",
+   "inverse": "has_part",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "party"
+   ],
+   "reads": "{s} is part of {t}",
+   "origin": "inherited",
+   "from": "governance-beat-ontology"
+  },
+  {
+   "verb": "member_of",
+   "inverse": "has_member",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "party"
+   ],
+   "reads": "{s} is a member of {t}",
+   "origin": "proposed"
+  },
+  {
+   "verb": "works_for",
+   "inverse": "employs",
+   "domain": [
+    "party"
+   ],
+   "range": [
+    "party"
+   ],
+   "reads": "{s} works for {t}",
+   "origin": "proposed",
+   "note": "Only where a captured source names the role (a CEO, a researcher writing as the firm). The Portugal ontology bans works_at for speaker cards, which assert no employment; these do."
+  }
+ ],
+ "bridges": [
+  {
+   "from": "cve",
+   "to": "data/review.json",
+   "relation": "zooms_into",
+   "basis": "the review graph's vulnerability layer has one node per CVE (cve-109618, cve-109619)",
+   "note": "The fractal step: a CVE node in this graph opens the code-review graph, with its own ontology (flaws, remediation, code) and its own verbs, joined by this named bridge. Its verbs are listed below as their own scope, unchanged."
+  },
+  {
+   "from": "source",
+   "to": "data/wikipedia/<article>/graph.json",
+   "relation": "zooms_into",
+   "basis": "a source of this site that is a Wikipedia article opens the article's own graph; a source that a Wikipedia reference is captured_as is where the two graphs meet",
+   "note": "The fractal step for an encyclopedia: the article is a node in the story graph (a source), and inside it is a graph with its own kinds and verbs, joined to the story graph through the sources both cite."
+  }
+ ],
+ "scopes": {
+  "code-review": {
+   "graph": "data/review.json",
+   "edges": [
+    {
+     "verb": "addresses",
+     "inverse": "addressed by"
+    },
+    {
+     "verb": "fixes",
+     "inverse": "fixed by"
+    },
+    {
+     "verb": "introduces",
+     "inverse": "introduced by"
+    },
+    {
+     "verb": "realised in",
+     "inverse": "realises"
+    },
+    {
+     "verb": "contains",
+     "inverse": "contained in"
+    },
+    {
+     "verb": "touches",
+     "inverse": "touched by"
+    }
+   ]
+  },
+  "wikipedia": {
+   "graph": "data/wikipedia/<article>/graph.json",
+   "about": "A Wikipedia article read as a graph of its own: the article, its sections, one statement per sentence, the references each statement cites, every revision and who made it, and the Wikidata item. Its own kinds and verbs, joined to the story graph by one named edge: a reference is captured_as a source of this site, and that source is what the site's claims cite. Two statements of fact that share a source meet at the source; there is no 'same as' edge (graphs.sgit.ai rule 7). The classes of statement are read from the wording by admin/build/wikitext.py, never from whether the statement is true.",
+   "node_types": [
+    {
+     "id": "article",
+     "label": "Article",
+     "plural": "articles",
+     "definition": "One Wikipedia article, at its latest revision fetched."
+    },
+    {
+     "id": "section",
+     "label": "Section",
+     "plural": "sections",
+     "definition": "A heading of the article; the lead is a section."
+    },
+    {
+     "id": "statement",
+     "label": "Statement",
+     "plural": "statements",
+     "definition": "One sentence of the article, with its class (quote, attributed, hedged, record, stated) and whether it is cited."
+    },
+    {
+     "id": "reference",
+     "label": "Reference",
+     "plural": "references",
+     "definition": "One <ref> of the article: a page somewhere, with the publisher the article names."
+    },
+    {
+     "id": "revision",
+     "label": "Revision",
+     "plural": "revisions",
+     "definition": "One saved edit of the article: when, by whom (a public username, or anonymous), what it added and removed."
+    },
+    {
+     "id": "editor",
+     "label": "Editor",
+     "plural": "editors",
+     "definition": "A registered Wikipedia editor by public username, or one node for every anonymous edit; never an address."
+    },
+    {
+     "id": "item",
+     "label": "Wikidata item",
+     "plural": "Wikidata items",
+     "definition": "The structured record Wikidata keeps for the subject, with its claims."
+    },
+    {
+     "id": "source",
+     "label": "Source",
+     "plural": "sources",
+     "definition": "A source of this site's evidence vault (the story graph's node, borrowed): where a reference has been captured."
+    },
+    {
+     "id": "party",
+     "label": "Party",
+     "plural": "parties",
+     "definition": "A party of this site's entities file (the story graph's node, borrowed): who publishes a reference."
+    },
+    {
+     "id": "cve",
+     "label": "CVE",
+     "plural": "CVEs",
+     "definition": "An anchor node (the story graph's), borrowed: a CVE identifier a statement names, where the article joins the story and code-review graphs."
+    },
+    {
+     "id": "thread",
+     "label": "Talk thread",
+     "plural": "talk threads",
+     "definition": "One discussion on the article's talk page: a heading and the posts under it."
+    },
+    {
+     "id": "post",
+     "label": "Talk post",
+     "plural": "talk posts",
+     "definition": "One signed contribution to a thread: who, when, in reply to which post, and whether it asks for an edit ({{request edit}})."
+    },
+    {
+     "id": "finding",
+     "label": "Finding",
+     "plural": "findings",
+     "definition": "One finding of this site's review of the article, done as a Wikipedia reviewer would: the statement it questions, the policy it rests on, the captured sources that bear on it, and the change proposed for a human to put to the talk page. Nothing is posted by an agent."
+    }
+   ],
+   "taxonomy": [
+    {
+     "id": "statement-class",
+     "label": "Classes of statement, by wording",
+     "types": [
+      "quote",
+      "attributed",
+      "hedged",
+      "record",
+      "stated"
+     ],
+     "reads": {
+      "quote": "carries someone's words in quotation marks",
+      "attributed": "says a named party said, reported, estimated or believes it",
+      "hedged": "may, could, reportedly, is believed, estimated to: the article being careful",
+      "record": "a number, a date, a version or an identifier, stated plainly",
+      "stated": "a plain statement in the article's own voice"
+     },
+     "note": "Wikipedia's rule is that an article states facts and attributes opinions; so 'attributed' and 'quote' are where the article hands a view or a report to a party, and 'record' and 'stated' are what it asserts itself. The class says how a sentence is worded, not whether it holds; the evidence is in the references."
+    }
+   ],
+   "edges": [
+    {
+     "verb": "has_section",
+     "inverse": "section_of",
+     "domain": [
+      "article"
+     ],
+     "range": [
+      "section"
+     ],
+     "reads": "{s} has section {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "contains",
+     "inverse": "contained_in",
+     "domain": [
+      "section"
+     ],
+     "range": [
+      "statement"
+     ],
+     "reads": "{s} contains {t}",
+     "origin": "inherited",
+     "from": "Issues-FS link types"
+    },
+    {
+     "verb": "cites",
+     "inverse": "cited_by",
+     "domain": [
+      "statement",
+      "article"
+     ],
+     "range": [
+      "reference"
+     ],
+     "reads": "{s} cites {t}",
+     "origin": "inherited",
+     "from": "the story graph",
+     "note": "From the article itself where the reference sits in the infobox rather than in a sentence."
+    },
+    {
+     "verb": "captured_as",
+     "inverse": "capture_of",
+     "domain": [
+      "reference"
+     ],
+     "range": [
+      "source"
+     ],
+     "reads": "{s} is captured as {t}",
+     "origin": "proposed",
+     "note": "The bridge to the story graph: the reference's page is in the evidence vault under this source. Computed by the build from the URL, never authored."
+    },
+    {
+     "verb": "published_by",
+     "inverse": "publishes",
+     "domain": [
+      "reference"
+     ],
+     "range": [
+      "party"
+     ],
+     "reads": "{s} is published by {t}",
+     "origin": "inherited",
+     "from": "governance-beat-ontology"
+    },
+    {
+     "verb": "revises",
+     "inverse": "revised_in",
+     "domain": [
+      "revision"
+     ],
+     "range": [
+      "article"
+     ],
+     "reads": "{s} revises {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "adds",
+     "inverse": "added_in",
+     "domain": [
+      "revision"
+     ],
+     "range": [
+      "statement"
+     ],
+     "reads": "{s} adds {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "removes",
+     "inverse": "removed_in",
+     "domain": [
+      "revision"
+     ],
+     "range": [
+      "statement"
+     ],
+     "reads": "{s} removes {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "made_by",
+     "inverse": "made",
+     "domain": [
+      "revision"
+     ],
+     "range": [
+      "editor"
+     ],
+     "reads": "{s} was made by {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "described_by",
+     "inverse": "describes",
+     "domain": [
+      "article"
+     ],
+     "range": [
+      "item"
+     ],
+     "reads": "{s} is described by {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "names",
+     "inverse": "named_in",
+     "domain": [
+      "statement"
+     ],
+     "range": [
+      "cve"
+     ],
+     "reads": "{s} names {t}",
+     "origin": "inherited",
+     "from": "the story graph"
+    },
+    {
+     "verb": "follows",
+     "inverse": "followed_by",
+     "domain": [
+      "revision"
+     ],
+     "range": [
+      "revision"
+     ],
+     "reads": "{s} follows {t}",
+     "origin": "proposed",
+     "note": "The chain of revisions, so a history can be walked one edit at a time."
+    },
+    {
+     "verb": "discussed_in",
+     "inverse": "discusses",
+     "domain": [
+      "article"
+     ],
+     "range": [
+      "thread"
+     ],
+     "reads": "{s} is discussed in {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "has_post",
+     "inverse": "post_of",
+     "domain": [
+      "thread"
+     ],
+     "range": [
+      "post"
+     ],
+     "reads": "{s} has post {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "replies_to",
+     "inverse": "answered_by",
+     "domain": [
+      "post"
+     ],
+     "range": [
+      "post"
+     ],
+     "reads": "{s} replies to {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "posted_by",
+     "inverse": "posted",
+     "domain": [
+      "post"
+     ],
+     "range": [
+      "editor"
+     ],
+     "reads": "{s} was posted by {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "questions",
+     "inverse": "questioned_by",
+     "domain": [
+      "finding"
+     ],
+     "range": [
+      "statement"
+     ],
+     "reads": "{s} questions {t}",
+     "origin": "proposed"
+    },
+    {
+     "verb": "rests_on",
+     "inverse": "supports",
+     "domain": [
+      "finding"
+     ],
+     "range": [
+      "source"
+     ],
+     "reads": "{s} rests on {t}",
+     "origin": "proposed",
+     "note": "The captured page in this site's evidence vault that the finding is read from; the same join as captured_as, from the other side."
+    },
+    {
+     "verb": "answers",
+     "inverse": "answered_in",
+     "domain": [
+      "finding"
+     ],
+     "range": [
+      "thread"
+     ],
+     "reads": "{s} answers {t}",
+     "origin": "proposed",
+     "note": "A finding that answers a question asked on the talk page."
+    }
+   ]
+  }
+ },
+ "banned": [
+  {
+   "verb": "related_to",
+   "why": "a generic association edge says nothing; the estate bans it outright"
+  },
+  {
+   "verb": "mentions",
+   "why": "say what the mention does: cites, names, states or relays"
+  },
+  {
+   "verb": "associated_with",
+   "why": "generic"
+  },
+  {
+   "verb": "contradicts",
+   "why": "self-inverse; a contradiction is a node that flags both claims"
+  },
+  {
+   "verb": "measures_differently",
+   "why": "self-inverse; recorded as a contradiction node with tension 'measures-differently'"
+  },
+  {
+   "verb": "agrees_with",
+   "why": "self-inverse, and agreement is read from independent states edges, not asserted"
+  }
+ ],
+ "formulas": [
+  {
+   "id": "independent-origins",
+   "reads": "The number of distinct parties that state a claim, after a person is folded into the organisation they work for, a part into its whole, and a member into a group that speaks with one voice; 'unnamed' counts as none.",
+   "used_for": "the spectrum of evidence: weight by independence, not by count (board 062)"
+  },
+  {
+   "id": "echo",
+   "reads": "[Echo] := a claim with at least three relays and at most one independent origin.",
+   "used_for": "ten outlets repeating one headline are one source"
+  },
+  {
+   "id": "unnamed-origin",
+   "reads": "[Unnamed-origin claim] := a claim stated only by 'unnamed'.",
+   "used_for": "a gap, not a party: the fact-check desk's weak signal"
+  },
+  {
+   "id": "under-tension",
+   "reads": "[Under tension] := a claim flagged by a contradiction whose status is open.",
+   "used_for": "the reading that pulls a claim down until explained"
+  }
+ ]
+}

@@ -1,0 +1,111 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "as_of": {
+   "type": "string"
+  },
+  "by_country": {
+   "items": {
+    "items": {
+     "type": [
+      "number",
+      "string"
+     ]
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "by_day": {
+   "items": {
+    "items": {
+     "type": [
+      "number",
+      "string"
+     ]
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "by_path": {
+   "items": {
+    "items": {
+     "type": [
+      "number",
+      "string"
+     ]
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "by_referrer": {
+   "items": {
+    "items": {
+     "type": [
+      "number",
+      "string"
+     ]
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "by_screen": {
+   "items": {
+    "items": {
+     "type": [
+      "number",
+      "string"
+     ]
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "by_version": {
+   "items": {
+    "items": {
+     "type": [
+      "number",
+      "string"
+     ]
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "drained_now": {
+   "type": "number"
+  },
+  "events": {
+   "type": "number"
+  },
+  "note": {
+   "type": "string"
+  },
+  "sessions": {
+   "type": "number"
+  },
+  "test_or_undecryptable": {
+   "type": "number"
+  }
+ },
+ "required": [
+  "as_of",
+  "by_country",
+  "by_day",
+  "by_path",
+  "by_referrer",
+  "by_screen",
+  "by_version",
+  "drained_now",
+  "events",
+  "note",
+  "sessions",
+  "test_or_undecryptable"
+ ],
+ "title": "telemetry-report.json",
+ "type": "object"
+}

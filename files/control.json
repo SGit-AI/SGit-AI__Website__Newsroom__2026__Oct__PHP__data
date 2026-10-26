@@ -1309,6 +1309,22 @@
    "run": "20261026T1648Z-sherpa",
    "started": "2026-10-26T16:48:17Z",
    "summary": "First run on v2, in an interactive session at the editor's request (the schedule is paused). Took in the six repositories: team and press with push, site, data, refs and updates read-only; v1 untouched. sgit-ai v0.25.0 (from 0.24.0): status 2.5 s then 1.6 s on the collaborators clone, 1.6 s then 1.…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-26T17:20:00Z",
+   "outcome": "ok",
+   "run": "20261026T1654Z-factcheck",
+   "started": "2026-10-26T16:54:00Z",
+   "summary": "16:52 London wake (sgit 0.25.0; read the loose evidence clone, pulled to 22a0c2920b88; the pack copy hsmfer5w stays at 94352a55fbaa): no-confirmed-compromise holds A4 as of 12:14 UTC on 26 October, no victim named in 20 new captures; S-128 added to the 70% lineage; fc.py check 0 failures; drift 6,…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T17:17:36Z",
+   "outcome": "ok",
+   "run": "20261026T1715Z-conductor",
+   "started": "2026-10-26T17:15:44Z",
+   "summary": "Light check 17:15 London, team at 811a8e2cf468. Corrected: edition v0.22.32 (811a8e2c, 17:07 UTC) deleted records/tools/schedule.py again, as v0.22.28 did at 11:38; I restored it from 811a8e2c~1. Root cause found in team's tools/sync_v1.py do_import: a file written in team that v1 lacks is recorded…"
   }
  ],
  "schedules": [
@@ -1485,5 +1501,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.32"
+ "version": "0.22.33"
 }
