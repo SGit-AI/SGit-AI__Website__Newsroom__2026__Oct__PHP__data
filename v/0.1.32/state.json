@@ -1,0 +1,615 @@
+{
+ "note": "The state of affairs, as data: the measures the journalist tracks, one row per version. A version is written when the evidence moves enough to change what a reader should know; it is never edited afterwards, and the next version says what changed. Each value names its as-of time and its basis: a captured source in the evidence vault (slugs), or a series in the source watch (vault oq9gflln, public read). v0 is reconstructed from what this site published on 22 October with data as of 11:34 UTC; it was not written as a version at the time.",
+ "author": "claude-journalist",
+ "measures": [
+  {
+   "id": "compromise-named",
+   "label": "Organisations confirming a compromise through php2shell",
+   "unit": "named organisations",
+   "lead": true
+  },
+  {
+   "id": "compromise-candidates",
+   "label": "Named incidents whose link to php2shell is still open",
+   "unit": "incidents"
+  },
+  {
+   "id": "vendor-success-claims",
+   "label": "Security vendors' claims of a successful compromise, and what became of them",
+   "unit": "claims"
+  },
+  {
+   "id": "kev",
+   "label": "Of the two CVEs in CISA's Known Exploited Vulnerabilities catalog",
+   "unit": "of 2",
+   "lead": true
+  },
+  {
+   "id": "nvd-score",
+   "label": "NIST's own score in the National Vulnerability Database",
+   "unit": "CVSS"
+  },
+  {
+   "id": "epss",
+   "label": "EPSS: chance of exploitation activity in the next 30 days",
+   "unit": "probability"
+  },
+  {
+   "id": "public-repos",
+   "label": "Public GitHub repositories matching 'php2shell'",
+   "unit": "repositories"
+  },
+  {
+   "id": "metasploit",
+   "label": "Merged Metasploit modules naming php2shell",
+   "unit": "merged pull requests"
+  },
+  {
+   "id": "inventory",
+   "label": "NCSC-NL inventory: products fixed, of all listed",
+   "unit": "products",
+   "lead": true
+  },
+  {
+   "id": "inventory-open",
+   "label": "NCSC-NL inventory: products still under investigation",
+   "unit": "products"
+  },
+  {
+   "id": "security-vendors",
+   "label": "Security and network vendors' products confirmed vulnerable",
+   "unit": "products"
+  },
+  {
+   "id": "eol-share",
+   "label": "PHP servers that disclose their version running an end-of-life branch",
+   "unit": "servers"
+  },
+  {
+   "id": "national-exposure",
+   "label": "A national count of servers still affected after the fix",
+   "unit": "servers"
+  },
+  {
+   "id": "offline",
+   "label": "Sites that went dark over php2shell, and how many are still dark",
+   "unit": "sites"
+  },
+  {
+   "id": "no-exploitation-agencies",
+   "label": "National authorities saying they know of no successful exploitation in their country",
+   "unit": "authorities"
+  },
+  {
+   "id": "sources",
+   "label": "Sources in the evidence vault, and the latest capture",
+   "unit": "sources"
+  }
+ ],
+ "versions": [
+  {
+   "v": 0,
+   "at": "2026-10-22T11:34Z",
+   "reconstructed": true,
+   "stamp": {
+    "site": "0.2.5",
+    "evidence_vault": "200d08971937",
+    "source_watch": null,
+    "inventory": "cca173c64ec5",
+    "data_as_of": "2026-10-22T11:34Z"
+   },
+   "values": {
+    "compromise-named": {
+     "value": "0",
+     "as_of": "2026-10-22T11:34Z",
+     "sources": [
+      "cisa-kev-json",
+      "huntress-php2shell-rapid-response"
+     ]
+    },
+    "compromise-candidates": {
+     "value": "0",
+     "as_of": "2026-10-22T11:34Z",
+     "basis": "no named incident had been linked to php2shell in any captured source"
+    },
+    "kev": {
+     "value": "0",
+     "as_of": "2026-10-22T08:15Z",
+     "sources": [
+      "cisa-kev-json"
+     ]
+    },
+    "nvd-score": {
+     "value": "none yet; the CNA's CVSS 4.0 9.2 only",
+     "as_of": "2026-10-21T14:17Z",
+     "sources": [
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619"
+     ]
+    },
+    "epss": {
+     "value": "not tracked",
+     "as_of": null
+    },
+    "public-repos": {
+     "value": "not tracked",
+     "as_of": null
+    },
+    "metasploit": {
+     "value": "not tracked",
+     "as_of": null
+    },
+    "inventory": {
+     "value": "46 of 674",
+     "as_of": "2026-10-22T08:40Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list"
+     ]
+    },
+    "inventory-open": {
+     "value": "418",
+     "as_of": "2026-10-22T08:40Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list"
+     ]
+    },
+    "security-vendors": {
+     "value": "not counted",
+     "as_of": null
+    },
+    "eol-share": {
+     "value": "not known",
+     "as_of": null
+    },
+    "offline": {
+     "value": "10 operators reported offline",
+     "as_of": "2026-10-22T11:34Z",
+     "sources": [
+      "rijksoverheid-ncsc-php-news",
+      "certlv-php-preventive",
+      "weirdgloop-blog-php2shell"
+     ]
+    },
+    "no-exploitation-agencies": {
+     "value": "2 (CISA for the US, ACSC for Australia)",
+     "as_of": "2026-10-22",
+     "sources": [
+      "cisa-alert-php-20261021",
+      "acsc-alert-php"
+     ]
+    },
+    "sources": {
+     "value": "144, latest capture 22 Oct 11:34 UTC",
+     "as_of": "2026-10-22T11:34Z",
+     "basis": "data/vault.json at site v0.2.5"
+    }
+   }
+  },
+  {
+   "v": 1,
+   "at": "2026-10-23T14:11Z",
+   "reconstructed": false,
+   "stamp": {
+    "site": "0.10.1",
+    "evidence_vault": "f3c5db0d9873",
+    "source_watch": "c26dce84136f",
+    "inventory": "2fdc314ded28",
+    "data_as_of": "2026-10-23T01:20Z"
+   },
+   "values": {
+    "compromise-named": {
+     "value": "0",
+     "as_of": "2026-10-23T01:20Z",
+     "sources": [
+      "wired-exploited-days-before-patched",
+      "bleepingcomputer-amazon-4-days-before",
+      "insurance-business-au-asiapac-attacks-begin"
+     ],
+     "note": "The PHP Foundation knows of no successful remote code execution; Dataminr sees scanning and non-working exploits, no known compromises; an unnamed startup owner's claim of stolen source code is unverified."
+    },
+    "compromise-candidates": {
+     "value": "3 open, 1 ruled out",
+     "as_of": "2026-10-23T01:20Z",
+     "sources": [
+      "lupa-cvut-cyber-attack",
+      "yahoo-jp-gmo-fx-login-leak",
+      "sankei-dmm-service-halt",
+      "impress-watch-valtec"
+     ],
+     "note": "Open: ČVUT (an attack it calls part of worldwide PHP attempts, stopped, success not shown), GMO's FX VPS (unauthorised programs found on 20 October, cause not stated), DMM (a vulnerability in external software, PHP not confirmed). Ruled out: Valtec, which corrected itself: the flaw was in its own service."
+    },
+    "kev": {
+     "value": "0",
+     "as_of": "2026-10-23T08:03Z",
+     "sources": [
+      "cisa-kev-json"
+     ],
+     "watch": "series kev-listed, last check 20261023T080331Z, unchanged since 20261022T181608Z"
+    },
+    "nvd-score": {
+     "value": "CVSS 3.1 9.8 (Analyzed), beside the CNA's CVSS 4.0 9.2",
+     "as_of": "2026-10-23T08:03Z",
+     "sources": [
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619"
+     ],
+     "watch": "series nvd-record, capture 20261023T080331Z"
+    },
+    "epss": {
+     "value": "0.058 and 0.053, about the 93rd percentile for both",
+     "as_of": "2026-10-22T17:51Z",
+     "watch": "series epss, capture 20261022T175100Z"
+    },
+    "public-repos": {
+     "value": "735 (586 at 17:51 UTC on 22 October)",
+     "as_of": "2026-10-23T08:03Z",
+     "watch": "series public-repositories, capture 20261023T080331Z",
+     "note": "A count of search results, not of working exploits."
+    },
+    "metasploit": {
+     "value": "0",
+     "as_of": "2026-10-22T20:34Z",
+     "watch": "series framework-pulls (metasploit), capture 20261022T203448Z"
+    },
+    "inventory": {
+     "value": "109 of 751",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list-letters"
+     ],
+     "basis": "data/inventory-history.json, read from the public repository at 2fdc314ded28; the vault's capture is 18:36 UTC on 22 October"
+    },
+    "inventory-open": {
+     "value": "389",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list-letters"
+     ],
+     "basis": "data/inventory-history.json"
+    },
+    "security-vendors": {
+     "value": "10 vulnerable, 26 not, 16 under investigation",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "paloalto-psirt-cve-2026-109618",
+      "cisco-sa-php-october26",
+      "fortinet-fg-ir-26-186"
+     ],
+     "basis": "data/inventory-history.json, rows from Palo Alto, Check Point, Cisco, Citrix, F5, Fortinet, Juniper and Sophos"
+    },
+    "eol-share": {
+     "value": "about 758,000 of 1.1 million",
+     "as_of": "2026-10-22",
+     "sources": [
+      "tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco",
+      "recordedfuture-php2shell"
+     ],
+     "note": "VirusTotal, as reported: of about 5.1 million IPs running PHP, 1.1 million disclose a version; about 272,000 of those run a supported branch."
+    },
+    "offline": {
+     "value": "51 listed, 50 back, 1 still dark (French prefecture websites)",
+     "as_of": "2026-10-23T01:20Z",
+     "sources": [
+      "phpocalypse-tracker-sites-csv"
+     ],
+     "watch": "series sites-dark, capture 20261023T012042Z",
+     "note": "A community tracker, kept by hand; the site's own ledger still records 10 operators from their own or the press's words."
+    },
+    "no-exploitation-agencies": {
+     "value": "5 (adding Germany's BSI, Switzerland's BACS and Japan's government)",
+     "as_of": "2026-10-22",
+     "sources": [
+      "cisa-alert-php-20261021",
+      "acsc-alert-php",
+      "rtl-leben-digitales-php-luecke-bsi-warnt-vor-cyber-gefahr-fi",
+      "watson-wirtschaft-schweiz-322033892-php2shell-laut-bund-kein",
+      "tchina-kyodonews-articles-15266"
+     ],
+     "note": "Germany, Switzerland and Japan as reported by the press, not from the agencies' own pages."
+    },
+    "sources": {
+     "value": "227, latest capture 23 Oct 01:20 UTC",
+     "as_of": "2026-10-23T01:20Z",
+     "basis": "data/vault.json, exported from the evidence vault at f3c5db0d9873"
+    }
+   }
+  },
+  {
+   "v": 2,
+   "at": "2026-10-23T23:55Z",
+   "reconstructed": false,
+   "stamp": {
+    "site": "0.10.18",
+    "evidence_vault": "1845598d9a38",
+    "source_watch": "20afaa62129d",
+    "inventory": "2fdc314ded28",
+    "data_as_of": "2026-10-23T16:04Z"
+   },
+   "values": {
+    "compromise-named": {
+     "value": "0",
+     "as_of": "2026-10-23T16:04Z",
+     "sources": [
+      "paperjam-article-php2shell-des-milliers-de-sites",
+      "itsocial-cybersecurite-cybersecurite-articles-php",
+      "shattered-php2shell-attacks-began-4-days-before-di",
+      "wired-exploited-days-before-patched"
+     ],
+     "note": "68 more sources read, none names an organisation compromised through php2shell. Luxembourg: no institution, public service or operator has announced an intrusion (Paperjam). IT Social: the published figures measure attempts, not successful intrusions."
+    },
+    "compromise-candidates": {
+     "value": "3 open, 1 ruled out",
+     "as_of": "2026-10-23T16:04Z",
+     "sources": [
+      "lupa-cvut-cyber-attack",
+      "yahoo-jp-gmo-fx-login-leak",
+      "sankei-dmm-service-halt",
+      "impress-watch-valtec"
+     ],
+     "note": "Open: ČVUT (an attack it calls part of worldwide PHP attempts, stopped, success not shown), GMO's FX VPS (unauthorised programs found on 20 October, cause not stated), DMM (a vulnerability in external software, PHP not confirmed). Ruled out: Valtec, which corrected itself: the flaw was in its own service. No new source changes any of the three."
+    },
+    "kev": {
+     "value": "0",
+     "as_of": "2026-10-23T08:03Z",
+     "sources": [
+      "cisa-kev-json"
+     ],
+     "watch": "series kev-listed, last check 20261023T080331Z, unchanged since 20261022T181608Z",
+     "note": "This desk reads the old source watch, whose last KEV check is 08:03 UTC; the watch continues in pack vault 7r83qic5, for which this desk has no read key yet."
+    },
+    "nvd-score": {
+     "value": "CVSS 3.1 9.8 (Analyzed), beside the CNA's CVSS 4.0 9.2",
+     "as_of": "2026-10-23T08:03Z",
+     "sources": [
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619"
+     ],
+     "watch": "series nvd-record, capture 20261023T080331Z"
+    },
+    "epss": {
+     "value": "0.058 and 0.053, about the 93rd percentile for both",
+     "as_of": "2026-10-22T17:51Z",
+     "watch": "series epss, capture 20261022T175100Z"
+    },
+    "public-repos": {
+     "value": "735 (586 at 17:51 UTC on 22 October)",
+     "as_of": "2026-10-23T08:03Z",
+     "watch": "series public-repositories, capture 20261023T080331Z",
+     "note": "A count of search results, not of working exploits. AhnLab, as reported, examined 100 related GitHub repositories on 22 October and classed 27 as proof-of-concept exploits.",
+     "sources": [
+      "rocket-boys-security-measures-lab-php2shell-poc-expl"
+     ]
+    },
+    "metasploit": {
+     "value": "0",
+     "as_of": "2026-10-22T20:34Z",
+     "watch": "series framework-pulls (metasploit), capture 20261022T203448Z"
+    },
+    "inventory": {
+     "value": "109 of 751",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list-letters"
+     ],
+     "basis": "data/inventory-history.json, read from the public repository at 2fdc314ded28; the vault's capture is 18:36 UTC on 22 October"
+    },
+    "inventory-open": {
+     "value": "389",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list-letters"
+     ],
+     "basis": "data/inventory-history.json"
+    },
+    "security-vendors": {
+     "value": "10 vulnerable, 26 not, 16 under investigation",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "paloalto-psirt-cve-2026-109618",
+      "cisco-sa-php-october26",
+      "fortinet-fg-ir-26-186"
+     ],
+     "basis": "data/inventory-history.json, rows from Palo Alto, Check Point, Cisco, Citrix, F5, Fortinet, Juniper and Sophos"
+    },
+    "eol-share": {
+     "value": "about 758,000 of 1.1 million",
+     "as_of": "2026-10-22",
+     "sources": [
+      "tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco",
+      "recordedfuture-php2shell"
+     ],
+     "note": "VirusTotal, as reported: of about 5.1 million IPs running PHP, 1.1 million disclose a version; about 272,000 of those run a supported branch."
+    },
+    "offline": {
+     "value": "51 listed, 50 back, 1 still dark (French prefecture websites)",
+     "as_of": "2026-10-23T01:20Z",
+     "sources": [
+      "phpocalypse-tracker-sites-csv"
+     ],
+     "watch": "series sites-dark, capture 20261023T012042Z",
+     "note": "A community tracker, kept by hand; the site's own ledger still records 10 operators from their own or the press's words."
+    },
+    "no-exploitation-agencies": {
+     "value": "5 (adding Germany's BSI, Switzerland's BACS and Japan's government)",
+     "as_of": "2026-10-22",
+     "sources": [
+      "cisa-alert-php-20261021",
+      "acsc-alert-php",
+      "rtl-leben-digitales-php-luecke-bsi-warnt-vor-cyber-gefahr-fi",
+      "watson-wirtschaft-schweiz-322033892-php2shell-laut-bund-kein",
+      "tchina-kyodonews-articles-15266"
+     ],
+     "note": "Germany, Switzerland and Japan as reported by the press, not from the agencies' own pages. Luxembourg's state announced no confirmed compromise, as reported by Paperjam; that is an absence of announcements, not counted here."
+    },
+    "sources": {
+     "value": "295, latest capture 23 Oct 16:04 UTC",
+     "as_of": "2026-10-23T16:04Z",
+     "basis": "data/vault.json, exported from the evidence vault at 1845598d9a38"
+    },
+    "national-exposure": {
+     "value": "Switzerland: just over 23,000 of nearly 690,000 servers (about 3.5%)",
+     "as_of": "2026-10-22",
+     "sources": [
+      "ictjournal-news-2026-10-22-deux-failles-critiques-d"
+     ],
+     "note": "Risikomonitor, via ICTjournal; the firm says the real number may be higher because the PHP version cannot always be read."
+    }
+   }
+  },
+  {
+   "v": 3,
+   "at": "2026-10-24T12:30Z",
+   "reconstructed": false,
+   "stamp": {
+    "site": "0.14.25",
+    "evidence_vault": "1f38e70921b2",
+    "source_watch": "20afaa62129d",
+    "inventory": "2fdc314ded28",
+    "data_as_of": "2026-10-24T08:37Z"
+   },
+   "values": {
+    "compromise-named": {
+     "value": "0",
+     "as_of": "2026-10-24T08:37Z",
+     "sources": [
+      "cybersecuritynews-critical-php2shell-exploit-code",
+      "americanbanker-news-banks-dodge-early-damage-from-php2s",
+      "btc-echo-news-krypto-boersen-akut-bedroht-kritisc",
+      "the-next-web-php2shell-no-confirmed-breaches",
+      "paperjam-article-php2shell-des-milliers-de-sites"
+     ],
+     "note": "33 more sources read, none names an organisation compromised through php2shell. American Banker: no US bank or credit union has publicly reported one. BTC-ECHO: no evidence for large crypto exchanges or payment providers."
+    },
+    "compromise-candidates": {
+     "value": "3 open, 1 ruled out",
+     "as_of": "2026-10-24T08:37Z",
+     "sources": [
+      "lupa-cvut-cyber-attack",
+      "yahoo-jp-gmo-fx-login-leak",
+      "sankei-dmm-service-halt",
+      "impress-watch-valtec"
+     ],
+     "note": "Open: ČVUT (an attack it calls part of worldwide PHP attempts, stopped, success not shown), GMO's FX VPS (unauthorised programs found on 20 October, cause not stated), DMM (a vulnerability in external software, PHP not confirmed). Ruled out: Valtec, which corrected itself: the flaw was in its own service. No new source changes any of the three."
+    },
+    "kev": {
+     "value": "0",
+     "as_of": "2026-10-24T05:53Z",
+     "sources": [
+      "cisa-kev-json"
+     ],
+     "watch": "the Pulse vault (4klm5qlt, pulse@newsroom), pass 20261024T055307Z: rung 5, a KEV listing, not reached",
+     "note": "The freshest check in any vault this desk reads. The old source watch's last KEV check is 08:03 UTC on 23 October."
+    },
+    "nvd-score": {
+     "value": "CVSS 3.1 9.8 (Analyzed), beside the CNA's CVSS 4.0 9.2",
+     "as_of": "2026-10-23T08:03Z",
+     "sources": [
+      "nvd-cve-2026-109618",
+      "nvd-cve-2026-109619"
+     ],
+     "watch": "series nvd-record, capture 20261023T080331Z"
+    },
+    "epss": {
+     "value": "0.058 and 0.053, about the 93rd percentile for both",
+     "as_of": "2026-10-22T17:51Z",
+     "watch": "series epss, capture 20261022T175100Z"
+    },
+    "public-repos": {
+     "value": "735 (586 at 17:51 UTC on 22 October)",
+     "as_of": "2026-10-23T08:03Z",
+     "watch": "series public-repositories, capture 20261023T080331Z",
+     "note": "A count of search results, not of working exploits. AhnLab, as reported, examined 100 related GitHub repositories on 22 October and classed 27 as proof-of-concept exploits. Sophos, as reported, found working exploitation difficult even with AI support.",
+     "sources": [
+      "rocket-boys-security-measures-lab-php2shell-poc-expl"
+     ]
+    },
+    "metasploit": {
+     "value": "0",
+     "as_of": "2026-10-24T05:53Z",
+     "watch": "the Pulse vault, pass 20261024T055307Z: rung 3, a merged Metasploit module, not reached"
+    },
+    "inventory": {
+     "value": "109 of 751",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list-letters"
+     ],
+     "basis": "data/inventory-history.json, read from the public repository at 2fdc314ded28; the vault's capture is 18:36 UTC on 22 October",
+     "note": "The NCSC-NL repository has not changed since 12:50 UTC on 23 October (checked at 11:50 UTC on 24 October)."
+    },
+    "inventory-open": {
+     "value": "389",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "ncsc-nl-php2shell-software-list-letters"
+     ],
+     "basis": "data/inventory-history.json"
+    },
+    "security-vendors": {
+     "value": "10 vulnerable, 26 not, 16 under investigation",
+     "as_of": "2026-10-23T12:50Z",
+     "sources": [
+      "paloalto-psirt-cve-2026-109618",
+      "cisco-sa-php-october26",
+      "fortinet-fg-ir-26-186"
+     ],
+     "basis": "data/inventory-history.json, rows from Palo Alto, Check Point, Cisco, Citrix, F5, Fortinet, Juniper and Sophos"
+    },
+    "eol-share": {
+     "value": "about 758,000 of 1.1 million",
+     "as_of": "2026-10-22",
+     "sources": [
+      "tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco",
+      "recordedfuture-php2shell"
+     ],
+     "note": "VirusTotal, as reported: of about 5.1 million IPs running PHP, 1.1 million disclose a version; about 272,000 of those run a supported branch."
+    },
+    "offline": {
+     "value": "51 listed, 50 back, 1 still dark (French prefecture websites)",
+     "as_of": "2026-10-23T01:20Z",
+     "sources": [
+      "phpocalypse-tracker-sites-csv"
+     ],
+     "watch": "series sites-dark, capture 20261023T012042Z",
+     "note": "A community tracker, kept by hand; the site's own ledger still records 10 operators from their own or the press's words. New reports in the vault since: Switzerland (the EPFL, Basel-Stadt, the University of Geneva, La Mobilière), Germany's hospitals and hosts, Morocco, Romania, Japan."
+    },
+    "no-exploitation-agencies": {
+     "value": "6 (adding the Netherlands)",
+     "as_of": "2026-10-22",
+     "sources": [
+      "cisa-alert-php-20261021",
+      "acsc-alert-php",
+      "rtl-leben-digitales-php-luecke-bsi-warnt-vor-cyber-gefahr-fi",
+      "watson-wirtschaft-schweiz-322033892-php2shell-laut-bund-kein",
+      "tchina-kyodonews-articles-15266",
+      "the-next-web-php2shell-no-confirmed-breaches"
+     ],
+     "note": "The US, Australia, Germany, Switzerland, Japan and the Netherlands; the last four as reported by the press. The Next Web: officials in Germany, the Netherlands and Japan have not seen an attempt succeed."
+    },
+    "sources": {
+     "value": "328, latest capture 24 Oct 08:37 UTC",
+     "as_of": "2026-10-24T08:37Z",
+     "basis": "data/vault.json, exported from the evidence vault at 1f38e70921b2"
+    },
+    "national-exposure": {
+     "value": "Switzerland: just over 23,000 of nearly 690,000 servers (about 3.5%)",
+     "as_of": "2026-10-22",
+     "sources": [
+      "ictjournal-news-2026-10-22-deux-failles-critiques-d"
+     ],
+     "note": "Risikomonitor, via ICTjournal; the firm says the real number may be higher because the PHP version cannot always be read. For scale: Palo Alto Networks counted more than 22.6 million exposed instances potentially vulnerable, worldwide, on 21 October (via TechTarget); exposure, not compromise."
+    },
+    "vendor-success-claims": {
+     "value": "1 made and withdrawn (Sophos); Patchstack's reports not reconciled",
+     "as_of": "2026-10-23",
+     "sources": [
+      "cybersecuritynews-critical-php2shell-exploit-code",
+      "recordedfuture-php2shell",
+      "pcmag-news-hackers-already-trying-to-exploit-serious-php-flaw"
+     ],
+     "note": "Sophos, in a correction at 21:21 UTC on 22 October: scanning and a small number of failed attempts, no evidence of a successful compromise; a Mirai-derived payload was blocked. Patchstack: incidents reported to it by hosting partners (Recorded Future) against 'only probing attacks' in its own telemetry (PCMag)."
+    }
+   }
+  }
+ ]
+}

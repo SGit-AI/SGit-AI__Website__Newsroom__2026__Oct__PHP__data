@@ -1,0 +1,779 @@
+{
+ "about": "The GRC desk's fractal risk registers for php2shell. Stakeholders form a tree (a sector holds organisations, an organisation holds roles); risks form a tree (a risk holds the narrower risks it is made of). A risk is assigned to as many stakeholders as carry part of it, each with the part it plays. A stakeholder's register is the risks assigned to it plus everything assigned below it, so the same register reads at every scale. Every risk is evidenced by claims and sources already on this site, and joined to the weaknesses behind it, the code that fixes them, the stories that tell it, the roles that act on it and the controls in the standards that govern it. Ratings are the desk's judgement as at the vault's last capture, not a measurement. Kept by grc@php.newsroom.",
+ "kept_by": "grc@php.newsroom",
+ "as_of": "2026-10-22",
+ "scales": {
+  "likelihood": [
+   {"n": 1, "name": "Rare", "means": "Not seen and needs conditions nobody has shown"},
+   {"n": 2, "name": "Unlikely", "means": "Possible; no sign of it in the evidence yet"},
+   {"n": 3, "name": "Possible", "means": "Reported or attempted; not confirmed at scale"},
+   {"n": 4, "name": "Likely", "means": "Under way somewhere, by confirmed evidence, or the precedent says it will be within weeks"},
+   {"n": 5, "name": "Happening", "means": "Confirmed and under way now"}
+  ],
+  "impact": [
+   {"n": 1, "name": "Minor", "means": "An inconvenience, absorbed without a decision"},
+   {"n": 2, "name": "Moderate", "means": "Costs time or money; one team's problem"},
+   {"n": 3, "name": "Significant", "means": "A service degraded or an obligation triggered; a director decides"},
+   {"n": 4, "name": "Major", "means": "A service down, a regulator involved, data at risk; the board decides"},
+   {"n": 5, "name": "Severe", "means": "Code execution or data loss at scale, or harm to people relying on the service"}
+  ],
+  "as": [
+   {"id": "owner", "name": "Owner", "means": "Accountable for treating the risk: decides, funds, signs off"},
+   {"id": "bearer", "name": "Bearer", "means": "Suffers the consequence if it happens, whether or not it can act"},
+   {"id": "treater", "name": "Treater", "means": "Does the work that reduces it: patches, filters, detects, ships"},
+   {"id": "source", "name": "Source", "means": "Its actions or omissions create or raise the risk, without intent"},
+   {"id": "informer", "name": "Informer", "means": "Its information changes how others see and rate the risk"},
+   {"id": "regulator", "name": "Regulator", "means": "Sets or enforces the obligation the risk triggers"}
+  ],
+  "treatment": [
+   {"id": "in-place", "name": "In place", "means": "Available and in use by those it is for"},
+   {"id": "partial", "name": "Partial", "means": "Available to some, or reduces the risk without removing it"},
+   {"id": "missing", "name": "Missing", "means": "No treatment exists yet, or none has been shown"}
+  ]
+ },
+ "stakeholders": [
+  {"id": "world", "parent": null, "name": "Everyone with PHP in the path", "kind": "domain", "about": "Every party in the story, from the people who maintain PHP to the people whose data sits in a PHP application. The root register: every risk rolls up here."},
+
+  {"id": "php-project", "parent": "world", "name": "The PHP project", "kind": "group", "about": "The people who write, fix and release PHP: the PHP Group, the PHP Foundation, the security team and the fix authors.", "actors": ["php-group", "php-foundation"]},
+  {"id": "php-security-team", "parent": "php-project", "name": "The PHP security team", "kind": "team", "about": "Received the reports, ran the embargo, published the advisories and the oss-security announcements.", "actors": ["zelenka", "daubois"]},
+  {"id": "php-fix-authors", "parent": "php-project", "name": "The fix authors", "kind": "team", "about": "Wrote and backported the engine fix (commit 3584a98bd).", "actors": ["leblanc"]},
+  {"id": "php-foundation", "parent": "php-project", "name": "The PHP Foundation", "kind": "organisation", "about": "Funds core developers; published the account of discovery and the leak; the kind of body the Cyber Resilience Act calls an open-source steward.", "actors": ["php-foundation"]},
+
+  {"id": "finders", "parent": "world", "name": "The finders", "kind": "group", "about": "The researchers and companies that found the flaws, several of them with frontier AI, and the audit that surfaced the first bug two years earlier.", "actors": ["calif", "openai", "wiz", "quarkslab"]},
+  {"id": "calif", "parent": "finders", "name": "Calif", "kind": "organisation", "about": "First reporter; published the write-up and, by mistake, a video of its proof of concept on 20 October.", "actors": ["calif"]},
+  {"id": "openai", "parent": "finders", "name": "OpenAI (Patch the Planet)", "kind": "organisation", "about": "Reported the same root cause on 11 August; ran the coordination coalition; a provider of a general-purpose model of the kind the EU AI Act regulates.", "actors": ["openai"]},
+  {"id": "wiz", "parent": "finders", "name": "Wiz Research", "kind": "organisation", "about": "Independent discovery on 19 August; source of the '70% of the Internet' headline.", "actors": ["wiz"]},
+  {"id": "quarkslab", "parent": "finders", "name": "Quarkslab and OSTIF", "kind": "organisation", "about": "The 2024 audit, funded through OSTIF and the Sovereign Tech Agency, that found the out-of-memory issue without its exploitation.", "actors": ["quarkslab"]},
+
+  {"id": "distributors", "parent": "world", "name": "Distributors and packagers", "kind": "group", "about": "Everyone between the PHP source and a running server: Linux distributions, container image builders, hosting panels. A fix reaches most servers through them, not from php.net.", "actors": ["chainguard", "chainguard-lorenc"]},
+  {"id": "chainguard", "parent": "distributors", "name": "Chainguard", "kind": "organisation", "about": "Published patched images before the embargo lifted, according to the PHP Foundation, which Chainguard disputes; found the same bugs with an AI harness.", "actors": ["chainguard", "chainguard-lorenc"]},
+  {"id": "distros", "parent": "distributors", "name": "Linux distributions and image builders", "kind": "group", "about": "Package the fixed versions, and backport to versions upstream no longer supports, each on its own clock."},
+  {"id": "panels", "parent": "distributors", "name": "Hosting panels and paid long-term support", "kind": "group", "about": "cPanel, Plesk and the vendors who sell support for PHP versions the project has retired: the only route to a fix for many old installations."},
+
+  {"id": "app-vendors", "parent": "world", "name": "Software built on PHP", "kind": "group", "about": "The suppliers in the NCSC-NL inventory and the open-source applications (WordPress, Drupal, Joomla, MediaWiki, Magento, Nextcloud, Laravel, Symfony) that ship or run on PHP; manufacturers under the Cyber Resilience Act."},
+  {"id": "inventory-suppliers", "parent": "app-vendors", "name": "Suppliers in the NCSC-NL inventory", "kind": "group", "about": "674 products tracked by NCSC-NL: some fixed, most vulnerable or under investigation as at the vault's last capture."},
+  {"id": "oss-apps", "parent": "app-vendors", "name": "Open-source PHP applications", "kind": "group", "about": "The applications against which pre-authentication code execution was reported: they inherit the flaw from the engine and can only tell their users to update PHP."},
+
+  {"id": "hosting", "parent": "world", "name": "Hosting and cloud providers", "kind": "group", "about": "Shared hosts, managed PHP platforms and clouds: they patch for millions of customers at once, or leave the customer to do it."},
+  {"id": "managed-hosts", "parent": "hosting", "name": "Managed PHP platforms", "kind": "group", "about": "Platforms that patch the runtime for their customers, so the customer's risk becomes the platform's."},
+  {"id": "shared-hosts", "parent": "hosting", "name": "Shared and self-service hosting", "kind": "group", "about": "Where the customer chooses the PHP version and many still run ones the project no longer fixes."},
+
+  {"id": "edge", "parent": "world", "name": "Edge, WAF and detection vendors", "kind": "group", "about": "Cloudflare, Akamai, Fastly, Imperva and others who shipped filters before disclosure, and the threat-intelligence firms who reported what they saw.", "actors": ["cloudflare", "akamai", "fastly", "imperva"]},
+  {"id": "waf-vendors", "parent": "edge", "name": "WAF vendors", "kind": "group", "about": "Rules live hours before disclosure, each vendor saying in its own words that a rule is not a patch.", "actors": ["cloudflare", "akamai", "fastly", "imperva"]},
+  {"id": "threat-intel", "parent": "edge", "name": "Threat intelligence and detection", "kind": "group", "about": "Amazon's honeypots, Huntress, watchTowr and the community authors of detection rules: the eyes that say whether exploitation is happening.", "actors": ["amazon", "huntress", "watchtowr", "detectors"]},
+
+  {"id": "agencies", "parent": "world", "name": "Agencies and CERTs", "kind": "group", "about": "The national agencies that advised, and in some cases told their own governments to go offline.", "actors": ["agencies"]},
+  {"id": "us-agencies", "parent": "agencies", "name": "US: CISA and the NSA", "kind": "group", "about": "Advised taking systems offline where an update is not possible; keep the KEV catalogue that binds federal agencies."},
+  {"id": "eu-agencies", "parent": "agencies", "name": "EU and member-state CERTs", "kind": "group", "about": "CERT-EU, CERT-FR, NCSC-NL, CERT.LV, ACN, BACS and the CSIRTs that receive incident reports under NIS2 and the Cyber Resilience Act."},
+  {"id": "uk-ncsc", "parent": "agencies", "name": "UK NCSC", "kind": "organisation", "about": "Advised considering taking systems offline; runs Cyber Essentials."},
+
+  {"id": "operators", "parent": "world", "name": "Organisations running PHP", "kind": "group", "about": "Anyone with a PHP application on the internet: governments, councils, shops, banks, universities, wikis. They bear most of the risk and own most of the treatment."},
+  {"id": "public-sector", "parent": "operators", "name": "Governments and public services", "kind": "group", "about": "Ministries, agencies and councils: the Netherlands, Finland and Latvia took services offline; UK councils and the Met Police were unavailable.", "actors": ["rijksoverheid", "valtori"]},
+  {"id": "councils", "parent": "public-sector", "name": "Local councils", "kind": "group", "about": "Edinburgh, Oxford, Bristol, Lambeth, Barnet and others: small security teams, many PHP sites, services residents need."},
+  {"id": "national-gov", "parent": "public-sector", "name": "National governments", "kind": "group", "about": "DigiD, MijnOverheid and Overheid.nl; Finland's government web services; Latvia's state resources and 112.lv."},
+  {"id": "critical-infra", "parent": "operators", "name": "Critical infrastructure providers", "kind": "group", "about": "The few providers who received mitigation advice before disclosure; essential entities under NIS2."},
+  {"id": "commerce", "parent": "operators", "name": "Online shops and payments", "kind": "group", "about": "Magento and WooCommerce shops that take cards: PCI DSS applies, and an outage is lost revenue by the hour."},
+  {"id": "finance", "parent": "operators", "name": "Banks, insurers and financial entities", "kind": "group", "about": "Under DORA since January 2025: ICT risk, incident reporting and third-party risk in one regime."},
+  {"id": "non-profits", "parent": "operators", "name": "Wikis, universities and non-profits", "kind": "group", "about": "The Wikimedia Foundation, Weird Gloop, the University of Geneva: large PHP estates, small budgets, and the one measured outage.", "actors": ["weirdgloop"]},
+  {"id": "org-roles", "parent": "operators", "name": "Inside any one organisation", "kind": "group", "about": "The same register again at the scale of one organisation: the roles that decide, act and communicate. Each has a briefing on this site."},
+  {"id": "board", "parent": "org-roles", "name": "Board and executives", "kind": "role", "about": "Accountable under NIS2 Article 20 and DORA; decides whether to take a service offline.", "audience": "board"},
+  {"id": "ciso", "parent": "org-roles", "name": "CISO", "kind": "role", "about": "Owns the security risk register and reports it upward.", "audience": "ciso"},
+  {"id": "cto", "parent": "org-roles", "name": "CTO", "kind": "role", "about": "Owns the platforms, the inventory and the upgrade budget.", "audience": "cto"},
+  {"id": "cfo", "parent": "org-roles", "name": "CFO", "kind": "role", "about": "Prices the outage, the paid support and the insurance claim.", "audience": "cfo"},
+  {"id": "security-lead", "parent": "org-roles", "name": "Security lead and AppSec", "kind": "role", "about": "Triage, detection, compensating controls and the call on whether an incident is declared.", "audience": "security"},
+  {"id": "engineers", "parent": "org-roles", "name": "Platform engineers and developers", "kind": "role", "about": "Find every PHP runtime, upgrade it, rebuild the images and prove it is done.", "audience": "engineer"},
+  {"id": "site-owner", "parent": "org-roles", "name": "Website owner", "kind": "role", "about": "Often one person with one hosting account and no security team: depends entirely on the host.", "audience": "site-owner"},
+  {"id": "comms", "parent": "org-roles", "name": "Communications team", "kind": "role", "about": "Says why the site is down without saying more than is known.", "audience": "comms"},
+  {"id": "dpo", "parent": "org-roles", "name": "Data protection officer", "kind": "role", "about": "Decides whether a compromise is a personal data breach and whether the 72-hour clock has started.", "audience": "dpo"},
+
+  {"id": "people", "parent": "world", "name": "People who use PHP services", "kind": "group", "about": "Citizens, customers and readers: they cannot patch anything, and they bear the outage and the breach."},
+  {"id": "data-subjects", "parent": "people", "name": "People whose data is held in PHP applications", "kind": "group", "about": "Accounts, orders and records in the databases behind the applications at risk."},
+  {"id": "service-users", "parent": "people", "name": "People who need a service that went offline", "kind": "group", "about": "Residents, taxpayers, students, someone looking for 112.lv."},
+
+  {"id": "media", "parent": "world", "name": "The press", "kind": "group", "about": "The outlets that told the story first, and the newsrooms that check it.", "actors": ["bbc", "thn", "woodward"]},
+  {"id": "newsroom", "parent": "media", "name": "This newsroom", "kind": "organisation", "about": "One editor and a team of software agents that read the open web, hold vault credentials and publish to a live site within minutes. Its own risks are on this register too."},
+  {"id": "newsroom-editor", "parent": "newsroom", "name": "The editor", "kind": "role", "about": "Dinis Cruz: every editorial call, the root key, the only person who instructs the agents.", "member": "dinis"},
+  {"id": "newsroom-agents", "parent": "newsroom", "name": "The newsroom's agents", "kind": "group", "about": "Collectors, writers, the build, the fact-check desk, the security pass and this desk, each in its own session."},
+  {"id": "readers", "parent": "newsroom", "name": "This site's readers", "kind": "group", "about": "Including other people's models, which read llms.txt and the markdown twins."}
+ ],
+ "weaknesses": [
+  {"id": "w-alloc-bailout", "name": "The allocator's longjmp-based bailout on out-of-memory", "about": "An out-of-memory error unwinds by longjmp and can leave request memory in a state that cleanup later reads.", "vulns": ["cve-109618"]},
+  {"id": "w-stale-globals", "name": "Request globals that survive a failed request", "about": "State from a request that failed is still there when the next one starts.", "vulns": ["cve-109619"]},
+  {"id": "w-bailout-class", "name": "Bailout as a class of bug", "about": "Patching the demonstrated paths does not make the mechanism safe: other paths to the same bailout should be expected.", "vulns": ["cve-109618", "cve-109619"], "remediation": ["fix-unwind", "fix-hard-limit", "fix-soft-limit"]},
+  {"id": "w-eol", "name": "PHP versions the project no longer fixes", "about": "8.1 and older get no upstream fix; reaching them needs a distribution backport, paid support or an upgrade.", "vulns": ["cve-109618", "cve-109619"]},
+  {"id": "w-embargo", "name": "One embargo shared by many parties", "about": "Four independent finders, a coalition, early advice to critical infrastructure and image builders: every party is a place the secret can leave by."},
+  {"id": "w-inventory", "name": "Not knowing where PHP runs", "about": "PHP is embedded in appliances, images and products whose owners do not list it; 418 inventory rows were still under investigation."},
+  {"id": "w-waf-only", "name": "A filter in front of an unpatched engine", "about": "Rules match the payload shapes seen so far; attackers mutate payloads, and only traffic routed through the filter is covered."},
+  {"id": "w-signal", "name": "Exploitation that cannot yet be seen", "about": "Honeypots and edge networks see attempts; nobody has shown a compromise, and KEV waits for one. Absence of evidence is read as safety."},
+  {"id": "w-headline", "name": "Numbers and ratings repeated without their source", "about": "70% of the Internet, CVSS 10, 30 million sites: figures that measure different things, carried from post to post until they read as fact."},
+  {"id": "w-ai-dual-use", "name": "Frontier models that find memory-safety bugs in widely used C", "about": "The capability that found these flaws ahead of most attackers is available to attackers too, and finds more than maintainers can fix in a week."},
+  {"id": "w-maintainer-capacity", "name": "A small, thinly funded maintainer team at the base of the web", "about": "An audit found the bug in 2024; the fix took until 2026. Four reports in a month land on the same handful of people."},
+  {"id": "w-agent-reach", "name": "Agents that read the open web and can publish", "about": "Nine capabilities in the newsroom's agent grant have no boundary in the way (admin/security/abp/DELTA.md); the gate that guards publishing lives in the repository the agents can edit.", "code": ["admin/build/release.sh", "admin/build/validate.py", "admin/build/security_check.py", ".github/workflows/pages.yml"]},
+  {"id": "w-untrusted-text", "name": "Third-party text inside the agents' context", "about": "Captured pages, feeds, tips and other models' output are read by agents that hold credentials; one sentence addressed to a model is enough to try.", "code": ["admin/build/security_check.py", "admin/security/injection-allowlist.json"]},
+  {"id": "w-status-words", "name": "A status word chosen by the agent that wrote the claim", "about": "The fact-check desk found eleven claims whose status word is stronger than their evidence.", "code": ["admin/factcheck/fc.py", "data/claims.json"]}
+ ],
+ "risks": [
+  {
+   "id": "r01", "parent": null, "title": "Remote code execution on internet-facing PHP servers",
+   "statement": "Because two flaws in the PHP engine let an unauthenticated request execute code on a default Apache mod_php setup, an attacker who reaches an unpatched server can take it over, resulting in data theft, defacement or a foothold in the network behind it.",
+   "category": "security", "likelihood": 3, "impact": 5,
+   "basis": "Impact: unauthenticated code execution, confirmed on mod_php. Likelihood: probing confirmed, attempts reported, no confirmed compromise; attack complexity high.",
+   "assign": [
+    {"to": "operators", "as": "owner", "why": "Only the organisation running the server can update it or take it offline."},
+    {"to": "people", "as": "bearer", "why": "Their data and their services are what an attacker reaches."},
+    {"to": "php-project", "as": "treater", "why": "Ships the fix in 8.5.12, 8.4.27, 8.3.36 and 8.2.35."},
+    {"to": "hosting", "as": "treater", "why": "Patch the runtime for every customer on a managed platform."},
+    {"to": "edge", "as": "treater", "why": "Filters and detection between the attacker and the server."},
+    {"to": "agencies", "as": "informer", "why": "Their advisories set how urgently boards act."}
+   ],
+   "weaknesses": ["w-alloc-bailout", "w-stale-globals"],
+   "claims": ["two-cves-9.2", "rce-modphp", "fix-engine", "ac-high", "only-update"],
+   "controls": [
+    {"text": "Update to 8.5.12, 8.4.27, 8.3.36 or 8.2.35", "status": "in-place", "page": "patching/index.html"},
+    {"text": "Take the system offline where an update is not possible (CISA, NSA)", "status": "in-place", "page": "impact/index.html"},
+    {"text": "Edge filters while the update is rolled out", "status": "partial", "page": "defence/index.html#edge"}
+   ],
+   "frameworks": ["iso27001:A.8.8", "nistcsf:ID.RA-01", "nist80053:SI-2", "cis:7.7", "attack:T1190", "owasp:A06:2021", "nis2:Art.21(2)(e)"],
+   "stories": ["where-php2shell-stands", "patch-at-the-speed-of-metasploit"],
+   "pages": ["flaws/index.html", "review/index.html", "playbook/index.html"],
+   "team": ["story-site", "journalist"]
+  },
+  {
+   "id": "r01-1", "parent": "r01", "title": "Default Apache mod_php installations exploited before application code runs",
+   "statement": "Because the flaw is reached over HTTP before any application code runs, every mod_php site is exposed whatever application it serves, resulting in compromise without any application weakness.",
+   "category": "security", "likelihood": 3, "impact": 5,
+   "basis": "Confirmed mechanism on the most common shared-hosting setup; no confirmed compromise yet.",
+   "assign": [
+    {"to": "shared-hosts", "as": "owner", "why": "mod_php is the shared-hosting default; the host controls the runtime."},
+    {"to": "site-owner", "as": "bearer", "why": "Has a site on the host and no control of its PHP."},
+    {"to": "engineers", "as": "treater", "why": "Find and upgrade every mod_php runtime they run."}
+   ],
+   "weaknesses": ["w-alloc-bailout"],
+   "claims": ["rce-modphp", "fix-engine"],
+   "controls": [{"text": "Update PHP; the configuration measures reduce exposure and do not make an installation safe", "status": "in-place", "page": "playbook/index.html"}],
+   "frameworks": ["iso27001:A.8.8", "cis:7.4", "cyberessentials:SUM", "pcidss:6.3.3"],
+   "stories": ["why-not-patch-every-version"],
+   "pages": ["affected/index.html", "playbook/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r01-2", "parent": "r01", "title": "PHP-FPM deployments wrongly treated as safe or as certainly vulnerable",
+   "statement": "Because code execution on PHP-FPM is disputed between the sources, an operator may deprioritise FPM servers or exhaust itself on them, resulting in either exposure left open or effort misplaced.",
+   "category": "security", "likelihood": 3, "impact": 4,
+   "basis": "The claim is disputed; the update is the same either way, so the risk is in the prioritisation.",
+   "assign": [
+    {"to": "security-lead", "as": "owner", "why": "Makes the prioritisation call."},
+    {"to": "managed-hosts", "as": "treater", "why": "Most managed platforms run FPM."},
+    {"to": "php-security-team", "as": "informer", "why": "Only the advisories can settle what was shown on FPM."}
+   ],
+   "weaknesses": ["w-stale-globals"],
+   "claims": ["rce-fpm"],
+   "controls": [{"text": "Treat FPM as affected and update it on the same schedule", "status": "in-place", "page": "affected/index.html"}],
+   "frameworks": ["nistcsf:ID.RA-01", "iso27001:6.1.2"],
+   "stories": [],
+   "pages": ["affected/index.html", "factcheck/index.html"],
+   "team": ["verifier"]
+  },
+  {
+   "id": "r01-3", "parent": "r01", "title": "Versions the PHP project no longer fixes stay vulnerable",
+   "statement": "Because PHP 8.1 and older receive no upstream fix and the flaws may reach back to PHP 5, installations on retired versions depend on a distribution backport, paid support or an upgrade, resulting in a long tail that stays exposed for months.",
+   "category": "security", "likelihood": 4, "impact": 5,
+   "basis": "Retired versions are common on shared hosting and appliances; upstream will not fix them; CISA singles out 8.1 and older.",
+   "assign": [
+    {"to": "operators", "as": "owner", "why": "Chose or inherited the version."},
+    {"to": "panels", "as": "treater", "why": "Paid long-term support and panel vendors are the only fix route for many."},
+    {"to": "distros", "as": "treater", "why": "Backport to the versions their releases ship."},
+    {"to": "cto", "as": "owner", "why": "Owns the upgrade budget and the decision to retire."},
+    {"to": "cfo", "as": "bearer", "why": "Pays for extended support or the upgrade."}
+   ],
+   "weaknesses": ["w-eol"],
+   "claims": ["versions-old", "offline-cisa"],
+   "controls": [
+    {"text": "Distribution backports and paid support for retired versions", "status": "partial", "page": "patching/index.html#models"},
+    {"text": "Upgrade to a supported branch", "status": "in-place", "page": "patching/index.html#why"}
+   ],
+   "frameworks": ["nist80053:SA-22", "cis:2.2", "nistcsf:PR.PS-02", "cyberessentials:SUM", "pcidss:6.3.3"],
+   "stories": ["why-not-patch-every-version"],
+   "pages": ["patching/index.html", "patching/inventory/index.html"],
+   "team": ["story-site", "journalist"]
+  },
+  {
+   "id": "r01-4", "parent": "r01", "title": "The fix is incomplete, or a third flaw follows",
+   "statement": "Because the bailout mechanism is a class of bug and the 8.5.12 fix may be incomplete, a patched server may still be reachable by another path, resulting in a second emergency on systems already declared done.",
+   "category": "security", "likelihood": 3, "impact": 5,
+   "basis": "Reported by Fastly and in the oss-security thread; unverified as to a specific third bug.",
+   "assign": [
+    {"to": "php-fix-authors", "as": "owner", "why": "Own the design of the fix and its completeness."},
+    {"to": "php-security-team", "as": "treater", "why": "Receives and coordinates the next report."},
+    {"to": "operators", "as": "bearer", "why": "Will patch again."},
+    {"to": "engineers", "as": "bearer", "why": "Rebuild and redeploy a second time, on systems already signed off."},
+    {"to": "finders", "as": "informer", "why": "Already looking at the same code with the same tools."}
+   ],
+   "weaknesses": ["w-bailout-class"],
+   "claims": ["fix-incomplete", "more-paths", "fix-bailout"],
+   "controls": [
+    {"text": "The fix replaces the longjmp bailout with a delayed soft limit and a clean hard exit", "status": "partial", "page": "review/index.html#remediation"},
+    {"text": "Keep detection and filters after patching", "status": "partial", "page": "defence/index.html"}
+   ],
+   "frameworks": ["ssdf:RV.3", "ssdf:PW.8", "iso27001:A.8.29", "iso29147:30111:handling"],
+   "stories": ["patch-at-the-speed-of-metasploit"],
+   "pages": ["review/index.html", "code/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r01-5", "parent": "r01", "title": "Popular applications compromised before authentication",
+   "statement": "Because pre-authentication code execution was reported against WordPress, Drupal, Joomla, MediaWiki, Magento, Nextcloud and other applications, their users are exposed whatever the application's own security, resulting in the largest share of affected sites.",
+   "category": "security", "likelihood": 3, "impact": 5,
+   "basis": "Reported by the finders; the applications inherit the flaw from the engine.",
+   "assign": [
+    {"to": "oss-apps", "as": "informer", "why": "Can only tell their users to update PHP; their advisories reach the people who must act."},
+    {"to": "site-owner", "as": "owner", "why": "Runs the application."},
+    {"to": "commerce", "as": "bearer", "why": "Magento and WooCommerce shops take cards."}
+   ],
+   "weaknesses": ["w-alloc-bailout", "w-stale-globals"],
+   "claims": ["wordpress-drupal"],
+   "controls": [{"text": "Update PHP under the application", "status": "in-place", "page": "playbook/index.html"}],
+   "frameworks": ["owasp:A06:2021", "pcidss:6.3.1", "cis:16.4"],
+   "stories": [],
+   "pages": ["affected/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r01-6", "parent": "r01", "title": "Products that embed PHP stay vulnerable while their suppliers investigate",
+   "statement": "Because PHP is embedded in products whose suppliers must each ship their own fix, and most of the 674 products in the NCSC-NL inventory were vulnerable or under investigation, customers of those products cannot patch on their own, resulting in exposure that lasts as long as the slowest supplier.",
+   "category": "supply-chain", "likelihood": 4, "impact": 4,
+   "basis": "Counted from the inventory: 206 vulnerable and 418 under investigation against 46 fixed at the vault's capture.",
+   "assign": [
+    {"to": "inventory-suppliers", "as": "owner", "why": "Each ships the fix for its product."},
+    {"to": "operators", "as": "bearer", "why": "Depend on the supplier's release."},
+    {"to": "eu-agencies", "as": "informer", "why": "NCSC-NL keeps the inventory."},
+    {"to": "cto", "as": "owner", "why": "Owns the supplier relationship and the inventory of what runs where."}
+   ],
+   "weaknesses": ["w-inventory"],
+   "claims": ["scale-ncsc-nl"],
+   "controls": [{"text": "The NCSC-NL inventory, tracked hour by hour", "status": "partial", "page": "patching/inventory/index.html"}],
+   "frameworks": ["cra:Art.13", "cra:AnnexI.II", "owasp:A03:2025", "nis2:Art.21(2)(d)", "iso27001:A.5.21", "nistcsf:GV.SC-07", "dora:Art.28", "soc2:CC9.2"],
+   "stories": ["why-not-patch-every-version"],
+   "pages": ["affected/software.html", "patching/inventory/index.html"],
+   "team": ["story-site"]
+  },
+
+  {
+   "id": "r02", "parent": null, "title": "The coordinated disclosure broke before the fix was ready",
+   "statement": "Because the secret was held by four finders, a coalition, critical-infrastructure providers and image builders at once, it leaked a day early, resulting in a release moved forward by 24 hours and defenders starting the race with attackers already told where to look.",
+   "category": "process", "likelihood": 5, "impact": 4,
+   "basis": "It happened: the release moved from 22 to 21 October because of the leak.",
+   "assign": [
+    {"to": "php-security-team", "as": "owner", "why": "Ran the embargo and moved the release."},
+    {"to": "finders", "as": "source", "why": "Four parties held the details; one published a video by mistake."},
+    {"to": "distributors", "as": "source", "why": "Built and, in one disputed case, published fixed images early."},
+    {"to": "operators", "as": "bearer", "why": "Lost a day of preparation."},
+    {"to": "security-lead", "as": "bearer", "why": "Starts the patch plan a day early, on leaked details."}
+   ],
+   "concerns": ["cve-109618", "cve-109619"],
+   "weaknesses": ["w-embargo"],
+   "claims": ["release-moved", "leak-cve-ids", "leak-video", "chainguard", "leak-mitigations"],
+   "controls": [{"text": "Move the release forward once the leak was confirmed", "status": "in-place", "page": "leak/index.html"}],
+   "frameworks": ["iso29147:29147:coordination", "nis2:Art.12", "nistcsf:ID.RA-08", "tlp:TLP:AMBER+STRICT"],
+   "stories": ["where-php2shell-stands", "php2shell-in-perspective"],
+   "pages": ["leak/index.html", "timeline/index.html"],
+   "team": ["story-site", "historian"]
+  },
+  {
+   "id": "r02-1", "parent": "r02", "title": "The CVE IDs and the proof-of-concept video circulated before release",
+   "statement": "Because the CVE IDs circulated from an anonymous post and a proof-of-concept video was published by mistake, attackers knew the target and saw it work before any fix existed, resulting in scanning that began ahead of the release.",
+   "category": "process", "likelihood": 5, "impact": 4,
+   "basis": "Reported by the PHP Foundation and the security team's own account.",
+   "assign": [
+    {"to": "calif", "as": "source", "why": "Published the video, according to the Foundation."},
+    {"to": "php-security-team", "as": "owner", "why": "Decides how the embargo responds."},
+    {"to": "edge", "as": "treater", "why": "Shipped rules within hours of the leak."}
+   ],
+   "weaknesses": ["w-embargo"],
+   "claims": ["leak-cve-ids", "leak-hn", "leak-watchtowr", "leak-video"],
+   "controls": [{"text": "Edge rules live before disclosure", "status": "partial", "page": "defence/index.html#edge"}],
+   "frameworks": ["iso29147:29147:coordination", "nistcsf:ID.RA-08"],
+   "stories": ["where-php2shell-stands"],
+   "pages": ["leak/index.html"],
+   "team": ["historian"]
+  },
+  {
+   "id": "r02-2", "parent": "r02", "title": "Early mitigation advice to a few providers leaked",
+   "statement": "Because mitigation advice was given to a few critical-infrastructure providers from about 23:00 UTC on 20 October without, as far as the record shows, a sharing label that held, it may have leaked, resulting in a signal to attackers and an uneven head start among defenders.",
+   "category": "process", "likelihood": 3, "impact": 3,
+   "basis": "Reported by the Foundation as possible, not shown.",
+   "assign": [
+    {"to": "critical-infra", "as": "source", "why": "Received the advice."},
+    {"to": "php-security-team", "as": "owner", "why": "Chose who to tell and on what terms."},
+    {"to": "operators", "as": "bearer", "why": "Most received nothing early."}
+   ],
+   "weaknesses": ["w-embargo"],
+   "claims": ["leak-mitigations"],
+   "controls": [{"text": "Share early advice under TLP:AMBER+STRICT and record who received it", "status": "missing", "page": "leak/index.html"}],
+   "frameworks": ["tlp:TLP:AMBER+STRICT", "iso27001:A.5.14", "iso29147:29147:coordination"],
+   "stories": [],
+   "pages": ["leak/index.html"],
+   "team": ["historian"]
+  },
+  {
+   "id": "r02-3", "parent": "r02", "title": "Patched builds published before the embargo lifted",
+   "statement": "Because built images containing the fix were published at 07:41 UTC on 21 October, before the release, anyone could diff them against the previous images, resulting in the fix itself becoming a map to the flaw.",
+   "category": "supply-chain", "likelihood": 4, "impact": 4,
+   "basis": "Disputed: the Foundation says Chainguard broke the embargo; Chainguard denies leaking.",
+   "assign": [
+    {"to": "chainguard", "as": "source", "why": "Published the images, by the Foundation's account."},
+    {"to": "distributors", "as": "owner", "why": "Every builder in an embargo can do the same."},
+    {"to": "php-security-team", "as": "regulator", "why": "Sets the embargo's terms."}
+   ],
+   "weaknesses": ["w-embargo"],
+   "claims": ["chainguard", "lorenc-ai-found"],
+   "controls": [{"text": "Embargo terms that cover built artefacts, not only advisories", "status": "missing", "page": "leak/index.html"}],
+   "frameworks": ["iso29147:29147:coordination", "cra:Art.13", "nistcsf:GV.SC-05", "owasp:A03:2025"],
+   "stories": ["where-php2shell-stands"],
+   "pages": ["leak/index.html"],
+   "team": ["historian"]
+  },
+
+  {
+   "id": "r03", "parent": null, "title": "Exploitation outpaces patching",
+   "statement": "Because probing began before disclosure and the last PHP core flaw was exploited in the wild a day after its release, attackers may reach unpatched servers faster than operators can update them, resulting in compromises in the window between release and patch.",
+   "category": "security", "likelihood": 4, "impact": 5,
+   "basis": "Probing confirmed; the 2024 precedent was exploited within a day; KEV has not listed php2shell.",
+   "assign": [
+    {"to": "operators", "as": "owner", "why": "Their patch time is the window."},
+    {"to": "threat-intel", "as": "informer", "why": "Sees attempts first."},
+    {"to": "us-agencies", "as": "regulator", "why": "A KEV listing starts the federal clock."},
+    {"to": "security-lead", "as": "treater", "why": "Watches for the shift from probing to compromise."}
+   ],
+   "weaknesses": ["w-signal", "w-alloc-bailout"],
+   "claims": ["probing", "amazon-honeypot", "kev-precedent", "cisa-none", "cloudflare-traffic"],
+   "controls": [
+    {"text": "Patch within days, not the 14-day Cyber Essentials window", "status": "partial", "page": "playbook/index.html"},
+    {"text": "Watch the signals ladder for the move from exposed to exploited", "status": "in-place", "page": "signals/index.html"}
+   ],
+   "frameworks": ["kev:KEV-entry", "kev:BOD22-01", "nistcsf:DE.CM-01", "nist80053:SI-4", "attack:T1595.002", "iso27001:A.8.16", "iso27001:A.5.7"],
+   "stories": ["patch-at-the-speed-of-metasploit", "exposed-is-not-exploited", "php2shell-in-perspective"],
+   "pages": ["exploitation/index.html", "signals/index.html"],
+   "team": ["journalist", "historian"]
+  },
+  {
+   "id": "r03-1", "parent": "r03", "title": "Attempts before disclosure",
+   "statement": "Because an exploit attempt hit an Amazon honeypot on 17 October from an anonymisation network, someone may have had the flaw before the leak, resulting in compromises that pre-date every advisory and every log review window.",
+   "category": "security", "likelihood": 3, "impact": 5,
+   "basis": "One attempt reported by Amazon; Imperva saw nothing matching before disclosure.",
+   "assign": [
+    {"to": "threat-intel", "as": "informer", "why": "The honeypot evidence and its absence elsewhere."},
+    {"to": "security-lead", "as": "owner", "why": "Decides how far back to look in the logs."}
+   ],
+   "weaknesses": ["w-signal"],
+   "claims": ["amazon-honeypot", "imperva-none"],
+   "controls": [{"text": "Hunt back to 17 October, not to the release", "status": "partial", "page": "defence/index.html#host"}],
+   "frameworks": ["nistcsf:ID.RA-02", "iso27001:A.5.7", "nist80053:SI-4", "pcidss:12.10.1"],
+   "stories": ["exposed-is-not-exploited"],
+   "pages": ["exploitation/index.html"],
+   "team": ["journalist"]
+  },
+  {
+   "id": "r03-2", "parent": "r03", "title": "Mass scanning and mutated payloads after the leak",
+   "statement": "Because tens of thousands of attempts followed the announcement and attackers mutated payloads, every internet-facing PHP server was tested within hours, resulting in exposure measured in hours, not weeks.",
+   "category": "security", "likelihood": 5, "impact": 4,
+   "basis": "Reported by Cloudflare's CEO and confirmed as probing by Amazon and Cloudflare.",
+   "assign": [
+    {"to": "waf-vendors", "as": "treater", "why": "Absorb the scanning."},
+    {"to": "operators", "as": "owner", "why": "Every server was tested; only its operator can patch it."}
+   ],
+   "weaknesses": ["w-waf-only"],
+   "claims": ["cf-millions", "cloudflare-traffic", "probing"],
+   "controls": [{"text": "Edge rules from every major vendor", "status": "partial", "page": "defence/index.html#edge"}],
+   "frameworks": ["attack:T1595.002", "nistcsf:DE.CM-01", "cis:13.10"],
+   "stories": [],
+   "pages": ["exploitation/index.html", "defence/index.html"],
+   "team": ["journalist"]
+  },
+  {
+   "id": "r03-3", "parent": "r03", "title": "Exploited in the wild without anyone being able to show it",
+   "statement": "Because one firm lists the flaws as exploited in the wild, CISA has not observed exploitation and no organisation has confirmed a compromise, the signal that would move boards and regulators is missing, resulting in decisions made on the absence of evidence.",
+   "category": "governance", "likelihood": 3, "impact": 4,
+   "basis": "watchTowr's listing is unverified; KEV and Huntress show nothing; the precedent says exploitation follows.",
+   "assign": [
+    {"to": "threat-intel", "as": "informer", "why": "Their reports disagree."},
+    {"to": "us-agencies", "as": "regulator", "why": "KEV is the public test."},
+    {"to": "board", "as": "owner", "why": "Decides on what the evidence does and does not show."}
+   ],
+   "weaknesses": ["w-signal"],
+   "claims": ["watchtowr-itw", "cisa-none", "huntress-none", "no-confirmed-compromise", "nz-active"],
+   "controls": [{"text": "Rate on exposure and precedent, not only on confirmed exploitation", "status": "partial", "page": "signals/index.html"}],
+   "frameworks": ["kev:KEV-entry", "nistcsf:ID.RA-02", "nistcsf:GV.RR-01"],
+   "stories": ["exposed-is-not-exploited"],
+   "pages": ["compromise/index.html", "signals/index.html", "exploitation/index.html"],
+   "team": ["journalist", "historian"]
+  },
+  {
+   "id": "r03-4", "parent": "r03", "title": "Detections built on a proof of concept with the wrong mechanism",
+   "statement": "Because none of the public proof-of-concept exploits reviewed had the correct mechanism, rules and scans built from them may pass a vulnerable server or miss a real attack, resulting in false assurance.",
+   "category": "security", "likelihood": 3, "impact": 4,
+   "basis": "Reported by VulnCheck and Huntress; community authors corrected the leaked PoC's preconditions.",
+   "assign": [
+    {"to": "threat-intel", "as": "treater", "why": "Write and correct the detection rules."},
+    {"to": "security-lead", "as": "owner", "why": "Relies on the rules and decides whether to trust a scan."}
+   ],
+   "weaknesses": ["w-signal", "w-waf-only"],
+   "claims": ["pocs-wrong"],
+   "controls": [{"text": "Check versions, not scanner verdicts", "status": "in-place", "page": "defence/index.html#hard"}],
+   "frameworks": ["nist80053:RA-5", "soc2:CC7.1", "nistcsf:ID.RA-01"],
+   "stories": ["patch-at-the-speed-of-metasploit"],
+   "pages": ["defence/index.html"],
+   "team": ["journalist"]
+  },
+
+  {
+   "id": "r04", "parent": null, "title": "Services lost to precautionary shutdowns",
+   "statement": "Because agencies advised taking systems offline where an update was not possible, governments, councils and companies switched off services people rely on, resulting in an outage caused by the defence rather than by an attack.",
+   "category": "operational", "likelihood": 5, "impact": 4,
+   "basis": "It happened: the Netherlands, Finland, Latvia, UK councils and the Wikimedia Foundation took services offline.",
+   "assign": [
+    {"to": "public-sector", "as": "owner", "why": "Took the decisions."},
+    {"to": "service-users", "as": "bearer", "why": "Lost the services."},
+    {"to": "agencies", "as": "source", "why": "Their advice drove the decisions."},
+    {"to": "board", "as": "owner", "why": "The offline call is a board-level call."},
+    {"to": "comms", "as": "treater", "why": "Explains the outage."}
+   ],
+   "concerns": ["cve-109618", "cve-109619"],
+   "weaknesses": ["w-eol", "w-inventory"],
+   "claims": ["offline-nsa", "offline-cisa", "nl-offline", "fi-offline", "latvia-offline", "affected-sites", "wikimedia-precaution"],
+   "controls": [
+    {"text": "Serve from cache while the origin is patched", "status": "partial", "page": "impact/index.html"},
+    {"text": "A continuity plan that names which services may go dark", "status": "missing", "page": "impact/index.html"}
+   ],
+   "frameworks": ["iso27001:A.5.29", "iso27001:A.5.30", "nis2:Art.21(2)(c)", "dora:Art.11", "nist80053:CP-2", "nistcsf:RC.RP-01"],
+   "stories": ["php2shell-in-perspective", "where-php2shell-stands"],
+   "pages": ["impact/index.html", "agencies/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r04-1", "parent": "r04", "title": "National government services offline",
+   "statement": "Because the Dutch, Finnish and Latvian governments restricted or switched off their own web services as a precaution, citizens lost access to identity, tax and emergency information, resulting in harm to people who needed them that day.",
+   "category": "operational", "likelihood": 5, "impact": 4,
+   "basis": "Confirmed in the Netherlands and Latvia; reported in Finland.",
+   "assign": [
+    {"to": "national-gov", "as": "owner", "why": "Made the call."},
+    {"to": "service-users", "as": "bearer", "why": "Lost DigiD, MijnOverheid, 112.lv."},
+    {"to": "eu-agencies", "as": "informer", "why": "NCSC-NL and CERT.LV advised and acted."}
+   ],
+   "weaknesses": ["w-inventory"],
+   "claims": ["nl-offline", "fi-offline", "latvia-offline"],
+   "controls": [{"text": "Restrict access by geography instead of switching off", "status": "partial", "page": "impact/index.html"}],
+   "frameworks": ["nis2:Art.21(2)(c)", "iso27001:A.5.29", "nistcsf:RC.RP-01"],
+   "stories": ["php2shell-in-perspective"],
+   "pages": ["impact/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r04-2", "parent": "r04", "title": "Councils and police offline without saying why",
+   "statement": "Because UK councils and the Met Police went offline calling it maintenance or a precaution and did not confirm the link, residents could not tell an outage from an attack, resulting in lost trust and calls the council could not answer.",
+   "category": "reputational", "likelihood": 5, "impact": 3,
+   "basis": "Reported by the press; Oxford's statement quoted.",
+   "assign": [
+    {"to": "councils", "as": "owner", "why": "Took the sites down and chose the words."},
+    {"to": "comms", "as": "treater", "why": "Says what is known."},
+    {"to": "uk-ncsc", "as": "informer", "why": "Its advice was the reason."}
+   ],
+   "weaknesses": ["w-eol"],
+   "claims": ["edinburgh", "oxford", "uk-list"],
+   "controls": [{"text": "A holding statement prepared before the outage", "status": "missing", "page": "briefings/comms/index.html"}],
+   "frameworks": ["cyberessentials:SUM", "nistcsf:RS.CO-03", "iso27001:A.5.24"],
+   "stories": [],
+   "pages": ["impact/index.html", "briefings/comms/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r04-3", "parent": "r04", "title": "The agencies' advice disagrees",
+   "statement": "Because the agencies worded their offline advice differently, from 'take offline' to 'consider taking offline', and reports of allied agreement were contradicted, boards in different countries made opposite calls on the same facts, resulting in outages some did not need and exposure others did not see.",
+   "category": "governance", "likelihood": 4, "impact": 3,
+   "basis": "The allies' joint advice is contradicted by the captures; the wording differs per agency.",
+   "assign": [
+    {"to": "agencies", "as": "source", "why": "Wrote the advice."},
+    {"to": "board", "as": "owner", "why": "Reads it and decides."},
+    {"to": "media", "as": "informer", "why": "Summarised it as one voice."}
+   ],
+   "weaknesses": ["w-headline"],
+   "claims": ["offline-ncsc", "offline-allies", "offline-nsa", "offline-cisa"],
+   "controls": [{"text": "The agencies table, advice side by side", "status": "in-place", "page": "agencies/index.html"}],
+   "frameworks": ["iso27001:A.5.5", "nistcsf:GV.RR-01", "nis2:Art.20"],
+   "stories": ["where-php2shell-stands"],
+   "pages": ["agencies/index.html"],
+   "team": ["story-site", "verifier"]
+  },
+
+  {
+   "id": "r05", "parent": null, "title": "A web application firewall taken for a patch",
+   "statement": "Because edge rules went live hours before disclosure and covered most traffic, an operator may treat the filter as the fix, resulting in an unpatched engine behind a filter that mutated payloads and unrouted traffic get past.",
+   "category": "security", "likelihood": 4, "impact": 4,
+   "basis": "Every vendor said a rule is a stopgap; the claim that a WAF protects is disputed.",
+   "assign": [
+    {"to": "waf-vendors", "as": "informer", "why": "Said so themselves."},
+    {"to": "security-lead", "as": "owner", "why": "Decides whether the filter buys time or replaces the update."},
+    {"to": "commerce", "as": "bearer", "why": "PCI DSS 6.4.2 makes the filter a requirement, which can read as enough."}
+   ],
+   "concerns": ["cve-109618", "cve-109619"],
+   "weaknesses": ["w-waf-only"],
+   "claims": ["waf", "waf-nine-hours", "only-update"],
+   "controls": [{"text": "Filter and patch, never filter instead of patch", "status": "in-place", "page": "defence/index.html#answer"}],
+   "frameworks": ["pcidss:6.4.2", "cis:13.10", "nist80053:SC-7", "iso27001:A.8.20", "cyberessentials:FW"],
+   "stories": ["patch-at-the-speed-of-metasploit"],
+   "pages": ["defence/index.html"],
+   "team": ["journalist"]
+  },
+
+  {
+   "id": "r06", "parent": null, "title": "A compromise becomes a reportable breach",
+   "statement": "Because a server running an attacker's code exposes the personal data and the services behind it, a single compromise can trigger breach notification under GDPR, incident reporting under NIS2 and DORA, and, for a manufacturer, reporting under the Cyber Resilience Act, resulting in deadlines measured in hours and fines measured in turnover.",
+   "category": "compliance", "likelihood": 3, "impact": 5,
+   "basis": "No named organisation has said it was compromised; two vendors report successful exploitation without naming a victim. If one comes, the clocks are 24 and 72 hours.",
+   "assign": [
+    {"to": "operators", "as": "owner", "why": "Controllers and essential entities."},
+    {"to": "dpo", "as": "owner", "why": "Decides whether the 72-hour clock has started."},
+    {"to": "data-subjects", "as": "bearer", "why": "Their data."},
+    {"to": "eu-agencies", "as": "regulator", "why": "Receive the reports."},
+    {"to": "board", "as": "owner", "why": "Personally accountable under NIS2."}
+   ],
+   "weaknesses": ["w-alloc-bailout", "w-stale-globals"],
+   "claims": ["no-confirmed-compromise", "rce-modphp"],
+   "controls": [{"text": "A breach-assessment step in the incident plan, started at the first sign of compromise", "status": "partial", "page": "playbook/index.html"}],
+   "frameworks": ["gdpr:Art.32", "gdpr:Art.33", "gdpr:Art.34", "nis2:Art.23", "dora:Art.19", "cra:Art.14"],
+   "stories": [],
+   "pages": ["compromise/index.html", "impact/index.html", "playbook/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r06-1", "parent": "r06", "title": "Personal data taken from a compromised PHP application",
+   "statement": "Because PHP applications hold accounts, orders and records, code execution on one gives the attacker its database, resulting in a personal data breach the controller must assess within 72 hours.",
+   "category": "compliance", "likelihood": 3, "impact": 5,
+   "basis": "Follows from code execution; no named organisation has reported a breach through php2shell.",
+   "assign": [
+    {"to": "dpo", "as": "owner", "why": "Runs the breach assessment."},
+    {"to": "data-subjects", "as": "bearer", "why": "Their data."},
+    {"to": "managed-hosts", "as": "treater", "why": "Processors under Article 28 for their customers."}
+   ],
+   "weaknesses": ["w-alloc-bailout"],
+   "claims": ["rce-modphp"],
+   "controls": [{"text": "Security of processing kept current, tested and evaluated", "status": "partial", "page": "playbook/index.html"}],
+   "frameworks": ["gdpr:Art.5(1)(f)", "gdpr:Art.24", "gdpr:Art.28", "gdpr:Art.32", "gdpr:Art.33", "gdpr:Art.34"],
+   "stories": [],
+   "pages": ["briefings/dpo/index.html", "impact/index.html"],
+   "team": ["story-site", "grc"]
+  },
+  {
+   "id": "r06-2", "parent": "r06", "title": "Essential and financial entities miss their reporting clocks",
+   "statement": "Because NIS2 asks for an early warning within 24 hours and DORA for major-incident reports on its own schedule, an entity that cannot tell a precautionary outage from an incident may report late or not at all, resulting in a regulatory finding on top of the incident.",
+   "category": "compliance", "likelihood": 3, "impact": 4,
+   "basis": "Precautionary shutdowns may themselves meet the significance tests; the evidence does not say how entities classified them.",
+   "assign": [
+    {"to": "critical-infra", "as": "owner", "why": "Essential entities under NIS2."},
+    {"to": "finance", "as": "owner", "why": "Under DORA."},
+    {"to": "eu-agencies", "as": "regulator", "why": "Receive the reports."},
+    {"to": "ciso", "as": "treater", "why": "Classifies the event."}
+   ],
+   "weaknesses": ["w-signal"],
+   "claims": ["no-confirmed-compromise", "nl-offline"],
+   "controls": [{"text": "Classify a precautionary shutdown against the reporting thresholds on the day", "status": "missing", "page": "impact/index.html"}],
+   "frameworks": ["nis2:Art.23", "nis2:Art.20", "dora:Art.19", "dora:Art.10", "nist80053:IR-6"],
+   "stories": [],
+   "pages": ["impact/index.html", "agencies/index.html"],
+   "team": ["story-site"]
+  },
+  {
+   "id": "r06-3", "parent": "r06", "title": "Manufacturers under the Cyber Resilience Act owe a 24-hour report",
+   "statement": "Because the Act's reporting duty has applied since 11 September 2026, a manufacturer whose product embeds PHP must report an actively exploited vulnerability within 24 hours, and whether php2shell is 'actively exploited' is exactly what the evidence cannot yet settle, resulting in manufacturers deciding alone when the clock starts.",
+   "category": "compliance", "likelihood": 3, "impact": 4,
+   "basis": "The legal test turns on exploitation, which is disputed; the inventory shows hundreds of products.",
+   "assign": [
+    {"to": "inventory-suppliers", "as": "owner", "why": "Manufacturers under the Act."},
+    {"to": "php-foundation", "as": "informer", "why": "An open-source steward, with lighter duties under Article 24."},
+    {"to": "eu-agencies", "as": "regulator", "why": "The CSIRTs and ENISA receive the reports."},
+    {"to": "engineers", "as": "treater", "why": "Build the fixed product and the component inventory that shows it."}
+   ],
+   "weaknesses": ["w-inventory", "w-signal"],
+   "claims": ["scale-ncsc-nl", "watchtowr-itw", "cisa-none"],
+   "controls": [{"text": "A documented decision on whether and when the exploitation test is met", "status": "missing", "page": "affected/software.html"}],
+   "frameworks": ["cra:Art.14", "cra:Art.13", "cra:Art.24", "cra:AnnexI.II"],
+   "stories": [],
+   "pages": ["affected/software.html", "exploitation/index.html"],
+   "team": ["story-site"]
+  },
+
+  {
+   "id": "r07", "parent": null, "title": "Decisions made on numbers that measure something else",
+   "statement": "Because '70% of the Internet', 'CVSS 10' and '30 million websites' were repeated without their source, boards and readers sized the risk on figures that are unverified, contradicted or measure a different thing, resulting in priorities set by headline rather than by exposure.",
+   "category": "governance", "likelihood": 4, "impact": 3,
+   "basis": "The claims are graded unverified, contradicted or reported on this site; they led the coverage most readers saw.",
+   "assign": [
+    {"to": "media", "as": "source", "why": "Carried the figures."},
+    {"to": "wiz", "as": "source", "why": "The 70% headline."},
+    {"to": "board", "as": "owner", "why": "Decides on what it reads, and owns the question of what a figure measures."},
+    {"to": "newsroom", "as": "treater", "why": "Grades every figure and shows what each measures."}
+   ],
+   "concerns": ["cve-109618", "cve-109619"],
+   "weaknesses": ["w-headline"],
+   "claims": ["scale-70pc-internet", "scale-70pc-websites", "cvss-10", "scale-30m", "most-severe", "disclosure-22oct"],
+   "controls": [{"text": "Every number with what it counts and its source", "status": "in-place", "page": "numbers/index.html"}],
+   "frameworks": ["nistcsf:GV.RM-01", "iso27001:6.1.2", "owasp:LLM09:2025"],
+   "stories": ["where-php2shell-stands", "exposed-is-not-exploited"],
+   "pages": ["numbers/index.html", "factcheck/index.html"],
+   "team": ["verifier", "journalist"]
+  },
+
+  {
+   "id": "r08", "parent": null, "title": "Frontier AI finds critical flaws faster than maintainers can fix them",
+   "statement": "Because four parties, several using frontier models, found the same engine flaws within weeks, and the same capability is open to attackers, the next critical bug in widely used C code may be found by someone who will not report it, resulting in flaws exploited before any embargo exists.",
+   "category": "strategic", "likelihood": 4, "impact": 5,
+   "basis": "AI-assisted discovery reported by the finders and by Chainguard; 'ahead of attackers' is disputed.",
+   "assign": [
+    {"to": "openai", "as": "owner", "why": "A provider of a general-purpose model with systemic risk, under the EU AI Act."},
+    {"to": "finders", "as": "treater", "why": "Report what they find."},
+    {"to": "php-project", "as": "bearer", "why": "Receives the reports."},
+    {"to": "world", "as": "bearer", "why": "Every user of open-source C."},
+    {"to": "ciso", "as": "bearer", "why": "The next flaw may arrive with no embargo and no advisory: plans that assume a warning stop working."}
+   ],
+   "concerns": ["cve-109618", "cve-109619"],
+   "weaknesses": ["w-ai-dual-use", "w-maintainer-capacity"],
+   "claims": ["ai-found", "ahead-of-attackers", "lorenc-ai-found", "vibe-code", "openai-same-day", "wiz-independent"],
+   "controls": [{"text": "Coordinated reporting by the model providers (Patch the Planet)", "status": "partial", "page": "discovery/index.html"}],
+   "frameworks": ["euaiact:Art.55", "nistairmf:GOVERN-6.1", "nistairmf:MEASURE-2.7", "iso42001:6.1.2"],
+   "stories": ["php2shell-in-perspective"],
+   "pages": ["discovery/index.html", "context/index.html"],
+   "team": ["historian"]
+  },
+  {
+   "id": "r08-1", "parent": "r08", "title": "A known bug left unexploited, then unfixed, for two years",
+   "statement": "Because a 2024 audit found the out-of-memory issue but not its exploitation, and two findings were redacted while their fixes were in progress, the bug waited until better tools showed it could be weaponised, resulting in a fix shipped under emergency instead of on the maintainers' schedule.",
+   "category": "strategic", "likelihood": 4, "impact": 4,
+   "basis": "Confirmed audit; redaction reported.",
+   "assign": [
+    {"to": "php-project", "as": "owner", "why": "Triage of audit findings."},
+    {"to": "quarkslab", "as": "informer", "why": "The audit."},
+    {"to": "php-foundation", "as": "treater", "why": "Funds the developers who would fix it."}
+   ],
+   "weaknesses": ["w-maintainer-capacity", "w-alloc-bailout"],
+   "claims": ["quarkslab-2024", "quarkslab-redacted"],
+   "controls": [{"text": "Publicly funded audits (OSTIF, Sovereign Tech Agency)", "status": "partial", "page": "discovery/index.html"}],
+   "frameworks": ["ssdf:PW.7", "ssdf:RV.2", "cra:Art.24", "iso27001:A.8.25"],
+   "stories": ["php2shell-in-perspective"],
+   "pages": ["discovery/index.html"],
+   "team": ["historian"]
+  },
+  {
+   "id": "r08-2", "parent": "r08", "title": "Several finders, one small team",
+   "statement": "Because Calif, OpenAI, Wiz and a fourth reporter reached the same small security team within weeks, each report costs the same few people triage time, resulting in a coordination load that grows with every AI-assisted finder.",
+   "category": "operational", "likelihood": 4, "impact": 3,
+   "basis": "Four credited reporters; dates confirmed.",
+   "assign": [
+    {"to": "php-security-team", "as": "bearer", "why": "Triage for every report."},
+    {"to": "finders", "as": "source", "why": "Each report is load."},
+    {"to": "php-foundation", "as": "owner", "why": "Decides how the team is resourced."}
+   ],
+   "weaknesses": ["w-maintainer-capacity"],
+   "claims": ["four-reporters", "who-first", "openai-same-day", "wiz-independent"],
+   "controls": [{"text": "A coalition that pooled reports for one fix", "status": "partial", "page": "discovery/index.html"}],
+   "frameworks": ["iso29147:29147:receipt", "nistcsf:ID.RA-08", "ssdf:RV.1"],
+   "stories": [],
+   "pages": ["discovery/index.html"],
+   "team": ["historian"]
+  },
+
+  {
+   "id": "r09", "parent": null, "title": "Not knowing where PHP runs",
+   "statement": "Because PHP sits in appliances, images, plugins and forgotten sites, an organisation cannot patch what it has not listed, resulting in an update programme that reports done while vulnerable runtimes remain.",
+   "category": "operational", "likelihood": 4, "impact": 4,
+   "basis": "418 inventory rows under investigation; the precedent of every component flaw since Log4Shell.",
+   "assign": [
+    {"to": "cto", "as": "owner", "why": "Owns the inventory."},
+    {"to": "engineers", "as": "treater", "why": "Build it and keep it."},
+    {"to": "inventory-suppliers", "as": "informer", "why": "Say which products embed PHP."}
+   ],
+   "concerns": ["cve-109618", "cve-109619"],
+   "weaknesses": ["w-inventory"],
+   "claims": ["scale-ncsc-nl", "scale-2.6m-hosts"],
+   "controls": [{"text": "A software inventory with component versions (SBOM)", "status": "partial", "page": "playbook/index.html"}],
+   "frameworks": ["nistcsf:ID.AM-02", "nist80053:CM-8", "cis:16.4", "dora:Art.8", "iso27001:A.8.9", "cra:AnnexI.II"],
+   "stories": ["exposed-is-not-exploited"],
+   "pages": ["playbook/index.html", "affected/software.html"],
+   "team": ["story-site"]
+  },
+
+  {
+   "id": "r10", "parent": null, "title": "This newsroom's own agents are steered, leak or mislead",
+   "statement": "Because this newsroom's agents read captured pages, feeds and other models' output while holding vault credentials and the right to publish, text written by a stranger could steer one, a secret could be published, or a wrong status word could ship, resulting in harm to readers and to the people named on the site.",
+   "category": "ai", "likelihood": 3, "impact": 4,
+   "basis": "Nine unbounded excess capabilities in the agent grant; eleven overstated status words found by the desk; no steering seen.",
+   "assign": [
+    {"to": "newsroom-editor", "as": "owner", "why": "Sets the mandate and is the only instructing voice."},
+    {"to": "newsroom-agents", "as": "treater", "why": "Work to the security requirements."},
+    {"to": "readers", "as": "bearer", "why": "Read what is published, and so do their models."}
+   ],
+   "weaknesses": ["w-agent-reach", "w-untrusted-text", "w-status-words"],
+   "claims": [],
+   "controls": [
+    {"text": "The security requirements, the gate and the release tripwire", "status": "in-place", "page": "admin/agents/index.html"},
+    {"text": "Rulesets on dev and main restricting the gate's own files", "status": "missing", "page": "admin/index.html"}
+   ],
+   "frameworks": ["euaiact:Art.50", "nistairmf:MANAGE-2.4", "iso42001:6.1.3", "owasp:LLM06:2025"],
+   "stories": [],
+   "pages": ["admin/agents/index.html", "team/index.html"],
+   "team": ["dev", "conductor"]
+  },
+  {
+   "id": "r10-1", "parent": "r10", "title": "Prompt injection through captured material",
+   "statement": "Because captures, tips and feeds are written by anyone and read by agents that hold credentials, an instruction hidden in one could be followed, resulting in a push, a sent message or a deleted vault nobody asked for.",
+   "category": "ai", "likelihood": 3, "impact": 4,
+   "basis": "Material is untrusted by rule; the gate refuses text addressed to a model; nothing seen yet.",
+   "assign": [
+    {"to": "newsroom-agents", "as": "treater", "why": "Read material as material."},
+    {"to": "newsroom-editor", "as": "owner", "why": "Confirms anything that changes credentials or targets."}
+   ],
+   "weaknesses": ["w-untrusted-text"],
+   "claims": [],
+   "controls": [{"text": "Untrusted input fenced, flagged and never followed; the gate's injection check", "status": "in-place", "page": "admin/agents/index.html"}],
+   "frameworks": ["owasp:LLM01:2025", "nistairmf:MEASURE-2.7", "euaiact:Art.15"],
+   "stories": [],
+   "pages": ["admin/agents/index.html"],
+   "team": ["dev"]
+  },
+  {
+   "id": "r10-2", "parent": "r10", "title": "A vault key or token published",
+   "statement": "Because every file in the repository is public within minutes of a push to dev, a vault key, access token or passphrase written into the tree would be published, resulting in the evidence or readers' data opened to anyone.",
+   "category": "ai", "likelihood": 2, "impact": 5,
+   "basis": "Credential shapes and vault files refused by the gate and the release tripwire.",
+   "assign": [
+    {"to": "newsroom-agents", "as": "treater", "why": "Clone outside the repository; never print a secret."},
+    {"to": "newsroom-editor", "as": "owner", "why": "Holds the root key; rotates on exposure."},
+    {"to": "readers", "as": "bearer", "why": "Their subscriptions and telemetry are in vaults."}
+   ],
+   "weaknesses": ["w-agent-reach"],
+   "claims": [],
+   "controls": [{"text": "Credential-shape and vault-file checks in the gate and on the staged diff", "status": "in-place", "page": "vaults/index.html"}],
+   "frameworks": ["owasp:LLM02:2025", "gdpr:Art.32", "iso27001:A.5.14"],
+   "stories": [],
+   "pages": ["vaults/index.html"],
+   "team": ["dev"]
+  },
+  {
+   "id": "r10-3", "parent": "r10", "title": "A status word stronger than its evidence",
+   "statement": "Because the agent that writes a claim also chooses its status word, a claim can read as confirmed on less than confirmation, resulting in readers and their models repeating it as fact.",
+   "category": "ai", "likelihood": 4, "impact": 3,
+   "basis": "The fact-check desk found eleven overstated status words in run 1.",
+   "assign": [
+    {"to": "newsroom-agents", "as": "source", "why": "The writing agents choose the word."},
+    {"to": "readers", "as": "bearer", "why": "Rely on it."},
+    {"to": "newsroom-editor", "as": "owner", "why": "Calls what is confirmed."}
+   ],
+   "weaknesses": ["w-status-words"],
+   "claims": [],
+   "controls": [{"text": "An independent fact-check desk grading every claim", "status": "in-place", "page": "factcheck/index.html"}],
+   "frameworks": ["owasp:LLM09:2025", "euaiact:Art.50"],
+   "stories": [],
+   "pages": ["factcheck/index.html", "method/index.html"],
+   "team": ["verifier", "story-site"]
+  }
+ ]
+}
