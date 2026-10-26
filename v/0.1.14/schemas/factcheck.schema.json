@@ -1,0 +1,414 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "assessments": {
+   "items": {
+    "properties": {
+     "as_of": {
+      "type": "string"
+     },
+     "checked": {
+      "type": "array"
+     },
+     "claim_hash": {
+      "type": "string"
+     },
+     "contradictions": {
+      "type": "array"
+     },
+     "display": {
+      "type": "number"
+     },
+     "id": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "level": {
+      "type": "number"
+     },
+     "mode": {
+      "type": "string"
+     },
+     "mode2": {
+      "type": "string"
+     },
+     "quotes_checked": {
+      "type": "array"
+     },
+     "reason": {
+      "type": "string"
+     },
+     "run": {
+      "type": "string"
+     },
+     "stale": {
+      "type": "boolean"
+     },
+     "status_fit": {
+      "type": "string"
+     },
+     "tension": {
+      "type": "string"
+     },
+     "tickets": {
+      "type": "array"
+     },
+     "verdict": {
+      "type": "string"
+     },
+     "volatile": {
+      "type": "boolean"
+     }
+    },
+    "required": [
+     "as_of",
+     "checked",
+     "claim_hash",
+     "contradictions",
+     "display",
+     "id",
+     "kind",
+     "level",
+     "mode",
+     "mode2",
+     "quotes_checked",
+     "reason",
+     "run",
+     "stale",
+     "status_fit",
+     "tension",
+     "tickets",
+     "verdict",
+     "volatile"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "contradictions": {
+   "items": {
+    "properties": {
+     "claims": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "measure": {
+      "type": "string"
+     },
+     "reading": {
+      "type": "string"
+     },
+     "settle": {
+      "type": "string"
+     },
+     "statements": {
+      "type": "array"
+     },
+     "status": {
+      "type": "string"
+     },
+     "ticket": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "claims",
+     "id",
+     "measure",
+     "reading",
+     "settle",
+     "statements",
+     "status",
+     "ticket"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "desk": {
+   "type": "string"
+  },
+  "investigations": {
+   "items": {
+    "properties": {
+     "answer": {
+      "type": "string"
+     },
+     "as_of": {
+      "type": "string"
+     },
+     "brief": {
+      "type": "string"
+     },
+     "findings": {
+      "type": "array"
+     },
+     "id": {
+      "type": "string"
+     },
+     "limits": {
+      "type": "array"
+     },
+     "lineage": {
+      "type": "object"
+     },
+     "live": {
+      "type": "object"
+     },
+     "measures": {
+      "type": "object"
+     },
+     "opened": {
+      "type": "string"
+     },
+     "question": {
+      "type": "string"
+     },
+     "run": {
+      "type": "string"
+     },
+     "status": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "verdicts": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "answer",
+     "as_of",
+     "brief",
+     "findings",
+     "id",
+     "limits",
+     "lineage",
+     "live",
+     "measures",
+     "opened",
+     "question",
+     "run",
+     "status",
+     "title",
+     "verdicts"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kinds": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "levels": {
+   "items": {
+    "properties": {
+     "code": {
+      "type": "string"
+     },
+     "means": {
+      "type": "string"
+     },
+     "n": {
+      "type": "number"
+     },
+     "name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "code",
+     "means",
+     "n",
+     "name"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "runs": {
+   "items": {
+    "properties": {
+     "audit": {
+      "type": "string"
+     },
+     "checked": {
+      "type": "string"
+     },
+     "finished": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "opened": {
+      "type": "string"
+     },
+     "quiet_wakes_before": {
+      "type": "number"
+     },
+     "site_export_commit": {
+      "type": "string"
+     },
+     "site_version": {
+      "type": "string"
+     },
+     "started": {
+      "type": "string"
+     },
+     "summary": {
+      "type": "string"
+     },
+     "vault_commit": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "audit",
+     "checked",
+     "finished",
+     "id",
+     "opened",
+     "site_export_commit",
+     "site_version",
+     "started",
+     "summary",
+     "vault_commit"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "schema": {
+   "type": "string"
+  },
+  "tension_cap": {
+   "properties": {
+    "contradicted": {
+     "type": "number"
+    },
+    "disputed": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "contradicted",
+    "disputed"
+   ],
+   "type": "object"
+  },
+  "tensions": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "tickets": {
+   "items": {
+    "properties": {
+     "claims": {
+      "type": "array"
+     },
+     "description": {
+      "type": "string"
+     },
+     "excerpt": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "links": {
+      "type": "array"
+     },
+     "pages": {
+      "type": "array"
+     },
+     "retrieved_at": {
+      "type": "string"
+     },
+     "run": {
+      "type": "string"
+     },
+     "severity": {
+      "type": "string"
+     },
+     "sha256": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "status": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "type": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "claims",
+     "description",
+     "excerpt",
+     "label",
+     "links",
+     "pages",
+     "retrieved_at",
+     "run",
+     "severity",
+     "sha256",
+     "sources",
+     "status",
+     "title",
+     "type",
+     "url"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "unassessed": {
+   "type": "array"
+  },
+  "verdicts": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "assessments",
+  "contradictions",
+  "desk",
+  "investigations",
+  "kinds",
+  "levels",
+  "runs",
+  "schema",
+  "tension_cap",
+  "tensions",
+  "tickets",
+  "unassessed",
+  "verdicts"
+ ],
+ "title": "factcheck.json",
+ "type": "object"
+}

@@ -1,0 +1,841 @@
+{
+ "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied. This export was read on 23 October 2026, before the watch moved into pack mode, and its commit ids are from that read; the next export reads 7r83qic5.",
+ "vault_id": "7r83qic5",
+ "head": {
+  "commit": "20afaa62129d",
+  "message": "researcher@php.newsroom: scanner-noise angle (index/angles/scanner-noise.json, 7 new pages), job-03-community for Perplexity with its prompt, three new kinds, login-wall fix for Bluesky and LinkedIn search"
+ },
+ "commits": [
+  {
+   "commit": "20afaa62129d",
+   "message": "researcher@php.newsroom: scanner-noise angle (index/angles/scanner-noise.json, 7 new pages), job-03-community for Perplexity with its prompt, three new kinds, login-wall fix for Bluesky and LinkedIn search"
+  },
+  {
+   "commit": "c26dce84136f",
+   "message": "researcher@php.newsroom: pass 20261023T0830Z"
+  },
+  {
+   "commit": "ab680dd8839e",
+   "message": "researcher@php.newsroom: pass 20261023T0140Z"
+  },
+  {
+   "commit": "9212f1a42f55",
+   "message": "researcher@php.newsroom: external collectors: docs/collectors.md, jobs/collectors/job-01-vantage.json, taxonomy/collector-report.schema.json, tools/collectors.py; probe target with a trailing comma fixed"
+  },
+  {
+   "commit": "946ca795c607",
+   "message": "researcher@php.newsroom: probe and analysis 21:05 UTC; rendered DOM kept only with the screenshot and under 1 MB (pushes over ~30 min were being cut); push retries 8"
+  },
+  {
+   "commit": "3327b65ab886",
+   "message": "researcher@php.newsroom: pass 20261022T2053Z"
+  },
+  {
+   "commit": "eb64bcfbd710",
+   "message": "cyber@php.newsroom + researcher@php.newsroom: compromise leads chased (Valtec resolved: not PHP; GMO FX VPS compromise, cause unstated; ČVUT attack stopped, success unconfirmed; DMM unstated); appliance bulletins captured (Palo Alto PAN-OS, QNAP, Cisco, Fortinet); 5 ledger records; probe and series runs"
+  },
+  {
+   "commit": "b79da01da738",
+   "message": "researcher@php.newsroom: languages pass (339 non-English pages read, 568 new items with verbatim quotes, translations/ and index/foreign.json, index/translation-demand.json); stats pipeline (taxonomy/stats-sources.json, series/, probes/ of 295 named sites, analysis/, contradictions/ seeded with 7); 15 pages moved out of country 'impact'; docs/workflows.md"
+  },
+  {
+   "commit": "92d23bce8430",
+   "message": "researcher@php.newsroom: the languages pass: 33 impact feeds in local languages, Bing headline resolver for Google leads (295 resolved), 196 non-English articles promoted (341 in 28 languages), run 20261022T181608Z: 632 checked, 454 changed"
+  },
+  {
+   "commit": "ecea03a09c02",
+   "message": "researcher@php.newsroom + cyber@php.newsroom: weaponisation sector (Metasploit, nuclei, Sigma, Exploit-DB, Packet Storm, Rapid7 DB, GitHub search, EPSS) and 14 ATT&CK technique pages, runs 175100Z and 175253Z; screenshot kept only on significant change, 8000 px cap; KEV JSON fetched over HTTP; noise and vulnerability term updates"
+  },
+  {
+   "commit": "00acacc1f8b9",
+   "message": "researcher@php.newsroom: run 20261022T171501Z: 384 checked, 297 changed"
+  },
+  {
+   "commit": "9ba748ac18aa",
+   "message": "researcher@php.newsroom: tip 2026-10-22/001 (php2shell Checker extension), noise filter, run 2 over the 143 new pages, discovery scan"
+  },
+  {
+   "commit": "a03fcf881946",
+   "message": "researcher@php.newsroom: the source watch: taxonomy, tools, 184 pages imported from the evidence vault with 171 snapshots, 143 more seeded (48 Google News editions, registry APIs, 34 CERTs, premium press), run 20261022T142033Z: 184 checked, 125 changed"
+  }
+ ],
+ "pages": 913,
+ "publishers": 597,
+ "country": {
+  "us": 271,
+  "nl": 67,
+  "int": 62,
+  "fr": 41,
+  "de": 37,
+  "gb": 31,
+  "jp": 28,
+  "tr": 25,
+  "au": 24,
+  "kr": 24,
+  "it": 23,
+  "be": 21,
+  "ch": 20,
+  "ar": 18,
+  "br": 17,
+  "in": 16,
+  "eg": 12,
+  "id": 12,
+  "at": 11,
+  "ca": 10,
+  "es": 9,
+  "hk": 9,
+  "pt": 9,
+  "ro": 9,
+  "th": 9,
+  "cz": 8,
+  "eu": 6,
+  "fi": 6,
+  "pl": 6,
+  "sg": 6,
+  "vn": 6,
+  "ie": 5,
+  "nz": 5,
+  "lu": 4,
+  "lv": 4,
+  "sa": 4,
+  "cn": 3,
+  "mx": 3,
+  "se": 3,
+  "tw": 3,
+  "ua": 3,
+  "za": 3,
+  "ee": 2,
+  "hu": 2,
+  "lt": 2,
+  "ae": 1,
+  "ai": 1,
+  "bg": 1,
+  "cl": 1,
+  "dk": 1,
+  "gr": 1,
+  "il": 1,
+  "io": 1,
+  "my": 1,
+  "no": 1,
+  "pe": 1,
+  "re": 1,
+  "tn": 1,
+  "uy": 1
+ },
+ "sector": {
+  "news": 448,
+  "aggregator": 140,
+  "cert": 92,
+  "tech-press": 47,
+  "affected": 32,
+  "security-vendor": 29,
+  "registry": 28,
+  "reference": 24,
+  "project": 16,
+  "social": 16,
+  "community": 13,
+  "weaponisation": 12,
+  "research": 9,
+  "ai-lab": 3,
+  "government": 2,
+  "cloud": 1,
+  "tool": 1
+ },
+ "lang": {
+  "en": 370,
+  "fr": 77,
+  "de": 62,
+  "nl": 48,
+  "es": 45,
+  "pt": 33,
+  "it": 27,
+  "ja": 27,
+  "tr": 26,
+  "ko": 24,
+  "ar": 21,
+  "zh": 18,
+  "id": 15,
+  "th": 15,
+  "cs": 12,
+  "ro": 12,
+  "pl": 9,
+  "vi": 9,
+  "fi": 8,
+  "lv": 7,
+  "uk": 6,
+  "hu": 5,
+  "sv": 5,
+  "el": 4,
+  "lt": 4,
+  "ms": 4,
+  "nb": 4,
+  "bg": 3,
+  "et": 3,
+  "he": 3,
+  "sk": 3,
+  "da": 2,
+  "hr": 1,
+  "sl": 1
+ },
+ "access": {
+  "open": 735,
+  "down": 61,
+  "bot-challenge": 59,
+  "unchecked": 35,
+  "paywalled": 15,
+  "gone": 8
+ },
+ "tiers": {
+  "A": 73,
+  "B": 523,
+  "C": 15
+ },
+ "snapshots": 2946,
+ "graphs": 2946,
+ "files": 24865,
+ "world_graph": {
+  "nodes": 1620,
+  "edges": 3219
+ },
+ "access_classes": [
+  {
+   "id": "open",
+   "means": "Served the content to an anonymous browser."
+  },
+  {
+   "id": "paywalled",
+   "means": "Subscription press we hold no licence for. Either it served a subscription or registration wall instead of the content, or (for a publisher marked paywall in its page.json) it refused the anonymous browser with 401 or 403 before any wall. Counted apart from bot-challenge since 22 October 2026."
+  },
+  {
+   "id": "bot-challenge",
+   "means": "Served a bot or browser challenge (Cloudflare, Akamai, DataDome, PerimeterX, Vercel). The challenge page's hash is kept as the record."
+  },
+  {
+   "id": "login-wall",
+   "means": "Wants a signed-in account (some social posts)."
+  },
+  {
+   "id": "geo-blocked",
+   "means": "Refused because of where the request came from."
+  },
+  {
+   "id": "gone",
+   "means": "404 or 410: the page no longer exists at this address."
+  },
+  {
+   "id": "down",
+   "means": "5xx, a timeout, a DNS failure or a refused connection: the site is not answering. For the affected sites this is the finding."
+  },
+  {
+   "id": "not-attempted",
+   "means": "Listed, but the watcher is told not to fetch it (licence or editorial decision)."
+  }
+ ],
+ "sectors": [
+  {
+   "id": "cert",
+   "name": "National cyber agency or CSIRT"
+  },
+  {
+   "id": "government",
+   "name": "Other government body"
+  },
+  {
+   "id": "registry",
+   "name": "Vulnerability registry"
+  },
+  {
+   "id": "project",
+   "name": "The open-source project and its foundation"
+  },
+  {
+   "id": "research",
+   "name": "Security researcher or research firm"
+  },
+  {
+   "id": "ai-lab",
+   "name": "AI lab"
+  },
+  {
+   "id": "security-vendor",
+   "name": "Security, WAF, CDN or detection vendor"
+  },
+  {
+   "id": "cloud",
+   "name": "Cloud or hosting provider"
+  },
+  {
+   "id": "news",
+   "name": "General news"
+  },
+  {
+   "id": "tech-press",
+   "name": "Technology and security press"
+  },
+  {
+   "id": "social",
+   "name": "Social platform post or account"
+  },
+  {
+   "id": "community",
+   "name": "Forum, mailing list, gist or repository"
+  },
+  {
+   "id": "reference",
+   "name": "Reference work"
+  },
+  {
+   "id": "education",
+   "name": "University or school"
+  },
+  {
+   "id": "affected",
+   "name": "Affected organisation's own site"
+  },
+  {
+   "id": "aggregator",
+   "name": "News aggregator, search feed or tag stream"
+  },
+  {
+   "id": "tool",
+   "name": "Tool published for the incident"
+  },
+  {
+   "id": "weaponisation",
+   "name": "Where exploits, scanners and detections are published"
+  }
+ ],
+ "altitudes": {
+  "world": "country, sector, publisher, page, language: where the watched pages sit (index/world.json)",
+  "watch": "run, check, page, access, snapshot: what the watcher did and saw (runs/**/graph.json)",
+  "document": "snapshot, block, entity: what one snapshot of a page says (graph/**/<UTC>.json)",
+  "change": "change, block, entity: what moved between two snapshots (graph/**/<UTC>.json, section change)"
+ },
+ "verbs": 22,
+ "runs": [
+  {
+   "run": "20261022T142033Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T14:20:33Z",
+   "finished": "2026-10-22T14:35:30Z",
+   "pages_due": 184,
+   "pages_total": 184,
+   "changed": 125,
+   "access": {
+    "down": 7,
+    "open": 157,
+    "paywalled": 1,
+    "bot-challenge": 18,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261022T145444Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T14:54:44Z",
+   "finished": "2026-10-22T14:54:49Z",
+   "pages_due": 1,
+   "pages_total": 328,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T150854Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T15:08:54Z",
+   "finished": "2026-10-22T15:11:42Z",
+   "pages_due": 143,
+   "pages_total": 328,
+   "changed": 143,
+   "access": {
+    "open": 119,
+    "down": 5,
+    "bot-challenge": 15,
+    "gone": 4
+   }
+  },
+  {
+   "run": "20261022T171339Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T17:13:39Z",
+   "finished": "2026-10-22T17:13:57Z",
+   "pages_due": 52,
+   "pages_total": 381,
+   "changed": 52,
+   "access": {
+    "open": 52
+   }
+  },
+  {
+   "run": "20261022T171425Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T17:14:25Z",
+   "finished": "2026-10-22T17:14:46Z",
+   "pages_due": 52,
+   "pages_total": 381,
+   "changed": 48,
+   "access": {
+    "open": 52
+   }
+  },
+  {
+   "run": "20261022T171501Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T17:15:01Z",
+   "finished": "2026-10-22T17:26:14Z",
+   "pages_due": 384,
+   "pages_total": 461,
+   "changed": 297,
+   "access": {
+    "open": 326,
+    "bot-challenge": 28,
+    "down": 20,
+    "paywalled": 8,
+    "gone": 2
+   }
+  },
+  {
+   "run": "20261022T175100Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T17:51:00Z",
+   "finished": "2026-10-22T17:51:19Z",
+   "pages_due": 11,
+   "pages_total": 472,
+   "changed": 11,
+   "access": {
+    "open": 9,
+    "down": 2
+   }
+  },
+  {
+   "run": "20261022T175253Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T17:52:53Z",
+   "finished": "2026-10-22T17:53:10Z",
+   "pages_due": 14,
+   "pages_total": 486,
+   "changed": 14,
+   "access": {
+    "open": 14
+   }
+  },
+  {
+   "run": "20261022T181440Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T18:14:40Z",
+   "finished": "2026-10-22T18:15:02Z",
+   "pages_due": 33,
+   "pages_total": 519,
+   "changed": 33,
+   "access": {
+    "open": 33
+   }
+  },
+  {
+   "run": "20261022T181608Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T18:16:08Z",
+   "finished": "2026-10-22T18:32:20Z",
+   "pages_due": 632,
+   "pages_total": 715,
+   "changed": 454,
+   "access": {
+    "open": 549,
+    "bot-challenge": 48,
+    "gone": 4,
+    "down": 19,
+    "paywalled": 12
+   }
+  },
+  {
+   "run": "20261022T183616Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T18:36:16Z",
+   "finished": "2026-10-22T18:36:24Z",
+   "pages_due": 2,
+   "pages_total": 748,
+   "changed": 2,
+   "access": {
+    "open": 2
+   }
+  },
+  {
+   "run": "20261022T183624Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T18:36:24Z",
+   "finished": "2026-10-22T18:36:30Z",
+   "pages_due": 27,
+   "pages_total": 748,
+   "changed": 27,
+   "access": {
+    "open": 27
+   }
+  },
+  {
+   "run": "20261022T191400Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:14:00Z",
+   "finished": "2026-10-22T19:14:10Z",
+   "pages_due": 1,
+   "pages_total": 757,
+   "changed": 0,
+   "access": {
+    "bot-challenge": 1
+   }
+  },
+  {
+   "run": "20261022T191411Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:14:11Z",
+   "finished": "2026-10-22T19:14:20Z",
+   "pages_due": 5,
+   "pages_total": 757,
+   "changed": 5,
+   "access": {
+    "open": 5
+   }
+  },
+  {
+   "run": "20261022T191421Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:14:21Z",
+   "finished": "2026-10-22T19:14:27Z",
+   "pages_due": 2,
+   "pages_total": 757,
+   "changed": 1,
+   "access": {
+    "open": 2
+   }
+  },
+  {
+   "run": "20261022T191433Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:14:33Z",
+   "finished": "2026-10-22T19:15:09Z",
+   "pages_due": 1,
+   "pages_total": 757,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T191510Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:15:10Z",
+   "finished": "2026-10-22T19:15:23Z",
+   "pages_due": 1,
+   "pages_total": 757,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T191523Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:15:23Z",
+   "finished": "2026-10-22T19:15:35Z",
+   "pages_due": 1,
+   "pages_total": 757,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T191536Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:15:36Z",
+   "finished": "2026-10-22T19:16:45Z",
+   "pages_due": 1,
+   "pages_total": 757,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T191713Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:17:13Z",
+   "finished": "2026-10-22T19:17:20Z",
+   "pages_due": 2,
+   "pages_total": 763,
+   "changed": 2,
+   "access": {
+    "open": 2
+   }
+  },
+  {
+   "run": "20261022T191720Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:17:20Z",
+   "finished": "2026-10-22T19:17:27Z",
+   "pages_due": 2,
+   "pages_total": 763,
+   "changed": 2,
+   "access": {
+    "open": 2
+   }
+  },
+  {
+   "run": "20261022T191727Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:17:27Z",
+   "finished": "2026-10-22T19:17:36Z",
+   "pages_due": 1,
+   "pages_total": 763,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T191736Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T19:17:36Z",
+   "finished": "2026-10-22T19:17:40Z",
+   "pages_due": 1,
+   "pages_total": 763,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261022T203355Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T20:33:55Z",
+   "finished": "2026-10-22T20:34:48Z",
+   "pages_due": 25,
+   "pages_total": 773,
+   "changed": 15,
+   "access": {
+    "open": 17,
+    "bot-challenge": 1,
+    "down": 7
+   }
+  },
+  {
+   "run": "20261022T203448Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-22T20:34:48Z",
+   "finished": "2026-10-22T20:51:51Z",
+   "pages_due": 709,
+   "pages_total": 773,
+   "changed": 442,
+   "access": {
+    "open": 631,
+    "bot-challenge": 45,
+    "gone": 5,
+    "down": 15,
+    "paywalled": 13
+   }
+  },
+  {
+   "run": "20261023T011949Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T01:19:49Z",
+   "finished": "2026-10-23T01:20:42Z",
+   "pages_due": 28,
+   "pages_total": 826,
+   "changed": 12,
+   "access": {
+    "open": 22,
+    "bot-challenge": 1,
+    "down": 5
+   }
+  },
+  {
+   "run": "20261023T012042Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T01:20:42Z",
+   "finished": "2026-10-23T01:40:30Z",
+   "pages_due": 759,
+   "pages_total": 826,
+   "changed": 500,
+   "access": {
+    "open": 671,
+    "bot-challenge": 49,
+    "gone": 6,
+    "down": 19,
+    "paywalled": 14
+   }
+  },
+  {
+   "run": "20261023T080157Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T08:01:57Z",
+   "finished": "2026-10-23T08:03:31Z",
+   "pages_due": 32,
+   "pages_total": 870,
+   "changed": 19,
+   "access": {
+    "open": 20,
+    "bot-challenge": 4,
+    "down": 8
+   }
+  },
+  {
+   "run": "20261023T080331Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T08:03:31Z",
+   "finished": "2026-10-23T08:30:13Z",
+   "pages_due": 799,
+   "pages_total": 870,
+   "changed": 555,
+   "access": {
+    "open": 673,
+    "bot-challenge": 53,
+    "down": 53,
+    "paywalled": 15,
+    "gone": 5
+   }
+  },
+  {
+   "run": "20261023T123736Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:37:36Z",
+   "finished": "2026-10-23T12:37:50Z",
+   "pages_due": 1,
+   "pages_total": 910,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T123751Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:37:51Z",
+   "finished": "2026-10-23T12:38:01Z",
+   "pages_due": 1,
+   "pages_total": 910,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T123801Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:38:01Z",
+   "finished": "2026-10-23T12:38:07Z",
+   "pages_due": 1,
+   "pages_total": 910,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T123808Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:38:08Z",
+   "finished": "2026-10-23T12:38:08Z",
+   "pages_due": 1,
+   "pages_total": 910,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T123836Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:38:36Z",
+   "finished": "2026-10-23T12:38:43Z",
+   "pages_due": 1,
+   "pages_total": 911,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T123852Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:38:52Z",
+   "finished": "2026-10-23T12:39:02Z",
+   "pages_due": 1,
+   "pages_total": 913,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T123902Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:39:02Z",
+   "finished": "2026-10-23T12:39:15Z",
+   "pages_due": 1,
+   "pages_total": 913,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T124018Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:40:18Z",
+   "finished": "2026-10-23T12:40:24Z",
+   "pages_due": 1,
+   "pages_total": 913,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  },
+  {
+   "run": "20261023T124024Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-23T12:40:24Z",
+   "finished": "2026-10-23T12:40:43Z",
+   "pages_due": 1,
+   "pages_total": 913,
+   "changed": 1,
+   "access": {
+    "open": 1
+   }
+  }
+ ],
+ "tips": [
+  {
+   "id": "2026-10-22/001",
+   "received": "2026-10-22T14:38:00+02:00",
+   "status": "reported",
+   "says": "Their browser extension, php2shell-checker, was just approved on the Chrome Web Store. It checks whether a website runs outdated PHP or a supported PHP application such as WordPress. They describe it as privacy friendly and read-only, with nothing leaving the browser, and aimed at CISOs in the SME segment as easier than running scripts.",
+   "watched_as": [
+    "us/tool/chrome-web-store/php2shell-checker"
+   ],
+   "to_check": [
+    "The publisher named on the store listing, and whether it matches who made the claim",
+    "The permissions the listing and the manifest ask for, against 'read-only, nothing leaves the browser'",
+    "The version history and user count, run by run",
+    "Whether it detects the fixed versions (8.5.12 and the backports) correctly"
+   ]
+  }
+ ],
+ "tools": [
+  "analyse.py",
+  "capture_batch.mjs",
+  "collectors.py",
+  "discover.py",
+  "extract.py",
+  "foreign.py",
+  "import_evidence.py",
+  "lib.py",
+  "migrate_impact_cc.py",
+  "probe.py",
+  "publishers_seed.py",
+  "seed_impact.py",
+  "seed_world.py",
+  "series.py",
+  "watch.py"
+ ]
+}

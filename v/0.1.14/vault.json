@@ -1,0 +1,24 @@
+{
+ "head": {
+  "commit": "94352a55fbaa",
+  "subject": "curator@php.newsroom: promote 18 sources from the source watch's pack copy (7r83qic5), proactive backlog batch of 26 Oct (mechanical selection, each read): Libertatea, LineaEDP, LISA News, Al-Masry Lite, Lupa.cz, Macitynet, Mainichi (PR TIMES), Manset Haber, Medcom, Media Indonesia, Moncloa, Berliner Morgenpost, Money Today, MuyComputer, Mynet, netzpolitik.org, Bitcoin News, JKN; 9 new claims (Amazon date given as 18 Oct by one outlet, one outlet's wrong 22 Oct patch date, the single Cyfirma report now in a third Korean outlet, GARR, BSSN, crypto firms not affected, eMudhra is a separate incident)  +134 ~3  [blobs:+137 trees:+54]",
+  "commits": 31
+ },
+ "sources": 454,
+ "captures": 515,
+ "hashed_files": 3019,
+ "primary": 89,
+ "blocked": 15,
+ "agents": [
+  "claude-newsroom-lead",
+  "claude-story-site",
+  "collector-gov",
+  "collector-news",
+  "collector-primary",
+  "collector-researchers",
+  "curator@php.newsroom"
+ ],
+ "opened": "2026-10-22T08:03Z",
+ "latest_capture": "2026-10-25T14:40Z",
+ "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
+}

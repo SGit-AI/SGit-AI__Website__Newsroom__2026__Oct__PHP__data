@@ -123,11 +123,11 @@
    "sha256": "14a18dc12d832d586f1a8ac05223b6abaad600c9d2484ce6ee79e96596508f99"
   },
   {
-   "bytes": 809167,
+   "bytes": 809165,
    "group": "factcheck",
    "name": "factcheck.json",
    "schema": "schemas/factcheck.schema.json",
-   "sha256": "5ec20e4f80dcd9a35162740edec44c904e466526f7e1f7ccbc200db2e3035b81"
+   "sha256": "8a969d14e9d5c23d547b9cd3c2737e0132948f09dcc2005a4c47f63dff99e735"
   },
   {
    "bytes": 414441,
@@ -3328,6 +3328,6 @@
   "site_version": "0.22.22"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.13/",
- "version": "0.1.13"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.14/",
+ "version": "0.1.14"
 }
