@@ -1293,6 +1293,14 @@
    "run": "20261026T1619Z-conductor",
    "started": "2026-10-26T16:19:18Z",
    "summary": "Light check 16:15 London, team at 96512bd1775c. Reviewed the six since 15:20: edition v0.22.29 at 16:01 brought data v0.1.27 to v0.1.32 to the pages (site, refs, updates, team; the pages pin data v0.1.33). The curator's first data trial, data v0.1.34 (vault 2fc7e432584b): only sources, vault and va…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T16:41:09Z",
+   "outcome": "ok",
+   "run": "20261026T1630Z-correspondent",
+   "started": "2026-10-26T16:30:00Z",
+   "summary": "Editor's session, 26 Oct. Two deliverables. (1) Added a 'weight behind one answer' section and figure to the has-anyone-been-hacked article (press v1.0.31, deck now 11 slides): 525 sources / 586 captures / 0.92 GB in 3,389 fingerprinted files, 12,887 source-watch snapshots, 325 claims, 269 verdicts…"
   }
  ],
  "schedules": [
@@ -1469,5 +1477,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.30"
+ "version": "0.22.31"
 }

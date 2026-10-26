@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.30",
+"site": "0.22.31",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -8094,10 +8094,10 @@
 "zone": "stories",
 "title": "Stories: written here",
 "path": "index.html#stories",
-"hash": "083d338cc194",
-"v": 7,
+"hash": "e8fc6f9e9e1d",
+"v": 8,
 "first": "0.4.1",
-"changed": "0.22.30",
+"changed": "0.22.31",
 "date": "2026-10-26"
 },
 "home-how": {
@@ -8220,6 +8220,17 @@
 "first": "0.4.1",
 "changed": "0.4.1",
 "date": "2026-10-22"
+},
+"story-steal-my-bitcoin": {
+"kind": "story",
+"zone": "stories",
+"title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell",
+"path": "articles/steal-my-bitcoin/index.html",
+"hash": "22f668715ea1",
+"v": 1,
+"first": "0.22.31",
+"changed": "0.22.31",
+"date": "2026-10-26"
 },
 "story-has-anyone-been-hacked": {
 "kind": "story",

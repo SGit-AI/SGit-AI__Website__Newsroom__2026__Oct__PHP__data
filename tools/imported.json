@@ -13,27 +13,27 @@
   "collaborators.json": "5eabfd8f75015b2336f5fcfeedfcbce3e29177084c30c2153160c31aecc0b425",
   "compromise.json": "5c423e1282751f99ccab70a3997922d4d201b663b7801e2e22601a6bdf11fb81",
   "contributors.json": "510a6ebd72f0d0ddc15bb3e39751ff8ab90930151d0a2978986d1b309050fa39",
-  "control.json": "aa077e0e392a4de8650860f1f0410378055dafb6e2a58baa1522551425eb261c",
+  "control.json": "e1a22a035c853588132f949c33e10f3772d516e6a966da1f9bddc135e89354b1",
   "crosswalk.json": "4bbfb44762e938aa27a181b7335b9d030631506e537ba3b4ada0eed4e4bb7a76",
   "defence.json": "06af041d4b3215eeab3e533af84c747d435da42b1541f712b3f6541c16cd6c90",
   "desk.json": "2c7ddef58d7134c72d854a69b38d0b12643e2c9ed1a33e3954a5c41568810175",
   "entities.json": "b25698b326ad01a88364390a95963de33c72063b84d1f46350d04efd3034ba6a",
   "exploitation.json": "14a18dc12d832d586f1a8ac05223b6abaad600c9d2484ce6ee79e96596508f99",
   "factcheck.json": "195207ee07501b61637d51e49df4d27ede938289b7572b754222ce84d3514d34",
-  "fractal.json": "2476f3fbd98d977c89f505232c1817ba5d4f406bd36a7a12a87e5b1e2c953fc5",
-  "graph.json": "5b0bb832f39288f2895ed4602a0a09d606c9ad94e4820958d75c22848a63c0d5",
+  "fractal.json": "94713def69347f2099ddb1f4645e645031a5401a559b79d59dd23df4ccd7514e",
+  "graph.json": "d4d33e866a75ccbc07dbae798afa3acd4de9ad6dc7407b14e25330ff6c842452",
   "grc-basis.json": "e050d71ecc92ef93ab8cb824957b05bfd3443791aa220f98bf0e7b6a057fe436",
   "grc-frameworks.json": "d0bb7dfc7d821efdef0afd338db648fc88a7679f49fc579a653375b2faf9a382",
   "grc-gaps.json": "53be4ccca15af93b342fc5dd1d11064a50d0f004c91476778831798fdf68141a",
-  "grc-graph.json": "8ddfad816e42988f87f74b56e9f414a980dff077807ade32c0e9b0aa4907d75a",
-  "grc-history.json": "a2c87549b57b3c8b03c1390cb3e0407ffc23e60caa74156317f70d3329c814a0",
+  "grc-graph.json": "d2337739aba9753d143fc6bf7763e4233f099abd96945e9f1639333e0e08d048",
+  "grc-history.json": "539c8e1e22e2a07194bac9ecf9a44bc8ea6b13d3c073eb052208b07964f3a7b1",
   "grc-network.json": "27672e499d1180c793e317f1546f018124f688f1fabc2c15bd658e8751669505",
   "grc-tests.json": "e3396d64453dd8872dd91307847cb52bef5cd1f34a0dc54babfecf52b2c0b909",
   "grc.json": "361f95b36c934cf9943dcb39f5ec37db7be7f2ce9f1505ea60d5d5025edd1dc7",
   "history.json": "5196aa19efeb384c548141b82f257fbe2af3204f6e6fc9bc51bd97836db64a1d",
   "impact.json": "8debe0009c5748041dfedf1d367c535c49f53aff2afeefee7b4ac64a363f3884",
   "inventory-history.json": "9150b59e17a6b3bae22110b8a088715cec42dd157d11329387587786dd2abd9d",
-  "items.json": "fc1109021833a8b1c4b9fdc000d8792efe36eba266f3a14609bd96f4a065546b",
+  "items.json": "1c8474c11df30aa30c6987fbd0f1e4114f95d70e3579e9305223e4cdfb615adf",
   "loops.json": "ce942da86773f594ead2c8f3af168efac5d50e5a006c3e57d259e76d4b0d08ba",
   "numbers.json": "27471be3ae3e032283bf767f7ab212c67e2123d0e24cc496387933739e56421e",
   "ontology.json": "43daa8af8fcd9ab07fe3ccdbf80cab162873db03ae6c3de8da0fb6ff8df2abed",
@@ -60,7 +60,7 @@
   "wikidata-links.json": "96602a78892399bf63f5433e69aee9a9a7e8a716e3e3e06b124030a7418bf43c",
   "wikipedia/index.json": "2f63e7179adec1570da2a10b5d3ececaa6fe9b3ef4d36245ed84917f9d2e8b61",
   "wikipedia/php2shell/article.json": "b6c5eae2f4aa832b7f5c1b6267dfef3606663350c27f84bb0931463e41a1c29a",
-  "wikipedia/php2shell/graph.json": "e7fc2e9b37ead667099c2e37e5a3ca3e6ba4f145705ae4e9865438e9ed823430",
+  "wikipedia/php2shell/graph.json": "4ffca385e56ab948d2954cda80079073378257914dbc4d74a79794932995e106",
   "wikipedia/php2shell/links-in.json": "9bd29c6b6ae370e562abe0add7478bf920206b2bd69bb62c7021be8e1a4112e0",
   "wikipedia/php2shell/review.json": "abef35aaf8f77b8173f231517ff32a6a0d15d5ed6ff3ea875b0d8e35b700976b",
   "wikipedia/php2shell/revisions/1381280358.json": "6c371d910a554f0ef3b0fb1924f96c0c3d2cbdddf75455a92bc75880ea5245cd",
@@ -478,17 +478,9 @@
   "wikipedia/talk-php2shell/revisions/1381886750.json": "99f8b1378b5196a9b55536e291120dc61148e4160dd658445eccfc0f79f05d75"
  },
  "from": {
-  "commit": "cdded4546d768e4cfe5d8a8cf6e8699aca41ddab",
+  "commit": "8722647b3c0f931256d5b9b6bf4a5e67a5df3f12",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.30"
+  "site_version": "0.22.31"
  },
- "kept": [
-  "claim-review.json",
-  "compromise.json",
-  "desk.json",
-  "impact.json",
-  "sources.json",
-  "vault-claims.json",
-  "vault.json"
- ]
+ "kept": []
 }
