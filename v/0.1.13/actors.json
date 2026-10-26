@@ -1,0 +1,237 @@
+[
+ {
+  "id": "php-group",
+  "name": "The PHP Group / php.net",
+  "role": "maintainer, CVE numbering authority",
+  "sources": [
+   "php-net-advisory",
+   "php-net-changelog-8",
+   "github-php-src-tags"
+  ]
+ },
+ {
+  "id": "php-foundation",
+  "name": "The PHP Foundation",
+  "role": "funds core developers; published the account of discovery and the leak",
+  "sources": [
+   "php-foundation-blog-security-release"
+  ]
+ },
+ {
+  "id": "zelenka",
+  "name": "Jakub Zelenka (bukka), PHP security team",
+  "role": "published both GitHub advisories and the oss-security announcements",
+  "sources": [
+   "github-ghsa-w8hw-w9fx-j79w",
+   "openwall-oss-security-2026-10-21-6"
+  ]
+ },
+ {
+  "id": "daubois",
+  "name": "Alexandre Daubois, PHP security team (personal blog)",
+  "role": "inside account of the rumours and the leak",
+  "sources": [
+   "daubois-blog-php2shell-rumors"
+  ]
+ },
+ {
+  "id": "calif",
+  "name": "Calif (Ryan Austin, @lcfr_hax; Michal Zalewski)",
+  "role": "first reporter; published the write-up with demo videos",
+  "sources": [
+   "calif-php2shell",
+   "x-lcfr-hax-hash-tweet"
+  ]
+ },
+ {
+  "id": "openai",
+  "name": "OpenAI (Patch the Planet, Codex Security, Amy Burnett)",
+  "role": "reported the same root cause on 11 August; ran the coordination coalition",
+  "sources": [
+   "x-openai-php2shell",
+   "patchtheplanet-org",
+   "openai-community-php-flaws"
+  ]
+ },
+ {
+  "id": "wiz",
+  "name": "Wiz Research",
+  "role": "independent discovery 19 August; the '70% of the Internet' headline",
+  "sources": [
+   "wiz-blog-php2shell",
+   "x-wiz-io-php2shell"
+  ]
+ },
+ {
+  "id": "quarkslab",
+  "name": "Quarkslab, OSTIF",
+  "role": "2024 audit that first surfaced the OOM issue",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "calif-php2shell"
+  ]
+ },
+ {
+  "id": "cloudflare",
+  "name": "Cloudflare",
+  "role": "WAF rules live 9 hours early; saw attack traffic",
+  "sources": [
+   "cloudflare-blog-php2shell-waf"
+  ]
+ },
+ {
+  "id": "amazon",
+  "name": "Amazon (CJ Moses)",
+  "role": "honeypot evidence of a pre-disclosure attempt",
+  "sources": [
+   "thehackernews-php2shell-4days"
+  ]
+ },
+ {
+  "id": "chainguard",
+  "name": "Chainguard",
+  "role": "published patched images before the embargo lifted, per the Foundation",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "techzine-php-chainguard"
+  ]
+ },
+ {
+  "id": "watchtowr",
+  "name": "watchTowr",
+  "role": "confirmed the CVE numbers in public on 20 October, per Daubois",
+  "sources": [
+   "daubois-blog-php2shell-rumors",
+   "certeu-sa-2026-018"
+  ]
+ },
+ {
+  "id": "agencies",
+  "name": "National agencies (NSA, CISA, NCSC UK, CERT-EU, CERT-FR, CCCS, ACSC, NCSC NZ, NCSC-NL, ACN, BACS, CERT.LV, JPCERT)",
+  "role": "advisories; see the agency table",
+  "sources": [
+   "nsa-press-php-4630238",
+   "cisa-alert-php-20261021",
+   "ncsc-news-php"
+  ]
+ },
+ {
+  "id": "bbc",
+  "name": "BBC News (live page; Kieran Kelly, Imogen James)",
+  "role": "the coverage most readers saw on the morning of 22 October",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ]
+ },
+ {
+  "id": "woodward",
+  "name": "Alan Woodward, Surrey Centre for Cyber Security",
+  "role": "commentator quoted by the BBC: 30 million websites; probing seen by Amazon and Cloudflare",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ]
+ },
+ {
+  "id": "thn",
+  "name": "The Hacker News (Ravie Lakshmanan)",
+  "role": "carried Amazon's honeypot account and VulnCheck's host count",
+  "sources": [
+   "thehackernews-php2shell-4days"
+  ]
+ },
+ {
+  "id": "chainguard-lorenc",
+  "name": "Dan Lorenc, Chainguard",
+  "role": "shipped patched images early; says exploits were in the wild and denies leaking",
+  "sources": [
+   "theregister-php-blames-chainguard",
+   "x-feross-chainguard"
+  ]
+ },
+ {
+  "id": "prince",
+  "name": "Matthew Prince, Cloudflare CEO",
+  "role": "the attempt counts",
+  "sources": [
+   "x-eastdakota-php2shell-stats"
+  ]
+ },
+ {
+  "id": "imperva",
+  "name": "Imperva Threat Research",
+  "role": "had the details under embargo; saw nothing before disclosure",
+  "sources": [
+   "imperva-blog-php2shell"
+  ]
+ },
+ {
+  "id": "fastly",
+  "name": "Fastly",
+  "role": "the most candid vendor on exploitability and on what a WAF cannot do",
+  "sources": [
+   "fastly-blog-php2shell"
+  ]
+ },
+ {
+  "id": "akamai",
+  "name": "Akamai",
+  "role": "rule 3000991; the 2024 precedent",
+  "sources": [
+   "akamai-blog-php-core-rce",
+   "akamai-blog-cve-2024-4577-one-day"
+  ]
+ },
+ {
+  "id": "huntress",
+  "name": "Huntress",
+  "role": "no exploitation seen on partner systems",
+  "sources": [
+   "huntress-php2shell-rapid-response"
+  ]
+ },
+ {
+  "id": "weirdgloop",
+  "name": "Weird Gloop (cookmeplox)",
+  "role": "the one operator with a measured outage",
+  "sources": [
+   "weirdgloop-blog-php2shell"
+  ]
+ },
+ {
+  "id": "rijksoverheid",
+  "name": "The Dutch government and NCSC-NL",
+  "role": "took its own site offline",
+  "sources": [
+   "rijksoverheid-ncsc-php-news",
+   "ncsc-nl-php2shell"
+  ]
+ },
+ {
+  "id": "valtori",
+  "name": "Valtori and NCSC-FI",
+  "role": "Finland's precautionary shutdown",
+  "sources": [
+   "yle-finland-government-sites-shut",
+   "helsinkitimes-finland-shutdown"
+  ]
+ },
+ {
+  "id": "detectors",
+  "name": "Community detection authors (darkfibr, rjmendez, Lexsah, Blevene)",
+  "role": "the rules, and the correction of the leaked PoC's mechanism",
+  "sources": [
+   "github-darkfibr-php2shell-detect",
+   "github-rjmendez-phpup-2026",
+   "github-lexsah-php2shell-detection",
+   "gist-blevene-detection-guide"
+  ]
+ },
+ {
+  "id": "leblanc",
+  "name": "Arnaud Le Blanc and the PHP fix authors",
+  "role": "wrote the fix",
+  "sources": [
+   "github-php-src-fix-commit-3584a98bd"
+  ]
+ }
+]

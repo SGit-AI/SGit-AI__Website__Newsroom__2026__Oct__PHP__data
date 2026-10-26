@@ -1,0 +1,17 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "confirmed": {
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "confirmed"
+ ],
+ "title": "grc-basis.json",
+ "type": "object"
+}

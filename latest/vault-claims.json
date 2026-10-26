@@ -2541,5 +2541,197 @@
   "topic": "impact",
   "note": "The headline gives 'thousands'; the figure's basis is not given in the part read. An official quoted by the page is not named here.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-watchtower-embargo-thursday",
+  "claim": "watchTowr's CEO said that the two leaked flaws had been under embargo and due for release on Thursday 22 October at 11 am ET, and that both were CVSS 10 and understood to affect PHP versions 5, 6, 7 and 8",
+  "by": "watchTowr CEO, via BleepingComputer",
+  "sources": [
+   "bleepingcomputer-wikipedia-ref-12--flaws-emergency-patche"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "A pre-patch statement: the final CVSS scores were 9.2 (not 10) and the affected range is stated differently elsewhere (5.4 onward, 8.2 and up fixed). Confirms the planned 22 October date (cur10-planned-22-oct-leak-20-oct).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-embargo-broken-by-several",
+  "claim": "The PHP Foundation said that a number of security companies broke the embargo after the leak",
+  "by": "PHP Foundation, via The Guardian",
+  "sources": [
+   "guardian-wikipedia-ref-40-ge-flaw-causing-global"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Plural: the dispute is not only with Chainguard (cur8-chainguard-early-images). Check the PHP Foundation's own post in the vault for which companies.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-php-foundation-anthropic-scan",
+  "claim": "The PHP Foundation said it had worked with an Anthropic frontier model to scan its code, and had PHP put into OpenAI's programme",
+  "by": "PHP Foundation, via The Guardian",
+  "sources": [
+   "guardian-wikipedia-ref-40-ge-flaw-causing-global"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Adds a second AI vendor to the discovery story (Calif with OpenAI, Wiz with Gemini and GPT; cur10-openai-blog-coalition). The sentence is cut short in the capture; check the PHP Foundation's post.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-patches-8-2-and-up-only",
+  "claim": "The PHP Foundation's patches covered only PHP 8.2 and up, although the flaws affect versions back to PHP 5.4 according to the UK NCSC",
+  "by": "UK NCSC, via PCMag",
+  "sources": [
+   "pcmag-wikipedia-ref-31-s-should-consider-going"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Matches the end-of-life branches (7.4, 8.0, 8.1) receiving only minimal source patches on GitHub (AI Matters, aimatters-news-report-56697). Check the PHP advisory.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-third-flaw-not-urgent",
+  "claim": "A third PHP vulnerability after PHP2Shell will not be patched urgently",
+  "by": "Knews, from foreign reporting",
+  "sources": [
+   "knews-news-7898c3112ba7f79b25f7a44622d2e7d4"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "A third outlet for cur6-third-flaw-115560 (Coinpedia, La Razon, Security Affairs headline). PHP's own advisory is still the primary to capture.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-no-successful-execution-demonstrated",
+  "claim": "As of 23 October 2026 attempts against PHP2Shell were real and in the millions but no successful code execution had been established in the investigations cited",
+  "by": "La Razon",
+  "sources": [
+   "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Point in time; compare cur7-no-intrusion-23-oct, cur5-us-banks-no-compromise and cur6-at-no-successful-attacks.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur11-qianxin-million-assets",
+  "claim": "Qi An Xin says the potential impact of PHP2Shell on China exceeds a million assets",
+  "by": "Qi An Xin, via Leiphone",
+  "sources": [
+   "leiphone-category-industrynews-9dejmhebinubut49-h"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A vendor's exposure estimate, basis not given; compare Palo Alto's 22.6 million global figure (cur5-pan-22-6m-exposed).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-libertatea-18-oct",
+  "claim": "Amazon Threat Intelligence detected the earliest PHP2Shell exploitation attempt on 18 October 2026",
+  "by": "Libertatea",
+  "sources": [
+   "libertatea-stiri-ce-este-vulnerabilitatea-php-care"
+  ],
+  "status": "disputed",
+  "topic": "exploitation",
+  "note": "Amazon's own date is 17 October (cur2-madpot-17-oct and most outlets); 'four days before disclosure' fits 17 October for a 21 October disclosure. Likely a one-day slip by this outlet.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-austin-gpt56-audit",
+  "claim": "Calif's Ryan Austin found the PHP flaw with OpenAI's GPT-5.6 Sol during an August 2026 audit of PHP's code, financed by OpenAI within an initiative of AI companies helping open-source projects",
+  "by": "LISA News",
+  "sources": [
+   "lisanews-internacional-un-fallo-en-php-detectado"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with MediaNama (Ryan Austin named), SiliconANGLE (OpenAI-financed August audit) and Ijiwei (the 'Patch the Planet' programme); still a secondary report.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-garr-isolated",
+  "claim": "GARR, the Italian research and education network, announced on 21 October 2026 that it had isolated some of its platforms to apply the PHP fixes as a precaution",
+  "by": "Macitynet",
+  "sources": [
+   "macitynet-php2shell-vulnerabilita-php-siti-offline"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "GARR's own notice is not in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-bssn-versions",
+  "claim": "Indonesia's BSSN warned that the PHP2Shell flaws could allow remote code execution without authentication, listing PHP 8.2 to 8.5 as potentially affected and recommending the fixed versions, a PHP update and service restart, or restricted network access as interim mitigation",
+  "by": "BSSN, via Medcom.id",
+  "sources": [
+   "medcom-teknologi-news-teknologi-en442w3n-bssn-p"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The list names only supported branches, narrower than the 5.4-onward range elsewhere (cur2 / cur3 / cur11 claims); BSSN's own notice is not in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-moncloa-patch-date",
+  "claim": "The coordinated PHP patch was published on Thursday 22 October 2026",
+  "by": "Moncloa.com",
+  "sources": [
+   "moncloa-2026-10-22-vulnerabilidad-php2shell-fall"
+  ],
+  "status": "disputed",
+  "topic": "patching",
+  "note": "Wrong: the PHP Foundation released the fixes on Wednesday 21 October (14:00 UTC); 22 October was the originally planned date (cur10-planned-22-oct-leak-20-oct). This outlet's page, dated 22 October, shows how the planned date spread.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-cyfirma-report-23-oct",
+  "claim": "Cyfirma's report on Korean-speaking attackers planning to exploit PHP2Shell, a suspected North Korean link, was published on 23 October 2026, with no actual intrusion found",
+  "by": "Cyfirma, via Money Today",
+  "sources": [
+   "mt-tech-2026-10-24-2026102414170377166"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "Third Korean outlet for one vendor report (cur7-cyfirma-lazarus, cur9-cyfirma-i2p-channel): one source, not three. Cyfirma's report is not in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-de-pkgr-turning-point",
+  "claim": "The chair of Germany's Parliamentary Control Panel for the intelligence services called PHP2Shell a 'turning point'",
+  "by": "netzpolitik.org",
+  "sources": [
+   "netzpolitik-2026-wir-stehen-auf-den-schultern-vieler"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Quoted in an opinion piece that criticises political reactions as remote from the maintainers; the original statement is not in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-crypto-firms-not-affected",
+  "claim": "Coinbase, BitGo, Bitget Wallet and PancakeSwap said they were not affected by the PHP flaws, and Binance said it implemented proactive protective measures",
+  "by": "Bitcoin News",
+  "sources": [
+   "news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Company statements as relayed; none is in the vault. Compare cur4-crypto-no-evidence.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur12-emudhra-separate",
+  "claim": "A separate eMudhra vulnerability, not PHP2Shell, remained exploitable in the same week",
+  "by": "Bitcoin News",
+  "sources": [
+   "news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Probably the eight compromised TLS certificates (cur10-eight-tls-certs); a different incident that pages should keep separate.",
+  "agent": "curator@php.newsroom"
  }
 ]

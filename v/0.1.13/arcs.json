@@ -1,0 +1,66 @@
+{
+ "note": "The authored joins of the fractal graph, kept by the librarian: the risks and the story arcs, and which stakeholder faces which risk, which arc carries which risk, and which claim is about which flaw and which part of the fix. Every join names ids that exist elsewhere in data/; the gate refuses one that does not. Everything else in data/fractal.json is derived by the build from claims, timeline, graph, personas, review and review/code/files.json.",
+ "risks": [
+  {"id": "r-rce", "name": "Someone else runs code on your web server", "text": "An unauthenticated request can turn into code running as the web worker, before any application code runs. Demonstrated against mod_php; FPM susceptible, the two primary accounts differ on a complete exploit.", "claims": ["two-cves-9.2", "rce-modphp", "rce-fpm", "ac-high", "pocs-wrong", "wordpress-drupal"]},
+  {"id": "r-data", "name": "What the server holds is taken", "text": "Code running as the worker reaches whatever the worker can: configuration, database credentials, sessions, user records. No named organisation has confirmed this happening through php2shell.", "claims": ["wordpress-drupal", "no-confirmed-compromise", "cisa-none"]},
+  {"id": "r-downtime", "name": "Pulling the plug costs you", "text": "The advice to take systems offline when patching is not possible turned into councils, police, government portals and wikis going dark, as a precaution.", "claims": ["offline-nsa", "offline-cisa", "offline-ncsc", "latvia-offline", "nl-offline", "fi-offline", "weirdgloop-13h", "uk-list", "edinburgh", "oxford", "wikimedia-precaution", "affected-sites"]},
+  {"id": "r-no-release", "name": "Your version gets no fix", "text": "PHP 8.1 and older are out of support: source backports, no release, and the CVE records do not list them.", "claims": ["versions-old", "offline-cisa", "only-update"]},
+  {"id": "r-incomplete-fix", "name": "The fix is not the end", "text": "A report that the 8.5.12 fix may be incomplete, and a vendor's view that patching the demonstrated paths does not make the bailout mechanism safe.", "claims": ["fix-incomplete", "more-paths"]},
+  {"id": "r-bypass", "name": "The firewall in front is not enough", "text": "Edge rules shipped before disclosure and every vendor calls them a stopgap; attackers mutated payloads, and a rule sees only traffic routed through it.", "claims": ["waf", "waf-nine-hours", "cloudflare-traffic"]},
+  {"id": "r-blind", "name": "You cannot tell whether you were hit", "text": "The default web log records neither the content type nor the body, and a clean log proves little. The absence of a confirmed victim is a fact about the evidence so far.", "claims": ["no-confirmed-compromise", "cisa-none", "imperva-none", "huntress-none", "kev-precedent"]},
+  {"id": "r-window", "name": "Attackers had it before the patch", "text": "The CVE IDs leaked a day early, a demonstration video circulated, patched images shipped before the embargo, and attempts reached honeypots days before disclosure.", "claims": ["leak-cve-ids", "leak-video", "leak-mitigations", "chainguard", "release-moved", "amazon-honeypot", "cf-millions"]},
+  {"id": "r-wrong-numbers", "name": "Deciding on the wrong numbers", "text": "70% of the Internet, CVSS 10.0, disclosed on 22 October: figures in circulation that the primary sources do not carry.", "claims": ["scale-70pc-internet", "cvss-10", "disclosure-22oct", "offline-allies", "vibe-code", "most-severe"]}
+ ],
+ "arcs": [
+  {"id": "a-engine", "name": "The bug is in the engine, not in your code", "text": "Two memory-safety failures in how PHP recovers from an error, reachable by any request.", "risks": ["r-rce", "r-data", "r-no-release"], "topics": ["technical"], "phases": [], "page": "flaws/index.html"},
+  {"id": "a-fix", "name": "The fix is a redesign", "text": "Out-of-memory handling rebuilt: 389 files, a soft and a hard limit, globals reset, parsing bounded.", "risks": ["r-incomplete-fix", "r-no-release", "r-rce"], "topics": [], "claims": ["fix-bailout", "fix-engine", "fix-authored", "only-update", "fix-incomplete", "more-paths"], "phases": ["release"], "page": "review/index.html"},
+  {"id": "a-ai-found", "name": "Found with AI, three times over", "text": "Calif, OpenAI and Wiz found it in August; a 2024 audit had seen it and left it.", "risks": ["r-window", "r-rce"], "topics": ["discovery"], "phases": ["origin", "discovery"], "page": "discovery/index.html"},
+  {"id": "a-disclosure", "name": "Coordinated disclosure broke", "text": "The IDs leaked with a wrong score, a video went out, the release moved forward a day.", "risks": ["r-window", "r-wrong-numbers"], "topics": ["leak", "timing"], "phases": ["coordination", "leak"], "page": "leak/index.html"},
+  {"id": "a-numbers", "name": "The numbers do not measure the same thing", "text": "Websites, hosts, the Internet: each figure counts something different.", "risks": ["r-wrong-numbers"], "topics": ["scale"], "claims": ["cvss-10"], "phases": [], "page": "numbers/index.html"},
+  {"id": "a-attempts", "name": "Millions of attempts, no confirmed breach", "text": "Probing at scale, honeypot hits before disclosure, and no named victim.", "risks": ["r-blind", "r-bypass", "r-data", "r-window"], "topics": ["exploitation"], "phases": [], "page": "exploitation/index.html"},
+  {"id": "a-plug", "name": "Pulling the plug", "text": "Agencies said offline as the last step; governments, councils and wikis did it.", "risks": ["r-downtime", "r-no-release", "r-bypass"], "topics": ["advice", "impact"], "phases": ["response", "aftermath"], "page": "impact/index.html"}
+ ],
+ "faces": {
+  "everyone": ["r-data", "r-downtime", "r-wrong-numbers"],
+  "site-owner": ["r-rce", "r-no-release", "r-bypass", "r-downtime"],
+  "board": ["r-data", "r-downtime", "r-blind", "r-wrong-numbers"],
+  "pm": ["r-downtime", "r-no-release", "r-incomplete-fix"],
+  "cfo": ["r-downtime", "r-data"],
+  "ciso": ["r-rce", "r-blind", "r-window", "r-data"],
+  "cto": ["r-no-release", "r-incomplete-fix", "r-downtime"],
+  "journalist": ["r-wrong-numbers", "r-window"],
+  "comms": ["r-wrong-numbers", "r-downtime"],
+  "security": ["r-rce", "r-bypass", "r-blind"],
+  "appsec": ["r-rce", "r-bypass", "r-incomplete-fix"],
+  "engineer": ["r-rce", "r-no-release", "r-incomplete-fix"],
+  "developer": ["r-rce", "r-no-release"],
+  "researcher": ["r-rce", "r-incomplete-fix", "r-window"],
+  "analyst": ["r-window", "r-wrong-numbers", "r-blind"]
+ },
+ "claim_to_flaw": {
+  "two-cves-9.2": ["cve-109618", "cve-109619"],
+  "rce-modphp": ["cve-109618"],
+  "rce-fpm": ["cve-109618", "cve-109619"],
+  "ac-high": ["cve-109618"],
+  "pocs-wrong": ["cve-109618", "cve-109619"],
+  "wordpress-drupal": ["cve-109618", "cve-109619"],
+  "versions-old": ["cve-109618", "cve-109619"],
+  "only-update": ["cve-109618", "cve-109619"],
+  "fix-bailout": ["cve-109618"],
+  "fix-engine": ["cve-109618", "cve-109619"],
+  "fix-incomplete": ["cve-109619"],
+  "more-paths": ["cve-109618"],
+  "quarkslab-2024": ["cve-109618"],
+  "cvss-10": ["cve-109618", "cve-109619"]
+ },
+ "claim_to_fix": {
+  "fix-bailout": ["fix-soft-limit", "fix-hard-limit", "fix-unwind"],
+  "fix-engine": ["fix-reset-globals", "fix-soft-limit", "fix-fallible"],
+  "fix-authored": ["fix-commit"],
+  "only-update": ["fix-commit"],
+  "fix-incomplete": ["fix-unwind", "fix-reset-globals"],
+  "more-paths": ["fix-unwind", "fix-fallible"],
+  "waf": ["fix-bounded-parsing"],
+  "versions-old": ["fix-commit"]
+ }
+}

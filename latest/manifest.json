@@ -319,11 +319,11 @@
    "sha256": "6f9529ff36198dadbfc392969e547a10feeec218ee8cd038ca976cf79caa6b43"
   },
   {
-   "bytes": 1397957,
+   "bytes": 1531418,
    "group": "evidence",
    "name": "sources.json",
    "schema": "schemas/sources.schema.json",
-   "sha256": "60e431e0ff169c50d8c532cdd7ed67d6c16398e506b2abe73860c395f77b4aaf"
+   "sha256": "a0e621a288526e1b9187021ebf0a1aa0775dd20efea1faa2ae69b2865aad8412"
   },
   {
    "bytes": 7668,
@@ -368,11 +368,11 @@
    "sha256": "511f26151f0d34b4dd3fc49ed0f04342fe2c39ed2b9205b8ab7acfd7f5de5769"
   },
   {
-   "bytes": 102092,
+   "bytes": 110849,
    "group": "evidence",
    "name": "vault-claims.json",
    "schema": "schemas/vault-claims.schema.json",
-   "sha256": "2418fccb6c52bf3e73885791ccf2086590f049296c4b5d726c1a54a16638d030"
+   "sha256": "2389f2ea9244d953c6ec907ac6b9492978050df751a0ae0ecda9505fa862b096"
   },
   {
    "bytes": 29584,
@@ -386,7 +386,7 @@
    "group": "evidence",
    "name": "vault.json",
    "schema": "schemas/vault.schema.json",
-   "sha256": "d237aae0260bb732f02658c4d31601ee5b4b8211edb02a374e98352a320cb81f"
+   "sha256": "a6183466f9e2fee21944ae975b366c233967cb2f7721efc7bc3f4068abe8c7df"
   },
   {
    "bytes": 42424,
@@ -3328,6 +3328,6 @@
   "site_version": "0.22.22"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.12/",
- "version": "0.1.12"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.13/",
+ "version": "0.1.13"
 }
