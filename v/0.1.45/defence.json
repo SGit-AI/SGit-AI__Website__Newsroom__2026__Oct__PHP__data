@@ -1,0 +1,193 @@
+{
+ "edge": [
+  {
+   "vendor": "Cloudflare",
+   "what": "Seven WAF rules per ruleset plus a response-side rule, live for every plan including Free",
+   "when": "2026-10-21T03:02Z, about nine hours before disclosure",
+   "caveat": "'This is a STOPGAP only' (CTO Dane Knecht); attackers mutated payloads; rules only cover traffic routed through Cloudflare; patch anyway",
+   "sources": [
+    "cloudflare-blog-php2shell-waf",
+    "safeguard-waf-rules-limits",
+    "insurancebusiness-uk-councils-met"
+   ]
+  },
+  {
+   "vendor": "Akamai",
+   "what": "Adaptive Security Engine rule 3000991 v1, 'PHP Remote Code Execution Attack Detected', both CVEs; existing command-injection rules also catching weaponised payloads",
+   "when": "2026-10-21",
+   "caveat": "'The most effective defense continues to be the prompt application of vendor patches'",
+   "sources": [
+    "akamai-blog-php-core-rce",
+    "safeguard-waf-rules-limits"
+   ]
+  },
+  {
+   "vendor": "Fastly",
+   "what": "A CVE-specific templated rule in the Next-Gen WAF that customers must enable; looks for 'bodies and parameters shaped in ways that differ from legitimate traffic'",
+   "when": "2026-10-21",
+   "caveat": "'assume active mitigation will only serve as partial protection and may require blocking a substantial portion of legitimate traffic'",
+   "sources": [
+    "fastly-blog-php2shell"
+   ]
+  },
+  {
+   "vendor": "Imperva",
+   "what": "Cloud WAF protected 'out of the box'; Elastic WAF and WAF Gateway after updates; inspects anomalous multipart payloads, repeated session fields, abnormal response headers, upload-progress activity",
+   "when": "2026-10-21",
+   "caveat": "Had the details under embargo; saw no matching traffic before disclosure",
+   "sources": [
+    "imperva-blog-php2shell"
+   ]
+  },
+  {
+   "vendor": "AWS",
+   "what": "No managed rule found; guidance to consider blocking multipart file uploads on PHP deployments that cannot be patched, after checking the application impact",
+   "when": "2026-10-21",
+   "caveat": "AWS's own PHP builds for managed distributions reportedly lagged the release (a reader's comment under the post, unverified)",
+   "sources": [
+    "aws-security-blog-madpot",
+    "safeguard-waf-rules-limits"
+   ]
+  },
+  {
+   "vendor": "Fortinet FortiWeb",
+   "what": "Three FortiGuard signatures (090502648, 090502651, 09052654) in database 0.00438, plus four custom-rule templates",
+   "when": "2026-10-22T07:55 (article time)",
+   "caveat": "Signatures ship in alert-only mode by default; must be switched to block",
+   "sources": [
+    "fortinet-fortiweb-php2shell"
+   ]
+  }
+ ],
+ "signatures": [
+  {
+   "what": "Community Suricata and Snort rules",
+   "who": "darkfibr/php2shell-detect, rjmendez/phpup-2026, Lexsah/php2shell-detection",
+   "text": "Three independent repositories, all keying on request shape rather than payload bytes: the PHP_SESSION_UPLOAD_PROGRESS field plus many array-form parts; duplicate or excessive multipart headers; a PHP worker spawning a shell. rjmendez retired its own earlier rules after finding the leaked proof-of-concept's mechanism did not match the fix. No rule from the Emerging Threats or Snort projects themselves was found.",
+   "sources": [
+    "github-darkfibr-php2shell-detect",
+    "github-rjmendez-phpup-2026",
+    "github-lexsah-php2shell-detection"
+   ]
+  },
+  {
+   "what": "ModSecurity, Sigma, Falco, YARA, auditd",
+   "who": "Blevene's detection guide; Lexsah",
+   "text": "A ModSecurity rule on the upload-progress field name (verified on 2.9.14, 'zero false positives by construction' once the feature is off), Sigma rules for the arm-phase fatal error ('in Unknown on line 0' means the bailout happened outside any script, in the multipart parse) and for FPM segfaults, Falco rules for a PHP worker exec or memfd, auditd for execve by the pool user. The guide notes ModSecurity's REQUEST_BODY is empty for multipart requests, so an earlier tripwire that matched it never fired.",
+   "sources": [
+    "gist-blevene-detection-guide",
+    "github-lexsah-php2shell-detection"
+   ]
+  },
+  {
+   "what": "The Hacker News, on what protects before the patch",
+   "who": "The Hacker News",
+   "text": "Captured for the record; the newsroom's reading of it is on the exploitation page.",
+   "sources": [
+    "thehackernews-what-protects-you"
+   ]
+  }
+ ],
+ "signals": [
+  {
+   "where": "Access log",
+   "signal": "Multipart POSTs to endpoints that do not take uploads; bodies larger than memory_limit ending in 500 or 502; a burst of 500s from one IP followed by a slow 200",
+   "sources": [
+    "gist-blevene-detection-guide",
+    "fastly-blog-php2shell"
+   ]
+  },
+  {
+   "where": "PHP error log",
+   "signal": "'Allowed memory size exhausted ... in Unknown on line 0' (an OOM outside any script, during request parsing); 'Failed to decode session object'",
+   "sources": [
+    "gist-blevene-detection-guide"
+   ]
+  },
+  {
+   "where": "Web server and kernel",
+   "signal": "Clusters of Apache 'exit signal Segmentation fault (11)' or php-fpm segfaults in dmesg within minutes; nginx 'upstream prematurely closed connection' correlated with a prior fatal from the same IP",
+   "sources": [
+    "fastly-blog-php2shell",
+    "gist-blevene-detection-guide"
+   ]
+  },
+  {
+   "where": "Process tree",
+   "signal": "A mod_php or php-fpm worker spawning /bin/sh, curl, wget, or executing from memfd; with the known exploits no application code runs, so a shell from a worker is the exploit",
+   "sources": [
+    "cisa-alert-php-20261021",
+    "fastly-blog-php2shell",
+    "gist-blevene-detection-guide"
+   ]
+  },
+  {
+   "where": "Network",
+   "signal": "New outbound connections from php-fpm or httpd workers to non-database endpoints",
+   "sources": [
+    "gist-blevene-detection-guide",
+    "imperva-blog-php2shell"
+   ]
+  },
+  {
+   "where": "What the log cannot show",
+   "signal": "nginx's default log format records neither Content-Type nor bodies, so shape-based attempts are invisible there; no standard log carries the worker id the cross-request bug needs; a clean log proves little",
+   "sources": [
+    "github-darkfibr-php2shell-detect",
+    "github-rjmendez-phpup-2026",
+    "jpcert-at260033"
+   ]
+  }
+ ],
+ "exploitability": [
+  {
+   "who": "The CVE vector",
+   "text": "Attack complexity high (AC:H) and attack requirements present (AT:P): the attacker must defeat a built-in protection and needs conditions beyond the request.",
+   "sources": [
+    "cve-cve-2026-109618"
+   ]
+  },
+  {
+   "who": "Fastly",
+   "text": "'the existing PoCs require knowledge of the specific, running PHP binary and address space layout on the server for an attack to yield code execution on x86_64, so most deployments may be safe from RCE. Do not assume this holds true for you. If you operate a 32-bit PHP application, you should likely assume compromise.'",
+   "sources": [
+    "fastly-blog-php2shell"
+   ]
+  },
+  {
+   "who": "Imperva",
+   "text": "'Triggering the bug is much easier than turning it into code execution.' A later request must reach the same worker and place carefully shaped data. Five demonstrated techniques, three via upload progress; a memory disclosure of about 67 KB.",
+   "sources": [
+    "imperva-blog-php2shell"
+   ]
+  },
+  {
+   "who": "rjmendez (detection author)",
+   "text": "A lab reproduction of the leaked proof-of-concept's precondition produced a clean 200; 'VulnCheck independently reports that none of the public PoCs they reviewed have the correct mechanism'.",
+   "sources": [
+    "github-rjmendez-phpup-2026"
+   ]
+  },
+  {
+   "who": "Huntress",
+   "text": "Had not built or reproduced a proof of concept and was not aware of public exploit code as of 20:30 UTC on 21 October.",
+   "sources": [
+    "huntress-php2shell-rapid-response"
+   ]
+  },
+  {
+   "who": "Fastly, on the fix",
+   "text": "'The PHP source tree calls the zend_bailout mechanism many places'; patching the demonstrated paths 'does not make the mechanism safe'. Expect more paths.",
+   "sources": [
+    "fastly-blog-php2shell"
+   ]
+  }
+ ],
+ "sources": [
+  "cloudflare-blog-php2shell-waf",
+  "akamai-blog-php-core-rce",
+  "fastly-blog-php2shell",
+  "imperva-blog-php2shell",
+  "gist-blevene-detection-guide"
+ ]
+}

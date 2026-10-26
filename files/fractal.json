@@ -1,7 +1,7 @@
 {
  "about": "The fractal graph: one graph from the people affected, through the risks, the story and the evidence, to the flaws, the fix and the changed lines of php-src. A node is just a node; meaning lives in the edges. Every node opens into its own neighbourhood in the navigator.",
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.33",
+ "version": "0.22.34",
  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
  "layers": [
   {
@@ -698,8 +698,8 @@
   {
    "id": "claim:no-confirmed-compromise",
    "layer": "claim",
-   "name": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
-   "text": "reported, says this site, from every captured source in the evidence vault (525 sources, head 22a0c2920b88), as of its latest capture at 12:14 UTC on 26 October",
+   "name": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "reported, says this site, from every captured source in the evidence vault (543 sources, head 2fc7e432584b), as of its latest capture at 14:42 UTC on 26 October",
    "status": "reported",
    "href": "claims/index.html#no-confirmed-compromise"
   },
@@ -1796,6 +1796,20 @@
    "name": "La Razón",
    "text": "PHP descubre otro fallo de seguridad sin parche apenas dos días después de una actualización urgente: Cloudflare y Amazon ya detectan ataques contra los anteriores",
    "href": "sources/larazon-tecnologia-consumo-php-nuevo-fallo-segur/index.html"
+  },
+  {
+   "id": "source:techgaming-internet-sotto-attacco-php2shell-vulnera",
+   "layer": "source",
+   "name": "TechGaming.it",
+   "text": "Internet sotto attacco: PHP2Shell mette a rischio milioni di siti",
+   "href": "sources/techgaming-internet-sotto-attacco-php2shell-vulnera/index.html"
+  },
+  {
+   "id": "source:bitpage-php2shell-php-sicherheitsluecke-webseite",
+   "layer": "source",
+   "name": "Bitpage.de",
+   "text": "PHP2Shell: Wer offline ist, wer gepatcht hat und was zu tun ist - Bitpage.de",
+   "href": "sources/bitpage-php2shell-php-sicherheitsluecke-webseite/index.html"
   },
   {
    "id": "source:github-rjmendez-phpup-2026",
@@ -8977,6 +8991,16 @@
    "rel": "cites"
   },
   {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:techgaming-internet-sotto-attacco-php2shell-vulnera",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:bitpage-php2shell-php-sicherheitsluecke-webseite",
+   "rel": "cites"
+  },
+  {
    "from": "claim:pocs-wrong",
    "to": "source:github-rjmendez-phpup-2026",
    "rel": "cites"
@@ -13148,14 +13172,14 @@
   }
  ],
  "counts": {
-  "nodes": 903,
-  "edges": 1238,
+  "nodes": 905,
+  "edges": 1240,
   "by_layer": {
    "stakeholder": 16,
    "risk": 9,
    "arc": 7,
    "claim": 138,
-   "source": 99,
+   "source": 101,
    "flaw": 2,
    "fix": 7,
    "code": 73,

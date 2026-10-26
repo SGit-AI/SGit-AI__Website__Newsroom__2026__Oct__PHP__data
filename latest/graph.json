@@ -1,7 +1,7 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.33",
- "vault_commit": "2fc7e432584b",
+ "version": "0.22.34",
+ "vault_commit": "1dceaa1dfa7f",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
  "ontology": {
@@ -5953,6 +5953,41 @@
     {
      "name": "text.txt",
      "sha256": "679a2220aeebc2f7412f5d56f561b010d65793b3cef5dce86d832c2c40cf9ebd"
+    }
+   ]
+  },
+  {
+   "id": "source:aljarida-article-148264",
+   "kind": "source",
+   "label": "جريدة الجريدة الكويتية: ثغرات «PHP» تضع بيانات الإنترنت تحت رحمة القراصنة - جريدة الجريدة الكويتية",
+   "href": "sources/aljarida-article-148264/index.html",
+   "url": "https://www.aljarida.com/article/148264",
+   "primary": false,
+   "published": "2026-10-23 20:38",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:aljarida-article-148264/20261026T170916Z",
+   "kind": "capture",
+   "label": "جريدة الجريدة الكويتية, captured 20261026T170916Z",
+   "href": "sources/aljarida-article-148264/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "4fea6ae1bd97399184bf68f9bfa4faf01792a7c5c3094304c33e8c593429b745"
+    },
+    {
+     "name": "page.html",
+     "sha256": "81a830b039160ed7c8ae92c041092025cde40daf0cddf62db01850f99017ec4b"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "a297f1c341da169c1533dc16d68c790744e5d79e7b4c99b108db8629756197d9"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "f05c7687b060c9c9c0a354e0549a2fb276decc0920762e8987c1b520bec696c4"
     }
    ]
   },
@@ -12494,6 +12529,49 @@
    ]
   },
   {
+   "id": "source:europe-infos-actualites-11979-php2shell-decryptage-d",
+   "kind": "source",
+   "label": "europe-infos: PHP2Shell : décryptage d’une double faille critique dans le moteur PHP | Europe Infos",
+   "href": "sources/europe-infos-actualites-11979-php2shell-decryptage-d/index.html",
+   "url": "https://www.europe-infos.fr/actualites/11979/php2shell-decryptage-d-une-double-faille-critique-dans-le-moteur-php/",
+   "primary": false,
+   "published": "2026-10-26",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:europe-infos-actualites-11979-php2shell-decryptage-d/20261026T170916Z",
+   "kind": "capture",
+   "label": "europe-infos, captured 20261026T170916Z",
+   "href": "sources/europe-infos-actualites-11979-php2shell-decryptage-d/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "d68eb7787058b9c90a8bf59ed4003ff412a9403ca43735f79b075d919599335b"
+    },
+    {
+     "name": "page.html",
+     "sha256": "f43a8c5940283b5359e579fd8b184adfa75b6bd4efd84e45b3a788f11631c9a6"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "5cadc6ea10e4e6d53cad8f8744983126c38c004a11fe844c3e54557e4c5599bd"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "9ae61f3c41d68ed5e0022bdb4adf3abb113837a4a304354ec018bbdfb41168b5"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "111522d5ad95908e468f69bae1153382229f2591291dd08dc75ae31b18efc2bf"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "130c70f3471fda072abbf79c0891f9f1a7a9aa55ffccfdc86a573dd2cb9d6f45"
+    }
+   ]
+  },
+  {
    "id": "source:expresscomputer-guest-blogs-understanding-php2shell-vuln",
    "kind": "source",
    "label": "expresscomputer: Understanding PHP2Shell vulnerabilities and reducing risk while you patch - Express Computer",
@@ -13099,6 +13177,49 @@
     {
      "name": "text.txt",
      "sha256": "cdcba1b8c212b9e8d3928e5d5ea0a7e09ea4c719e7bef44139d3f9f2f0612808"
+    }
+   ]
+  },
+  {
+   "id": "source:fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit",
+   "kind": "source",
+   "label": "Fortune Indonesia: Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia",
+   "href": "sources/fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit/index.html",
+   "url": "https://www.fortuneidn.com/tech/apa-itu-php-celah-keamanan-buat-situs-web-terganggu-d7w02-00-fykp7-4pwn09",
+   "primary": false,
+   "published": "2026-10-23",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit/20261026T170916Z",
+   "kind": "capture",
+   "label": "Fortune Indonesia, captured 20261026T170916Z",
+   "href": "sources/fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "750c8103d7511a338f0a42ef089955acc2f052ea0d64441b6254d0f42936299e"
+    },
+    {
+     "name": "page.html",
+     "sha256": "f9bcfa624952f0ef6dee95c7136262281b46f4fbd68f759ca5fe3bf032578517"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "65e34a1fa804c4a95624f2beeee431bce9a4679ff38248047aafce2057e668d5"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "a013cd4076e5a7253ee5029d41211adc991fadbf60bdf085bdaf4f903a776fdb"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "c482389c2a0bb22cce6d4b455f1d0b55c5d7e7312cf324704419baeb4a7ed9a5"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "a1ab468b170563f67ba84f25d85acc8ec8f51755490409a5c7c7195195147c4e"
     }
    ]
   },
@@ -17455,6 +17576,49 @@
     {
      "name": "text.txt",
      "sha256": "125176f10b5494a60744d6f6d3c7918b76c38477c6c229b636fbeb00b3bed173"
+    }
+   ]
+  },
+  {
+   "id": "source:learn-microsoft-nl-nl-answers-questions-6045412-web-app",
+   "kind": "source",
+   "label": "learn: Web App (Linux): PHP Patch php2shell — Critical Vulnerability in PHP Runtime - Microsoft Q&A",
+   "href": "sources/learn-microsoft-nl-nl-answers-questions-6045412-web-app/index.html",
+   "url": "https://learn.microsoft.com/nl-nl/answers/questions/6045412/web-app-linux-php-patch-php2shell-critical-vulnera",
+   "primary": false,
+   "published": "2026-10-21 15:58 (page time zone not stated)",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:learn-microsoft-nl-nl-answers-questions-6045412-web-app/20261026T170916Z",
+   "kind": "capture",
+   "label": "learn, captured 20261026T170916Z",
+   "href": "sources/learn-microsoft-nl-nl-answers-questions-6045412-web-app/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "51218e8ab0f6c97b0fbb904ee11250ad7ab452f0c1ab32d3cd094c5550f18a79"
+    },
+    {
+     "name": "page.html",
+     "sha256": "7f08e789a1048b413860363e317cefd3ca7e5d650cc187f466854aea7b5d2f13"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "6671a34cf3d3c310b2fdaca09622e545fc9b01f1878bd4a61f1243cb0c26222b"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "a857ca65fb0a85cbd44761d4682ff15dcfe19342ef0a53a8e45ff65cc4b62bed"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "1b890f4b7319574041d59ca53b23742ad7b67267dbe996a1335b6e98fb641a02"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "d73399825bfbedd1b8f7e4cea2bc4b4f2fcde6612e94b7a1f817862ce8b800a6"
     }
    ]
   },
@@ -25597,6 +25761,49 @@
    ]
   },
   {
+   "id": "source:solutions-numeriques-php2shell-derriere-lurgence-des-correcti",
+   "kind": "source",
+   "label": "Solutions Numériques: PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web",
+   "href": "sources/solutions-numeriques-php2shell-derriere-lurgence-des-correcti/index.html",
+   "url": "https://www.solutions-numeriques.com/php2shell-derriere-lurgence-des-correctifs-les-fragilites-de-la-maintenance-du-web/",
+   "primary": false,
+   "published": "2026-10-26T13:36:56+00:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:solutions-numeriques-php2shell-derriere-lurgence-des-correcti/20261026T170916Z",
+   "kind": "capture",
+   "label": "Solutions Numériques, captured 20261026T170916Z",
+   "href": "sources/solutions-numeriques-php2shell-derriere-lurgence-des-correcti/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "14ea7a4399a5c1de4c12e5c075b23906582ea19bd574fabc3782c66361d542b1"
+    },
+    {
+     "name": "page.html",
+     "sha256": "3bed9d67f0e81cbbc023dbbcaa008a60d92bfe919a42bc40ba0c5e46c87fc7ed"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "5d9220bfcda817438238b3a3992797a0d5d0217b13cc3bd2c12423e5834f8f78"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "a537fac19583a4657e2426aa27267c76d86fcf7fbe08d006bf1367770675059b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "ec8eff687c7e18c3b28e3d262c30044e9909399b8587e58ff54940a8295343d4"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "2ec81d7d33757d7ab45ac9cb59de6be2b6ddb2f0ae8e94a8ec940ab8119fd848"
+    }
+   ]
+  },
+  {
    "id": "source:spacemoney-tecnologia-php2shell-falha-critica-php",
    "kind": "source",
    "label": "SpaceMoney: PHP2Shell: falha crítica no PHP exige correção imediata",
@@ -27055,6 +27262,49 @@
    ]
   },
   {
+   "id": "source:telset-laptop-pc-dua-celah-kritis-php-bocor-seb",
+   "kind": "source",
+   "label": "Telset.id: Dua Kerentanan Kritis PHP Bocor Sebelum Patch Dirilis | Telset.id",
+   "href": "sources/telset-laptop-pc-dua-celah-kritis-php-bocor-seb/index.html",
+   "url": "https://telset.id/laptop-pc/dua-celah-kritis-php-bocor-sebelum-patch-situs-web-terancam",
+   "primary": false,
+   "published": "2026-10-22T00:01:37",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:telset-laptop-pc-dua-celah-kritis-php-bocor-seb/20261023T160435Z",
+   "kind": "capture",
+   "label": "Telset.id, captured 20261023T160435Z",
+   "href": "sources/telset-laptop-pc-dua-celah-kritis-php-bocor-seb/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "d6548b34b56836fbcf7759404a269f06ca5cf591cc3d6c5f0f26ae5feffc6532"
+    },
+    {
+     "name": "page.html",
+     "sha256": "bc7715e659768ef71feb1740c4bfa735480a4c2b7ca0f56c439e0243fc716ba9"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "c99492c1cf4aea28da47e3d69b0ba45d7140d70a7e5588e64eb64fd5db204352"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "f0b452131392e31b60b2f2d29590caca7696b0919e5bfdf9392a0d3b8b87d2cc"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "e215e09df169dcd602d107c91631f54bb8d94e228c43133bd5c0a104b0670f52"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "815181e03b96f48f774618be7dc381ea2439fcf490651d45d27f45e661d334b2"
+    }
+   ]
+  },
+  {
    "id": "source:tenable-php2shell-faq",
    "kind": "source",
    "label": "Tenable: php2shell (CVE-2026-109618, CVE-2026-109619): Critical PHP RCE FAQ | Tenable®",
@@ -27127,6 +27377,92 @@
     {
      "name": "text.txt",
      "sha256": "7cc4ddb02c3fbb29a56167a1dd773f3166ea426fed07f8ce4ca27c3b95497359"
+    }
+   ]
+  },
+  {
+   "id": "source:tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere",
+   "kind": "source",
+   "label": "TGRT Haber: PHP2Shell alarmı: Şifre bile gerekmiyor! Milyonlarca liralık kayıp riski | TGRT Haber",
+   "href": "sources/tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere/index.html",
+   "url": "https://www.tgrthaber.com/ekonomi/php2shell-alarmi-sifre-bile-gerekmiyor-milyonlarca-liralik-kayip-riski-3366771",
+   "primary": false,
+   "published": "2026-10-22T09:56:58+03:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere/20261023T160435Z",
+   "kind": "capture",
+   "label": "TGRT Haber, captured 20261023T160435Z",
+   "href": "sources/tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "eace79478b0038d5c3279bb4f4b581008c4ac9b0bcc87bf7c4002cfe69aa9d66"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c06a0c0aaf589cb9ed9609591e97419b9eca1ca4fab60be45add56beb4c3161e"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "4d02c7df50e49917eb13c3188e6f5a96dde3bc438b5d67e7171897388ea85870"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "410acc4f891d7d19af570c908afe4a7cd77c88db684ba0f6d2030b0948c1da1e"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "a8015eba5233f3061a72d97e1d773b64a19f249d0eb5c6a8ab88f60f58f823bc"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "99c900097bdc9f6ef203ef48517c51370b847192d9939da1fa0b4aeb016be2b6"
+    }
+   ]
+  },
+  {
+   "id": "source:thansettakij-economy-672045",
+   "kind": "source",
+   "label": "ฐานเศรษฐกิจ: “ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”",
+   "href": "sources/thansettakij-economy-672045/index.html",
+   "url": "https://www.thansettakij.com/economy/672045",
+   "primary": false,
+   "published": "2026-10-22 10:40 (page time zone not stated)",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:thansettakij-economy-672045/20261023T160435Z",
+   "kind": "capture",
+   "label": "ฐานเศรษฐกิจ, captured 20261023T160435Z",
+   "href": "sources/thansettakij-economy-672045/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "c50997c11f6a1896101ad38eb4fac68bd75d8c7efb788944eaab70a95648c8a9"
+    },
+    {
+     "name": "page.html",
+     "sha256": "974c565123ffb789af65f63beb0e32698d49e4709db196f5b3375dfc4b604ec6"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "efb05d24e7a7636dbd7b8c5a3b746972fb65f03d9c05456b27892cdd5854f473"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "98a1533a938f74767348e8499b1f77c978a3f2b339c34673a29d770522828ef3"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "58a2ffe86aae0b63d7a3199b2bbf08501922dc6b7f99c06ab652fa5efaa17b8b"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "782fad1c4851da1e591adfbebd727405665fb11f56c3caa78c3c5a832ac48f24"
     }
    ]
   },
@@ -27556,6 +27892,49 @@
    ]
   },
   {
+   "id": "source:thelec-news-articleview-html",
+   "kind": "source",
+   "label": "디일렉: 엔키화이트햇, 'PHP2Shell' 진단 스캐너 무상 공개 < IT‧게임 < 기사본문 - 디일렉(THE ELEC)",
+   "href": "sources/thelec-news-articleview-html/index.html",
+   "url": "https://www.thelec.kr/news/articleView.html?idxno=64169",
+   "primary": false,
+   "published": "2026-10-23T09:55:05+09:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:thelec-news-articleview-html/20261025T144008Z",
+   "kind": "capture",
+   "label": "디일렉, captured 20261025T144008Z",
+   "href": "sources/thelec-news-articleview-html/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "730ee4c3e5a27fb8ba89eebdd54746010c506c10e850b2e59861964b206ebd53"
+    },
+    {
+     "name": "page.html",
+     "sha256": "63efbeea5a4bc883da9494a7bdbaf3123c3ca2a13e698cc3834c31d53566c9f8"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "ae90748f437d7b9ca78f7fb8e5acf86fdbef35a552fa4ae11fc4dc701ed7835e"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "42c43bc3562fb42149e4cc125bf8e0826195ebc8221671722f2205fa36a9fabd"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "c3c3234be3ae22c4c062718c03bc3e9a6ea485b880175d21e1f8dab021522d49"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "eb1a7b1f287c825f45104eddc9ad21ce40607191cfbb92a41efe3267707a5b6c"
+    }
+   ]
+  },
+  {
    "id": "source:themandarin-322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner",
    "kind": "source",
    "label": "The Mandarin: ASD rushes out ‘critical’ alert on unpatched PHP vulnerability",
@@ -27595,6 +27974,56 @@
     {
      "name": "text.txt",
      "sha256": "b6625a35ad00fcab445a86fa4d0e8a0cfb781915ed1fa78e7cdd0055c23f397f"
+    }
+   ]
+  },
+  {
+   "id": "source:thenextweb-wikipedia-ref-9-dation-structural-failur",
+   "kind": "source",
+   "label": "The Next Web: PHP knew about one of the flaws in 2024 but could not agree a fix",
+   "href": "sources/thenextweb-wikipedia-ref-9-dation-structural-failur/index.html",
+   "url": "https://thenextweb.com/news/php-foundation-structural-failure-2024-flaw-leak",
+   "primary": false,
+   "published": "2026-10-21T16:02:04+00:00",
+   "source_kind": "news",
+   "zoom": [
+    {
+     "graph": "data/wikipedia/php2shell/graph.json",
+     "focus": "reference:10",
+     "label": "In Wikipedia's PHP2Shell article: cited by 3 statements"
+    }
+   ]
+  },
+  {
+   "id": "capture:thenextweb-wikipedia-ref-9-dation-structural-failur/20261025T114552Z",
+   "kind": "capture",
+   "label": "The Next Web, captured 20261025T114552Z",
+   "href": "sources/thenextweb-wikipedia-ref-9-dation-structural-failur/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "017b0c257017055a2d046d9eb280a4eec9c20ac4a94def0e9e3a3af2d7bdf4a8"
+    },
+    {
+     "name": "page.html",
+     "sha256": "cec88d6af74310a0dfcdf1856b500251d7d842d1c44c0db5956d9cfc897e43e9"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "8150084b61f7b57f56a4f1882e8166c12233c833e3c041bdffd408c945baffe6"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "cd019ddde23fc29d4e3ba980a7fb8749f80bae11390dabc651cb924d67c2681f"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "86201576b81dc923caea5bfbc870285b600b9aa49b19c5b14b4a7954a148ede5"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "1bc9ed0181f47f315a740b93d05a6f574f5485d1f57f8b69ba25e820bf7f0c2f"
     }
    ]
   },
@@ -27861,6 +28290,123 @@
    ]
   },
   {
+   "id": "source:tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t",
+   "kind": "source",
+   "label": "Tia Sáng: Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa",
+   "href": "sources/tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t/index.html",
+   "url": "https://tiasang.com.vn/lo-hong-php-ai-khien-dieu-bi-lang-quen-thanh-moi-de-doa-5135729.html",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t/20261023T160435Z",
+   "kind": "capture",
+   "label": "Tia Sáng, captured 20261023T160435Z",
+   "href": "sources/tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "2c004ced4fc129b01d96818b80112309dd714140bcfba514f81fc169f5820aa2"
+    },
+    {
+     "name": "page.html",
+     "sha256": "8e9f81344cf949c2dab97abd28f859af5cfab0ae40408140ce0974c3d7fbefcd"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "48df29c3fdcff0a5e3fa7c0039ac4c2cfd3b335e02d7b3b941f916c33865dd9b"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "0b5817e1dc541694be86fd9f478f0e3b11d9a3c7ea890136c3353727b0801088"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "4c0d28855af00a794806adbc621d4c40a25a0b4aa22068273078cb6a1de730f4"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "7b279f0fc3928e58f4e3c23f84ea63a0ef75fef70df77dc620888e02dae7e756"
+    }
+   ]
+  },
+  {
+   "id": "source:tirto-website-sedunia-geger-ditemukan-celah-ke",
+   "kind": "source",
+   "label": "Tirto.id: Web Sedunia Geger Ditemukan Celah Keamanan di PHP, Ada Bug Apa?",
+   "href": "sources/tirto-website-sedunia-geger-ditemukan-celah-ke/index.html",
+   "url": "https://tirto.id/website-sedunia-geger-ditemukan-celah-keamanan-di-php-ada-bug-apa-hEbc",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:tirto-website-sedunia-geger-ditemukan-celah-ke/20261023T160435Z",
+   "kind": "capture",
+   "label": "Tirto.id, captured 20261023T160435Z",
+   "href": "sources/tirto-website-sedunia-geger-ditemukan-celah-ke/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "ecb452f95ee7d7571cab6b93001bfdff027669a5ff612a6f70da0b392197c25f"
+    },
+    {
+     "name": "page.html",
+     "sha256": "9c40c0e68265b1e2c5cacba1eec37690da8f41866379feef6ea174fea319f057"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "d94615e6bf2f55fc37587e8d28366af2cd4b34d8b4e244478304677b22f7736c"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "08e9400ae1598a7e38c27a7da4625aab607d77df806c98e474995f5c7db4ed31"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "c49537e4a9e1c8ebc645b7c10a16ea45190409258e656c8f9466927b7efbda36"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "0df40bc3b926c3afaeb16fd2de610316baba98666c8347381c224cea709237c9"
+    }
+   ]
+  },
+  {
+   "id": "source:topagrar-betriebsleitung-news-php-sicherheitsluck",
+   "kind": "source",
+   "label": "top agrar: PHP-Sicherheitslücke: Was Landwirte mit Hofwebseite jetzt wissen müssen | top agrar",
+   "href": "sources/topagrar-betriebsleitung-news-php-sicherheitsluck/index.html",
+   "url": "https://www.topagrar.com/betriebsleitung/news/php-sicherheitslucke-was-landwirte-mit-hofwebseite-jetzt-wissen-mussen-20030467.html",
+   "primary": false,
+   "published": "2026-10-22T11:55:00+02:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:topagrar-betriebsleitung-news-php-sicherheitsluck/20261023T232528Z",
+   "kind": "capture",
+   "label": "top agrar, captured 20261023T232528Z",
+   "href": "sources/topagrar-betriebsleitung-news-php-sicherheitsluck/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "28829957f75098dac3573ea906a2444ae7c80e23ea516d7047e67de0d4d95c67"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "a518d17f680e8ccd383738b4c30dd41aa6e84563c043f14a22b28223c88ff9e6"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "28e10d0ef3eb49719e7bfa4e82d274429905e0340a020e7fc95d82132223da0f"
+    }
+   ]
+  },
+  {
    "id": "source:tpo-nl-digid-offline",
    "kind": "source",
    "label": "TPO.nl: PHP-lek legt DigiD, MijnOverheid en Tweede Kamer plat | TPO.NL",
@@ -27990,6 +28536,49 @@
    ]
   },
   {
+   "id": "source:trendmicro-ja-jp-about-newsroom-press-releases-2026",
+   "kind": "source",
+   "label": "トレンドマイクロ: トレンドマイクロ、PHPの重大な脆弱性「PHP2Shell」への支援・対応策を発表 | トレンドマイクロ (JP)",
+   "href": "sources/trendmicro-ja-jp-about-newsroom-press-releases-2026/index.html",
+   "url": "https://www.trendmicro.com/ja_jp/about/newsroom/press-releases/2026/pr-20261023-01.html",
+   "primary": false,
+   "published": "2026-10-23",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:trendmicro-ja-jp-about-newsroom-press-releases-2026/20261024T083755Z",
+   "kind": "capture",
+   "label": "トレンドマイクロ, captured 20261024T083755Z",
+   "href": "sources/trendmicro-ja-jp-about-newsroom-press-releases-2026/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "1ab6961f42dd9f9f95edaba5b1befbcf55e315debb7f389e294becdc1b6c6728"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c37e02ecd7d13b419f13fe6f2a9745deff53889dc1efd8ac6f7f93f935674e5d"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "4c8de4751f524032ffd49f8109f9fb90cf1dfdc1af38595b4dcfc2116bd5b0a2"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "c3ba754fda3d32b258d89c4f2c66ccb59f17209ef2b1aa222407b001a7f986b7"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "caf6371a7c079d40487af5824253a9f9d8b2e838b43b23533035c52e20a03caa"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "949a7f1314773718d89d8e117c72f102c36677e39984c3948a639e3d36d9c609"
+    }
+   ]
+  },
+  {
    "id": "source:tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco",
    "kind": "source",
    "label": "TugaTech: Milhões de servidores PHP expostos ao risco da falha PHP2Shell | TugaTech",
@@ -28024,6 +28613,135 @@
     {
      "name": "text.txt",
      "sha256": "86e513bd05a0b5fdd5b9e959b368b60b23112bfffe99f7d9ae4097f42042cc26"
+    }
+   ]
+  },
+  {
+   "id": "source:turbolab-server-1224-php2shell-amazon-ha-rilevato",
+   "kind": "source",
+   "label": "TurboLab.it: PHP2Shell: Amazon ha rilevato tentativi di exploit 4 giorni prima della patch di PHP (aggiornato: 22 ottobre 2026, ore 20:50) | TurboLab.it",
+   "href": "sources/turbolab-server-1224-php2shell-amazon-ha-rilevato/index.html",
+   "url": "https://turbolab.it/server-1224/php2shell-amazon-ha-rilevato-tentativi-exploit-4-giorni-prima-patch-php-4946",
+   "primary": false,
+   "published": "2026-10-22 20:50 (page time zone not stated)",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:turbolab-server-1224-php2shell-amazon-ha-rilevato/20261023T160435Z",
+   "kind": "capture",
+   "label": "TurboLab.it, captured 20261023T160435Z",
+   "href": "sources/turbolab-server-1224-php2shell-amazon-ha-rilevato/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "dfd2a02a86522a2fe1a2b98c39378b67eb8acee32785212b837a3bded7d6867b"
+    },
+    {
+     "name": "page.html",
+     "sha256": "e10d3fdaa60663112c12e771948130c225f3eb73b87f9a92dcee914ad623460e"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "8b549c5052473635cfa244926c779a1466898278ab1b1bafe35efa7031e03bd7"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "b22e565c3389f8a029041c927098827231b27294a3e6f94656c05c1824a33b96"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "403ecfb8ecbc539b747d64f4c591c74999ba2ec6a7f83a3ed836c56a538e1caf"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "1fb6f3a2b702e7ac6d9aa3f64ed588a1c883ebe0b5ba664548e64ef338deb734"
+    }
+   ]
+  },
+  {
+   "id": "source:turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9",
+   "kind": "source",
+   "label": "تركيا عاجل: ثغرة جديدة في PHP تتيح تنفيذ شيفرات عن بُعد.. لماذا لا يحتاج بعض المسؤولين إلى إجراء إضافي؟",
+   "href": "sources/turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9/index.html",
+   "url": "https://turkey-breaking.com/News/2026/10/25/%d8%ab%d8%ba%d8%b1%d8%a9-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%81%d9%8a-php-%d8%aa%d8%aa%d9%8a%d8%ad-%d8%aa%d9%86%d9%81%d9%8a%d8%b0-%d8%b4%d9%8a%d9%81%d8%b1%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a8%d9%8f%d8%b9/",
+   "primary": false,
+   "published": "2026-10-25 07:51 (page time zone not stated)",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9/20261025T093507Z",
+   "kind": "capture",
+   "label": "تركيا عاجل, captured 20261025T093507Z",
+   "href": "sources/turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "b56c3a91d7ad1321600b02fab05bca0ef2629e8fbc5d0ebc3775da21e1437f07"
+    },
+    {
+     "name": "page.html",
+     "sha256": "4276cdd5fa756e51667f8deccb46444beccab9a23b4f599333b5616bb276b9b3"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "f3d0fc7d1f2abd7d408eb4e5bf535f67b5d5fd9b74e4957e363fe55650ec1500"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "ff1d444ad2ab5f1909e10cef91676c56b1c742dd9215988b8ead5b3bdcf14549"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "a2549f815c6284ff987630f9ebf9faf2cad7c05c5dfba0adfa453de235fe2b02"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "b8d2060e6c49ff425e5e2b4acb811b0426fca145e7feee935a34dc5089430c6e"
+    }
+   ]
+  },
+  {
+   "id": "source:turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939",
+   "kind": "source",
+   "label": "turkiyedeisdunyasi: Türkiye, PHP2Shell tehdidinde Avrupa’yı geride bıraktı - Türkiye'de İş Dünyası",
+   "href": "sources/turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939/index.html",
+   "url": "https://turkiyedeisdunyasi.com/php2shell-turkiye-avrupa-siber-142939/",
+   "primary": false,
+   "published": "2026-10-23T12:10:03+03:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939/20261026T121439Z",
+   "kind": "capture",
+   "label": "turkiyedeisdunyasi, captured 20261026T121439Z",
+   "href": "sources/turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "1080c4f7d61602e411f9910d014e3d6f4d5ebd788b9628f34e069f0905c27794"
+    },
+    {
+     "name": "page.html",
+     "sha256": "2ede440b739a7b28cc64373bb4cdceec0a7115558d5af735ea900f783fe3b6a1"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "9a0af102c10bfbd1fd23cf1c4658f5252b56b949155065ede6424b9b06b65844"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "5dcfdc57b46b1fc099934d0d17b657d96b5a25c7612460ea98ab8e7bd208fbe4"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "5515c5ee58c6f73f9fb1a76a861a920b2710af8d5284dc2890635bdf11ec13a0"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "1e307b7b74a2d10aef289c79896d0f782e0b1d0b5e81db504ae2cc6f478ae5a7"
     }
    ]
   },
@@ -28067,6 +28785,49 @@
     {
      "name": "text.txt",
      "sha256": "cd3f99c6c9f942595087eaa47ae8e71639cd4526a4453110ddd6a6365de3ae26"
+    }
+   ]
+  },
+  {
+   "id": "source:tvtechnology-infrastructure-security-how-to-protect-y",
+   "kind": "source",
+   "label": "TV Tech: How to Protect Your Station From PHP2Shell | TV Tech",
+   "href": "sources/tvtechnology-infrastructure-security-how-to-protect-y/index.html",
+   "url": "https://www.tvtechnology.com/infrastructure/security/how-to-protect-your-station-from-php2shell",
+   "primary": false,
+   "published": "2026-10-26T13:15:32Z",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:tvtechnology-infrastructure-security-how-to-protect-y/20261026T170916Z",
+   "kind": "capture",
+   "label": "TV Tech, captured 20261026T170916Z",
+   "href": "sources/tvtechnology-infrastructure-security-how-to-protect-y/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "2e80a288a997a0f193c25df3dcc4974c600b2bde76740e27c1e2d2a3f71907e6"
+    },
+    {
+     "name": "page.html",
+     "sha256": "e38765ac517b2d8e20c94471249e050e9a99c19014ce2b8304589a27e31336ac"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "83c8bc6e959831ee90995da964e1bec6ed6a0b21d09859739cfa3e14bf01f2ad"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "e44479d127b49fb7c84a8e03dfb3fc3b0c9c04e2b478358d2f37d5019a75c89b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "a093e04e6a97c62458dd89ddf4f48f126fd0d97bd55c8e20f190255b3e49c13a"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "ff46c45e7a7e83451c6cdb4aeb312b8ef0fd526f5a337d17a37524ce0de3999c"
     }
    ]
   },
@@ -30346,10 +31107,10 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "label": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "href": "facts/no-confirmed-compromise/index.html",
-   "by": "this site, from every captured source in the evidence vault (525 sources, head 22a0c2920b88), as of its latest capture at 12:14 UTC on 26 October",
+   "by": "this site, from every captured source in the evidence vault (543 sources, head 2fc7e432584b), as of its latest capture at 14:42 UTC on 26 October",
    "origins": 1,
    "relays": 0,
    "echo": false
@@ -32178,6 +32939,11 @@
    "to": "capture:alghad-section-225-d8-aa-d9-83-d9-86-d9-88-d9-8/20261024T160544Z"
   },
   {
+   "from": "source:aljarida-article-148264",
+   "verb": "captured_in",
+   "to": "capture:aljarida-article-148264/20261026T170916Z"
+  },
+  {
    "from": "source:americanbanker-news-banks-dodge-early-damage-from-php2s",
    "verb": "published_by",
    "to": "party:american-banker"
@@ -33655,6 +34421,11 @@
    "to": "capture:europapress-portaltic-ciberseguridad-noticia-amazon/20261023T232528Z"
   },
   {
+   "from": "source:europe-infos-actualites-11979-php2shell-decryptage-d",
+   "verb": "captured_in",
+   "to": "capture:europe-infos-actualites-11979-php2shell-decryptage-d/20261026T170916Z"
+  },
+  {
    "from": "source:expresscomputer-guest-blogs-understanding-php2shell-vuln",
    "verb": "published_by",
    "to": "party:express-computer"
@@ -33803,6 +34574,11 @@
    "from": "source:fortune-ai-tools-php-vulnerability",
    "verb": "captured_in",
    "to": "capture:fortune-ai-tools-php-vulnerability/20261023T012042Z"
+  },
+  {
+   "from": "source:fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit",
+   "verb": "captured_in",
+   "to": "capture:fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit/20261026T170916Z"
   },
   {
    "from": "source:fortuneita-2026-10-22-php2shell-il-bug-che-poteva-m",
@@ -34758,6 +35534,11 @@
    "from": "source:lbc-uk-websites-offline",
    "verb": "captured_in",
    "to": "capture:lbc-uk-websites-offline/20261022T112915Z"
+  },
+  {
+   "from": "source:learn-microsoft-nl-nl-answers-questions-6045412-web-app",
+   "verb": "captured_in",
+   "to": "capture:learn-microsoft-nl-nl-answers-questions-6045412-web-app/20261026T170916Z"
   },
   {
    "from": "source:lebigdata-php2shell-des-millions-dattaques-frappen",
@@ -36303,6 +37084,11 @@
    "to": "capture:sohu-a-1091246810-122998307/20261023T160435Z"
   },
   {
+   "from": "source:solutions-numeriques-php2shell-derriere-lurgence-des-correcti",
+   "verb": "captured_in",
+   "to": "capture:solutions-numeriques-php2shell-derriere-lurgence-des-correcti/20261026T170916Z"
+  },
+  {
    "from": "source:spacemoney-tecnologia-php2shell-falha-critica-php",
    "verb": "captured_in",
    "to": "capture:spacemoney-tecnologia-php2shell-falha-critica-php/20261023T160435Z"
@@ -36554,6 +37340,11 @@
    "to": "capture:telesurenglish-php2shell-vulnerabilities/20261025T093507Z"
   },
   {
+   "from": "source:telset-laptop-pc-dua-celah-kritis-php-bocor-seb",
+   "verb": "captured_in",
+   "to": "capture:telset-laptop-pc-dua-celah-kritis-php-bocor-seb/20261023T160435Z"
+  },
+  {
    "from": "source:tenable-php2shell-faq",
    "verb": "published_by",
    "to": "party:tenable"
@@ -36567,6 +37358,16 @@
    "from": "source:tenable-php2shell-faq",
    "verb": "captured_in",
    "to": "capture:tenable-php2shell-faq/20261023T080331Z"
+  },
+  {
+   "from": "source:tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere",
+   "verb": "captured_in",
+   "to": "capture:tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere/20261023T160435Z"
+  },
+  {
+   "from": "source:thansettakij-economy-672045",
+   "verb": "captured_in",
+   "to": "capture:thansettakij-economy-672045/20261023T160435Z"
   },
   {
    "from": "source:the-next-web-php2shell-no-confirmed-breaches",
@@ -36659,6 +37460,11 @@
    "to": "capture:thehackernews-what-protects-you/20261023T160435Z"
   },
   {
+   "from": "source:thelec-news-articleview-html",
+   "verb": "captured_in",
+   "to": "capture:thelec-news-articleview-html/20261025T144008Z"
+  },
+  {
    "from": "source:themandarin-322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner",
    "verb": "published_by",
    "to": "party:the-mandarin"
@@ -36667,6 +37473,16 @@
    "from": "source:themandarin-322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner",
    "verb": "captured_in",
    "to": "capture:themandarin-322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner/20261023T080331Z"
+  },
+  {
+   "from": "source:thenextweb-wikipedia-ref-9-dation-structural-failur",
+   "verb": "published_by",
+   "to": "party:the-next-web"
+  },
+  {
+   "from": "source:thenextweb-wikipedia-ref-9-dation-structural-failur",
+   "verb": "captured_in",
+   "to": "capture:thenextweb-wikipedia-ref-9-dation-structural-failur/20261025T114552Z"
   },
   {
    "from": "source:therecord-php-foundation-statement",
@@ -36730,6 +37546,21 @@
    "to": "capture:thestar-aseanplus-aseanplus-news-2026-10-22-seri/20261023T160435Z"
   },
   {
+   "from": "source:tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t",
+   "verb": "captured_in",
+   "to": "capture:tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t/20261023T160435Z"
+  },
+  {
+   "from": "source:tirto-website-sedunia-geger-ditemukan-celah-ke",
+   "verb": "captured_in",
+   "to": "capture:tirto-website-sedunia-geger-ditemukan-celah-ke/20261023T160435Z"
+  },
+  {
+   "from": "source:topagrar-betriebsleitung-news-php-sicherheitsluck",
+   "verb": "captured_in",
+   "to": "capture:topagrar-betriebsleitung-news-php-sicherheitsluck/20261023T232528Z"
+  },
+  {
    "from": "source:tpo-nl-digid-offline",
    "verb": "published_by",
    "to": "party:tpo-nl"
@@ -36760,6 +37591,11 @@
    "to": "capture:trak-stories-70-websites-at-security-risk-due/20261023T160435Z"
   },
   {
+   "from": "source:trendmicro-ja-jp-about-newsroom-press-releases-2026",
+   "verb": "captured_in",
+   "to": "capture:trendmicro-ja-jp-about-newsroom-press-releases-2026/20261024T083755Z"
+  },
+  {
    "from": "source:tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco",
    "verb": "published_by",
    "to": "party:tugatech"
@@ -36770,6 +37606,21 @@
    "to": "capture:tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco/20261022T181608Z"
   },
   {
+   "from": "source:turbolab-server-1224-php2shell-amazon-ha-rilevato",
+   "verb": "captured_in",
+   "to": "capture:turbolab-server-1224-php2shell-amazon-ha-rilevato/20261023T160435Z"
+  },
+  {
+   "from": "source:turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9",
+   "verb": "captured_in",
+   "to": "capture:turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9/20261025T093507Z"
+  },
+  {
+   "from": "source:turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939",
+   "verb": "captured_in",
+   "to": "capture:turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939/20261026T121439Z"
+  },
+  {
    "from": "source:tuttotech-news-2026-10-22-vulnerabilita-php-html",
    "verb": "published_by",
    "to": "party:tuttotech"
@@ -36778,6 +37629,11 @@
    "from": "source:tuttotech-news-2026-10-22-vulnerabilita-php-html",
    "verb": "captured_in",
    "to": "capture:tuttotech-news-2026-10-22-vulnerabilita-php-html/20261022T181608Z"
+  },
+  {
+   "from": "source:tvtechnology-infrastructure-security-how-to-protect-y",
+   "verb": "captured_in",
+   "to": "capture:tvtechnology-infrastructure-security-how-to-protect-y/20261026T170916Z"
   },
   {
    "from": "source:uk-edinburgh-council",
@@ -38630,6 +39486,16 @@
    "from": "claim:no-confirmed-compromise",
    "verb": "cites",
    "to": "source:larazon-tecnologia-consumo-php-nuevo-fallo-segur"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "verb": "cites",
+   "to": "source:techgaming-internet-sotto-attacco-php2shell-vulnera"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "verb": "cites",
+   "to": "source:bitpage-php2shell-php-sicherheitsluecke-webseite"
   },
   {
    "from": "claim:no-confirmed-compromise",
@@ -42102,6 +42968,9 @@
   "En cause": [
    "encause-failles-php-critiques-php2shell-mise-a-j"
   ],
+  "Fortune Indonesia": [
+   "fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit"
+  ],
   "HomoDigital": [
    "homodigital-luka-w-php-myslisz-nie-mam-strony-jestem"
   ],
@@ -42219,6 +43088,9 @@
   "Silicon.fr": [
    "silicon-cybersecurite-1371-php2shell-vulnerabili"
   ],
+  "Solutions Numériques": [
+   "solutions-numeriques-php2shell-derriere-lurgence-des-correcti"
+  ],
   "SpaceMoney": [
    "spacemoney-tecnologia-php2shell-falha-critica-php"
   ],
@@ -42230,6 +43102,12 @@
   ],
   "Suara Nasional": [
    "suaranasional-2026-10-25-bahaya-celah-keamanan-php2she"
+  ],
+  "TGRT Haber": [
+   "tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere"
+  ],
+  "TV Tech": [
+   "tvtechnology-infrastructure-security-how-to-protect-y"
   ],
   "Tages-Anzeiger": [
    "tagesanzeiger-php-sicherheitsluecke-millionen-hackeran"
@@ -42252,8 +43130,20 @@
   "Teknófilo": [
    "teknofilo-php2shell-fallos-php-cierre-webs-actuali"
   ],
+  "Telset.id": [
+   "telset-laptop-pc-dua-celah-kritis-php-bocor-seb"
+  ],
   "The Guardian": [
    "guardian-wikipedia-ref-40-ge-flaw-causing-global"
+  ],
+  "Tia Sáng": [
+   "tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t"
+  ],
+  "Tirto.id": [
+   "tirto-website-sedunia-geger-ditemukan-celah-ke"
+  ],
+  "TurboLab.it": [
+   "turbolab-server-1224-php2shell-amazon-ha-rilevato"
   ],
   "YugaTech": [
    "yugatech-news-ai-helps-uncover-php2shell-flaws-th"
@@ -42267,11 +43157,17 @@
   "cybersecitalia": [
    "cybersecitalia-lalert-dellacn-in-italia-a-rischio-vulne"
   ],
+  "europe-infos": [
+   "europe-infos-actualites-11979-php2shell-decryptage-d"
+  ],
   "kursors": [
    "kursors-2026-10-21-atklatas-kritiskas-ievainojam"
   ],
   "le Blog des Nouvelles Technologies": [
    "blog-nouvelles-technologies-389778-php2shell-faille-critique-php-cor"
+  ],
+  "learn": [
+   "learn-microsoft-nl-nl-answers-questions-6045412-web-app"
   ],
   "macitynet.it": [
    "macitynet-php2shell-vulnerabilita-php-siti-offline"
@@ -42305,6 +43201,12 @@
   "tech-noisy": [
    "tech-noisy-2026-10-22-php2shell-php-rce-cve-2026-10"
   ],
+  "top agrar": [
+   "topagrar-betriebsleitung-news-php-sicherheitsluck"
+  ],
+  "turkiyedeisdunyasi": [
+   "turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939"
+  ],
   "wersm": [
    "wersm-php2shell-legacy-infrastructure-web-risk"
   ],
@@ -42320,8 +43222,14 @@
   "المصري لايت": [
    "lite-almasryalyoum-technolight-396865"
   ],
+  "تركيا عاجل": [
+   "turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9"
+  ],
   "جريدة البلاد": [
    "albiladpress-news-2026-6586-finance-1027748-html"
+  ],
+  "جريدة الجريدة الكويتية": [
+   "aljarida-article-148264"
   ],
   "جريدة الراية": [
    "raya-2026-10-22-php"
@@ -42335,6 +43243,9 @@
   "وكالة خبر للأنباء": [
    "khabaragency-news254841-html"
   ],
+  "ฐานเศรษฐกิจ": [
+   "thansettakij-economy-672045"
+  ],
   "เดลินิวส์": [
    "dailynews-news-6303237"
   ],
@@ -42346,6 +43257,9 @@
   ],
   "デジタルPRプラットフォーム": [
    "digitalpr-r-146712"
+  ],
+  "トレンドマイクロ": [
+   "trendmicro-ja-jp-about-newsroom-press-releases-2026"
   ],
   "ビジネス+IT": [
    "sbbit-article-cont1-187672"
@@ -42379,6 +43293,9 @@
   ],
   "뉴스탭": [
    "newstap-news-articleview-html"
+  ],
+  "디일렉": [
+   "thelec-news-articleview-html"
   ],
   "디지털경제뉴스": [
    "denews-news-articleview-html"

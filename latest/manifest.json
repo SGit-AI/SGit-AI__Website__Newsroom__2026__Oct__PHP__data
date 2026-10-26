@@ -1,7 +1,7 @@
 {
  "api": "php.oct.2026 newsroom data",
  "data_as_of": "2026-10-22T08:48Z",
- "evidence_vault_head": "2fc7e432584b",
+ "evidence_vault_head": "1dceaa1dfa7f",
  "files": [
   {
    "bytes": 5656,
@@ -81,11 +81,11 @@
    "sha256": "510a6ebd72f0d0ddc15bb3e39751ff8ab90930151d0a2978986d1b309050fa39"
   },
   {
-   "bytes": 72759,
+   "bytes": 75884,
    "group": "runtime",
    "name": "control.json",
    "schema": "schemas/control.schema.json",
-   "sha256": "dd6014aebac21ad87eaa32fb9c05aed45305e22b6ec7bb0f8d070f20d75da373"
+   "sha256": "b053cd2cf0e1d3f1bbf9721a648c4e6b3cf0aac3dc07cb590b12235ee2a6953b"
   },
   {
    "bytes": 21507,
@@ -130,18 +130,18 @@
    "sha256": "50d16d882736befaaa302f016f6b6c53fec9815c33f58158aa434fa86f62f8ec"
   },
   {
-   "bytes": 415548,
+   "bytes": 416420,
    "group": "graphs",
    "name": "fractal.json",
    "schema": "schemas/fractal.schema.json",
-   "sha256": "a4c30402839374cd38d576492b3f12b8408f9c32bdda7847a8241661b3976ed6"
+   "sha256": "0bed4f1a6c20c638e6ccdbbb9d850c0444b9319c5a643d570e5d463efc9cf2c0"
   },
   {
-   "bytes": 1317450,
+   "bytes": 1350200,
    "group": "graphs",
    "name": "graph.json",
    "schema": "schemas/graph.schema.json",
-   "sha256": "f87ce049e7d8cdde412ac7be1cbe1f16b066352cc280d8f0018a97df21b3a187"
+   "sha256": "33d1baa5a88a02e84bcbfc2cc569023993ea5a7a6ab792bc0c384716fad65c8a"
   },
   {
    "bytes": 431,
@@ -165,18 +165,18 @@
    "sha256": "53be4ccca15af93b342fc5dd1d11064a50d0f004c91476778831798fdf68141a"
   },
   {
-   "bytes": 456571,
+   "bytes": 457534,
    "group": "grc",
    "name": "grc-graph.json",
    "schema": "schemas/grc-graph.schema.json",
-   "sha256": "dd6ed4cc2d6d108b945be2521966516d1d4645bcb1c29d4116426e4b249bec13"
+   "sha256": "edd075215752d0603f14f9599378766f1dd528c19777602ff9df224a002e5b9d"
   },
   {
-   "bytes": 256173,
+   "bytes": 257117,
    "group": "grc",
    "name": "grc-history.json",
    "schema": "schemas/grc-history.schema.json",
-   "sha256": "d2b15d78adc31b04d1f4577a271d288f9bcef4233078be8bebd54e3e0f45fc95"
+   "sha256": "85e13d3f9c6c95bf748e8e72c22d955fb5ddad728e1d5851df98bf686f7ed13b"
   },
   {
    "bytes": 11874,
@@ -221,11 +221,11 @@
    "sha256": "9150b59e17a6b3bae22110b8a088715cec42dd157d11329387587786dd2abd9d"
   },
   {
-   "bytes": 265289,
+   "bytes": 272616,
    "group": "runtime",
    "name": "items.json",
    "schema": "schemas/items.schema.json",
-   "sha256": "bea4c845e039a89a5eeb9775f48d2347d551a5f95a42c2fec7a30b6eace5faab"
+   "sha256": "442dc9b577c03f5b03ae1f29622a4ced0c1c48358bfd4d7860de23c617d58bdf"
   },
   {
    "bytes": 43976,
@@ -424,11 +424,11 @@
    "sha256": "b6c5eae2f4aa832b7f5c1b6267dfef3606663350c27f84bb0931463e41a1c29a"
   },
   {
-   "bytes": 377205,
+   "bytes": 377838,
    "group": "evidence",
    "name": "wikipedia/php2shell/graph.json",
    "schema": null,
-   "sha256": "90b0c37007e5cf06a5c7ac74036fc3ecc1cd70a0a1d777b0b97fa20f34d8940c"
+   "sha256": "5a38ed74878a5cf498f5075e0f5851d39f43c6b1d1e39022ffd6bcf4e387ef89"
   },
   {
    "bytes": 5075,
@@ -3337,16 +3337,21 @@
   }
  ],
  "from": {
-  "commit": "bfcc288fa00a0babdafc11e6c71367ca13126a29",
+  "commit": "94ff64b5b73e6eb61a6240d9a6b10f29c9a84402",
   "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
-  "site_version": "0.22.33"
+  "site_version": "0.22.34"
  },
  "kept": [
-  "factcheck.json",
-  "telemetry-public.json",
-  "telemetry-report.json",
-  "telemetry.json"
+  "claims.json",
+  "desk.json",
+  "impact.json",
+  "personas.json",
+  "source-watch.json",
+  "sources.json",
+  "story.json",
+  "vault-claims.json",
+  "vault.json"
  ],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.44/",
- "version": "0.1.44"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.45/",
+ "version": "0.1.45"
 }

@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.33",
+"site": "0.22.34",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -79,10 +79,10 @@
 "zone": "research",
 "title": "Every claim",
 "path": "claims/index.html",
-"hash": "5040d3d35207",
-"v": 16,
+"hash": "fff2c2e96997",
+"v": 17,
 "first": "0.1.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/page-claims/index.html"
 },
@@ -127,10 +127,10 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "96f26ee7bab5",
-"v": 12,
+"hash": "d656e0b6dd1a",
+"v": 13,
 "first": "0.1.0",
-"changed": "0.22.30",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/page-method/index.html"
 },
@@ -139,10 +139,10 @@
 "zone": "for-you",
 "title": "Briefing: Board member or executive",
 "path": "briefings/board/index.html",
-"hash": "43407c0d37d5",
-"v": 20,
+"hash": "e758d11c7a47",
+"v": 21,
 "first": "0.1.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-board/index.html"
 },
@@ -811,10 +811,10 @@
 "zone": "research",
 "title": "Impact: offline vs compromised",
 "path": "impact/index.html",
-"hash": "f177ee3a9286",
-"v": 14,
+"hash": "62d042753a99",
+"v": 15,
 "first": "0.2.0",
-"changed": "0.22.30",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/page-impact/index.html"
 },
@@ -859,10 +859,10 @@
 "zone": "for-you",
 "title": "Briefing: CISO",
 "path": "briefings/ciso/index.html",
-"hash": "745249b7b5de",
-"v": 18,
+"hash": "2d2edeeab340",
+"v": 19,
 "first": "0.2.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-ciso/index.html"
 },
@@ -883,10 +883,10 @@
 "zone": "for-you",
 "title": "Briefing: CFO",
 "path": "briefings/cfo/index.html",
-"hash": "dfbd8b482121",
-"v": 20,
+"hash": "ed0fb9f1e510",
+"v": 21,
 "first": "0.2.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-cfo/index.html"
 },
@@ -919,10 +919,10 @@
 "zone": "for-you",
 "title": "Briefing: Media and communications team",
 "path": "briefings/comms/index.html",
-"hash": "d7850ef96434",
-"v": 15,
+"hash": "610ee64a2313",
+"v": 16,
 "first": "0.2.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-comms/index.html"
 },
@@ -977,12 +977,12 @@
 "fact-no-confirmed-compromise": {
 "kind": "fact",
 "zone": "research",
-"title": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through p",
+"title": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through p",
 "path": "facts/no-confirmed-compromise/index.html",
-"hash": "3ec79ad747d3",
-"v": 9,
+"hash": "e0f1f30d8151",
+"v": 10,
 "first": "0.2.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/fact-no-confirmed-compromise/index.html"
 },
@@ -1207,10 +1207,10 @@
 "zone": "for-you",
 "title": "Briefing: Curious reader",
 "path": "briefings/everyone/index.html",
-"hash": "70633ec179f2",
-"v": 18,
+"hash": "75c7188a8eb6",
+"v": 19,
 "first": "0.3.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-everyone/index.html"
 },
@@ -1231,10 +1231,10 @@
 "zone": "for-you",
 "title": "Briefing: Project or programme manager",
 "path": "briefings/pm/index.html",
-"hash": "10dcdf289912",
-"v": 14,
+"hash": "8d4fc886c8ba",
+"v": 15,
 "first": "0.3.0",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-pm/index.html"
 },
@@ -1243,10 +1243,10 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "864ecfb4878f",
-"v": 15,
+"hash": "1bece36d3f3d",
+"v": 16,
 "first": "0.3.1",
-"changed": "0.22.30",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/page-summary/index.html"
 },
@@ -1327,10 +1327,10 @@
 "zone": "for-you",
 "title": "Briefing: Data protection officer",
 "path": "briefings/dpo/index.html",
-"hash": "32d159c99aa9",
-"v": 12,
+"hash": "9486127ff05f",
+"v": 13,
 "first": "0.5.9",
-"changed": "0.22.29",
+"changed": "0.22.34",
 "date": "2026-10-26",
 "history": "versions/briefing-dpo/index.html"
 },
@@ -2390,6 +2390,17 @@
 "first": "0.15.19",
 "changed": "0.15.19",
 "date": "2026-10-24T16:05Z"
+},
+"src-aljarida-article-148264": {
+"kind": "source",
+"zone": "research",
+"title": "جريدة الجريدة الكويتية: ثغرات «PHP» تضع بيانات الإنترنت تحت رحمة القراصنة - جريدة الجريدة الكويتية",
+"path": "sources/aljarida-article-148264/index.html",
+"hash": "24e0ae98a1c4",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T17:09Z"
 },
 "src-americanbanker-news-banks-dodge-early-damage-from-php2s": {
 "kind": "source",
@@ -4030,6 +4041,17 @@
 "changed": "0.15.19",
 "date": "2026-10-23T23:25Z"
 },
+"src-europe-infos-actualites-11979-php2shell-decryptage-d": {
+"kind": "source",
+"zone": "research",
+"title": "europe-infos: PHP2Shell : décryptage d’une double faille critique dans le moteur PHP | Europe Infos",
+"path": "sources/europe-infos-actualites-11979-php2shell-decryptage-d/index.html",
+"hash": "7bf73efc29ad",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T17:09Z"
+},
 "src-expresscomputer-guest-blogs-understanding-php2shell-vuln": {
 "kind": "source",
 "zone": "research",
@@ -4183,6 +4205,17 @@
 "first": "0.10.3",
 "changed": "0.10.3",
 "date": "2026-10-23T01:20Z"
+},
+"src-fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit": {
+"kind": "source",
+"zone": "research",
+"title": "Fortune Indonesia: Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia",
+"path": "sources/fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit/index.html",
+"hash": "f64b5b091504",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T17:09Z"
 },
 "src-fortuneita-2026-10-22-php2shell-il-bug-che-poteva-m": {
 "kind": "source",
@@ -5261,6 +5294,17 @@
 "first": "0.4.1",
 "changed": "0.4.1",
 "date": "2026-10-22T11:29Z"
+},
+"src-learn-microsoft-nl-nl-answers-questions-6045412-web-app": {
+"kind": "source",
+"zone": "research",
+"title": "learn: Web App (Linux): PHP Patch php2shell — Critical Vulnerability in PHP Runtime - Microsoft Q&A",
+"path": "sources/learn-microsoft-nl-nl-answers-questions-6045412-web-app/index.html",
+"hash": "1fbb74ebe5a1",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T17:09Z"
 },
 "src-lebigdata-php2shell-des-millions-dattaques-frappen": {
 "kind": "source",
@@ -7154,6 +7198,17 @@
 "changed": "0.22.29",
 "date": "2026-10-23T16:04Z"
 },
+"src-solutions-numeriques-php2shell-derriere-lurgence-des-correcti": {
+"kind": "source",
+"zone": "research",
+"title": "Solutions Numériques: PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web",
+"path": "sources/solutions-numeriques-php2shell-derriere-lurgence-des-correcti/index.html",
+"hash": "3472e0b11799",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T17:09Z"
+},
 "src-spacemoney-tecnologia-php2shell-falha-critica-php": {
 "kind": "source",
 "zone": "research",
@@ -7517,6 +7572,17 @@
 "changed": "0.19.2",
 "date": "2026-10-25T09:35Z"
 },
+"src-telset-laptop-pc-dua-celah-kritis-php-bocor-seb": {
+"kind": "source",
+"zone": "research",
+"title": "Telset.id: Dua Kerentanan Kritis PHP Bocor Sebelum Patch Dirilis | Telset.id",
+"path": "sources/telset-laptop-pc-dua-celah-kritis-php-bocor-seb/index.html",
+"hash": "2f724fdbbe52",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T16:04Z"
+},
 "src-tenable-php2shell-faq": {
 "kind": "source",
 "zone": "research",
@@ -7527,6 +7593,28 @@
 "first": "0.4.1",
 "changed": "0.15.19",
 "date": "2026-10-24"
+},
+"src-tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere": {
+"kind": "source",
+"zone": "research",
+"title": "TGRT Haber: PHP2Shell alarmı: Şifre bile gerekmiyor! Milyonlarca liralık kayıp riski | TGRT Haber",
+"path": "sources/tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere/index.html",
+"hash": "7e136482a1de",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T16:04Z"
+},
+"src-thansettakij-economy-672045": {
+"kind": "source",
+"zone": "research",
+"title": "ฐานเศรษฐกิจ: “ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”",
+"path": "sources/thansettakij-economy-672045/index.html",
+"hash": "68f5a53f60c4",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T16:04Z"
 },
 "src-the-next-web-php2shell-no-confirmed-breaches": {
 "kind": "source",
@@ -7605,6 +7693,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24"
 },
+"src-thelec-news-articleview-html": {
+"kind": "source",
+"zone": "research",
+"title": "디일렉: 엔키화이트햇, 'PHP2Shell' 진단 스캐너 무상 공개 < IT‧게임 < 기사본문 - 디일렉(THE ELEC)",
+"path": "sources/thelec-news-articleview-html/index.html",
+"hash": "5fe73c3bdaf2",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-25T14:40Z"
+},
 "src-themandarin-322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner": {
 "kind": "source",
 "zone": "research",
@@ -7615,6 +7714,17 @@
 "first": "0.10.19",
 "changed": "0.10.19",
 "date": "2026-10-23T08:03Z"
+},
+"src-thenextweb-wikipedia-ref-9-dation-structural-failur": {
+"kind": "source",
+"zone": "research",
+"title": "The Next Web: PHP knew about one of the flaws in 2024 but could not agree a fix",
+"path": "sources/thenextweb-wikipedia-ref-9-dation-structural-failur/index.html",
+"hash": "c5214b313072",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-25T11:45Z"
 },
 "src-therecord-php-foundation-statement": {
 "kind": "source",
@@ -7660,6 +7770,39 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t": {
+"kind": "source",
+"zone": "research",
+"title": "Tia Sáng: Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa",
+"path": "sources/tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t/index.html",
+"hash": "8effdfb0ee6d",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T16:04Z"
+},
+"src-tirto-website-sedunia-geger-ditemukan-celah-ke": {
+"kind": "source",
+"zone": "research",
+"title": "Tirto.id: Web Sedunia Geger Ditemukan Celah Keamanan di PHP, Ada Bug Apa?",
+"path": "sources/tirto-website-sedunia-geger-ditemukan-celah-ke/index.html",
+"hash": "2a0d2184e271",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T16:04Z"
+},
+"src-topagrar-betriebsleitung-news-php-sicherheitsluck": {
+"kind": "source",
+"zone": "research",
+"title": "top agrar: PHP-Sicherheitslücke: Was Landwirte mit Hofwebseite jetzt wissen müssen | top agrar",
+"path": "sources/topagrar-betriebsleitung-news-php-sicherheitsluck/index.html",
+"hash": "9337c6e2764e",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T23:25Z"
+},
 "src-tpo-nl-digid-offline": {
 "kind": "source",
 "zone": "research",
@@ -7693,6 +7836,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-trendmicro-ja-jp-about-newsroom-press-releases-2026": {
+"kind": "source",
+"zone": "research",
+"title": "トレンドマイクロ: トレンドマイクロ、PHPの重大な脆弱性「PHP2Shell」への支援・対応策を発表 | トレンドマイクロ (JP)",
+"path": "sources/trendmicro-ja-jp-about-newsroom-press-releases-2026/index.html",
+"hash": "2a71e1960e8c",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-24T08:37Z"
+},
 "src-tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco": {
 "kind": "source",
 "zone": "research",
@@ -7704,6 +7858,39 @@
 "changed": "0.10.3",
 "date": "2026-10-22T18:16Z"
 },
+"src-turbolab-server-1224-php2shell-amazon-ha-rilevato": {
+"kind": "source",
+"zone": "research",
+"title": "TurboLab.it: PHP2Shell: Amazon ha rilevato tentativi di exploit 4 giorni prima della patch di PHP (aggiornato: 22 ottobre 2026, ore 20:50) |",
+"path": "sources/turbolab-server-1224-php2shell-amazon-ha-rilevato/index.html",
+"hash": "056917c69e55",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-23T16:04Z"
+},
+"src-turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9": {
+"kind": "source",
+"zone": "research",
+"title": "تركيا عاجل: ثغرة جديدة في PHP تتيح تنفيذ شيفرات عن بُعد.. لماذا لا يحتاج بعض المسؤولين إلى إجراء إضافي؟",
+"path": "sources/turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9/index.html",
+"hash": "cc1f1273c011",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-25T09:35Z"
+},
+"src-turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939": {
+"kind": "source",
+"zone": "research",
+"title": "turkiyedeisdunyasi: Türkiye, PHP2Shell tehdidinde Avrupa’yı geride bıraktı - Türkiye'de İş Dünyası",
+"path": "sources/turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939/index.html",
+"hash": "55d338dc7b84",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T12:14Z"
+},
 "src-tuttotech-news-2026-10-22-vulnerabilita-php-html": {
 "kind": "source",
 "zone": "research",
@@ -7714,6 +7901,17 @@
 "first": "0.10.3",
 "changed": "0.10.3",
 "date": "2026-10-22T18:16Z"
+},
+"src-tvtechnology-infrastructure-security-how-to-protect-y": {
+"kind": "source",
+"zone": "research",
+"title": "TV Tech: How to Protect Your Station From PHP2Shell | TV Tech",
+"path": "sources/tvtechnology-infrastructure-security-how-to-protect-y/index.html",
+"hash": "42846d06e4e3",
+"v": 1,
+"first": "0.22.34",
+"changed": "0.22.34",
+"date": "2026-10-26T17:09Z"
 },
 "src-uk-edinburgh-council": {
 "kind": "source",
@@ -8226,10 +8424,10 @@
 "zone": "stories",
 "title": "Someone stole the bitcoin. What that does, and does not, tell us about php2shell",
 "path": "articles/steal-my-bitcoin/index.html",
-"hash": "22f668715ea1",
-"v": 1,
+"hash": "e565a041d4b4",
+"v": 2,
 "first": "0.22.31",
-"changed": "0.22.31",
+"changed": "0.22.34",
 "date": "2026-10-26"
 },
 "story-has-anyone-been-hacked": {
@@ -8237,10 +8435,10 @@
 "zone": "stories",
 "title": "Has anyone actually been hacked through php2shell? What 525 sources say, five days on",
 "path": "articles/has-anyone-been-hacked/index.html",
-"hash": "8e59aa62e42b",
-"v": 1,
+"hash": "69a1b67597ba",
+"v": 2,
 "first": "0.22.30",
-"changed": "0.22.30",
+"changed": "0.22.34",
 "date": "2026-10-26"
 },
 "story-what-wikipedia-knows-about-being-right": {

@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.33",
+ "version": "0.22.34",
  "title": "Wikipedia: PHP2Shell",
  "licence": "CC BY-SA 4.0, by the contributors to the English Wikipedia; each revision id is the attribution",
  "latest_revid": 1381884195,
@@ -816,6 +816,20 @@
    "publisher": "The Next Web",
    "date": "21 October 2026",
    "where": "statement"
+  },
+  {
+   "id": "source:thenextweb-wikipedia-ref-9-dation-structural-failur",
+   "kind": "source",
+   "label": "The Next Web: PHP knew about one of the flaws in 2024 but could not agree a fix",
+   "href": "sources/thenextweb-wikipedia-ref-9-dation-structural-failur/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:thenextweb-wikipedia-ref-9-dation-structural-failur",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
   },
   {
    "id": "party:thenextweb",
@@ -8489,6 +8503,11 @@
    "from": "statement:c56cee404e",
    "verb": "cites",
    "to": "reference:10"
+  },
+  {
+   "from": "reference:10",
+   "verb": "captured_as",
+   "to": "source:thenextweb-wikipedia-ref-9-dation-structural-failur"
   },
   {
    "from": "reference:10",

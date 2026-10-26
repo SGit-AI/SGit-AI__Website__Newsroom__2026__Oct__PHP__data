@@ -2,21 +2,21 @@
  "agents": [
   {
    "cost": 22,
-   "did": "Wake 13:00 London (fired 13:04 UTC); team at 0d81af7da975. Took in the researcher's pass 20261026T1208Z (pack vault 7r83qic5 at f12c7b82a7e8; queue 450 rows, 67 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (2 priority 2, 16 priority 4; now 525 sources), 20 claims, no timeline rows. Evidence…",
+   "did": "Wake 18:00 London (fired 18:03 UTC); team at 8a7ceb2dc227. Took in the researcher's passes up to f212898aa0fe (pack vault 7r83qic5; queue 460 rows, 40 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 561 sources, 623 captures), 13 claims of mine, no timeline rows;…",
    "id": "curator-scheduled",
-   "last": "2026-10-26T13:43Z",
+   "last": "2026-10-26T18:53Z",
    "member": "newsroom-lead",
    "name": "curator@php.newsroom (scheduled)",
    "on": "editor",
    "stage": "curator",
    "state": "working",
-   "waiting": "The CLI team's answer on the slow first status and pull (curator-0001); the editor on oq9gflln. Its data-writes proposal goes to the journalist, correspondent and conductor for review before any trial."
+   "waiting": "Data writes on trial (v0.1.34, v0.1.44): the journalist says yes, the correspondent is to answer (curator-0002). The CLI team on the slow first status and pull (curator-0001)."
   },
   {
    "cost": 14,
-   "did": "Wake 14:30 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head aa0d4d7f77a5, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page…",
+   "did": "Wake 17:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head f212898aa0fe, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page…",
    "id": "researcher-scheduled",
-   "last": "2026-10-26T15:18Z",
+   "last": "2026-10-26T17:45Z",
    "member": "researcher",
    "name": "researcher@php.newsroom (scheduled)",
    "on": "",
@@ -62,14 +62,14 @@
   },
   {
    "cost": 91,
-   "did": "Wakes on schedule; both lanes empty; next 07:45.",
+   "did": "First run on v2, in an interactive session at the editor's request (the schedule is paused). Took in the six repositories: team and press with push, site, data, refs and updates read-only; v1 untouched. sgit-ai v0.25.0 (from 0.24.0): status 2.5 s then 1.6 s on the collaborators clone, 1.6 s then 1.3 s on the inbox;…",
    "id": "sherpa",
-   "last": "2026-10-24T20:47Z",
+   "last": "2026-10-26T16:54Z",
    "member": "sherpa",
    "name": "sherpa@php.newsroom",
    "on": "editor",
    "stage": "",
-   "state": "waiting",
+   "state": "working",
    "waiting": "The conductor's lane key (5iwos28w) and the subscriptions key (wgeiqabu) handed over sealed."
   },
   {
@@ -134,9 +134,9 @@
   },
   {
    "cost": 96,
-   "did": "12:52 London wake (sgit 0.25.0; the desk's pack copy hsmfer5w is at 94352a55fbaa, BEHIND the curator's vault at a7ab84771dfc, so this wake read the loose evidence clone, pulled to a7ab84771dfc): release-time re-graded A5 holds on the release manager's timeline; no-confirmed-compromise holds A4 as of 09:40 UTC on 26…",
+   "did": "16:52 London wake (sgit 0.25.0; read the loose evidence clone, pulled to 22a0c2920b88; the pack copy hsmfer5w stays at 94352a55fbaa): no-confirmed-compromise holds A4 as of 12:14 UTC on 26 October, no victim named in 20 new captures; S-128 added to the 70% lineage; fc.py check 0 failures; drift 6, explained; KEV…",
    "id": "factcheck",
-   "last": "2026-10-26T13:30Z",
+   "last": "2026-10-26T17:20Z",
    "member": "verifier",
    "name": "factcheck@php.newsroom",
    "on": "",
@@ -218,15 +218,15 @@
   },
   {
    "cost": 2,
-   "did": "The editor's decision recorded (records/briefs/2026-10-26__decision__the-curator-writes-data.md): the curator may write the data files it works on, after a documented proposal reviewed and agreed by the journalist, the correspondent and the conductor, then a trial; the same path for any agent taking on a new write.…",
+   "did": "Light check 18:15 London, team at 2207a42eb67f. schedule.py survived edition v0.22.33; the next import may delete it, so it is watched until dev patches sync_v1.py (correspondent-0003). Took the oq9gflln deletion from the curator at the editor's word. Checked team, data, press and site: nothing reads oq9gflln live.…",
    "id": "conductor",
-   "last": "2026-10-26T14:33Z",
+   "last": "2026-10-26T18:17Z",
    "member": "conductor",
    "name": "conductor@php.newsroom",
    "on": "editor",
    "stage": "",
    "state": "working",
-   "waiting": "ROUND_TOKEN; wiring security, then the ontologist, librarian, desk and Sherpa."
+   "waiting": "Security's review of press releases by agents other than dev; oq9gflln's deletion once pulse repoints (conductor-0003); dev's patch to sync_v1.py (correspondent-0003); wiring the ontologist, librarian, desk and Sherpa's schedules."
   },
   {
    "cost": 11,
@@ -254,9 +254,9 @@
   },
   {
    "cost": 114,
-   "did": "Scheduled wake 14:25 London (fired 14:26 UTC), in this session (Opus); team dev at af89cbba07e1. Reviewed the journalist's 13:40 wake, data v0.1.30 (vault 22a0c2920b88, 525 sources, latest capture 12:14 UTC 26 Oct; 20 verdicts: 3 used, 5 agrees, 5 noted, 7 held back; offline rows Netherlands (AG Connect, full list as…",
+   "did": "Wake 16:55 London (ran 17:10 UTC), sgit 0.25.0. Team dev at 811a8e2c. Reviewed the journalist's only release since my last run, data v0.1.35 (vault 2fc7e432584b, 543 sources, latest capture 14:42 UTC), against the captures: Square Enix (TechGaming.it quote exact; cause not stated; Bitpage says 'kein Angriff'), Belgium…",
    "id": "correspondent-scheduled",
-   "last": "2026-10-26T14:43Z",
+   "last": "2026-10-26T17:20Z",
    "member": "correspondent",
    "name": "correspondent@php.newsroom (scheduled)",
    "on": "editor",
@@ -266,9 +266,9 @@
   },
   {
    "cost": 4,
-   "did": "13:40 wake (fired 13:45 UTC) into this session; dev at 86ba128d2aed. The evidence vault had moved to 22a0c2920b88 (525 sources): the curator's batch 16, pushed 13:43 UTC, two minutes before this wake (its run record 20261026T1304Z was already in team). The curator's wakes still do not write the data files, so I ran…",
+   "did": "Nothing new: evidence vault at 2fc7e432584b, the head already in the data repository (files/vault.json, the curator's v0.1.34 and my v0.1.35). Fired by the 18:40 London (18:40 UTC) task into this session; dev at 37fdaafdbb6f. The curator's next batch had not been pushed (its record of 18:04 UTC is about the old vault…",
    "id": "journalist-scheduled",
-   "last": "2026-10-26T13:58Z",
+   "last": "2026-10-26T18:42Z",
    "member": "journalist",
    "name": "journalist@php.newsroom (scheduled)",
    "on": "",
@@ -277,7 +277,7 @@
    "waiting": "Its first wake at 08:40."
   }
  ],
- "as_of": "2026-10-26T15:25Z",
+ "as_of": "2026-10-26T19:25Z",
  "board": [
   {
    "id": "009",
@@ -494,6 +494,12 @@
    "owner": "editor",
    "status": "open",
    "title": "The split, for every agent: four decisions before the schedule resumes (the go for step A: records to team and data to data, with export_v1.py as the bridge; or resume against v1 alone; the Pages source of the six; their rulesets), then each agent adds the 'repositories' field to its card at its next wake"
+  },
+  {
+   "id": "conductor-0003",
+   "owner": "editor",
+   "status": "waiting",
+   "title": "Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site"
   }
  ],
  "branches": [
@@ -595,21 +601,19 @@
   ]
  ],
  "decisions": [
-  "Set ROUND_TOKEN (the secret dev's quarter-hour round needs in the press's workflow): until then nothing released today reaches the pages.",
-  "Security: wire it in; its queue now includes the injection allowlist dev added at 11:10 (four entries for the editor's quoted words in the conductor's brief), steps A and B, the round workflow.",
-  "Whether wakes write the data files (the curator and the journalist both ask); the oq9gflln deletion (the curator).",
-  "dev's daily wake starts a fresh session each time; if you want it in its own session like the others, it is created from dev's session."
+  "Delete oq9gflln once pulse repoints files/pulse.json (board conductor-0003).",
+  "Security's review of press releases by agents other than dev (v1.0.29 onwards)."
  ],
  "freshness": [
   [
    "Data API",
-   "2026-10-26T14:34Z",
-   "latest v0.1.32 (researcher)"
+   "2026-10-26T18:52Z",
+   "latest v0.1.44 (curator, vault 1dceaa1dfa7f, 561 sources)"
   ],
   [
    "Pages",
-   "2026-10-26T11:39Z",
-   "edition v0.22.28, pinned to data 0.1.26"
+   "2026-10-26T17:24Z",
+   "edition v0.22.33, data 0.1.42"
   ]
  ],
  "pipeline": [
@@ -1319,12 +1323,60 @@
    "summary": "16:52 London wake (sgit 0.25.0; read the loose evidence clone, pulled to 22a0c2920b88; the pack copy hsmfer5w stays at 94352a55fbaa): no-confirmed-compromise holds A4 as of 12:14 UTC on 26 October, no victim named in 20 new captures; S-128 added to the 70% lineage; fc.py check 0 failures; drift 6,…"
   },
   {
+   "agent": "researcher",
+   "finished": "2026-10-26T17:45:02Z",
+   "outcome": "ok",
+   "run": "20261026T1702Z-researcher",
+   "started": "2026-10-26T17:02:27Z",
+   "summary": "Wake 17:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head f212898aa0fe, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T17:20:00Z",
+   "outcome": "ok",
+   "run": "20261026T1710Z-correspondent",
+   "started": "2026-10-26T17:10:00Z",
+   "summary": "Wake 16:55 London (ran 17:10 UTC), sgit 0.25.0. Team dev at 811a8e2c. Reviewed the journalist's only release since my last run, data v0.1.35 (vault 2fc7e432584b, 543 sources, latest capture 14:42 UTC), against the captures: Square Enix (TechGaming.it quote exact; cause not stated; Bitpage says 'kei…"
+  },
+  {
    "agent": "conductor",
    "finished": "2026-10-26T17:17:36Z",
    "outcome": "ok",
    "run": "20261026T1715Z-conductor",
    "started": "2026-10-26T17:15:44Z",
    "summary": "Light check 17:15 London, team at 811a8e2cf468. Corrected: edition v0.22.32 (811a8e2c, 17:07 UTC) deleted records/tools/schedule.py again, as v0.22.28 did at 11:38; I restored it from 811a8e2c~1. Root cause found in team's tools/sync_v1.py do_import: a file written in team that v1 lacks is recorded…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-26T18:53:11Z",
+   "outcome": "ok",
+   "run": "20261026T1803Z-curator",
+   "started": "2026-10-26T18:03:00Z",
+   "summary": "Wake 18:00 London (fired 18:03 UTC); team at 8a7ceb2dc227. Took in the researcher's passes up to f212898aa0fe (pack vault 7r83qic5; queue 460 rows, 40 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 561 sources, 623 captures), 13 claims of mine,…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T18:17:01Z",
+   "outcome": "ok",
+   "run": "20261026T1815Z-conductor",
+   "started": "2026-10-26T18:15:56Z",
+   "summary": "Light check 18:15 London, team at 2207a42eb67f. schedule.py survived edition v0.22.33; the next import may delete it, so it is watched until dev patches sync_v1.py (correspondent-0003). Took the oq9gflln deletion from the curator at the editor's word. Checked team, data, press and site: nothing rea…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T18:42:57Z",
+   "outcome": "idle",
+   "run": "20261026T1841Z-journalist",
+   "started": "2026-10-26T18:41:27Z",
+   "summary": "Nothing new: evidence vault at 2fc7e432584b, the head already in the data repository (files/vault.json, the curator's v0.1.34 and my v0.1.35). Fired by the 18:40 London (18:40 UTC) task into this session; dev at 37fdaafdbb6f. The curator's next batch had not been pushed (its record of 18:04 UTC is…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T19:16:40Z",
+   "outcome": "ok",
+   "run": "20261026T1915Z-conductor",
+   "started": "2026-10-26T19:15:33Z",
+   "summary": "Full pass 19:15 London, team at 19262d332523. Reviewed the six since 18:17: the curator's second data trial v0.1.44 (vault 1dceaa1dfa7f): only sources, vault and vault-claims; 543 to 561 sources, 334 to 347 claims, none removed. Sources rose without a drop from v0.1.33 to v0.1.44. dev's 19:09 wake…"
   }
  ],
  "schedules": [
@@ -1501,5 +1553,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.33"
+ "version": "0.22.34"
 }

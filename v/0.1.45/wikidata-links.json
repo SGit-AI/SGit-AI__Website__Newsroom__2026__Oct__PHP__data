@@ -1,0 +1,1804 @@
+{
+ "about": "Look every party of data/entities.json up on Wikidata and keep the candidates, so a party can carry its Wikidata item.",
+ "kept_by": "ontologist",
+ "parties": {
+  "php-group": {
+   "query": "The PHP Group",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q99273543",
+     "label": "PHP Group",
+     "description": "the group that maintains the PHP programming language"
+    }
+   ],
+   "proposed": "Q99273543",
+   "searched": "2026-10-25T11:57Z",
+   "confirmed": true,
+   "item": "Q99273543",
+   "confirmed_on": "2026-10-25"
+  },
+  "php-security-team": {
+   "query": "The PHP security team",
+   "kind": "group",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:28Z",
+   "confirmed": null,
+   "item": null
+  },
+  "php-src": {
+   "query": "php/php-src",
+   "kind": "project",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:28Z",
+   "confirmed": null,
+   "item": null
+  },
+  "adoy": {
+   "query": "adoy",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q124300832",
+     "label": "Adoy",
+     "description": null
+    },
+    {
+     "id": "Q96216968",
+     "label": "Adoy",
+     "description": "South Korean band"
+    },
+    {
+     "id": "Q100884589",
+     "label": "Adoyah Miller",
+     "description": "college basketball player (2003–2007) Boston College; Loyola Marymount"
+    },
+    {
+     "id": "Q18764610",
+     "label": "Adoyeva",
+     "description": "human settlement in Oktyabrsky District, Kursk Oblast, Russia"
+    },
+    {
+     "id": "Q4057926",
+     "label": "Adoyevshchina",
+     "description": "human settlement in Radishchevsky District, Ulyanovsk Oblast, Russia"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:28Z",
+   "confirmed": null,
+   "item": null
+  },
+  "php-foundation": {
+   "query": "The PHP Foundation",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:29Z",
+   "confirmed": null,
+   "item": null
+  },
+  "zelenka": {
+   "query": "Jakub Zelenka",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q107676528",
+     "label": "Jakub Zelenka",
+     "description": "Czech journalist"
+    }
+   ],
+   "proposed": "Q107676528",
+   "searched": "2026-10-25T11:58Z",
+   "confirmed": false,
+   "item": null,
+   "note": "Q107676528 is a Czech journalist; this Jakub Zelenka is the PHP release manager"
+  },
+  "daubois": {
+   "query": "Alexandre Daubois",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:29Z",
+   "confirmed": null,
+   "item": null
+  },
+  "leblanc": {
+   "query": "Arnaud Le Blanc",
+   "kind": "group",
+   "candidates": [
+    {
+     "id": "Q99461341",
+     "label": "Arnaud Le Blanc",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:30Z",
+   "confirmed": null,
+   "item": null
+  },
+  "calif": {
+   "query": "Calif",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q99",
+     "label": "California",
+     "description": "state of the United States of America"
+    },
+    {
+     "id": "Q161562",
+     "label": "California Institute of Technology",
+     "description": "private research university located in Pasadena, California, USA"
+    },
+    {
+     "id": "Q1026925",
+     "label": "California State University, Fullerton",
+     "description": "public university in Fullerton, California, United States, part of the California State University system"
+    },
+    {
+     "id": "Q7476269",
+     "label": "Western Journal of Medicine",
+     "description": "medical journal"
+    },
+    {
+     "id": "Q16047894",
+     "label": "California",
+     "description": "genus of plants"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:30Z",
+   "confirmed": null,
+   "item": null
+  },
+  "austin": {
+   "query": "Ryan Austin",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q61659693",
+     "label": "Ryan E Austin",
+     "description": "researcher ORCID ID = 0000-0003-1503-3967"
+    },
+    {
+     "id": "Q10479830",
+     "label": "Ryan Austin",
+     "description": "English footballer (born 1984)"
+    },
+    {
+     "id": "Q7383849",
+     "label": "Ryan Austin",
+     "description": "West Indian cricketer"
+    },
+    {
+     "id": "Q59673362",
+     "label": "Ryan Austin",
+     "description": "researcher ORCID ID = 0000-0002-5302-5266"
+    },
+    {
+     "id": "Q111065213",
+     "label": "Ryan A Luce",
+     "description": "Ph.D., Chemistry, University of Washington, 1999"
+    }
+   ],
+   "proposed": "Q59673362",
+   "searched": "2026-10-25T12:00Z",
+   "confirmed": false,
+   "item": null,
+   "note": "an ORCID stub, not shown to be the same Ryan Austin"
+  },
+  "openai": {
+   "query": "OpenAI",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q21708200",
+     "label": "OpenAI",
+     "description": "American artificial intelligence research organization"
+    },
+    {
+     "id": "Q96237091",
+     "label": "OpenAI API",
+     "description": "various AI APIs, products of OpenAI"
+    },
+    {
+     "id": "Q101366575",
+     "label": "OpenAir Sessions",
+     "description": "podcast from CPR News"
+    },
+    {
+     "id": "Q25106053",
+     "label": "OpenAIRE",
+     "description": "network of Open Access repositories, archives and journals that support Open Access policies"
+    },
+    {
+     "id": "Q124544998",
+     "label": "Sora",
+     "description": "text-to-video model developed by OpenAI"
+    }
+   ],
+   "proposed": "Q21708200",
+   "searched": "2026-10-25T12:00Z",
+   "confirmed": true,
+   "item": "Q21708200",
+   "confirmed_on": "2026-10-25"
+  },
+  "php2shell-site": {
+   "query": "php2shell.com",
+   "kind": "project",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:30Z",
+   "confirmed": null,
+   "item": null
+  },
+  "wiz": {
+   "query": "Wiz Research",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:30Z",
+   "confirmed": null,
+   "item": null
+  },
+  "quarkslab": {
+   "query": "Quarkslab",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q109042366",
+     "label": "Quarkslab",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:31Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cloudflare": {
+   "query": "Cloudflare",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q4778915",
+     "label": "Cloudflare",
+     "description": "American internet infrastructure and website security company"
+    },
+    {
+     "id": "Q107387111",
+     "label": "cloudflare",
+     "description": "Python library"
+    },
+    {
+     "id": "Q131417404",
+     "label": "Cloudflare Workers",
+     "description": "JavaScript edge runtime environment"
+    },
+    {
+     "id": "Q113653785",
+     "label": "The Cloudflare Blog",
+     "description": "blog"
+    },
+    {
+     "id": "Q113446633",
+     "label": "Cloudflare Limited",
+     "description": "Cloudflare's subsidiary in the United Kingdom"
+    }
+   ],
+   "proposed": "Q4778915",
+   "searched": "2026-10-25T12:02Z",
+   "confirmed": true,
+   "item": "Q4778915",
+   "confirmed_on": "2026-10-25"
+  },
+  "prince": {
+   "query": "Matthew Prince",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q51665553",
+     "label": "Matthew Prince",
+     "description": "American businessman and entrepreneur"
+    },
+    {
+     "id": "Q6789202",
+     "label": "Matt Prince",
+     "description": "American professional wrestler"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:31Z",
+   "confirmed": null,
+   "item": null
+  },
+  "amazon": {
+   "query": "Amazon",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q3884",
+     "label": "Amazon",
+     "description": "American multinational technology company"
+    },
+    {
+     "id": "Q40040",
+     "label": "Amazonas",
+     "description": "state in the North Region of Brazil"
+    },
+    {
+     "id": "Q456065",
+     "label": "Amazon",
+     "description": "1984 video game"
+    },
+    {
+     "id": "Q136469",
+     "label": "Amazon Kindle",
+     "description": "e-book reading device"
+    },
+    {
+     "id": "Q201162",
+     "label": "Amazonas Department",
+     "description": "department of Peru"
+    }
+   ],
+   "proposed": "Q3884",
+   "searched": "2026-10-25T12:03Z",
+   "confirmed": true,
+   "item": "Q3884",
+   "confirmed_on": "2026-10-25"
+  },
+  "chainguard": {
+   "query": "Chainguard",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q1467873",
+     "label": "gear case",
+     "description": "bicycle chain or belt enclosure to protect the rider from getting dirty or getting clothes stuck in the driveline"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:31Z",
+   "confirmed": null,
+   "item": null
+  },
+  "chainguard-lorenc": {
+   "query": "Dan Lorenc",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:32Z",
+   "confirmed": null,
+   "item": null
+  },
+  "watchtowr": {
+   "query": "watchTowr",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:32Z",
+   "confirmed": null,
+   "item": null
+  },
+  "imperva": {
+   "query": "Imperva Threat Research",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:32Z",
+   "confirmed": null,
+   "item": null
+  },
+  "fastly": {
+   "query": "Fastly",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q34045622",
+     "label": "Fastly",
+     "description": "web infrastructure company"
+    },
+    {
+     "id": "Q17562683",
+     "label": "quickly",
+     "description": "in a quick manner, with speed"
+    },
+    {
+     "id": "Q114201158",
+     "label": "Fastly PECVD-Grown vertical carbon nanosheets for a composite SiOx-C anode material",
+     "description": "scientific article published in 2022"
+    }
+   ],
+   "proposed": "Q34045622",
+   "searched": "2026-10-25T12:04Z",
+   "confirmed": true,
+   "item": "Q34045622",
+   "confirmed_on": "2026-10-25"
+  },
+  "akamai": {
+   "query": "Akamai",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q415598",
+     "label": "Akamai Technologies",
+     "description": "American content delivery network, cybersecurity, and cloud service company"
+    },
+    {
+     "id": "Q25054211",
+     "label": "Akamai Techs., Inc. v. Limelight Networks, Inc.",
+     "description": "2015 decision of the United States Court of Appeals for the Federal Circuit"
+    },
+    {
+     "id": "Q127386658",
+     "label": "Akamai Edge DNS",
+     "description": "DNS service"
+    },
+    {
+     "id": "Q158515",
+     "label": "Sambucus ebulus",
+     "description": "species of plant, danewort"
+    },
+    {
+     "id": "Q72202264",
+     "label": "AKAMAI Project: teleradiology in the Pacific",
+     "description": "scientific article published on 01 February 1995"
+    }
+   ],
+   "proposed": "Q415598",
+   "searched": "2026-10-25T12:04Z",
+   "confirmed": true,
+   "item": "Q415598",
+   "confirmed_on": "2026-10-25"
+  },
+  "huntress": {
+   "query": "Huntress",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q1714828",
+     "label": "hunter",
+     "description": "person who hunts"
+    },
+    {
+     "id": "Q114471",
+     "label": "Huntress",
+     "description": "DC Comics character"
+    },
+    {
+     "id": "Q397953",
+     "label": "Helena Wayne",
+     "description": "DC Comics superhero"
+    },
+    {
+     "id": "Q537770",
+     "label": "7225 Huntress",
+     "description": "asteroid"
+    },
+    {
+     "id": "Q73544",
+     "label": "Mockingbird",
+     "description": "fictional character in Marvel Comics"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:32Z",
+   "confirmed": null,
+   "item": null
+  },
+  "fortinet": {
+   "query": "Fortinet",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q2749364",
+     "label": "Fortinet",
+     "description": "network security corporation"
+    },
+    {
+     "id": "Q21512825",
+     "label": "Fortinet-Best Western",
+     "description": "IMOCA 60 (2015 VPLP Verdier)"
+    },
+    {
+     "id": "Q3089364",
+     "label": "Fortinet Championship",
+     "description": "a professional golf tournament, part of the PGA Tour"
+    },
+    {
+     "id": "Q11200421",
+     "label": "FortiGate",
+     "description": "enterprise firewalls"
+    },
+    {
+     "id": "Q89913092",
+     "label": "Fortinet Founders Chair of the Department of Electrical Engineering",
+     "description": "endowed academic position at Stanford University"
+    }
+   ],
+   "proposed": "Q2749364",
+   "searched": "2026-10-25T12:04Z",
+   "confirmed": true,
+   "item": "Q2749364",
+   "confirmed_on": "2026-10-25"
+  },
+  "weirdgloop": {
+   "query": "Weird Gloop",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q124292846",
+     "label": "Weird Gloop Limited",
+     "description": "UK company"
+    }
+   ],
+   "proposed": "Q124292846",
+   "searched": "2026-10-25T12:05Z",
+   "confirmed": true,
+   "item": "Q124292846",
+   "confirmed_on": "2026-10-25"
+  },
+  "wikimedia": {
+   "query": "The Wikimedia Foundation",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q54327997",
+     "label": "Language committee",
+     "description": "Wikimedia Foundation's Committee responsible for Wiki's creation and closure"
+    },
+    {
+     "id": "Q99087996",
+     "label": "The Wikimedia Foundation broke Russian Wikinews",
+     "description": "Wikinews article"
+    },
+    {
+     "id": "Q111695220",
+     "label": "project:mission",
+     "description": "Wikimedia internal item"
+    },
+    {
+     "id": "Q99196485",
+     "label": "The Wikimedia Foundation broke Russian Wikinews (Rusian Wikinews English story)",
+     "description": null
+    },
+    {
+     "id": "Q141037342",
+     "label": "The Wikimedia Foundation's Union Busting Is Textbook",
+     "description": "August 2026 report on Wikimedia Foundation union busting"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:33Z",
+   "confirmed": null,
+   "item": null
+  },
+  "edinburgh-council": {
+   "query": "The City of Edinburgh Council",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q100143287",
+     "label": "The City of Edinburgh Council and West Lothian Council Boundaries (West Farm, Broxburn) Amendment Order 2002",
+     "description": "Scotland Statutory Instrument 2002 No. 157"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:33Z",
+   "confirmed": null,
+   "item": null
+  },
+  "oxford-council": {
+   "query": "Oxford City Council",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q7115277",
+     "label": "Oxford City Council",
+     "description": "local government for the city of Oxford in England"
+    },
+    {
+     "id": "Q7115568",
+     "label": "Oxford City Council election",
+     "description": "class of election in the United Kingdom"
+    },
+    {
+     "id": "Q19091600",
+     "label": "Oxford City Council Alcohol Consumption in Public Places Order 2006",
+     "description": null
+    },
+    {
+     "id": "Q19091607",
+     "label": "Oxford City Council Byelaws for Good Rule and Government",
+     "description": null
+    },
+    {
+     "id": "Q19091611",
+     "label": "Oxford City Council Byelaws with respect to Hackney Carriages",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:33Z",
+   "confirmed": null,
+   "item": null
+  },
+  "vulncheck": {
+   "query": "VulnCheck",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q139850069",
+     "label": "VulnCheck",
+     "description": "American cybersecurity company specializing in exploit intelligence and vulnerability intelligence"
+    }
+   ],
+   "proposed": "Q139850069",
+   "searched": "2026-10-25T12:05Z",
+   "confirmed": true,
+   "item": "Q139850069",
+   "confirmed_on": "2026-10-25"
+  },
+  "censys": {
+   "query": "Censys",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q110769851",
+     "label": "Censys",
+     "description": "cybersecurity company and search engine"
+    }
+   ],
+   "proposed": "Q110769851",
+   "searched": "2026-10-25T12:05Z",
+   "confirmed": true,
+   "item": "Q110769851",
+   "confirmed_on": "2026-10-25"
+  },
+  "ellio": {
+   "query": "ELLIO",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q21449521",
+     "label": "Elliott",
+     "description": "family name"
+    },
+    {
+     "id": "Q116167432",
+     "label": "Elliot Hughes",
+     "description": "American physicist"
+    },
+    {
+     "id": "Q19826493",
+     "label": "Elliot",
+     "description": "male given name"
+    },
+    {
+     "id": "Q29179325",
+     "label": "Elliot",
+     "description": "family name"
+    },
+    {
+     "id": "Q314805",
+     "label": "Elliott Gould",
+     "description": "American actor (born 1938)"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:34Z",
+   "confirmed": null,
+   "item": null
+  },
+  "unit42": {
+   "query": "Palo Alto Networks Unit 42",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:34Z",
+   "confirmed": null,
+   "item": null
+  },
+  "detectors": {
+   "query": "Community detection authors",
+   "kind": "group",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:34Z",
+   "confirmed": null,
+   "item": null
+  },
+  "darkfibr": {
+   "query": "darkfibr",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:34Z",
+   "confirmed": null,
+   "item": null
+  },
+  "rjmendez": {
+   "query": "rjmendez",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:35Z",
+   "confirmed": null,
+   "item": null
+  },
+  "lexsah": {
+   "query": "Lexsah",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:35Z",
+   "confirmed": null,
+   "item": null
+  },
+  "blevene": {
+   "query": "Blevene",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:36Z",
+   "confirmed": null,
+   "item": null
+  },
+  "silas-cutler": {
+   "query": "Silas Cutler",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:36Z",
+   "confirmed": null,
+   "item": null
+  },
+  "feross": {
+   "query": "Feross Aboukhadijeh",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q3820674",
+     "label": "YouTube Instant",
+     "description": "real-time search engine"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:36Z",
+   "confirmed": null,
+   "item": null
+  },
+  "lopez-kurtz": {
+   "query": "David Lopez-Kurtz",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:37Z",
+   "confirmed": null,
+   "item": null
+  },
+  "woodward": {
+   "query": "Alan Woodward",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q4708103",
+     "label": "Alan Woodward",
+     "description": "English footballer (1946–2015)"
+    },
+    {
+     "id": "Q28935582",
+     "label": "Alan Woodward",
+     "description": "English footballer, born 1947"
+    },
+    {
+     "id": "Q43170925",
+     "label": "Alan Woodward",
+     "description": "British computer scientist"
+    }
+   ],
+   "proposed": "Q43170925",
+   "searched": "2026-10-25T12:09Z",
+   "confirmed": true,
+   "item": "Q43170925",
+   "confirmed_on": "2026-10-25"
+  },
+  "rainbolt": {
+   "query": "Aaron Rainbolt",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:37Z",
+   "confirmed": null,
+   "item": null
+  },
+  "perez": {
+   "query": "Yves-Alexis Perez",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:37Z",
+   "confirmed": null,
+   "item": null
+  },
+  "fischer": {
+   "query": "Christian Fischer",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q1079509",
+     "label": "Christian Fischer",
+     "description": "Austrian politician (1879-1934)"
+    },
+    {
+     "id": "Q111447292",
+     "label": "Christian Fischer",
+     "description": "Court Attorney in Dresden (1618–1651)"
+    },
+    {
+     "id": "Q1079505",
+     "label": "Christian Fischer",
+     "description": "German politician and merchant (1823-1871)"
+    },
+    {
+     "id": "Q102393424",
+     "label": "Christian Fischer",
+     "description": "Ph.D. Institut Eurecom 2002"
+    },
+    {
+     "id": "Q117557636",
+     "label": "Christian Fischer",
+     "description": "Austrian politician (* 1977)"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:37Z",
+   "confirmed": null,
+   "item": null
+  },
+  "oss-security-replies": {
+   "query": "Replies on oss-security: Aaron Rainbolt",
+   "kind": "group",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:10Z",
+   "confirmed": null,
+   "item": null
+  },
+  "coopersmith": {
+   "query": "Alan Coopersmith",
+   "kind": "person",
+   "candidates": [
+    {
+     "id": "Q115606177",
+     "label": "Alan Coopersmith",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:10Z",
+   "confirmed": null,
+   "item": null
+  },
+  "openai-community-sps": {
+   "query": "'sps'",
+   "kind": "person",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:10Z",
+   "confirmed": null,
+   "item": null
+  },
+  "agencies": {
+   "query": "National agencies",
+   "kind": "group",
+   "candidates": [
+    {
+     "id": "Q6979530",
+     "label": "National agencies responsible for GDP measurement",
+     "description": null
+    },
+    {
+     "id": "Q69913911",
+     "label": "National agencies: U.S. Selected federal agencies, by department",
+     "description": "scientific article published on 01 August 1970"
+    },
+    {
+     "id": "Q69913914",
+     "label": "National agencies: Canada",
+     "description": "scientific article published on 01 August 1970"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:10Z",
+   "confirmed": null,
+   "item": null
+  },
+  "nsa": {
+   "query": "NSA Cybersecurity",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:11Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cisa": {
+   "query": "CISA",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q739586",
+     "label": "International Confederation of Societies of Authors and Composers",
+     "description": "international collective rights platform"
+    },
+    {
+     "id": "Q116258006",
+     "label": "Cisa",
+     "description": "family name"
+    },
+    {
+     "id": "Q1046785",
+     "label": "Cisai-Saint-Aubin",
+     "description": "commune in Orne, France"
+    },
+    {
+     "id": "Q55809985",
+     "label": "Císař",
+     "description": "family name"
+    },
+    {
+     "id": "Q5205058",
+     "label": "Cybersecurity and Infrastructure Security Agency",
+     "description": "agency of the United States Department of Homeland Security"
+    }
+   ],
+   "proposed": "Q5205058",
+   "searched": "2026-10-25T12:11Z",
+   "confirmed": true,
+   "item": "Q5205058",
+   "confirmed_on": "2026-10-25"
+  },
+  "ncsc-uk": {
+   "query": "UK NCSC",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:12Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cert-eu": {
+   "query": "CERT-EU",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q28920096",
+     "label": "Computer Emergency Response Team of the European Union",
+     "description": "computer emergency response team of the European Union"
+    }
+   ],
+   "proposed": "Q28920096",
+   "searched": "2026-10-25T12:12Z",
+   "confirmed": true,
+   "item": "Q28920096",
+   "confirmed_on": "2026-10-25"
+  },
+  "enisa-csirts": {
+   "query": "ENISA CSIRTs Network",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:12Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cert-fr": {
+   "query": "CERT-FR",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q2945099",
+     "label": "CERT-FR",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:13Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cccs": {
+   "query": "Canadian Centre for Cyber Security",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q5029934",
+     "label": "Canadian Centre for Cyber Security",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:13Z",
+   "confirmed": null,
+   "item": null
+  },
+  "acsc": {
+   "query": "ASD's ACSC",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:13Z",
+   "confirmed": null,
+   "item": null
+  },
+  "ncsc-nz": {
+   "query": "NCSC New Zealand",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:13Z",
+   "confirmed": null,
+   "item": null
+  },
+  "rijksoverheid": {
+   "query": "The Dutch government",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:13Z",
+   "confirmed": null,
+   "item": null
+  },
+  "ncsc-nl": {
+   "query": "NCSC-NL",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q13878561",
+     "label": "National Cyber Security Center",
+     "description": "Dutch governmental organisation"
+    }
+   ],
+   "proposed": "Q13878561",
+   "searched": "2026-10-25T12:14Z",
+   "confirmed": true,
+   "item": "Q13878561",
+   "confirmed_on": "2026-10-25"
+  },
+  "acn": {
+   "query": "ACN",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q1935832",
+     "label": "neurofibromatosis type II",
+     "description": "type of neurofibromatosis disease"
+    },
+    {
+     "id": "Q3600584",
+     "label": "National Collective Archive of Periodicals",
+     "description": "website of the Italian catalogue of periodicals"
+    },
+    {
+     "id": "Q408047",
+     "label": "acetonitrile",
+     "description": "chemical compound"
+    },
+    {
+     "id": "Q14889782",
+     "label": "NF2",
+     "description": "protein-coding gene in the species Homo sapiens"
+    },
+    {
+     "id": "Q341999",
+     "label": "hidradenitis suppurativa",
+     "description": "human disease"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:14Z",
+   "confirmed": null,
+   "item": null
+  },
+  "bacs": {
+   "query": "Swiss BACS",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:14Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cert-lv": {
+   "query": "CERT.LV",
+   "kind": "agency",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:15Z",
+   "confirmed": null,
+   "item": null
+  },
+  "jpcert": {
+   "query": "JPCERT/CC",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q11226056",
+     "label": "Japan Computer Emergency Response Team Coordination Center",
+     "description": "An association that collects cybersecurity information, provides incident response support, and disseminates related information."
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:15Z",
+   "confirmed": null,
+   "item": null
+  },
+  "ccn-cert": {
+   "query": "CCN-CERT",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q59771478",
+     "label": "Centro Criptológico Nacional Computer Emergency Response Team",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:15Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cncs": {
+   "query": "CNCS",
+   "kind": "agency",
+   "candidates": [
+    {
+     "id": "Q511243",
+     "label": "AmeriCorps",
+     "description": "program of the U.S. federal government engaging adults in intensive community service"
+    },
+    {
+     "id": "Q4234215",
+     "label": "AmeriCorps",
+     "description": "independent agency of the United States federal government"
+    },
+    {
+     "id": "Q106411651",
+     "label": "Center for Neuroscience and Cognitive Systems",
+     "description": "facility in Rovereto, Italy"
+    },
+    {
+     "id": "Q130555419",
+     "label": "CNCsystemy",
+     "description": "Czech company"
+    },
+    {
+     "id": "Q6979222",
+     "label": "National University Research Council",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": null,
+   "item": null
+  },
+  "valtori": {
+   "query": "Valtori and NCSC-FI",
+   "kind": "organisation",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cve-program": {
+   "query": "The CVE Program",
+   "kind": "registry",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": null,
+   "item": null
+  },
+  "nvd": {
+   "query": "NIST National Vulnerability Database",
+   "kind": "registry",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": null,
+   "item": null
+  },
+  "bbc": {
+   "query": "BBC News",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q1160945",
+     "label": "BBC News",
+     "description": "news division of the publicly funded British Broadcasting Corporation"
+    },
+    {
+     "id": "Q4704926",
+     "label": "BBC News Online",
+     "description": "website of BBC News"
+    },
+    {
+     "id": "Q208491",
+     "label": "BBC News",
+     "description": "international news and current affairs television channel"
+    },
+    {
+     "id": "Q787216",
+     "label": "BBC News",
+     "description": "British 24-hour television news channel"
+    },
+    {
+     "id": "Q3274824",
+     "label": "BBC News",
+     "description": "news bulletin broadcast on BBC World News"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": null,
+   "item": null
+  },
+  "thn": {
+   "query": "The Hacker News",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": null,
+   "item": null
+  },
+  "the-register": {
+   "query": "The Register",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q1363733",
+     "label": "The Register",
+     "description": "software and computer news website"
+    },
+    {
+     "id": "Q3917258",
+     "label": "The Des Moines Register",
+     "description": "newspaper published in Des Moines, Iowa, U.S."
+    },
+    {
+     "id": "Q7566156",
+     "label": "South Australian Register",
+     "description": "newspaper in South Australia"
+    },
+    {
+     "id": "Q7309359",
+     "label": "Register of Cultural Goods of Croatia",
+     "description": "cultural heritage register"
+    },
+    {
+     "id": "Q7760062",
+     "label": "The Register-Guard",
+     "description": "newspaper in Eugene, Oregon"
+    }
+   ],
+   "proposed": "Q1363733",
+   "searched": "2026-10-25T12:16Z",
+   "confirmed": true,
+   "item": "Q1363733",
+   "confirmed_on": "2026-10-25"
+  },
+  "securityweek": {
+   "query": "SecurityWeek",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:17Z",
+   "confirmed": null,
+   "item": null
+  },
+  "cnn": {
+   "query": "CNN",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q48340",
+     "label": "CNN",
+     "description": "American news channel"
+    },
+    {
+     "id": "Q17084460",
+     "label": "convolutional neural network",
+     "description": "regularized type of feed-forward neural network that learns features by itself via filter (or kernel) optimization"
+    },
+    {
+     "id": "Q800611",
+     "label": "Canonbury railway station",
+     "description": "railway station in Canonbury, London Borough of Islington, England, UK"
+    },
+    {
+     "id": "Q2994198",
+     "label": "Conseil de l'intelligence artificielle et du numérique",
+     "description": "French independent advisory commission"
+    },
+    {
+     "id": "Q12217473",
+     "label": "CNN.com",
+     "description": "news website of CNN"
+    }
+   ],
+   "proposed": "Q48340",
+   "searched": "2026-10-25T12:17Z",
+   "confirmed": true,
+   "item": "Q48340",
+   "confirmed_on": "2026-10-25"
+  },
+  "cyber-express": {
+   "query": "The Cyber Express",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:17Z",
+   "confirmed": null,
+   "item": null
+  },
+  "yle": {
+   "query": "Yle",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q54718",
+     "label": "Yle",
+     "description": "Finland's national public-broadcasting company"
+    },
+    {
+     "id": "Q87741521",
+     "label": "Yle Areena",
+     "description": "streaming service provided by the Finnish Broadcasting Company"
+    },
+    {
+     "id": "Q591346",
+     "label": "Yle TV1",
+     "description": "Finnish television channel"
+    },
+    {
+     "id": "Q2031832",
+     "label": "Yle TV2",
+     "description": "Finnish television channel"
+    },
+    {
+     "id": "Q2597063",
+     "label": "Yle Fem",
+     "description": "Swedish-language television station in Finland"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:18Z",
+   "confirmed": null,
+   "item": null
+  },
+  "helsinki-times": {
+   "query": "Helsinki Times",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q4040556",
+     "label": "Helsinki Times",
+     "description": "online newspaper"
+    }
+   ],
+   "proposed": "Q4040556",
+   "searched": "2026-10-25T12:18Z",
+   "confirmed": true,
+   "item": "Q4040556",
+   "confirmed_on": "2026-10-25"
+  },
+  "scotsman": {
+   "query": "The Scotsman",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q1049657",
+     "label": "The Scotsman",
+     "description": "British national daily newspaper"
+    },
+    {
+     "id": "Q51870538",
+     "label": "Scotsman",
+     "description": "recurring character of Samurai Jack"
+    },
+    {
+     "id": "Q31691902",
+     "label": "The Scotsman",
+     "description": "mountain in South Africa"
+    },
+    {
+     "id": "Q123987210",
+     "label": "The Scotsman",
+     "description": "restaurant and pub in Oslo"
+    },
+    {
+     "id": "Q7762635",
+     "label": "The Scotsman Hotel",
+     "description": "hotel in City of Edinburgh, Scotland, UK"
+    }
+   ],
+   "proposed": "Q1049657",
+   "searched": "2026-10-25T12:19Z",
+   "confirmed": true,
+   "item": "Q1049657",
+   "confirmed_on": "2026-10-25"
+  },
+  "oxford-chronicle": {
+   "query": "Oxford Chronicle",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:19Z",
+   "confirmed": null,
+   "item": null
+  },
+  "lbc": {
+   "query": "LBC",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q6457273",
+     "label": "LBC",
+     "description": "British talk radio station"
+    },
+    {
+     "id": "Q6469995",
+     "label": "Lady Brabourne College",
+     "description": "Institution for women's education in Kolkata, India established on 1939"
+    },
+    {
+     "id": "Q4652149",
+     "label": "AKAP13",
+     "description": "protein-coding gene in the species Homo sapiens"
+    },
+    {
+     "id": "Q706450",
+     "label": "Lübeck-Blankensee Airport",
+     "description": "airport in Germany"
+    },
+    {
+     "id": "Q16997109",
+     "label": "Luton Borough Council",
+     "description": "local council of Luton, in Bedfordshire, England"
+    }
+   ],
+   "proposed": "Q6457273",
+   "searched": "2026-10-25T12:19Z",
+   "confirmed": true,
+   "item": "Q6457273",
+   "confirmed_on": "2026-10-25"
+  },
+  "insurance-business": {
+   "query": "Insurance Business",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q25406099",
+     "label": "Insurance business",
+     "description": null
+    },
+    {
+     "id": "Q12598467",
+     "label": "Insurance Business Act",
+     "description": "South Korean law"
+    },
+    {
+     "id": "Q11385952",
+     "label": "Insurance Business Act",
+     "description": "Japanese law established in 1995"
+    },
+    {
+     "id": "Q63905990",
+     "label": "Insurance Business Files (NAID 7763268)",
+     "description": "series in the National Archives and Records Administration's holdings"
+    },
+    {
+     "id": "Q139706832",
+     "label": "Insurance Business Among Negroes",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:19Z",
+   "confirmed": null,
+   "item": null
+  },
+  "eadt": {
+   "query": "East Anglian Daily Times",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q5327699",
+     "label": "East Anglian Daily Times",
+     "description": "Regional newspaper for Suffolk and North Essex"
+    }
+   ],
+   "proposed": "Q5327699",
+   "searched": "2026-10-25T12:20Z",
+   "confirmed": true,
+   "item": "Q5327699",
+   "confirmed_on": "2026-10-25"
+  },
+  "reuters": {
+   "query": "Reuters",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q130879",
+     "label": "Reuters",
+     "description": "international news agency"
+    },
+    {
+     "id": "Q83377360",
+     "label": "Reuters",
+     "description": "family name"
+    },
+    {
+     "id": "Q1509580",
+     "label": "Reuters",
+     "description": "human settlement in Germany"
+    },
+    {
+     "id": "Q46530447",
+     "label": "Reuterswärd",
+     "description": "family name"
+    },
+    {
+     "id": "Q112662578",
+     "label": "Reuters-21578",
+     "description": "dataset"
+    }
+   ],
+   "proposed": "Q130879",
+   "searched": "2026-10-25T12:21Z",
+   "confirmed": true,
+   "item": "Q130879",
+   "confirmed_on": "2026-10-25"
+  },
+  "bloomberg": {
+   "query": "Bloomberg",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q13977",
+     "label": "Bloomberg L.P.",
+     "description": "American multinational mass media corporation"
+    },
+    {
+     "id": "Q22339051",
+     "label": "Bloomberg",
+     "description": "family name"
+    },
+    {
+     "id": "Q14270642",
+     "label": "Bloomberg News",
+     "description": "international news agency"
+    },
+    {
+     "id": "Q858206",
+     "label": "Johns Hopkins Bloomberg School of Public Health",
+     "description": "institution for research and training in public health"
+    },
+    {
+     "id": "Q13975",
+     "label": "Bloomberg Television",
+     "description": "financial and business cable news channel"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:21Z",
+   "confirmed": null,
+   "item": null
+  },
+  "newsweek": {
+   "query": "Newsweek",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q188413",
+     "label": "Newsweek",
+     "description": "weekly magazine based in New York City"
+    },
+    {
+     "id": "Q99002888",
+     "label": "Newsweek International",
+     "description": "magazine"
+    },
+    {
+     "id": "Q48798200",
+     "label": "Newsweek",
+     "description": "current affairs television program of Australia"
+    },
+    {
+     "id": "Q597255",
+     "label": "Newsweek Polska",
+     "description": "Polish weekly news magazine"
+    },
+    {
+     "id": "Q2177210",
+     "label": "Russki Newsweek",
+     "description": "defunct weekly Russian news magazine"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:22Z",
+   "confirmed": null,
+   "item": null
+  },
+  "dark-reading": {
+   "query": "Dark Reading",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q68931675",
+     "label": "Dark Reading",
+     "description": "cyber security news site"
+    },
+    {
+     "id": "Q141666604",
+     "label": "Dark Reading Matter",
+     "description": "2026 novel by Jasper Fforde"
+    }
+   ],
+   "proposed": "Q68931675",
+   "searched": "2026-10-25T12:22Z",
+   "confirmed": true,
+   "item": "Q68931675",
+   "confirmed_on": "2026-10-25"
+  },
+  "cybernews": {
+   "query": "Cybernews",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q141450034",
+     "label": "Cybernews",
+     "description": "Online cybersecurity news publication"
+    },
+    {
+     "id": "Q71961932",
+     "label": "CyberNews",
+     "description": "scientific article published on 01 December 1996"
+    }
+   ],
+   "proposed": "Q141450034",
+   "searched": "2026-10-25T12:22Z",
+   "confirmed": true,
+   "item": "Q141450034",
+   "confirmed_on": "2026-10-25"
+  },
+  "recorded-future": {
+   "query": "Recorded Future",
+   "kind": "organisation",
+   "candidates": [
+    {
+     "id": "Q7302875",
+     "label": "Recorded Future",
+     "description": "internet technology company based in Somerville, Massachusetts, United States"
+    }
+   ],
+   "proposed": "Q7302875",
+   "searched": "2026-10-25T12:22Z",
+   "confirmed": true,
+   "item": "Q7302875",
+   "confirmed_on": "2026-10-25"
+  },
+  "the-record": {
+   "query": "The Record",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q7759803",
+     "label": "The Record",
+     "description": "newspaper in Hackensack, New Jersey"
+    },
+    {
+     "id": "Q1628977",
+     "label": "The Record",
+     "description": "Debut studio by the band Fear"
+    },
+    {
+     "id": "Q110725721",
+     "label": "The Record",
+     "description": "an online cyber security news site"
+    },
+    {
+     "id": "Q116609816",
+     "label": "the record",
+     "description": "2023 studio album by boygenius"
+    },
+    {
+     "id": "Q1351100",
+     "label": "National Academy of Recording Arts and Sciences",
+     "description": "American music organization, presenter of the Grammy Awards"
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:22Z",
+   "confirmed": null,
+   "item": null
+  },
+  "techzine": {
+   "query": "Techzine Global",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:23Z",
+   "confirmed": null,
+   "item": null
+  },
+  "itdaily": {
+   "query": "ITdaily",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q108907537",
+     "label": "ITdaily",
+     "description": null
+    }
+   ],
+   "proposed": null,
+   "searched": "2026-10-25T12:24Z",
+   "confirmed": null,
+   "item": null
+  },
+  "tpo-nl": {
+   "query": "TPO.nl",
+   "kind": "outlet",
+   "candidates": [
+    {
+     "id": "Q18202118",
+     "label": "ThePostOnline",
+     "description": "Dutch language right leaning news site"
+    }
+   ],
+   "proposed": "Q18202118",
+   "searched": "2026-10-25T12:24Z",
+   "confirmed": true,
+   "item": "Q18202118",
+   "confirmed_on": "2026-10-25"
+  },
+  "dutch-it-leaders": {
+   "query": "Dutch IT Leaders",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:24Z",
+   "confirmed": null,
+   "item": null
+  },
+  "actuia": {
+   "query": "ActuIA",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:25Z",
+   "confirmed": null,
+   "item": null
+  },
+  "php-architect": {
+   "query": "php[architect]",
+   "kind": "outlet",
+   "candidates": [],
+   "proposed": null,
+   "searched": "2026-10-25T12:26Z",
+   "confirmed": null,
+   "item": null
+  }
+ },
+ "confirmation": "Each proposed item was read by the ontologist against the party (label, description, kind) before confirmed was set; a wrong proposal is confirmed: false with a note."
+}

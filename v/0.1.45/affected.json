@@ -1,0 +1,173 @@
+{
+ "fixed": [
+  "8.5.12",
+  "8.4.27",
+  "8.3.36",
+  "8.2.35"
+ ],
+ "ranges": [
+  {
+   "branch": "8.5",
+   "affected": "< 8.5.12",
+   "fixed": "8.5.12",
+   "in_cve": true
+  },
+  {
+   "branch": "8.4",
+   "affected": "< 8.4.27",
+   "fixed": "8.4.27",
+   "in_cve": true
+  },
+  {
+   "branch": "8.3",
+   "affected": "< 8.3.36",
+   "fixed": "8.3.36",
+   "in_cve": true
+  },
+  {
+   "branch": "8.2",
+   "affected": "< 8.2.35",
+   "fixed": "8.2.35",
+   "in_cve": true
+  },
+  {
+   "branch": "8.1",
+   "affected": "end of life; minimal source backport branch PHP-8.1-CVE-2026-109618-109619",
+   "fixed": "no release",
+   "in_cve": false
+  },
+  {
+   "branch": "8.0",
+   "affected": "end of life; minimal source backport branch",
+   "fixed": "no release",
+   "in_cve": false
+  },
+  {
+   "branch": "7.4",
+   "affected": "end of life; minimal source backport branch PHP-7.4-CVE-2026-109618-109619, commit 2026-10-18T18:10:24Z",
+   "fixed": "no release",
+   "in_cve": false
+  },
+  {
+   "branch": "5.x to 7.3",
+   "affected": "'all versions from 5 onwards' (NCSC-NL); 'all PHP versions >= 5.4' (Wiz); 'toutes versions 5.x, 6.x, 7.x' (CERT-FR)",
+   "fixed": "no release, no backport",
+   "in_cve": false
+  }
+ ],
+ "ranges_sources": [
+  "cve-cve-2026-109618",
+  "php-net-advisory",
+  "github-php-src-branch-7.4-backport",
+  "ncsc-nl-advisories",
+  "x-wiz-io-php2shell",
+  "certfr-2026-ale-014",
+  "openwall-oss-security-109619-thread"
+ ],
+ "ranges_note": "The CVE records carry defaultStatus 'unaffected' and list only 8.2 to 8.5, so an automated scanner reading the CVE will call 7.4 to 8.1 unaffected. The php.net advisory, the backport branches and a Greenbone reply on oss-security say otherwise.",
+ "sapis": [
+  {
+   "sapi": "Apache mod_php",
+   "risk": "highest",
+   "text": "Unauthenticated RCE demonstrated over HTTP with default input and memory limits, before any application code runs.",
+   "sources": [
+    "php-net-advisory",
+    "github-ghsa-w8hw-w9fx-j79w",
+    "openwall-oss-security-2026-10-21-6"
+   ]
+  },
+  {
+   "sapi": "PHP-FPM",
+   "risk": "susceptible",
+   "text": "For CVE-2026-109618 the GitHub advisory says no complete FPM exploit has been demonstrated; the PHP Foundation blog says RCE was confirmed on FPM through application-level paths. For CVE-2026-109619 the session path was validated against FPM.",
+   "sources": [
+    "github-ghsa-w8hw-w9fx-j79w",
+    "php-foundation-blog-security-release",
+    "github-ghsa-6wmf-4rv5-p3rp",
+    "openwall-oss-security-2026-10-21-7"
+   ]
+  },
+  {
+   "sapi": "php-cgi",
+   "risk": "at risk",
+   "text": "Listed by php.net among installations serving web requests.",
+   "sources": [
+    "php-net-advisory"
+   ]
+  },
+  {
+   "sapi": "FrankenPHP",
+   "risk": "likely susceptible",
+   "text": "'likely susceptible' per the GitHub advisory.",
+   "sources": [
+    "github-ghsa-w8hw-w9fx-j79w"
+   ]
+  },
+  {
+   "sapi": "LiteSpeed (LSAPI)",
+   "risk": "likely, unvalidated",
+   "text": "'application-specific exploits being likely but unvalidated'.",
+   "sources": [
+    "github-ghsa-w8hw-w9fx-j79w"
+   ]
+  },
+  {
+   "sapi": "CLI, cron, queue workers",
+   "risk": "not web-serving",
+   "text": "The advisory scopes the risk to installations serving web requests. A CLI process that parses untrusted input is not covered either way by the primary sources.",
+   "sources": [
+    "php-net-advisory"
+   ]
+  }
+ ],
+ "applications_confirmed": {
+  "text": "Calif reports confirmed pre-authentication RCE against WordPress 7.1.2, Drupal 11.4.3, Joomla 6.1.4, MediaWiki, Roundcube, Magento, phpMyAdmin, Nextcloud, Laravel, Symfony and WHMCS; Wiz confirmed Drupal (20 August) and WordPress (21 August). The flaw is below the application, so any PHP web application on an affected runtime is in scope.",
+  "sources": [
+   "calif-php2shell",
+   "wiz-blog-php2shell"
+  ]
+ },
+ "mitigations": [
+  {
+   "for": "CVE-2026-109618 (OOM corruption)",
+   "what": "memory_limit=-1, set where applications cannot override it (php_admin_value in the FPM pool or Apache config); check no pool, directory or app setting restores a finite limit.",
+   "caveat": "Removes the controllable memory-limit failure; an underlying allocation failure can still reach the vulnerable path."
+  },
+  {
+   "for": "CVE-2026-109618",
+   "what": "A low post_max_size (8M without uploads, 32M with), upload_max_filesize below it, and web-server or proxy limits on decoded request size, field count, multipart part count, header count and nesting depth, including for requests without a usable Content-Length.",
+   "caveat": "Reduces exposure to specific attack paths; does not make an installation safe."
+  },
+  {
+   "for": "CVE-2026-109618",
+   "what": "A container or cgroup memory limit as an availability boundary, killing only the affected worker.",
+   "caveat": "Do not use RLIMIT_AS or RLIMIT_DATA: they can cause the vulnerable allocation failure."
+  },
+  {
+   "for": "CVE-2026-109619 (stale global state)",
+   "what": "session.upload_progress.enabled=0 in php.ini, the FPM pool or server configuration, then restart every worker.",
+   "caveat": "Blocks the confirmed session paths only. ini_set() and .user.ini are too late."
+  },
+  {
+   "for": "CVE-2026-109619, PHP 8.5 only",
+   "what": "fatal_error_backtraces=0, then restart every worker.",
+   "caveat": "Blocks the confirmed fatal-backtrace path only."
+  },
+  {
+   "for": "CVE-2026-109619",
+   "what": "Remove invalid or deprecated per-request settings that emit diagnostics before initialisation; fix attacker-reachable fatal errors and execution timeouts.",
+   "caveat": "Hiding diagnostics with error_reporting, display_errors or @ does not help."
+  },
+  {
+   "for": "both",
+   "what": "pm.max_requests=1 on FPM (GitHub advisory).",
+   "caveat": "'Updating is the only reliable mitigation.'"
+  }
+ ],
+ "mitigations_sources": [
+  "php-net-advisory",
+  "github-ghsa-6wmf-4rv5-p3rp",
+  "certeu-sa-2026-018",
+  "ncsc-nl-php2shell"
+ ]
+}

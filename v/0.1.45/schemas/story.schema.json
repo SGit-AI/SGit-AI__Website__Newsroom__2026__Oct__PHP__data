@@ -1,0 +1,86 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "caveat_html": {
+   "type": "string"
+  },
+  "cves": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "data_as_of": {
+   "type": "string"
+  },
+  "data_as_of_note": {
+   "type": "string"
+  },
+  "description": {
+   "type": "string"
+  },
+  "known": {
+   "items": {
+    "properties": {
+     "html": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "html",
+     "sources"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "lead_html": {
+   "type": "string"
+  },
+  "open": {
+   "items": {
+    "properties": {
+     "html": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "html"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "short": {
+   "type": "string"
+  },
+  "site": {
+   "type": "string"
+  },
+  "status": {
+   "type": "string"
+  },
+  "title": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "caveat_html",
+  "cves",
+  "data_as_of",
+  "data_as_of_note",
+  "description",
+  "known",
+  "lead_html",
+  "open",
+  "short",
+  "site",
+  "status",
+  "title"
+ ],
+ "title": "story.json",
+ "type": "object"
+}

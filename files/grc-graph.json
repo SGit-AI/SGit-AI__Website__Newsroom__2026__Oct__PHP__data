@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.33",
+ "version": "0.22.34",
  "kept_by": "grc@php.newsroom",
  "as_of": "2026-10-22",
  "verbs": [
@@ -3340,7 +3340,7 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through p",
+   "label": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through p",
    "href": "facts/no-confirmed-compromise/index.html"
   },
   {
@@ -3456,6 +3456,18 @@
    "kind": "source",
    "label": "La Razón",
    "href": "sources/larazon-tecnologia-consumo-php-nuevo-fallo-segur/index.html"
+  },
+  {
+   "id": "source:techgaming-internet-sotto-attacco-php2shell-vulnera",
+   "kind": "source",
+   "label": "TechGaming.it",
+   "href": "sources/techgaming-internet-sotto-attacco-php2shell-vulnera/index.html"
+  },
+  {
+   "id": "source:bitpage-php2shell-php-sicherheitsluecke-webseite",
+   "kind": "source",
+   "label": "Bitpage.de",
+   "href": "sources/bitpage-php2shell-php-sicherheitsluecke-webseite/index.html"
   },
   {
    "id": "claim:nz-active",
@@ -14201,6 +14213,26 @@
    "basis": {
     "kind": "source",
     "ref": "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:techgaming-internet-sotto-attacco-php2shell-vulnera",
+   "basis": {
+    "kind": "source",
+    "ref": "techgaming-internet-sotto-attacco-php2shell-vulnera"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:bitpage-php2shell-php-sicherheitsluecke-webseite",
+   "basis": {
+    "kind": "source",
+    "ref": "bitpage-php2shell-php-sicherheitsluecke-webseite"
    }
   },
   {
