@@ -1,0 +1,17 @@
+{
+ "revid": 1381293732,
+ "parentid": 0,
+ "timestamp": "2026-10-21T11:22:20Z",
+ "editor": {
+  "name": "PhotographyEdits",
+  "kind": "registered"
+ },
+ "size": 136,
+ "sha1": "fb7d82ec1ae82fe498023d4a4e7e301eaedcca76",
+ "minor": false,
+ "tags": [],
+ "comment": "Assessment (Low): +banner shell (Stub), +Software, +Computer security ([[WP:RATER#2.7.2|Rater]])",
+ "hidden_chars_removed": 0,
+ "sha256": "cd386af19e68f7fcb1e8bad82e7c430ed1bf838cd97d1bb6b89da92037d8fcc6",
+ "wikitext": "{{WikiProject banner shell |class=Stub |1=\n{{WikiProject Software |importance=Low}}\n{{WikiProject Computer security |importance=Low}}\n}}"
+}

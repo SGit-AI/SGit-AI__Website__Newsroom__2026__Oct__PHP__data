@@ -1,0 +1,24 @@
+{
+ "head": {
+  "commit": "22a0c2920b88",
+  "subject": "curator@php.newsroom (scheduled): batch 16, 18 sources from the researcher's queue (2 priority 2, 16 priority 4), 20 claims, no timeline rows; quotes and hashes checked, index rebuilt  +144 ~3  [blobs:+147 trees:+54]",
+  "commits": 35
+ },
+ "sources": 525,
+ "captures": 586,
+ "hashed_files": 3429,
+ "primary": 89,
+ "blocked": 15,
+ "agents": [
+  "claude-newsroom-lead",
+  "claude-story-site",
+  "collector-gov",
+  "collector-news",
+  "collector-primary",
+  "collector-researchers",
+  "curator@php.newsroom"
+ ],
+ "opened": "2026-10-22T08:03Z",
+ "latest_capture": "2026-10-26T12:14Z",
+ "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
+}

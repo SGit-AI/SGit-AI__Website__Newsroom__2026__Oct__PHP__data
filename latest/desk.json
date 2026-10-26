@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "exploitation paragraph: 'as of' moved to 09:40 UTC on 26 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "exploitation paragraph: 'as of' moved to 12:14 UTC on 26 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 09:40 UTC on 26 October (vault a7ab84771dfc, 507 sources); the other 69 claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 12:14 UTC on 26 October (vault 22a0c2920b88, 525 sources); the other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Japan (BASE, Kodomon, pixiv, Niconico, Sakura Internet), Poland (BIP pages) and East Westphalia-Lippe added, vault a7ab84771dfc; other rows not re-read in full."
+   "note": "The Netherlands (every organisation AG Connect lists, with the time), the French prefectures and Indonesia's Ministry of Industry added, vault 22a0c2920b88; other rows not re-read in full."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "a7ab84771dfc",
-   "note": "Amazon via ZDNET Japan (Mirai-family botnets, attempts) and ScaleCommerce added; as of 09:40 UTC on 26 October; searched count 507; head a7ab84771dfc."
+   "checked_against": "22a0c2920b88",
+   "note": "As of 12:14 UTC on 26 October; searched count 525; head 22a0c2920b88; no new row this pass (Sophos, Austria already carried)."
   },
   {
    "path": "data/exploitation.json",

@@ -2724,6 +2724,226 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-26",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-malaymail-csa-singapore",
+   "verdict": "noted",
+   "reason": "Singapore's Cyber Security Agency warning, relayed by Malay Mail (immediate action to patch) and by Channel NewsAsia (channelnewsasia-singapore-php-vulnerabilities-csa-singapore-firms-cybersecur); the agency's own advisory is not among the captures (searched the source list for CSA and SingCERT pages). 'Working exploits demonstrated' is the agency's wording as relayed. A national warning; not used.",
+   "sources": [
+    "malaymail-news-singapore-2026-10-23-singapore-warn"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-ciol-india-14",
+   "verdict": "held back",
+   "reason": "Check Point's 'impact rate' is not defined in the article (attempts seen against compromise) and Check Point's report is not in the vault; India's 14% against 10% globally is the same figure held back on 25 October (cur6-checkpoint-country-rates) and in cur13-ot-checkpoint-regions.",
+   "sources": [
+    "ciol-iot-india-php2shell-attacks-ai-driven-cy"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-selular-kemenperin",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 22 to 25 October): Indonesia's Ministry of Industry (TKDN site, SIINas, all kemenperin.go.id domains) off from 22:00 WIB (15:00 UTC) on 22 October to 25 October as a precaution; Selular.ID (24 October, 14:00 WIB, 07:00 UTC) found the TKDN site still unreachable. Searched all captures for 'kemenperin': this page alone, and the ministry's own notice is not among the captures. A precaution, not a breach.",
+   "sources": [
+    "selular-2026-10-ancaman-serangan-siber-php2shell"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-sempre-sophos-failed",
+   "verdict": "agrees",
+   "reason": "Agrees with the Sophos rows already on data/compromise.json (Sophos withdrew its success claim: scanning and failed attempts; a Mirai-derived payload blocked). SempreUpdate relays Sophos's Counter Threat Unit; Cyber Security News, Latin Times and Bitpage also carry the Potassium variant (searched all captures); Sophos's own report is not captured.",
+   "sources": [
+    "sempreupdate-php2shell-a-anatomia-das-vulnerabilidade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-sempre-third-cve",
+   "verdict": "agrees",
+   "reason": "Agrees with cur6-third-flaw-115560 (used by the correspondent) and cur14-acn-third-cve, cur15-zdnet-third-cve-unlikely: the PHP project's advisory of 23 October, CVE-2026-115560, left to the regular release because it needs a rare configuration.",
+   "sources": [
+    "sempreupdate-php2shell-a-anatomia-das-vulnerabilidade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-silicon-unit42-22-6m",
+   "verdict": "agrees",
+   "reason": "Agrees with n-22.6m on the numbers page (22.6 million, Palo Alto Networks' Unit 42, via Insurance Business and TechTarget). A count of instances that could be vulnerable by version, not confirmed vulnerable or compromised sites.",
+   "sources": [
+    "silicon-cybersecurite-1371-php2shell-vulnerabili"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-silicon-wiz-php2shell-com",
+   "verdict": "held back",
+   "reason": "The pages disagree on who made the site: PCMag (in the vault) says 'The IT industry created a dedicated site, php2shell.com'; Silicon.fr says Wiz did and 'led the public narrative'. Searched all captures for php2shell.com (PCMag, Silicon, Wikipedia, Cyberkendra, JPCERT, Bitpage): none says Wiz made it. An editorial reading; not stated.",
+   "sources": [
+    "silicon-cybersecurite-1371-php2shell-vulnerabili"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-sn-austria-no-attacks",
+   "verdict": "agrees",
+   "reason": "Agrees with the Austria row on data/compromise.json (the Interior Ministry, no cyber attacks known, via Salzburg24): Salzburger Nachrichten has the same statement for Wednesday evening, 21 October, and that the ministry expected attempts. A point-in-time statement.",
+   "sources": [
+    "sn-panorama-medien-was-die-php-sicherheitsl"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-sn-austria-advance-notice",
+   "verdict": "noted",
+   "reason": "Checked: Salzburger Nachrichten quotes the Interior Ministry that the new Federal Office for Cybersecurity, with CERT.at, issued a notice on Tuesday that a critical PHP update was coming, and repeated it on Wednesday; ORF and Bitpage also carry CERT.at (searched all captures). Consistent with preannounce-time on the site (19:30 UTC on 20 October). The notice itself is not captured; not used.",
+   "sources": [
+    "sn-panorama-medien-was-die-php-sicherheitsl"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-it168-virustotal-5-1m",
+   "verdict": "agrees",
+   "reason": "Agrees with scale-2.6m-hosts, which already carries VirusTotal's 5.1 million IPs running PHP. IT168 is a vendor's promotional article with no method or date.",
+   "sources": [
+    "software-it168-a2026-1022-6954-000006954576-shtml"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-it168-european-shutdowns",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported): the Netherlands row names every organisation the lists give, those back online as well as those still off, as of 20:55 CEST (18:55 UTC) on 21 October (AG Connect) with IT168 (22 October): the Port of Rotterdam, Overheid.nl, the Dutch football association, parties' sites, hospitals, the veiligheidsregio's, Schiphol's app, Odido's BEN and Simpel, the Tweede Kamer, MijnOverheid and AG Connect itself. IT168 also names Valtori in Finland, French local-government administrative sites and some Australian government sites, already on the ledger. Precautionary; most were not hacked.",
+   "sources": [
+    "software-it168-a2026-1022-6954-000006954576-shtml"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-sohu-china-notices",
+   "verdict": "held back",
+   "reason": "A vendor's marketing post claiming risk notices by MIIT's NVDB and CNVD and bulletins by Tencent Cloud, Alibaba Cloud and QiAnXin CERT. Searched all captures for 'CNVD' and 'NVDB': this post and Ijiwei's summary only, neither a government page; the notices are not captured.",
+   "sources": [
+    "sohu-a-1091246810-122998307"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-sohu-cvss-9-8",
+   "verdict": "held back",
+   "reason": "Contradicts the score the site carries: both flaws are 9.2 under CVSS v4.0 in the PHP advisory (two-cves-9.2); 9.8 is not on any of those pages and the post does not say which CVSS version it means. Marketing post, one source.",
+   "sources": [
+    "sohu-a-1091246810-122998307"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-synology-packages",
+   "verdict": "noted",
+   "reason": "Synology's PSIRT finding as its distributor ASK Corp (ask-corp-news-2026-10-synology-php2shell-vulnerab) and Stadt-Bremerhaven (Caschys Blog) relay it: only systems running certain PHP-dependent packages (ASK's list begins Calendar, IDrive, Joomla, KodExplorer, MailStation, MediaWiki), PHP updates for DSM 7.4, 7.3 and 7.2. Synology's own bulletin is not captured. A vendor's affected-products notice; not used.",
+   "sources": [
+    "stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-startupfortune-prince-sky-falling",
+   "verdict": "noted",
+   "reason": "An opinion and prediction by Cloudflare's chief executive, relayed second-hand from Reuters. Not a fact about PHP2Shell; not used.",
+   "sources": [
+    "startupfortune-cloudflares-ceo-says-worse-bugs-than-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-startupfortune-cybelangel-2-24m",
+   "verdict": "noted",
+   "reason": "CybelAngel's own post is in the vault (cybelangel-php2shell): '2.24M Internet-Facing PHP Hosts, 59% on Versions With No Fix Coming'. A banner-based host count by one vendor; not comparable with the Censys and VirusTotal figures on the site (scale-2.6m-hosts). Not used.",
+   "sources": [
+    "startupfortune-cloudflares-ceo-says-worse-bugs-than-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-startupper-censys-39-7m",
+   "verdict": "held back",
+   "reason": "Censys's 39.7 million services is on one Greek outlet alone (searched all captures for '39,7' and '39.7'); Censys's own post is not captured. The site carries Censys's host counts (about 2.6 million hosts, 1.57 million not patched; scale-2.6m-hosts), a different measure.",
+   "sources": [
+    "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-startupper-arctic-wolf-limited",
+   "verdict": "held back",
+   "reason": "Arctic Wolf's own page is in the vault (arcticwolf-php2shell-exposure) and does not carry it (searched for 'limited', 'intrusion' and 'successful'); the statement rests on one Greek outlet. Point in time. Consistent with no-confirmed-compromise but not stated.",
+   "sources": [
+    "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-startupper-uk-220m",
+   "verdict": "held back",
+   "reason": "The £220 million package is on one Greek outlet alone (searched all captures for '£220', '220 million' and 'AI Security Institute'); the link to PHP2Shell is the outlet's framing, and the UK government's announcement is not captured. Unverified.",
+   "sources": [
+    "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur16-larue-prefectures",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 21 October): France's Ministry of the Interior took the prefectures' websites offline, the Paris police prefecture's included, awaiting a fix for the framework they run on. Reuters (via Boursorama, in the vault) quotes the ministry's communiqué: 'Par mesure de précaution, les sites web des préfectures ont été temporairement mis hors ligne'; Actu17 adds that it was at the request of ANSSI. The Paris police prefecture portal returned a 503 when Stéphane Larue checked.",
+   "sources": [
+    "stephanelarue-sites-des-prefectures-inaccessibles-lint"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
   }
  ]
 }

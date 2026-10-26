@@ -3705,5 +3705,245 @@
   "topic": "appliances",
   "note": "As of 22 October; the vendor's bulletin is the primary. Fortinet and Cisco were still investigating.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-malaymail-csa-singapore",
+  "claim": "Singapore's Cyber Security Agency says the threat is immediate, working exploits have been demonstrated, and it is working with agencies, critical-infrastructure owners and enterprises to accelerate patching",
+  "by": "Malay Mail (citing CSA chief executive Gwenda Fong's LinkedIn post and the CSA advisory)",
+  "sources": [
+   "malaymail-news-singapore-2026-10-23-singapore-warn"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The agency's own statement relayed by a Malaysian outlet; the advisory is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-ciol-india-14",
+  "claim": "Check Point Research ranks India 11th among 18 countries by reported PHP2Shell impact rate, at 14% against a global average of 10%",
+  "by": "CIOL (citing Check Point Research)",
+  "sources": [
+   "ciol-iot-india-php2shell-attacks-ai-driven-cy"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "'Impact rate' is Check Point's term and is not defined in the article (attempts seen versus compromise). The same Check Point briefing is relayed by ot.gr (cur13-ot-checkpoint-regions), with Europe also at 14%.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-selular-kemenperin",
+  "claim": "Indonesia's Ministry of Industry switched off several digital services, including the TKDN site, SIINas and all kemenperin.go.id domains, from 22:00 WIB on Thursday 22 October to Sunday 25 October as a precaution against attacks using the PHP flaws",
+  "by": "Selular.ID (citing the ministry's social-media announcement)",
+  "sources": [
+   "selular-2026-10-ancaman-serangan-siber-php2shell"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A precautionary shutdown of days, not a breach; the TKDN site was still unreachable when the outlet checked on 24 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-sempre-sophos-failed",
+  "claim": "Sophos's Counter Threat Unit reports that the documented PHP2Shell attacks so far, mostly aimed at installing a Mirai variant called Potassium, failed to compromise their targets, and that Sophos revised some detections it had first classed as successful compromises",
+  "by": "SempreUpdate (citing Sophos Counter Threat Unit)",
+  "sources": [
+   "sempreupdate-php2shell-a-anatomia-das-vulnerabilidade"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Second-hand from a Brazilian Linux blog; Sophos's own report is the primary. It conflicts with outlets reporting confirmed compromises (cur13-wersm-confirmed-compromises, Palo Alto Networks and Trail of Bits), so the compromise picture stays open and dated.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-sempre-third-cve",
+  "claim": "The PHP Foundation issued a supplementary advisory on 23 October confirming a third remote-code-execution flaw, CVE-2026-115560, and left its fix to the regular release cycle because exploitation needs a rare combination of server configuration and application code",
+  "by": "SempreUpdate",
+  "sources": [
+   "sempreupdate-php2shell-a-anatomia-das-vulnerabilidade"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Agrees with ZDNET Japan (cur15-zdnet-third-cve-unlikely) and ACN (cur14-acn-third-cve); the conditions are left out here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-silicon-unit42-22-6m",
+  "claim": "Palo Alto Networks' Unit 42 counts 22.6 million potentially vulnerable PHP instances",
+  "by": "Silicon.fr (citing Palo Alto Networks Unit 42)",
+  "sources": [
+   "silicon-cybersecurite-1371-php2shell-vulnerabili"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A count of instances that could be vulnerable by version, not confirmed compromised or confirmed vulnerable sites; Notebookcheck (cur14-nbc-fr-shodan) states the same figure. Other host counts use different methods (Shodan about 1.5 million revealing a version, Censys 39.7 million services, VirusTotal 5.1 million hosts).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-silicon-wiz-php2shell-com",
+  "claim": "Wiz did not discover the flaw family alone but led the public narrative, creating the site php2shell.com and crediting Gemini 4 Argon's contribution",
+  "by": "Silicon.fr (editorial characterisation)",
+  "sources": [
+   "silicon-cybersecurite-1371-php2shell-vulnerabili"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "An editorial reading by the outlet; consistent with others crediting Calif, OpenAI and Wiz as separate discoverers.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-sn-austria-no-attacks",
+  "claim": "Austrian authorities knew of no cyber-attacks on Austrian websites using the PHP flaws, as of Wednesday evening 21 October, though the Interior Ministry expected attempts",
+  "by": "Salzburger Nachrichten (citing the Austrian Interior Ministry)",
+  "sources": [
+   "sn-panorama-medien-was-die-php-sicherheitsl"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A point-in-time statement; the ministry's own wording is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-sn-austria-advance-notice",
+  "claim": "Austria's new Federal Office for Cybersecurity, with CERT.at, issued a notice on Tuesday 20 October that a critical PHP security update was coming, and repeated it on Wednesday when the update was published",
+  "by": "Salzburger Nachrichten (citing the Austrian Interior Ministry)",
+  "sources": [
+   "sn-panorama-medien-was-die-php-sicherheitsl"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Agrees with the 20 October pre-announcement time in the PHP release manager's timeline (cur15-scherzer-reschedule-20-oct).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-it168-virustotal-5-1m",
+  "claim": "VirusTotal estimates more than 5.1 million PHP hosts are exposed on the internet",
+  "by": "IT168 (citing VirusTotal)",
+  "sources": [
+   "software-it168-a2026-1022-6954-000006954576-shtml"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A vendor's promotional article relaying an estimate; method and date not given. Other host counts: Shodan about 1.5 million revealing a version (Notebookcheck), Censys 39.7 million services (Startupper).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-it168-european-shutdowns",
+  "claim": "On 21 October the Port of Rotterdam, Overheid.nl, the Dutch football association, five national parties' sites and several hospitals in the Netherlands, the Finnish state IT agency's public services, French local-government administrative sites and some Australian government sites were taken down or affected as a precaution",
+  "by": "IT168 (a vendor's framing paragraph)",
+  "sources": [
+   "software-it168-a2026-1022-6954-000006954576-shtml"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary shutdowns, not breaches; the article itself says most were not hacked. Other outlets name some of the same bodies (DigiD, MijnOverheid, French prefectures), so this list should be checked against each body's own notice.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-sohu-china-notices",
+  "claim": "China's MIIT vulnerability database NVDB and CNVD issued risk notices on PHP2Shell, and Tencent Cloud, Alibaba Cloud and QiAnXin CERT issued bulletins",
+  "by": "Sohu (a vendor's post)",
+  "sources": [
+   "sohu-a-1091246810-122998307"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A vendor's marketing post; the notices themselves are the primaries.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-sohu-cvss-9-8",
+  "claim": "The post gives the PHP2Shell CVSS score as 9.8",
+  "by": "Sohu (a vendor's post)",
+  "sources": [
+   "sohu-a-1091246810-122998307"
+  ],
+  "status": "disputed",
+  "topic": "disclosure",
+  "note": "PHP's advisories and most outlets score both flaws 9.2 on CVSS 4.0 (cur13-pcgamer-watchtowr-cvss10 notes an earlier 'CVSS10' claim); the post does not say which CVSS version it means, and the figure may come from an older scoring.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-synology-packages",
+  "claim": "Synology says PHP2Shell affects only NAS systems running certain PHP-dependent packages (such as Web Station, WordPress, MediaWiki, phpMyAdmin), has released PHP updates for DSM 7.4, 7.3 and 7.2, and rates DSM's own PHP component risk minimal",
+  "by": "Stadt-Bremerhaven.de (Caschys Blog, citing Synology-SA-26:14)",
+  "sources": [
+   "stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "Updates the earlier note that Synology had published no bulletin by 22 October (see cur13-notebookcheck-qnap-eol-apps); the vendor's advisory is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-startupfortune-prince-sky-falling",
+  "claim": "Cloudflare's CEO Matthew Prince told Reuters that Cloudflare knows of other serious vulnerabilities in critical software now being patched and expects 'a year or two where every week it feels like the sky is falling' as AI finds long-unaudited bugs",
+  "by": "Startup Fortune (citing Reuters)",
+  "sources": [
+   "startupfortune-cloudflares-ceo-says-worse-bugs-than-php"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A prediction and an opinion by a vendor's chief executive, relayed second-hand; the Reuters interview is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-startupfortune-cybelangel-2-24m",
+  "claim": "CybelAngel's tracking counts roughly 2.24 million internet-facing PHP hosts, 59% of them on end-of-life versions",
+  "by": "Startup Fortune (citing CybelAngel)",
+  "sources": [
+   "startupfortune-cloudflares-ceo-says-worse-bugs-than-php"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Matches the Shodan-based banner figures in Notebookcheck (about 1.5 million revealing a version plus about 740,000 hiding it) and the 59% share; host counts, not confirmed vulnerable sites. The same article misdates the disclosure to 20 October (it was 21 October).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-startupper-censys-39-7m",
+  "claim": "Censys counts about 39.7 million internet services worldwide running PHP versions affected by PHP2Shell",
+  "by": "Startupper (citing Censys)",
+  "sources": [
+   "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A count of services by version, not of confirmed vulnerable or compromised ones; a different method from Shodan banner counts and Palo Alto Networks' 22.6 million instances (cur16-silicon-unit42-22-6m).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-startupper-arctic-wolf-limited",
+  "claim": "Arctic Wolf says confirmed successful deep intrusions remain limited despite the huge volume of scanning attempts",
+  "by": "Startupper (citing Arctic Wolf)",
+  "sources": [
+   "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Second-hand and point-in-time; agrees with Sophos's report of failed attacks (cur16-sempre-sophos-failed) but not with other outlets' confirmed compromises (cur13-wersm-confirmed-compromises).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-startupper-uk-220m",
+  "claim": "The UK government announced a £220 million package on Saturday 24 October for AI security work (£120 million to the AI Security Institute) in connection with the PHP2Shell crisis",
+  "by": "Startupper",
+  "sources": [
+   "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
+  ],
+  "status": "unverified",
+  "topic": "response",
+  "note": "A single Greek outlet; the link to PHP2Shell is the outlet's framing, and the package's own announcement is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur16-larue-prefectures",
+  "claim": "France's Ministry of the Interior took the prefecture websites offline on 21 October as a precaution against the PHP flaws, while awaiting a fix for the software framework they run on",
+  "by": "Stéphane Larue News (citing a ministry statement reported by Reuters)",
+  "sources": [
+   "stephanelarue-sites-des-prefectures-inaccessibles-lint"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary; the statement gives neither the number of sites nor a return date. The Paris police prefecture portal returned a 503 when the outlet checked.",
+  "agent": "curator@php.newsroom"
  }
 ]

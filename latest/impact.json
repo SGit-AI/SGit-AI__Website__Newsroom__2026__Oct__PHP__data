@@ -250,6 +250,42 @@
    "sources": [
     "nw-nachrichten-zwischen-weser-und-rhein-244"
    ]
+  },
+  {
+   "who": "Netherlands (as of 20:55 CEST, 18:55 UTC, on 21 October): the Port of Rotterdam (Havenbedrijf Rotterdam); Overheid.nl; the Dutch football association (KNVB); the sites of VVD, CDA, PRO, BBB and PvdD (taken off as a precaution), Volt (down for 'maintenance'), D66, SGP, ChristenUnie, DENK and JA21 (offline, no reason given); the Tweede Kamer; MijnOverheid; thirteen of the 25 veiligheidsregio's, among them IJsselland, Twente, Gelderland-Midden, Noord-Holland-Noord, Rotterdam-Rijnmond and Zeeland; Schiphol's app; Odido's BEN and Simpel brands; the hospitals Maastricht UMC+, Jeroen Bosch Ziekenhuis, BovenIJ and Albert Schweitzer Ziekenhuis (offline), Haaglanden MC, St. Antonius Ziekenhuis and Elisabeth-TweeSteden Ziekenhuis (errors); AG Connect and its sister titles such as iBestuur",
+   "country": "NL",
+   "what": "Taken off or partly off as a precaution, in line with CERT-EU's advice; the PHP Foundation had no sign of active exploitation. Stayed online per AG Connect: the veiligheidsregio's Groningen, Friesland, Drenthe and Amsterdam-Amstelland, the airport's website, Odido's own site (it does not use PHP), most national-government sites, Open overheid, and the sites of PVV, FVD, Groep Markuszower (DNA), SP and 50PLUS. IT168 (22 October) lists the Port of Rotterdam, Overheid.nl, the football association, five national parties and several hospitals",
+   "when": "2026-10-21",
+   "said_by": "AG Connect (Kim de Vries); IT168",
+   "status": "reported",
+   "sources": [
+    "agconnect-maatschappij-security-welke-nederlandse-websites-w",
+    "software-it168-a2026-1022-6954-000006954576-shtml"
+   ]
+  },
+  {
+   "who": "France: the prefectures' websites, the Paris police prefecture's included (Ministry of the Interior)",
+   "country": "FR",
+   "what": "Taken offline as a precaution while awaiting a fix for the framework they run on; the ministry's communiqué, quoted by Reuters, says so; Actu17 says at ANSSI's request. The Paris police prefecture portal returned a 503 when Stéphane Larue checked",
+   "when": "2026-10-21",
+   "said_by": "Reuters, via Boursorama; Actu17; Stéphane Larue News",
+   "status": "reported",
+   "sources": [
+    "boursorama-reuters-sites-gouv",
+    "actu17-prefectures",
+    "stephanelarue-sites-des-prefectures-inaccessibles-lint"
+   ]
+  },
+  {
+   "who": "Indonesia: the Ministry of Industry's digital services: the TKDN site, SIINas and all kemenperin.go.id domains",
+   "country": "ID",
+   "what": "Switched off from 22:00 WIB (15:00 UTC) on 22 October to Sunday 25 October as a precaution; the TKDN site was still unreachable when Selular.ID checked on 24 October (14:00 WIB, 07:00 UTC)",
+   "when": "2026-10-22",
+   "said_by": "Selular.ID, citing the ministry's own notice",
+   "status": "reported",
+   "sources": [
+    "selular-2026-10-ancaman-serangan-siber-php2shell"
+   ]
   }
  ],
  "compromised": [

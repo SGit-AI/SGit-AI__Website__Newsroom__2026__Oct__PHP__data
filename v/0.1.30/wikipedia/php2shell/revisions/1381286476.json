@@ -1,0 +1,19 @@
+{
+ "revid": 1381286476,
+ "parentid": 1381286311,
+ "timestamp": "2026-10-21T09:24:13Z",
+ "editor": {
+  "name": "Lordseriouspig",
+  "kind": "registered"
+ },
+ "size": 2351,
+ "sha1": "6d236a2d0a03b0fc572051d23496d1064167e451",
+ "minor": false,
+ "tags": [
+  "twinkle"
+ ],
+ "comment": "Added {{[[Template:Current|Current]]}} tag",
+ "hidden_chars_removed": 0,
+ "sha256": "988f6c7f95c0536486cba9c712c1b5c1ae17b688123d51fd916bc34c9d5264c8",
+ "wikitext": "{{Short description|2026 software security vulnerability}}\n{{Current|date=October 2026}}\n'''PHP2Shell''' ('''CVE-2026-109618''' and '''CVE-2026-109619''') is a [[Vulnerability (computer security)|vulnerability]] reported in October 2026 in the common web scripting language [[PHP]]. It allows [[arbitrary code execution]] on any website that runs PHP versions 5 through 8.<ref name=\"Website-1\">{{Cite web |last=Goodin |first=Dan |date=2026-10-21 |title=PHP warns it plans to release 2 emergency patches imminently |url=https://arstechnica.com/security/2026/10/php-maintainers-tell-web-devs-to-prepare-themselves-for-critical-security-patches/ |access-date=2026-10-21 |website=Ars Technica |language=en}}</ref>\n\nThe vulnerability was rated 9.2 out of 10 under [[Common Vulnerability Scoring System|CVSS]] v4.0.<ref>{{Cite web |title=php.announce: [ANNOUNCE] Upcoming Critical PHP Security Release |url=https://news-web.php.net/php.announce/509 |access-date=2026-10-21 |website=news-web.php.net}}</ref> Early reporting suggested versions as early as PHP 5, all the way through to PHP 8, are affected,<ref name=\"Website-2\">{{Cite web |title=Rapid Response: php2shell, Leaked Critical PHP Vulnerabilities (CVE-2026-109618 & CVE-2026-109619) |url=https://www.huntress.com/blog/php2shell-leaked-critical-php-vulnerabilities |access-date=2026-10-21 |website=Huntress |language=en}}</ref> with an emergency patch scheduled for release on the 21st October 2026 at 14:00 UTC.<ref>{{Cite web |date=2026-10-20 |title=PHP: News Archive - 2026 |url=https://www.php.net/archive/2026.php |access-date=2026-10-21 |website=www.php.net |language=en}}</ref><ref name=\"Website-2\" />\n\nIt is notable for the fact that the PHP maintainers announced the update early and before release<ref>{{Cite web |title=Critical vulnerabilities in PHP {{!}} Stay tuned for php2shell mitigation and patches |url=https://www.aikido.dev/blog/critical-vulnerabilities-in-php-php2shell |access-date=2026-10-21 |website=www.aikido.dev |language=en}}</ref>, encouraging users to prepare and update as soon as the patch was released. One security firm, Sansec, expected \"mass attacks to start within 15 minutes of the release\".<ref name=\"Website-1\" />\n\n== References ==\n{{Reflist}}\n\n{{Hacking in the 2020s}}\n\n[[Category:2026 in computing]]\n[[Category:Computer security exploits]]\n[[Category:PHP]]"
+}
