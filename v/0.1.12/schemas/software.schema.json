@@ -1,0 +1,128 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "by_status_109618": {
+   "properties": {
+    "Fix": {
+     "type": "number"
+    },
+    "Investigation": {
+     "type": "number"
+    },
+    "Not vuln": {
+     "type": "number"
+    },
+    "Vulnerable": {
+     "type": "number"
+    },
+    "none": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "Fix",
+    "Investigation",
+    "Not vuln",
+    "Vulnerable",
+    "none"
+   ],
+   "type": "object"
+  },
+  "by_status_109619": {
+   "properties": {
+    "Fix": {
+     "type": "number"
+    },
+    "Investigation": {
+     "type": "number"
+    },
+    "Not vuln": {
+     "type": "number"
+    },
+    "Vulnerable": {
+     "type": "number"
+    },
+    "none": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "Fix",
+    "Investigation",
+    "Not vuln",
+    "Vulnerable",
+    "none"
+   ],
+   "type": "object"
+  },
+  "commit": {
+   "type": "string"
+  },
+  "count": {
+   "type": "number"
+  },
+  "file": {
+   "type": "string"
+  },
+  "licence": {
+   "type": "string"
+  },
+  "parsed_from": {
+   "type": "string"
+  },
+  "rows": {
+   "items": {
+    "properties": {
+     "links": {
+      "type": "array"
+     },
+     "notes": {
+      "type": "string"
+     },
+     "product": {
+      "type": "string"
+     },
+     "status_109618": {
+      "type": "string"
+     },
+     "status_109619": {
+      "type": "string"
+     },
+     "supplier": {
+      "type": "string"
+     },
+     "version": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "links",
+     "notes",
+     "product",
+     "status_109618",
+     "status_109619",
+     "supplier",
+     "version"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "source": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "by_status_109618",
+  "by_status_109619",
+  "commit",
+  "count",
+  "file",
+  "licence",
+  "parsed_from",
+  "rows",
+  "source"
+ ],
+ "title": "software.json",
+ "type": "object"
+}
