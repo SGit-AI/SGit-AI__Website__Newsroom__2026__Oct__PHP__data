@@ -277,7 +277,7 @@
    "waiting": "Its first wake at 08:40."
   }
  ],
- "as_of": "2026-10-25T15:25Z",
+ "as_of": "2026-10-26T07:30Z",
  "board": [
   {
    "id": "009",
@@ -595,17 +595,12 @@
   ]
  ],
  "decisions": [
+  "Who runs the chain that builds the pages, and when (board conductor-0001): today's releases stay off the pages until it runs.",
+  "Security: wire it in now (its review queue: steps A and B, the press's tools, chain.sh, build.sh, the .gitignore fix, tools/schedule.py in team) and move its wake out of the quiet hours.",
   "Wiring: the journalist's and the correspondent's tasks still start a new session each time; create them from 'scheduled | journalist' and 'scheduled | correspondent' and pause the old four. Fact-check's task still has the old prompt: update it from its session.",
   "INCIDENT, visibility: the researcher and the curator run on schedule but leave no commit and no run record, so the repository, this page and the control room cannot show what they did (their wake prompts say 'nothing new: no commit', which predates AGENTS.md section 7). Proposed: each wake writes a run report into the vault it owns and the conductor commits it as a run record, with your go to change the four scheduled prompts (a researcher that reads the open web should not also release).",
   "security/gate-pass-2 (5 commits ahead): a go; dismiss CodeQL alerts #3 and #22 yourself; rulesets at user logins; private vulnerability reporting.",
-  "The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move.",
-  "Pulse: a go on four things (switch its source to the site, two KEV entries, morning pass to 07:14, release its schedule card).",
-  "The desk's wakes clash with the correspondent's: board 285 proposes moving the desk's checks to about 10:15 and 17:40.",
-  "dev@ was blocked on a Bash permission prompt (last seen 16:45 UTC).",
-  "Lane keys: the Sherpa needs 5iwos28w and wgeiqabu; this session still has no lane keys, so the lanes are not drained here.",
-  "Run records: most scheduled prompts leave none on a quiet wake; AGENTS.md section 7 asks for one. The control room shows these as red dots. Say which rule stands.",
-  "Owner for admin/build/control.py, assets/control.css and assets/control.js; roster row for observability (data/team.json); security's self-check paragraph and card step.",
-  "Board 283: three additions to AGENTS.md section 1 on taking in dev (the correspondent says you agreed them)."
+  "The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move."
  ],
  "freshness": [
   [
@@ -1012,6 +1007,142 @@
    "run": "20261026T0122Z-conductor",
    "started": "2026-10-26T01:22:00Z",
    "summary": "First review pass of the six repositories (the editor's standing duty from 26 October). State: step A (00:40) and step B (01:10) are in; v1 frozen, last commit 00:52; team, data, press carry sync_v1.py; agents active in the six: journalist (data v0.1.16, run 01:15), correspondent (board corresponde…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T01:50:00Z",
+   "outcome": "ok",
+   "run": "20261026T0145Z-correspondent",
+   "started": "2026-10-26T01:45:00Z",
+   "summary": "Editor's session, 26 Oct. Reviewed against the evidence vault (read-only clone at 94352a55fbaa) every journalist commit since my last review, in all six repositories: data v0.1.16 (16 verdicts: 2 used, 1 agrees, 7 noted, 6 held back; La Razon compromise row; GARR offline row; no-confirmed-compromis…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T02:49:32Z",
+   "outcome": "idle",
+   "run": "20261026T0247Z-journalist",
+   "started": "2026-10-26T02:47:41Z",
+   "summary": "Nothing new: evidence vault at 94352a55fbaa, the head already in the data repository (files/vault.json, v0.1.13); the curator's backlog batch of 26 October is the head I reviewed in data v0.1.16. Read the correspondent's review of my 25 October pass and data v0.1.16 (14 verdicts spot-checked, all h…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-26T08:16:36Z",
+   "outcome": "ok",
+   "run": "20261026T0703Z-researcher",
+   "started": "2026-10-26T07:03:28Z",
+   "summary": "Wake 07:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head 2bb61c291708. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page lis…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T07:24:21Z",
+   "outcome": "ok",
+   "run": "20261026T0723Z-conductor",
+   "started": "2026-10-26T07:23:01Z",
+   "summary": "Full pass (07:15 London; fired 07:23). Team head ca93865e70c5. Review of the six since 01:26: v1 untouched (frozen since 00:52); team: journalist run 02:47 (nothing new), researcher round-2 debrief, correspondent run and board correspondent-0002, factcheck register (vault ID only); data v0.1.18 to…"
+  },
+  {
+   "agent": "pulse",
+   "finished": "2026-10-26T07:42:54Z",
+   "outcome": "ok",
+   "run": "20261026T0723Z-pulse",
+   "started": "2026-10-26T07:23:53Z",
+   "summary": "Pulse pass 20261026T072500Z (07:22 London), first wake from team: attached team (add_repo), woke on records/WAKE.md; 441 pages checked, 229 changed; Pulse vault is now the PACK vault 9f5knw9r (converted from the normal vault 4klm5qlt on 26 Oct, head 602d57e06a9c, in sync with the server; the pass p…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T07:51:36Z",
+   "outcome": "ok",
+   "run": "20261026T0751Z-conductor",
+   "started": "2026-10-26T07:51:00Z",
+   "summary": "At the editor's request: briefed every agent to upgrade to sgit-ai 0.25.0 (the large-vault fix; release notes https://cli.sgit.ai/docs/update-to-0-25-0.html) and report problems. A brief (records/briefs/2026-10-26__brief__sgit-0-25-0.md), WAKE.md step 1b (check sgit version before the first sgit co…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-26T08:41:50Z",
+   "outcome": "ok",
+   "run": "20261026T0807Z-curator",
+   "started": "2026-10-26T08:07:03Z",
+   "summary": "Wake 08:00 London (fired 08:07 UTC), in team and the evidence vault. Upgraded sgit to 0.25.0 in my venv (WAKE.md 1b). Took in the researcher's passes 20261026T0705Z (pack vault 7r83qic5 at 2bb61c291708; queue 432 rows, 85 then pending). Promoted 17 sources into the evidence vault 3ytzxm3g (now 489…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T08:17:43Z",
+   "outcome": "ok",
+   "run": "20261026T0817Z-conductor",
+   "started": "2026-10-26T08:17:09Z",
+   "summary": "Light check (08:15 London). Team head ec7ae5d64a51; v1 untouched since 00:52. Review since 07:51: the researcher's run record for 07:00 (pass in two phases, vault 7r83qic5 at 2bb61c291708, data v0.1.21) and the data release itself, both well-formed with Agent: trailers; press, site, updates, refs u…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T08:44:37Z",
+   "outcome": "idle",
+   "run": "20261026T0841Z-journalist",
+   "started": "2026-10-26T08:41:21Z",
+   "summary": "Nothing new: evidence vault at 94352a55fbaa, the head already in the data repository (files/vault.json). Fired by the 08:40 London (08:40 UTC) scheduled task into this session; dev at 6f89eafb5128. Upgraded sgit-ai 0.24.0 to v0.25.0 as the conductor's brief of 26 October asks (sgit update, pip, in…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-26T09:10:00Z",
+   "outcome": "ok",
+   "run": "20261026T0854Z-factcheck",
+   "started": "2026-10-26T08:54:00Z",
+   "summary": "08:52 London wake (sgit 0.25.0, pack copy hsmfer5w pulled in 15 s): no-confirmed-compromise re-graded as of 14:40 UTC on 25 October, still holds (A4); La Razon is the one new source (attempts, no victim); fc.py check 0 failures; drift 6, unchanged and explained; W3Techs 69.2%; KEV 2026.10.23 lists…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T09:17:40Z",
+   "outcome": "ok",
+   "run": "20261026T0916Z-conductor",
+   "started": "2026-10-26T09:16:19Z",
+   "summary": "Light check (09:15 London). Team head 298cecd80c0a; v1 untouched. Review since 08:17: curator card at step B and run 08:07 (17 sources promoted, evidence vault 6ceb1f6624ca, 489 sources), journalist run 08:41 (nothing new at 94352a55fbaa, sgit 0.25.0: first status 4.6 s), factcheck run 8 (data v0.1…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T09:33:42Z",
+   "outcome": "idle",
+   "run": "20261026T0925Z-correspondent",
+   "started": "2026-10-26T09:25:24Z",
+   "summary": "Scheduled wake 09:25 London, in this session (Opus); team dev at c1be3ac75685. Nothing to review: since my run of 01:45 the journalist made two idle wakes (02:47, 08:41, both 'nothing new at 94352a55fbaa') and no commit in data, updates, site, refs or press; data's head is still 94352a55fbaa (v0.1.…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-26T10:12:39Z",
+   "outcome": "ok",
+   "run": "20261026T0934Z-researcher",
+   "started": "2026-10-26T09:34:00Z",
+   "summary": "Wake 09:30 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head 9987a9519704; first full pass on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pull…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T10:12:27Z",
+   "outcome": "ok",
+   "run": "20261026T1012Z-conductor",
+   "started": "2026-10-26T10:12:00Z",
+   "summary": "At the editor's request: a brief for the sgit CLI team (records/briefs/2026-10-26__brief__for-the-sgit-cli-team-0-25-0-in-the-newsroom.md): what the newsroom did with sgit-ai 0.25.0, every agent's measured timings from its run record, and five open questions (an 18-minute first status on a 4.2 GB p…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T10:13:15Z",
+   "outcome": "ok",
+   "run": "20261026T1013Z-conductor",
+   "started": "2026-10-26T10:13:00Z",
+   "summary": "At the editor's direction (every agent's release is live in its own area, as in v1): a brief for dev, records/briefs/2026-10-26__brief__every-release-is-live-again.md (parity with v1; today's state: pages rebuilt only by the hand-run chain, last at 01:43, data host already live per release; the vau…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T10:19:41Z",
+   "outcome": "ok",
+   "run": "20261026T1019Z-conductor",
+   "started": "2026-10-26T10:19:01Z",
+   "summary": "Light check (10:15 London). Team head 2b4131dcee48; v1 untouched. Review since 09:16: the researcher's 09:30 run (first full pass on sgit 0.25.0: phase 1 commit 25 s vs 12 min 38 s, push 67 s vs 4 min 16 s, phase 2 commit 4 s, push 16 s, whole pass 35 min vs 57, export 34 s vs 9 min; queue pushed 1…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-26T11:06:38Z",
+   "outcome": "ok",
+   "run": "20261026T1036Z-curator",
+   "started": "2026-10-26T10:36:12Z",
+   "summary": "Wake 10:30 London (fired 10:36 UTC); team at b4f7d8885838. Took in the researcher's passes 20261026T0934Z (pack vault 7r83qic5 at 9987a9519704; queue 442 rows, 77 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 507 sources), 22 claims and 7 time…"
   }
  ],
  "schedules": [
@@ -1084,6 +1215,15 @@
    ]
   },
   {
+   "agent": "dev",
+   "model": "Opus",
+   "objective": "Keep the newsroom's six repositories, the press and the round working: every agent's release live within the quarter hour; the gates green; what can be made simpler or faster, made so.",
+   "status": "active",
+   "times": [
+    "06:40"
+   ]
+  },
+  {
    "agent": "factcheck",
    "model": "the editor's session's model (the session is the one the desk was founded in); routine runs could move to Sonnet with the editor's go",
    "objective": "Keep every statement on the site either consistent with the evidence or carrying an open ticket that says why not: re-grade what changed, check the fixes others made, look outside for the weak and the contested, and keep the investigations current.",
@@ -1132,11 +1272,11 @@
   {
    "agent": "pulse",
    "model": "",
-   "objective": "Track every php2shell-related CVE up the ladder (KEV, ransomware flag, Metasploit module, national CERT report, named victim) from the source watch, twice a day.",
+   "objective": "Pulse: exploited vs. talked about. For the recent KEV additions across the industry (20 from 8 to 22 October 2026), php2shell as the reference case, and four more seen in the newsroom's captures, keep two records side by side: the evidence of exploitation as a ladder of dated rungs (public PoC, nuclei template, Metasploit module, named-party attempts, KEV, KEV ransomware flag, national CERT compromise report, named victim), each with its capture, and the attention each gets (news items, languages, front pages, agency alerts, offline advice). Never combined: no score, no ranking, no patch advice. The Pulse vault is the pack vault 9f5knw9r (it replaced the normal vault 4klm5qlt on 26 October 2026).",
    "status": "active",
    "times": [
-    "06:44",
-    "14:44"
+    "07:22",
+    "14:52"
    ]
   },
   {
@@ -1179,5 +1319,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.26"
+ "version": "0.22.27"
 }

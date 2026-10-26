@@ -10,7 +10,7 @@ ROOT="$(cd "$(dirname "$0")/.." && pwd)"; cd "$ROOT"
 MSG="${1:?release message required}"
 BRANCH="${RELEASE_BRANCH:-dev}"
 # 0. take in what landed meanwhile; files/ is the only place two writers can collide, so a conflict stops the release
-git fetch -q origin "$BRANCH" 2>/dev/null || true
+git fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH" 2>/dev/null || true   # the tracking ref itself: a clone made for one branch does not move it on a plain fetch
 if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --is-ancestor "origin/$BRANCH" HEAD; then
   if ! git merge -q --ff-only "origin/$BRANCH" 2>/dev/null; then
     echo "release stopped: origin/$BRANCH has commits this clone does not; commit or stash your files/ change, merge origin/$BRANCH by hand, and run this again"
@@ -38,10 +38,11 @@ for attempt in 1 2 3 4 5; do
   if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "v$NEW: $MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "v$NEW: $MSG"; fi
   if git push -q -u origin "HEAD:$BRANCH" 2>/dev/null; then echo "pushed v$NEW to $BRANCH"; exit 0; fi
   echo "push rejected (someone released meanwhile): taking it in and numbering again ($attempt of 5)"
-  git reset -q --soft HEAD~1
+  git reset -q --soft HEAD~1; git reset -q               # the commit undone, nothing staged: the imported files stay as changes in the tree
   if [ "$NEW" != "$OLD" ]; then rm -rf "v/$NEW"; fi
   git checkout -q HEAD -- VERSION versions.json index.html latest 2>/dev/null || true
-  git fetch -q origin "$BRANCH"
+  git clean -fdq latest 2>/dev/null || true
+  git fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH"
   git merge -q --ff-only "origin/$BRANCH" || { echo "release stopped: your change and someone else's touch the same file; merge origin/$BRANCH by hand and run this again"; exit 3; }
 done
 echo "release stopped: five tries, five releases by others in between; run this again"; exit 3
