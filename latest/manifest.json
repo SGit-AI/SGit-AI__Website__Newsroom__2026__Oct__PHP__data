@@ -274,7 +274,7 @@
    "group": "runtime",
    "name": "personas.json",
    "schema": "schemas/personas.schema.json",
-   "sha256": "45744cd59da4e5825723b101c559aa8a0bd0dcd8ac3c54558271366e133d7819"
+   "sha256": "6c741256d74f6cdf98c326b61b80b21cea0c26cdf0a5baea7116f5712e6eb3f9"
   },
   {
    "bytes": 134769,
@@ -3339,6 +3339,6 @@
   "vault-timeline.json",
   "vault.json"
  ],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.30/",
- "version": "0.1.30"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.31/",
+ "version": "0.1.31"
 }

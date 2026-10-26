@@ -1,0 +1,943 @@
+[
+ {
+  "id": "two-cves-9.2",
+  "claim": "Two critical vulnerabilities, CVE-2026-109618 and CVE-2026-109619, each CVSS v4.0 9.2, fixed in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35",
+  "by": "PHP Group (CNA), GitHub advisories, php.net",
+  "sources": [
+   "cve-cve-2026-109618",
+   "cve-cve-2026-109619",
+   "github-ghsa-w8hw-w9fx-j79w",
+   "github-ghsa-6wmf-4rv5-p3rp",
+   "php-net-advisory"
+  ],
+  "status": "confirmed",
+  "topic": "technical",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "cvss-10",
+  "claim": "The flaws are CVSS 10.0",
+  "by": "social posts on 20 October, relayed by a vendor and a news site",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "daubois-blog-php2shell-rumors"
+  ],
+  "status": "contradicted",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "The PHP Foundation: 'a wrong CVSS score of 10.0 (the actual score is 9.2)'. Daubois traces it to a social post relayed by Phoenix Security and to watchTowr via Cyber Daily."
+ },
+ {
+  "id": "rce-modphp",
+  "claim": "Unauthenticated RCE over HTTP against Apache mod_php with default settings, before any application code runs",
+  "by": "PHP security team (GHSA, oss-security), php.net",
+  "sources": [
+   "github-ghsa-w8hw-w9fx-j79w",
+   "openwall-oss-security-2026-10-21-6",
+   "php-net-advisory"
+  ],
+  "status": "confirmed",
+  "topic": "technical",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "rce-fpm",
+  "claim": "Remote code execution is confirmed on PHP-FPM",
+  "by": "PHP Foundation blog; GHSA-6wmf for the session path",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "github-ghsa-6wmf-4rv5-p3rp",
+   "github-ghsa-w8hw-w9fx-j79w",
+   "openwall-oss-security-2026-10-21-6"
+  ],
+  "status": "disputed",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "GHSA-w8hw (CVE-2026-109618): 'no complete FPM exploit has been demonstrated for this SAPI'. The Foundation blog: RCE 'was also confirmed on PHP-FPM through application-level code paths'. GHSA-6wmf (CVE-2026-109619): session lifecycle RCE 'validated against mod_php and FPM'. The accounts may refer to different CVEs."
+ },
+ {
+  "id": "fix-bailout",
+  "claim": "The fix removes longjmp() for out-of-memory errors in favour of a delayed soft OOM at the next VM safe point and a hard OOM via _exit(); the changelog line is 'Avoid state corruption via bailout'",
+  "by": "PHP security team",
+  "sources": [
+   "github-ghsa-w8hw-w9fx-j79w",
+   "php-net-changelog-8",
+   "github-php-src-branch-7.4-backport"
+  ],
+  "status": "confirmed",
+  "topic": "technical",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "fix-incomplete",
+  "claim": "The 8.5.12 fix may be incomplete, or there is a third, different bug",
+  "by": "Fediverse posts relayed to oss-security by Aaron Rainbolt and Yves-Alexis Perez",
+  "sources": [
+   "openwall-oss-security-109619-thread"
+  ],
+  "status": "unverified",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "Per a Matrix channel, Canonical asked PHP and 'was told that it's unrelated and not a real issue'. Second-hand. Nothing from PHP on the list at capture."
+ },
+ {
+  "id": "versions-old",
+  "claim": "All PHP versions from 5 onwards are affected by at least one of the flaws",
+  "by": "NCSC-NL; Wiz ('>= 5.4'); CERT-FR (5.x, 6.x, 7.x, 8.0, 8.1)",
+  "sources": [
+   "ncsc-nl-advisories",
+   "x-wiz-io-php2shell",
+   "certfr-2026-ale-014",
+   "openwall-oss-security-109619-thread"
+  ],
+  "status": "disputed",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "The CVE records list only 8.2 to 8.5 with defaultStatus 'unaffected'. php.net published source backports for 7.4, 8.0 and 8.1, which implies they are affected. A scanner that trusts the CVE record will miss 7.4 to 8.1."
+ },
+ {
+  "id": "only-update",
+  "claim": "Updating is the only complete mitigation; the configuration measures reduce exposure to specific paths and do not make an installation safe",
+  "by": "php.net; PHP security team",
+  "sources": [
+   "php-net-advisory",
+   "openwall-oss-security-2026-10-21-7",
+   "github-ghsa-6wmf-4rv5-p3rp"
+  ],
+  "status": "confirmed",
+  "topic": "technical",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "waf",
+  "claim": "A web application firewall may provide some protection until systems are patched",
+  "by": "CISA",
+  "sources": [
+   "cisa-alert-php-20261021",
+   "ch-bacs-warnung-php",
+   "cloudflare-blog-php2shell-waf"
+  ],
+  "status": "disputed",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "Swiss BACS: 'Even a web application firewall alone is not sufficient.' Cloudflare says its rules blocked the traffic it saw and that attackers mutated payloads to get past them."
+ },
+ {
+  "id": "wordpress-drupal",
+  "claim": "In researchers' own tests, pre-authentication RCE was confirmed against WordPress, Drupal, Joomla, MediaWiki, Roundcube, Magento, phpMyAdmin, Nextcloud, Laravel, Symfony and WHMCS",
+  "by": "Calif; Wiz for WordPress and Drupal",
+  "sources": [
+   "calif-php2shell",
+   "wiz-blog-php2shell"
+  ],
+  "status": "reported",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "Two researcher parties, no third-party reproduction in the vault. The demo videos were not downloaded."
+ },
+ {
+  "id": "scale-70pc-internet",
+  "claim": "70% of the Internet is affected",
+  "by": "Wiz (headline, X post); the BBC, which reports it as Wiz's 'roughly 70%'",
+  "sources": [
+   "wiz-blog-php2shell",
+   "x-wiz-io-php2shell",
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "status": "unverified",
+  "topic": "scale",
+  "agent": "claude-story-site",
+  "note": "The BBC was 'unable to independently verify that figure'. Wiz's body text says 70% of websites and cites no measurement."
+ },
+ {
+  "id": "scale-70pc-websites",
+  "claim": "PHP is used by almost 70% of websites whose server-side language is known",
+  "by": "Cloudflare; OpenAI ('an estimated 70%'); Wiz body text",
+  "sources": [
+   "cloudflare-blog-php2shell-waf",
+   "x-openai-php2shell",
+   "wiz-blog-php2shell"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "agent": "claude-story-site",
+  "note": "None of the three cites the survey it comes from. A share of websites using PHP is an upper bound on exposure, not a count of vulnerable systems."
+ },
+ {
+  "id": "scale-30m",
+  "claim": "Something like 30 million websites could be affected",
+  "by": "Alan Woodward, via the BBC",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "agent": "claude-story-site",
+  "note": "No basis given."
+ },
+ {
+  "id": "scale-2.6m-hosts",
+  "claim": "VulnCheck counts about 2.6 million internet-facing hosts exposing PHP; Censys, of the 2.58 million hosts it saw, could read a version on 1.58 million, and 1.57 million of those were unpatched on 21 October",
+  "by": "VulnCheck and Censys, via The Hacker News and SecurityWeek",
+  "sources": [
+   "thehackernews-php2shell-4days",
+   "securityweek-exploitation-days-before"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "agent": "claude-story-site",
+  "note": "Censys: 2.58 million hosts seen, 1.58 million reporting a version, 1.57 million not patched; nearly 3 million by 22 October. VirusTotal: 5.1 million IPs running PHP, 1.1 million announcing a version. Unit 42: 22.6 million systems that 'could be vulnerable' (via Insurance Business). Censys's own post was not found."
+ },
+ {
+  "id": "scale-latvia",
+  "claim": "About 6,000 potentially affected resources in Latvia, a few hundred in the public sector",
+  "by": "CERT.LV",
+  "sources": [
+   "certlv-php-preventive"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "agent": "claude-story-site",
+  "note": "Primary source, one country, says 'potentially'."
+ },
+ {
+  "id": "scale-ncsc-nl",
+  "claim": "674 products in the NCSC-NL inventory: 206 vulnerable, 46 fixed, 418 under investigation, 3 not vulnerable",
+  "by": "NCSC-NL, counted by this site from the file at commit cca173c64ec5",
+  "sources": [
+   "ncsc-nl-php2shell-software-list"
+  ],
+  "status": "confirmed",
+  "topic": "scale",
+  "agent": "claude-story-site",
+  "note": "Counted, not quoted. NCSC-NL calls unbacked entries 'investigation leads'."
+ },
+ {
+  "id": "ai-found",
+  "claim": "The flaws were found by researchers using frontier AI under OpenAI's Patch the Planet initiative",
+  "by": "BBC; OpenAI; Calif; Wiz",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t",
+   "x-openai-php2shell",
+   "calif-php2shell",
+   "wiz-blog-php2shell"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "All three research parties say AI was used. Calif: 'No special harness, or access to models that weren't generally available to everyone were used'. Calif does not name a model; Wiz names Gemini 4 Argon, GPT-5.6 Sol and Wiz Atlas; OpenAI's blog reportedly names GPT-5.6 Sol but is blocked."
+ },
+ {
+  "id": "who-first",
+  "claim": "Calif found the flaws first: discovery 1 August, hash commitment 5 August, report to PHP 11 August",
+  "by": "Calif; PHP Foundation (report date)",
+  "sources": [
+   "calif-php2shell",
+   "x-lcfr-hax-hash-tweet",
+   "php-foundation-blog-security-release"
+  ],
+  "status": "confirmed",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "The hash tweet is dated 5 August 2026 on X; its pre-image has not been published, so what it commits to cannot be checked."
+ },
+ {
+  "id": "openai-same-day",
+  "claim": "OpenAI independently reported the same root cause on 11 August, with further vectors on 18 September",
+  "by": "PHP Foundation",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "github-ghsa-w8hw-w9fx-j79w"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "The GitHub advisories credit amyb-oai among four reporters. OpenAI's own post credits Calif's discovery 'using GPT-5.6 Sol' and Wiz; an X Community Note disputes OpenAI's role."
+ },
+ {
+  "id": "wiz-independent",
+  "claim": "Wiz Research independently discovered the first flaw on 19 August and reported on 24 August",
+  "by": "Wiz; PHP Foundation (24 August)",
+  "sources": [
+   "wiz-blog-php2shell",
+   "php-foundation-blog-security-release"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "Wiz's X post says 'Wiz Research uncovers' with no credit to Calif or OpenAI; the blog thanks both."
+ },
+ {
+  "id": "four-reporters",
+  "claim": "The GitHub advisories credit four reporters: lcfr-hax (Calif), sagitzadik-wiz (Wiz), amyb-oai (OpenAI) and tomash-areion",
+  "by": "GitHub security advisories",
+  "sources": [
+   "github-ghsa-w8hw-w9fx-j79w",
+   "github-ghsa-6wmf-4rv5-p3rp",
+   "daubois-blog-php2shell-rumors"
+  ],
+  "status": "confirmed",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "tomash-areion is not named in the PHP Foundation's thanks and appears nowhere else on this beat."
+ },
+ {
+  "id": "quarkslab-2024",
+  "claim": "The out-of-memory issue was found in a 2024 audit by Quarkslab (funded through OSTIF and the Sovereign Tech Agency) but exploitation was not proven, so it was not fixed",
+  "by": "PHP Foundation; Calif",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "calif-php2shell"
+  ],
+  "status": "confirmed",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "Two parties agree. The Foundation calls the delay 'a structural failure'. Cloudflare lists Quarkslab among the 2026 disclosers; nobody else does."
+ },
+ {
+  "id": "ahead-of-attackers",
+  "claim": "Frontier AI found the flaw ahead of attackers, giving defenders time to prepare",
+  "by": "OpenAI",
+  "sources": [
+   "x-openai-php2shell",
+   "thehackernews-php2shell-4days"
+  ],
+  "status": "disputed",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "Amazon reports an exploit attempt against a honeypot on 17 October, four days before disclosure, from an actor whose source of exploit information is unknown."
+ },
+ {
+  "id": "most-severe",
+  "claim": "The most severe flaws ever detected by AI",
+  "by": "BBC attributing Wiz",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t",
+   "wiz-blog-php2shell"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "Wiz's own wording is 'among the most severe vulnerabilities discovered in PHP, and arguably in software history'. OpenAI: 'one of the most impactful vulnerabilities in recent memory'."
+ },
+ {
+  "id": "leak-cve-ids",
+  "claim": "On 20 October at about 15:00 UTC the two CVE IDs began circulating on forums and social media with a wrong release time and a wrong CVSS score; no technical details leaked",
+  "by": "PHP Foundation",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "phpfoundation-blog-security-release-leak"
+  ],
+  "status": "reported",
+  "topic": "leak",
+  "agent": "claude-story-site",
+  "note": "Primary party. The Foundation does not say who or where."
+ },
+ {
+  "id": "leak-hn",
+  "claim": "The leak started with an anonymous Hacker News post citing a reliable source, which came down after screenshots spread; a screenshot of the 'PHP2Shell tool' credited to Calif.io and a short exploitation video also went up and came down",
+  "by": "Alexandre Daubois (PHP security team, personal blog)",
+  "sources": [
+   "daubois-blog-php2shell-rumors"
+  ],
+  "status": "reported",
+  "topic": "leak",
+  "agent": "claude-story-site",
+  "note": "Contradicts the Foundation's 'no technical details leaked' and The Hacker News's 'a proof-of-concept exploit leaked'. No copy of the post, screenshot or video is in the vault."
+ },
+ {
+  "id": "leak-watchtowr",
+  "claim": "watchTowr confirmed in public that the bugs were real and posted both CVE numbers before the release",
+  "by": "Daubois; CERT-EU lists a watchTowr X post among public reports",
+  "sources": [
+   "daubois-blog-php2shell-rumors",
+   "certeu-sa-2026-018"
+  ],
+  "status": "reported",
+  "topic": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "leak-video",
+  "claim": "Calif mistakenly published a video around 20:00 UTC on 20 October showing its proof of concept against a number of targets; copies circulated and 'contributed to accelerated development of various PoCs'",
+  "by": "PHP Foundation",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "phpfoundation-blog-security-release-leak",
+   "bbc-live-ckgel5xp2xv9t",
+   "calif-php2shell"
+  ],
+  "status": "reported",
+  "topic": "leak",
+  "agent": "claude-story-site",
+  "note": "Calif's own page does not mention a leak or a deleted video; it embeds two demo videos. Whether one of them is the deleted video is unknown."
+ },
+ {
+  "id": "leak-mitigations",
+  "claim": "Mitigation advice given to a few critical-infrastructure providers from about 23:00 UTC on 20 October may have leaked",
+  "by": "PHP Foundation",
+  "sources": [
+   "php-foundation-blog-security-release"
+  ],
+  "status": "reported",
+  "topic": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "chainguard",
+  "claim": "Chainguard unilaterally broke the embargo on 21 October at 07:41 UTC by publishing built images containing the fix",
+  "by": "PHP Foundation; Chainguard's CEO accepts the time and denies leaking",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "theregister-php-blames-chainguard",
+   "x-feross-chainguard"
+  ],
+  "status": "disputed",
+  "topic": "leak",
+  "agent": "claude-story-site",
+  "note": "Dan Lorenc (via The Register): 'I made the call to get these out early when exploits hit in the wild'; several unnamed vendors had reported exploits; Chainguard's honeypots trapped IPs; a researcher warned the company on the Friday and its team then found the bugs independently with an AI harness. No evidence published. The PHP security team found no functional exploit by release time."
+ },
+ {
+  "id": "release-moved",
+  "claim": "The release moved forward from 22 October 14:00 UTC to 21 October 14:00 UTC because of the leak",
+  "by": "PHP Foundation; php.net pre-announcement; Wiz thread ('Apply the Oct 22 security release')",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "openwall-oss-security-2026-10-20-34",
+   "x-wiz-io-php2shell",
+   "php-net-changelog-8"
+  ],
+  "status": "confirmed",
+  "topic": "leak",
+  "agent": "claude-story-site",
+  "note": "The php.net ChangeLog still dates all four releases 22 October. Wiz's X thread still says 22 October."
+ },
+ {
+  "id": "disclosure-22oct",
+  "claim": "The flaws were disclosed on 22 October 2026",
+  "by": "BBC framing (UK morning coverage)",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t",
+   "php-net-advisory",
+   "github-php-src-tag-php-8.5.12"
+  ],
+  "status": "contradicted",
+  "topic": "timing",
+  "agent": "claude-story-site",
+  "note": "Primary sources put the release at 21 October: GHSAs 13:34Z, tags 13:35Z, CVE records 13:48Z and 13:54Z, GitHub release 14:06Z."
+ },
+ {
+  "id": "release-time",
+  "claim": "The fixes were scheduled for 14:00 UTC on 21 October and were published between 13:31 and 13:35 UTC",
+  "by": "PHP 8.5's release manager, Daniel Scherzer, from the repositories' history; the GitHub tags and advisories (13:34 to 13:35 UTC); php.net pre-announcement (scheduled 14:00 UTC); CERT-EU (13:30 UTC)",
+  "sources": [
+   "openwall-oss-security-2026-10-20-34",
+   "daubois-blog-php2shell-rumors",
+   "certfr-2026-ale-014",
+   "certeu-sa-2026-018",
+   "github-php-src-tags",
+   "github-ghsa-w8hw-w9fx-j79w",
+   "github-php-src-tag-php-8.5.12",
+   "php-net-advisory",
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "status": "confirmed",
+  "topic": "timing",
+  "agent": "claude-story-site",
+  "note": "CERT-EU says 13:30 UTC; the tags and advisories are stamped 13:34 to 13:35 UTC; the GitHub release 14:06 UTC; the php.net feed entries carry 00:05 to 00:35 UTC, which are authoring times, not publication times. Revised by the correspondent on 26 October 2026: the release manager's own timeline (22 October) gives 13:31 (tarballs), 13:33 (announcements), 13:34 (GitHub advisories) and 13:35 (php-src), matching the tags' stamps; 14:00 UTC was the scheduled time, which BleepingComputer and others repeat. Status from disputed to confirmed, the claim reworded to say both."
+ },
+ {
+  "id": "preannounce-time",
+  "claim": "The pre-announcement was published at 19:30 UTC on 20 October",
+  "by": "PHP Foundation",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "openwall-oss-security-2026-10-20-34",
+   "php-net-advisory"
+  ],
+  "status": "disputed",
+  "topic": "timing",
+  "agent": "claude-story-site",
+  "note": "The php.net feed says 20:32 UTC; oss-security relayed it at 20:22:51 UTC, so it was public by then."
+ },
+ {
+  "id": "no-exploitation",
+  "claim": "There is no evidence yet that hackers have exploited the flaw",
+  "by": "Ryan Austin, Calif, on Radio 4, 08:00 BST 22 October",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "cisa-none",
+  "claim": "CISA has not observed exploitation; neither CVE is in the Known Exploited Vulnerabilities catalog",
+  "by": "CISA",
+  "sources": [
+   "cisa-alert-php-20261021",
+   "cisa-kev-json",
+   "cve-cve-2026-109618"
+  ],
+  "status": "confirmed",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "Catalog version 2026.10.21 fetched 2026-10-22T08:15Z, 1,754 entries. A point-in-time negative finding."
+ },
+ {
+  "id": "nz-active",
+  "claim": "Reports of active exploitation exist",
+  "by": "NCSC New Zealand",
+  "sources": [
+   "ncsc-nz-alert-php"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "The only agency saying so, and it does not say whose reports."
+ },
+ {
+  "id": "amazon-honeypot",
+  "claim": "An exploit attempt hit an Amazon honeypot on 17 October from an anonymisation network; proof-of-concept attempts began about 02:00 UTC on 21 October from multiple actors; after release 'PHP2Shell is now being broadly exploited in the wild'",
+  "by": "Amazon (CJ Moses, AWS Security Blog)",
+  "sources": [
+   "aws-security-blog-madpot",
+   "thehackernews-php2shell-4days"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "Primary party. Amazon adds: 'it's unclear if any of these attempts would have succeeded in real-world systems'. Attempts against honeypots, not compromises of victims."
+ },
+ {
+  "id": "cloudflare-traffic",
+  "claim": "Cloudflare observed attack traffic targeting its customers after the leak, with attackers mutating payloads",
+  "by": "Cloudflare",
+  "sources": [
+   "cloudflare-blog-php2shell-waf"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "Primary party, no volumes."
+ },
+ {
+  "id": "probing",
+  "claim": "Amazon and Cloudflare saw sites being probed for the flaw",
+  "by": "Alan Woodward, via the BBC; confirmed by both companies' own posts",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t",
+   "cloudflare-blog-php2shell-waf",
+   "aws-security-blog-madpot"
+  ],
+  "status": "confirmed",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "Both companies have since said so themselves."
+ },
+ {
+  "id": "latvia-attempts",
+  "claim": "Automated exploitation attempts were seen in Latvia; none succeeded",
+  "by": "CERT.LV",
+  "sources": [
+   "certlv-php-preventive"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "Primary source."
+ },
+ {
+  "id": "vibe-code",
+  "claim": "Criminals are using AI to 'vibe code' an attack method",
+  "by": "unnamed researchers, via the BBC",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "status": "unverified",
+  "topic": "exploitation",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "offline-nsa",
+  "claim": "If an immediate update is not feasible, take the system offline until it can be fully mitigated",
+  "by": "NSA Cybersecurity",
+  "sources": [
+   "nsa-x-2112903220209098897",
+   "nsa-press-php-4630238"
+  ],
+  "status": "confirmed",
+  "topic": "advice",
+  "agent": "claude-story-site",
+  "note": "X post 13:45:58Z 21 October (10.1 million views at capture) and the press release."
+ },
+ {
+  "id": "offline-cisa",
+  "claim": "Organisations that cannot update immediately, or that run PHP 8.1 or older, should take PHP-based systems offline",
+  "by": "CISA",
+  "sources": [
+   "cisa-alert-php-20261021"
+  ],
+  "status": "confirmed",
+  "topic": "advice",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "offline-ncsc",
+  "claim": "'Where immediate remediation is not feasible, organisations should consider taking the system offline until it can be fully mitigated'",
+  "by": "UK NCSC, as quoted by the BBC",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t",
+   "ncsc-news-php",
+   "cccs-al26-026"
+  ],
+  "status": "disputed",
+  "topic": "advice",
+  "agent": "claude-story-site",
+  "note": "That sentence is not on the NCSC page as captured at 08:09Z on 22 October. The page's offline advice is step 4 of 6 and is worded differently. The page was modified at 07:30Z that morning. The sentence's opening matches the Canadian CCCS text."
+ },
+ {
+  "id": "offline-allies",
+  "claim": "The UK's NCSC, the NSA and their counterparts in the EU and Australia advise taking systems offline where patching is not feasible",
+  "by": "BBC",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t",
+   "acsc-alert-php",
+   "certeu-sa-2026-018",
+   "ncsc-nl-php2shell",
+   "acn-it-php2shell",
+   "jpcert-at260033"
+  ],
+  "status": "contradicted",
+  "topic": "advice",
+  "agent": "claude-story-site",
+  "note": "Australia's ACSC gives no offline advice. CERT-EU says isolate. The Netherlands, Italy, Japan and New Zealand give no offline advice."
+ },
+ {
+  "id": "affected-sites",
+  "claim": "Parts of Wikipedia, Edinburgh council, French government sites, the University of Geneva, online shops and the BBC were affected or taken offline",
+  "by": "BBC",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site",
+  "note": "Not captured from any of the named organisations."
+ },
+ {
+  "id": "latvia-offline",
+  "claim": "Latvia restricted access from abroad to several state digital resources, possibly until 26 October; lsm.lv and 112.lv were restored by 20:00 UTC",
+  "by": "CERT.LV",
+  "sources": [
+   "certlv-php-preventive"
+  ],
+  "status": "confirmed",
+  "topic": "impact",
+  "agent": "claude-story-site",
+  "note": "The one documented case of government services being pulled from the public internet, from the agency itself."
+ },
+ {
+  "id": "gov-patch-required",
+  "claim": "The risks require immediate patching across United States Government departments and agencies",
+  "by": "NSA",
+  "sources": [
+   "nsa-press-php-4630238",
+   "cisa-home"
+  ],
+  "status": "reported",
+  "topic": "advice",
+  "agent": "claude-story-site",
+  "note": "No CISA emergency directive was visible on the CISA home page at capture."
+ },
+ {
+  "id": "cf-millions",
+  "claim": "Exploit attempts across Cloudflare's network: thousands in the ten hours before announcement, tens of thousands within 45 minutes after, hundreds of thousands within two hours, millions by 22 October 01:25 UTC",
+  "by": "Matthew Prince, Cloudflare CEO, on X",
+  "sources": [
+   "x-eastdakota-php2shell-stats"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "Primary party. Attempts, not compromises; no blocked count; 1.4 million views at capture."
+ },
+ {
+  "id": "imperva-none",
+  "claim": "No traffic matching the php2shell exploit patterns was seen during Imperva's pre-disclosure monitoring",
+  "by": "Imperva Threat Research",
+  "sources": [
+   "imperva-blog-php2shell"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "A negative finding from a party that had the details under embargo."
+ },
+ {
+  "id": "huntress-none",
+  "claim": "No exploitation observed on Huntress partner systems as of 20:30 UTC on 21 October; no public exploit code known to Huntress",
+  "by": "Huntress",
+  "sources": [
+   "huntress-php2shell-rapid-response"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "watchtowr-itw",
+  "claim": "watchTowr sees active exploitation attempts and lists the flaws as exploited in the wild",
+  "by": "watchTowr",
+  "sources": [
+   "watchtowr-php2shell",
+   "watchtowr-php2shell-faq"
+  ],
+  "status": "unverified",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "watchtowr.com returns HTTP 403 to this site's capture tool; known only from search summaries."
+ },
+ {
+  "id": "no-confirmed-compromise",
+  "claim": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+  "by": "this site, from every captured source in the evidence vault (525 sources, head 22a0c2920b88), as of its latest capture at 12:14 UTC on 26 October",
+  "sources": [
+   "cisa-kev-json",
+   "cisa-alert-php-20261021",
+   "huntress-php2shell-rapid-response",
+   "aws-security-blog-madpot",
+   "securityweek-first-attempts-sensors",
+   "securityweek-exploitation-days-before",
+   "recordedfuture-php2shell",
+   "imperva-blog-php2shell",
+   "weirdgloop-blog-php2shell",
+   "paperjam-article-php2shell-des-milliers-de-sites",
+   "pcmag-news-hackers-already-trying-to-exploit-serious-php-flaw",
+   "itsocial-cybersecurite-cybersecurite-articles-php",
+   "lupa-cvut-cyber-attack",
+   "yahoo-jp-gmo-fx-login-leak",
+   "sankei-dmm-service-halt",
+   "impress-watch-valtec",
+   "the-verge-php2shell-websites-down",
+   "cybersecuritynews-critical-php2shell-exploit-code",
+   "americanbanker-news-banks-dodge-early-damage-from-php2s",
+   "the-next-web-php2shell-no-confirmed-breaches",
+   "diepresse-41383717-die-php-sicherheitsluecke-ist-a",
+   "voix-business-cards-rainforest-ip-activity-an",
+   "haber-teknoloji-siber-guvenlik-baskanligi-ndan",
+   "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-journalist",
+  "note": "A time-bounded absence, not a confirmed fact: it can only be true as of the last check, and it will change. Changed from \"confirmed\" on 22 October at the editor's request. Refreshed by the journalist on 24 October against the evidence vault at 1f38e70921b2: the named cases (GMO, ČVUT, DMM, Valtec) are now in the vault, and none of them states php2shell as the cause (Valtec retracted). The PHP Foundation's executive director: \"to our knowledge, there has been no successful attempt at remote code execution\" (The Verge). Luxembourg: no institution has announced an intrusion (Paperjam). Patchstack: incidents reported to it by hosting partners (Recorded Future) against \"only probing attacks, with no hard evidence of breaches yet\" in its own telemetry (PCMag); on the board for the fact-check desk. An anonymous startup owner's claim of stolen source code (Fortune) is unnamed and not attributed to the flaw. Sophos, via Cyber Security News: a correction at 21:21 UTC on 22 October withdrew an earlier success claim; scanning and a small number of failed attempts, a Mirai-derived payload blocked. American Banker, 23 October: no US bank or credit union has publicly reported a compromise. Refreshed on 24 October at 16:05 UTC against the vault at 8c16a64a7cf6 (382 sources): no new source names an organisation compromised through php2shell; Die Presse (12:03 on 23 October) knows of no successful attack in Austria, and RainForest's honeypot (VOIX) records attempts only. Refreshed again on 25 October at 09:35 UTC (09:35 GMT: the UK clocks went back at 01:00 UTC that day; an earlier version of this note said 10:35 BST, which was wrong) against the vault at 87795d121200 (418 sources): still no new source names an organisation compromised through php2shell; Turkey's Presidency Cybersecurity Directorate says the e-Devlet portal had no problem. Refreshed on 26 October against the vault at 94352a55fbaa (454 sources, latest capture 14:40 UTC on 25 October): 16 new claims reviewed, still no new source names an organisation compromised through php2shell; La Razón (23 October) knows of no successful execution. Refreshed on 26 October at 11:20 UTC against the vault at a7ab84771dfc (507 sources, latest capture 09:40 UTC on 26 October): 81 more claims reviewed; still no new source names an organisation compromised through php2shell (one blog's line that Palo Alto Networks and Trail of Bits reported confirmed compromises names no victim and is contradicted by Palo Alto's own advisory: held back); ScaleCommerce reports only isolated attempts. Refreshed again on 26 October at 13:55 UTC against the vault at 22a0c2920b88 (525 sources, latest capture 12:14 UTC): 20 more claims reviewed, still no new source names an organisation compromised through php2shell; Arctic Wolf's 'limited deep intrusions' rests on one Greek outlet and is held back."
+ },
+ {
+  "id": "pocs-wrong",
+  "claim": "None of the public proof-of-concept exploits reviewed by VulnCheck has the correct mechanism; a lab reproduction of the leaked PoC's precondition produced a clean 200",
+  "by": "rjmendez (detection author) citing VulnCheck; Huntress",
+  "sources": [
+   "github-rjmendez-phpup-2026",
+   "huntress-php2shell-rapid-response"
+  ],
+  "status": "reported",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "The Hacker News says the same of the public code. Fastly: working RCE needs knowledge of the running binary's layout on x86_64."
+ },
+ {
+  "id": "ac-high",
+  "claim": "Triggering the bug is much easier than turning it into code execution; the CVSS vector says attack complexity high",
+  "by": "Imperva; Fastly; the CVE record",
+  "sources": [
+   "imperva-blog-php2shell",
+   "fastly-blog-php2shell",
+   "cve-cve-2026-109618"
+  ],
+  "status": "confirmed",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "Fastly: 'most deployments may be safe from RCE. Do not assume this holds true for you.' Imperva: five demonstrated techniques, three via session upload progress; about 67 KB of memory disclosed per attack."
+ },
+ {
+  "id": "fix-authored",
+  "claim": "The fix was authored on 18 October at 15:26 UTC and entered the public branches at 14:06 UTC on 21 October, with merges into 8.3, 8.4 and 8.5 between 14:12 and 14:30 UTC",
+  "by": "php/php-src commit 3584a98bd, read from a clone",
+  "sources": [
+   "github-php-src-fix-commit-3584a98bd",
+   "github-php-src-tag-php-8.5.12"
+  ],
+  "status": "confirmed",
+  "topic": "timing",
+  "agent": "claude-story-site",
+  "note": "Counted from the repository, not from a page. Five authors; 389 files; 10,689 insertions."
+ },
+ {
+  "id": "fix-engine",
+  "claim": "Both bugs are in the C engine, not in PHP code: the allocator's longjmp-based bailout on out-of-memory, and request globals that survive a failed request",
+  "by": "php/php-src fix commit; the GitHub advisories",
+  "sources": [
+   "github-php-src-fix-commit-3584a98bd",
+   "github-ghsa-w8hw-w9fx-j79w",
+   "github-ghsa-6wmf-4rv5-p3rp"
+  ],
+  "status": "confirmed",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "The fix replaces bailout with a delayed error and an UnwindExit at a safe point, adds a hard limit that _exits, and resets the globals. See the code page."
+ },
+ {
+  "id": "more-paths",
+  "claim": "Patching the demonstrated paths does not make the bailout mechanism safe; more paths should be expected",
+  "by": "Fastly",
+  "sources": [
+   "fastly-blog-php2shell",
+   "openwall-oss-security-109619-thread"
+  ],
+  "status": "reported",
+  "topic": "technical",
+  "agent": "claude-story-site",
+  "note": "A position, from a vendor; consistent with the Fediverse report of a third bug."
+ },
+ {
+  "id": "waf-nine-hours",
+  "claim": "Edge protections went live hours before disclosure: Cloudflare at 03:02 UTC; Imperva, Akamai and Fastly on 21 October; Fortinet signatures by 22 October",
+  "by": "the vendors",
+  "sources": [
+   "cloudflare-blog-php2shell-waf",
+   "imperva-blog-php2shell",
+   "akamai-blog-php-core-rce",
+   "fastly-blog-php2shell",
+   "fortinet-fortiweb-php2shell"
+  ],
+  "status": "confirmed",
+  "topic": "advice",
+  "agent": "claude-story-site",
+  "note": "Every vendor says the same two things: it is a stopgap, and patch anyway."
+ },
+ {
+  "id": "nl-offline",
+  "claim": "The Dutch government took NCSC.nl offline as a precaution, with no active misuse seen yet; Dutch press reported DigiD, MijnOverheid and Overheid.nl offline too",
+  "by": "the Dutch government",
+  "sources": [
+   "rijksoverheid-ncsc-php-news",
+   "tpo-nl-digid-offline"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site",
+  "note": "The government's notice names only NCSC.nl; DigiD and MijnOverheid rest on the press (fact-check desk, run 1: holds in part, overstated)."
+ },
+ {
+  "id": "fi-offline",
+  "claim": "Finland's state IT provider Valtori restricted public traffic to government web services from 12:45 local time on 21 October as a precaution",
+  "by": "Yle; Helsinki Times, quoting Valtori",
+  "sources": [
+   "yle-finland-government-sites-shut",
+   "helsinkitimes-finland-shutdown"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "wikimedia-precaution",
+  "claim": "The Wikimedia Foundation took down a number of systems 'as a precautionary measure until they can be safely patched'",
+  "by": "the Foundation, as quoted by CNN and The Cyber Express",
+  "sources": [
+   "cnn-php2shell-websites-shut",
+   "cyberexpress-php2shell-gov-sites"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site",
+  "note": "No Wikimedia-published statement captured."
+ },
+ {
+  "id": "weirdgloop-13h",
+  "claim": "Weird Gloop turned off its wiki web servers for 13 hours and still served about 94% of page views from cache",
+  "by": "Weird Gloop",
+  "sources": [
+   "weirdgloop-blog-php2shell"
+  ],
+  "status": "confirmed",
+  "topic": "impact",
+  "agent": "claude-story-site",
+  "note": "Primary, and the one outage with a measured cost."
+ },
+ {
+  "id": "edinburgh",
+  "claim": "Edinburgh council's site went offline late on 21 October; the council called it 'essential maintenance' and did not confirm a link",
+  "by": "The Scotsman quoting the council",
+  "sources": [
+   "scotsman-edinburgh-council-offline"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "oxford",
+  "claim": "Oxford City Council: 'a precaution because of a worldwide issue with the underlying technology and is not a cyber incident'",
+  "by": "the council's social post, via Oxford Chronicle",
+  "sources": [
+   "oxfordchronicle-councils-offline"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "uk-list",
+  "claim": "Edinburgh and Oxford councils, the Met Police and the Office for Budget Responsibility were unavailable; Bristol, Lambeth and Barnet council sites showed errors",
+  "by": "LBC; Insurance Business",
+  "sources": [
+   "lbc-uk-websites-offline",
+   "insurancebusiness-uk-councils-met"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "agent": "claude-story-site"
+ },
+ {
+  "id": "quarkslab-redacted",
+  "claim": "Quarkslab's published audit summary lists 27 findings, two redacted because their fixes were complex and in progress; it does not describe an out-of-memory finding",
+  "by": "Quarkslab's blog; a Substack analysis",
+  "sources": [
+   "quarkslab-blog-php-src-audit",
+   "substack-lopezkurtz-patch-is-the-exploit"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "The Foundation says the OOM signs were found while fixing one of the audit's findings, not in the audit report itself."
+ },
+ {
+  "id": "lorenc-ai-found",
+  "claim": "Chainguard's team found the same bugs independently with an AI harness and a frontier model after a researcher warned them on the Friday before",
+  "by": "Dan Lorenc, via The Register",
+  "sources": [
+   "theregister-php-blames-chainguard"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "agent": "claude-story-site",
+  "note": "Unverified by anyone else."
+ },
+ {
+  "id": "kev-precedent",
+  "claim": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell is not in KEV after one day",
+  "by": "CISA KEV catalog; Akamai (2024)",
+  "sources": [
+   "cisa-kev-json",
+   "cve-cve-2024-4577",
+   "akamai-blog-cve-2024-4577-one-day"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "agent": "claude-story-site",
+  "note": "The KEV dates are counted from the captured catalog; 'exploited in the wild one day after disclosure' rests on Akamai alone."
+ }
+]

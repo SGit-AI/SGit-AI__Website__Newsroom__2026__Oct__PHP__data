@@ -1,0 +1,265 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "exported_at": {
+   "type": "string"
+  },
+  "next": {
+   "properties": {
+    "correspondent": {
+     "properties": {
+      "model": {
+       "type": "string"
+      },
+      "next": {
+       "type": "array"
+      },
+      "status": {
+       "type": "string"
+      },
+      "times_london": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "model",
+      "next",
+      "status",
+      "times_london"
+     ],
+     "type": "object"
+    },
+    "curator": {
+     "properties": {
+      "model": {
+       "type": "string"
+      },
+      "next": {
+       "type": "array"
+      },
+      "status": {
+       "type": "string"
+      },
+      "times_london": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "model",
+      "next",
+      "status",
+      "times_london"
+     ],
+     "type": "object"
+    },
+    "journalist": {
+     "properties": {
+      "model": {
+       "type": "string"
+      },
+      "next": {
+       "type": "array"
+      },
+      "status": {
+       "type": "string"
+      },
+      "times_london": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "model",
+      "next",
+      "status",
+      "times_london"
+     ],
+     "type": "object"
+    },
+    "researcher": {
+     "properties": {
+      "model": {
+       "type": "string"
+      },
+      "next": {
+       "type": "array"
+      },
+      "status": {
+       "type": "string"
+      },
+      "times_london": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "model",
+      "next",
+      "status",
+      "times_london"
+     ],
+     "type": "object"
+    }
+   },
+   "required": [
+    "correspondent",
+    "curator",
+    "journalist",
+    "researcher"
+   ],
+   "type": "object"
+  },
+  "releases": {
+   "items": {
+    "properties": {
+     "agent": {
+      "type": "string"
+     },
+     "at": {
+      "type": "string"
+     },
+     "commit": {
+      "type": "string"
+     },
+     "latest_capture": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "sources": {
+      "type": "number"
+     },
+     "vault_head": {
+      "type": "string"
+     },
+     "version": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "agent",
+     "at",
+     "commit",
+     "latest_capture",
+     "sources",
+     "vault_head",
+     "version"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "repo": {
+   "properties": {
+    "build_lines": {
+     "type": "number"
+    },
+    "bytes": {
+     "type": "number"
+    },
+    "commits": {
+     "type": "number"
+    },
+    "data_bytes": {
+     "type": "number"
+    },
+    "data_files": {
+     "type": "number"
+    },
+    "files": {
+     "type": "number"
+    },
+    "pages": {
+     "type": "number"
+    },
+    "twins": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "build_lines",
+    "bytes",
+    "commits",
+    "data_bytes",
+    "data_files",
+    "files",
+    "pages",
+    "twins"
+   ],
+   "type": "object"
+  },
+  "vault": {
+   "items": {
+    "properties": {
+     "at": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "by": {
+      "type": "string"
+     },
+     "claims": {
+      "type": "number"
+     },
+     "files_added": {
+      "type": "number"
+     },
+     "files_modified": {
+      "type": "number"
+     },
+     "id": {
+      "type": "string"
+     },
+     "queue_at": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "snapshots": {
+      "type": "number"
+     },
+     "sources": {
+      "type": "number"
+     },
+     "subject": {
+      "type": "string"
+     },
+     "wake_at": {
+      "type": [
+       "null",
+       "string"
+      ]
+     }
+    },
+    "required": [
+     "at",
+     "by",
+     "files_added",
+     "id",
+     "subject"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "vault_read_at": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "about",
+  "exported_at",
+  "next",
+  "releases",
+  "repo",
+  "vault",
+  "vault_read_at"
+ ],
+ "title": "loops.json",
+ "type": "object"
+}
