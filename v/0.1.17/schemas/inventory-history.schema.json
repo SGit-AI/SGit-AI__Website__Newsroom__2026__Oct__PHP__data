@@ -1,0 +1,128 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "changes": {
+   "items": {
+    "properties": {
+     "at": {
+      "type": "string"
+     },
+     "commit": {
+      "type": "string"
+     },
+     "from": {
+      "type": "string"
+     },
+     "product": {
+      "type": "string"
+     },
+     "supplier": {
+      "type": "string"
+     },
+     "to": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "at",
+     "commit",
+     "from",
+     "product",
+     "supplier",
+     "to"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "classes": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "rule": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "rule"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "head": {
+   "type": "string"
+  },
+  "head_rows": {
+   "items": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "type": "array"
+  },
+  "licence": {
+   "type": "string"
+  },
+  "read_from": {
+   "type": "string"
+  },
+  "self_check": {
+   "type": "string"
+  },
+  "snapshots": {
+   "items": {
+    "properties": {
+     "at": {
+      "type": "string"
+     },
+     "by_status": {
+      "type": "object"
+     },
+     "commit": {
+      "type": "string"
+     },
+     "rows": {
+      "type": "number"
+     }
+    },
+    "required": [
+     "at",
+     "by_status",
+     "commit",
+     "rows"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "source": {
+   "type": "string"
+  },
+  "vault_commit": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "changes",
+  "classes",
+  "head",
+  "head_rows",
+  "licence",
+  "read_from",
+  "self_check",
+  "snapshots",
+  "source",
+  "vault_commit"
+ ],
+ "title": "inventory-history.json",
+ "type": "object"
+}
