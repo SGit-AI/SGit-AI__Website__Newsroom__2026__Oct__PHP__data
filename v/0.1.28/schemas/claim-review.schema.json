@@ -1,0 +1,80 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "author": {
+   "type": "string"
+  },
+  "note": {
+   "type": "string"
+  },
+  "reviews": {
+   "items": {
+    "properties": {
+     "by": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "reason": {
+      "type": "string"
+     },
+     "reviewed": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "verdict": {
+      "type": "string"
+     },
+     "where": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "by",
+     "id",
+     "reason",
+     "reviewed",
+     "sources",
+     "verdict",
+     "where"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "verdicts": {
+   "properties": {
+    "agrees": {
+     "type": "string"
+    },
+    "held back": {
+     "type": "string"
+    },
+    "noted": {
+     "type": "string"
+    },
+    "used": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "agrees",
+    "held back",
+    "noted",
+    "used"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "author",
+  "note",
+  "reviews",
+  "verdicts"
+ ],
+ "title": "claim-review.json",
+ "type": "object"
+}
