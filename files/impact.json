@@ -286,6 +286,40 @@
    "sources": [
     "selular-2026-10-ancaman-serangan-siber-php2shell"
    ]
+  },
+  {
+   "who": "Belgium: the Foreign Affairs, Finance and Labour ministries' websites; media and education platforms",
+   "country": "BE",
+   "what": "Temporarily disabled after a warning from the Cyber Security Centre (CCB); a precaution, not a cyber attack. Takvim also lists the Netherlands (DigiD, the Rotterdam port portal, Schiphol's app, the House of Representatives), prefectures, police units and portals in France, Germany and Finland, all already on this ledger",
+   "when": "2026-10-22",
+   "said_by": "Takvim (Turkey)",
+   "status": "reported",
+   "sources": [
+    "takvim-guncel-2026-10-22-php2shell-guvenlik-aci"
+   ]
+  },
+  {
+   "who": "Japan, games and web services (Bitpage's list of 22 October): Square Enix (new logins to Final Fantasy XIV closed on all worlds, patch servers offline); Cygames (Umamusume, Granblue Fantasy, Shadowverse, Princess Connect); Pokemon Sleep, Pokemon HOME and Pokemon Champions; Sega (CHUNITHM); Bandai Namco ID; Niconico; the host Sakura Internet; the shop platforms BASE and Color Me Shop; the daycare software Kodomon",
+   "country": "JP",
+   "what": "Sent into emergency maintenance or closed in part, as the Bitpage.de situation report lists them (published 22 October, 06:21 UTC, updated through the day); TechGaming.it, citing Kotaku, reports Pokemon apps suspended and Square Enix. Bitpage says the cause was not an attack but the two PHP flaws. Part of this list (Niconico, Sakura Internet, BASE, Kodomon) is also on the Business+IT row",
+   "when": "2026-10-21",
+   "said_by": "Bitpage.de; TechGaming.it",
+   "status": "reported",
+   "sources": [
+    "bitpage-php2shell-php-sicherheitsluecke-webseite",
+    "techgaming-internet-sotto-attacco-php2shell-vulnera"
+   ]
+  },
+  {
+   "who": "Canada: federal government websites",
+   "country": "CA",
+   "what": "Taken off the net, per Bitpage.de's situation report of 22 October; one line, no detail or date of its own, and no Canadian source in this list",
+   "when": "2026-10-21",
+   "said_by": "Bitpage.de",
+   "status": "reported",
+   "sources": [
+    "bitpage-php2shell-php-sicherheitsluecke-webseite"
+   ]
   }
  ],
  "compromised": [

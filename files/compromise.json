@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-26T12:14Z",
+ "as_of": "2026-10-26T14:42Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 525,
+   "count": 543,
    "unit": "sources",
-   "detail": "head 22a0c2920b88; the site is built from all of it"
+   "detail": "head 2fc7e432584b; the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -518,6 +518,17 @@
    "reading": "One provider's own account of its own customers",
    "sources": [
     "pressebox-pressemitteilung-scalecommerce-gmbh-krit"
+   ]
+  },
+  {
+   "kind": "named-organisation",
+   "when": "2026-10-22",
+   "who": "Square Enix (Japan), as TechGaming.it reports it, citing Kotaku",
+   "says": "Square Enix 'confirmed episodes of unauthorised access to its systems' in the same week as PHP2Shell.",
+   "reading": "Unverified, second-hand: the outlet does not say the access came through the PHP flaws, and Kotaku's text and Square Enix's own words are not captured. Bitpage, the other page that names Square Enix, says it closed new Final Fantasy XIV logins and took patch servers offline, with the cause 'not an attack' but the PHP flaws",
+   "sources": [
+    "techgaming-internet-sotto-attacco-php2shell-vulnera",
+    "bitpage-php2shell-php-sicherheitsluecke-webseite"
    ]
   }
  ],
