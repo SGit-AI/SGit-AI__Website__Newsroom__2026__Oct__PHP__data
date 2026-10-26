@@ -1,0 +1,1431 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "agencies": {
+   "properties": {
+    "ACN / CSIRT Italia|IT": {
+     "type": "string"
+    },
+    "ASD's ACSC|AU": {
+     "type": "string"
+    },
+    "BACS (NCSC)|CH": {
+     "type": "string"
+    },
+    "CCCS|CA": {
+     "type": "string"
+    },
+    "CCN-CERT|ES": {
+     "type": "string"
+    },
+    "CERT-EU|EU institutions": {
+     "type": "string"
+    },
+    "CERT-FR (ANSSI)|FR": {
+     "type": "string"
+    },
+    "CERT.LV|LV": {
+     "type": "string"
+    },
+    "CISA|US": {
+     "type": "string"
+    },
+    "CNCS|PT": {
+     "type": "string"
+    },
+    "ENISA CSIRTs Network|EU": {
+     "type": "string"
+    },
+    "JPCERT/CC|JP": {
+     "type": "string"
+    },
+    "NCSC-NL|NL": {
+     "type": "string"
+    },
+    "NCSC|NZ": {
+     "type": "string"
+    },
+    "NCSC|UK": {
+     "type": "string"
+    },
+    "NSA Cybersecurity|US": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "ACN / CSIRT Italia|IT",
+    "ASD's ACSC|AU",
+    "BACS (NCSC)|CH",
+    "CCCS|CA",
+    "CCN-CERT|ES",
+    "CERT-EU|EU institutions",
+    "CERT-FR (ANSSI)|FR",
+    "CERT.LV|LV",
+    "CISA|US",
+    "CNCS|PT",
+    "ENISA CSIRTs Network|EU",
+    "JPCERT/CC|JP",
+    "NCSC-NL|NL",
+    "NCSC|NZ",
+    "NCSC|UK",
+    "NSA Cybersecurity|US"
+   ],
+   "type": "object"
+  },
+  "claims": {
+   "properties": {
+    "ac-high": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "affected-sites": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "ahead-of-attackers": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "ai-found": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "amazon-honeypot": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "cf-millions": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "chainguard": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "cisa-none": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "cloudflare-traffic": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "cvss-10": {
+     "properties": {
+      "note": {
+       "type": "string"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "note",
+      "states"
+     ],
+     "type": "object"
+    },
+    "disclosure-22oct": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "edinburgh": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "fi-offline": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "fix-authored": {
+     "properties": {
+      "counts": {
+       "type": "boolean"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "counts",
+      "states"
+     ],
+     "type": "object"
+    },
+    "fix-bailout": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "fix-engine": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "fix-incomplete": {
+     "properties": {
+      "note": {
+       "type": "string"
+      },
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "note",
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "four-reporters": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "gov-patch-required": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "huntress-none": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "imperva-none": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "kev-precedent": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "latvia-attempts": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "latvia-offline": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "leak-cve-ids": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "leak-hn": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "leak-mitigations": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "leak-video": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "leak-watchtowr": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "lorenc-ai-found": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "more-paths": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "most-severe": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "nl-offline": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "no-confirmed-compromise": {
+     "properties": {
+      "counts": {
+       "type": "boolean"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "counts",
+      "states"
+     ],
+     "type": "object"
+    },
+    "no-exploitation": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "nz-active": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "offline-allies": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "offline-cisa": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "offline-ncsc": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "offline-nsa": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "only-update": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "openai-same-day": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "oxford": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "pocs-wrong": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "preannounce-time": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "probing": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "quarkslab-2024": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "quarkslab-redacted": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "rce-fpm": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "rce-modphp": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "release-moved": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "release-time": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "scale-2.6m-hosts": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "scale-30m": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "scale-70pc-internet": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "scale-70pc-websites": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "scale-latvia": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "scale-ncsc-nl": {
+     "properties": {
+      "counts": {
+       "type": "boolean"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "counts",
+      "states"
+     ],
+     "type": "object"
+    },
+    "two-cves-9.2": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "uk-list": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "versions-old": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "vibe-code": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "waf": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "waf-nine-hours": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "watchtowr-itw": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "weirdgloop-13h": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "who-first": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "wikimedia-precaution": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "wiz-independent": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "wordpress-drupal": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    }
+   },
+   "required": [
+    "ac-high",
+    "affected-sites",
+    "ahead-of-attackers",
+    "ai-found",
+    "amazon-honeypot",
+    "cf-millions",
+    "chainguard",
+    "cisa-none",
+    "cloudflare-traffic",
+    "cvss-10",
+    "disclosure-22oct",
+    "edinburgh",
+    "fi-offline",
+    "fix-authored",
+    "fix-bailout",
+    "fix-engine",
+    "fix-incomplete",
+    "four-reporters",
+    "gov-patch-required",
+    "huntress-none",
+    "imperva-none",
+    "kev-precedent",
+    "latvia-attempts",
+    "latvia-offline",
+    "leak-cve-ids",
+    "leak-hn",
+    "leak-mitigations",
+    "leak-video",
+    "leak-watchtowr",
+    "lorenc-ai-found",
+    "more-paths",
+    "most-severe",
+    "nl-offline",
+    "no-confirmed-compromise",
+    "no-exploitation",
+    "nz-active",
+    "offline-allies",
+    "offline-cisa",
+    "offline-ncsc",
+    "offline-nsa",
+    "only-update",
+    "openai-same-day",
+    "oxford",
+    "pocs-wrong",
+    "preannounce-time",
+    "probing",
+    "quarkslab-2024",
+    "quarkslab-redacted",
+    "rce-fpm",
+    "rce-modphp",
+    "release-moved",
+    "release-time",
+    "scale-2.6m-hosts",
+    "scale-30m",
+    "scale-70pc-internet",
+    "scale-70pc-websites",
+    "scale-latvia",
+    "scale-ncsc-nl",
+    "two-cves-9.2",
+    "uk-list",
+    "versions-old",
+    "vibe-code",
+    "waf",
+    "waf-nine-hours",
+    "watchtowr-itw",
+    "weirdgloop-13h",
+    "who-first",
+    "wikimedia-precaution",
+    "wiz-independent",
+    "wordpress-drupal"
+   ],
+   "type": "object"
+  },
+  "exploitation": {
+   "items": {
+    "properties": {
+     "relays": {
+      "type": "array"
+     },
+     "states": {
+      "type": "array"
+     },
+     "who": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "states",
+     "who"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kept_by": {
+   "type": "string"
+  },
+  "numbers": {
+   "properties": {
+    "n-2.6m-hosts": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-22.6m": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-30m": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-389": {
+     "properties": {
+      "counts": {
+       "type": "boolean"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "counts",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-4days": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-6000-lv": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-674": {
+     "properties": {
+      "counts": {
+       "type": "boolean"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "counts",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-6h": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-70-internet": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-70-websites": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-94pc": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-9h": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-censys": {
+     "properties": {
+      "relays": {
+       "type": "array"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "relays",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-cvss": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-kev-2026": {
+     "properties": {
+      "counts": {
+       "type": "boolean"
+      },
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "counts",
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-millions-attempts": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    },
+    "n-views-nsa": {
+     "properties": {
+      "states": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "states"
+     ],
+     "type": "object"
+    }
+   },
+   "required": [
+    "n-2.6m-hosts",
+    "n-22.6m",
+    "n-30m",
+    "n-389",
+    "n-4days",
+    "n-6000-lv",
+    "n-674",
+    "n-6h",
+    "n-70-internet",
+    "n-70-websites",
+    "n-94pc",
+    "n-9h",
+    "n-censys",
+    "n-cvss",
+    "n-kev-2026",
+    "n-millions-attempts",
+    "n-views-nsa"
+   ],
+   "type": "object"
+  },
+  "sources": {
+   "properties": {
+    "boursorama-reuters-sites-gouv": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "eadt-minister-budget-no-breach": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "reuters-factbox-gbaf": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "reuters-factbox-websites-offline": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "rte-reuters-websites-go-dark": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "tagesspiegel-dpa-noch-offline": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "thestar-aseanplus-aseanplus-news-2026-10-22-seri": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "yahoo-jp-gmo-fx-login-leak": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    },
+    "yahoo-mashable-affected-list": {
+     "properties": {
+      "basis": {
+       "type": "string"
+      },
+      "syndicates": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "basis",
+      "syndicates"
+     ],
+     "type": "object"
+    }
+   },
+   "required": [
+    "boursorama-reuters-sites-gouv",
+    "eadt-minister-budget-no-breach",
+    "reuters-factbox-gbaf",
+    "reuters-factbox-websites-offline",
+    "rte-reuters-websites-go-dark",
+    "tagesspiegel-dpa-noch-offline",
+    "thestar-aseanplus-aseanplus-news-2026-10-22-seri",
+    "yahoo-jp-gmo-fx-login-leak",
+    "yahoo-mashable-affected-list"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "about",
+  "agencies",
+  "claims",
+  "exploitation",
+  "kept_by",
+  "numbers",
+  "sources"
+ ],
+ "title": "attribution.json",
+ "type": "object"
+}

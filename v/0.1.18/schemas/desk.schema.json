@@ -1,0 +1,194 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "accepted": {
+   "items": {
+    "properties": {
+     "page": {
+      "type": "string"
+     },
+     "phrase": {
+      "type": "string"
+     },
+     "why": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "page",
+     "phrase",
+     "why"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "author": {
+   "type": "string"
+  },
+  "catches": {
+   "items": {
+    "properties": {
+     "file": {
+      "type": "string"
+     },
+     "fixed_in": {
+      "type": "string"
+     },
+     "journalist_run": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "on": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "file",
+     "fixed_in",
+     "journalist_run",
+     "kind",
+     "on",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "catches_about": {
+   "type": "string"
+  },
+  "cycle": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     },
+     "who": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "label",
+     "what",
+     "who"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "decided": {
+   "properties": {
+    "by": {
+     "type": "string"
+    },
+    "on": {
+     "type": "string"
+    },
+    "says": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "by",
+    "on",
+    "says"
+   ],
+   "type": "object"
+  },
+  "files": {
+   "items": {
+    "properties": {
+     "checked_against": {
+      "type": [
+       "null",
+       "string"
+      ]
+     },
+     "kept_by_before": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "path": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "checked_against",
+     "kept_by_before",
+     "note",
+     "path"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kept_as_written": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "kept_as_written_why": {
+   "type": "string"
+  },
+  "note": {
+   "type": "string"
+  },
+  "pass": {
+   "items": {
+    "properties": {
+     "n": {
+      "type": "number"
+     },
+     "status": {
+      "type": "string"
+     },
+     "title": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "n",
+     "status",
+     "title",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "accepted",
+  "author",
+  "catches",
+  "catches_about",
+  "cycle",
+  "decided",
+  "files",
+  "kept_as_written",
+  "kept_as_written_why",
+  "note",
+  "pass"
+ ],
+ "title": "desk.json",
+ "type": "object"
+}

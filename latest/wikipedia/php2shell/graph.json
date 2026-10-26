@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.23",
+ "version": "0.22.25",
  "title": "Wikipedia: PHP2Shell",
  "licence": "CC BY-SA 4.0, by the contributors to the English Wikipedia; each revision id is the attribution",
  "latest_revid": 1381884195,
@@ -887,6 +887,20 @@
    "where": "statement"
   },
   {
+   "id": "source:bleepingcomputer-wikipedia-ref-12--flaws-emergency-patche",
+   "kind": "source",
+   "label": "BleepingComputer: PHP warns admins of two critical flaws, emergency patches coming tomorrow",
+   "href": "sources/bleepingcomputer-wikipedia-ref-12--flaws-emergency-patche/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:bleepingcomputer-wikipedia-ref-12--flaws-emergency-patche",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
+  },
+  {
    "id": "party:bleepingcomputer",
    "kind": "party",
    "label": "BleepingComputer",
@@ -1017,6 +1031,20 @@
    "publisher": "CloudLinux",
    "date": "21 October 2026",
    "where": "statement"
+  },
+  {
+   "id": "source:cloudlinux-wikipedia-ref-17-php-cve-2026-109618-and",
+   "kind": "source",
+   "label": "CloudLinux: PHP CVE-2026-109618 and CVE-2026-109619: CloudLinux Package Status and Imunify360 Protection",
+   "href": "sources/cloudlinux-wikipedia-ref-17-php-cve-2026-109618-and/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:cloudlinux-wikipedia-ref-17-php-cve-2026-109618-and",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
   },
   {
    "id": "party:cloudlinux",
@@ -1435,6 +1463,20 @@
    "where": "statement"
   },
   {
+   "id": "source:pcmag-wikipedia-ref-31-s-should-consider-going",
+   "kind": "source",
+   "label": "PCMag: This Flaw Is So Serious Websites Should Consider Going Offline, NSA Says | PCMag",
+   "href": "sources/pcmag-wikipedia-ref-31-s-should-consider-going/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:pcmag-wikipedia-ref-31-s-should-consider-going",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
+  },
+  {
    "id": "party:pcmag",
    "kind": "party",
    "label": "PCMag",
@@ -1641,14 +1683,14 @@
    "where": "statement"
   },
   {
-   "id": "source:cnn-php2shell-ai",
+   "id": "source:cnn-wikipedia-ref-39-26-10-21-tech-php2shell",
    "kind": "source",
-   "label": "cnn.com: PHP2Shell: AI helped find a critical security flaw affecting 70% of the internet | CNN Business",
-   "href": "sources/cnn-php2shell-ai/index.html",
+   "label": "CNN: Websites shut down globally after AI finds cybersecurity flaw affecting 70% of the internet | CNN Business",
+   "href": "sources/cnn-wikipedia-ref-39-26-10-21-tech-php2shell/index.html",
    "zoom": [
     {
      "graph": "data/graph.json",
-     "focus": "source:cnn-php2shell-ai",
+     "focus": "source:cnn-wikipedia-ref-39-26-10-21-tech-php2shell",
      "label": "In the story graph: the claims that cite it"
     }
    ],
@@ -1678,6 +1720,20 @@
    "publisher": "The Guardian",
    "date": "22 October 2026",
    "where": "statement"
+  },
+  {
+   "id": "source:guardian-wikipedia-ref-40-ge-flaw-causing-global",
+   "kind": "source",
+   "label": "The Guardian: What is PHP and how serious is the computer language flaw causing website shutdowns? | Data and computer security | The Guardian",
+   "href": "sources/guardian-wikipedia-ref-40-ge-flaw-causing-global/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:guardian-wikipedia-ref-40-ge-flaw-causing-global",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
   },
   {
    "id": "reference:43",
@@ -8448,6 +8504,11 @@
   },
   {
    "from": "reference:13",
+   "verb": "captured_as",
+   "to": "source:bleepingcomputer-wikipedia-ref-12--flaws-emergency-patche"
+  },
+  {
+   "from": "reference:13",
    "verb": "published_by",
    "to": "party:bleepingcomputer"
   },
@@ -8505,6 +8566,11 @@
    "from": "statement:78444f5354",
    "verb": "cites",
    "to": "reference:18"
+  },
+  {
+   "from": "reference:18",
+   "verb": "captured_as",
+   "to": "source:cloudlinux-wikipedia-ref-17-php-cve-2026-109618-and"
   },
   {
    "from": "reference:18",
@@ -8708,6 +8774,11 @@
   },
   {
    "from": "reference:33",
+   "verb": "captured_as",
+   "to": "source:pcmag-wikipedia-ref-31-s-should-consider-going"
+  },
+  {
+   "from": "reference:33",
    "verb": "published_by",
    "to": "party:pcmag"
   },
@@ -8804,7 +8875,7 @@
   {
    "from": "reference:41",
    "verb": "captured_as",
-   "to": "source:cnn-php2shell-ai"
+   "to": "source:cnn-wikipedia-ref-39-26-10-21-tech-php2shell"
   },
   {
    "from": "reference:41",
@@ -8815,6 +8886,11 @@
    "from": "statement:1f46a5634c",
    "verb": "cites",
    "to": "reference:42"
+  },
+  {
+   "from": "reference:42",
+   "verb": "captured_as",
+   "to": "source:guardian-wikipedia-ref-40-ge-flaw-causing-global"
   },
   {
    "from": "reference:42",

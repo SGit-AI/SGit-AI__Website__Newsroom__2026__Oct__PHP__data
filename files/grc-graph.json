@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.23",
+ "version": "0.22.25",
  "kept_by": "grc@php.newsroom",
  "as_of": "2026-10-22",
  "verbs": [
@@ -3340,7 +3340,7 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 09:35 UTC on 25 October, no named organisation has said it was compromised through p",
+   "label": "As of 14:40 UTC on 25 October, no named organisation has said it was compromised through p",
    "href": "facts/no-confirmed-compromise/index.html"
   },
   {
@@ -3450,6 +3450,12 @@
    "kind": "source",
    "label": "Haber.com",
    "href": "sources/haber-teknoloji-siber-guvenlik-baskanligi-ndan/index.html"
+  },
+  {
+   "id": "source:larazon-tecnologia-consumo-php-nuevo-fallo-segur",
+   "kind": "source",
+   "label": "La Razón",
+   "href": "sources/larazon-tecnologia-consumo-php-nuevo-fallo-segur/index.html"
   },
   {
    "id": "claim:nz-active",
@@ -14185,6 +14191,16 @@
    "basis": {
     "kind": "source",
     "ref": "haber-teknoloji-siber-guvenlik-baskanligi-ndan"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:larazon-tecnologia-consumo-php-nuevo-fallo-segur",
+   "basis": {
+    "kind": "source",
+    "ref": "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
    }
   },
   {

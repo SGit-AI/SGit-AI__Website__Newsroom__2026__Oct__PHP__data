@@ -958,6 +958,14 @@
    "summary": "The restart after the split, at the editor's request in this session. Reviewed the seven repositories and the six live sites: every site answers (site, team, refs, updates, press, data), pages load with no console errors or failed requests, the control room works on team.; each repo's head is the c…"
   },
   {
+   "agent": "curator",
+   "finished": "2026-10-26T01:05:53Z",
+   "outcome": "ok",
+   "run": "20261026T0009Z-curator",
+   "started": "2026-10-26T00:09:54Z",
+   "summary": "Not a scheduled wake: an editor-requested pass on 26 October, run before the 08:00 London wake. Did: (1) took in dev at v0.22.15 and read WAKE.md step 0 and the split brief; added the repositories field to the card (push: v1; after the move: team, data, v1), released in v1 as v0.22.17; (2) checked…"
+  },
+  {
    "agent": "correspondent",
    "finished": "2026-10-26T00:21:23Z",
    "outcome": "ok",
@@ -974,12 +982,28 @@
    "summary": "Not an evidence wake: the editor's wiring request after the split. Added the repositories field to the card (push v1; after the move team, data and v1; after step B team, data, updates, site), as WAKE.md step 0 asks. Created two scheduled tasks bound to this session (trig_015ud63M9vZm7oeiDV6MgAMt 0…"
   },
   {
+   "agent": "factcheck",
+   "finished": "2026-10-26T01:15:00Z",
+   "outcome": "ok",
+   "run": "20261026T0115Z-factcheck",
+   "started": "2026-10-26T00:30:00Z",
+   "summary": "Not a sweep: moved the desk onto the new repositories at the editor's direction. Added the repositories field to the card (push: team and data), attached and cloned team and data, pointed fc.py at the data repository's files/ (FC_DATA overrides), fixed an invalid check result I had written in run 7…"
+  },
+  {
    "agent": "correspondent",
    "finished": "2026-10-26T01:05:00Z",
    "outcome": "ok",
    "run": "20261026T0050Z-correspondent",
    "started": "2026-10-26T00:45:00Z",
    "summary": "Editor's session, 26 Oct: v1 closed to changes; this session now holds team, data, updates and site (push) and reads refs and press. Moved the correspondent's records to team: card (repositories, the two tasks bound to this session, the instructions rewritten for the six repositories), the run reco…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T01:15:51Z",
+   "outcome": "ok",
+   "run": "20261026T0115Z-journalist",
+   "started": "2026-10-26T01:10:00Z",
+   "summary": "Third evidence pass, run by hand in the first session at the editor's request, in the new repositories (step A). Found the curator's extra pass of 26 October already exported to the data repository (v0.1.13: vault 94352a55fbaa, 454 sources, latest capture 14:40 UTC on 25 October, 16 new claims). Re…"
   }
  ],
  "schedules": [
@@ -1147,5 +1171,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.23"
+ "version": "0.22.25"
 }
