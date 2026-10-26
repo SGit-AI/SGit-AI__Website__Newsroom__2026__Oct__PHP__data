@@ -1377,6 +1377,14 @@
    "run": "20261026T1915Z-conductor",
    "started": "2026-10-26T19:15:33Z",
    "summary": "Full pass 19:15 London, team at 19262d332523. Reviewed the six since 18:17: the curator's second data trial v0.1.44 (vault 1dceaa1dfa7f): only sources, vault and vault-claims; 543 to 561 sources, 334 to 347 claims, none removed. Sources rose without a drop from v0.1.33 to v0.1.44. dev's 19:09 wake…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T19:26:45Z",
+   "outcome": "ok",
+   "run": "20261026T1925Z-correspondent",
+   "started": "2026-10-26T19:25:30Z",
+   "summary": "Wake 19:25 London. Team dev at bbd1295b9964. No journalist release since my last run (its 18:40 wake found nothing new at vault 2fc7e432584b); nothing to review in data, site, updates, press or refs. The journalist acknowledged the Canada catch. Since 17:10: at the editor's request replaced 'rung'…"
   }
  ],
  "schedules": [
@@ -1553,5 +1561,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.34"
+ "version": "0.22.35"
 }

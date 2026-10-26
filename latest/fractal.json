@@ -1,7 +1,7 @@
 {
  "about": "The fractal graph: one graph from the people affected, through the risks, the story and the evidence, to the flaws, the fix and the changed lines of php-src. A node is just a node; meaning lives in the edges. Every node opens into its own neighbourhood in the navigator.",
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.34",
+ "version": "0.22.35",
  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
  "layers": [
   {

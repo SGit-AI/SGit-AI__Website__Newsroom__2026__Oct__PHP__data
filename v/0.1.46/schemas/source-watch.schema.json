@@ -1,0 +1,763 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "access": {
+   "properties": {
+    "bot-challenge": {
+     "type": "number"
+    },
+    "down": {
+     "type": "number"
+    },
+    "gone": {
+     "type": "number"
+    },
+    "login-wall": {
+     "type": "number"
+    },
+    "open": {
+     "type": "number"
+    },
+    "paywalled": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "bot-challenge",
+    "down",
+    "gone",
+    "login-wall",
+    "open",
+    "paywalled"
+   ],
+   "type": "object"
+  },
+  "access_classes": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "means": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "means"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "altitudes": {
+   "properties": {
+    "change": {
+     "type": "string"
+    },
+    "document": {
+     "type": "string"
+    },
+    "watch": {
+     "type": "string"
+    },
+    "world": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "change",
+    "document",
+    "watch",
+    "world"
+   ],
+   "type": "object"
+  },
+  "commits": {
+   "items": {
+    "properties": {
+     "commit": {
+      "type": "string"
+     },
+     "message": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "commit",
+     "message"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "country": {
+   "properties": {
+    "ae": {
+     "type": "number"
+    },
+    "ai": {
+     "type": "number"
+    },
+    "ar": {
+     "type": "number"
+    },
+    "at": {
+     "type": "number"
+    },
+    "au": {
+     "type": "number"
+    },
+    "be": {
+     "type": "number"
+    },
+    "bg": {
+     "type": "number"
+    },
+    "br": {
+     "type": "number"
+    },
+    "ca": {
+     "type": "number"
+    },
+    "ch": {
+     "type": "number"
+    },
+    "cl": {
+     "type": "number"
+    },
+    "cn": {
+     "type": "number"
+    },
+    "co": {
+     "type": "number"
+    },
+    "cz": {
+     "type": "number"
+    },
+    "de": {
+     "type": "number"
+    },
+    "dk": {
+     "type": "number"
+    },
+    "ee": {
+     "type": "number"
+    },
+    "eg": {
+     "type": "number"
+    },
+    "es": {
+     "type": "number"
+    },
+    "eu": {
+     "type": "number"
+    },
+    "fi": {
+     "type": "number"
+    },
+    "fr": {
+     "type": "number"
+    },
+    "gb": {
+     "type": "number"
+    },
+    "gr": {
+     "type": "number"
+    },
+    "hk": {
+     "type": "number"
+    },
+    "hu": {
+     "type": "number"
+    },
+    "id": {
+     "type": "number"
+    },
+    "ie": {
+     "type": "number"
+    },
+    "il": {
+     "type": "number"
+    },
+    "in": {
+     "type": "number"
+    },
+    "int": {
+     "type": "number"
+    },
+    "io": {
+     "type": "number"
+    },
+    "it": {
+     "type": "number"
+    },
+    "jp": {
+     "type": "number"
+    },
+    "kr": {
+     "type": "number"
+    },
+    "lt": {
+     "type": "number"
+    },
+    "lu": {
+     "type": "number"
+    },
+    "lv": {
+     "type": "number"
+    },
+    "mx": {
+     "type": "number"
+    },
+    "my": {
+     "type": "number"
+    },
+    "nl": {
+     "type": "number"
+    },
+    "no": {
+     "type": "number"
+    },
+    "nz": {
+     "type": "number"
+    },
+    "pe": {
+     "type": "number"
+    },
+    "pl": {
+     "type": "number"
+    },
+    "pt": {
+     "type": "number"
+    },
+    "re": {
+     "type": "number"
+    },
+    "ro": {
+     "type": "number"
+    },
+    "sa": {
+     "type": "number"
+    },
+    "se": {
+     "type": "number"
+    },
+    "sg": {
+     "type": "number"
+    },
+    "sk": {
+     "type": "number"
+    },
+    "th": {
+     "type": "number"
+    },
+    "tn": {
+     "type": "number"
+    },
+    "tr": {
+     "type": "number"
+    },
+    "tw": {
+     "type": "number"
+    },
+    "ua": {
+     "type": "number"
+    },
+    "us": {
+     "type": "number"
+    },
+    "uy": {
+     "type": "number"
+    },
+    "vn": {
+     "type": "number"
+    },
+    "za": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "ae",
+    "ai",
+    "ar",
+    "at",
+    "au",
+    "be",
+    "bg",
+    "br",
+    "ca",
+    "ch",
+    "cl",
+    "cn",
+    "co",
+    "cz",
+    "de",
+    "dk",
+    "ee",
+    "eg",
+    "es",
+    "eu",
+    "fi",
+    "fr",
+    "gb",
+    "gr",
+    "hk",
+    "hu",
+    "id",
+    "ie",
+    "il",
+    "in",
+    "int",
+    "io",
+    "it",
+    "jp",
+    "kr",
+    "lt",
+    "lu",
+    "lv",
+    "mx",
+    "my",
+    "nl",
+    "no",
+    "nz",
+    "pe",
+    "pl",
+    "pt",
+    "re",
+    "ro",
+    "sa",
+    "se",
+    "sg",
+    "sk",
+    "th",
+    "tn",
+    "tr",
+    "tw",
+    "ua",
+    "us",
+    "uy",
+    "vn",
+    "za"
+   ],
+   "type": "object"
+  },
+  "files": {
+   "type": "number"
+  },
+  "graphs": {
+   "type": "number"
+  },
+  "head": {
+   "properties": {
+    "commit": {
+     "type": "string"
+    },
+    "message": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "commit",
+    "message"
+   ],
+   "type": "object"
+  },
+  "lang": {
+   "properties": {
+    "ar": {
+     "type": "number"
+    },
+    "bg": {
+     "type": "number"
+    },
+    "cs": {
+     "type": "number"
+    },
+    "da": {
+     "type": "number"
+    },
+    "de": {
+     "type": "number"
+    },
+    "el": {
+     "type": "number"
+    },
+    "en": {
+     "type": "number"
+    },
+    "es": {
+     "type": "number"
+    },
+    "et": {
+     "type": "number"
+    },
+    "fi": {
+     "type": "number"
+    },
+    "fr": {
+     "type": "number"
+    },
+    "he": {
+     "type": "number"
+    },
+    "hr": {
+     "type": "number"
+    },
+    "hu": {
+     "type": "number"
+    },
+    "id": {
+     "type": "number"
+    },
+    "it": {
+     "type": "number"
+    },
+    "ja": {
+     "type": "number"
+    },
+    "ko": {
+     "type": "number"
+    },
+    "lt": {
+     "type": "number"
+    },
+    "lv": {
+     "type": "number"
+    },
+    "ms": {
+     "type": "number"
+    },
+    "nb": {
+     "type": "number"
+    },
+    "nl": {
+     "type": "number"
+    },
+    "pl": {
+     "type": "number"
+    },
+    "pt": {
+     "type": "number"
+    },
+    "ro": {
+     "type": "number"
+    },
+    "sk": {
+     "type": "number"
+    },
+    "sl": {
+     "type": "number"
+    },
+    "sv": {
+     "type": "number"
+    },
+    "th": {
+     "type": "number"
+    },
+    "tr": {
+     "type": "number"
+    },
+    "uk": {
+     "type": "number"
+    },
+    "vi": {
+     "type": "number"
+    },
+    "zh": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "ar",
+    "bg",
+    "cs",
+    "da",
+    "de",
+    "el",
+    "en",
+    "es",
+    "et",
+    "fi",
+    "fr",
+    "he",
+    "hr",
+    "hu",
+    "id",
+    "it",
+    "ja",
+    "ko",
+    "lt",
+    "lv",
+    "ms",
+    "nb",
+    "nl",
+    "pl",
+    "pt",
+    "ro",
+    "sk",
+    "sl",
+    "sv",
+    "th",
+    "tr",
+    "uk",
+    "vi",
+    "zh"
+   ],
+   "type": "object"
+  },
+  "pages": {
+   "type": "number"
+  },
+  "publishers": {
+   "type": "number"
+  },
+  "runs": {
+   "items": {
+    "properties": {
+     "access": {
+      "type": "object"
+     },
+     "agent": {
+      "type": "string"
+     },
+     "changed": {
+      "type": "number"
+     },
+     "finished": {
+      "type": "string"
+     },
+     "pages_due": {
+      "type": "number"
+     },
+     "pages_total": {
+      "type": "number"
+     },
+     "run": {
+      "type": "string"
+     },
+     "started": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "access",
+     "agent",
+     "changed",
+     "finished",
+     "pages_due",
+     "pages_total",
+     "run",
+     "started"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "sector": {
+   "properties": {
+    "affected": {
+     "type": "number"
+    },
+    "aggregator": {
+     "type": "number"
+    },
+    "ai-lab": {
+     "type": "number"
+    },
+    "cert": {
+     "type": "number"
+    },
+    "cloud": {
+     "type": "number"
+    },
+    "community": {
+     "type": "number"
+    },
+    "government": {
+     "type": "number"
+    },
+    "news": {
+     "type": "number"
+    },
+    "project": {
+     "type": "number"
+    },
+    "reference": {
+     "type": "number"
+    },
+    "registry": {
+     "type": "number"
+    },
+    "research": {
+     "type": "number"
+    },
+    "security-vendor": {
+     "type": "number"
+    },
+    "social": {
+     "type": "number"
+    },
+    "tech-press": {
+     "type": "number"
+    },
+    "tool": {
+     "type": "number"
+    },
+    "weaponisation": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "affected",
+    "aggregator",
+    "ai-lab",
+    "cert",
+    "cloud",
+    "community",
+    "government",
+    "news",
+    "project",
+    "reference",
+    "registry",
+    "research",
+    "security-vendor",
+    "social",
+    "tech-press",
+    "tool",
+    "weaponisation"
+   ],
+   "type": "object"
+  },
+  "sectors": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "snapshots": {
+   "type": "number"
+  },
+  "tiers": {
+   "properties": {
+    "A": {
+     "type": "number"
+    },
+    "B": {
+     "type": "number"
+    },
+    "C": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "A",
+    "B",
+    "C"
+   ],
+   "type": "object"
+  },
+  "tips": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "received": {
+      "type": "string"
+     },
+     "says": {
+      "type": "string"
+     },
+     "status": {
+      "type": "string"
+     },
+     "to_check": {
+      "type": "array"
+     },
+     "watched_as": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "id",
+     "received",
+     "says",
+     "status",
+     "to_check",
+     "watched_as"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "tools": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "vault_id": {
+   "type": "string"
+  },
+  "verbs": {
+   "type": "number"
+  },
+  "world_graph": {
+   "properties": {
+    "edges": {
+     "type": "number"
+    },
+    "nodes": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "edges",
+    "nodes"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "about",
+  "access",
+  "access_classes",
+  "altitudes",
+  "commits",
+  "country",
+  "files",
+  "graphs",
+  "head",
+  "lang",
+  "pages",
+  "publishers",
+  "runs",
+  "sector",
+  "sectors",
+  "snapshots",
+  "tiers",
+  "tips",
+  "tools",
+  "vault_id",
+  "verbs",
+  "world_graph"
+ ],
+ "title": "source-watch.json",
+ "type": "object"
+}
