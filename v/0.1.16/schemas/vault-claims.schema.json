@@ -1,0 +1,45 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "items": {
+  "properties": {
+   "agent": {
+    "type": "string"
+   },
+   "by": {
+    "type": "string"
+   },
+   "claim": {
+    "type": "string"
+   },
+   "id": {
+    "type": "string"
+   },
+   "note": {
+    "type": "string"
+   },
+   "sources": {
+    "items": {
+     "type": "string"
+    },
+    "type": "array"
+   },
+   "status": {
+    "type": "string"
+   },
+   "topic": {
+    "type": "string"
+   }
+  },
+  "required": [
+   "agent",
+   "by",
+   "claim",
+   "id",
+   "sources",
+   "status"
+  ],
+  "type": "object"
+ },
+ "title": "vault-claims.json",
+ "type": "array"
+}

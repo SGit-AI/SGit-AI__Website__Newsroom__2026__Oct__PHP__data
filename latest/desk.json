@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "exploitation paragraph: 'as of' moved to 09:35 UTC on 25 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "exploitation paragraph: 'as of' moved to 14:40 UTC on 25 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 09:35 UTC on 25 October (vault 87795d121200, 418 sources; Turkey's Directorate added); the other 69 claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 14:40 UTC on 25 October (vault 94352a55fbaa, 454 sources); the other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Shizuoka Bank and Nepal (government portals, Nepal Rastra Bank, a freight-tracking system) added to the offline ledger, 25 October, vault 87795d121200; other rows not re-read in full."
+   "note": "GARR (Italy, platforms isolated 21 October) added, vault 94352a55fbaa; other rows not re-read in full."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "87795d121200",
-   "note": "Turkey's Presidency Cybersecurity Directorate (e-Devlet, no problem) added; as of 09:35 UTC on 25 October (10:35 BST); searched count 418; head 87795d121200."
+   "checked_against": "94352a55fbaa",
+   "note": "La Razón (no successful execution established, 23 October) added; as of 14:40 UTC on 25 October; searched count 454; head 94352a55fbaa."
   },
   {
    "path": "data/exploitation.json",

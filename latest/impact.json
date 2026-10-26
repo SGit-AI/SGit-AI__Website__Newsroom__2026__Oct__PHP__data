@@ -194,6 +194,17 @@
    "sources": [
     "kathmandupost-science-technology-2026-10-25-php2shell"
    ]
+  },
+  {
+   "who": "Italy: GARR, the research and education network (some of its platforms)",
+   "country": "IT",
+   "what": "GARR announced on 21 October that it had isolated some of its platforms to apply the fixes, as a precaution against remote access; patching and a gradual restoration of services followed. As Macitynet reports GARR's notice",
+   "when": "2026-10-21",
+   "said_by": "Macitynet, relaying GARR's notice",
+   "status": "reported",
+   "sources": [
+    "macitynet-php2shell-vulnerabilita-php-siti-offline"
+   ]
   }
  ],
  "compromised": [

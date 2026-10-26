@@ -1657,6 +1657,182 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-25",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-watchtower-embargo-thursday",
+   "verdict": "noted",
+   "reason": "BleepingComputer quotes watchTowr's CEO Benjamin Harris: 'scheduled under embargo and due for release on Thursday at 11 am ET', 'CVSS10' and 'PHP versions 5, 6, 7, and 8'. Checked. A pre-patch statement: the same page gives the final release as Wednesday 21 October at 14:00 UTC (10:00 AM Eastern) and the scores as 9.2 under CVSS v4.0 (the PHP advisory agrees), so the site keeps 9.2 and release-moved. Not used.",
+   "sources": [
+    "bleepingcomputer-wikipedia-ref-12--flaws-emergency-patche"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-embargo-broken-by-several",
+   "verdict": "noted",
+   "reason": "The Guardian does say it: 'A number of security companies did break the embargo after the leak, according to the PHP Foundation'. The PHP Foundation's own post (php-foundation-blog-security-release) names one distributor, Chainguard (07:41 UTC on 21 October), and a reporting firm's mistakenly published video; I searched it for 'other companies', 'several' and 'a number of' and did not find the plural there. The site carries the Chainguard dispute (chainguard) and the video (leak-video).",
+   "sources": [
+    "guardian-wikipedia-ref-40-ge-flaw-causing-global"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-php-foundation-anthropic-scan",
+   "verdict": "noted",
+   "reason": "Checked in two places in the vault. The PHP Foundation's own post: 'we worked with Alpha-Omega to scan PHP with Anthropic's Claude Mythos', and later added OpenAI's Daybreak Red for validating reports. The Guardian: 'worked with Anthropic's frontier model to scan its code, and had PHP put into OpenAI's Patch the Planet program'. Not used on a page.",
+   "sources": [
+    "guardian-wikipedia-ref-40-ge-flaw-causing-global"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-patches-8-2-and-up-only",
+   "verdict": "held back",
+   "reason": "The fixed versions agree with the PHP advisory (8.5.12, 8.4.27, 8.3.36, 8.2.35; two-cves-9.2). The attribution to the UK NCSC of a range 'back to PHP 5.4' is not on the NCSC page in the vault (ncsc-news-php, searched for '5.4', '8.2', 'end of life', 'unsupported'): it says 'any version of PHP' and that older versions should move to a supported one. The site's range is versions-old (PHP 5 onwards, Ars Technica).",
+   "sources": [
+    "pcmag-wikipedia-ref-31-s-should-consider-going"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-third-flaw-not-urgent",
+   "verdict": "agrees",
+   "reason": "Agrees with cur6-third-flaw-115560, which the correspondent reviewed 'used' (story and front page). CVE-2026-115560 is now carried by eight captures: Cloudflare's blog, The Hacker News (three pages), SOCRadar, Coinpedia, Knews and La Razón. Searched all captures for the CVE id.",
+   "sources": [
+    "knews-news-7898c3112ba7f79b25f7a44622d2e7d4"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-no-successful-execution-demonstrated",
+   "verdict": "used",
+   "reason": "On data/compromise.json (no-success-known, 23 October, La Razón). A point-in-time statement; consistent with no-confirmed-compromise.",
+   "sources": [
+    "larazon-tecnologia-consumo-php-nuevo-fallo-segur"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur11-qianxin-million-assets",
+   "verdict": "held back",
+   "reason": "A vendor's exposure estimate with no basis given, carried by Leiphone and Ijiwei (searched all captures for 'Qi An Xin' and 奇安信); searched data/numbers.json, claims.json and impact.json: not on the site. Not comparable with the figures the site carries.",
+   "sources": [
+    "leiphone-category-industrynews-9dejmhebinubut49-h"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-libertatea-18-oct",
+   "verdict": "held back",
+   "reason": "Contradicts Amazon's own date: Amazon's post (aws-security-blog-madpot) and the site (amazon-honeypot) say 17 October. Libertatea's page says '18 octombrie' with 'four days before the announcement', which fits 17 October; a one-day slip by one outlet.",
+   "sources": [
+    "libertatea-stiri-ce-este-vulnerabilitatea-php-care"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-austin-gpt56-audit",
+   "verdict": "noted",
+   "reason": "Calif's own write-up (calif-php2shell) names Ryan Austin (@lcfr_hax) of Calif as researcher, dates the hash tweet to 5 August and the report to PHP to 11 August, and says OpenAI invited Calif to its Patch the Planet initiative. The model name 'GPT-5.6 Sol' is not on that page (searched for 'GPT', 'OpenAI', 'Sol'), so it stays out. Consistent with who-first and four-reporters.",
+   "sources": [
+    "lisanews-internacional-un-fallo-en-php-detectado"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-garr-isolated",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 21 October). One outlet, Macitynet, which says GARR announced on 21 October that it had isolated some platforms as a precaution; searched all captures for 'GARR': no other page carries it (the other hits are the name Garrity and a menu), and GARR's own notice is not captured. A precaution, not a compromise.",
+   "sources": [
+    "macitynet-php2shell-vulnerabilita-php-siti-offline"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-bssn-versions",
+   "verdict": "held back",
+   "reason": "An agency's warning relayed by one outlet: Medcom says BSSN listed PHP 8.2 to 8.5 as potentially affected (checked on the page), but BSSN's notice is not in the vault (searched all captures for 'BSSN'), and the list is narrower than the site's range (PHP 5 onwards).",
+   "sources": [
+    "medcom-teknologi-news-teknologi-en442w3n-bssn-p"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-moncloa-patch-date",
+   "verdict": "held back",
+   "reason": "Wrong date: the PHP advisory and The Register's quotation of the PHP Foundation say the fixes were released on 21 October at 14:00 UTC (release-time on the site). 22 October was the planned date (release-moved). Moncloa's page says 'este jueves 22 de octubre'.",
+   "sources": [
+    "moncloa-2026-10-22-vulnerabilidad-php2shell-fall"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-cyfirma-report-23-oct",
+   "verdict": "held back",
+   "reason": "One vendor report, three Korean outlets: Money Today, Korea Economic Daily and EBN. Searched all captures for 'Cyfirma' and 사이퍼마: only those three news pages; Cyfirma's own report is not captured. Same as cur7-cyfirma-lazarus and cur9-cyfirma-i2p-channel.",
+   "sources": [
+    "mt-tech-2026-10-24-2026102414170377166"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-de-pkgr-turning-point",
+   "verdict": "noted",
+   "reason": "A second page in the vault carries the statement: FAZ quotes Marc Henrichmann, chair of the Parliamentary Control Panel for the intelligence services, 'Wir erleben einen Wendepunkt'. A politician's characterisation, not a measurement; not used.",
+   "sources": [
+    "netzpolitik-2026-wir-stehen-auf-den-schultern-vieler"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-crypto-firms-not-affected",
+   "verdict": "noted",
+   "reason": "Four pages carry company statements (BTC-ECHO, Cointelegraph, Journal du Coin, Bitcoin News); the companies' own posts are not captured. Consistent with the BTC-ECHO row already on data/compromise.json.",
+   "sources": [
+    "news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur12-emudhra-separate",
+   "verdict": "noted",
+   "reason": "A separate incident, not PHP2Shell; eMudhra appears in Ars Technica, BleepingComputer, Cloudflare's blog, Cointelegraph and Cybernews (searched all captures). Same as cur10-eight-tls-certs. Kept so pages do not conflate the two; not used.",
+   "sources": [
+    "news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
   }
  ]
 }

@@ -39,18 +39,18 @@
    "sha256": "68df339f69ff199faf2a7973f0eaf4cdeab98a5daae005e72bfd9e8a12db79ab"
   },
   {
-   "bytes": 64658,
+   "bytes": 73807,
    "group": "desk",
    "name": "claim-review.json",
    "schema": "schemas/claim-review.schema.json",
-   "sha256": "c1578e5a04f159c07a6eb5a90e87d3a83b2b7731b68dc26b9479af875dc07a3e"
+   "sha256": "3b57c899a20b1c4574b6549143ff2c481693a8f99ab6d26bac83e773c4f09d6c"
   },
   {
-   "bytes": 37187,
+   "bytes": 37621,
    "group": "story",
    "name": "claims.json",
    "schema": "schemas/claims.schema.json",
-   "sha256": "5d8116fd432a4111d057eef62182a4653163c3f1cf64270e741fac0997214f50"
+   "sha256": "dc4c456f6cdde857c3255d75b98a0ea116bd8cadee35ef014534a17365f16a06"
   },
   {
    "bytes": 8708,
@@ -67,11 +67,11 @@
    "sha256": "5eabfd8f75015b2336f5fcfeedfcbce3e29177084c30c2153160c31aecc0b425"
   },
   {
-   "bytes": 19756,
+   "bytes": 20203,
    "group": "story",
    "name": "compromise.json",
    "schema": "schemas/compromise.schema.json",
-   "sha256": "fb40f0fd88de555727b3779f46d379de7c717ad062c39756c77db57cc6f7a67b"
+   "sha256": "76d638246c5436ca5f3d533254e31bbe0c966b1ab2e048f70be308233a1dc981"
   },
   {
    "bytes": 4384,
@@ -102,11 +102,11 @@
    "sha256": "06af041d4b3215eeab3e533af84c747d435da42b1541f712b3f6541c16cd6c90"
   },
   {
-   "bytes": 11892,
+   "bytes": 11762,
    "group": "desk",
    "name": "desk.json",
    "schema": "schemas/desk.schema.json",
-   "sha256": "aa76e351f814dbea7965c0160c3b458b0f4ff271b2f0dc78bb5b96e438343fe5"
+   "sha256": "6a495cbdb9d0ea6bacfe436e7281b68579455380b5f9e04b60c0dc5cbf0200d7"
   },
   {
    "bytes": 65137,
@@ -207,11 +207,11 @@
    "sha256": "5196aa19efeb384c548141b82f257fbe2af3204f6e6fc9bc51bd97836db64a1d"
   },
   {
-   "bytes": 11378,
+   "bytes": 11908,
    "group": "story",
    "name": "impact.json",
    "schema": "schemas/impact.schema.json",
-   "sha256": "dfadb02131c18dd0eb4f8a131f4412cb51001394df1c9b364899741b21e37783"
+   "sha256": "7eebe87a65bbe21a2261917abd309de4de8c735b9a109e45ba8dc7b4b68c2e64"
   },
   {
    "bytes": 174351,
@@ -344,7 +344,7 @@
    "group": "story",
    "name": "story.json",
    "schema": "schemas/story.schema.json",
-   "sha256": "e7fd637b6e906897d315edd2516a852d87e6066e6eebe31c50194084fdbe24ed"
+   "sha256": "e1315faa658141135fcb5b2d161886fdcdab5e04e38f0d24a762de79bcaaefda"
   },
   {
    "bytes": 1817,
@@ -3328,6 +3328,6 @@
   "site_version": "0.22.23"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.15/",
- "version": "0.1.15"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.16/",
+ "version": "0.1.16"
 }
