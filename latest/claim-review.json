@@ -2944,6 +2944,182 @@
    "where": "impact/index.html",
    "reviewed": "2026-10-26",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-cpo-hn-leak-honest-mistake",
+   "verdict": "held back",
+   "reason": "'Is thought to be' an insider's honest mistake, with no source and no name; CPO Magazine hedges it itself. The PHP Foundation's post names Calif's video and Chainguard's early build as the leak routes. Not stated on the site.",
+   "sources": [
+    "cpomagazine-cyber-security-threat-actor-targeted-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-ddaily-cyfirma-i2p",
+   "verdict": "held back",
+   "reason": "The fourth Korean page for one vendor report: Digital Daily, with Money Today, Korea Economic Daily and EBN (searched all captures for 'Cyfirma' and 사이퍼마). Cyfirma's own report is not captured; the attribution to the Lazarus ecosystem is rated 'moderate' by the vendor. Same as cur7-cyfirma-lazarus, cur9-cyfirma-i2p-channel, cur12-cyfirma-report-23-oct.",
+   "sources": [
+    "m-ddaily-page-view-2026102611404279049"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-ddaily-exploit-tools-in-wild",
+   "verdict": "noted",
+   "reason": "Digital Daily relays watchTowr and SOCRadar. SOCRadar's own post is in the vault (socradar-blog-php2shell): 'Exploitation attempts began on October 17', and it 'found PHP2Shell exploit tooling on an exposed attacker server'; watchTowr's side is watchtowr-itw on the site. Tools in use are attempts, not a compromise. Not used.",
+   "sources": [
+    "m-ddaily-page-view-2026102611404279049"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-ddaily-node2shell-separate",
+   "verdict": "noted",
+   "reason": "A separate Node.js flaw (Theori's 'Node2Shell', CVE-2026-111497), not PHP2Shell; BornCity, Imperva's blog and patchtheplanet.org also mention it (searched all captures). Kept so pages do not conflate the two; not used.",
+   "sources": [
+    "m-ddaily-page-view-2026102611404279049"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-qianxin-china-million",
+   "verdict": "held back",
+   "reason": "The same QiAnXin estimate held back on 26 October (cur11-qianxin-million-assets): over a million assets in China, a vendor's exposure count with no method, now on a third page (10jqka, with Leiphone and Ijiwei). Not on the site's numbers.",
+   "sources": [
+    "stock-10jqka-20261022-c680990008-shtml"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-suara-komdigi",
+   "verdict": "noted",
+   "reason": "Four Indonesian pages carry Komdigi's warning (Suara Nasional, Bisnis, Detik, Kompas; searched all captures for 'Komdigi'); the ministry's own notice is not captured. An emergency warning to administrators; not used.",
+   "sources": [
+    "suaranasional-2026-10-25-bahaya-celah-keamanan-php2she"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-tagesschau-bsi-orange",
+   "verdict": "noted",
+   "reason": "Checked on tagesschau.de: the BSI warning BITS-H Nr. 2026-297981-1032 rates the risk '3 / Orange', extraordinarily high, countermeasures at once; BornCity and Bitpage also carry the number (searched all captures). The BSI's own warning is not captured. A severity rating, not a finding of exploitation; not used.",
+   "sources": [
+    "tagesschau-wirtschaft-digitales-php-panne-100-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-tagesschau-wildberger",
+   "verdict": "noted",
+   "reason": "Checked: Digital Minister Karsten Wildberger told Bild that no damage had been done to federal IT systems and no sign that federal websites were affected (tagesschau.de; FAZ, Morgenpost, RTL, Netzpolitik and IT-Daily also name him). Point in time, 21 to 22 October; not used.",
+   "sources": [
+    "tagesschau-wirtschaft-digitales-php-panne-100-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-takvim-turkey-alert",
+   "verdict": "agrees",
+   "reason": "Agrees with the Turkey row on data/compromise.json (the e-Devlet portal, no problem): national alert TR-26-1372 is carried by four Turkish pages (Takvim, Bursada Bugün, İndigo Dergisi, İstanbul Ticaret Gazetesi; searched all captures); the Directorate's own notice is not captured.",
+   "sources": [
+    "takvim-guncel-2026-10-22-php2shell-guvenlik-aci"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-takvim-belgium-ccb",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 22 October): after the CCB's warning the Foreign, Finance and Labour ministries' sites and media and education platforms were disabled (Takvim, 22 October, 16:54 EEST, 13:54 UTC). Takvim's whole list is on the ledger: Belgium's ministries here, the Dutch DigiD, the Rotterdam port portal, Schiphol's app and the House of Representatives in the Netherlands row, prefectures, police units and portals in France, Germany and Finland, and South Korea's 'caution' alert. Precautionary, not a cyber attack.",
+   "sources": [
+    "takvim-guncel-2026-10-22-php2shell-guvenlik-aci"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-technoisy-huntress-no-exploitation",
+   "verdict": "agrees",
+   "reason": "Agrees with huntress-none and cur2-crn-huntress-no-itw (Huntress had not confirmed exploitation in its monitored environments); the page says as of the evening of 21 October, US Eastern. Point in time.",
+   "sources": [
+    "tech-noisy-2026-10-22-php2shell-php-rce-cve-2026-10"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-techgaming-pokemon-squareenix",
+   "verdict": "used",
+   "reason": "On data/compromise.json (named-organisation, 22 October) and on the offline ledger. TechGaming.it, citing Kotaku, says Square Enix 'confirmed episodes of unauthorised access to its systems' in the same week as PHP2Shell; it does not say the access came through the PHP flaws, and Kotaku's text and Square Enix's own words are not captured (searched all captures for 'Square Enix': TechGaming and Bitpage only). Bitpage, the other page, says Square Enix closed new logins to Final Fantasy XIV on all worlds and took its patch servers offline, and that the cause 'is no attack, but two flaws in the core of PHP'. Unverified; no-confirmed-compromise is left as it was, for the correspondent.",
+   "sources": [
+    "techgaming-internet-sotto-attacco-php2shell-vulnera"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-technotoday-compromised-unknown",
+   "verdict": "noted",
+   "reason": "A dated caveat from Technotoday: the number of systems successfully compromised was not yet known with certainty, as of 22 to 23 October. Consistent with the unsettled picture (cur16-sempre-sophos-failed); not used.",
+   "sources": [
+    "technotoday-php2shell-saldirilari-iki-kritik-php-aci"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-kompas-70-percent-caveat",
+   "verdict": "agrees",
+   "reason": "Agrees with scale-70pc-websites: the '70%' is W3Techs' share of sites with a known server-side language, not a count of vulnerable or attacked sites; Kompas Tekno says it itself.",
+   "sources": [
+    "tekno-kompas-read-2026-10-22-14200007-celah-keamanan"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-bisnis-censys-1-5m-unpatched",
+   "verdict": "held back",
+   "reason": "Restates a basis the site corrects: Bisnis has an expert saying about 1.5 million of 2.6 million PHP hosts were unpatched; the site (scale-2.6m-hosts) gives Censys's 1.57 million not patched out of the 1.58 million that report a version (the desk's correction K-004). The same wording as TuttoTech's, held back on 25 October. Not a Censys publication.",
+   "sources": [
+    "teknologi-bisnis-read-20261023-84-2015221-pengamat-ingatk"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur17-bisnis-komdigi-pdn1",
+   "verdict": "noted",
+   "reason": "Komdigi's letter asking users of National Data Center (PDN) 1 to update PHP is reported by Bisnis, whose page is an expert (CISSReC) saying the response is right but late and should not stay voluntary; the letter itself is not captured. A precaution; not used.",
+   "sources": [
+    "teknologi-bisnis-read-20261023-84-2015221-pengamat-ingatk"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
   }
  ]
 }

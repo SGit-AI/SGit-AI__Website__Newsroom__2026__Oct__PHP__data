@@ -87,19 +87,19 @@
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 12:14 UTC on 26 October (vault 22a0c2920b88, 525 sources); the other 69 claims not yet re-read."
+   "note": "no-confirmed-compromise left at 12:14 UTC on 26 October on purpose: TechGaming.it names Square Enix with 'unauthorised access', cause not stated (compromise.json); for the correspondent. The other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "The Netherlands (every organisation AG Connect lists, with the time), the French prefectures and Indonesia's Ministry of Industry added, vault 22a0c2920b88; other rows not re-read in full."
+   "note": "Belgium (the ministries Takvim names), Japan's games and web services and Canada (Bitpage's lists) added, vault 2fc7e432584b; other rows not re-read in full."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "22a0c2920b88",
-   "note": "As of 12:14 UTC on 26 October; searched count 525; head 22a0c2920b88; no new row this pass (Sophos, Austria already carried)."
+   "checked_against": "2fc7e432584b",
+   "note": "Square Enix (named, cause not stated, unverified) added; as of 14:42 UTC on 26 October; searched count 543; head 2fc7e432584b."
   },
   {
    "path": "data/exploitation.json",

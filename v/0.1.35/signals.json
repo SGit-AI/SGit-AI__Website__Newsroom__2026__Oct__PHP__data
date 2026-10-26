@@ -1,0 +1,247 @@
+{
+ "note": "The second stories of php2shell, as signals. The first story counts attacks. The second asks who was exposed and was not hit, who was hit and what that says about them, and what was within reach behind the server. This page is the site's analysis, built from captured sources: each layer, signal and barrier cites the evidence it rests on, and says plainly where there is none.",
+ "ladder": [
+  {
+   "id": "uses-php",
+   "layer": "Websites that use PHP",
+   "value": "about 69 to 70%",
+   "of": "of websites whose server-side language a survey can identify",
+   "kind": "share",
+   "status": "reported",
+   "family": "exposure",
+   "sources": [
+    "x-feross-chainguard",
+    "cloudflare-blog-php2shell-waf",
+    "x-openai-php2shell"
+   ]
+  },
+  {
+   "id": "hosts",
+   "layer": "Internet-facing hosts that expose PHP",
+   "value": "2,608,039",
+   "n": 2608039,
+   "of": "hosts, one scanner's count (VulnCheck)",
+   "kind": "count",
+   "status": "reported",
+   "family": "exposure",
+   "sources": [
+    "thehackernews-php2shell-4days"
+   ]
+  },
+  {
+   "id": "unpatched",
+   "layer": "Still unpatched on 21 October",
+   "value": "1.57 million",
+   "n": 1570000,
+   "of": "hosts, Censys's count on the day of the release",
+   "kind": "count",
+   "status": "reported",
+   "family": "patching",
+   "sources": [
+    "securityweek-exploitation-days-before"
+   ]
+  },
+  {
+   "id": "reachable",
+   "layer": "On a deployment where code execution has been shown",
+   "value": "not measured",
+   "of": "mod_php with default settings is demonstrated; PHP-FPM is disputed; nobody has counted either",
+   "kind": "unknown",
+   "status": "disputed",
+   "family": "internal",
+   "sources": [
+    "github-ghsa-w8hw-w9fx-j79w",
+    "php-foundation-blog-security-release"
+   ]
+  },
+  {
+   "id": "unshielded",
+   "layer": "Not behind an edge that blocks the request",
+   "value": "not measured",
+   "of": "Cloudflare, Akamai, Fastly and Imperva had rules live on 21 October; how many exposed hosts sit behind one is not published",
+   "kind": "unknown",
+   "status": "reported",
+   "family": "network",
+   "sources": [
+    "cloudflare-blog-php2shell-waf",
+    "akamai-blog-php-core-rce",
+    "imperva-blog-php2shell"
+   ]
+  },
+  {
+   "id": "attempted",
+   "layer": "Attempted",
+   "value": "millions of attempts",
+   "of": "requests at one CDN by 01:25 UTC on 22 October; attempts, not sites",
+   "kind": "attempts",
+   "status": "reported",
+   "family": "exploitation",
+   "sources": [
+    "x-eastdakota-php2shell-stats"
+   ]
+  },
+  {
+   "id": "exploited",
+   "layer": "Exploited",
+   "value": "0 confirmed",
+   "n": 0,
+   "of": "named organisations confirming a compromise, in every captured source",
+   "kind": "zero",
+   "status": "confirmed",
+   "family": "exploitation",
+   "sources": [
+    "cisa-kev-json",
+    "huntress-php2shell-rapid-response"
+   ]
+  },
+  {
+   "id": "mattered",
+   "layer": "Exploited, and holding something worth reaching",
+   "value": "not measured",
+   "of": "the number that matters: a compromised worker with credentials, data or a path inward",
+   "kind": "unknown",
+   "status": "unverified",
+   "family": "internal",
+   "sources": [
+    "weirdgloop-blog-php2shell"
+   ]
+  }
+ ],
+ "families": [
+  {
+   "id": "exploitation",
+   "name": "Exploitation signals",
+   "question": "Who is trying, at what scale, and does anything land?",
+   "now": "Attempts at scale from the parties positioned to see them; one honeypot hit four days before release; no confirmed compromise; not in CISA's Known Exploited Vulnerabilities catalog.",
+   "watch": "The KEV listing; a named victim; a gap between the date a site was compromised and the date it says so.",
+   "page": "exploitation/index.html",
+   "sources": [
+    "x-eastdakota-php2shell-stats",
+    "aws-security-blog-madpot",
+    "cisa-kev-json"
+   ]
+  },
+  {
+   "id": "patching",
+   "name": "Patching signals",
+   "question": "How fast does the fix reach the servers, and who is left behind?",
+   "now": "Releases for 8.2 to 8.5 within the hour, distributions recorded fixed in the NCSC-NL inventory from 15:30 UTC on 21 October, and a long tail: 440 of 724 inventory rows still under investigation at 15:28 UTC on 22 October, about 25 hours after release, and 1.57 million unpatched hosts on the first day.",
+   "watch": "Censys or VulnCheck recounting unpatched hosts; the inventory's investigation rows resolving; the end-of-life tail.",
+   "page": "patching/inventory/index.html",
+   "sources": [
+    "securityweek-exploitation-days-before",
+    "ncsc-nl-php2shell-software-list"
+   ]
+  },
+  {
+   "id": "network",
+   "name": "Network protection signals",
+   "question": "What stood in front of the server, and did it hold?",
+   "now": "Edge rules live from 03:02 UTC on 21 October at Cloudflare and the same day at Akamai, Fastly and Imperva; Cloudflare saw attackers mutating payloads to get past them; Fortinet's signatures ship in alert-only mode. Some of the devices in front of servers run PHP themselves: Palo Alto lists every PAN-OS and Panorama version as affected, and the inventory has Check Point's firewall web interfaces and NetScaler ADC as vulnerable.",
+   "watch": "A vendor reporting a bypass of its rule; a security appliance compromised through its own PHP.",
+   "page": "defence/index.html",
+   "sources": [
+    "cloudflare-blog-php2shell-waf",
+    "fortinet-fortiweb-php2shell",
+    "ncsc-nl-php2shell-software-list"
+   ]
+  },
+  {
+   "id": "internal",
+   "name": "Internal vulnerability signals",
+   "question": "Once code runs as the web worker, what can it reach?",
+   "now": "No captured source describes what was behind a compromised server, because no compromise is confirmed. What exists are the signals defenders were told to look for: a PHP worker spawning a shell or downloading tools, new outbound connections from workers, and the warning that a clean log proves little.",
+   "watch": "The first incident report that says what the attacker reached: credentials on the host, the database, the internal network, a cloud role.",
+   "page": "flaws/index.html#blast",
+   "sources": [
+    "cisa-alert-php-20261021",
+    "gist-blevene-detection-guide",
+    "jpcert-at260033"
+   ]
+  }
+ ],
+ "barriers": [
+  {
+   "id": "edge",
+   "what": "Edge rules at the big WAF providers",
+   "at": "2026-10-21T03:02Z",
+   "at_note": "Cloudflare, about nine hours before disclosure by its own account; Akamai, Fastly and Imperva the same day",
+   "gap": "No edge protection, or rules not switched on",
+   "sources": [
+    "cloudflare-blog-php2shell-waf",
+    "akamai-blog-php-core-rce",
+    "fastly-blog-php2shell",
+    "imperva-blog-php2shell"
+   ]
+  },
+  {
+   "id": "offline",
+   "what": "The first official advice to be ready to take systems offline",
+   "at": "2026-10-21T13:45Z",
+   "at_note": "the NSA on X, before the CVE records were published",
+   "gap": "No way to pull a system quickly, or nobody with the authority to decide",
+   "sources": [
+    "nsa-x-2112903220209098897"
+   ]
+  },
+  {
+   "id": "release",
+   "what": "Fixed PHP releases for every supported branch",
+   "at": "2026-10-21T14:00Z",
+   "at_note": "tags at 13:35 UTC; the advisory at 14:00",
+   "gap": "No patch pipeline: the organisation could not rebuild and redeploy PHP in time, or did not know where it ran",
+   "sources": [
+    "github-php-src-tags",
+    "php-net-advisory"
+   ]
+  },
+  {
+   "id": "mitigate",
+   "what": "Configuration mitigations for those who could not patch",
+   "at": "2026-10-21T14:00Z",
+   "at_note": "in the same advisory",
+   "gap": "No configuration management: settings could not be pushed to every server",
+   "sources": [
+    "php-net-advisory",
+    "github-ghsa-6wmf-4rv5-p3rp"
+   ]
+  },
+  {
+   "id": "package",
+   "what": "Fixed packages from the operating systems",
+   "at": "2026-10-21T15:30Z",
+   "at_note": "the first one recorded in the NCSC-NL inventory (Red Hat); Ubuntu, Debian and the Docker image by 16:03",
+   "gap": "Routine updates not applied, or the server on a distribution nobody maintains",
+   "sources": [
+    "ncsc-nl-php2shell-software-list"
+   ]
+  },
+  {
+   "id": "detect",
+   "what": "Host and log signals to look for",
+   "at": "2026-10-21",
+   "at_note": "CISA's alert, dated 21 October with no time; community Sigma, Suricata and Falco rules followed",
+   "gap": "No monitoring that would see a worker spawn a shell or call out",
+   "sources": [
+    "cisa-alert-php-20261021",
+    "gist-blevene-detection-guide"
+   ]
+  },
+  {
+   "id": "reach",
+   "what": "Defence in depth behind the worker",
+   "at": null,
+   "at_note": "not a release: either it was built before 21 October or it was not there",
+   "gap": "Credentials the worker can use, a database it can read, an internal network it can call: the reach that turns code execution into a breach",
+   "sources": [
+    "cisa-alert-php-20261021",
+    "gist-blevene-detection-guide"
+   ]
+  }
+ ],
+ "reading": [
+  "A site that was exposed and not exploited is evidence too. Attempts ran in the millions and confirmed compromises stayed at zero; the difference is the population this page is about, and nobody has counted it.",
+  "Code execution as the web worker is reach, not yet a breach. Whether it becomes one depends on what that worker can open: the newsroom's question about any secret, 'can the attacker reach the system it opens?', asked of a whole server.",
+  "Every barrier has a time. A compromise after a barrier was available says something about the organisation, not only about the bug: after 03:02 UTC on 21 October, that there was no edge protection in front; after 14:00, that there was no pipeline to patch; and at any time, if the attacker reached anything that mattered, that there was nothing behind the worker."
+ ]
+}
