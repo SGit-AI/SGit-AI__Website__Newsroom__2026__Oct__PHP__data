@@ -2,21 +2,21 @@
  "agents": [
   {
    "cost": 22,
-   "did": "25 Oct 08:00 London: promoted 18 sources and 2 newer snapshots, 7 new claims (139 in all, none confirmed); the evidence vault is at 400 sources, head 176e2dc212e1, 113 queue rows pending. The site shows 382 (the journalist exported 24 Oct 22:04). The report is only in its session.",
+   "did": "Wake 13:00 London (fired 13:04 UTC); team at 0d81af7da975. Took in the researcher's pass 20261026T1208Z (pack vault 7r83qic5 at f12c7b82a7e8; queue 450 rows, 67 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (2 priority 2, 16 priority 4; now 525 sources), 20 claims, no timeline rows. Evidence…",
    "id": "curator-scheduled",
-   "last": "2026-10-24T22:17Z",
+   "last": "2026-10-26T13:43Z",
    "member": "newsroom-lead",
    "name": "curator@php.newsroom (scheduled)",
    "on": "editor",
    "stage": "curator",
-   "state": "waiting",
-   "waiting": "Your go on the site export; whether a public normal-vault copy stays; confirm the researcher wrote nothing to oq9gflln after the move."
+   "state": "working",
+   "waiting": "The CLI team's answer on the slow first status and pull (curator-0001); the editor on oq9gflln. Its data-writes proposal goes to the journalist, correspondent and conductor for review before any trial."
   },
   {
    "cost": 14,
-   "did": "Passes pushed to the source-watch vault at every wake (24 Oct 07:00 to 17:00; 25 Oct 07:03); another pass is running now. Nothing of this is in the repository: no commit, no run record.",
+   "did": "Wake 14:30 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head aa0d4d7f77a5, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0 though the page…",
    "id": "researcher-scheduled",
-   "last": "2026-10-25T07:16Z",
+   "last": "2026-10-26T15:18Z",
    "member": "researcher",
    "name": "researcher@php.newsroom (scheduled)",
    "on": "",
@@ -86,14 +86,14 @@
   },
   {
    "cost": 28,
-   "did": "The 06:44 pass pushed. It wants to switch its source from the watch to the site, add two KEV entries (CVE-2026-110447, CVE-2026-114625), move its morning pass to 07:14 and release its schedule card.",
+   "did": "Pulse pass 20261026T145452Z (14:52 London); sgit-ai 0.25.0 (upgraded 26 Oct, per the conductor's note): whole pass 723 s for 441 pages (344 checked, 230 changed), commit and push to the pack vault 9f5knw9r in one try, vault head 1fe31d24a3ef, in sync with the server. Team dev 828a2c9ac194 recorded. Evidence: no…",
    "id": "pulse",
-   "last": "2026-10-25T07:03Z",
+   "last": "2026-10-26T15:07Z",
    "member": "",
    "name": "pulse@newsroom",
    "on": "editor",
    "stage": "",
-   "state": "waiting",
+   "state": "working",
    "waiting": "Your go on those four; its card is not released yet."
   },
   {
@@ -134,14 +134,14 @@
   },
   {
    "cost": 96,
-   "did": "The 20:52 wake was quiet: no release, audit 0 failures.",
+   "did": "12:52 London wake (sgit 0.25.0; the desk's pack copy hsmfer5w is at 94352a55fbaa, BEHIND the curator's vault at a7ab84771dfc, so this wake read the loose evidence clone, pulled to a7ab84771dfc): release-time re-graded A5 holds on the release manager's timeline; no-confirmed-compromise holds A4 as of 09:40 UTC on 26…",
    "id": "factcheck",
-   "last": "2026-10-24T19:58Z",
+   "last": "2026-10-26T13:30Z",
    "member": "verifier",
    "name": "factcheck@php.newsroom",
    "on": "",
    "stage": "",
-   "state": "waiting",
+   "state": "working",
    "waiting": "nothing"
   },
   {
@@ -218,15 +218,15 @@
   },
   {
    "cost": 2,
-   "did": "The scheduled conductor: full pass 15:15 London. The editor-session conductor wrote a debrief at 12:28.",
+   "did": "The editor's decision recorded (records/briefs/2026-10-26__decision__the-curator-writes-data.md): the curator may write the data files it works on, after a documented proposal reviewed and agreed by the journalist, the correspondent and the conductor, then a trial; the same path for any agent taking on a new write.…",
    "id": "conductor",
-   "last": "2026-10-24T14:15Z",
+   "last": "2026-10-26T14:33Z",
    "member": "conductor",
    "name": "conductor@php.newsroom",
    "on": "editor",
    "stage": "",
    "state": "working",
-   "waiting": "The lanes: no key. The editor session asks for a go on the Sherpa schedule (card active) and the cartographer one (archived: the ontologist took over)."
+   "waiting": "ROUND_TOKEN; wiring security, then the ontologist, librarian, desk and Sherpa."
   },
   {
    "cost": 11,
@@ -254,30 +254,30 @@
   },
   {
    "cost": 114,
-   "did": "Pipeline owner after the journalist; site pages updated to v0.17.7. Active from 00:40 London: Opus, 09:25, 11:55, 14:25, 16:55, 19:25 (45 minutes after each journalist wake).",
+   "did": "Scheduled wake 14:25 London (fired 14:26 UTC), in this session (Opus); team dev at af89cbba07e1. Reviewed the journalist's 13:40 wake, data v0.1.30 (vault 22a0c2920b88, 525 sources, latest capture 12:14 UTC 26 Oct; 20 verdicts: 3 used, 5 agrees, 5 noted, 7 held back; offline rows Netherlands (AG Connect, full list as…",
    "id": "correspondent-scheduled",
-   "last": "2026-10-25T01:44Z",
+   "last": "2026-10-26T14:43Z",
    "member": "correspondent",
    "name": "correspondent@php.newsroom (scheduled)",
    "on": "editor",
    "stage": "correspondent",
-   "state": "waiting",
+   "state": "working",
    "waiting": "Your call on board 285: move the desk's checks to about 10:15 and 17:40 (its wakes clash with the correspondent's)."
   },
   {
    "cost": 4,
-   "did": "Branch matches dev; nothing to push. Active from 00:40 London: Sonnet, 08:40, 11:10, 13:40, 16:10, 18:40; a fresh session each wake.",
+   "did": "13:40 wake (fired 13:45 UTC) into this session; dev at 86ba128d2aed. The evidence vault had moved to 22a0c2920b88 (525 sources): the curator's batch 16, pushed 13:43 UTC, two minutes before this wake (its run record 20261026T1304Z was already in team). The curator's wakes still do not write the data files, so I ran…",
    "id": "journalist-scheduled",
-   "last": "2026-10-24T23:09Z",
+   "last": "2026-10-26T13:58Z",
    "member": "journalist",
    "name": "journalist@php.newsroom (scheduled)",
    "on": "",
    "stage": "journalist",
-   "state": "waiting",
+   "state": "working",
    "waiting": "Its first wake at 08:40."
   }
  ],
- "as_of": "2026-10-26T11:35Z",
+ "as_of": "2026-10-26T15:25Z",
  "board": [
   {
    "id": "009",
@@ -602,14 +602,14 @@
  ],
  "freshness": [
   [
-   "Evidence vault, as exported to this site",
-   "2026-10-24T12:34Z",
-   "328 sources on the site; the vault holds more"
+   "Data API",
+   "2026-10-26T14:34Z",
+   "latest v0.1.32 (researcher)"
   ],
   [
-   "Site build",
-   "2026-10-25",
-   "live version v0.18.0"
+   "Pages",
+   "2026-10-26T11:39Z",
+   "edition v0.22.28, pinned to data 0.1.26"
   ]
  ],
  "pipeline": [
@@ -1157,6 +1157,110 @@
    "run": "20261026T1126Z-conductor",
    "started": "2026-10-26T11:26:53Z",
    "summary": "Full pass (11:15 London, fired 11:26). Team head 7df96fb8d92b; v1 untouched. Review of the six since 10:19: curator run 10:36 (batch 15 pushed 11:06), journalist run 11:13 (batches 14-15, 81 verdicts, data v0.1.24), dev's daily card and task (06:40 London, a fresh session each wake), press v1.0.20-…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T12:40:00Z",
+   "outcome": "ok",
+   "run": "20261026T1158Z-correspondent",
+   "started": "2026-10-26T11:57:59Z",
+   "summary": "Scheduled wake 11:55 London (fired 11:58 UTC), in this session (Opus); team dev at ec7980ba. Reviewed the journalist's 11:10 wake: data v0.1.24 (export of the curator's batches 13 to 15 into data, evidence vault a7ab84771dfc, 507 sources; 81 verdicts: 5 used, 20 agrees, 44 noted, 12 held back; rows…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-26T12:51:36Z",
+   "outcome": "ok",
+   "run": "20261026T1206Z-researcher",
+   "started": "2026-10-26T12:06:09Z",
+   "summary": "Wake 12:00 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head f12c7b82a7e8, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T12:21:08Z",
+   "outcome": "ok",
+   "run": "20261026T1220Z-conductor",
+   "started": "2026-10-26T12:20:08Z",
+   "summary": "Light check (12:15 London). Team head c88fcdd30a. Found and fixed: the chain's edition v0.22.28 (ec7980ba, 11:38 UTC) deleted records/tools/schedule.py, so from 11:38 no agent could run WAKE.md's wake and run commands (the correspondent caught it at 11:55, board correspondent-0003, and wrote its ru…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-26T13:30:00Z",
+   "outcome": "ok",
+   "run": "20261026T1259Z-factcheck",
+   "started": "2026-10-26T12:59:00Z",
+   "summary": "12:52 London wake (sgit 0.25.0; the desk's pack copy hsmfer5w is at 94352a55fbaa, BEHIND the curator's vault at a7ab84771dfc, so this wake read the loose evidence clone, pulled to a7ab84771dfc): release-time re-graded A5 holds on the release manager's timeline; no-confirmed-compromise holds A4 as o…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-26T13:43:37Z",
+   "outcome": "ok",
+   "run": "20261026T1304Z-curator",
+   "started": "2026-10-26T13:04:41Z",
+   "summary": "Wake 13:00 London (fired 13:04 UTC); team at 0d81af7da975. Took in the researcher's pass 20261026T1208Z (pack vault 7r83qic5 at f12c7b82a7e8; queue 450 rows, 67 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (2 priority 2, 16 priority 4; now 525 sources), 20 claims, no timeline…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T13:33:41Z",
+   "outcome": "ok",
+   "run": "20261026T1332Z-conductor",
+   "started": "2026-10-26T13:32:39Z",
+   "summary": "Light check (13:15 London, fired 13:32). Team head 1c2ca9ce0d2d; records/tools/schedule.py still in place (no round since the restore); v1 untouched. Review since 12:21: researcher run 12:06 (data v0.1.28, source watch at f12c7b82a7e8), factcheck run 9 at 12:59 (data v0.1.29); press, site, updates,…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T13:58:13Z",
+   "outcome": "ok",
+   "run": "20261026T1346Z-journalist",
+   "started": "2026-10-26T13:46:27Z",
+   "summary": "13:40 wake (fired 13:45 UTC) into this session; dev at 86ba128d2aed. The evidence vault had moved to 22a0c2920b88 (525 sources): the curator's batch 16, pushed 13:43 UTC, two minutes before this wake (its run record 20261026T1304Z was already in team). The curator's wakes still do not write the dat…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T14:43:29Z",
+   "outcome": "ok",
+   "run": "20261026T1426Z-correspondent",
+   "started": "2026-10-26T14:26:53Z",
+   "summary": "Scheduled wake 14:25 London (fired 14:26 UTC), in this session (Opus); team dev at af89cbba07e1. Reviewed the journalist's 13:40 wake, data v0.1.30 (vault 22a0c2920b88, 525 sources, latest capture 12:14 UTC 26 Oct; 20 verdicts: 3 used, 5 agrees, 5 noted, 7 held back; offline rows Netherlands (AG Co…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T14:32:08Z",
+   "outcome": "ok",
+   "run": "20261026T1431Z-conductor",
+   "started": "2026-10-26T14:31:48Z",
+   "summary": "Light check (14:15 London, fired 14:31). Team head af89cbba07; records/tools/schedule.py in place; v1 untouched. Review since 13:33: curator run 13:04 (batch 16 pushed 13:43, vault 22a0c2920b88, 525 sources), journalist run 13:46 (took batch 16 two minutes after its push: 20 verdicts, data v0.1.30,…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T14:33:55Z",
+   "outcome": "ok",
+   "run": "20261026T1433Z-conductor",
+   "started": "2026-10-26T14:33:00Z",
+   "summary": "The editor's decision recorded (records/briefs/2026-10-26__decision__the-curator-writes-data.md): the curator may write the data files it works on, after a documented proposal reviewed and agreed by the journalist, the correspondent and the conductor, then a trial; the same path for any agent takin…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-26T15:18:39Z",
+   "outcome": "ok",
+   "run": "20261026T1434Z-researcher",
+   "started": "2026-10-26T14:34:06Z",
+   "summary": "Wake 14:30 London, 26 October: one pass of the source watch on the pack vault 7r83qic5, two phases each committed and pushed, vault in sync at head aa0d4d7f77a5, on sgit-ai v0.25.0. Cyber desk: neither CVE in the CISA KEV catalog; Metasploit and Sigma 0 merged pulls; the nuclei pulls series reads 0…"
+  },
+  {
+   "agent": "pulse",
+   "finished": "2026-10-26T15:07:21Z",
+   "outcome": "ok",
+   "run": "20261026T1454Z-pulse",
+   "started": "2026-10-26T14:54:17Z",
+   "summary": "Pulse pass 20261026T145452Z (14:52 London); sgit-ai 0.25.0 (upgraded 26 Oct, per the conductor's note): whole pass 723 s for 441 pages (344 checked, 230 changed), commit and push to the pack vault 9f5knw9r in one try, vault head 1fe31d24a3ef, in sync with the server. Team dev 828a2c9ac194 recorded.…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T15:23:02Z",
+   "outcome": "ok",
+   "run": "20261026T1520Z-conductor",
+   "started": "2026-10-26T15:20:53Z",
+   "summary": "Full pass 15:15 London. Reviewed the six: team head 472516dc (researcher 14:34 data v0.1.32, pulse 14:54 on sgit 0.25.0 with a 723 s wake, correspondent 14:26 review of data v0.1.30 with no catch, data v0.1.31); press, site, refs and updates unchanged since edition v0.22.28. No mistakes found; reco…"
   }
  ],
  "schedules": [
@@ -1333,5 +1437,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.28"
+ "version": "0.22.29"
 }

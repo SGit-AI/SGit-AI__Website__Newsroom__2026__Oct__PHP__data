@@ -1,0 +1,397 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "edges": {
+   "items": {
+    "properties": {
+     "basis": {
+      "type": "string"
+     },
+     "capture": {
+      "type": "string"
+     },
+     "file": {
+      "type": "string"
+     },
+     "from": {
+      "type": "string"
+     },
+     "sha256": {
+      "type": "string"
+     },
+     "to": {
+      "type": "string"
+     },
+     "verb": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "from",
+     "to",
+     "verb"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "nodes": {
+   "items": {
+    "properties": {
+     "at": {
+      "type": "string"
+     },
+     "by": {
+      "type": "string"
+     },
+     "class": {
+      "type": "string"
+     },
+     "confidence": {
+      "type": "string"
+     },
+     "country": {
+      "type": "string"
+     },
+     "echo": {
+      "type": "boolean"
+     },
+     "exploitation": {
+      "type": "string"
+     },
+     "files": {
+      "type": "array"
+     },
+     "href": {
+      "type": "string"
+     },
+     "http_status": {
+      "type": "number"
+     },
+     "id": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "measures": {
+      "type": "string"
+     },
+     "offline": {
+      "type": "string"
+     },
+     "origins": {
+      "type": "number"
+     },
+     "primary": {
+      "type": "boolean"
+     },
+     "published": {
+      "type": "string"
+     },
+     "relays": {
+      "type": "number"
+     },
+     "says": {
+      "type": "string"
+     },
+     "signal_class": {
+      "type": "string"
+     },
+     "source_kind": {
+      "type": "string"
+     },
+     "status": {
+      "type": "string"
+     },
+     "tension": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string"
+     },
+     "when": {
+      "type": "string"
+     },
+     "zoom": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "href",
+     "id",
+     "kind",
+     "label"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "note": {
+   "type": "string"
+  },
+  "ontology": {
+   "properties": {
+    "id": {
+     "type": "string"
+    },
+    "kinds": {
+     "properties": {
+      "advice": {
+       "type": "object"
+      },
+      "capture": {
+       "type": "object"
+      },
+      "claim": {
+       "type": "object"
+      },
+      "contradiction": {
+       "type": "object"
+      },
+      "cve": {
+       "type": "object"
+      },
+      "event": {
+       "type": "object"
+      },
+      "number": {
+       "type": "object"
+      },
+      "party": {
+       "type": "object"
+      },
+      "phase": {
+       "type": "object"
+      },
+      "signal": {
+       "type": "object"
+      },
+      "source": {
+       "type": "object"
+      },
+      "topic": {
+       "type": "object"
+      }
+     },
+     "required": [
+      "advice",
+      "capture",
+      "claim",
+      "contradiction",
+      "cve",
+      "event",
+      "number",
+      "party",
+      "phase",
+      "signal",
+      "source",
+      "topic"
+     ],
+     "type": "object"
+    },
+    "verbs": {
+     "properties": {
+      "addresses": {
+       "type": "object"
+      },
+      "adds": {
+       "type": "object"
+      },
+      "advises": {
+       "type": "object"
+      },
+      "answers": {
+       "type": "object"
+      },
+      "appears_in": {
+       "type": "object"
+      },
+      "captured_as": {
+       "type": "object"
+      },
+      "captured_in": {
+       "type": "object"
+      },
+      "cites": {
+       "type": "object"
+      },
+      "classified_as": {
+       "type": "object"
+      },
+      "contains": {
+       "type": "object"
+      },
+      "counts": {
+       "type": "object"
+      },
+      "described_by": {
+       "type": "object"
+      },
+      "discussed_in": {
+       "type": "object"
+      },
+      "fixes": {
+       "type": "object"
+      },
+      "flags": {
+       "type": "object"
+      },
+      "follows": {
+       "type": "object"
+      },
+      "has_post": {
+       "type": "object"
+      },
+      "has_section": {
+       "type": "object"
+      },
+      "introduces": {
+       "type": "object"
+      },
+      "made_by": {
+       "type": "object"
+      },
+      "member_of": {
+       "type": "object"
+      },
+      "names": {
+       "type": "object"
+      },
+      "part_of": {
+       "type": "object"
+      },
+      "posted_by": {
+       "type": "object"
+      },
+      "published_by": {
+       "type": "object"
+      },
+      "questions": {
+       "type": "object"
+      },
+      "realised in": {
+       "type": "object"
+      },
+      "relays": {
+       "type": "object"
+      },
+      "removes": {
+       "type": "object"
+      },
+      "replies_to": {
+       "type": "object"
+      },
+      "rests_on": {
+       "type": "object"
+      },
+      "revises": {
+       "type": "object"
+      },
+      "states": {
+       "type": "object"
+      },
+      "syndicates": {
+       "type": "object"
+      },
+      "touches": {
+       "type": "object"
+      },
+      "works_for": {
+       "type": "object"
+      }
+     },
+     "required": [
+      "addresses",
+      "adds",
+      "advises",
+      "answers",
+      "appears_in",
+      "captured_as",
+      "captured_in",
+      "cites",
+      "classified_as",
+      "contains",
+      "counts",
+      "described_by",
+      "discussed_in",
+      "fixes",
+      "flags",
+      "follows",
+      "has_post",
+      "has_section",
+      "introduces",
+      "made_by",
+      "member_of",
+      "names",
+      "part_of",
+      "posted_by",
+      "published_by",
+      "questions",
+      "realised in",
+      "relays",
+      "removes",
+      "replies_to",
+      "rests_on",
+      "revises",
+      "states",
+      "syndicates",
+      "touches",
+      "works_for"
+     ],
+     "type": "object"
+    },
+    "version": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "kinds",
+    "verbs",
+    "version"
+   ],
+   "type": "object"
+  },
+  "site": {
+   "type": "string"
+  },
+  "title": {
+   "type": "string"
+  },
+  "unlinked": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "unmapped_publishers": {
+   "properties": {},
+   "required": [],
+   "type": "object"
+  },
+  "vault_commit": {
+   "type": "string"
+  },
+  "version": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "edges",
+  "nodes",
+  "note",
+  "ontology",
+  "site",
+  "title",
+  "unlinked",
+  "unmapped_publishers",
+  "vault_commit",
+  "version"
+ ],
+ "title": "graph.json",
+ "type": "object"
+}

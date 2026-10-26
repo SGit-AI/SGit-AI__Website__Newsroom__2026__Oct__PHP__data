@@ -1,7 +1,7 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.28",
- "vault_commit": "a7ab84771dfc",
+ "version": "0.22.29",
+ "vault_commit": "22a0c2920b88",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
  "ontology": {
@@ -8352,6 +8352,49 @@
     {
      "name": "text.txt",
      "sha256": "fd2adaf6b44e5ea680447d54969c0315116f536363157d9786cb77ad792782ac"
+    }
+   ]
+  },
+  {
+   "id": "source:ciol-iot-india-php2shell-attacks-ai-driven-cy",
+   "kind": "source",
+   "label": "CIOL: India Records 14% PHP2Shell Impact Rate, Above Global Average",
+   "href": "sources/ciol-iot-india-php2shell-attacks-ai-driven-cy/index.html",
+   "url": "https://www.ciol.com/iot/india-php2shell-attacks-ai-driven-cybersecurity-12750268",
+   "primary": false,
+   "published": "2026-10-25 21:01 IST",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:ciol-iot-india-php2shell-attacks-ai-driven-cy/20261026T121439Z",
+   "kind": "capture",
+   "label": "CIOL, captured 20261026T121439Z",
+   "href": "sources/ciol-iot-india-php2shell-attacks-ai-driven-cy/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "28ce001bbdea624e596db059a4d78c3def644c003939f2c24c44eb897474edf2"
+    },
+    {
+     "name": "page.html",
+     "sha256": "45d082d5a199f1ba185ca642e7fc4f74d5fc49b4e8bd988a5e8a2f5cd8bd9eec"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "802be790d42925c8e6684dfb32a6f758344155188462ef3073432dc2903f9468"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "20520a7250bc6ae2af7e4194ea86e92fd88de7df63c413e92f5793efdd70f3a8"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "15a061fa1fd2a6e14bc3643842c2f85f061c993fb4c7bdac69319924291bd610"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "fd817de13849dba708ee4ab92033f28cf20ceee1c6bcab6d4a5129a509bac3e9"
     }
    ]
   },
@@ -18137,6 +18180,49 @@
    ]
   },
   {
+   "id": "source:malaymail-news-singapore-2026-10-23-singapore-warn",
+   "kind": "source",
+   "label": "Malay Mail: Singapore warns of critical PHP vulnerabilities that could expose web servers to hackers | Malay Mail",
+   "href": "sources/malaymail-news-singapore-2026-10-23-singapore-warn/index.html",
+   "url": "https://www.malaymail.com/news/singapore/2026/10/23/singapore-warns-of-critical-php-vulnerabilities-that-could-expose-web-servers-to-hackers/240275",
+   "primary": false,
+   "published": "2026-10-23 10:52:13 MYT",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:malaymail-news-singapore-2026-10-23-singapore-warn/20261026T121439Z",
+   "kind": "capture",
+   "label": "Malay Mail, captured 20261026T121439Z",
+   "href": "sources/malaymail-news-singapore-2026-10-23-singapore-warn/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "e01a638648d1bda4670da88501a62d870bc2e1b927df00097e6a8b5969fc80a4"
+    },
+    {
+     "name": "page.html",
+     "sha256": "80bf298e16b3ec6d040b7912872ebcaae29518d9880d11dcc084a18c27cfab3d"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "839bc936a5198372a4c6f3e83d5093f487eeee9b351ae725d82ff520961db8cd"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "e2ee66cd24e069bca54f9732bfea9becde23859f168fd696e44e340e1fe177db"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "4eb8538336a622279d1f1520edfc732f5fd17ca752493b4e0db892daddc55f56"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "c4bf19dca315cad337a06ebe35b3b2cb33839c81e0ef88bebfbe072c247ffa6a"
+    }
+   ]
+  },
+  {
    "id": "source:malwarebytes-nl-blog-bugs-2026-10-php2shell-why-websi",
    "kind": "source",
    "label": "malwarebytes: PHP2Shell: Waarom veel websites offline moesten gaan | Malwarebytes",
@@ -20111,6 +20197,49 @@
     {
      "name": "text.txt",
      "sha256": "fd81eb1c26ed745aeb4359a460f2818de48e0b21fc6ae026047042ff79a409ee"
+    }
+   ]
+  },
+  {
+   "id": "source:notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em",
+   "kind": "source",
+   "label": "notebookcheck: PHP2Shell deixa milhões de servidores em versões do PHP sem correção oficial - NotebookCheck.info News",
+   "href": "sources/notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em/index.html",
+   "url": "https://www.notebookcheck.info/PHP2Shell-deixa-milhoes-de-servidores-em-versoes-do-PHP-sem-correcao-oficial.1433721.0.html",
+   "primary": false,
+   "published": "2026-10-26",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em/20261026T121439Z",
+   "kind": "capture",
+   "label": "notebookcheck, captured 20261026T121439Z",
+   "href": "sources/notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "cb965a37227ae94c02160deaa8edb6fde91e4299b6154832b09fd404bf0694d6"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c258a708bee1cdd1725621eacf9527db023fe4dfb7d4fe9a13b780aaa17495ee"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "00a694d9a2001d73b20324a904eb74b75b50f74dd5b793b37b3fe82e72d36e07"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "26fc2a03916f1e6e96b4cc1388e041112bbe5b9f96eadc21b15c038896f4312c"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "9fa3a5f4a8d4d4d33bbc942a43507b04dc9b7ee208b0418a1eff5e67f18c851e"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "222c99da4021fffb47332fde2aeeea69a09ddfc9fe8a006e8bea5e1ab483119f"
     }
    ]
   },
@@ -22616,6 +22745,49 @@
    ]
   },
   {
+   "id": "source:prtimes-main-html-rd-p-000000090-000072250-html",
+   "kind": "source",
+   "label": "PR TIMES: Cohesity、PHPの深刻な脆弱性「PHP2Shell」の影響と企業が講じるべき対策を解説 | Cohesity Japan株式会社のプレスリリース",
+   "href": "sources/prtimes-main-html-rd-p-000000090-000072250-html/index.html",
+   "url": "https://prtimes.jp/main/html/rd/p/000000090.000072250.html",
+   "primary": false,
+   "published": "2026-10-26 17:00 (page time zone not stated)",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:prtimes-main-html-rd-p-000000090-000072250-html/20261026T121439Z",
+   "kind": "capture",
+   "label": "PR TIMES, captured 20261026T121439Z",
+   "href": "sources/prtimes-main-html-rd-p-000000090-000072250-html/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "dc7f64c0a550b49590d5793ae02096b89de83e5a4bcacdd4c83aed9031e8cafe"
+    },
+    {
+     "name": "page.html",
+     "sha256": "67a3d1374d6d75e1944cedd812387b237aa5e217342af0f6e889c4f4733087cd"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "5c2795293b33e324053baa12443394fc3fa2072e42fbd37d576493e72659a1b7"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "a879496695518b8d885d95faf4bbdbf856a17773baf03e52e842dd792eb29abe"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "cdd835f1d973c65d668b393ac6e1e84d5792f198127f24f61a10c71da009af75"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "fe7dc6113b9834b6f1c26eea2f7234b444a3fbd58d96325e5aca707cd3d71dbb"
+    }
+   ]
+  },
+  {
    "id": "source:public25-news-articleview-html",
    "kind": "source",
    "label": "공생공사닷컴: 로그프레소, PHP 취약점 진단 스캐너 공개…내부망까지 점검 < 퍼블릭경제 < 공공&경제 < 기사본문 - 퍼블릭타임스",
@@ -24272,6 +24444,49 @@
    ]
   },
   {
+   "id": "source:security-nl-qnap-nas-offline",
+   "kind": "source",
+   "label": "Security.NL: QNAP adviseert offline halen NAS-systemen wegens PHP2Shell - Security.NL",
+   "href": "sources/security-nl-qnap-nas-offline/index.html",
+   "url": "https://www.security.nl/posting/958512/QNAP+adviseert+offline+halen+NAS-systemen+wegens+PHP2Shell",
+   "primary": false,
+   "published": "2026-10-22 10:14 (page time zone not stated; the capture's 'last updated' stamp reads 'yesterday, 13:26')",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:security-nl-qnap-nas-offline/20261023T160435Z",
+   "kind": "capture",
+   "label": "Security.NL, captured 20261023T160435Z",
+   "href": "sources/security-nl-qnap-nas-offline/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "3836c557b4383e09f401eea5309562864ba592f256c5ea9a2b134dd133f1c5df"
+    },
+    {
+     "name": "page.html",
+     "sha256": "377e1e671f7c9e2ade88ec81e9f703af4a14ee23fc92d42841ef1c1b8f901dab"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "20e72fcfa72450adab3e9ac812f7ad660bdc406b84d3eaf825a506d2a14ebd39"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "3084dbb6b62aa99ffd73e612981b4e397cab6101be5d2fe3295563b9656cf7bf"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "e7a9d2a73383156caaf88db9d9b98d0ca3e05c4371b61bc2740a037d12a35366"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "5c047c35457e413b8690a77634d2b2b4ab8899a42d4c54c1f710bd2eecf5cef7"
+    }
+   ]
+  },
+  {
    "id": "source:securityaffairs-201662-hacking-pierluigi-paganini-answer",
    "kind": "source",
    "label": "Security Affairs: Pierluigi Paganini answers questions about the PHP2Shell flaws",
@@ -24610,6 +24825,92 @@
    ]
   },
   {
+   "id": "source:selular-2026-10-ancaman-serangan-siber-php2shell",
+   "kind": "source",
+   "label": "Selular.ID: Ancaman Serangan Siber PHP2Shell, Kemenperin Matikan Situs TKDN hingga 25 Oktober | Selular.ID",
+   "href": "sources/selular-2026-10-ancaman-serangan-siber-php2shell/index.html",
+   "url": "https://selular.id/2026/10/ancaman-serangan-siber-php2shell-kemenperin-matikan-situs-tkdn-hingga-25-oktober/",
+   "primary": false,
+   "published": "2026-10-24 14:00 WIB",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:selular-2026-10-ancaman-serangan-siber-php2shell/20261024T133450Z",
+   "kind": "capture",
+   "label": "Selular.ID, captured 20261024T133450Z",
+   "href": "sources/selular-2026-10-ancaman-serangan-siber-php2shell/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "390ec71c4abe7a222e04e379c264b02a495c1249e176a1ba59afcbb56962ccf6"
+    },
+    {
+     "name": "page.html",
+     "sha256": "7a7f5e36ab1a0c8f906ca3b392f39a98243cd688f119c2181653903a6173dff9"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "9202d40b4805a85ea8e00d2f1d9675d85c101cf0a5a4c3690ead25c4b2a9c701"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "0a7dc13c14000df3644f6a5b0c2576fd6800b36f840d50cd58cc566f274cc7f3"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "e44758febae7b007dbd45db060e5eb09c0765d731083cf25b9a37a00d1ecebc5"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "a53f6d252999b09d1c0af471d1d92250695ef7ce08c7ed77f35801c41f510da4"
+    }
+   ]
+  },
+  {
+   "id": "source:sempreupdate-php2shell-a-anatomia-das-vulnerabilidade",
+   "kind": "source",
+   "label": "SempreUpdate: PHP2Shell: O colapso da botnet Mirai nas falhas RCE",
+   "href": "sources/sempreupdate-php2shell-a-anatomia-das-vulnerabilidade/index.html",
+   "url": "https://sempreupdate.com.br/php2shell-a-anatomia-das-vulnerabilidades-criticas-e-o-fracasso-dos-ataques-da-botnet-mirai/",
+   "primary": false,
+   "published": "2026-10-23T16:47:46-03:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:sempreupdate-php2shell-a-anatomia-das-vulnerabilidade/20261024T083755Z",
+   "kind": "capture",
+   "label": "SempreUpdate, captured 20261024T083755Z",
+   "href": "sources/sempreupdate-php2shell-a-anatomia-das-vulnerabilidade/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "40662cf4952d1c13c2d05a6db00c4a0f31edcbd77844b25193a242dec53ab788"
+    },
+    {
+     "name": "page.html",
+     "sha256": "2ef99bf5dc389cfe1d630960b4d3d9755cf57fc88e710f774512fcfdb5cc28b0"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "267455f026122683de4a9f367ef71f817ce4ac61cfd8b103582635205372fd89"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "b793372df00bf16fe4144de50323d6c7daf9093fe1fff64f5e2eee7793117864"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "8a322eb00aafa2b3a8bd89411d703f488aaf210978d0de8384c8363213e8db99"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "1fca2696afa511e9a743a5a6ff54a33bb6a6bc3234f719d554398a10170fefb2"
+    }
+   ]
+  },
+  {
    "id": "source:sentinelone-php2shell",
    "kind": "source",
    "label": "SentinelOne: Stopping PHP2SHELL: How SentinelOne Protects Customers From This Attack Technique",
@@ -24799,6 +25100,92 @@
    ]
   },
   {
+   "id": "source:siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph",
+   "kind": "source",
+   "label": "Siam Blockchain: เว็บไซต์ปิดตัวทั่วโลก หลังพบช่องโหว่ PHP แพลตฟอร์มคริปโทฯ เสี่ยงได้รับผลกระทบ",
+   "href": "sources/siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph/index.html",
+   "url": "https://siamblockchain.com/2026/10/22/crypto-exchange-hack-alert-php2shell-risk/",
+   "primary": false,
+   "published": "2026-10-22",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph/20261023T160435Z",
+   "kind": "capture",
+   "label": "Siam Blockchain, captured 20261023T160435Z",
+   "href": "sources/siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "31f91ac37218b8dc49b4cbe807a64523324d208a2888444181b20b6b4a47e817"
+    },
+    {
+     "name": "page.html",
+     "sha256": "2d41b62d846401706ec807f8e77069982bac1de3f9dc9f77103ac8bd42efe8d7"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "1c7e2c5d6bfc29d884e646f38aa3bad5e0cc9d16fe4ad6a3391c5987bd13e504"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "85203e18b99bcfd100696439ddc12ce36d24aaa12c030fc658e4df355b158f1b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "0961249abb06809241b44b70836aa2e7216fd90ce2260fe8bdf58851e83488aa"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "4391c5f206bfa1ec7941c5f06cdc062373e68521b4091d2ad0399cac52038be5"
+    }
+   ]
+  },
+  {
+   "id": "source:silicon-cybersecurite-1371-php2shell-vulnerabili",
+   "kind": "source",
+   "label": "Silicon.fr: PHP2Shell : les correctifs arrivent, mais pas au même rythme",
+   "href": "sources/silicon-cybersecurite-1371-php2shell-vulnerabili/index.html",
+   "url": "https://www.silicon.fr/cybersecurite-1371/php2shell-vulnerabilites-php-229863",
+   "primary": false,
+   "published": "2026-10-22T16:19:07+00:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:silicon-cybersecurite-1371-php2shell-vulnerabili/20261024T133450Z",
+   "kind": "capture",
+   "label": "Silicon.fr, captured 20261024T133450Z",
+   "href": "sources/silicon-cybersecurite-1371-php2shell-vulnerabili/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "28dd2d023285ec9edc477d5912e0159e64e1344db0d27f0dfd3fcba12df9706a"
+    },
+    {
+     "name": "page.html",
+     "sha256": "ae676d16d159aef9248db135caf534a7bb15b203b181eb977b64e688997d5d2f"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "a71fccd9edddd3fb093c7d34f4df2811e2d77ff5dbbbb833331f5a69e626c49b"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "4897908c5ecc8be2c9d7467e4ad71de5549b6a2657b5a86d7caca36cc2197804"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "0e580291392fbb418e9ad2b4d70eebc0deddfaa0f930e3ef13d3fb9274c29a02"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "6b1c6af220b318579d0b31210decae2c0137b2b9b12d63ce3a41e1d8637282c3"
+    }
+   ]
+  },
+  {
    "id": "source:siliconangle-2026-10-22-php2shell-attacks-began-four",
    "kind": "source",
    "label": "SiliconANGLE: PHP2Shell attacks began four days before patches, Amazon says, as attempts hit millions - SiliconANGLE",
@@ -24830,6 +25217,49 @@
     {
      "name": "text.txt",
      "sha256": "bfad1c9512cf702bd764da66e5ce5bdc3e602ec3a8c87826b2ad7fc85bda6f77"
+    }
+   ]
+  },
+  {
+   "id": "source:sn-panorama-medien-was-die-php-sicherheitsl",
+   "kind": "source",
+   "label": "Salzburger Nachrichten: Was die PHP-Sicherheitslücke für das Internet bedeutet: Das Problem ist „riesig groß“ - SN.at",
+   "href": "sources/sn-panorama-medien-was-die-php-sicherheitsl/index.html",
+   "url": "https://www.sn.at/panorama/medien/was-die-php-sicherheitsluecke-fuer-das-internet-bedeutet-das-problem-ist-riesig-gross-art-679918",
+   "primary": false,
+   "published": "2026-10-22T12:43:00+02:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:sn-panorama-medien-was-die-php-sicherheitsl/20261024T160544Z",
+   "kind": "capture",
+   "label": "Salzburger Nachrichten, captured 20261024T160544Z",
+   "href": "sources/sn-panorama-medien-was-die-php-sicherheitsl/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "2921f8be03d747abad85c153dc4cdcc1ce079fb9ff6b0507c68952b2681a6e15"
+    },
+    {
+     "name": "page.html",
+     "sha256": "d561c3842cc1fae554d8e5949e27e36ebe49f6bb95c21db0739baa3b1aa7b8d1"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "2bc1ab1e31b04a3af686d76593fff2d3e28c17971b599861b768303b851e6d6e"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "544317f438c2976c43cbbd7de36cc3e68bbb70c25058b8d8265752a3ab6312e4"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "0192d9f21e4f103e2f15fd2486fc551a1eb7ddf8e90505daffaec660c8efd4fd"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "332525d81a5810fb60d533b85952b97f00a17a5df1d7fd4dc8f1751cde79a444"
     }
    ]
   },
@@ -24948,6 +25378,307 @@
     {
      "name": "text.txt",
      "sha256": "88edcdf127e01f96370214c807432bd24ffb506f250d1f9f1c38df6abd6b1083"
+    }
+   ]
+  },
+  {
+   "id": "source:software-it168-a2026-1022-6954-000006954576-shtml",
+   "kind": "source",
+   "label": "IT168 软件·学院: 360安全云发布PHP2Shell应急防护方案，助力政企网站抢修窗口期-互联网专区",
+   "href": "sources/software-it168-a2026-1022-6954-000006954576-shtml/index.html",
+   "url": "https://software.it168.com/a2026/1022/6954/000006954576.shtml",
+   "primary": false,
+   "published": "2026-10-22 16:30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:software-it168-a2026-1022-6954-000006954576-shtml/20261024T133450Z",
+   "kind": "capture",
+   "label": "IT168 软件·学院, captured 20261024T133450Z",
+   "href": "sources/software-it168-a2026-1022-6954-000006954576-shtml/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "f9958af19896bb4d9ba961c79cd48d084987a9ca7b605c695c4bcee6a9fc8326"
+    },
+    {
+     "name": "page.html",
+     "sha256": "905deb05ec0d944aa03460dadb3939e3cbe8e5be0c22b69ee79f2986cad7ca09"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "9ab87c259d801c52b06b3c65a735583cd68c91a3375ff1d033408e163d8dac4a"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "0bb5ed8f6e033e4aa23ac4bc016b9555658e8ac43ba3de04c3d926173d20715d"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "5841f166e016fa003a0fd8b6fd919aa0003a79f99fdeb4f58c8547e6ab2a3b63"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "1f93707d7016fd45cec3347ef6968f2b5e148581818a29743a2b02382b475584"
+    }
+   ]
+  },
+  {
+   "id": "source:sohu-a-1091246810-122998307",
+   "kind": "source",
+   "label": "搜狐: php2shell 漏洞刷屏，集运公司要不要连夜打补丁？先看系统用什么写的_影响_客户_代码执行",
+   "href": "sources/sohu-a-1091246810-122998307/index.html",
+   "url": "https://www.sohu.com/a/1091246810_122998307",
+   "primary": false,
+   "published": "2026-10-22 17:12",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:sohu-a-1091246810-122998307/20261023T160435Z",
+   "kind": "capture",
+   "label": "搜狐, captured 20261023T160435Z",
+   "href": "sources/sohu-a-1091246810-122998307/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "f6f1cf067aaaa8401b15a14c3fedebc718ff26cd81f09f45ace2abe5d51c8cbd"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c3c2965c5f32dac4b5950f89675660fd2ed28cdc5be4036dc9269f29aa3b439a"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "18fc9a1af81db47e4cae8aef524702af968a3079bbcb853ce371b536abfff0e8"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "1cc232cf6b69cdfc4edcde411e316b3ff34e8f91d0fd2ae9d75dc1d9b7ddc871"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "5cba4b3b080f61915b1a7f064bccb0d86721e48c535c1c2942c2b8683ca7cffe"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "8c877fbeaef6282cf6090b2f29b151c98f0a3e9b11beaaf2e8c79b7684855d7e"
+    }
+   ]
+  },
+  {
+   "id": "source:spacemoney-tecnologia-php2shell-falha-critica-php",
+   "kind": "source",
+   "label": "SpaceMoney: PHP2Shell: falha crítica no PHP exige correção imediata",
+   "href": "sources/spacemoney-tecnologia-php2shell-falha-critica-php/index.html",
+   "url": "https://www.spacemoney.com.br/tecnologia/php2shell-falha-critica-php/",
+   "primary": false,
+   "published": "2026-10-22T12:37:02+00:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:spacemoney-tecnologia-php2shell-falha-critica-php/20261023T160435Z",
+   "kind": "capture",
+   "label": "SpaceMoney, captured 20261023T160435Z",
+   "href": "sources/spacemoney-tecnologia-php2shell-falha-critica-php/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "598d8299db9b1ba5f0fc456d4b0bec709afb1db6dccb578442a7fcd25be9b52a"
+    },
+    {
+     "name": "page.html",
+     "sha256": "52a9b01a658c3478371f97646721a584df57797d3c3985d54d396feada0198e4"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "ae9ea0f69e21ec523f44ce4b4746bf3f368f41f66eb9dad524aff11fe1805865"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "cbfaba1e98945b4c4b4f7660bea5d4c8b2b5856b174c50beb733ec9c45892c43"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "c610bc57854a51585b8ab849f61dc975a699d1e31eec41401a5283e77cb20244"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "ddfdb9f80d319631c28e7b122c9c60ee4bed4cd646b02b9d5cfc5e14cedfb3aa"
+    }
+   ]
+  },
+  {
+   "id": "source:stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg",
+   "kind": "source",
+   "label": "stadt bremerhaven: Synology: Sicherheitsupdates für PHP gegen PHP2Shell-Lücken",
+   "href": "sources/stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg/index.html",
+   "url": "https://stadt-bremerhaven.de/synology-sicherheitsupdates-fuer-php-gegen-php2shell-luecken/",
+   "primary": false,
+   "published": "2026-10-22",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg/20261023T160435Z",
+   "kind": "capture",
+   "label": "stadt bremerhaven, captured 20261023T160435Z",
+   "href": "sources/stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "47ebfff9d86b48038937cc825706262fea9648729dc6d1d27f2a238056060382"
+    },
+    {
+     "name": "page.html",
+     "sha256": "d0223e08954e27a8073145434236f2cb4727d3a443dcd9d31a41eda92817ac54"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "03342d3c6d76b2d99dceed5c3f545e8b80e11fa7fd2e707bb6736b69192c415a"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "b34ae46f9992382eafb495ebcbd381651122d04eafbae81a073cc40997a6470b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "8db3ec9b86e894ded12a760cc6767f2b5763137cd21ba186890f8bd5f49d60a7"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "1b02132739192f4c0c9160bb2558737ecb9b7628bd0ca13c7b36b3a1f8f8acc9"
+    }
+   ]
+  },
+  {
+   "id": "source:startupfortune-cloudflares-ceo-says-worse-bugs-than-php",
+   "kind": "source",
+   "label": "Startup Fortune: Cloudflare's CEO Says Worse Bugs Than PHP2Shell Are Already Being Patched - Startup Fortune",
+   "href": "sources/startupfortune-cloudflares-ceo-says-worse-bugs-than-php/index.html",
+   "url": "https://startupfortune.com/cloudflares-ceo-says-worse-bugs-than-php2shell-are-already-being-patched/",
+   "primary": false,
+   "published": "2026-10-26T02:09:10+05:30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:startupfortune-cloudflares-ceo-says-worse-bugs-than-php/20261026T071149Z",
+   "kind": "capture",
+   "label": "Startup Fortune, captured 20261026T071149Z",
+   "href": "sources/startupfortune-cloudflares-ceo-says-worse-bugs-than-php/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "2b12582f836342f162442a3abfe326d0209e00bd8e7b6c5367c1b1bac7419be2"
+    },
+    {
+     "name": "page.html",
+     "sha256": "2f22e4e301b1a813fb5e0518df133f6b80b9f391fe3ffc29d217d4d9bd20bb93"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "923eaec470b9fa5f74682548b4a9daa97c65f47bf53bcf6e3c67303164f2407e"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "4a84ced79005c70b517498933f6be37bd16b2865152f1a5c18350db29a146ca8"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "1e15fb5f6247ebf8406f8b3175feb4f3d2cf500d76a8439d6c4712431ab27cd1"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "69431f5e5b2dc451952dbb5afda14295268b42d8e324c70318448e593d74c416"
+    }
+   ]
+  },
+  {
+   "id": "source:startupper-ai-282619-antepithesi-220-ekat-liron-apo",
+   "kind": "source",
+   "label": "startupper: PHP2Shell: Παγκόσμιος συναγερμός και «ένεση» 220 εκατ. λιρών από τη Βρετανία για AI Safety - STARTUPPER",
+   "href": "sources/startupper-ai-282619-antepithesi-220-ekat-liron-apo/index.html",
+   "url": "https://startupper.gr/ai/282619/antepithesi-220-ekat-liron-apo-ti-vretania-stin-asfaleia-ai-meta-to-pagkosmio-sok-tou-php2shell/",
+   "primary": false,
+   "published": "2026-10-26T08:30:14+00:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:startupper-ai-282619-antepithesi-220-ekat-liron-apo/20261026T121439Z",
+   "kind": "capture",
+   "label": "startupper, captured 20261026T121439Z",
+   "href": "sources/startupper-ai-282619-antepithesi-220-ekat-liron-apo/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "999e11e9cea68a97da1071f50e026d5ae6fa4309336023fa9cbd0bbf7963672a"
+    },
+    {
+     "name": "page.html",
+     "sha256": "9f96d123c959bb351c75763d84e5a67d1937757219f70fc64c237e98fdf07c68"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "c8f7bb905897292d0d1af84336d78d5e2f19a3c271f3a1332c3c696e627c7a30"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "3174d45ed555fad2f86b604079bd8b32a82ddb90d8c55f2c5c55f576853c6f76"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "7964594868a1fdb707cb59e478a716e1a5c04eb055ad5edaead2911045629dd7"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "2561ba8056cf48f89d1cbb40bf88cf84369cb96916d118a3d22c63c2cf22896a"
+    }
+   ]
+  },
+  {
+   "id": "source:stephanelarue-sites-des-prefectures-inaccessibles-lint",
+   "kind": "source",
+   "label": "Stéphane Larue News: Sites des préfectures inaccessibles : l'Intérieur les coupe à cause d'une faille PHP",
+   "href": "sources/stephanelarue-sites-des-prefectures-inaccessibles-lint/index.html",
+   "url": "https://stephanelarue.com/sites-des-prefectures-inaccessibles-linterieur-les-coupe-a-cause-dune-faille-php/",
+   "primary": false,
+   "published": "2026-10-21T16:48:41+02:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:stephanelarue-sites-des-prefectures-inaccessibles-lint/20261023T160435Z",
+   "kind": "capture",
+   "label": "Stéphane Larue News, captured 20261023T160435Z",
+   "href": "sources/stephanelarue-sites-des-prefectures-inaccessibles-lint/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "aa95a99c4107f39c98b9431c0abe5661f834c627ebc1cc47fe2d7d1665008232"
+    },
+    {
+     "name": "page.html",
+     "sha256": "33e9b4cebf8ec511c6655080db043e66d6d46edff09d45a2e21720bf30b2285b"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "86d05fb4452b22c1dee834e1ae39c22397055effac73f494dfd594ac685862c4"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "0e1856573788cd51ea8bedf6bc12666dc953f26b9ea507a9f83fa5b65ec4fe3a"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "a841aca7aef0a4a416ce35a698a1960482d8180089ca3239ef22273be37fb264"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "5bdbc3b6e5bbf6d84a636cc86ec4ba16c8ea9722a38a6745f0ed1b4ab2005201"
     }
    ]
   },
@@ -28082,6 +28813,49 @@
    ]
   },
   {
+   "id": "source:yugatech-news-ai-helps-uncover-php2shell-flaws-th",
+   "kind": "source",
+   "label": "YugaTech: AI Helps Uncover PHP2Shell Flaws That Put Websites Worldwide at Risk » YugaTech | Philippines Tech News & Reviews",
+   "href": "sources/yugatech-news-ai-helps-uncover-php2shell-flaws-th/index.html",
+   "url": "https://www.yugatech.com/news/ai-helps-uncover-php2shell-flaws-that-put-websites-worldwide-at-risk/",
+   "primary": false,
+   "published": "2026-10-26T07:33:20+00:00",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:yugatech-news-ai-helps-uncover-php2shell-flaws-th/20261026T121439Z",
+   "kind": "capture",
+   "label": "YugaTech, captured 20261026T121439Z",
+   "href": "sources/yugatech-news-ai-helps-uncover-php2shell-flaws-th/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "68f7ea5beb10f02d508e28dc18b2374adc013486705e5fa237d625a09faeb724"
+    },
+    {
+     "name": "page.html",
+     "sha256": "b6d1675fb094fb0e23a25dbd37c9c342fc2912ebe083cd5dc29361352a08a28f"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "4035076f13a18c54480a6739a4178f9f1e35109c16835b628d1f9d6dbb20ff8f"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "30203664a2061c0a650ee53e12cc0de6cf95265b3ed548f6429d3d8eb1437b63"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "bd2833ba376a2d23698aba4db6d7460a23481b277a94cba80a82837910d516f0"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "ea3e1134c60159b819defacd7c8ab12409727fd23768da3247338feaa1472d9c"
+    }
+   ]
+  },
+  {
    "id": "source:zataz-php2shell-deux-failles-critiques-menacen",
    "kind": "source",
    "label": "ZATAZ: PHP2Shell : deux failles critiques menacent les serveurs web – ZATAZ.COM",
@@ -28555,10 +29329,10 @@
   {
    "id": "claim:release-time",
    "kind": "claim",
-   "label": "The fixes were released at 14:00 UTC on 21 October",
-   "status": "disputed",
+   "label": "The fixes were scheduled for 14:00 UTC on 21 October and were published between 13:31 and 13:35 UTC",
+   "status": "confirmed",
    "href": "facts/release-time/index.html",
-   "by": "php.net pre-announcement; Daubois; CERT-FR (16:00 Paris)",
+   "by": "PHP 8.5's release manager, Daniel Scherzer, from the repositories' history; the GitHub tags and advisories (13:34 to 13:35 UTC); php.net pre-announcement (scheduled 14:00 UTC); CERT-EU (13:30 UTC)",
    "origins": 2,
    "tension": "K-010",
    "relays": 0,
@@ -28805,10 +29579,10 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 09:40 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "label": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "href": "facts/no-confirmed-compromise/index.html",
-   "by": "this site, from every captured source in the evidence vault (507 sources, head a7ab84771dfc), as of its latest capture at 09:40 UTC on 26 October",
+   "by": "this site, from every captured source in the evidence vault (525 sources, head 22a0c2920b88), as of its latest capture at 12:14 UTC on 26 October",
    "origins": 1,
    "relays": 0,
    "echo": false
@@ -31178,6 +31952,11 @@
    "to": "capture:chip-news-wifi-dsl-internet-bsi-schlaegt-alar/20261023T160435Z"
   },
   {
+   "from": "source:ciol-iot-india-php2shell-attacks-ai-driven-cy",
+   "verb": "captured_in",
+   "to": "capture:ciol-iot-india-php2shell-attacks-ai-driven-cy/20261026T121439Z"
+  },
+  {
    "from": "source:cisa-alert-log4j-2021",
    "verb": "published_by",
    "to": "party:cisa"
@@ -33354,6 +34133,11 @@
    "to": "capture:mainichi-articles-20261023-pr2-00m-020-690000c/20261023T160435Z"
   },
   {
+   "from": "source:malaymail-news-singapore-2026-10-23-singapore-warn",
+   "verb": "captured_in",
+   "to": "capture:malaymail-news-singapore-2026-10-23-singapore-warn/20261026T121439Z"
+  },
+  {
    "from": "source:malwarebytes-nl-blog-bugs-2026-10-php2shell-why-websi",
    "verb": "published_by",
    "to": "party:malwarebytes"
@@ -33677,6 +34461,11 @@
    "from": "source:notebookcheck-cn-php2shell-php-1433819-0-html",
    "verb": "captured_in",
    "to": "capture:notebookcheck-cn-php2shell-php-1433819-0-html/20261026T094033Z"
+  },
+  {
+   "from": "source:notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em",
+   "verb": "captured_in",
+   "to": "capture:notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em/20261026T121439Z"
   },
   {
    "from": "source:notebookcheck-php2shell-co-powinni-sprawdzic-uzytkowni",
@@ -34184,6 +34973,11 @@
    "to": "capture:prophetsecurity-php2shell-detect/20261023T232528Z"
   },
   {
+   "from": "source:prtimes-main-html-rd-p-000000090-000072250-html",
+   "verb": "captured_in",
+   "to": "capture:prtimes-main-html-rd-p-000000090-000072250-html/20261026T121439Z"
+  },
+  {
    "from": "source:public25-news-articleview-html",
    "verb": "captured_in",
    "to": "capture:public25-news-articleview-html/20261026T094033Z"
@@ -34532,6 +35326,16 @@
    "to": "capture:security-nl-palo-alto-firewalls/20261023T160435Z"
   },
   {
+   "from": "source:security-nl-qnap-nas-offline",
+   "verb": "published_by",
+   "to": "party:security-nl"
+  },
+  {
+   "from": "source:security-nl-qnap-nas-offline",
+   "verb": "captured_in",
+   "to": "capture:security-nl-qnap-nas-offline/20261023T160435Z"
+  },
+  {
    "from": "source:securityaffairs-201662-hacking-pierluigi-paganini-answer",
    "verb": "published_by",
    "to": "party:securityaffairs"
@@ -34602,6 +35406,16 @@
    "to": "capture:securityweek-mass-exploitation-looms/20261023T160435Z"
   },
   {
+   "from": "source:selular-2026-10-ancaman-serangan-siber-php2shell",
+   "verb": "captured_in",
+   "to": "capture:selular-2026-10-ancaman-serangan-siber-php2shell/20261024T133450Z"
+  },
+  {
+   "from": "source:sempreupdate-php2shell-a-anatomia-das-vulnerabilidade",
+   "verb": "captured_in",
+   "to": "capture:sempreupdate-php2shell-a-anatomia-das-vulnerabilidade/20261024T083755Z"
+  },
+  {
    "from": "source:sentinelone-php2shell",
    "verb": "published_by",
    "to": "party:sentinelone"
@@ -34647,6 +35461,16 @@
    "to": "capture:shinailbo-news-articleview-html/20261023T160435Z"
   },
   {
+   "from": "source:siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph",
+   "verb": "captured_in",
+   "to": "capture:siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph/20261023T160435Z"
+  },
+  {
+   "from": "source:silicon-cybersecurite-1371-php2shell-vulnerabili",
+   "verb": "captured_in",
+   "to": "capture:silicon-cybersecurite-1371-php2shell-vulnerabili/20261024T133450Z"
+  },
+  {
    "from": "source:siliconangle-2026-10-22-php2shell-attacks-began-four",
    "verb": "published_by",
    "to": "party:siliconangle"
@@ -34655,6 +35479,11 @@
    "from": "source:siliconangle-2026-10-22-php2shell-attacks-began-four",
    "verb": "captured_in",
    "to": "capture:siliconangle-2026-10-22-php2shell-attacks-began-four/20261023T160435Z"
+  },
+  {
+   "from": "source:sn-panorama-medien-was-die-php-sicherheitsl",
+   "verb": "captured_in",
+   "to": "capture:sn-panorama-medien-was-die-php-sicherheitsl/20261024T160544Z"
   },
   {
    "from": "source:socket-blog-embargo-dispute",
@@ -34680,6 +35509,41 @@
    "from": "source:socradar-blog-php2shell",
    "verb": "captured_in",
    "to": "capture:socradar-blog-php2shell/20261023T160435Z"
+  },
+  {
+   "from": "source:software-it168-a2026-1022-6954-000006954576-shtml",
+   "verb": "captured_in",
+   "to": "capture:software-it168-a2026-1022-6954-000006954576-shtml/20261024T133450Z"
+  },
+  {
+   "from": "source:sohu-a-1091246810-122998307",
+   "verb": "captured_in",
+   "to": "capture:sohu-a-1091246810-122998307/20261023T160435Z"
+  },
+  {
+   "from": "source:spacemoney-tecnologia-php2shell-falha-critica-php",
+   "verb": "captured_in",
+   "to": "capture:spacemoney-tecnologia-php2shell-falha-critica-php/20261023T160435Z"
+  },
+  {
+   "from": "source:stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg",
+   "verb": "captured_in",
+   "to": "capture:stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg/20261023T160435Z"
+  },
+  {
+   "from": "source:startupfortune-cloudflares-ceo-says-worse-bugs-than-php",
+   "verb": "captured_in",
+   "to": "capture:startupfortune-cloudflares-ceo-says-worse-bugs-than-php/20261026T071149Z"
+  },
+  {
+   "from": "source:startupper-ai-282619-antepithesi-220-ekat-liron-apo",
+   "verb": "captured_in",
+   "to": "capture:startupper-ai-282619-antepithesi-220-ekat-liron-apo/20261026T121439Z"
+  },
+  {
+   "from": "source:stephanelarue-sites-des-prefectures-inaccessibles-lint",
+   "verb": "captured_in",
+   "to": "capture:stephanelarue-sites-des-prefectures-inaccessibles-lint/20261023T160435Z"
   },
   {
    "from": "source:substack-lopezkurtz-patch-is-the-exploit",
@@ -35394,6 +36258,11 @@
    "from": "source:yle-finland-government-sites-shut",
    "verb": "captured_in",
    "to": "capture:yle-finland-government-sites-shut/20261022T113225Z"
+  },
+  {
+   "from": "source:yugatech-news-ai-helps-uncover-php2shell-flaws-th",
+   "verb": "captured_in",
+   "to": "capture:yugatech-news-ai-helps-uncover-php2shell-flaws-th/20261026T121439Z"
   },
   {
    "from": "source:zataz-php2shell-deux-failles-critiques-menacen",
@@ -36340,6 +37209,11 @@
    "from": "claim:release-time",
    "verb": "cites",
    "to": "source:php-net-advisory"
+  },
+  {
+   "from": "claim:release-time",
+   "verb": "cites",
+   "to": "source:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
   },
   {
    "from": "claim:release-time",
@@ -39993,6 +40867,13 @@
    "sha256": "5ef17f9886aa93f7f15ab1f6657ef6991a8ec008e5e309bdde5b5e51d961c4d8"
   },
   {
+   "from": "claim:release-time",
+   "verb": "appears_in",
+   "to": "capture:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell/20261025T114552Z",
+   "file": "text.txt",
+   "sha256": "ddee9f1e0bb292593c2674f5c54c40a85174c075d2ec55017124b0b23519a5f3"
+  },
+  {
    "from": "claim:scale-2.6m-hosts",
    "verb": "appears_in",
    "to": "capture:thehackernews-php2shell-4days/20261022T081320Z",
@@ -40338,6 +41219,9 @@
   "Báo Quân đội nhân dân": [
    "qdnd-phap-luat-tin-tuc-hai-lo-hong-nghiem-tro"
   ],
+  "CIOL": [
+   "ciol-iot-india-php2shell-attacks-ai-driven-cy"
+  ],
   "CloudLinux": [
    "cloudlinux-wikipedia-ref-17-php-cve-2026-109618-and"
   ],
@@ -40349,6 +41233,9 @@
   ],
   "En cause": [
    "encause-failles-php-critiques-php2shell-mise-a-j"
+  ],
+  "IT168 软件·学院": [
+   "software-it168-a2026-1022-6954-000006954576-shtml"
   ],
   "LAMPOST.CO": [
    "lampost-teknologi-celah-php2shell-ancam-website"
@@ -40379,6 +41266,9 @@
   ],
   "MONCLOA.COM": [
    "moncloa-2026-10-22-vulnerabilidad-php2shell-fall"
+  ],
+  "Malay Mail": [
+   "malaymail-news-singapore-2026-10-23-singapore-warn"
   ],
   "Matrice Digitale": [
    "matricedigitale-2026-10-25-php2shell-italia-csirt-serviz"
@@ -40416,6 +41306,9 @@
   "PC Watch": [
    "pc-watch-impress-docs-news-2150338-html"
   ],
+  "PR TIMES": [
+   "prtimes-main-html-rd-p-000000090-000072250-html"
+  ],
   "Polskie Radio 24": [
    "polskieradio24-pieniadze-strony-bip-znikaja-z-sieci-luk"
   ],
@@ -40434,8 +41327,35 @@
   "Root.cz": [
    "root-zpravicky-utok-na-php2shell-zacal-uz-cty"
   ],
+  "Salzburger Nachrichten": [
+   "sn-panorama-medien-was-die-php-sicherheitsl"
+  ],
+  "Selular.ID": [
+   "selular-2026-10-ancaman-serangan-siber-php2shell"
+  ],
+  "SempreUpdate": [
+   "sempreupdate-php2shell-a-anatomia-das-vulnerabilidade"
+  ],
+  "Siam Blockchain": [
+   "siamblockchain-2026-10-22-crypto-exchange-hack-alert-ph"
+  ],
+  "Silicon.fr": [
+   "silicon-cybersecurite-1371-php2shell-vulnerabili"
+  ],
+  "SpaceMoney": [
+   "spacemoney-tecnologia-php2shell-falha-critica-php"
+  ],
+  "Startup Fortune": [
+   "startupfortune-cloudflares-ceo-says-worse-bugs-than-php"
+  ],
+  "Stéphane Larue News": [
+   "stephanelarue-sites-des-prefectures-inaccessibles-lint"
+  ],
   "The Guardian": [
    "guardian-wikipedia-ref-40-ge-flaw-causing-global"
+  ],
+  "YugaTech": [
+   "yugatech-news-ai-helps-uncover-php2shell-flaws-th"
   ],
   "ZDNET Japan": [
    "japan-zdnet-article-35253966"
@@ -40459,6 +41379,7 @@
    "mansethaber-bilim-teknoloji-php2shell-nedir-kimleri"
   ],
   "notebookcheck": [
+   "notebookcheck-info-php2shell-deixa-milhoes-de-servidores-em",
    "notebookcheck-php2shell-co-powinni-sprawdzic-uzytkowni",
    "notebookcheck-php2shell-kritieke-php-kwetsbaarheden-tr"
   ],
@@ -40470,6 +41391,12 @@
   ],
   "schieb.de": [
    "schieb-php2shell-sicherheitsluecke-so-schuetzt"
+  ],
+  "stadt bremerhaven": [
+   "stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg"
+  ],
+  "startupper": [
+   "startupper-ai-282619-antepithesi-220-ekat-liron-apo"
   ],
   "wersm": [
    "wersm-php2shell-legacy-infrastructure-web-risk"
@@ -40512,6 +41439,9 @@
   ],
   "ビジネス+IT": [
    "sbbit-article-cont1-187672"
+  ],
+  "搜狐": [
+   "sohu-a-1091246810-122998307"
   ],
   "新潟日報デジタルプラス": [
    "niigata-nippo-articles-930995"

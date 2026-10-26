@@ -1,7 +1,7 @@
 {
  "about": "The fractal graph: one graph from the people affected, through the risks, the story and the evidence, to the flaws, the fix and the changed lines of php-src. A node is just a node; meaning lives in the edges. Every node opens into its own neighbourhood in the navigator.",
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.28",
+ "version": "0.22.29",
  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
  "layers": [
   {
@@ -530,9 +530,9 @@
   {
    "id": "claim:release-time",
    "layer": "claim",
-   "name": "The fixes were released at 14:00 UTC on 21 October",
-   "text": "disputed, says php.net pre-announcement; Daubois; CERT-FR (16:00 Paris)",
-   "status": "disputed",
+   "name": "The fixes were scheduled for 14:00 UTC on 21 October and were published between 13:31 and 13:35 UTC",
+   "text": "confirmed, says PHP 8.5's release manager, Daniel Scherzer, from the repositories' history; the GitHub tags and advisories (13:34 to 13:35 UTC); php.net pre-announcement (scheduled 14:00 UTC); CERT-EU (13:30 UTC)",
+   "status": "confirmed",
    "href": "claims/index.html#release-time"
   },
   {
@@ -698,8 +698,8 @@
   {
    "id": "claim:no-confirmed-compromise",
    "layer": "claim",
-   "name": "As of 09:40 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
-   "text": "reported, says this site, from every captured source in the evidence vault (507 sources, head a7ab84771dfc), as of its latest capture at 09:40 UTC on 26 October",
+   "name": "As of 12:14 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "reported, says this site, from every captured source in the evidence vault (525 sources, head 22a0c2920b88), as of its latest capture at 12:14 UTC on 26 October",
    "status": "reported",
    "href": "claims/index.html#no-confirmed-compromise"
   },
@@ -1544,6 +1544,13 @@
    "name": "php-src",
    "text": "Tags · php/php-src",
    "href": "sources/github-php-src-tags/index.html"
+  },
+  {
+   "id": "source:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell",
+   "layer": "source",
+   "name": "scherzer.dev",
+   "text": "Blog: PHP2Shell: a Timeline",
+   "href": "sources/scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell/index.html"
   },
   {
    "id": "source:cisa-kev-json",
@@ -8660,6 +8667,11 @@
    "rel": "cites"
   },
   {
+   "from": "claim:release-time",
+   "to": "source:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell",
+   "rel": "cites"
+  },
+  {
    "from": "claim:preannounce-time",
    "to": "source:php-foundation-blog-security-release",
    "rel": "cites"
@@ -13136,14 +13148,14 @@
   }
  ],
  "counts": {
-  "nodes": 902,
-  "edges": 1237,
+  "nodes": 903,
+  "edges": 1238,
   "by_layer": {
    "stakeholder": 16,
    "risk": 9,
    "arc": 7,
    "claim": 138,
-   "source": 98,
+   "source": 99,
    "flaw": 2,
    "fix": 7,
    "code": 73,
