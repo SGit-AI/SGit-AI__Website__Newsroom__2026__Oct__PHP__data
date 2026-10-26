@@ -1,0 +1,161 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "as_of": {
+   "type": "string"
+  },
+  "claim": {
+   "type": "string"
+  },
+  "contradictions": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "kinds": {
+   "items": {
+    "properties": {
+     "can": {
+      "type": "string"
+     },
+     "cannot": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "can",
+     "cannot",
+     "id",
+     "name"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "layers": {
+   "items": {
+    "properties": {
+     "label": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "value": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "label",
+     "note",
+     "value"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "rows": {
+   "items": {
+    "properties": {
+     "kind": {
+      "type": "string"
+     },
+     "reading": {
+      "type": "string"
+     },
+     "says": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "watch": {
+      "type": "string"
+     },
+     "when": {
+      "type": "string"
+     },
+     "who": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "kind",
+     "says",
+     "sources",
+     "when",
+     "who"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "searched": {
+   "items": {
+    "properties": {
+     "count": {
+      "type": "number"
+     },
+     "detail": {
+      "type": "string"
+     },
+     "unit": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "count",
+     "detail",
+     "unit",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "statement": {
+   "type": "string"
+  },
+  "status": {
+   "type": "string"
+  },
+  "status_note": {
+   "type": "string"
+  },
+  "would_change_it": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "as_of",
+  "claim",
+  "contradictions",
+  "kinds",
+  "layers",
+  "rows",
+  "searched",
+  "statement",
+  "status",
+  "status_note",
+  "would_change_it"
+ ],
+ "title": "compromise.json",
+ "type": "object"
+}

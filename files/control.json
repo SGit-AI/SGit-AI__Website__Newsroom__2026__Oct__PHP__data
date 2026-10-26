@@ -1004,6 +1004,14 @@
    "run": "20261026T0115Z-journalist",
    "started": "2026-10-26T01:10:00Z",
    "summary": "Third evidence pass, run by hand in the first session at the editor's request, in the new repositories (step A). Found the curator's extra pass of 26 October already exported to the data repository (v0.1.13: vault 94352a55fbaa, 454 sources, latest capture 14:40 UTC on 25 October, 16 new claims). Re…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T01:25:35Z",
+   "outcome": "ok",
+   "run": "20261026T0122Z-conductor",
+   "started": "2026-10-26T01:22:00Z",
+   "summary": "First review pass of the six repositories (the editor's standing duty from 26 October). State: step A (00:40) and step B (01:10) are in; v1 frozen, last commit 00:52; team, data, press carry sync_v1.py; agents active in the six: journalist (data v0.1.16, run 01:15), correspondent (board corresponde…"
   }
  ],
  "schedules": [
@@ -1171,5 +1179,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.25"
+ "version": "0.22.26"
 }
