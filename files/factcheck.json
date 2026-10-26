@@ -2211,8 +2211,8 @@
   },
   {
    "id": "no-confirmed-compromise",
-   "claim_hash": "2ad42a62f206e318",
-   "run": "Run-9",
+   "claim_hash": "cd0268b126cc6fcb",
+   "run": "Run-10",
    "mode": "vault",
    "kind": "state",
    "level": 4,
@@ -2220,9 +2220,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261026T094000Z",
+   "as_of": "20261026T121439Z",
    "status_fit": "ok",
-   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4.",
+   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4. Run 10 (as of 12:14 UTC on 26 October, vault head 22a0c2920b88): 20 captures made since 09:40 UTC name no compromised organisation; YugaTech says the 70% figure 'does not mean 70% of websites have been confirmed compromised'. Holds at A4.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -9169,6 +9169,19 @@
    "note": "Checked against the claims as they stood at site v0.4.7; data/claims.json is unchanged in dev up to v0.5.3."
   },
   {
+   "id": "Run-10",
+   "site_version": "data v0.1.36",
+   "vault_commit": "22a0c2920b88",
+   "site_export_commit": "22a0c2920b88",
+   "started": "2026-10-26T16:54Z",
+   "finished": "2026-10-26T17:20Z",
+   "quiet_wakes_before": 0,
+   "checked": "fc.py changed (no-confirmed-compromise, refreshed to 12:14 UTC on 26 October); fc.py check (0 failures); fc.py drift (the same six); the 20 captures since 09:40 UTC read for a named compromise; KEV; NVD",
+   "opened": "none",
+   "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+   "summary": "no-confirmed-compromise still holds at 12:14 UTC on 26 October (A4); none of the 20 new captures names a compromised organisation. One new statement of the 70% figure added to the lineage (S-128, YugaTech, 'roughly 70% of websites worldwide, according to figures cited by researchers', no measurer named, family F-2). KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
+  },
+  {
    "id": "Run-2",
    "site_version": "0.5.7",
    "vault_commit": "31ccc515c29f",
@@ -15269,6 +15282,39 @@
       "translation": "70% of the world's sites have been at risk for more than 10 years!",
       "notes": "Usage share turned into a decade of risk. Body: 'il linguaggio che alimenta quasi il 70% dei siti web' (nearly 70% of websites).",
       "family": "F-2"
+     },
+     {
+      "id": "S-128",
+      "slug": "yugatech-news-ai-helps-uncover-php2shell-flaws-th",
+      "publisher": "YugaTech",
+      "url": "https://www.yugatech.com/news/ai-helps-uncover-php2shell-flaws-that-put-websites-worldwide-at-risk/",
+      "title": "AI helps uncover PHP2Shell flaws",
+      "published": "2026-10-26",
+      "time_utc": null,
+      "time_basis": "date only on the page (October 26, 2026)",
+      "captures": [
+       "20261026T121439Z"
+      ],
+      "excerpt_found_in": [
+       "20261026T121439Z"
+      ],
+      "file": "sources/yugatech-news-ai-helps-uncover-php2shell-flaws-th/captures/20261026T121439Z/text.txt",
+      "sha256": "ea3e1134c60159b819defacd7c8ab12409727fd23768da3247338feaa1472d9c",
+      "sha256_from": "the desk's own hash of the capture's text.txt in the evidence vault, run 10",
+      "excerpt": "PHP is used by roughly 70% of websites worldwide, according to figures cited by researchers.",
+      "location": "body",
+      "value": 70,
+      "denominator_text": "websites worldwide",
+      "denominator_class": "websites-all",
+      "qualifier": "roughly",
+      "attribution": "figures cited by researchers (unnamed)",
+      "links_to_measurement": null,
+      "role": "restates",
+      "restates": "S-015",
+      "language": "en",
+      "translation": null,
+      "notes": "Says in the next sentence that this does not mean 70% of websites have been confirmed compromised. Another statement under 'of all websites' with no measurer named.",
+      "family": "F-2"
      }
     ],
     "families": [
@@ -15346,10 +15392,11 @@
        "S-115",
        "S-118",
        "S-125",
-       "S-127"
+       "S-127",
+       "S-128"
       ],
       "denominator_class": "websites-all",
-      "count": 32,
+      "count": 33,
       "origin_note": "WSJ 'up to 70% of the World's Websites at Risk' (Robert McMillan, 21 Oct) is an outside sub-origin for the 'up to' wording (actu17, The Verge, Substack); WSJ is not captured in the vault."
      },
      {

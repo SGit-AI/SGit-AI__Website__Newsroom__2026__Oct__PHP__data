@@ -1,7 +1,22 @@
 {
  "api": "php.oct.2026 newsroom data",
- "latest": "0.1.37",
+ "latest": "0.1.38",
  "versions": [
+  {
+   "changed": [
+    "factcheck.json"
+   ],
+   "data_as_of": "2026-10-22T08:48Z",
+   "evidence_vault_head": "2fc7e432584b",
+   "files": 474,
+   "from": {
+    "commit": "8722647b3c0f931256d5b9b6bf4a5e67a5df3f12",
+    "repository": "SGit-AI/sgit-ai__website__newsroom__2026__oct__php",
+    "site_version": "0.22.31"
+   },
+   "removed": [],
+   "version": "0.1.38"
+  },
   {
    "changed": [
     "control.json",
