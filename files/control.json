@@ -1363,6 +1363,14 @@
    "summary": "Light check 18:15 London, team at 2207a42eb67f. schedule.py survived edition v0.22.33; the next import may delete it, so it is watched until dev patches sync_v1.py (correspondent-0003). Took the oq9gflln deletion from the curator at the editor's word. Checked team, data, press and site: nothing rea…"
   },
   {
+   "agent": "dev",
+   "finished": "2026-10-26T19:49:21Z",
+   "outcome": "ok",
+   "run": "20261026T1830Z-dev",
+   "started": "2026-10-26T18:30Z",
+   "summary": "In the editor's session: the lane drains fixed for v2 (boards sherpa-0001, 330); the daily wake re-set (06:40 London, the chain --if-changed, the live checks); phase 2 begun on the team site: the board, the schedule pages and the vault register read team's records when they open (records/index/, wr…"
+  },
+  {
    "agent": "journalist",
    "finished": "2026-10-26T18:42:57Z",
    "outcome": "idle",
@@ -1385,6 +1393,46 @@
    "run": "20261026T1925Z-correspondent",
    "started": "2026-10-26T19:25:30Z",
    "summary": "Wake 19:25 London. Team dev at bbd1295b9964. No journalist release since my last run (its 18:40 wake found nothing new at vault 2fc7e432584b); nothing to review in data, site, updates, press or refs. The journalist acknowledged the Canada catch. Since 17:10: at the editor's request replaced 'rung'…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T20:16:48Z",
+   "outcome": "ok",
+   "run": "20261026T2016Z-conductor",
+   "started": "2026-10-26T20:16:04Z",
+   "summary": "Light check 20:15 London, team at cd22b85cf97f. Fixed by dev: correspondent-0003. tools/sync_v1.py's gone loop now deletes only what the import maps, and schedule.py survived two imports, so I stop restoring it. Correction to my 19:15 run, caught by the correspondent (correspondent-0007): I wrote t…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-26T21:10:00Z",
+   "outcome": "ok",
+   "run": "20261026T2055Z-factcheck",
+   "started": "2026-10-26T20:55:00Z",
+   "summary": "20:52 London wake (sgit 0.25.0; loose evidence clone pulled to 2fc7e432584b; pack copy hsmfer5w stays at 94352a55fbaa): no-confirmed-compromise holds A4 as of 14:42 UTC on 26 October, no victim named in 10 new captures; fc.py check 0 failures; drift 6, explained; KEV 2026.10.23 and NVD unchanged; n…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T21:17:17Z",
+   "outcome": "ok",
+   "run": "20261026T2116Z-conductor",
+   "started": "2026-10-26T21:16:47Z",
+   "summary": "Light check 21:15 London, the last of the day; team at a5df1e75f961. Since 20:17 there is one commit across the six: fact-check run 11 (team a5df1e75, data v0.1.47 c120f54 at 21:03). Each repository's last commit: data c120f54 21:03; press 0ab74db v1.0.47 19:45; site c02b5ff6, refs 0b0e98ba and upd…"
+  },
+  {
+   "agent": "sherpa",
+   "finished": "2026-10-26T23:46:31Z",
+   "outcome": "ok",
+   "run": "20261026T2344Z-sherpa",
+   "started": "2026-10-26T23:44:04Z",
+   "summary": "Wired into the six repositories, at the editor's request. Card records/schedule/sherpa.json: repositories push team; pull press and data; press push when needed (assets/sherpa/, through security); never v1. Paths in the six; the drain step now uses the press's fixed drains (v1.0.41, NEWSROOM_DATA_F…"
+  },
+  {
+   "agent": "pulse",
+   "finished": "2026-10-26T23:48:01Z",
+   "outcome": "ok",
+   "run": "20261026T2347Z-pulse",
+   "started": "2026-10-26T23:47:28Z",
+   "summary": "Wired into the six repositories, checked at the editor's request of 26 October (23:47 UTC), not a scheduled wake. Card records/schedule/pulse.json: repositories.push is now team and data (data is attached; I write nothing there yet), pull empty, never v1, with a note (the Pulse vault is the pack va…"
   }
  ],
  "schedules": [
@@ -1561,5 +1609,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.35"
+ "version": "0.22.36"
 }
