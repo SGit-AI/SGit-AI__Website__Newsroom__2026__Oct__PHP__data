@@ -1,0 +1,120 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "edge": {
+   "items": {
+    "properties": {
+     "caveat": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "vendor": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     },
+     "when": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "caveat",
+     "sources",
+     "vendor",
+     "what",
+     "when"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "exploitability": {
+   "items": {
+    "properties": {
+     "sources": {
+      "type": "array"
+     },
+     "text": {
+      "type": "string"
+     },
+     "who": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "sources",
+     "text",
+     "who"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "signals": {
+   "items": {
+    "properties": {
+     "signal": {
+      "type": "string"
+     },
+     "sources": {
+      "type": "array"
+     },
+     "where": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "signal",
+     "sources",
+     "where"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "signatures": {
+   "items": {
+    "properties": {
+     "sources": {
+      "type": "array"
+     },
+     "text": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     },
+     "who": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "sources",
+     "text",
+     "what",
+     "who"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "sources": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "edge",
+  "exploitability",
+  "signals",
+  "signatures",
+  "sources"
+ ],
+ "title": "defence.json",
+ "type": "object"
+}

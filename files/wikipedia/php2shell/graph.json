@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.27",
+ "version": "0.22.28",
  "title": "Wikipedia: PHP2Shell",
  "licence": "CC BY-SA 4.0, by the contributors to the English Wikipedia; each revision id is the attribution",
  "latest_revid": 1381884195,
@@ -985,6 +985,20 @@
    "where": "statement"
   },
   {
+   "id": "source:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell",
+   "kind": "source",
+   "label": "scherzer.dev: Blog: PHP2Shell: a Timeline",
+   "href": "sources/scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
+  },
+  {
    "id": "party:scherzer",
    "kind": "party",
    "label": "scherzer.dev",
@@ -1217,6 +1231,20 @@
    "publisher": "PC Gamer",
    "date": "21 October 2026",
    "where": "statement"
+  },
+  {
+   "id": "source:pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi",
+   "kind": "source",
+   "label": "PC Gamer: 'We expect mass attacks to start within 15 minutes of the release': Web admins braced for emergency PHP updates to plug leaked high-severity holes | PC Gamer",
+   "href": "sources/pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi/index.html",
+   "zoom": [
+    {
+     "graph": "data/graph.json",
+     "focus": "source:pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi",
+     "label": "In the story graph: the claims that cite it"
+    }
+   ],
+   "borrowed": true
   },
   {
    "id": "party:pc-gamer",
@@ -8549,6 +8577,11 @@
   },
   {
    "from": "reference:16",
+   "verb": "captured_as",
+   "to": "source:scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  },
+  {
+   "from": "reference:16",
    "verb": "published_by",
    "to": "party:scherzer"
   },
@@ -8646,6 +8679,11 @@
    "from": "statement:2f40ea4686",
    "verb": "cites",
    "to": "reference:24"
+  },
+  {
+   "from": "reference:24",
+   "verb": "captured_as",
+   "to": "source:pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi"
   },
   {
    "from": "reference:24",

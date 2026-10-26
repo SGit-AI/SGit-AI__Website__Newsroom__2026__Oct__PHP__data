@@ -277,7 +277,7 @@
    "waiting": "Its first wake at 08:40."
   }
  ],
- "as_of": "2026-10-26T07:30Z",
+ "as_of": "2026-10-26T11:35Z",
  "board": [
   {
    "id": "009",
@@ -595,12 +595,10 @@
   ]
  ],
  "decisions": [
-  "Who runs the chain that builds the pages, and when (board conductor-0001): today's releases stay off the pages until it runs.",
-  "Security: wire it in now (its review queue: steps A and B, the press's tools, chain.sh, build.sh, the .gitignore fix, tools/schedule.py in team) and move its wake out of the quiet hours.",
-  "Wiring: the journalist's and the correspondent's tasks still start a new session each time; create them from 'scheduled | journalist' and 'scheduled | correspondent' and pause the old four. Fact-check's task still has the old prompt: update it from its session.",
-  "INCIDENT, visibility: the researcher and the curator run on schedule but leave no commit and no run record, so the repository, this page and the control room cannot show what they did (their wake prompts say 'nothing new: no commit', which predates AGENTS.md section 7). Proposed: each wake writes a run report into the vault it owns and the conductor commits it as a run record, with your go to change the four scheduled prompts (a researcher that reads the open web should not also release).",
-  "security/gate-pass-2 (5 commits ahead): a go; dismiss CodeQL alerts #3 and #22 yourself; rulesets at user logins; private vulnerability reporting.",
-  "The curator: a go on the site export (the site shows 328 sources), whether a public normal-vault copy of the old vault stays, and that the researcher wrote nothing to oq9gflln after the move."
+  "Set ROUND_TOKEN (the secret dev's quarter-hour round needs in the press's workflow): until then nothing released today reaches the pages.",
+  "Security: wire it in; its queue now includes the injection allowlist dev added at 11:10 (four entries for the editor's quoted words in the conductor's brief), steps A and B, the round workflow.",
+  "Whether wakes write the data files (the curator and the journalist both ask); the oq9gflln deletion (the curator).",
+  "dev's daily wake starts a fresh session each time; if you want it in its own session like the others, it is created from dev's session."
  ],
  "freshness": [
   [
@@ -1143,6 +1141,22 @@
    "run": "20261026T1036Z-curator",
    "started": "2026-10-26T10:36:12Z",
    "summary": "Wake 10:30 London (fired 10:36 UTC); team at b4f7d8885838. Took in the researcher's passes 20261026T0934Z (pack vault 7r83qic5 at 9987a9519704; queue 442 rows, 77 then pending). Promoted 18 sources into the evidence vault 3ytzxm3g (3 priority 2, 15 priority 4; now 507 sources), 22 claims and 7 time…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T11:24:02Z",
+   "outcome": "ok",
+   "run": "20261026T1114Z-journalist",
+   "started": "2026-10-26T11:14:10Z",
+   "summary": "11:10 wake (fired 11:13 UTC) into this session; dev at 5122859a9c2b. The evidence vault had moved: a7ab84771dfc (507 sources), the curator's batch 14 (6ceb1f6624ca, pushed about 08:40, which my 08:40 wake raced, as the conductor said) and batch 15 (pushed 11:05-11:06 UTC, four minutes before this w…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-26T11:28:03Z",
+   "outcome": "ok",
+   "run": "20261026T1126Z-conductor",
+   "started": "2026-10-26T11:26:53Z",
+   "summary": "Full pass (11:15 London, fired 11:26). Team head 7df96fb8d92b; v1 untouched. Review of the six since 10:19: curator run 10:36 (batch 15 pushed 11:06), journalist run 11:13 (batches 14-15, 81 verdicts, data v0.1.24), dev's daily card and task (06:40 London, a fresh session each wake), press v1.0.20-…"
   }
  ],
  "schedules": [
@@ -1319,5 +1333,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.27"
+ "version": "0.22.28"
 }
