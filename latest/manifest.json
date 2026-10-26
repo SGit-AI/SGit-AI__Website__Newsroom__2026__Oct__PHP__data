@@ -39,18 +39,18 @@
    "sha256": "68df339f69ff199faf2a7973f0eaf4cdeab98a5daae005e72bfd9e8a12db79ab"
   },
   {
-   "bytes": 73807,
+   "bytes": 112950,
    "group": "desk",
    "name": "claim-review.json",
    "schema": "schemas/claim-review.schema.json",
-   "sha256": "3b57c899a20b1c4574b6549143ff2c481693a8f99ab6d26bac83e773c4f09d6c"
+   "sha256": "2fbe0f60f751d5405551a20129b7a47df3852c21401a2b617c113eb7bb0a82ff"
   },
   {
-   "bytes": 37621,
+   "bytes": 38057,
    "group": "story",
    "name": "claims.json",
    "schema": "schemas/claims.schema.json",
-   "sha256": "dc4c456f6cdde857c3255d75b98a0ea116bd8cadee35ef014534a17365f16a06"
+   "sha256": "ba352323ddd769446a06dbdd7d6e39a89b7205a980b6cb7af36f9cc375584d6a"
   },
   {
    "bytes": 8708,
@@ -67,11 +67,11 @@
    "sha256": "5eabfd8f75015b2336f5fcfeedfcbce3e29177084c30c2153160c31aecc0b425"
   },
   {
-   "bytes": 20203,
+   "bytes": 21039,
    "group": "story",
    "name": "compromise.json",
    "schema": "schemas/compromise.schema.json",
-   "sha256": "76d638246c5436ca5f3d533254e31bbe0c966b1ab2e048f70be308233a1dc981"
+   "sha256": "113aadafa047c525686e123c90e49fff6faf48dc832366912ccd12679b0de2c2"
   },
   {
    "bytes": 4384,
@@ -102,11 +102,11 @@
    "sha256": "06af041d4b3215eeab3e533af84c747d435da42b1541f712b3f6541c16cd6c90"
   },
   {
-   "bytes": 12380,
+   "bytes": 12452,
    "group": "desk",
    "name": "desk.json",
    "schema": "schemas/desk.schema.json",
-   "sha256": "a45afb7281bddab7c1f1169e6f802c526fb5a45bb9885393ad0cb67216d85edc"
+   "sha256": "90bf11e6732f1965b66a55b272a49ad5d232533d0dece1ce0a86231ad2873b65"
   },
   {
    "bytes": 65137,
@@ -207,11 +207,11 @@
    "sha256": "5196aa19efeb384c548141b82f257fbe2af3204f6e6fc9bc51bd97836db64a1d"
   },
   {
-   "bytes": 12680,
+   "bytes": 14328,
    "group": "story",
    "name": "impact.json",
    "schema": "schemas/impact.schema.json",
-   "sha256": "1ac125d2a8e8ce869c073af9779745e907b548cd627121ee5dd5c8a6cf735788"
+   "sha256": "e09450446ebe5b620fca5ea777fcae40b7b04dfcad0ae95083f6f5df3261a12d"
   },
   {
    "bytes": 174351,
@@ -319,11 +319,11 @@
    "sha256": "2ab3fcaf6cccb8308afefc2cabcc46b4c3ddeb48f3290107d4981576f6ef4690"
   },
   {
-   "bytes": 1531418,
+   "bytes": 1746843,
    "group": "evidence",
    "name": "sources.json",
    "schema": "schemas/sources.schema.json",
-   "sha256": "a0e621a288526e1b9187021ebf0a1aa0775dd20efea1faa2ae69b2865aad8412"
+   "sha256": "e49b4f2614ecba564e3884634eec06c9d4174a03b76c68ca7337e08492284cd0"
   },
   {
    "bytes": 7668,
@@ -344,7 +344,7 @@
    "group": "story",
    "name": "story.json",
    "schema": "schemas/story.schema.json",
-   "sha256": "e1315faa658141135fcb5b2d161886fdcdab5e04e38f0d24a762de79bcaaefda"
+   "sha256": "0a2ca197c50c9ee5dabe4836ba66c6a8856e1238a70a6d777e4a2433ae148d8c"
   },
   {
    "bytes": 1817,
@@ -368,25 +368,25 @@
    "sha256": "511f26151f0d34b4dd3fc49ed0f04342fe2c39ed2b9205b8ab7acfd7f5de5769"
   },
   {
-   "bytes": 110849,
+   "bytes": 157208,
    "group": "evidence",
    "name": "vault-claims.json",
    "schema": "schemas/vault-claims.schema.json",
-   "sha256": "2389f2ea9244d953c6ec907ac6b9492978050df751a0ae0ecda9505fa862b096"
+   "sha256": "00a038b52d6bda783f15430bb2cfa2527ee0e76000dbf851b8c2f8cbc0f11caa"
   },
   {
-   "bytes": 29584,
+   "bytes": 32993,
    "group": "evidence",
    "name": "vault-timeline.json",
    "schema": "schemas/vault-timeline.schema.json",
-   "sha256": "78eec31db6d492103187c08902ccbd6a00439dba56c89dada5576f68a6d6518f"
+   "sha256": "fdc9eea9895bcbbf35c469cc7f7526b72b3537d58f072bb68587541d872cb0c5"
   },
   {
-   "bytes": 1181,
+   "bytes": 859,
    "group": "evidence",
    "name": "vault.json",
    "schema": "schemas/vault.schema.json",
-   "sha256": "a6183466f9e2fee21944ae975b366c233967cb2f7721efc7bc3f4068abe8c7df"
+   "sha256": "e757b230e376aafaf7be5da0fb5182bb0572db4f98d0fa618d9616dbc255e640"
   },
   {
    "bytes": 42424,
@@ -3328,6 +3328,6 @@
   "site_version": "0.22.26"
  },
  "kept": [],
- "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.23/",
- "version": "0.1.23"
+ "url": "https://data.php.oct.2026.newsroom.sgit.ai/v/0.1.24/",
+ "version": "0.1.24"
 }

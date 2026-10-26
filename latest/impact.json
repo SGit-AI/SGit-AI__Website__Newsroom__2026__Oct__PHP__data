@@ -217,6 +217,39 @@
    "sources": [
     "macitynet-php2shell-vulnerabilita-php-siti-offline"
    ]
+  },
+  {
+   "who": "Japan: BASE, Kodomon, pixiv, Niconico, Sakura Internet and game companies; the Ministry of Finance (related web content)",
+   "country": "JP",
+   "what": "From the afternoon of 21 October they suspended all or part of their services for emergency maintenance; BASE and Kodomon named the PHP flaw as the reason, the other reasons differ; the Ministry of Finance paused related web content. None is said to be compromised",
+   "when": "2026-10-21",
+   "said_by": "Business+IT (ビジネス+IT)",
+   "status": "reported",
+   "sources": [
+    "sbbit-article-cont1-187672"
+   ]
+  },
+  {
+   "who": "Poland: some bodies' BIP pages in the national public-information system (SSDIP)",
+   "country": "PL",
+   "what": "The Central Informatics Centre (COI) temporarily switched off the pages as a precaution, affecting only some bodies; the date for restoring some services was unknown at publication",
+   "when": "2026-10-22",
+   "said_by": "Polskie Radio 24",
+   "status": "reported",
+   "sources": [
+    "polskieradio24-pieniadze-strony-bip-znikaja-z-sieci-luk"
+   ]
+  },
+  {
+   "who": "Germany: East Westphalia-Lippe public and company websites, including the Kreis Paderborn and the Bielefeld fire brigade",
+   "country": "DE",
+   "what": "Offline or in maintenance from the afternoon of 21 October; most were back by 23 October, the Kreis Paderborn and the Bielefeld fire brigade still offline at 18:00 that day. The paper's own survey; reasons not given beyond the PHP flaw",
+   "when": "2026-10-21",
+   "said_by": "Neue Westfälische",
+   "status": "reported",
+   "sources": [
+    "nw-nachrichten-zwischen-weser-und-rhein-244"
+   ]
   }
  ],
  "compromised": [

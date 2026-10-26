@@ -1,0 +1,284 @@
+{
+ "about": "Pack mode, measured on the source watch: the same vault, as a normal sgit vault (oq9gflln, sgit-ai 0.23.0) and as a pack vault (7r83qic5, sgit-ai 0.24.0, made with sgit pack import from a full clone on 23 October 2026). Every number is from a timed command or a log in researcher@php.newsroom's session on 23 October, from a cloud sandbox to dev.send.sgraph.ai; 'from the log' marks the ones read from timestamps rather than timed.",
+ "measured": "2026-10-23",
+ "by": "researcher@php.newsroom",
+ "normal": {
+  "id": "oq9gflln",
+  "client": "sgit-ai 0.23.0"
+ },
+ "pack": {
+  "id": "7r83qic5",
+  "client": "sgit-ai 0.24.0"
+ },
+ "vault": {
+  "commits": 16,
+  "trees": 29193,
+  "blobs": 34453,
+  "objects": 63662,
+  "files": 29861,
+  "mb_normal": 1614.4,
+  "mb_pack": 1184.2,
+  "ratio": 1.36,
+  "deflated": 30395,
+  "snapshot_mb": 1221.7
+ },
+ "compare": [
+  {
+   "op": "Fresh clone of the whole vault",
+   "normal_s": 827,
+   "pack_s": 95,
+   "normal_note": "read-only clone with the published read key, 22:01 UTC; the server's object listing timed out (504), so the client walked the history and fetched 34,453 file objects as it found them",
+   "pack_note": "full clone, 16:47 UTC: one 1,221.7 MB snapshot in 4 requests (54.7 s), then unpacked"
+  },
+  {
+   "op": "List the vault's objects on the server",
+   "normal_s": 90.8,
+   "pack_s": 0.73,
+   "normal_note": "GET /api/vault/list/oq9gflln?prefix=bare/data/ at 22:16 UTC: HTTP 504 Gateway Timeout after 90.8 s",
+   "pack_note": "the same call for 7r83qic5: HTTP 200 in 0.73 s",
+   "normal_failed": "HTTP 504 after 91 s"
+  },
+  {
+   "op": "Pull with nothing new",
+   "normal_s": 34,
+   "pack_s": 4,
+   "normal_note": "sgit fetch at 19:08 UTC",
+   "pack_note": "sgit pull at 19:08 UTC"
+  }
+ ],
+ "pack_only": [
+  {
+   "op": "Import (local: rewrite the history into packs)",
+   "s": 194,
+   "note": "16 commits, 29,193 trees, 34,453 blobs; 1,614.4 MB to 1,184.2 MB"
+  },
+  {
+   "op": "First push: the whole history",
+   "s": 96,
+   "note": "Pushed 16 commit(s), 63,662 object(s) uploaded"
+  },
+  {
+   "op": "Push of one small commit",
+   "s": 77,
+   "note": "4 objects; most of the time is local"
+  },
+  {
+   "op": "Pull of another agent's commit (22:32 UTC)",
+   "s": 176,
+   "note": "the scheduled Sonnet session's commit 1cc186cccd43, 241 rows queued in index/promote.json: fast-forward, 1 file modified; the download is one zip, the rest is local"
+  },
+  {
+   "op": "Commit and push of a one-file correction (22:4x UTC)",
+   "s": 77,
+   "note": "commit 43595f6f6fe3, the corrected queue: 4 objects uploaded, in sync after; the same 77 s as the first small push"
+  },
+  {
+   "op": "Pull of one new commit into a second clone",
+   "s": 324,
+   "note": "1 file added; not yet profiled, the network part is one zip"
+  },
+  {
+   "op": "Verify every object in the pack",
+   "s": null,
+   "note": "sgit pack verify: 63,662 members checked against their ids, ok"
+  }
+ ],
+ "check": [
+  "a fresh clone of the pack vault and the import are identical, file for file (diff -rq): 29,861 files",
+  "against the live clone, the only differences are empty folders and Python's __pycache__, which a vault does not store",
+  "the same 16 commits, messages and times; the commit ids are new, as the import says they will be",
+  "sgit pack verify: ok",
+  "in use: the scheduled Sonnet session pushed its first commit to the pack vault at about 22:17 UTC, researcher@php.newsroom pulled it and pushed a correction on top; two writers in turn, no merge needed, the vault in sync after each"
+ ],
+ "attempts_title": "Pushing one pass (6,161 file objects) to the normal vault, 23 October",
+ "attempts": [
+  {
+   "start": "16:32",
+   "end": "16:55",
+   "outcome": "failed",
+   "why": "connection reset by peer, after uploading began"
+  },
+  {
+   "start": "16:56",
+   "end": "17:11",
+   "outcome": "failed",
+   "why": "network or I/O failure"
+  },
+  {
+   "start": "17:11",
+   "end": "17:36",
+   "outcome": "failed",
+   "why": "cut at the 25-minute cap"
+  },
+  {
+   "start": "17:37",
+   "end": "17:44",
+   "outcome": "failed",
+   "why": "the server answered with an HTML error page: nothing was pushed"
+  },
+  {
+   "start": "17:45",
+   "end": "17:58",
+   "outcome": "failed",
+   "why": "connection reset by peer"
+  },
+  {
+   "start": "18:00",
+   "end": "18:07",
+   "outcome": "failed",
+   "why": "504 Gateway Timeout listing the vault"
+  },
+  {
+   "start": "18:08",
+   "end": "18:16",
+   "outcome": "failed",
+   "why": "504 Gateway Timeout listing the vault"
+  },
+  {
+   "start": "18:17",
+   "end": "18:24",
+   "outcome": "failed",
+   "why": "504 Gateway Timeout listing the vault"
+  },
+  {
+   "start": "18:25",
+   "end": "18:33",
+   "outcome": "failed",
+   "why": "504 Gateway Timeout listing the vault"
+  },
+  {
+   "start": "18:34",
+   "end": "18:41",
+   "outcome": "failed",
+   "why": "504 Gateway Timeout listing the vault"
+  },
+  {
+   "start": "18:42",
+   "end": "19:07",
+   "outcome": "failed",
+   "why": "cut at the 25-minute cap"
+  },
+  {
+   "start": "19:09",
+   "end": "19:14",
+   "outcome": "pushed",
+   "why": "Pushed 1 commit(s), 6161 object(s) uploaded, in 4 min 29 s"
+  }
+ ],
+ "attempts_note": "Start times are from the retry loop's log; an end is when the attempt's error was printed, or the next attempt's start less the pause between attempts. The pass had committed at 16:31 UTC; the data reached the server at 19:14 UTC.",
+ "commits": [
+  {
+   "when": "22 Oct 14:20",
+   "what": "run",
+   "blobs": 2542
+  },
+  {
+   "when": "22 Oct",
+   "what": "tip and fixes",
+   "blobs": 1175
+  },
+  {
+   "when": "22 Oct 17:15",
+   "what": "run",
+   "blobs": 3527
+  },
+  {
+   "when": "22 Oct",
+   "what": "fixes",
+   "blobs": 272
+  },
+  {
+   "when": "22 Oct 18:16",
+   "what": "languages pass",
+   "blobs": 4624
+  },
+  {
+   "when": "22 Oct",
+   "what": "languages pass",
+   "blobs": 1126
+  },
+  {
+   "when": "22 Oct",
+   "what": "cyber desk",
+   "blobs": 213
+  },
+  {
+   "when": "22 Oct 20:53",
+   "what": "pass",
+   "blobs": 4419
+  },
+  {
+   "when": "22 Oct 21:05",
+   "what": "probe",
+   "blobs": 305
+  },
+  {
+   "when": "22 Oct",
+   "what": "collectors",
+   "blobs": 7
+  },
+  {
+   "when": "23 Oct 01:40",
+   "what": "pass",
+   "blobs": 4727
+  },
+  {
+   "when": "23 Oct",
+   "what": "curator queue",
+   "blobs": 1
+  },
+  {
+   "when": "23 Oct 08:30",
+   "what": "pass",
+   "blobs": 5229
+  },
+  {
+   "when": "23 Oct",
+   "what": "scanner noise",
+   "blobs": 125
+  },
+  {
+   "when": "23 Oct 16:31",
+   "what": "pass",
+   "blobs": 6161
+  }
+ ],
+ "pushes_22oct": [
+  {
+   "what": "run of 17:15",
+   "objects": 3527,
+   "outcome": "connection reset, pushed later"
+  },
+  {
+   "what": "runs of the afternoon",
+   "objects": 3799,
+   "outcome": "pushed"
+  },
+  {
+   "what": "languages pass",
+   "objects": 4624,
+   "outcome": "pushed"
+  },
+  {
+   "what": "languages pass, second part",
+   "objects": 1126,
+   "outcome": "remote end closed the connection; refused on retry while files were uncommitted"
+  },
+  {
+   "what": "pass of 20:53 and fixes",
+   "objects": 6063,
+   "outcome": "connection reset, then 401 Unauthorized, then pushed"
+  },
+  {
+   "what": "a 7-object fix",
+   "objects": 7,
+   "outcome": "remote end closed the connection"
+  }
+ ],
+ "not_fixed": [
+  "Local walks: commit, status, push and pull still walk the working tree; on 29,861 files a push of 4 objects took 77 s (twice, the same) and a pull of one commit took 176 s to 324 s on the pack vault.",
+  "No web view: vault.sgraph.ai, dev.vault.sgraph.ai and vault apps cannot read packs, so a pack vault opens there as empty.",
+  "--path and --depth download the whole vault on a pack vault in this version.",
+  "Compaction is manual: one named agent runs sgit pack compact every ~50 pushes; a clone that was behind then downloads the whole snapshot (1.2 GB here)."
+ ]
+}

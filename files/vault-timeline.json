@@ -962,5 +962,115 @@
   "confidence": "stated",
   "phase": "disclosure",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-22T12:00+09:00",
+  "event": "South Korea's Ministry of Science and ICT raised the private-sector cyber crisis alert to 'Caution' (second of four levels) in response to the PHP flaws",
+  "sources": [
+   "newscj-news-articleview-html"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "Japan's Prime Minister Takaichi Sanae publicly urged action on X that night over the PHP flaws",
+  "sources": [
+   "digitalpr-r-146712"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Thailand's ThaiCERT issued a national cyber-threat alert on the PHP flaws in the morning",
+  "sources": [
+   "posttoday-ai-today-750820"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-16",
+  "event": "The White House says it learned of the PHP vulnerability",
+  "sources": [
+   "ra2ej-php2shell-893716-html"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-07-30",
+  "event": "Calif began an audit of the PHP project as part of Patch the Planet",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-08-11",
+  "event": "Calif reported an unconditional remote code execution vulnerability in PHP with the same underlying cause as an out-of-memory issue found in 2024",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-19",
+  "event": "Tags and tarballs for PHP 8.2.35, 8.3.36, 8.4.27 and 8.5.12 were created but kept private; release still planned for Thursday 22 October 14:00 UTC",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-20T15:00Z",
+  "event": "Online discussion of the two CVE IDs noticed; PHP rescheduled the release from Thursday 22 October to Wednesday 21 October 14:00 UTC",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-20T19:33Z",
+  "event": "The PHP security team announced on php-announce that a security release would be public the next day",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-20T20:00Z",
+  "event": "Calif published a proof-of-concept video, later deleted but copied; a copy was online at 20:27 UTC",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-21T13:35Z",
+  "event": "PHP published the fixes (php-src branches, advisories, announcements), including source-only backports for 7.4, 8.0 and 8.1",
+  "sources": [
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
  }
 ]

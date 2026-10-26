@@ -1833,6 +1833,897 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-26",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-wersm-amazon-week-before",
+   "verdict": "held back",
+   "reason": "Contradicts Amazon's own date: its post (aws-security-blog-madpot) and the site (amazon-honeypot) say 17 October, four days before disclosure. WeRSM's 'about a week' is a loose paraphrase of TechCrunch.",
+   "sources": [
+    "wersm-php2shell-legacy-infrastructure-web-risk"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-wersm-confirmed-compromises",
+   "verdict": "held back",
+   "reason": "The sentence 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity' is on this page alone (searched every capture for 'Trail of Bits' with 'compromis' or 'exploit', for 'TechCrunch' and for 'post-exploit'), names no victim, and is contradicted by Palo Alto's own advisory in the vault (paloalto-psirt-cve-2026-109618): 'not aware of any malicious exploitation'. No organisation is named as compromised, so no-confirmed-compromise stands.",
+   "sources": [
+    "wersm-php2shell-legacy-infrastructure-web-risk"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-qq-scan-useragent",
+   "verdict": "noted",
+   "reason": "One analyst's telemetry on a Tencent News creator page: a request with the User-Agent 'php2shell-scan/1.0'. A User-Agent is set freely; an attempt-level observation, not a compromise. Not used.",
+   "sources": [
+    "news-qq-rain-a-20261021a0eq4p00"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-newscj-217-systems",
+   "verdict": "held back",
+   "reason": "An official statement on one outlet: Cheonji Ilbo quotes the Ministry of the Interior and Safety that none of its 217 information systems was developed with PHP (checked on the page). Searched every capture for '217': this page alone, and the ministry's own notice is not captured.",
+   "sources": [
+    "newscj-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-newscj-alert-caution",
+   "verdict": "noted",
+   "reason": "Checked: Cheonji Ilbo says the government raised the cyber crisis alert to 'Caution' (주의) and activated its emergency response; Polinews also carries a cyber-alert item. Two Korean outlets, no ministry page captured. A national alert level, not a finding about PHP2Shell; not used.",
+   "sources": [
+    "newscj-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-newstap-theori-reproduced",
+   "verdict": "noted",
+   "reason": "A vendor's own claim of reproduction, relayed by Newstap; Theori's guide is not in the page. Not used.",
+   "sources": [
+    "newstap-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-newstap-leaked-binaries",
+   "verdict": "noted",
+   "reason": "Newstap relays Theori: a demonstration video and patched binaries leaked before the advisory. The video matches leak-video on the site; the 'patched binaries' detail has support in the PHP Foundation's account of distributors' images (chainguard). Not used.",
+   "sources": [
+    "newstap-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-beincrypto-no-exchange-evidence",
+   "verdict": "noted",
+   "reason": "BeInCrypto's own caveat that its exposure list is an estimate of risk, not of compromises. Consistent with the BTC-ECHO row on data/compromise.json.",
+   "sources": [
+    "nl-beincrypto-crypto-exchange-hack-waarschuwing-php2sh"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-note-yoshi-history",
+   "verdict": "noted",
+   "reason": "A personal blog's history of the 2019 memory bug and the 2024 Quarkslab audit; the bug and CVE numbers were not checked here. The site's quarkslab-2024 and versions-old carry the audit and the age. Not used.",
+   "sources": [
+    "note-gay-egret4207-n-n2c2499dc2998"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-note-yoshi-wiz-time",
+   "verdict": "noted",
+   "reason": "A blog relaying Wiz: AI cut the effort from months to about one researcher-week. Wiz's own post is in the vault (wiz-blog-php2shell) and says AI is 'no longer a barrier'; the 'one researcher-week' figure was not searched for there. Not used.",
+   "sources": [
+    "note-gay-egret4207-n-n2c2499dc2998"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-notebookcheck-qnap-eol-apps",
+   "verdict": "noted",
+   "reason": "Notebookcheck relays QNAP's bulletin that Download Station and PHP Extensions get no fix (support ended). QNAP's QSA-26-18 is in the vault (qnap-qsa-26-18) and advises backing up Download Station tasks before uninstalling applications; the 30 September end-of-support date is not on that page. Not used.",
+   "sources": [
+    "notebookcheck-php2shell-im-homelab-qnap-nextcloud-und"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-notebookcheck-opnsense-pfsense",
+   "verdict": "noted",
+   "reason": "Version numbers for OPNsense and pfSense as the article gives them (all six numbers found on the page), as of 22 October. Vendor release details; not used on a page.",
+   "sources": [
+    "notebookcheck-php2shell-im-homelab-qnap-nextcloud-und"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-notebookcheck-qnap-no-device-attacks",
+   "verdict": "noted",
+   "reason": "QNAP knows of no attacks on its devices, as of the article. QNAP's own advisory says the same (no reports of exploitation targeting QNAP products), beside its PSIRT report of attempts on its own website (qnap-attempts-in-wild). Not used.",
+   "sources": [
+    "notebookcheck-php2shell-im-homelab-qnap-nextcloud-und"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-nbc-nl-hn-leak",
+   "verdict": "agrees",
+   "reason": "Agrees with leak-hn and release-moved (details leaked the day before; release brought forward to 21 October, 14:00 UTC).",
+   "sources": [
+    "notebookcheck-php2shell-kritieke-php-kwetsbaarheden-tr"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-nbc-nl-wiz-24-aug",
+   "verdict": "agrees",
+   "reason": "Agrees with wiz-independent (Wiz reported on 24 August). The note.com blog's 19 August is the find, not the report.",
+   "sources": [
+    "notebookcheck-php2shell-kritieke-php-kwetsbaarheden-tr"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-nbc-nl-digid-offline",
+   "verdict": "agrees",
+   "reason": "Agrees with the Netherlands row on data/impact.json (DigiD and MijnOverheid, cited to TPO.NL); the page itself says no successful break-in had been confirmed.",
+   "sources": [
+    "notebookcheck-php2shell-kritieke-php-kwetsbaarheden-tr"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-notimerica-multiple-actors",
+   "verdict": "noted",
+   "reason": "Checked against Amazon's own post, which says 'these were multiple actors' and that analysis was ongoing. The inference is Amazon's, not an attribution. Not used.",
+   "sources": [
+    "notimerica-ciencia-tecnologia-noticia-portaltic-ama"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-notimerica-voluntary-suspensions",
+   "verdict": "noted",
+   "reason": "Portaltic (Europa Press) relays voluntary suspensions in the Netherlands, Belgium and France and Japan's advice to disable pages in extreme cases. Each government's statement is the primary; the site's offline ledger carries the Netherlands, Belgium and France (Reuters). Not used.",
+   "sources": [
+    "notimerica-ciencia-tecnologia-noticia-portaltic-ama"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-npr-leak-hackers",
+   "verdict": "noted",
+   "reason": "A blurb: NPR says the vulnerability leaked before the fix and hackers moved in. No transcript in the capture, so nothing is attributed to the guests. Not used.",
+   "sources": [
+    "npr-2026-10-24-nx-s1-6012327-ai-found-the-fl"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-nw-owl-sites",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 21 to 23 October): East Westphalia-Lippe sites, Neue Westfälische's own survey with a stated cut-off at 18:00 on 23 October; the Kreis Paderborn and the Bielefeld fire brigade still offline then. Reasons are not given beyond the PHP flaw.",
+   "sources": [
+    "nw-nachrichten-zwischen-weser-und-rhein-244"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-nw-prince-millions",
+   "verdict": "agrees",
+   "reason": "Agrees with cf-millions (Cloudflare's chief executive, 'millions' of attempts); an attempts count, not successes.",
+   "sources": [
+    "nw-nachrichten-zwischen-weser-und-rhein-244"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-okaz-ap-disruptions",
+   "verdict": "noted",
+   "reason": "Okaz relays AP: some government sites and services in the UK, Finland and Japan were disrupted. The site's offline ledger carries the UK (Edinburgh, Oxford, Met Police, OBR) and Finland (Valtori) on their own sources. Not used.",
+   "sources": [
+    "okaz-technology-na-2272170"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-okaz-php-delay-acknowledged",
+   "verdict": "held back",
+   "reason": "No source is named for the PHP project's acknowledgement of a weakness in handling security reports; Bangkok Biz News repeats it without naming the statement (cur14-bangkokbiz-php-foundation-resources). Not stated on the site.",
+   "sources": [
+    "okaz-technology-na-2272170"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-ot-checkpoint-regions",
+   "verdict": "held back",
+   "reason": "A vendor statistic: ot.gr does not say what 'affected' means or the window and sample, and Check Point's report is not in the vault. Same as cur6-checkpoint-country-rates, held back on 25 October.",
+   "sources": [
+    "ot-2026-10-23-texnologia-php2shell-enas-sto"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-ot-checkpoint-sectors",
+   "verdict": "held back",
+   "reason": "Same Check Point briefing and the same missing definition of 'affected' (sectors: telecommunications 20%, education 18%); second-hand. Held back with cur13-ot-checkpoint-regions.",
+   "sources": [
+    "ot-2026-10-23-texnologia-php2shell-enas-sto"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-pcwatch-openai-checker",
+   "verdict": "noted",
+   "reason": "PC Watch (Impress) describes OpenAI's 'PHP Version Checker' (21 October), which reads a version string from headers; MediaNama and SentinelOne also mention it (searched all captures for 'PHP Version Checker'). Version-header checks can mislead after backports. The tool was not fetched or run; not linked from the site.",
+   "sources": [
+    "pc-watch-impress-docs-news-2150338-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-pcwatch-php54-affected",
+   "verdict": "noted",
+   "reason": "PC Watch says PHP 5.4 up to the fixed releases are affected, matching Sansec's 'PHP 5.4 or later' in cur13-pcgamer-sansec-15-min. The site's range is versions-old (PHP 5 onwards); the project itself gives fixes only for 8.2 to 8.5. Not used.",
+   "sources": [
+    "pc-watch-impress-docs-news-2150338-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-pcgamer-sansec-15-min",
+   "verdict": "noted",
+   "reason": "Same as cur2-ars-sansec-15min: a forecast before release, not an observation. PC Gamer also carries Sansec's 'PHP 5.4 or later'.",
+   "sources": [
+    "pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-pcgamer-watchtowr-cvss10",
+   "verdict": "noted",
+   "reason": "Same statement as cur11-watchtower-embargo-thursday: watchTowr's CEO said 'CVSS10' and 'PHP versions 5, 6, 7, and 8' on the day of the leak. The final scores are 9.2 under CVSS v4.0 (PHP advisory), which the site carries.",
+   "sources": [
+    "pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-pcgamer-cloudflare-early",
+   "verdict": "noted",
+   "reason": "PC Gamer relays Cloudflare's CTO (Dane Knecht, on X) that it was already updating firewall rules for early attacks before the 14:00 UTC release. The site carries Cloudflare's edge protections (waf-nine-hours) from its own blog. Not used.",
+   "sources": [
+    "pcgamer-wikipedia-ref-22-dates-to-plug-leaked-hi"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-martincid-0-08-patched",
+   "verdict": "noted",
+   "reason": "Checked on the page: at 13:52 UTC on 21 October, 0.08% ('0,08%') of monitored sites reported a patched version, per mySites.guru; one monitoring service's sample, at one moment, before the 14:00 UTC release. Not used.",
+   "sources": [
+    "pl-martincid-technology-pl-php2shell-latka-php-juz-je"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-martincid-version-misleading",
+   "verdict": "noted",
+   "reason": "Practical guidance relayed from The Hacker News and others: a version number can mislead after a distribution backport. Not used.",
+   "sources": [
+    "pl-martincid-technology-pl-php2shell-latka-php-juz-je"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur13-martincid-package-sources",
+   "verdict": "noted",
+   "reason": "A snapshot of which package sources had fixed builds on 21 October, as the article gives it; not updated. Not used.",
+   "sources": [
+    "pl-martincid-technology-pl-php2shell-latka-php-juz-je"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-bnt-millions-attempts",
+   "verdict": "agrees",
+   "reason": "Agrees with cf-millions; the page gives no source or counting method of its own. Attempts, not successes.",
+   "sources": [
+    "blog-nouvelles-technologies-389778-php2shell-faille-critique-php-cor"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-bnt-php-foundation-ai",
+   "verdict": "noted",
+   "reason": "The PHP Foundation's own post is in the vault (php-foundation-blog-security-release) and says it scanned PHP with Anthropic's Claude Mythos and later used OpenAI's Daybreak Red; the same as cur11-php-foundation-anthropic-scan. Not used.",
+   "sources": [
+    "blog-nouvelles-technologies-389778-php2shell-faille-critique-php-cor"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-computing-cloudflare-10h",
+   "verdict": "agrees",
+   "reason": "Agrees with cf-millions: thousands of attempts in the ten hours before announcement, millions since. Attempts, not successes.",
+   "sources": [
+    "computing-news-2026-security-php-emergency-patches"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-computing-uk-takedowns",
+   "verdict": "agrees",
+   "reason": "Agrees with the UK rows already on data/impact.json (Oxford City Council, City of Edinburgh Council, Office for Budget Responsibility); precautionary.",
+   "sources": [
+    "computing-news-2026-security-php-emergency-patches"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-computing-nsa-offline",
+   "verdict": "agrees",
+   "reason": "Agrees with offline-nsa; the NSA page (nsa-press-php-4630238) is in the vault.",
+   "sources": [
+    "computing-news-2026-security-php-emergency-patches"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-acn-81-9",
+   "verdict": "held back",
+   "reason": "The percentage is right but the parenthetical is not: the pages give 285,149 of 348,130 services whose version could be identified (81.9%; Matrice Digitale), and 285,149 of 741,523 would be 38.5%. CyberSecItalia's wording mixes the two bases. ACN's alert is of potential vulnerability from version strings. Not stated until the base is one.",
+   "sources": [
+    "cybersecitalia-lalert-dellacn-in-italia-a-rischio-vulne"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-acn-third-cve",
+   "verdict": "agrees",
+   "reason": "Agrees with cur6-third-flaw-115560 (used by the correspondent) and the other captures that carry CVE-2026-115560 (Cloudflare, The Hacker News, SOCRadar, ZDNET Japan); ACN's alert is also a captured source (acn-it-php2shell).",
+   "sources": [
+    "cybersecitalia-lalert-dellacn-in-italia-a-rischio-vulne"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-albilad-mufg",
+   "verdict": "agrees",
+   "reason": "Agrees with the Japan row on data/impact.json (Mizuho, MUFG group companies, ANA and others, from The Next Web citing Bloomberg, added by the correspondent in v0.1.20). A service suspension, not a breach.",
+   "sources": [
+    "albiladpress-news-2026-6586-finance-1027748-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-bangkokbiz-cloudflare-rates",
+   "verdict": "noted",
+   "reason": "Relays Cloudflare's rates (tens of thousands of attempts within 45 minutes, hundreds of thousands within two hours). Cloudflare's own blog is in the vault (cloudflare-blog-php2shell-waf); I did not find those exact figures there (searched for '45 minutes', 'two hours' and 'tens of thousands'). Attempts, not successes; not used.",
+   "sources": [
+    "bangkokbiznews-opinion-1257779"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-bangkokbiz-php-foundation-resources",
+   "verdict": "held back",
+   "reason": "Matches cur13-okaz-php-delay-acknowledged; neither page names the statement. Not stated on the site.",
+   "sources": [
+    "bangkokbiznews-opinion-1257779"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-denews-logpresso-scanner",
+   "verdict": "noted",
+   "reason": "A vendor's product announcement (Logpresso's scanner, announced on 26 October; the curator corrected the date of release on 26 October). The tool was not fetched or run; not linked from the site.",
+   "sources": [
+    "denews-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-waca-takaichi-x",
+   "verdict": "noted",
+   "reason": "A press release by an industry association (WACA) relaying the Prime Minister's X post on 21 October. CNN (cnn-php2shell-websites-shut) is in the vault and quotes Takaichi's request; a request on social media. Not used.",
+   "sources": [
+    "digitalpr-r-146712"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-encause-cisa-no-success",
+   "verdict": "noted",
+   "reason": "En cause, 25 October, citing CISA: no successful exploitation observed at its last update. CISA's own alert (cisa-alert-php-20261021) is in the vault and the KEV catalogue did not list either CVE at the last check (cisa-none on the site). Point in time.",
+   "sources": [
+    "encause-failles-php-critiques-php2shell-mise-a-j"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-etnews-enki-scanner",
+   "verdict": "noted",
+   "reason": "A vendor's announcement of its own free scanner (Enki WhiteHat, 23 October), as Electronic Times reports. Not tested; not linked from the site.",
+   "sources": [
+    "etnews-20261023000089"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-nbc-fr-shodan",
+   "verdict": "noted",
+   "reason": "Checked on the page: a Shodan count published by Mallory on 20 October, about 884,000 internet-exposed hosts declaring an unsupported PHP version. Banner-based host counts, not confirmed vulnerable sites; shared hosting puts many sites behind one address. Not comparable with Censys's or VirusTotal's figures on the site (scale-2.6m-hosts); not used.",
+   "sources": [
+    "notebookcheck-php2shell-laisse-des-millions-de-serveur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-nbc-fr-backports",
+   "verdict": "noted",
+   "reason": "Checked: Notebookcheck says no numbered releases for end-of-life branches but minimal source backports for 7.4, 8.0 and 8.1 (Scherzer's account in the vault agrees). As of 26 October; vendors may carry their own backports. Not used.",
+   "sources": [
+    "notebookcheck-php2shell-laisse-des-millions-de-serveur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-nbc-fr-cisa",
+   "verdict": "agrees",
+   "reason": "Agrees with offline-cisa. The CISA alert itself is in the vault and says: 'Organizations that cannot update immediately, or that continue to use PHP 8.1 or earlier unsupported versions, should take PHP-based systems offline until they can be patched or updated.' Computing's NSA attribution is a separate item (offline-nsa).",
+   "sources": [
+    "notebookcheck-php2shell-laisse-des-millions-de-serveur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-polskieradio-coi-bip",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 22 October): Poland's Central Informatics Centre switched off BIP pages in the national public-information system as a precaution, affecting only some bodies. One outlet (Polskie Radio 24); the centre's own notice is not among the captures.",
+   "sources": [
+    "polskieradio24-pieniadze-strony-bip-znikaja-z-sieci-luk"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-posttoday-thaicert",
+   "verdict": "noted",
+   "reason": "A ministerial statement relayed by Post Today that ThaiCERT issued a national alert on the morning of 22 October; Daily News also carries ThaiCERT (searched all captures). The alert itself is not captured. Not used.",
+   "sources": [
+    "posttoday-ai-today-750820"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-posttoday-openai-found",
+   "verdict": "held back",
+   "reason": "A Thai deputy prime minister's attribution, unverified: the vault's primary accounts credit Calif (with OpenAI's Patch the Planet) and Wiz, and Calif's own write-up (calif-php2shell) says OpenAI invited Calif to its initiative. Not stated on the site as worded.",
+   "sources": [
+    "posttoday-ai-today-750820"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-pplware-wiz-decades",
+   "verdict": "noted",
+   "reason": "Relays Wiz: the flaws existed for decades; AI helped overcome the complexity of demonstrating exploitation. Wiz's own post is in the vault (wiz-blog-php2shell) and says AI 'is no longer a barrier'. Not used.",
+   "sources": [
+    "pplware-sapo-internet-php2shell-disponibilizadas-atua"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-scalecommerce-patch-speed",
+   "verdict": "noted",
+   "reason": "A company's own account in a promotional press release (ScaleCommerce, PresseBox, 22 October): 18 minutes after the release it had patched most customers (the page says 18 minutes) and all systems by 20:00. Not independently checked; not used.",
+   "sources": [
+    "pressebox-pressemitteilung-scalecommerce-gmbh-krit"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-scalecommerce-few-attempts",
+   "verdict": "used",
+   "reason": "On data/compromise.json (no-success-known, 22 October, ScaleCommerce): its log review found only isolated attack attempts on customer shops and no indication of a broad compromise. Scope is one provider's customers, and its own account.",
+   "sources": [
+    "pressebox-pressemitteilung-scalecommerce-gmbh-krit"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-qdnd-vn-users-no-panic",
+   "verdict": "noted",
+   "reason": "Public guidance for consumers relayed by the People's Army Newspaper: users need not stop using websites. Not used.",
+   "sources": [
+    "qdnd-phap-luat-tin-tuc-hai-lo-hong-nghiem-tro"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-raij-white-house-16-oct",
+   "verdict": "noted",
+   "reason": "Reuters (rte-reuters-websites-go-dark, in the vault) quotes the White House: it 'was made aware of the flaw on Friday'; Friday is 16 October 2026. Raij relays it. Amazon's earliest honeypot attempt was the next day, 17 October. Not used.",
+   "sources": [
+    "ra2ej-php2shell-893716-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur14-raij-watchtowr-no-success",
+   "verdict": "noted",
+   "reason": "watchTowr's Jake Knott, early in the exploitation: attempts seen, 'no one has succeeded so far'. Point in time; consistent with no-confirmed-compromise.",
+   "sources": [
+    "ra2ej-php2shell-893716-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-scherzer-original-schedule",
+   "verdict": "agrees",
+   "reason": "Agrees with release-moved (planned 22 October 14:00 UTC, brought forward to 21 October). Scherzer, PHP 8.5's release manager, is first-hand: tags made on Monday 19 October, kept private.",
+   "sources": [
+    "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-scherzer-reschedule-20-oct",
+   "verdict": "agrees",
+   "reason": "Agrees with leak-cve-ids and release-moved (CVE IDs discussed about 15:00 UTC on 20 October, release moved a day forward).",
+   "sources": [
+    "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-scherzer-calif-video",
+   "verdict": "agrees",
+   "reason": "Agrees with leak-video (Calif's proof-of-concept video around 20:00 UTC on 20 October, deleted, copied; a copy online at 20:27 UTC).",
+   "sources": [
+    "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-scherzer-chainguard",
+   "verdict": "agrees",
+   "reason": "Agrees with chainguard (07:41 UTC, from the PHP Foundation's post). Scherzer notes Hacker News reports of builds from 06:07 UTC and that the exact time is unknown; the site keeps 07:41.",
+   "sources": [
+    "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-scherzer-public-13-35",
+   "verdict": "held back",
+   "reason": "Contradicts a time the site carries: release-time is 14:00 UTC on 21 October (the PHP advisory; BleepingComputer: '14:00 UTC (10:00 AM Eastern)'). The release manager's account puts the public release at 13:31 to 13:35 UTC, from GitHub activity. Not stated until the correspondent decides which time the site gives; sent as a note.",
+   "sources": [
+    "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-agenda-foundation-chronology",
+   "verdict": "noted",
+   "reason": "Agenda Digitale relays the PHP Foundation's chronology (Calif's audit from 30 July, report on 11 August, OpenAI's analysis the same day). Calif's own write-up gives 30 July and the report to PHP on 11 August (who-first, openai-same-day on the site). Not used.",
+   "sources": [
+    "agendadigitale-sicurezza-php2shell-lai-accelera-la-scop"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-agenda-leak-moved-release",
+   "verdict": "agrees",
+   "reason": "Agrees with release-moved and leak-video (leak on 20 October, release brought forward from 22 to 21 October, a video published by mistake).",
+   "sources": [
+    "agendadigitale-sicurezza-php2shell-lai-accelera-la-scop"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-agenda-w3techs-69-3",
+   "verdict": "agrees",
+   "reason": "Agrees with scale-70pc-websites ('almost 70% of websites whose server-side language is known'). Checked on the page: 69,3% of all analysed sites, 64,5% of the first million, 61,0%, 59,7% and 59,3% by band; the share of sites with a known server-side language.",
+   "sources": [
+    "agendadigitale-sicurezza-php2shell-lai-accelera-la-scop"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-matrice-348130-identified",
+   "verdict": "noted",
+   "reason": "Checked on Matrice Digitale and CyberSecItalia: 285,149 services on potentially vulnerable versions, 81.9% of the 348,130 whose version could be identified; potential vulnerability from version strings. States the base cur14-acn-81-9 gets wrong. Not used on a page.",
+   "sources": [
+    "matricedigitale-2026-10-25-php2shell-italia-csirt-serviz"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-schieb-bsi-update",
+   "verdict": "held back",
+   "reason": "Gives no date or content of the BSI's 'updated warning' (as of 25 October) and nothing in the captures shows one; an official act on one blog-style page. Not stated.",
+   "sources": [
+    "schieb-php2shell-sicherheitsluecke-so-schuetzt"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-esi-old-versions-affected",
+   "verdict": "held back",
+   "reason": "A commercial vendor of extended support claiming, in its own press release, that the flaw is in all end-of-life versions 5.3 to 8.1; not independently checked, and the lower bound (5.3) differs from the site's range (versions-old, PHP 5 onwards; PC Watch and Sansec say 5.4).",
+   "sources": [
+    "atpress-ne-news-644147"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-zdnet-mirai",
+   "verdict": "used",
+   "reason": "On data/compromise.json (attempts, 26 October): ZDNET Japan, translating ZDNET, says Amazon Threat Intelligence reports actors in PHP2Shell attack chains trying to deploy Mirai-family botnets. Amazon's post in the vault (aws-security-blog-madpot, both captures) does not contain the word 'Mirai'; Sophos, via Cyber Security News, also reports a Mirai-derived payload (blocked). Attempts, no named actor.",
+   "sources": [
+    "japan-zdnet-article-35253966"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-zdnet-third-cve-unlikely",
+   "verdict": "agrees",
+   "reason": "Agrees with cur6-third-flaw-115560 (used by the correspondent) and cur14-acn-third-cve; ZDNET Japan relays the PHP project's 23 October advisory: unusual configuration needed, mitigation given.",
+   "sources": [
+    "japan-zdnet-article-35253966"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-lepti-wiz-cms-images",
+   "verdict": "noted",
+   "reason": "Relays Wiz: control of recent WordPress, Drupal and Joomla images and a memory read. Wiz's own post (wiz-blog-php2shell) names WordPress, Joomla, Drupal and memory disclosure as the stakes. In researchers' own tests (wordpress-drupal on the site). Not used.",
+   "sources": [
+    "leptidigital-securite-informatique-cybersecurite-fail"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-radioworld-telos",
+   "verdict": "noted",
+   "reason": "A vendor's own advisory relayed by Radio World (Telos Alliance: Zephyr Connect SE, Altus SE and Pathfinder Core Pro affected); Telos appears in this page alone (searched all captures). As of 23 October; an affected-products notice, not a compromise.",
+   "sources": [
+    "radioworld-tech-and-gear-radio-it-management-is-you"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-radioworld-comrex-wheatstone",
+   "verdict": "noted",
+   "reason": "Vendor self-reports to a trade magazine (Comrex: only its Switchboard service, patched within hours; Wheatstone: a Nielsen timestamp interface for a few X5 customers). Not an audit; not used.",
+   "sources": [
+    "radioworld-tech-and-gear-radio-it-management-is-you"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-raya-ionos",
+   "verdict": "noted",
+   "reason": "A one-line mention that large hosts such as IONOS have already updated PHP, with no date or source; other captures name IONOS (Die Presse, FAZ, BornCity). Not used.",
+   "sources": [
+    "raya-2026-10-22-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-root-check-from-17-oct",
+   "verdict": "agrees",
+   "reason": "Agrees with amazon-honeypot: Amazon advises administrators to look for signs from 17 October on; the first attempt hit a honeypot.",
+   "sources": [
+    "root-zpravicky-utok-na-php2shell-zacal-uz-cty"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-root-honeypot-not-production",
+   "verdict": "agrees",
+   "reason": "Agrees with amazon-honeypot: the 17 October attempt hit Amazon's MadPot honeypot, not a production site; Amazon's post says it cannot explain how the attacker knew.",
+   "sources": [
+    "root-zpravicky-utok-na-php2shell-zacal-uz-cty"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-sbbit-japan-suspensions",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 21 October): BASE, Kodomon, pixiv, Niconico, game companies and Sakura Internet suspended all or part of their services for emergency maintenance (BASE and Kodomon naming the PHP flaw); the Ministry of Finance paused related web content. Business+IT notes the companies' stated reasons differ; none is said to be compromised.",
+   "sources": [
+    "sbbit-article-cont1-187672"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-sbbit-w3techs-versions",
+   "verdict": "noted",
+   "reason": "Checked: W3Techs (October 2026), PHP on 69.3% of sites with a known server-side language; within them 8.x 65.2%, 7.x 27.0%, 5.x 7.7%; the page notes 8.0 and 8.1 are end of life too, so the end-of-life share is higher. Agrees with cur15-agenda-w3techs-69-3 on the 69.3%. Not used.",
+   "sources": [
+    "sbbit-article-cont1-187672"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur15-secnl-palo-alto-panos",
+   "verdict": "noted",
+   "reason": "Relays Palo Alto's bulletin (PAN-OS 10.2, 11.1, 11.2, 12.1, 12.2 vulnerable; greatest risk when the management interface is internet-reachable). The same as panos-management-affected, reviewed on 25 October against the vendor's own advisory in the vault (paloalto-psirt-cve-2026-109618: 'not aware of any malicious exploitation'). Not used.",
+   "sources": [
+    "security-nl-palo-alto-firewalls"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-26",
+   "by": "journalist@php.newsroom"
   }
  ]
 }
