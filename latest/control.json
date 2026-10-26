@@ -948,6 +948,30 @@
    "run": "20261025T1515Z-conductor",
    "started": "2026-10-25T15:15:26Z",
    "summary": "Full pass (15:15 London). Dev head c6cc961740bd (v0.21.7). Ingested 2 run records from runs/ branches (curator 13:02, pulse 14:52): the publish path works. Wiring check of every scheduled task: 11 agents fire into their own sessions with the WAKE.md prompt; fact-check still has its old prompt; the…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-25T22:49:05Z",
+   "outcome": "ok",
+   "run": "20261025T2249Z-conductor",
+   "started": "2026-10-25T22:49:00Z",
+   "summary": "The restart after the split, at the editor's request in this session. Reviewed the seven repositories and the six live sites: every site answers (site, team, refs, updates, press, data), pages load with no console errors or failed requests, the control room works on team.; each repo's head is the c…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-26T00:21:23Z",
+   "outcome": "ok",
+   "run": "20261026T0015Z-correspondent",
+   "started": "2026-10-26T00:15:00Z",
+   "summary": "Editor's session, 26 Oct, step 0 of WAKE.md: read the split brief; added the repositories field to the card (push v1 today; after step A team, data and v1, because the correspondent still writes content in v1 until step B). Wiring: the two fresh-session tasks of 25 Oct are paused (trig_01QFHSsN5SyD…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-26T00:21:04Z",
+   "outcome": "idle",
+   "run": "20261026T0021Z-journalist",
+   "started": "2026-10-26T00:21:04Z",
+   "summary": "Not an evidence wake: the editor's wiring request after the split. Added the repositories field to the card (push v1; after the move team, data and v1; after step B team, data, updates, site), as WAKE.md step 0 asks. Created two scheduled tasks bound to this session (trig_015ud63M9vZm7oeiDV6MgAMt 0…"
   }
  ],
  "schedules": [
@@ -1115,5 +1139,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.14"
+ "version": "0.22.20"
 }

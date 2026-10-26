@@ -94,9 +94,13 @@ if vs:
         tmp = tempfile.mkdtemp()
         try:
             subprocess.run([sys.executable, os.path.join(ROOT, 'tools', 'publish.py'), '--into', tmp], capture_output=True, text=True, check=True)
-            for rel in ('index.html', 'versions.json', f'v/{version}/manifest.json'):
-                if sha256(os.path.join(tmp, rel)) != sha256(os.path.join(ROOT, rel)):
-                    fails.append(f'{rel}: publishing again gives other bytes (or files/ changed since v{version}: release a new version)')
+            # the same files publish the same version: its file list and sums; the manifest's 'from' (the v1 commit it was
+            # imported from) and the pages written from it may name a later import of the same files, which is no change
+            if sha256(os.path.join(tmp, 'versions.json')) != sha256(os.path.join(ROOT, 'versions.json')):
+                fails.append(f'versions.json: publishing again gives other bytes')
+            a, b = (load_json(os.path.join(d, 'v', version, 'manifest.json'))['files'] for d in (tmp, ROOT))
+            if a != b:
+                fails.append(f'v/{version}/manifest.json: publishing again gives other files (files/ changed since v{version}: release a new version)')
         finally:
             shutil.rmtree(tmp)
 

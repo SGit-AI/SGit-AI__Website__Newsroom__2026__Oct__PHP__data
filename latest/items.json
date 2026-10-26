@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.14",
+"site": "0.22.20",
 "items": {
 "page-flaws": {
 "kind": "page",
