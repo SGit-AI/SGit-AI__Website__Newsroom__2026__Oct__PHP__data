@@ -1392,6 +1392,48 @@
   "notes_md": "# ثغرة في PHP تفتح الباب أمام موجة هجمات سيبرانية...\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/alghad/section-225-d8-aa-d9-83-d9-86-d9-88-d9-84-d9-88-d8-ac-d9-8a`, snapshot `20261024T160544Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T160544Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAl-Ghad (Arabic), 24 October: a PHP flaw opens the door to a wave of cyberattacks. The flaw, known as PHP2Shell, may let attackers take control of sites' servers, steal data and disrupt electronic services.\n\n> وقد تتيح الثغرة، المعروفة باسم PHP2Shell، للمهاجمين السيطرة على خوادم المواقع، وسرقة البيانات، وتعطيل الخدمات الإلكترونية.\n\n_Curator's translation:_ \"The flaw, known as PHP2Shell, may allow attackers to take control of sites' servers, steal data and disrupt electronic services.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"ثغرة في PHP تفتح الباب أمام موجة هجمات سيبرانية...\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "aljarida-article-148264",
+  "url": "https://www.aljarida.com/article/148264",
+  "publisher": "جريدة الجريدة الكويتية",
+  "kind": "news",
+  "title": "ثغرات «PHP» تضع بيانات الإنترنت تحت رحمة القراصنة - جريدة الجريدة الكويتية",
+  "published": "2026-10-23 20:38",
+  "captures": [
+   {
+    "stamp": "20261026T170916Z",
+    "files": {
+     "headers.json": {
+      "sha256": "4fea6ae1bd97399184bf68f9bfa4faf01792a7c5c3094304c33e8c593429b745",
+      "bytes": 1204
+     },
+     "page.html": {
+      "sha256": "81a830b039160ed7c8ae92c041092025cde40daf0cddf62db01850f99017ec4b",
+      "bytes": 242979
+     },
+     "provenance.json": {
+      "sha256": "a297f1c341da169c1533dc16d68c790744e5d79e7b4c99b108db8629756197d9",
+      "bytes": 1459
+     },
+     "text.txt": {
+      "sha256": "f05c7687b060c9c9c0a354e0549a2fb276decc0920762e8987c1b520bec696c4",
+      "bytes": 3400
+     }
+    },
+    "started_utc": "2026-10-26T17:17:16.552Z",
+    "status": 200,
+    "final_url": "https://www.aljarida.com/article/148264"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ar",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T170916Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Al-Jarida (Kuwait, Arabic), 23 October: a short article saying PHP's two serious flaws (CVE-2026-109618 and CVE-2026-109619) put internet data at the...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# ثغرات «PHP» تضع بيانات الإنترنت تحت رحمة القراصنة - جريدة الجريدة الكويتية\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/aljarida/article-148264`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAl-Jarida (Kuwait, Arabic), 23 October: a short article saying PHP's two serious flaws (CVE-2026-109618 and CVE-2026-109619) put internet data at the mercy of hackers, a local warning coinciding with a worldwide emergency in the IT industry after the details leaked unintentionally, and that in Germany municipalities, hospitals and universities temporarily stopped their services and sites as a precaution. No new facts.\n\n> ففي ألمانيا، بادرت بلديات ومستشفيات وجامعات إلى إيقاف خدماتها ومواقعها مؤقتاً كإجراء احترازي.\n\n_Curator's translation:_ \"In Germany, municipalities, hospitals and universities moved to stop their services and sites temporarily as a precaution.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Kuwaiti daily Al-Jarida describes the PHP2Shell flaws and the leak, citing Huntress and the German government CERT, and says German municipalities, government bodies, universities and hospitals took sites offline. It reports that Kuwait's Central Agency for Information Technology issued a warning bulletin.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"ثغرات «PHP» تضع بيانات الإنترنت تحت رحمة القراصنة - جريدة الجريدة الكويتية\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "americanbanker-news-banks-dodge-early-damage-from-php2s",
   "url": "https://www.americanbanker.com/news/banks-dodge-early-damage-from-php2shell-flaws",
   "publisher": "American Banker",
@@ -8881,6 +8923,56 @@
   "notes_md": "# Amazon detectó intentos de explotación de PHP2Shell días antes de que se divulgaran las vulnerabilidades y su parche\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `es/news/europapress/portaltic-ciberseguridad-noticia-amazon-detecto-intentos-exp`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nEuropa Press (Spanish), 23 October: Amazon detected attempts to exploit PHP2Shell days before the vulnerabilities and their patch were disclosed, according to an Amazon Threat Intelligence report; The PHP Group published the two critical flaws, CVE-2026-109618 and CVE-2026-109619, on 21 October and released the urgent security update that day.\n\n> Actores de amenazas intentaron explotar las vulnerabilidades críticas identificadas en el ecosistema PHP, conocidas como PHP2Shell, días antes de que se hicieran públicas el pasado miércoles, como se desprende de un informe de Amazon Threat Intelligence.\n\n_Curator's translation:_ \"Threat actors tried to exploit the critical vulnerabilities identified in the PHP ecosystem, known as PHP2Shell, days before they were made public last Wednesday, as an Amazon Threat Intelligence report shows.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Amazon detectó intentos de explotación de PHP2Shell días antes de que se divulgaran las vulnerabilidades y su parche\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "europe-infos-actualites-11979-php2shell-decryptage-d",
+  "url": "https://www.europe-infos.fr/actualites/11979/php2shell-decryptage-d-une-double-faille-critique-dans-le-moteur-php/",
+  "publisher": "europe-infos",
+  "kind": "news",
+  "title": "PHP2Shell : décryptage d’une double faille critique dans le moteur PHP | Europe Infos",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261026T170916Z",
+    "files": {
+     "headers.json": {
+      "sha256": "d68eb7787058b9c90a8bf59ed4003ff412a9403ca43735f79b075d919599335b",
+      "bytes": 844
+     },
+     "page.html": {
+      "sha256": "f43a8c5940283b5359e579fd8b184adfa75b6bd4efd84e45b3a788f11631c9a6",
+      "bytes": 497317
+     },
+     "provenance.json": {
+      "sha256": "5cadc6ea10e4e6d53cad8f8744983126c38c004a11fe844c3e54557e4c5599bd",
+      "bytes": 1841
+     },
+     "rendered.html": {
+      "sha256": "9ae61f3c41d68ed5e0022bdb4adf3abb113837a4a304354ec018bbdfb41168b5",
+      "bytes": 510306
+     },
+     "screenshot.jpg": {
+      "sha256": "111522d5ad95908e468f69bae1153382229f2591291dd08dc75ae31b18efc2bf",
+      "bytes": 725877
+     },
+     "text.txt": {
+      "sha256": "130c70f3471fda072abbf79c0891f9f1a7a9aa55ffccfdc86a573dd2cb9d6f45",
+      "bytes": 10515
+     }
+    },
+    "started_utc": "2026-10-26T17:18:43.398Z",
+    "status": 200,
+    "final_url": "https://www.europe-infos.fr/actualites/11979/php2shell-decryptage-d-une-double-faille-critique-dans-le-moteur-php/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "fr-FR",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T170916Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). Europe Infos (French), 26 October, by Michel Labise: an explainer on PHP2Shell, saying the flaws found with AI analysis stayed hidden in PHP's core si...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell : décryptage d’une double faille critique dans le moteur PHP | Europe Infos\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fr/news/europe-infos/actualites-11979-php2shell-decryptage-d-une-double-faille-cr`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nEurope Infos (French), 26 October, by Michel Labise: an explainer on PHP2Shell, saying the flaws found with AI analysis stayed hidden in PHP's core since 2012 and that early circulation of technical details led to near-immediate exploitation attempts. It relays one security researcher monitoring honeypots running PHP 8.4.26: 35 malicious PHP shells were launched by Apache processes on three test servers just three days after the patch was available. It adds that many European institutions temporarily disconnected PHP sites while they located PHP, with 'never so many European administrative and public sites made unreachable in one day', and gives a triple-check approach (locate instances, filter external access, audit logs). The page also carries unrelated 'Lire:' lines (about Boris Johnson and a lawyer's portrait) that look inserted by the site.\n\n> Selon un chercheur en cybersécurité ayant surveillé des pots de miel (honeypots) équipés de PHP 8.4.26, 35 shells PHP malveillants ont été lancés par des processus Apache sur trois serveurs tests, tout juste trois jours après la mise à disposition du patch de sécurité.\n\n_Curator's translation:_ \"According to a cyber-security researcher who monitored honeypots running PHP 8.4.26, 35 malicious PHP shells were launched by Apache processes on three test servers just three days after the security patch became available.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell : décryptage d’une double faille critique dans le moteur PHP | Europe Infos\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr-FR`. The article body contains unrelated 'Lire :' related-link lines (one about Boris Johnson, one a lawyer's portrait) that look inserted by the site. Nothing in the text addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "expresscomputer-guest-blogs-understanding-php2shell-vuln",
   "url": "https://www.expresscomputer.in/guest-blogs/understanding-php2shell-vulnerabilities-and-reducing-risk-while-you-patch/140359/",
   "publisher": "expresscomputer",
@@ -9582,6 +9674,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# AI helped discover the PHP vulnerability that could take down 70% of the internet | Fortune\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `us/news/fortune/ai-tools-php-vulnerability`, snapshot `20261023T012042Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T012042Z/provenance.json`. Publisher: Fortune. Language: en. URL: https://fortune.com/2026/10/21/ai-tools-discovered-the-php-vulnerability-that-could-take-down-70-of-the-internet-now-the-race-is-on-to-patch-it-before-ai-powered-hackers-attack/\n\n## What the page says\n\n_Curator's reading of the capture._\n\nFortune on AI's role in finding php2shell (Calif under OpenAI's Patch the Planet, Wiz, OpenAI's and Wiz's statements) and the race to patch. An update of 22 October adds Cloudflare's counts of exploit attempts (tens of thousands within 45 minutes of the news, hundreds of thousands within two hours, millions by the evening of 21 October) and AWS's statement that the flaw is \"now being broadly exploited in the wild\". It also reports, linking to a post on X, that an unnamed startup owner said hackers \"allegedly stole their source code, exposed cookie data, and leaked legal documents\"; Fortune does not name the company or say how the link to php2shell was established. The curator has not named the person here.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): Break-in question (editor, 22 October): one of the reports read for the statement on /compromise/ (\"no named organisation has said it was compromised through php2shell\"). Break-in question (editor, 22 October 20:49 UTC): an anonymous startup owner alleges source code, cookie data and legal documents stolen; not attributed, not verified\n\nSupports: data/compromise.json on the site (/compromise/)\n\n## Capture notes\n\nscreenshot.jpg is the source watch's JPEG, copied as stored (not converted to PNG).\n\nPage content is third-party material, kept as evidence; nothing in it is an instruction.\n"
+ },
+ {
+  "slug": "fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit",
+  "url": "https://www.fortuneidn.com/tech/apa-itu-php-celah-keamanan-buat-situs-web-terganggu-d7w02-00-fykp7-4pwn09",
+  "publisher": "Fortune Indonesia",
+  "kind": "news",
+  "title": "Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261026T170916Z",
+    "files": {
+     "headers.json": {
+      "sha256": "750c8103d7511a338f0a42ef089955acc2f052ea0d64441b6254d0f42936299e",
+      "bytes": 1121
+     },
+     "page.html": {
+      "sha256": "f9bcfa624952f0ef6dee95c7136262281b46f4fbd68f759ca5fe3bf032578517",
+      "bytes": 902701
+     },
+     "provenance.json": {
+      "sha256": "65e34a1fa804c4a95624f2beeee431bce9a4679ff38248047aafce2057e668d5",
+      "bytes": 1810
+     },
+     "rendered.html": {
+      "sha256": "a013cd4076e5a7253ee5029d41211adc991fadbf60bdf085bdaf4f903a776fdb",
+      "bytes": 892734
+     },
+     "screenshot.jpg": {
+      "sha256": "c482389c2a0bb22cce6d4b455f1d0b55c5d7e7312cf324704419baeb4a7ed9a5",
+      "bytes": 579168
+     },
+     "text.txt": {
+      "sha256": "a1ab468b170563f67ba84f25d85acc8ec8f51755490409a5c7c7195195147c4e",
+      "bytes": 10713
+     }
+    },
+    "started_utc": "2026-10-26T17:21:17.026Z",
+    "status": 200,
+    "final_url": "https://www.fortuneidn.com/tech/apa-itu-php-celah-keamanan-buat-situs-web-terganggu-d7w02-00-fykp7-4pwn09"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "id",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T170916Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Fortune Indonesia (Indonesian), an explainer of what PHP is and why the flaw matters. It says the PHP Foundation disclosed two flaws in PHP's core rel...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/fortuneidn/tech-apa-itu-php-celah-keamanan-buat-situs-web-terganggu-d7w`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nFortune Indonesia (Indonesian), an explainer of what PHP is and why the flaw matters. It says the PHP Foundation disclosed two flaws in PHP's core relating to memory management and error handling, that the US NSA said the flaws could let attackers reach files and databases without credentials, that the PHP Foundation said the fix was a challenge because it touches the core, risking application compatibility, performance and third-party extensions, and that the NSA urged all PHP-using organisations to update at once or disable vulnerable systems, with similar warnings from Japan, Singapore, Australia and the EU.\n\n> NSA turut mengimbau semua organisasi yang menggunakan PHP untuk segera memperbarui sistem atau menonaktifkan sistem yang rentan.\n\n_Curator's translation:_ \"The NSA also urged all organisations that use PHP to update their systems at once or deactivate vulnerable systems.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "fortuneita-2026-10-22-php2shell-il-bug-che-poteva-m",
@@ -14572,6 +14714,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Websites taken offline as ‘critical’ security flaw hits Met Police, Traitors and government sites | LBC\n\nCaptured by claude-story-site. Status: captured. Met Police, The Traitors, government sites offline; fixes 'around 3pm UK time'.\n\n- Captured for the UK list.\n"
+ },
+ {
+  "slug": "learn-microsoft-nl-nl-answers-questions-6045412-web-app",
+  "url": "https://learn.microsoft.com/nl-nl/answers/questions/6045412/web-app-linux-php-patch-php2shell-critical-vulnera",
+  "publisher": "learn",
+  "kind": "news",
+  "title": "Web App (Linux): PHP Patch php2shell — Critical Vulnerability in PHP Runtime - Microsoft Q&A",
+  "published": "2026-10-21 15:58 (page time zone not stated)",
+  "captures": [
+   {
+    "stamp": "20261026T170916Z",
+    "files": {
+     "headers.json": {
+      "sha256": "51218e8ab0f6c97b0fbb904ee11250ad7ab452f0c1ab32d3cd094c5550f18a79",
+      "bytes": 2969
+     },
+     "page.html": {
+      "sha256": "7f08e789a1048b413860363e317cefd3ca7e5d650cc187f466854aea7b5d2f13",
+      "bytes": 86965
+     },
+     "provenance.json": {
+      "sha256": "6671a34cf3d3c310b2fdaca09622e545fc9b01f1878bd4a61f1243cb0c26222b",
+      "bytes": 1848
+     },
+     "rendered.html": {
+      "sha256": "a857ca65fb0a85cbd44761d4682ff15dcfe19342ef0a53a8e45ff65cc4b62bed",
+      "bytes": 119574
+     },
+     "screenshot.jpg": {
+      "sha256": "1b890f4b7319574041d59ca53b23742ad7b67267dbe996a1335b6e98fb641a02",
+      "bytes": 153520
+     },
+     "text.txt": {
+      "sha256": "d73399825bfbedd1b8f7e4cea2bc4b4f2fcde6612e94b7a1f817862ce8b800a6",
+      "bytes": 2097
+     }
+    },
+    "started_utc": "2026-10-26T17:28:29.009Z",
+    "status": 200,
+    "final_url": "https://learn.microsoft.com/nl-nl/answers/questions/6045412/web-app-linux-php-patch-php2shell-critical-vulnera"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "nl-nl",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T170916Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Microsoft Q&A (Dutch locale), 21 October: a forum question from a user of an Azure Web App (Linux) whose production site was down as a precaution over...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Web App (Linux): PHP Patch php2shell — Critical Vulnerability in PHP Runtime - Microsoft Q&A\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `nl/news/learn-microsoft/nl-nl-answers-questions-6045412-web-app-linux-php-patch-php2`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nMicrosoft Q&A (Dutch locale), 21 October: a forum question from a user of an Azure Web App (Linux) whose production site was down as a precaution over 'a critical php2shell leak' and who was waiting for the PHP patch to be pushed to the platform. The only reply, from a moderator on 23 October, says Azure questions are out of scope of the Dutch Q&A and suggests reposting in the English Microsoft Q&A for Azure. A user's self-report, it carries no verified facts about the platform.\n\n> My production site is currently down as a precaution due to a critical php2shell leak, and I need to ensure that the PHP runtime is patched promptly.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Web App (Linux): PHP Patch php2shell — Critical Vulnerability in PHP Runtime - Microsoft Q&A\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `nl-nl`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "lebigdata-php2shell-des-millions-dattaques-frappen",
@@ -23813,6 +24005,56 @@
   "notes_md": "# php2shell 漏洞刷屏，集运公司要不要连夜打补丁？先看系统用什么写的_影响_客户_代码执行\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `hk/news/sohu/a-1091246810-122998307`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSohu (China, Chinese), 22 October, a post by the account of Langxin Technology Software, a logistics-software vendor: it says its ASP.NET, SQL Server and IIS system does not use PHP and so is outside the flaw's scope, then explains the flaw to customers. It gives the CVSS score as 9.8, which differs from the 9.2 under CVSS 4.0 that PHP and other outlets give, and says China's MIIT NVDB and CNVD have issued risk notices and Tencent Cloud, Alibaba Cloud and QiAnXin CERT issued bulletins. Marketing post by a vendor; the interim measures it lists are not repeated.\n\n> 工信部 NVDB、CNVD 均已发布风险提示，腾讯云、阿里云、奇安信 CERT 相继发出通告\n\n_Curator's translation:_ \"The MIIT's NVDB and CNVD have both issued risk notices, and Tencent Cloud, Alibaba Cloud and QiAnXin CERT have in turn issued bulletins.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Sohu advertorial by the parcel-forwarding software vendor 朗信集运 (Langxin): its ASP.NET system is not affected. It summarises the flaw and in passing lists Chinese agency and cloud advisories and overseas sites taken offline.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"php2shell 漏洞刷屏，集运公司要不要连夜打补丁？先看系统用什么写的_影响_客户_代码执行\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `zh-CN`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "solutions-numeriques-php2shell-derriere-lurgence-des-correcti",
+  "url": "https://www.solutions-numeriques.com/php2shell-derriere-lurgence-des-correctifs-les-fragilites-de-la-maintenance-du-web/",
+  "publisher": "Solutions Numériques",
+  "kind": "news",
+  "title": "PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web",
+  "published": "2026-10-26T13:36:56+00:00",
+  "captures": [
+   {
+    "stamp": "20261026T170916Z",
+    "files": {
+     "headers.json": {
+      "sha256": "14ea7a4399a5c1de4c12e5c075b23906582ea19bd574fabc3782c66361d542b1",
+      "bytes": 354
+     },
+     "page.html": {
+      "sha256": "3bed9d67f0e81cbbc023dbbcaa008a60d92bfe919a42bc40ba0c5e46c87fc7ed",
+      "bytes": 158140
+     },
+     "provenance.json": {
+      "sha256": "5d9220bfcda817438238b3a3992797a0d5d0217b13cc3bd2c12423e5834f8f78",
+      "bytes": 1880
+     },
+     "rendered.html": {
+      "sha256": "a537fac19583a4657e2426aa27267c76d86fcf7fbe08d006bf1367770675059b",
+      "bytes": 159718
+     },
+     "screenshot.jpg": {
+      "sha256": "ec8eff687c7e18c3b28e3d262c30044e9909399b8587e58ff54940a8295343d4",
+      "bytes": 812651
+     },
+     "text.txt": {
+      "sha256": "2ec81d7d33757d7ab45ac9cb59de6be2b6ddb2f0ae8e94a8ec940ab8119fd848",
+      "bytes": 12421
+     }
+    },
+    "started_utc": "2026-10-26T17:19:13.972Z",
+    "status": 200,
+    "final_url": "https://www.solutions-numeriques.com/php2shell-derriere-lurgence-des-correctifs-les-fragilites-de-la-maintenance-du-web/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "fr-FR",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T170916Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). Solutions Numériques (French), 26 October: behind the urgency of the PHP2Shell fixes, the fragility of web maintenance. Drawing on the PHP Foundation'...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fr/news/solutions-numeriques/php2shell-derriere-lurgence-des-correctifs-les-fragilites-de`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSolutions Numériques (French), 26 October: behind the urgency of the PHP2Shell fixes, the fragility of web maintenance. Drawing on the PHP Foundation's account, it says that two years earlier, after a Quarkslab security audit, a developer working for the PHP Foundation had identified the first signs of the memory-handling problem later tied to CVE-2026-109618, that several fixes were studied but each had difficulties (possible incompatibilities, risk of new faults, changes needed across many extensions), that discussions dragged on in a team where only a few developers mastered the mechanisms involved, and that it took work by Calif and OpenAI in August 2026 to show that remote code execution was possible. It then asks who maintains the components the web depends on and with what means, and how companies can patch without interrupting their business.\n\n> Deux ans plus tôt, à la suite d’un audit de sécurité réalisé par Quarkslab, un développeur travaillant pour la PHP Foundation avait identifié les premiers signes d’un problème de gestion de la mémoire, qui sera plus tard associé à CVE-2026-109618.\n\n_Curator's translation:_ \"Two years earlier, following a security audit carried out by Quarkslab, a developer working for the PHP Foundation had identified the first signs of a memory-management problem, later associated with CVE-2026-109618.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr-FR`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "spacemoney-tecnologia-php2shell-falha-critica-php",
   "url": "https://www.spacemoney.com.br/tecnologia/php2shell-falha-critica-php/",
   "publisher": "SpaceMoney",
@@ -25499,6 +25741,56 @@
   "notes_md": "# PHP2Shell Crisis: 2 Critical Flaws Put 70% of Websites at Risk - teleSUR English\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `sk/news/telesurenglish/php2shell-vulnerabilities`, snapshot `20261025T093507Z`. Copied byte for byte; every file's sha256 is in `captures/20261025T093507Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nteleSUR English: PHP2Shell crisis, two critical flaws put 70% of websites at risk. The PHP Foundation released emergency patches after technical details leaked online; the flaws allow unauthenticated remote code execution, prompting emergency patches, mass attacks and global website shutdowns.\n\n> The PHP Foundation released emergency patches for two critical PHP2Shell vulnerabilities after technical details leaked online.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell Crisis: 2 Critical Flaws Put 70% of Websites at Risk - teleSUR English\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "telset-laptop-pc-dua-celah-kritis-php-bocor-seb",
+  "url": "https://telset.id/laptop-pc/dua-celah-kritis-php-bocor-sebelum-patch-situs-web-terancam",
+  "publisher": "Telset.id",
+  "kind": "news",
+  "title": "Dua Kerentanan Kritis PHP Bocor Sebelum Patch Dirilis | Telset.id",
+  "published": "2026-10-22T00:01:37",
+  "captures": [
+   {
+    "stamp": "20261023T160435Z",
+    "files": {
+     "headers.json": {
+      "sha256": "d6548b34b56836fbcf7759404a269f06ca5cf591cc3d6c5f0f26ae5feffc6532",
+      "bytes": 1783
+     },
+     "page.html": {
+      "sha256": "bc7715e659768ef71feb1740c4bfa735480a4c2b7ca0f56c439e0243fc716ba9",
+      "bytes": 130239
+     },
+     "provenance.json": {
+      "sha256": "c99492c1cf4aea28da47e3d69b0ba45d7140d70a7e5588e64eb64fd5db204352",
+      "bytes": 1749
+     },
+     "rendered.html": {
+      "sha256": "f0b452131392e31b60b2f2d29590caca7696b0919e5bfdf9392a0d3b8b87d2cc",
+      "bytes": 134514
+     },
+     "screenshot.jpg": {
+      "sha256": "e215e09df169dcd602d107c91631f54bb8d94e228c43133bd5c0a104b0670f52",
+      "bytes": 661474
+     },
+     "text.txt": {
+      "sha256": "815181e03b96f48f774618be7dc381ea2439fcf490651d45d27f45e661d334b2",
+      "bytes": 7843
+     }
+    },
+    "started_utc": "2026-10-23T16:16:43.832Z",
+    "status": 200,
+    "final_url": "https://telset.id/laptop-pc/dua-celah-kritis-php-bocor-sebelum-patch-situs-web-terancam"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "id",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T160435Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Telset.id (Indonesian), 22 October: two critical PHP flaws leaked before the patch, via the Hacker News forum. It says PHP's advisory announced a patc...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Dua Kerentanan Kritis PHP Bocor Sebelum Patch Dirilis | Telset.id\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/telset/laptop-pc-dua-celah-kritis-php-bocor-sebelum-patch-situs-web`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTelset.id (Indonesian), 22 October: two critical PHP flaws leaked before the patch, via the Hacker News forum. It says PHP's advisory announced a patch at 14:00 UTC on Wednesday 21 October for two flaws rated 9.2 on CVSS 4.0, that the flaws are expected to affect PHP versions 5 to 8, that PHP reserved the right to release earlier if details of either became public or active exploitation appeared, and that no active exploitation had been reported at the time.\n\n> PHP juga menyatakan pihaknya berhak merilis lebih awal apabila detail salah satu kerentanan menjadi publik atau muncul bukti eksploitasi aktif di lapangan.\n\n_Curator's translation:_ \"PHP also stated that it reserves the right to release earlier if details of one of the vulnerabilities become public or evidence of active exploitation appears in the field.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Telset rewrite of BleepingComputer's pre-release story: details leaked via Hacker News (user 'petecooper') and Florian Roth's X post, watchTowr confirmed, the patch was due 21 Oct 14:00 UTC, and there was no active exploitation yet.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Dua Kerentanan Kritis PHP Bocor Sebelum Patch Dirilis | Telset.id\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "tenable-php2shell-faq",
   "url": "https://www.tenable.com/blog/php2shell-cve-2026-109618-cve-2026-109619-frequently-asked-questions-about-critical-php-remote",
   "publisher": "Tenable",
@@ -25578,6 +25870,106 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# php2shell (CVE-2026-109618, CVE-2026-109619): Critical PHP RCE FAQ | Tenable®\n\nCaptured by claude-story-site. Status: captured. Vendor FAQ; notes Cloudflare's rules cover only traffic routed through Cloudflare.\n\n- Captured for the record.\n"
+ },
+ {
+  "slug": "tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere",
+  "url": "https://www.tgrthaber.com/ekonomi/php2shell-alarmi-sifre-bile-gerekmiyor-milyonlarca-liralik-kayip-riski-3366771",
+  "publisher": "TGRT Haber",
+  "kind": "news",
+  "title": "PHP2Shell alarmı: Şifre bile gerekmiyor! Milyonlarca liralık kayıp riski | TGRT Haber",
+  "published": "2026-10-22T09:56:58+03:00",
+  "captures": [
+   {
+    "stamp": "20261023T160435Z",
+    "files": {
+     "headers.json": {
+      "sha256": "eace79478b0038d5c3279bb4f4b581008c4ac9b0bcc87bf7c4002cfe69aa9d66",
+      "bytes": 939
+     },
+     "page.html": {
+      "sha256": "c06a0c0aaf589cb9ed9609591e97419b9eca1ca4fab60be45add56beb4c3161e",
+      "bytes": 174564
+     },
+     "provenance.json": {
+      "sha256": "4d02c7df50e49917eb13c3188e6f5a96dde3bc438b5d67e7171897388ea85870",
+      "bytes": 1835
+     },
+     "rendered.html": {
+      "sha256": "410acc4f891d7d19af570c908afe4a7cd77c88db684ba0f6d2030b0948c1da1e",
+      "bytes": 283922
+     },
+     "screenshot.jpg": {
+      "sha256": "a8015eba5233f3061a72d97e1d773b64a19f249d0eb5c6a8ab88f60f58f823bc",
+      "bytes": 609528
+     },
+     "text.txt": {
+      "sha256": "99c900097bdc9f6ef203ef48517c51370b847192d9939da1fa0b4aeb016be2b6",
+      "bytes": 9360
+     }
+    },
+    "started_utc": "2026-10-23T16:26:02.393Z",
+    "status": 200,
+    "final_url": "https://www.tgrthaber.com/ekonomi/php2shell-alarmi-sifre-bile-gerekmiyor-milyonlarca-liralik-kayip-riski-3366771?s=6"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "tr",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T160435Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). TGRT Haber (Turkey, Turkish), 22 October, by Bengü Sarıkuş: PHP2Shell alert, 'not even a password needed', with the economist Necmettin Batırel explai...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell alarmı: Şifre bile gerekmiyor! Milyonlarca liralık kayıp riski | TGRT Haber\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tr/news/tgrthaber/ekonomi-php2shell-alarmi-sifre-bile-gerekmiyor-milyonlarca-l`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTGRT Haber (Turkey, Turkish), 22 October, by Bengü Sarıkuş: PHP2Shell alert, 'not even a password needed', with the economist Necmettin Batırel explaining the economic risks. It says the flaw is claimed to affect about 70% of websites, is regarded as one of the most serious crises of the last ten years, and could let attackers run commands remotely within seconds without a password. Opinion and explanation; no new facts.\n\n> Ekonomist Necmettin Batırel, Tgrthaber.com Özel Haber Şefi Bengü Sarıkuş’a riskin boyutlarını açıkladı.\n\n_Curator's translation:_ \"The economist Necmettin Batırel explained the scale of the risk to Tgrthaber.com Special News Chief Bengü Sarıkuş.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell alarmı: Şifre bile gerekmiyor! Milyonlarca liralık kayıp riski | TGRT Haber\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `tr`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "thansettakij-economy-672045",
+  "url": "https://www.thansettakij.com/economy/672045",
+  "publisher": "ฐานเศรษฐกิจ",
+  "kind": "news",
+  "title": "“ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”",
+  "published": "2026-10-22 10:40 (page time zone not stated)",
+  "captures": [
+   {
+    "stamp": "20261023T160435Z",
+    "files": {
+     "headers.json": {
+      "sha256": "c50997c11f6a1896101ad38eb4fac68bd75d8c7efb788944eaab70a95648c8a9",
+      "bytes": 901
+     },
+     "page.html": {
+      "sha256": "974c565123ffb789af65f63beb0e32698d49e4709db196f5b3375dfc4b604ec6",
+      "bytes": 202451
+     },
+     "provenance.json": {
+      "sha256": "efb05d24e7a7636dbd7b8c5a3b746972fb65f03d9c05456b27892cdd5854f473",
+      "bytes": 1650
+     },
+     "rendered.html": {
+      "sha256": "98a1533a938f74767348e8499b1f77c978a3f2b339c34673a29d770522828ef3",
+      "bytes": 551319
+     },
+     "screenshot.jpg": {
+      "sha256": "58a2ffe86aae0b63d7a3199b2bbf08501922dc6b7f99c06ab652fa5efaa17b8b",
+      "bytes": 405388
+     },
+     "text.txt": {
+      "sha256": "782fad1c4851da1e591adfbebd727405665fb11f56c3caa78c3c5a832ac48f24",
+      "bytes": 11900
+     }
+    },
+    "started_utc": "2026-10-23T16:25:13.686Z",
+    "status": 200,
+    "final_url": "https://www.thansettakij.com/economy/672045"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "th",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T160435Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Thansettakij (Thailand, Thai), 22 October, by Metha Sakawarat: Minister Pharadon Prissananantakul, who oversees the National Cyber Security Agency (NC...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# “ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `th/news/thansettakij/economy-672045`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThansettakij (Thailand, Thai), 22 October, by Metha Sakawarat: Minister Pharadon Prissananantakul, who oversees the National Cyber Security Agency (NCSA), directed the NCSA to watch for and respond to the critical 'PHP2Shell' flaws; NCSA's ThaiCERT immediately issued a warning to relevant bodies nationwide and raised monitoring. It asks public bodies, organisations and administrators using PHP to inventory their PHP versions (internet-facing systems first), patch as the developer advises, and watch for attacks. Same event as the Post Today item (posttoday-ai-today-750820).\n\n> สกมช. โดยศูนย์ประสานการรักษาความมั่นคงปลอดภัยระบบคอมพิวเตอร์แห่งชาติ (ThaiCERT) ได้ออกประกาศแจ้งเตือนหน่วยงานที่เกี่ยวข้องทั่วประเทศทันที\n\n_Curator's translation:_ \"The NCSA, through the National Computer Emergency Response Team (ThaiCERT), immediately issued a warning to relevant agencies nationwide.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Thansettakij: Minister Paradorn ordered the NCSA to monitor and respond to PHP2Shell on 22 Oct. ThaiCERT issued alerts to agencies nationwide and raised monitoring, focusing on high-risk systems and critical services. It lists three recommended steps.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"“ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `th`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "the-next-web-php2shell-no-confirmed-breaches",
@@ -26047,6 +26439,56 @@
   "notes_md": "# PHP2Shell: What Actually Protects You Before the 14:00 UTC PHP RCE Patch, and What Doesn't\n\nCaptured by claude-story-site. Status: captured. What protects before the 14:00 UTC patch; no compromise confirmed; public exploit code not shown to work; not in KEV.\n\n- Captured for the pre-release state.\n"
  },
  {
+  "slug": "thelec-news-articleview-html",
+  "url": "https://www.thelec.kr/news/articleView.html?idxno=64169",
+  "publisher": "디일렉",
+  "kind": "news",
+  "title": "엔키화이트햇, 'PHP2Shell' 진단 스캐너 무상 공개 < IT‧게임 < 기사본문 - 디일렉(THE ELEC)",
+  "published": "2026-10-23T09:55:05+09:00",
+  "captures": [
+   {
+    "stamp": "20261025T144008Z",
+    "files": {
+     "headers.json": {
+      "sha256": "730ee4c3e5a27fb8ba89eebdd54746010c506c10e850b2e59861964b206ebd53",
+      "bytes": 355
+     },
+     "page.html": {
+      "sha256": "63efbeea5a4bc883da9494a7bdbaf3123c3ca2a13e698cc3834c31d53566c9f8",
+      "bytes": 119768
+     },
+     "provenance.json": {
+      "sha256": "ae90748f437d7b9ca78f7fb8e5acf86fdbef35a552fa4ae11fc4dc701ed7835e",
+      "bytes": 1634
+     },
+     "rendered.html": {
+      "sha256": "42c43bc3562fb42149e4cc125bf8e0826195ebc8221671722f2205fa36a9fabd",
+      "bytes": 132491
+     },
+     "screenshot.jpg": {
+      "sha256": "c3c3234be3ae22c4c062718c03bc3e9a6ea485b880175d21e1f8dab021522d49",
+      "bytes": 315042
+     },
+     "text.txt": {
+      "sha256": "eb1a7b1f287c825f45104eddc9ad21ce40607191cfbb92a41efe3267707a5b6c",
+      "bytes": 5432
+     }
+    },
+    "started_utc": "2026-10-25T14:57:00.049Z",
+    "status": 200,
+    "final_url": "https://www.thelec.kr/news/articleView.html?idxno=64169"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ko",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261025T144008Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). The Elec (Korean), 23 October, by Seong Ji-on: Enki WhiteHat is offering free a diagnostic scanner for PHP2Shell that gives a first judgement of wheth...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# 엔키화이트햇, 'PHP2Shell' 진단 스캐너 무상 공개 < IT‧게임 < 기사본문 - 디일렉(THE ELEC)\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `kr/news/thelec/news-articleview-html`, snapshot `20261025T144008Z`. Copied byte for byte; every file's sha256 is in `captures/20261025T144008Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThe Elec (Korean), 23 October, by Seong Ji-on: Enki WhiteHat is offering free a diagnostic scanner for PHP2Shell that gives a first judgement of whether the flaws are present. It checks only the PHP version and related settings, without attack code, by entering a URL with no login, and companies that do not use its Offen ASM product can also use it. It says, per Enki WhiteHat, all unpatched versions from PHP 5.4 to 8.5.11 are affected, and describes the analysis report published with it (causes of both flaws, affected systems and versions, immediate mitigations, how to apply the official patch). Same announcement as the Electronic Times item (etnews-20261023000089); noted as material only: the vault does not run such tools.\n\n> 스캐너는 실제 공격 코드를 쓰지 않고 PHP 버전과 관련 설정만 확인해 위험 여부를 판별한다.\n\n_Curator's translation:_ \"The scanner does not use actual attack code; it determines risk by checking only the PHP version and related settings.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"엔키화이트햇, 'PHP2Shell' 진단 스캐너 무상 공개 < IT‧게임 < 기사본문 - 디일렉(THE ELEC)\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ko`. The footer carries a copyright line ('무단전재 및 재배포, AI학습 및 활용 금지': no reproduction, redistribution, or AI training or use). It is a rights notice, not an instruction to act; recorded here and flagged to the editor. Nothing else addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "themandarin-322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner",
   "url": "https://www.themandarin.com.au/322640-asd-rushes-out-critical-alert-on-unpatched-php-vulnerability/",
   "publisher": "The Mandarin",
@@ -26095,6 +26537,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# ASD rushes out ‘critical’ alert on unpatched PHP vulnerability\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `au/news/themandarin/322640-asd-rushes-out-critical-alert-on-unpatched-php-vulner`, snapshot `20261023T080331Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T080331Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nJulian Bajkowski: the Australian Signals Directorate put government and business on alert on Wednesday afternoon, quoting the PHP Foundation's advance notice and telling organisations to watch for the patch release. The standfirst says GovCMS was one of thousands of web back ends left exposed. The page is partly paywalled in the capture.\n\n> PHP Foundation has published advanced notice of critical vulnerabilities\n\n## Why it is here\n\nNot from the promotion queue. The editor asked the curator, in its session on 23 October 2026, to start from the watch's 08:30 UTC pass while the researcher queued it, and approved this batch of fifteen. Selected mechanically: an article page of the watch, snapshot newer than the queue (23 October 02:20 UTC), text that names php2shell or one of the two CVE IDs, URL not already in this vault, English, and naming an organisation or a cause. Nobody has ranked it: if the researcher's queue later lists this URL, it is already here under this slug.\n\n## Capture notes\n\nLanguage `en`; the text extract is the watch reader's, the page as served is in `captures/20261023T080331Z/page.html`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "thenextweb-wikipedia-ref-9-dation-structural-failur",
+  "url": "https://thenextweb.com/news/php-foundation-structural-failure-2024-flaw-leak",
+  "publisher": "The Next Web",
+  "kind": "news",
+  "title": "PHP knew about one of the flaws in 2024 but could not agree a fix",
+  "published": "2026-10-21T16:02:04+00:00",
+  "captures": [
+   {
+    "stamp": "20261025T114552Z",
+    "files": {
+     "headers.json": {
+      "sha256": "017b0c257017055a2d046d9eb280a4eec9c20ac4a94def0e9e3a3af2d7bdf4a8",
+      "bytes": 6341
+     },
+     "page.html": {
+      "sha256": "cec88d6af74310a0dfcdf1856b500251d7d842d1c44c0db5956d9cfc897e43e9",
+      "bytes": 186983
+     },
+     "provenance.json": {
+      "sha256": "8150084b61f7b57f56a4f1882e8166c12233c833e3c041bdffd408c945baffe6",
+      "bytes": 1729
+     },
+     "rendered.html": {
+      "sha256": "cd019ddde23fc29d4e3ba980a7fb8749f80bae11390dabc651cb924d67c2681f",
+      "bytes": 189355
+     },
+     "screenshot.jpg": {
+      "sha256": "86201576b81dc923caea5bfbc870285b600b9aa49b19c5b14b4a7954a148ede5",
+      "bytes": 403713
+     },
+     "text.txt": {
+      "sha256": "1bc9ed0181f47f315a740b93d05a6f574f5485d1f57f8b69ba25e820bf7f0c2f",
+      "bytes": 5665
+     }
+    },
+    "started_utc": "2026-10-25T11:45:55.971Z",
+    "status": 200,
+    "final_url": "https://thenextweb.com/news/php-foundation-structural-failure-2024-flaw-leak"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261025T114552Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). The Next Web (English), 21 October: 'PHP knew about one of the flaws in 2024 but could not agree a fix', reporting a PHP Foundation blog post publishe...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP knew about one of the flaws in 2024 but could not agree a fix\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/thenextweb/wikipedia-ref-9-dation-structural-failure-2024-flaw-leak`, snapshot `20261025T114552Z`. Copied byte for byte; every file's sha256 is in `captures/20261025T114552Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThe Next Web (English), 21 October: 'PHP knew about one of the flaws in 2024 but could not agree a fix', reporting a PHP Foundation blog post published on the day of the release. It says a core developer first spotted the memory-handling bug in 2024 while fixing a separate issue from PHP's first external security audit, that someone theorised a possible exploit but nobody found a concrete way in, and that the fix then stalled for months because the security team's competing repairs each carried a cost (one broke backward compatibility, one added a denial-of-service risk, one forced changes on thousands of third-party extensions). The Foundation wrote that the delay was a structural failure caused by the team's decision process and lack of resources. On the leak: on 20 October at about 15:00 UTC the two CVE identifiers began circulating on forums and social media with a wrong release time and a wrong severity score of 10.0 (the real figure is 9.2), with no technical details at that point; the Foundation brought the announcement forward and moved the release up a day, from 22 to 21 October; at about 20:00 UTC Calif mistakenly published a video of its proof of concept working against real targets, deleted but copied, which sped up public exploit code the next day; and more than six hours before the release Chainguard published built images containing the fix, which the Foundation says 'disregarded weeks of work by many parties toward a coordinated disclosure'. The team saw no working exploit by the time of release. The post also asks for money: the team published 15 CVEs since the start of July and worked through more than 100 others that proved invalid or duplicates.\n\n> the delay was a structural failure, caused by both the security team’s decision process and its lack of resources\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP knew about one of the flaws in 2024 but could not agree a fix\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "therecord-php-foundation-statement",
@@ -26381,6 +26873,144 @@
   "notes_md": "# Serious language programme PHP's security flaw leaves internet websites at major risk, reports dpa | The Star\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `my/news/thestar/aseanplus-aseanplus-news-2026-10-22-serious-language-program`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThe Star (Malaysia), a dpa wire report of 22 October: PHP's security flaw leaves websites at major risk. Security experts warned of two critical vulnerabilities in the core of PHP, dubbed PHP2Shell and registered as CVE-2026-109618 and CVE-2026-109619.\n\n> Security experts warned of two critical vulnerabilities in the core of the programming language, dubbed \"PHP2Shell\" and registered under the official identifiers CVE-2026-109618 and CVE-2026-109619.\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ The Star (Malaysia) runs a dpa wire story from Berlin: PHP2Shell shakes websites worldwide, CERT-EU urges isolation, and the patch is out. Heise Security warned that working exploit scripts would appear within hours and advised disconnecting PHP servers until patched.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 3): Mentions CVE-2026-109618/109619 or php2shell: \"Serious language programme PHP's security flaw leaves internet websites at major risk, reports dpa | The Star\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "tiasang-lo-hong-php-ai-khien-dieu-bi-lang-quen-t",
+  "url": "https://tiasang.com.vn/lo-hong-php-ai-khien-dieu-bi-lang-quen-thanh-moi-de-doa-5135729.html",
+  "publisher": "Tia Sáng",
+  "kind": "news",
+  "title": "Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261023T160435Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2c004ced4fc129b01d96818b80112309dd714140bcfba514f81fc169f5820aa2",
+      "bytes": 1758
+     },
+     "page.html": {
+      "sha256": "8e9f81344cf949c2dab97abd28f859af5cfab0ae40408140ce0974c3d7fbefcd",
+      "bytes": 194007
+     },
+     "provenance.json": {
+      "sha256": "48df29c3fdcff0a5e3fa7c0039ac4c2cfd3b335e02d7b3b941f916c33865dd9b",
+      "bytes": 1781
+     },
+     "rendered.html": {
+      "sha256": "0b5817e1dc541694be86fd9f478f0e3b11d9a3c7ea890136c3353727b0801088",
+      "bytes": 398685
+     },
+     "screenshot.jpg": {
+      "sha256": "4c0d28855af00a794806adbc621d4c40a25a0b4aa22068273078cb6a1de730f4",
+      "bytes": 953423
+     },
+     "text.txt": {
+      "sha256": "7b279f0fc3928e58f4e3c23f84ea63a0ef75fef70df77dc620888e02dae7e756",
+      "bytes": 22053
+     }
+    },
+    "started_utc": "2026-10-23T16:29:05.639Z",
+    "status": 200,
+    "final_url": "https://tiasang.com.vn/lo-hong-php-ai-khien-dieu-bi-lang-quen-thanh-moi-de-doa-5135729.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "vi",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T160435Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Tia Sáng (Vietnam, Vietnamese), a long feature, 'PHP vulnerability: AI turns what was forgotten into a threat'. It says many European bodies proactive...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `vn/news/tiasang/lo-hong-php-ai-khien-dieu-bi-lang-quen-thanh-moi-de-doa-5135`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTia Sáng (Vietnam, Vietnamese), a long feature, 'PHP vulnerability: AI turns what was forgotten into a threat'. It says many European bodies proactively disconnected or closed sites after information on the two flaws leaked before patches could be applied, quotes Professor Phan Duong Hieu of the Paris Polytechnic's telecom school on the unauthenticated remote control risk, says the flaws were found from August while the PHP team prepared patches quietly, that governments worry hackers could use AI to shorten exploitation, and that an estimated 1.5 million of 2.6 million servers still run unpatched PHP. The explanation of PHP and the AI discussion follow; no new facts beyond the Censys-derived estimate already held.\n\n> Ước tính hiện có khoảng 1,5 triệu trong số 2,6 triệu máy chủ đang sử dụng phiên bản PHP chưa vá lỗi.\n\n_Curator's translation:_ \"It is estimated that about 1.5 million of 2.6 million servers are currently using unpatched PHP versions.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Tia Sang (Vietnam) feature: European agencies, schools and hospitals went offline. Prof. Phan Duong Hieu explains the risk, and an estimate says about 1.5 million of 2.6 million servers still run unpatched PHP. It highlights that Calif is led by Vietnamese engineer Duong Ngoc Thai and covers the history from Esser in 2004 to OSTIF/Quarkslab in 2024.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `vi`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "tirto-website-sedunia-geger-ditemukan-celah-ke",
+  "url": "https://tirto.id/website-sedunia-geger-ditemukan-celah-keamanan-di-php-ada-bug-apa-hEbc",
+  "publisher": "Tirto.id",
+  "kind": "news",
+  "title": "Web Sedunia Geger Ditemukan Celah Keamanan di PHP, Ada Bug Apa?",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261023T160435Z",
+    "files": {
+     "headers.json": {
+      "sha256": "ecb452f95ee7d7571cab6b93001bfdff027669a5ff612a6f70da0b392197c25f",
+      "bytes": 1208
+     },
+     "page.html": {
+      "sha256": "9c40c0e68265b1e2c5cacba1eec37690da8f41866379feef6ea174fea319f057",
+      "bytes": 105829
+     },
+     "provenance.json": {
+      "sha256": "d94615e6bf2f55fc37587e8d28366af2cd4b34d8b4e244478304677b22f7736c",
+      "bytes": 1744
+     },
+     "rendered.html": {
+      "sha256": "08e9400ae1598a7e38c27a7da4625aab607d77df806c98e474995f5c7db4ed31",
+      "bytes": 113150
+     },
+     "screenshot.jpg": {
+      "sha256": "c49537e4a9e1c8ebc645b7c10a16ea45190409258e656c8f9466927b7efbda36",
+      "bytes": 598473
+     },
+     "text.txt": {
+      "sha256": "0df40bc3b926c3afaeb16fd2de610316baba98666c8347381c224cea709237c9",
+      "bytes": 8812
+     }
+    },
+    "started_utc": "2026-10-23T16:16:43.964Z",
+    "status": 200,
+    "final_url": "https://tirto.id/website-sedunia-geger-ditemukan-celah-keamanan-di-php-ada-bug-apa-hEbc"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "id",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T160435Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Tirto.id (Indonesia), an explainer, 'Web worldwide in uproar over PHP flaw, what bug is it?'. It says a PHP bug called PHP2Shell is reported to let ha...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Web Sedunia Geger Ditemukan Celah Keamanan di PHP, Ada Bug Apa?\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/tirto/website-sedunia-geger-ditemukan-celah-keamanan-di-php-ada-bu`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTirto.id (Indonesia), an explainer, 'Web worldwide in uproar over PHP flaw, what bug is it?'. It says a PHP bug called PHP2Shell is reported to let hackers into systems and read memory holding sensitive information, including passwords; that the flaw was found by a joint team of AI and security companies including OpenAI, Wiz (Google's) and Calif; that PHP runs about 70% of websites; and quotes deVere Group's chief executive Nigel Green (via CNN) on the risk to places where people spend money online. No new facts.\n\n> Bug tersebut, yang disebut PHP2Shell, dilaporkan memungkinkan peretas masuk dalam sistem dan membaca memori berisi informasi sensitif, termasuk kata sandi.\n\n_Curator's translation:_ \"The bug, called PHP2Shell, is reported to allow hackers to enter systems and read memory containing sensitive information, including passwords.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Tirto rewrite of CNN: government sites in the US, UK, France, Denmark, Finland and the Netherlands were suspended. It names Japanese companies ANA, JR West and MUFG as affected, plus Ireland's The Journal and Wikimedia, and quotes deVere Group's Nigel Green.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Web Sedunia Geger Ditemukan Celah Keamanan di PHP, Ada Bug Apa?\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "topagrar-betriebsleitung-news-php-sicherheitsluck",
+  "url": "https://www.topagrar.com/betriebsleitung/news/php-sicherheitslucke-was-landwirte-mit-hofwebseite-jetzt-wissen-mussen-20030467.html",
+  "publisher": "top agrar",
+  "kind": "news",
+  "title": "PHP-Sicherheitslücke: Was Landwirte mit Hofwebseite jetzt wissen müssen | top agrar",
+  "published": "2026-10-22T11:55:00+02:00",
+  "captures": [
+   {
+    "stamp": "20261023T232528Z",
+    "files": {
+     "headers.json": {
+      "sha256": "28829957f75098dac3573ea906a2444ae7c80e23ea516d7047e67de0d4d95c67",
+      "bytes": 1852
+     },
+     "provenance.json": {
+      "sha256": "a518d17f680e8ccd383738b4c30dd41aa6e84563c043f14a22b28223c88ff9e6",
+      "bytes": 1626
+     },
+     "text.txt": {
+      "sha256": "28e10d0ef3eb49719e7bfa4e82d274429905e0340a020e7fc95d82132223da0f",
+      "bytes": 9480
+     }
+    },
+    "started_utc": "2026-10-23T23:27:23.649Z",
+    "status": 200,
+    "final_url": "https://www.topagrar.com/betriebsleitung/news/php-sicherheitslucke-was-landwirte-mit-hofwebseite-jetzt-wissen-mussen-20030467.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "de",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T232528Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). top agrar (German farming trade site), 22 October: what farmers with a farm website need to know about the PHP flaw. It repeats the BSI's official war...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP-Sicherheitslücke: Was Landwirte mit Hofwebseite jetzt wissen müssen | top agrar\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `at/news/topagrar/betriebsleitung-news-php-sicherheitslucke-was-landwirte-mit`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\ntop agrar (German farming trade site), 22 October: what farmers with a farm website need to know about the PHP flaw. It repeats the BSI's official warning at level '3 / Orange', the remote-code-execution risk and the fixes published on Wednesday afternoon, and quotes the BSI's vice-president Thomas Caspers (via Tagesschau) that with the security updates attackers are also enabled, simply by analysing them, to attack sites that have not been patched, so the BSI advises operators to patch quickly. The page also shows unrelated teasers (cooling units over 50 degrees; cyber attacks on hundreds of French supermarkets).\n\n> zitierte die Tagesschau den Vizepräsidenten des Bundesamts für Sicherheit in der Informationstechnik, Thomas Caspers.\n\n_Curator's translation:_ \"Tagesschau quoted the vice-president of the Federal Office for Information Security, Thomas Caspers.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Top agrar explains the PHP flaw for farmers who run farm websites or online shops, citing the BSI warning level '3 / Orange' and BSI vice-president Caspers via Tagesschau. It gives a template email to send to hosting providers and advice on whether to take a site offline.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP-Sicherheitslücke: Was Landwirte mit Hofwebseite jetzt wissen müssen | top agrar\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `de`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "tpo-nl-digid-offline",
   "url": "https://tpo.nl/2026/10/21/php2shell-websites-offline-digid-ncsc/",
   "publisher": "TPO.nl",
@@ -26530,6 +27160,56 @@
   "notes_md": "# 70% Websites At Security Risk Due To Critical PhP Vulnerability: PHP2Shell - Trak.in - Indian Business of Tech, Mobile & Startups\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `in/news/trak/stories-70-websites-at-security-risk-due-to-critical-php-vul`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTrak.in (India), 22 October: researchers at Wiz uncovered critical PHP vulnerabilities, dubbed PHP2Shell, that could let attackers run malicious code on vulnerable servers without authentication and expose sensitive information; the headline says 70% of websites are at risk.\n\n> Cybersecurity researchers at Wiz have uncovered critical vulnerabilities in PHP, the programming language that powers a large portion of the internet.\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Trak.in (Indian business site) English explainer based on Wiz research: the two CVEs, 70% figure, AI tools used, and patching advice.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 3): Mentions CVE-2026-109618/109619 or php2shell: \"70% Websites At Security Risk Due To Critical PhP Vulnerability: PHP2Shell - Trak.in - Indian Business of Tech, Mobile & Startups\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "trendmicro-ja-jp-about-newsroom-press-releases-2026",
+  "url": "https://www.trendmicro.com/ja_jp/about/newsroom/press-releases/2026/pr-20261023-01.html",
+  "publisher": "トレンドマイクロ",
+  "kind": "news",
+  "title": "トレンドマイクロ、PHPの重大な脆弱性「PHP2Shell」への支援・対応策を発表 | トレンドマイクロ (JP)",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261024T083755Z",
+    "files": {
+     "headers.json": {
+      "sha256": "1ab6961f42dd9f9f95edaba5b1befbcf55e315debb7f389e294becdc1b6c6728",
+      "bytes": 961
+     },
+     "page.html": {
+      "sha256": "c37e02ecd7d13b419f13fe6f2a9745deff53889dc1efd8ac6f7f93f935674e5d",
+      "bytes": 86216
+     },
+     "provenance.json": {
+      "sha256": "4c8de4751f524032ffd49f8109f9fb90cf1dfdc1af38595b4dcfc2116bd5b0a2",
+      "bytes": 1825
+     },
+     "rendered.html": {
+      "sha256": "c3ba754fda3d32b258d89c4f2c66ccb59f17209ef2b1aa222407b001a7f986b7",
+      "bytes": 143987
+     },
+     "screenshot.jpg": {
+      "sha256": "caf6371a7c079d40487af5824253a9f9d8b2e838b43b23533035c52e20a03caa",
+      "bytes": 588986
+     },
+     "text.txt": {
+      "sha256": "949a7f1314773718d89d8e117c72f102c36677e39984c3948a639e3d36d9c609",
+      "bytes": 9942
+     }
+    },
+    "started_utc": "2026-10-24T08:46:10.148Z",
+    "status": 200,
+    "final_url": "https://www.trendmicro.com/ja_jp/about/newsroom/press-releases/2026/pr-20261023-01.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ja",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261024T083755Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Trend Micro Japan (Japanese), 23 October: a press release announcing support measures for PHP2Shell, including a free 'PHP2Shell Exposure Checker' (re...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# トレンドマイクロ、PHPの重大な脆弱性「PHP2Shell」への支援・対応策を発表 | トレンドマイクロ (JP)\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/trendmicro/ja-jp-about-newsroom-press-releases-2026-pr-20261023-01-html`, snapshot `20261024T083755Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T083755Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTrend Micro Japan (Japanese), 23 October: a press release announcing support measures for PHP2Shell, including a free 'PHP2Shell Exposure Checker' (reads a public site's HTTP headers to indicate whether it may be affected) and a PHP web shield for small businesses. It says the flaw details leaked and exploit code was published before the fix, that initial exploitation attempts have been reported, and in a footnote that successful exploitation in the wild had not been confirmed by independent verification (TrendAI security blog, 22 October); it also says results are an indication from externally visible information such as the PHP version, since Linux distributions may ship fixes without changing the version string. Vendor marketing; noted as material only: the vault does not run such tools.\n\n> 実環境での悪用成功は、独立した検証によって確認されていません\n\n_Curator's translation:_ \"Successful exploitation in real environments has not been confirmed by independent verification.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"トレンドマイクロ、PHPの重大な脆弱性「PHP2Shell」への支援・対応策を発表 | トレンドマイクロ (JP)\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ja`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "tugatech-t93092-milhoes-de-servidores-php-expostos-ao-risco",
   "url": "https://tugatech.com.pt/t93092-milhoes-de-servidores-php-expostos-ao-risco-da-falha-php2shell",
   "publisher": "TugaTech",
@@ -26574,6 +27254,156 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Milhões de servidores PHP expostos ao risco da falha PHP2Shell | TugaTech\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `pt/news/tugatech/t93092-milhoes-de-servidores-php-expostos-ao-risco-da-falha`, snapshot `20261022T181608Z`. Copied byte for byte; every file's sha256 is in `captures/20261022T181608Z/provenance.json`. Publisher: TugaTech. Language: pt. URL: https://tugatech.com.pt/t93092-milhoes-de-servidores-php-expostos-ao-risco-da-falha-php2shell\n\n## What the page says\n\n_The watch reader's English summary (researcher@php.newsroom, languages pass of 22 October 2026), not the publisher's words:_\n\nTugaTech reports a global VirusTotal analysis of PHP exposure: about 5.1 million PHP IPs, of which 3.8 million have open ports and 1.1 million disclose their version. Only about 272,000 run supported branches, while about 758,000 run end-of-life versions. It adds a breakdown by web server, app and country, plus about 5,700 malicious PHP servers.\n\n## Verbatim quotes, with the watch reader's translation\n\nEach quote is in the snapshot as served. The English is the source watch reader's translation (`translations/pt/news/tugatech/t93092-milhoes-de-servidores-php-expostos-ao-risco-da-falha.json`), not the publisher's and not checked word for word by the curator.\n\n**number**: VirusTotal mapped about 5.1 million IPs running PHP, about 3.8 million with at least one open port; four in five hide their version.\n\n> Mapeando cerca de 5,1 milhões de endereços IP que correm PHP, a investigação indica que aproximadamente 3,8 milhões mantêm pelo menos uma porta aberta.\n\n_Watch reader's translation:_ Mapping around 5.1 million IP addresses running PHP, the investigation indicates that approximately 3.8 million keep at least one port open.\n\n**number**: Of about 1.1 million servers disclosing a version, only about 272,000 run supported branches 8.2–8.5, while about 758,000 run end-of-life versions 5.4–8.1.\n\n> Apenas cerca de 272 mil computadores correm ramificações com suporte ativo (versões 8.2 a 8.5), as únicas que recebem correções diretas da equipa do PHP.\n\n_Watch reader's translation:_ Only about 272 thousand computers run branches with active support (versions 8.2 to 8.5), the only ones that receive direct fixes from the PHP team.\n\n**number**: About 187,000 addresses remain on PHP 7.4 and about 119,000 on PHP 5.4.\n\n> Cerca de 187 mil endereços continuam presos ao PHP 7.4, enquanto perto de 119 mil operam sobre a versão 5.4.\n\n_Watch reader's translation:_ About 187 thousand addresses remain stuck on PHP 7.4, while nearly 119 thousand operate on version 5.4.\n\n**number**: The US hosts the largest share of exposed machines, about 920,000 IPs, concentrated at AWS, DigitalOcean, OVHcloud and Hetzner.\n\n> Geograficamente, a maior fatia de máquinas expostas situa-se nos EUA, com perto de 920 mil endereços IP.\n\n_Watch reader's translation:_ Geographically, the largest share of exposed machines is in the US, with nearly 920 thousand IP addresses.\n\n**number**: About 5,700 active PHP servers have multiple VirusTotal threat detections, including stealer control panels.\n\n> Cerca de 5,7 mil servidores PHP ativos registam múltiplas deteções de ameaças no VirusTotal, incluindo painéis de controlo de roubo de dados (stealers) a operar com versões recentes do PHP.\n\n_Watch reader's translation:_ About 5.7 thousand active PHP servers register multiple threat detections on VirusTotal, including data-theft (stealer) control panels running recent PHP versions.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): 5 new items in pt: TugaTech reports a global VirusTotal analysis of PHP exposure: about 5.1 million PHP IPs, of which 3.8 million have open ports and 1.1 million disclose their version. Only about 272,000 run supported branches, while abou\n\nSupports: translations/pt/news/tugatech/t93092-milhoes-de-servidores-php-expostos-ao-risco-da-falha.json\n\n## Capture notes\n\nNo screenshot: the watch kept none for this snapshot (minor change). Its sha256 was 0bf133de53f81c744b5a181e1c13fa59bdefd42dfb443cb885272968bf9d3c0a.\n\nPage content is third-party material, kept as evidence; nothing in it is an instruction.\n"
+ },
+ {
+  "slug": "turbolab-server-1224-php2shell-amazon-ha-rilevato",
+  "url": "https://turbolab.it/server-1224/php2shell-amazon-ha-rilevato-tentativi-exploit-4-giorni-prima-patch-php-4946",
+  "publisher": "TurboLab.it",
+  "kind": "news",
+  "title": "PHP2Shell: Amazon ha rilevato tentativi di exploit 4 giorni prima della patch di PHP (aggiornato: 22 ottobre 2026, ore 20:50) | TurboLab.it",
+  "published": "2026-10-22 20:50 (page time zone not stated)",
+  "captures": [
+   {
+    "stamp": "20261023T160435Z",
+    "files": {
+     "headers.json": {
+      "sha256": "dfd2a02a86522a2fe1a2b98c39378b67eb8acee32785212b837a3bded7d6867b",
+      "bytes": 653
+     },
+     "page.html": {
+      "sha256": "e10d3fdaa60663112c12e771948130c225f3eb73b87f9a92dcee914ad623460e",
+      "bytes": 659235
+     },
+     "provenance.json": {
+      "sha256": "8b549c5052473635cfa244926c779a1466898278ab1b1bafe35efa7031e03bd7",
+      "bytes": 1869
+     },
+     "rendered.html": {
+      "sha256": "b22e565c3389f8a029041c927098827231b27294a3e6f94656c05c1824a33b96",
+      "bytes": 672612
+     },
+     "screenshot.jpg": {
+      "sha256": "403ecfb8ecbc539b747d64f4c591c74999ba2ec6a7f83a3ed836c56a538e1caf",
+      "bytes": 895088
+     },
+     "text.txt": {
+      "sha256": "1fb6f3a2b702e7ac6d9aa3f64ed588a1c883ebe0b5ba664548e64ef338deb734",
+      "bytes": 8512
+     }
+    },
+    "started_utc": "2026-10-23T16:19:08.760Z",
+    "status": 200,
+    "final_url": "https://turbolab.it/server-1224/php2shell-amazon-ha-rilevato-tentativi-exploit-4-giorni-prima-patch-php-4946"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "it",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261023T160435Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). TurboLab.it (Italian), updated 22 October 20:50, by massimo.valenti ('human author, AI support'): Amazon detected exploit attempts four days before th...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell: Amazon ha rilevato tentativi di exploit 4 giorni prima della patch di PHP (aggiornato: 22 ottobre 2026, ore 20:50) | TurboLab.it\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/turbolab/server-1224-php2shell-amazon-ha-rilevato-tentativi-exploit-4`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTurboLab.it (Italian), updated 22 October 20:50, by massimo.valenti ('human author, AI support'): Amazon detected exploit attempts four days before the patch. It says an Amazon honeypot already recorded a PHP2Shell attempt on 17 October, found by analysts on Wednesday by looking back over MadPot sensor data, from an IP address tied to a commercial anonymisation network and geolocated in Australia, and quotes Amazon's CISO CJ Moses that a honeypot targeted from an anonymised IP while the flaw was still under embargo suggests an attacker was behind it, though it is unclear how they obtained exploit information before disclosure. The practical lesson drawn is that the advisory date is not the start of the risk, so administrators should check logs back from 17 October.\n\n> La richiesta proveniva da un indirizzo IP associato a una rete commerciale di anonimizzazione, geolocalizzato in Australia.\n\n_Curator's translation:_ \"The request came from an IP address associated with a commercial anonymisation network, geolocated in Australia.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: Amazon ha rilevato tentativi di exploit 4 giorni prima della patch di PHP (aggiornato: 22 ottobre 2026, ore 20:50) | TurboLab.it\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `it`. The byline reads 'Autore umano, supporto AI' (human author, AI support), a statement about how the article was made. Nothing in the article text addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9",
+  "url": "https://turkey-breaking.com/News/2026/10/25/%d8%ab%d8%ba%d8%b1%d8%a9-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%81%d9%8a-php-%d8%aa%d8%aa%d9%8a%d8%ad-%d8%aa%d9%86%d9%81%d9%8a%d8%b0-%d8%b4%d9%8a%d9%81%d8%b1%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a8%d9%8f%d8%b9/",
+  "publisher": "تركيا عاجل",
+  "kind": "news",
+  "title": "ثغرة جديدة في PHP تتيح تنفيذ شيفرات عن بُعد.. لماذا لا يحتاج بعض المسؤولين إلى إجراء إضافي؟",
+  "published": "2026-10-25 07:51 (page time zone not stated)",
+  "captures": [
+   {
+    "stamp": "20261025T093507Z",
+    "files": {
+     "headers.json": {
+      "sha256": "b56c3a91d7ad1321600b02fab05bca0ef2629e8fbc5d0ebc3775da21e1437f07",
+      "bytes": 1125
+     },
+     "page.html": {
+      "sha256": "4276cdd5fa756e51667f8deccb46444beccab9a23b4f599333b5616bb276b9b3",
+      "bytes": 130616
+     },
+     "provenance.json": {
+      "sha256": "f3d0fc7d1f2abd7d408eb4e5bf535f67b5d5fd9b74e4957e363fe55650ec1500",
+      "bytes": 2179
+     },
+     "rendered.html": {
+      "sha256": "ff1d444ad2ab5f1909e10cef91676c56b1c742dd9215988b8ead5b3bdcf14549",
+      "bytes": 618558
+     },
+     "screenshot.jpg": {
+      "sha256": "a2549f815c6284ff987630f9ebf9faf2cad7c05c5dfba0adfa453de235fe2b02",
+      "bytes": 305529
+     },
+     "text.txt": {
+      "sha256": "b8d2060e6c49ff425e5e2b4acb811b0426fca145e7feee935a34dc5089430c6e",
+      "bytes": 8716
+     }
+    },
+    "started_utc": "2026-10-25T09:43:32.874Z",
+    "status": 200,
+    "final_url": "https://turkey-breaking.com/News/2026/10/25/%d8%ab%d8%ba%d8%b1%d8%a9-%d8%ac%d8%af%d9%8a%d8%af%d8%a9-%d9%81%d9%8a-php-%d8%aa%d8%aa%d9%8a%d8%ad-%d8%aa%d9%86%d9%81%d9%8a%d8%b0-%d8%b4%d9%8a%d9%81%d8%b1%d8%a7%d8%aa-%d8%b9%d9%86-%d8%a8%d9%8f%d8%b9/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ar",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261025T093507Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Turkey Breaking (Arabic, relaying Sözcü), 25 October: a new PHP vulnerability, CVE-2026-115560, was disclosed two days after the urgent PHP2Shell fixe...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# ثغرة جديدة في PHP تتيح تنفيذ شيفرات عن بُعد.. لماذا لا يحتاج بعض المسؤولين إلى إجراء إضافي؟\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/turkey-breaking/news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9-d8-ac-d8-af-d9-8a-d8`, snapshot `20261025T093507Z`. Copied byte for byte; every file's sha256 is in `captures/20261025T093507Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTurkey Breaking (Arabic, relaying Sözcü), 25 October: a new PHP vulnerability, CVE-2026-115560, was disclosed two days after the urgent PHP2Shell fixes. The PHP developers judged that the configurations that cause it are unlikely to be used in real applications, so no emergency patch has been issued and the fix is expected in the next regular bug-fix release; as of the article PHP had not disclosed the affected versions, the release that will carry the fix or the severity, and it is still unknown whether the new flaw shares a root cause with one of the earlier PHP2Shell flaws. A mitigation the PHP team gave on 21 October already covers it for administrators who applied it. The conditions for exploitation that the article lists are left out of the notes.\n\n> وحُددت الثغرة الجديدة بالرقم CVE-2026-115560، فيما قدّر مطورو PHP أن احتمال استخدام الإعدادات المسببة لها في التطبيقات الفعلية منخفض.\n\n_Curator's translation:_ \"The new vulnerability was identified as CVE-2026-115560, while PHP developers estimated that the likelihood of the settings that cause it being used in real applications is low.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"ثغرة جديدة في PHP تتيح تنفيذ شيفرات عن بُعد.. لماذا لا يحتاج بعض المسؤولين إلى إجراء إضافي؟\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939",
+  "url": "https://turkiyedeisdunyasi.com/php2shell-turkiye-avrupa-siber-142939/",
+  "publisher": "turkiyedeisdunyasi",
+  "kind": "news",
+  "title": "Türkiye, PHP2Shell tehdidinde Avrupa’yı geride bıraktı - Türkiye'de İş Dünyası",
+  "published": "2026-10-23T12:10:03+03:00",
+  "captures": [
+   {
+    "stamp": "20261026T121439Z",
+    "files": {
+     "headers.json": {
+      "sha256": "1080c4f7d61602e411f9910d014e3d6f4d5ebd788b9628f34e069f0905c27794",
+      "bytes": 3287
+     },
+     "page.html": {
+      "sha256": "2ede440b739a7b28cc64373bb4cdceec0a7115558d5af735ea900f783fe3b6a1",
+      "bytes": 191280
+     },
+     "provenance.json": {
+      "sha256": "9a0af102c10bfbd1fd23cf1c4658f5252b56b949155065ede6424b9b06b65844",
+      "bytes": 1736
+     },
+     "rendered.html": {
+      "sha256": "5dcfdc57b46b1fc099934d0d17b657d96b5a25c7612460ea98ab8e7bd208fbe4",
+      "bytes": 229454
+     },
+     "screenshot.jpg": {
+      "sha256": "5515c5ee58c6f73f9fb1a76a861a920b2710af8d5284dc2890635bdf11ec13a0",
+      "bytes": 791938
+     },
+     "text.txt": {
+      "sha256": "1e307b7b74a2d10aef289c79896d0f782e0b1d0b5e81db504ae2cc6f478ae5a7",
+      "bytes": 9364
+     }
+    },
+    "started_utc": "2026-10-26T12:37:39.427Z",
+    "status": 200,
+    "final_url": "https://turkiyedeisdunyasi.com/php2shell-turkiye-avrupa-siber-142939/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "tr",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T121439Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Türkiye'de İş Dünyası (Turkey, Turkish), updated 23 October: 'Turkey outdid Europe on the PHP2Shell threat', on an analysis by the fintech company Onl...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Türkiye, PHP2Shell tehdidinde Avrupa’yı geride bıraktı - Türkiye'de İş Dünyası\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tr/news/turkiyedeisdunyasi/php2shell-turkiye-avrupa-siber-142939`, snapshot `20261026T121439Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T121439Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTürkiye'de İş Dünyası (Turkey, Turkish), updated 23 October: 'Turkey outdid Europe on the PHP2Shell threat', on an analysis by the fintech company Onlayer of about 1.4 million merchant sites in 20 markets. It says 35.8% of merchant sites in Turkey were affected by PHP2Shell against a 45.7% average abroad and 56.7% in Europe, that the share of updated sites rose about fivefold in under 24 hours after the fixes, that 36.2% of Turkish merchant sites use PHP (about 64% use other technologies and are unaffected) and that 98.9% of PHP-using sites were on affected versions, which it attributes to the flaw covering most PHP versions published since 2012.\n\n> Araştırmaya göre Türkiye’deki üye işyeri sitelerinin yüzde 35,8’i PHP2Shell güvenlik açığından etkilenirken, yurt dışı ortalaması yüzde 45,7 olarak hesaplandı.\n\n_Curator's translation:_ \"According to the research, 35.8% of merchant sites in Turkey are affected by the PHP2Shell vulnerability, while the average abroad was calculated at 45.7%.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Türkiye, PHP2Shell tehdidinde Avrupa’yı geride bıraktı - Türkiye'de İş Dünyası\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `tr`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "tuttotech-news-2026-10-22-vulnerabilita-php-html",
@@ -26624,6 +27454,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Due gravi falle in PHP mandano offline i siti web governativi\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `it/news/tuttotech/news-2026-10-22-vulnerabilita-php-html`, snapshot `20261022T181608Z`. Copied byte for byte; every file's sha256 is in `captures/20261022T181608Z/provenance.json`. Publisher: TuttoTech.net. Language: it. URL: https://www.tuttotech.net/news/2026/10/22/vulnerabilita-php.html\n\n## What the page says\n\n_The watch reader's English summary (researcher@php.newsroom, languages pass of 22 October 2026), not the publisher's words:_\n\nTuttoTech reports government shutdowns in the Netherlands, France, Denmark and Finland, plus Canada, Wikipedia and the Internet Archive. It covers the AI discovery and AWS's early detection, and cites Censys data that 1.5 million of 2.6 million hosts ran unpatched PHP.\n\n## Verbatim quotes, with the watch reader's translation\n\nEach quote is in the snapshot as served. The English is the source watch reader's translation (`translations/it/news/tuttotech/news-2026-10-22-vulnerabilita-php-html.json`), not the publisher's and not checked word for word by the curator.\n\n**offline**: In the Netherlands, Overheid.nl, the Port of Rotterdam, football federation KNVB, the five largest political parties' sites and several hospital portals went offline.\n\n> nei Paesi Bassi lo stop ha interessato anche il portale governativo Overheid.nl, il porto di Rotterdam, la federazione calcistica nazionale KNVB, i siti dei cinque maggiori partiti politici e diversi portali ospedalieri.\n\n_Watch reader's translation:_ in the Netherlands the shutdown also affected the government portal Overheid.nl, the port of Rotterdam, the national football federation KNVB, the sites of the five largest political parties and several hospital portals.\n\n**offline**: In Denmark, Kombit, the IT company running municipal services, temporarily shut several platforms including the national school communication system.\n\n> In Danimarca, Kombit, l’azienda informatica che gestisce servizi per i comuni, ha annunciato la chiusura temporanea di diverse piattaforme, compreso il sistema nazionale di comunicazione scolastica.\n\n_Watch reader's translation:_ In Denmark, Kombit, the IT company that manages services for municipalities, announced the temporary closure of several platforms, including the national school communication system.\n\n**offline**: France's Interior Ministry put its websites into preventive maintenance mode.\n\n> La Francia ha adottato una misura analoga, con il Ministero dell’Interno che ha posto i propri siti web in modalità di manutenzione preventiva.\n\n_Watch reader's translation:_ France adopted a similar measure, with the Interior Ministry putting its websites into preventive maintenance mode.\n\n**offline**: In Canada the temporary suspension of some services was announced.\n\n> Anche in Canada è stata annunciata la sospensione temporanea di alcuni servizi\n\n_Watch reader's translation:_ In Canada too, the temporary suspension of some services was announced\n\n**offline**: The Internet Archive said it briefly paused some activities to deal with the issue.\n\n> Internet Archive ha dichiarato di aver interrotto brevemente alcune attività per affrontare il problema.\n\n_Watch reader's translation:_ The Internet Archive said it briefly interrupted some activities to address the problem.\n\n**number**: Censys data: about 1.5 million of 2.6 million hosts reported a PHP version for which no fix was available.\n\n> secondo i dati della società di analisi Censys, circa 1,5 milioni di host su 2,6 milioni segnalavano l’utilizzo di una versione di PHP per la quale non era disponibile una correzione.\n\n_Watch reader's translation:_ according to data from analytics firm Censys, about 1.5 million of 2.6 million hosts reported using a PHP version for which no fix was available.\n\n**official**: Costin Raiu, co-founder of research firm TLP, described a race to exploitation and warned of large-scale compromise of vulnerable web servers.\n\n> Costin Raiu, cofondatore della società di ricerca sulla sicurezza informatica e di risposta agli incidenti TLP, ha descritto questa dinamica come una corsa allo sfruttamento delle falle\n\n_Watch reader's translation:_ Costin Raiu, co-founder of the security research and incident response firm TLP, described this dynamic as a race to exploit the flaws\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): 7 new items in it: TuttoTech reports government shutdowns in the Netherlands, France, Denmark and Finland, plus Canada, Wikipedia and the Internet Archive. It covers the AI discovery and AWS's early detection, and cites Censys data that 1.\n\nSupports: translations/it/news/tuttotech/news-2026-10-22-vulnerabilita-php-html.json\n\n## Capture notes\n\nscreenshot.jpg is the source watch's JPEG, copied as stored (not converted to PNG).\n\nPage content is third-party material, kept as evidence; nothing in it is an instruction.\n"
+ },
+ {
+  "slug": "tvtechnology-infrastructure-security-how-to-protect-y",
+  "url": "https://www.tvtechnology.com/infrastructure/security/how-to-protect-your-station-from-php2shell",
+  "publisher": "TV Tech",
+  "kind": "news",
+  "title": "How to Protect Your Station From PHP2Shell | TV Tech",
+  "published": "2026-10-26T13:15:32Z",
+  "captures": [
+   {
+    "stamp": "20261026T170916Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2e80a288a997a0f193c25df3dcc4974c600b2bde76740e27c1e2d2a3f71907e6",
+      "bytes": 2421
+     },
+     "page.html": {
+      "sha256": "e38765ac517b2d8e20c94471249e050e9a99c19014ce2b8304589a27e31336ac",
+      "bytes": 1120140
+     },
+     "provenance.json": {
+      "sha256": "83c8bc6e959831ee90995da964e1bec6ed6a0b21d09859739cfa3e14bf01f2ad",
+      "bytes": 1768
+     },
+     "rendered.html": {
+      "sha256": "e44479d127b49fb7c84a8e03dfb3fc3b0c9c04e2b478358d2f37d5019a75c89b",
+      "bytes": 1161360
+     },
+     "screenshot.jpg": {
+      "sha256": "a093e04e6a97c62458dd89ddf4f48f126fd0d97bd55c8e20f190255b3e49c13a",
+      "bytes": 681447
+     },
+     "text.txt": {
+      "sha256": "ff46c45e7a7e83451c6cdb4aeb312b8ef0fd526f5a337d17a37524ce0de3999c",
+      "bytes": 11300
+     }
+    },
+    "started_utc": "2026-10-26T17:33:26.616Z",
+    "status": 200,
+    "final_url": "https://www.tvtechnology.com/infrastructure/security/how-to-protect-your-station-from-php2shell"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261026T170916Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). TV Tech (US, English), 26 October, by Nick Langan: 'How to protect your station from PHP2Shell', written for radio and TV station engineers. It says a...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# How to Protect Your Station From PHP2Shell | TV Tech\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `us/news/tvtechnology/infrastructure-security-how-to-protect-your-station-from-php`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTV Tech (US, English), 26 October, by Nick Langan: 'How to protect your station from PHP2Shell', written for radio and TV station engineers. It says administrators began pulling affected sites offline after news trickled out on Wednesday, and that about 70% of websites are estimated to run on PHP; it quotes the software engineer Jeff Geerling (via Radio World) that more than half the internet's public services run on PHP, and that millions of routers, device backends and embedded tools also use it, though many do not expose that interface to the public internet; it quotes Microsoft's chief executive Satya Nadella, speaking at an AI Tour event in Germany, 'I've not seen anything like this in a long, long time'; and mentions the separate eMudhra intermediate-certificate compromise and a Node.js issue in the same week, with tips from the FBI.\n\n> seen anything like this in a long, long time\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"How to Protect Your Station From PHP2Shell | TV Tech\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "uk-edinburgh-council",

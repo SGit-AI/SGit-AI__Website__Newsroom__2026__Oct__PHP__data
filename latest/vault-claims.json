@@ -4137,5 +4137,161 @@
   "topic": "agencies",
   "note": "A letter, not an obligation with a deadline, per the expert; the letter itself is the primary.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-tnw-structural-failure",
+  "claim": "The PHP Foundation said the delay in fixing the memory bug it first saw in 2024 was a structural failure, caused by the security team's decision process and its lack of resources",
+  "by": "The Next Web (citing a PHP Foundation blog post of 21 October)",
+  "sources": [
+   "thenextweb-wikipedia-ref-9-dation-structural-failur"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Gives the Foundation's own words as relayed by a tech outlet; the blog post is the primary. It sources what Okaz and Bangkok Biz News said without naming (cur13-okaz-php-delay-acknowledged, cur14-bangkokbiz-php-foundation-resources).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-tnw-wrong-cve-details",
+  "claim": "On 20 October at about 15:00 UTC the two CVE identifiers began circulating on forums and social media with a wrong release time and a wrong severity score of 10.0 (the real figure is 9.2); no technical details leaked at that point",
+  "by": "The Next Web (citing the PHP Foundation)",
+  "sources": [
+   "thenextweb-wikipedia-ref-9-dation-structural-failur"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Explains watchTowr's early 'CVSS10' (cur13-pcgamer-watchtowr-cvss10) and agrees with the 15:00 UTC time in Scherzer's timeline (cur15-scherzer-reschedule-20-oct).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-tnw-chainguard-six-hours",
+  "claim": "More than six hours before the release Chainguard published built images containing the fix, which the PHP Foundation says disregarded weeks of work toward a coordinated disclosure and let attackers study the fix in binary form",
+  "by": "The Next Web (citing the PHP Foundation)",
+  "sources": [
+   "thenextweb-wikipedia-ref-9-dation-structural-failur"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "The Foundation's statement as relayed; Scherzer gives 07:41 UTC (cur15-scherzer-chainguard) against a 14:00 release.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-tnw-no-working-exploit-at-release",
+  "claim": "The PHP security team had seen no working exploit by the time of the release, having watched the exploit code closely after the leak",
+  "by": "The Next Web (citing the PHP Foundation)",
+  "sources": [
+   "thenextweb-wikipedia-ref-9-dation-structural-failur"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A point-in-time statement at about 14:00 UTC on 21 October; Amazon's honeypot attempts and later reports of in-the-wild use came after or were separate.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-europeinfos-honeypot-35-shells",
+  "claim": "A security researcher monitoring honeypots running PHP 8.4.26 saw 35 malicious PHP shells launched by Apache processes on three test servers, three days after the patch was available",
+  "by": "Europe Infos (citing an unnamed researcher)",
+  "sources": [
+   "europe-infos-actualites-11979-php2shell-decryptage-d"
+  ],
+  "status": "unverified",
+  "topic": "exploitation",
+  "note": "An unnamed researcher's honeypot result relayed second-hand, with no date or source link. A honeypot on a vulnerable build (8.4.26 is below the fixed 8.4.27) shows scanning and exploitation of decoys, not compromise of real sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-tvtech-nadella",
+  "claim": "Microsoft's chief executive Satya Nadella, at an AI Tour event in Germany, said of the PHP vulnerability that he had not seen anything like it in a long, long time",
+  "by": "TV Tech (citing Nadella)",
+  "sources": [
+   "tvtechnology-infrastructure-security-how-to-protect-y"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A reaction quote by a technology executive, relayed second-hand; it says nothing about exploitation or compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-fortune-nsa-advice",
+  "claim": "The US NSA urged all organisations using PHP to update at once or disable vulnerable systems, and agencies in Japan, Singapore, Australia and the EU issued similar warnings",
+  "by": "Fortune Indonesia",
+  "sources": [
+   "fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand; Computing (cur14-computing-nsa-offline) and Bangkok Biz News repeat the NSA advice, while Notebookcheck attributes the take-offline advice to CISA (cur14-nbc-fr-cisa); the issuing agency should be checked at the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-telset-advisory-reserved-early",
+  "claim": "PHP's pre-release advisory said it reserved the right to release earlier if details of either vulnerability became public or active exploitation appeared",
+  "by": "Telset.id (citing PHP's advisory)",
+  "sources": [
+   "telset-laptop-pc-dua-celah-kritis-php-bocor-seb"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with the pre-announcement as described by tech-noisy and Scherzer's timeline; the advisory of 20 October is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-topagrar-caspers-patch-analysis",
+  "claim": "The BSI's vice-president Thomas Caspers said the security updates themselves let attackers, by analysing them, attack sites that have not been patched",
+  "by": "top agrar (citing Tagesschau and Thomas Caspers of the BSI)",
+  "sources": [
+   "topagrar-betriebsleitung-news-php-sicherheitsluck"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A general warning about patch analysis, not an observation of attacks; the Tagesschau interview is the primary (tagesschau-wirtschaft-digitales-php-panne-100-html).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-trendmicro-no-confirmed-exploitation",
+  "claim": "Trend Micro said, citing its TrendAI security blog of 22 October, that successful exploitation in real environments had not been confirmed by independent verification, although initial exploitation attempts were reported",
+  "by": "Trend Micro Japan (press release)",
+  "sources": [
+   "trendmicro-ja-jp-about-newsroom-press-releases-2026"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A vendor's dated statement; consistent with Huntress and Sophos (cur17-technoisy-huntress-no-exploitation, cur16-sempre-sophos-failed) and in tension with outlets reporting confirmed compromises (cur13-wersm-confirmed-compromises).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-turbolab-moses-quote",
+  "claim": "Amazon's CISO CJ Moses said that a honeypot targeted from an anonymised IP while the flaw was still under embargo suggests an attacker was behind the activity, though it is unclear how they obtained exploit information before disclosure",
+  "by": "TurboLab.it (citing Amazon Integrated Security's CJ Moses)",
+  "sources": [
+   "turbolab-server-1224-php2shell-amazon-ha-rilevato"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Corroborates cur2-madpot-17-oct from Amazon's own spokesperson as quoted; the source IP geolocation (Australia) is of an anonymisation network and says little about the actor.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-turkeybreaking-third-cve-no-emergency-patch",
+  "claim": "PHP developers judged the configurations behind CVE-2026-115560 unlikely in real applications, issued no emergency patch, expect the fix in the next regular bug-fix release, and as of 25 October had not disclosed affected versions, fixed versions or severity",
+  "by": "Turkey Breaking (relaying Sözcü)",
+  "sources": [
+   "turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Agrees with ZDNET Japan, SempreUpdate and ACN (cur15-zdnet-third-cve-unlikely, cur16-sempre-third-cve, cur14-acn-third-cve); the PHP project's own advisory is the primary. The exploitation conditions are left out here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur18-onlayer-merchant-rates",
+  "claim": "A fintech's analysis of about 1.4 million merchant sites in 20 markets found 35.8% of Turkish merchant sites affected by PHP2Shell, against 45.7% abroad and 56.7% in Europe, with the share of updated sites rising about fivefold in under 24 hours",
+  "by": "Türkiye'de İş Dünyası (citing Onlayer)",
+  "sources": [
+   "turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A company's own sample of its merchant customers' sites, not the web at large; 'affected' appears to mean running an affected PHP version (98.9% of PHP sites were), not compromised.",
+  "agent": "curator@php.newsroom"
  }
 ]
