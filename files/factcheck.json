@@ -2211,8 +2211,8 @@
   },
   {
    "id": "no-confirmed-compromise",
-   "claim_hash": "cd0268b126cc6fcb",
-   "run": "Run-10",
+   "claim_hash": "18618668cddf9015",
+   "run": "Run-11",
    "mode": "vault",
    "kind": "state",
    "level": 4,
@@ -2220,9 +2220,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261026T121439Z",
+   "as_of": "20261026T144200Z",
    "status_fit": "ok",
-   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4. Run 10 (as of 12:14 UTC on 26 October, vault head 22a0c2920b88): 20 captures made since 09:40 UTC name no compromised organisation; YugaTech says the 70% figure 'does not mean 70% of websites have been confirmed compromised'. Holds at A4.",
+   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4. Run 10 (as of 12:14 UTC on 26 October, vault head 22a0c2920b88): 20 captures made since 09:40 UTC name no compromised organisation; YugaTech says the 70% figure 'does not mean 70% of websites have been confirmed compromised'. Holds at A4. Run 11 (as of 14:42 UTC on 26 October, vault head 2fc7e432584b): the 10 captures made since 12:14 UTC name no compromised organisation. Holds at A4.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -9180,6 +9180,19 @@
    "opened": "none",
    "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
    "summary": "no-confirmed-compromise still holds at 12:14 UTC on 26 October (A4); none of the 20 new captures names a compromised organisation. One new statement of the 70% figure added to the lineage (S-128, YugaTech, 'roughly 70% of websites worldwide, according to figures cited by researchers', no measurer named, family F-2). KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
+  },
+  {
+   "id": "Run-11",
+   "site_version": "data v0.1.46",
+   "vault_commit": "2fc7e432584b",
+   "site_export_commit": "2fc7e432584b",
+   "started": "2026-10-26T20:55Z",
+   "finished": "2026-10-26T21:10Z",
+   "quiet_wakes_before": 0,
+   "checked": "fc.py changed (no-confirmed-compromise, refreshed to 14:42 UTC on 26 October); fc.py check (0 failures); fc.py drift (the same six); the 10 captures since 12:14 UTC read for a named compromise; KEV; NVD",
+   "opened": "none",
+   "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+   "summary": "no-confirmed-compromise still holds at 14:42 UTC on 26 October (A4); none of the 10 new captures names a compromised organisation. KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
   },
   {
    "id": "Run-2",
