@@ -1,0 +1,256 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "attempts": {
+   "items": {
+    "properties": {
+     "end": {
+      "type": "string"
+     },
+     "outcome": {
+      "type": "string"
+     },
+     "start": {
+      "type": "string"
+     },
+     "why": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "end",
+     "outcome",
+     "start",
+     "why"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "attempts_note": {
+   "type": "string"
+  },
+  "attempts_title": {
+   "type": "string"
+  },
+  "by": {
+   "type": "string"
+  },
+  "check": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "commits": {
+   "items": {
+    "properties": {
+     "blobs": {
+      "type": "number"
+     },
+     "what": {
+      "type": "string"
+     },
+     "when": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "blobs",
+     "what",
+     "when"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "compare": {
+   "items": {
+    "properties": {
+     "normal_failed": {
+      "type": "string"
+     },
+     "normal_note": {
+      "type": "string"
+     },
+     "normal_s": {
+      "type": "number"
+     },
+     "op": {
+      "type": "string"
+     },
+     "pack_note": {
+      "type": "string"
+     },
+     "pack_s": {
+      "type": "number"
+     }
+    },
+    "required": [
+     "normal_note",
+     "normal_s",
+     "op",
+     "pack_note",
+     "pack_s"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "measured": {
+   "type": "string"
+  },
+  "normal": {
+   "properties": {
+    "client": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "client",
+    "id"
+   ],
+   "type": "object"
+  },
+  "not_fixed": {
+   "items": {
+    "type": "string"
+   },
+   "type": "array"
+  },
+  "pack": {
+   "properties": {
+    "client": {
+     "type": "string"
+    },
+    "id": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "client",
+    "id"
+   ],
+   "type": "object"
+  },
+  "pack_only": {
+   "items": {
+    "properties": {
+     "note": {
+      "type": "string"
+     },
+     "op": {
+      "type": "string"
+     },
+     "s": {
+      "type": [
+       "null",
+       "number"
+      ]
+     }
+    },
+    "required": [
+     "note",
+     "op",
+     "s"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "pushes_22oct": {
+   "items": {
+    "properties": {
+     "objects": {
+      "type": "number"
+     },
+     "outcome": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "objects",
+     "outcome",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "vault": {
+   "properties": {
+    "blobs": {
+     "type": "number"
+    },
+    "commits": {
+     "type": "number"
+    },
+    "deflated": {
+     "type": "number"
+    },
+    "files": {
+     "type": "number"
+    },
+    "mb_normal": {
+     "type": "number"
+    },
+    "mb_pack": {
+     "type": "number"
+    },
+    "objects": {
+     "type": "number"
+    },
+    "ratio": {
+     "type": "number"
+    },
+    "snapshot_mb": {
+     "type": "number"
+    },
+    "trees": {
+     "type": "number"
+    }
+   },
+   "required": [
+    "blobs",
+    "commits",
+    "deflated",
+    "files",
+    "mb_normal",
+    "mb_pack",
+    "objects",
+    "ratio",
+    "snapshot_mb",
+    "trees"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "about",
+  "attempts",
+  "attempts_note",
+  "attempts_title",
+  "by",
+  "check",
+  "commits",
+  "compare",
+  "measured",
+  "normal",
+  "not_fixed",
+  "pack",
+  "pack_only",
+  "pushes_22oct",
+  "vault"
+ ],
+ "title": "pack-mode.json",
+ "type": "object"
+}

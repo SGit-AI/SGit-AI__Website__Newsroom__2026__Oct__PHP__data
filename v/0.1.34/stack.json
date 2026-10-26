@@ -1,0 +1,75 @@
+{
+ "about": "The model behind /stack/, the blast-radius tool: the kinds of component a reader can put in their stack, how components connect, the settings that reduce exposure, and the vulnerabilities checked against a stack. The build joins it with data/affected.json (version ranges, SAPIs, mitigations), data/defence.json (edge vendors) and data/software.json (the NCSC-NL inventory) into stack/catalogue.json. A vulnerability is a rule over components, not a page: the pulse adds rows here in the same shape and every reader's stack is checked against them.",
+ "schema": "sgit.newsroom.stack-catalogue/1",
+ "kinds": [
+  {"id": "internet", "name": "The internet", "col": 0, "what": "Anyone, anywhere. Put it in the stack and connect it to what it can reach."},
+  {"id": "edge", "name": "Edge: CDN, WAF or proxy", "col": 1, "what": "What requests pass through before they reach an application."},
+  {"id": "app", "name": "Application", "col": 2, "what": "Something that answers requests: a CMS, a framework app, an admin panel, an API."},
+  {"id": "platform", "name": "Hosting, image or panel", "col": 3, "what": "Where the PHP comes from when you do not build it yourself: a distribution package, a container image, a control panel, a managed host."},
+  {"id": "runtime", "name": "PHP runtime", "col": 3, "what": "The PHP that runs the application: its version, how it serves requests (SAPI) and its settings."},
+  {"id": "data", "name": "Data store", "col": 4, "what": "A database, a bucket, a file share: what the application reads and writes."},
+  {"id": "secret", "name": "Secrets and credentials", "col": 4, "what": "Keys, passwords and tokens the application holds: in its config, its environment, its disk."},
+  {"id": "service", "name": "Internal service", "col": 4, "what": "Another system the application can call: an API, a queue, a directory, a payment service."}
+ ],
+ "links": [
+  {"id": "routes", "name": "sends requests to", "from": ["internet", "edge"], "to": ["edge", "app"]},
+  {"id": "runs_on", "name": "runs on", "from": ["app"], "to": ["runtime", "platform"]},
+  {"id": "provides", "name": "provides", "from": ["platform"], "to": ["runtime"]},
+  {"id": "reaches", "name": "can reach", "from": ["app", "runtime", "service"], "to": ["data", "secret", "service"]}
+ ],
+ "sensitivity": [
+  ["personal", "personal data"],
+  ["payment", "payment data"],
+  ["credentials", "credentials or keys"],
+  ["internal", "internal only"],
+  ["public", "public anyway"]
+ ],
+ "controls": [
+  {"id": "memory_unlimited", "label": "memory_limit=-1, set where applications cannot override it", "vulns": ["CVE-2026-109618"], "mitigation": 0, "sapis": ["Apache mod_php", "PHP-FPM", "php-cgi", "FrankenPHP", "LiteSpeed (LSAPI)"]},
+  {"id": "request_limits", "label": "Low post_max_size and upload limits, and request-size limits at the web server or proxy", "vulns": ["CVE-2026-109618"], "mitigation": 1},
+  {"id": "cgroup_memory", "label": "A container or cgroup memory limit as an availability boundary", "vulns": ["CVE-2026-109618"], "mitigation": 2},
+  {"id": "upload_progress_off", "label": "session.upload_progress.enabled=0 in php.ini or the pool, workers restarted", "vulns": ["CVE-2026-109619"], "mitigation": 3},
+  {"id": "fatal_backtraces_off", "label": "fatal_error_backtraces=0 (PHP 8.5), workers restarted", "vulns": ["CVE-2026-109619"], "mitigation": 4, "branches": ["8.5"]},
+  {"id": "diagnostics_fixed", "label": "Invalid per-request settings and reachable fatal errors removed", "vulns": ["CVE-2026-109619"], "mitigation": 5},
+  {"id": "fpm_max_requests_1", "label": "pm.max_requests=1 on PHP-FPM", "vulns": ["CVE-2026-109618", "CVE-2026-109619"], "mitigation": 6, "sapis": ["PHP-FPM"]}
+ ],
+ "vulns": [
+  {"id": "CVE-2026-109618", "name": "php2shell: RCE via OOM corruption", "product": "php", "scope": "web-serving PHP", "impact": "remote code execution as the PHP worker, before any application code runs (mod_php, demonstrated)", "inventory": "status_109618", "page": "flaws/index.html#CVE-2026-109618", "sources": ["cve-cve-2026-109618", "github-ghsa-w8hw-w9fx-j79w", "php-net-advisory"]},
+  {"id": "CVE-2026-109619", "name": "php2shell: RCE via stale global state", "product": "php", "scope": "web-serving PHP", "impact": "remote code execution as the PHP worker, across requests on the same worker (mod_php and FPM, demonstrated)", "inventory": "status_109619", "page": "flaws/index.html#CVE-2026-109619", "sources": ["cve-cve-2026-109619", "github-ghsa-6wmf-4rv5-p3rp", "php-net-advisory"]}
+ ],
+ "examples": [
+  {"id": "wordpress-shared", "name": "A WordPress site behind Cloudflare, on Apache mod_php",
+   "components": [
+    {"id": "net", "kind": "internet", "name": "The internet"},
+    {"id": "cf", "kind": "edge", "name": "Cloudflare", "vendor": "Cloudflare"},
+    {"id": "wp", "kind": "app", "name": "WordPress shop", "product": "WordPress project|WordPress"},
+    {"id": "php", "kind": "runtime", "name": "PHP on the web server", "version": "8.3.30", "sapi": "Apache mod_php", "controls": []},
+    {"id": "db", "kind": "data", "name": "MySQL: orders and customers", "sensitivity": "personal"},
+    {"id": "cfg", "kind": "secret", "name": "wp-config.php: database password, payment API key", "sensitivity": "credentials"},
+    {"id": "pay", "kind": "service", "name": "Payment provider API", "sensitivity": "payment"}
+   ],
+   "edges": [["net", "cf"], ["cf", "wp"], ["wp", "php"], ["php", "db"], ["php", "cfg"], ["php", "pay"]]},
+  {"id": "laravel-containers", "name": "A Laravel API in containers on PHP-FPM, on AWS",
+   "components": [
+    {"id": "net", "kind": "internet", "name": "The internet"},
+    {"id": "aws", "kind": "edge", "name": "AWS load balancer and WAF", "vendor": "AWS"},
+    {"id": "api", "kind": "app", "name": "Customer API (Laravel)", "product": "Laravel|Laravel 13 framework"},
+    {"id": "img", "kind": "platform", "name": "Docker official php:8.4-fpm image", "product": "Docker Official Images / docker-library PHP maintainers|Docker Official PHP FPM image variant"},
+    {"id": "php", "kind": "runtime", "name": "PHP-FPM in the container", "version": "8.4.20", "sapi": "PHP-FPM", "controls": ["cgroup_memory"]},
+    {"id": "pg", "kind": "data", "name": "Postgres: accounts", "sensitivity": "personal"},
+    {"id": "s3", "kind": "data", "name": "S3 bucket: uploaded documents", "sensitivity": "personal"},
+    {"id": "env", "kind": "secret", "name": "Environment: AWS keys, APP_KEY", "sensitivity": "credentials"},
+    {"id": "queue", "kind": "service", "name": "Billing worker (queue)", "sensitivity": "payment"}
+   ],
+   "edges": [["net", "aws"], ["aws", "api"], ["api", "img"], ["img", "php"], ["api", "php"], ["php", "pg"], ["php", "s3"], ["php", "env"], ["php", "queue"]]},
+  {"id": "internal-74", "name": "An internal tool on PHP 7.4 from Ubuntu Focal, reachable only on the VPN",
+   "components": [
+    {"id": "tool", "kind": "app", "name": "Staff directory tool", "product": ""},
+    {"id": "deb", "kind": "platform", "name": "Ubuntu 20.04 php7.4-fpm package", "product": "Canonical / Ubuntu package maintainers|Ubuntu Focal php7.4-fpm binary package"},
+    {"id": "php", "kind": "runtime", "name": "PHP 7.4 FPM", "version": "7.4.3", "sapi": "PHP-FPM", "controls": []},
+    {"id": "ldap", "kind": "service", "name": "LDAP directory", "sensitivity": "credentials"}
+   ],
+   "edges": [["tool", "deb"], ["deb", "php"], ["tool", "php"], ["php", "ldap"]]}
+ ],
+ "pulse": "Coming: the pulse adds other vulnerabilities, in other products, as rows in the same catalogue, each with its own rule. A stack saved today is checked against them as they arrive, and the items about them are matched to it the same way."
+}

@@ -3945,5 +3945,197 @@
   "topic": "agencies",
   "note": "Precautionary; the statement gives neither the number of sites nor a return date. The Paris police prefecture portal returned a 503 when the outlet checked.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-cpo-hn-leak-honest-mistake",
+  "claim": "The Hacker News leak is thought to have been an employee of a security company with insider access making an honest mistake with the embargo timeline, not a malicious act",
+  "by": "CPO Magazine",
+  "sources": [
+   "cpomagazine-cyber-security-threat-actor-targeted-php"
+  ],
+  "status": "unverified",
+  "topic": "disclosure",
+  "note": "No source or name is given and the claim is hedged ('is thought to be'); the PHP Foundation's account and the vendor concerned are the primaries. Another outlet says Chainguard broke the embargo for its builds (cur15-scherzer-chainguard), which may or may not be the same event.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-ddaily-cyfirma-i2p",
+  "claim": "Cyfirma reports that Korean-speaking members of a closed I2P network simulated attacks on the PHP flaws, aimed at government bodies, banks and industries in many countries, and raises a possible link to the Lazarus group ecosystem at 'moderate' confidence",
+  "by": "Digital Daily (citing Cyfirma)",
+  "sources": [
+   "m-ddaily-page-view-2026102611404279049"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "A single vendor's threat-intelligence report relayed second-hand; the attribution is the vendor's own and rated moderate. 'Simulated' in the article suggests planning or rehearsal, not observed attacks. Cyfirma's report is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-ddaily-exploit-tools-in-wild",
+  "claim": "watchTowr and SOCRadar reported cases of exploit tools being used in real environments after the disclosure",
+  "by": "Digital Daily (citing watchTowr and SOCRadar)",
+  "sources": [
+   "m-ddaily-page-view-2026102611404279049"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Second-hand; 'used in real environments' does not say successful compromise. Compare Sophos's view that documented attacks failed (cur16-sempre-sophos-failed).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-ddaily-node2shell-separate",
+  "claim": "A separate Node.js vulnerability, 'Node2Shell' (CVE-2026-111497, a Brotli decoder out-of-bounds write), was announced by Theori about a week later, fixed in Node.js 22.23.4, 24.22.1 and 26.12.1; it is a different flaw from PHP2Shell",
+  "by": "Digital Daily (citing Theori)",
+  "sources": [
+   "m-ddaily-page-view-2026102611404279049"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Not part of PHP2Shell; kept so pages do not conflate the two.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-qianxin-china-million",
+  "claim": "QiAnXin says its experts verified unauthenticated remote command execution and puts the potential impact on China at over a million assets",
+  "by": "QiAnXin (company press piece on 10jqka)",
+  "sources": [
+   "stock-10jqka-20261022-c680990008-shtml"
+  ],
+  "status": "unverified",
+  "topic": "impact",
+  "note": "A security vendor's own claim in a promotional piece, with no method given; 'potential impact' is an asset count by exposure, not compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-suara-komdigi",
+  "claim": "Indonesia's Ministry of Communication and Digital (Komdigi) issued an emergency warning, through its CSIRT, to all digital-system managers and web developers about PHP2Shell",
+  "by": "Suara Nasional",
+  "sources": [
+   "suaranasional-2026-10-25-bahaya-celah-keamanan-php2she"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The ministry's own alert is the primary; Business Tech (teknologi-bisnis) reports that Komdigi's letter specifically asked users of the National Data Center (PDN) 1 to update PHP.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-tagesschau-bsi-orange",
+  "claim": "Germany's BSI rated the PHP flaws at warning level '3 / Orange' (extraordinarily high) in its warning BITS-H No. 2026-297981-1032, meaning countermeasures must be taken at once",
+  "by": "tagesschau.de (citing the BSI warning)",
+  "sources": [
+   "tagesschau-wirtschaft-digitales-php-panne-100-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The BSI's own warning is the primary. Other German outlets (Tageskarte) repeat the same level.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-tagesschau-wildberger",
+  "claim": "Germany's Digital Minister Karsten Wildberger said no damage had been done to federal IT systems and there was no sign that federal websites and infrastructure were affected",
+  "by": "tagesschau.de (citing Wildberger to Bild)",
+  "sources": [
+   "tagesschau-wirtschaft-digitales-php-panne-100-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A point-in-time statement by the minister as of 21 to 22 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-takvim-turkey-alert",
+  "claim": "Turkey's Presidency Cyber Security Directorate issued national security alert TR-26-1372 to public and private infrastructure, and said checks of the e-Devlet portal found no risk or disruption",
+  "by": "Takvim (citing the Directorate)",
+  "sources": [
+   "takvim-guncel-2026-10-22-php2shell-guvenlik-aci"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The Directorate's own statement relayed by a government-leaning daily; the notice itself is the primary. Teknotalk (teknotalk-php2shell-acigi-kron-teknoloji-guvenlik) repeats it.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-takvim-belgium-ccb",
+  "claim": "After a warning from Belgium's Cyber Security Centre (CCB) the websites of the Foreign, Finance and Labour ministries and media and education platforms were temporarily disabled",
+  "by": "Takvim",
+  "sources": [
+   "takvim-guncel-2026-10-22-php2shell-guvenlik-aci"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary; second-hand. Dutch and French closures are reported by other outlets in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-technoisy-huntress-no-exploitation",
+  "claim": "Huntress said that as of the evening of 21 October (US Eastern) it had not confirmed exploitation in the environments it monitors, although some reports said real attacks had begun",
+  "by": "tech-noisy (citing Huntress)",
+  "sources": [
+   "tech-noisy-2026-10-22-php2shell-php-rce-cve-2026-10"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A point-in-time statement by one vendor about its own customers; later reports in the vault describe millions of attempts and some compromises, so it is dated.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-techgaming-pokemon-squareenix",
+  "claim": "Several Pokémon-related apps were temporarily suspended for emergency maintenance, and Square Enix confirmed unauthorised access to its systems, in the same week as the PHP2Shell disclosure",
+  "by": "TechGaming.it (citing Kotaku)",
+  "sources": [
+   "techgaming-internet-sotto-attacco-php2shell-vulnera"
+  ],
+  "status": "unverified",
+  "topic": "impact",
+  "note": "The article groups these with PHP2Shell but does not say the Square Enix access came through the PHP flaws; the link is not established here. Companies' own notices are the primaries.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-technotoday-compromised-unknown",
+  "claim": "The number of systems successfully compromised through PHP2Shell was not yet known with certainty, as of 22 to 23 October",
+  "by": "Technotoday",
+  "sources": [
+   "technotoday-php2shell-saldirilari-iki-kritik-php-aci"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A dated caveat from a general-interest outlet; it fits the unsettled compromise picture noted in cur16-sempre-sophos-failed.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-kompas-70-percent-caveat",
+  "claim": "The widely quoted '70% of websites' is W3Techs' share of sites with an identifiable server-side language that use PHP, not a count of sites confirmed vulnerable or attacked",
+  "by": "Kompas Tekno (citing W3Techs)",
+  "sources": [
+   "tekno-kompas-read-2026-10-22-14200007-celah-keamanan"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A caveat the outlet makes itself; it applies to the many outlets that repeat the 70% figure (cur15-agenda-w3techs-69-3 gives the underlying 69.3%).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-bisnis-censys-1-5m-unpatched",
+  "claim": "Censys data at announcement showed about 1.5 million of 2.6 million PHP hosts on the internet unpatched",
+  "by": "Bisnis Tekno (citing Pratama Persadha of CISSReC citing Censys)",
+  "sources": [
+   "teknologi-bisnis-read-20261023-84-2015221-pengamat-ingatk"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Second-hand and the expert's reading of Censys data, not a Censys publication; 'unpatched' at the moment of announcement is expected, since the fixes were only just released. Compare Censys's 39.7 million services (cur16-startupper-censys-39-7m), a different unit.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur17-bisnis-komdigi-pdn1",
+  "claim": "Indonesia's Komdigi asked users of National Data Center (PDN) 1 to update PHP, by letter, naming the safe versions, prioritising internet-facing servers and allowing temporary shutdown of services that cannot be patched",
+  "by": "Bisnis Tekno (citing Komdigi's letter and CISSReC)",
+  "sources": [
+   "teknologi-bisnis-read-20261023-84-2015221-pengamat-ingatk"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A letter, not an obligation with a deadline, per the expert; the letter itself is the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]
