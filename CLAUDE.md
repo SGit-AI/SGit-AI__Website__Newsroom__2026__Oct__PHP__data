@@ -20,7 +20,7 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 
 | Path | What | Who writes it |
 | --- | --- | --- |
-| `files/` | the working copy: one JSON file per catalogue entry, `wikipedia/` as a folder | each file's writer (from 26 October, step A: write it here and release; `tools/sync_v1.py export` carries it into v1's build, and `import` never overwrites what was written here). A file v1's build derives (the graphs, the items, the history) is written by nobody: the import brings it |
+| `files/` | the working copy: one JSON file per catalogue entry, `wikipedia/` as a folder | each file's writer: write it here and release; dev's chain carries it into the build box (`tools/sync_v1.py export`; since step B nothing depends on v1's repository) and brings back only what the build derives (the graphs, the items, the history), never over what was written here |
 | `schemas/` | one schema per top-level file, inferred by `tools/schema.py` | changed only on purpose, in the release that changes the file's shape, and said in its message |
 | `tools/catalogue.json` | which files are published, and their group | dev, on a writer's request |
 | `v/<version>/` | a published version: every file, its schema, `manifest.json` with each sha256 | `tools/publish.py`, via `tools/release.sh` |
@@ -29,7 +29,7 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 ## Releasing
 
 ```
-python3 tools/sync_v1.py import --from ../sgit-ai__website__newsroom__2026__oct__php   # dev's chain does this; never over your change
+python3 tools/sync_v1.py import --from ../sgit-ai__website__newsroom__2026__oct__php__box   # dev's chain does this; never over your change
 python3 tools/gate.py
 RELEASE_TRAILER="Agent: <you>" tools/release.sh "what changed and why"   # 0.1.1, 0.1.2, ...: the last number, every time
 ```
