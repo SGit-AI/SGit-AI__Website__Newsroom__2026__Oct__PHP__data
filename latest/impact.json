@@ -241,9 +241,9 @@
    ]
   },
   {
-   "who": "Germany: East Westphalia-Lippe public and company websites, including the Kreis Paderborn and the Bielefeld fire brigade",
+   "who": "Germany: East Westphalia-Lippe public and company websites: back by 23 October the Hochschule für Musik Detmold, Hochschule Bielefeld, Universität Paderborn, Stadtwerke Bielefeld, Bielefeld's service portal, the City of Gütersloh, Klinikum Bielefeld, the Lippe road traffic office, the Polizei NRW, the City of Herford, the Kreiskliniken Herford-Bünde, Westfalenwind and Bitel's webmail and hosting; still offline at 18:00 that day the Kreis Paderborn and the Bielefeld fire brigade",
    "country": "DE",
-   "what": "Offline or in maintenance from the afternoon of 21 October; most were back by 23 October, the Kreis Paderborn and the Bielefeld fire brigade still offline at 18:00 that day. The paper's own survey; reasons not given beyond the PHP flaw",
+   "what": "Offline or in maintenance from the afternoon of 21 October; the paper lists who had solved it by 23 October and who was still offline at 18:00 that day. The paper's own survey; reasons not given beyond the PHP flaw",
    "when": "2026-10-21",
    "said_by": "Neue Westfälische",
    "status": "reported",

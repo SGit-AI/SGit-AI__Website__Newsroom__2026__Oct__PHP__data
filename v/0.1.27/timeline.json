@@ -1,0 +1,749 @@
+[
+ {
+  "at": "2024",
+  "event": "Quarkslab audits PHP (funded through OSTIF and the Sovereign Tech Agency). While fixing one of its findings a PHP core developer finds the first signs of the out-of-memory problem behind CVE-2026-109618; an exploit is theorised but no vector found, so it is not fixed.",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "calif-php2shell",
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "confidence": "stated",
+  "phase": "origin",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-06",
+  "event": "OpenAI launches Patch the Planet (a Daybreak initiative with Trail of Bits, HackerOne and Calif).",
+  "sources": [
+   "openai-patch-the-planet-launch",
+   "patchtheplanet-org"
+  ],
+  "confidence": "inferred",
+  "phase": "origin",
+  "agent": "claude-story-site",
+  "note": "The launch post is blocked; the June date is from a search snippet. The BBC says the PHP Foundation 'joined' in July; the Foundation says it 'got the PHP project into' the programme; Calif says OpenAI invited them."
+ },
+ {
+  "at": "2026-07-30",
+  "event": "Calif begins an audit of PHP under Patch the Planet; Volker Dusch accepts the invitation.",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "calif-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "discovery",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-01",
+  "event": "Calif discovers 'multiple different paths independently leading to RCE that resurfaced the 2024 issues and new trigger points'.",
+  "sources": [
+   "calif-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "discovery",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-05T15:54Z",
+  "event": "Ryan Austin (@lcfr_hax) posts a SHA-256 hash on X as a commitment to one finding.",
+  "sources": [
+   "x-lcfr-hax-hash-tweet",
+   "calif-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "discovery",
+  "agent": "claude-story-site",
+  "note": "Time as displayed in a UTC browser. The pre-image has not been published."
+ },
+ {
+  "at": "2026-08-11",
+  "event": "Calif reports the first bug to PHP and coordinated disclosure begins. OpenAI independently reports the same root cause the same day.",
+  "sources": [
+   "calif-php2shell",
+   "php-foundation-blog-security-release"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-14",
+  "event": "Calif shares an RCE proof of concept with PHP; PHP confirms it works on 15 August.",
+  "sources": [
+   "calif-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-19",
+  "event": "Wiz Research discovers the first vulnerability using Wiz Atlas, Gemini 4 Argon and GPT-5.6 Sol; confirms RCE against Drupal on 20 August and WordPress on 21 August.",
+  "sources": [
+   "wiz-blog-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "discovery",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-21",
+  "event": "Calif reports the second bug to PHP.",
+  "sources": [
+   "calif-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-24",
+  "event": "Wiz reports to the PHP security team.",
+  "sources": [
+   "wiz-blog-php2shell",
+   "php-foundation-blog-security-release"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-08-27",
+  "event": "The GitHub security advisory is opened, credited to lcfr-hax, sagitzadik-wiz, amyb-oai and tomash-areion.",
+  "sources": [
+   "daubois-blog-php2shell-rumors"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-09-18",
+  "event": "Further attack vectors reported by OpenAI.",
+  "sources": [
+   "php-foundation-blog-security-release"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-09-21",
+  "event": "PHP acknowledges Wiz's reports 'and begins developing a coordinated fix'.",
+  "sources": [
+   "wiz-blog-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site",
+  "note": "Conflicts with the Foundation's account that the fix was the top priority from 11 August."
+ },
+ {
+  "at": "2026-09-25",
+  "event": "The fix pull request is opened.",
+  "sources": [
+   "daubois-blog-php2shell-rumors"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10",
+  "event": "Cloudflare starts developing WAF protections 'since early October 2026'.",
+  "sources": [
+   "cloudflare-blog-php2shell-waf"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-12T21:03:58Z",
+  "event": "CVE-2026-109618 and CVE-2026-109619 are reserved.",
+  "sources": [
+   "cve-cve-2026-109618",
+   "cve-cve-2026-109619"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-17",
+  "event": "An exploit attempt from an anonymisation-network IP hits an Amazon MadPot honeypot.",
+  "sources": [
+   "thehackernews-php2shell-4days"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site",
+  "note": "As Amazon's CISO told The Hacker News; no primary Amazon post found."
+ },
+ {
+  "at": "2026-10-18",
+  "event": "The final fix commit is authored; the 7.4 backport branch's commit is dated 18:10:24Z.",
+  "sources": [
+   "daubois-blog-php2shell-rumors",
+   "github-php-src-branch-7.4-backport"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-19T14:00Z",
+  "event": "Release commits for 8.5.12, 8.4.27, 8.3.36 and 8.2.35 are made under embargo (14:00 to 17:04 UTC).",
+  "sources": [
+   "github-php-src-tags",
+   "github-php-src-tag-php-8.5.12"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-20T15:00Z",
+  "event": "The two CVE IDs begin circulating on forums and social media with a wrong release time and a wrong CVSS of 10.0. Per Daubois: an anonymous Hacker News post, then screenshots, a 'PHP2Shell tool' screenshot credited to Calif.io, a short exploitation video, and watchTowr posting both CVE numbers.",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "daubois-blog-php2shell-rumors"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site",
+  "note": "'around 15:00 UTC' per the Foundation."
+ },
+ {
+  "at": "2026-10-20T19:30Z",
+  "event": "php.net publishes the pre-announcement: release moved to 21 October 14:00 UTC, two critical vulnerabilities, CVSS v4.0 9.2, 'we reserve the right to release earlier'.",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "openwall-oss-security-2026-10-20-34",
+   "php-net-advisory"
+  ],
+  "confidence": "disputed",
+  "phase": "leak",
+  "agent": "claude-story-site",
+  "note": "19:30 UTC per the Foundation; the php.net feed says 20:32 UTC; oss-security relayed it at 20:22:51 UTC."
+ },
+ {
+  "at": "2026-10-20T20:00Z",
+  "event": "Calif 'mistakenly published a video' showing its proof of concept against several targets; copies circulate after it is deleted.",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "phpfoundation-blog-security-release-leak"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site",
+  "note": "'around 20:00 UTC'. Calif's page does not mention it."
+ },
+ {
+  "at": "2026-10-20T20:22:51Z",
+  "event": "Alan Coopersmith relays the php.net pre-announcement to oss-security.",
+  "sources": [
+   "openwall-oss-security-2026-10-20-34"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-20",
+  "event": "Swiss BACS posts a warning (home-page teaser dated 20 October; the page itself now says 21 October).",
+  "sources": [
+   "ch-ncsc-home",
+   "ch-bacs-warnung-php"
+  ],
+  "confidence": "inferred",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-20T23:00Z",
+  "event": "The PHP project starts giving mitigation advice to a few critical-infrastructure providers; it 'may have leaked as well'.",
+  "sources": [
+   "php-foundation-blog-security-release"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T02:00Z",
+  "event": "Amazon sees proof-of-concept attempts, then six hours of attempts from anonymised infrastructure.",
+  "sources": [
+   "thehackernews-php2shell-4days"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T03:02Z",
+  "event": "Cloudflare's WAF protections go live for all customers, about nine hours ahead of disclosure.",
+  "sources": [
+   "cloudflare-blog-php2shell-waf"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T07:41Z",
+  "event": "Chainguard publishes built images containing the fix, 'more than six hours before the coordinated release'.",
+  "sources": [
+   "php-foundation-blog-security-release",
+   "techzine-php-chainguard"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site",
+  "note": "Chainguard reportedly denies leaking; that article is blocked."
+ },
+ {
+  "at": "2026-10-21T08:36Z",
+  "event": "ELLIO records its first sensor hit.",
+  "sources": [
+   "thehackernews-php2shell-4days",
+   "phpfoundation-blog-security-release-leak"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T13:30Z",
+  "event": "CERT-EU's stated release time for the PHP fixes.",
+  "sources": [
+   "certeu-sa-2026-018"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site",
+  "note": "Differs from the planned 14:00 UTC and from the 13:35 UTC tags."
+ },
+ {
+  "at": "2026-10-21T13:32Z",
+  "event": "Wiz posts 'BREAKING ... #PHP2SHELL ... impacting 70% of the Internet', 28 minutes before the planned release; the thread still says 'Apply the Oct 22 security release'.",
+  "sources": [
+   "x-wiz-io-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T13:34:13Z",
+  "event": "GHSA-6wmf-4rv5-p3rp (CVE-2026-109619) and, twelve seconds later, GHSA-w8hw-w9fx-j79w (CVE-2026-109618) are published by bukka.",
+  "sources": [
+   "github-ghsa-6wmf-4rv5-p3rp",
+   "github-ghsa-w8hw-w9fx-j79w"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T13:35:38Z",
+  "event": "Signed tags php-8.5.12, php-8.4.27, php-8.3.36 and php-8.2.35 are created.",
+  "sources": [
+   "github-php-src-tags"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T13:45:58Z",
+  "event": "NSA Cybersecurity posts on X: 'Effective Immediately ... be prepared for an update addressing two critical vulnerabilities ... take the system offline'.",
+  "sources": [
+   "nsa-x-2112903220209098897"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site",
+  "note": "Time decoded from the post's ID; the page shows 13:45."
+ },
+ {
+  "at": "2026-10-21T13:48:34Z",
+  "event": "The CVE record for CVE-2026-109618 is published; CVE-2026-109619 follows at 13:54:43Z.",
+  "sources": [
+   "cve-cve-2026-109618",
+   "cve-cve-2026-109619"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:00Z",
+  "event": "The planned release time. php.net's advisory 'Critical remote code execution vulnerabilities, update now' and the four release posts go up.",
+  "sources": [
+   "php-net-advisory",
+   "openwall-oss-security-2026-10-20-34",
+   "daubois-blog-php2shell-rumors"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:04Z",
+  "event": "OpenAI posts: models 'helped researchers ... discover critical security flaws in PHP ... used to run an estimated 70% of websites'. An X Community Note later disputes OpenAI's role.",
+  "sources": [
+   "x-openai-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:04:39Z",
+  "event": "CISA releases KEV catalog version 2026.10.21; neither PHP CVE is in it.",
+  "sources": [
+   "cisa-kev-json"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:06:46Z",
+  "event": "GitHub release php-8.5.12 is published by adoy.",
+  "sources": [
+   "github-php-src-tag-php-8.5.12"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:17:09Z",
+  "event": "NVD publishes both CVEs with the CNA's CVSS v4.0 9.2 and no NIST score.",
+  "sources": [
+   "nvd-cve-2026-109618",
+   "nvd-cve-2026-109619"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:34Z",
+  "event": "CISA's ADP assessment on both CVE records: exploitation none, automatable no, technical impact total.",
+  "sources": [
+   "cve-cve-2026-109618",
+   "cve-cve-2026-109619"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T14:41:54Z",
+  "event": "Jakub Zelenka announces CVE-2026-109618 on oss-security; CVE-2026-109619 at 14:44:06Z.",
+  "sources": [
+   "openwall-oss-security-2026-10-21-6",
+   "openwall-oss-security-2026-10-21-7"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "CISA alert 'Critical Vulnerabilities in PHP Require Immediate Patching': take systems offline if you cannot update. NSA press release 'PHP2Shell'. UK NCSC alert. CCCS AL26-026. CERT-FR ALE-014. ACN AL07/261021. Cloudflare, Wiz, Calif, the PHP Foundation and Daubois publish their accounts.",
+  "sources": [
+   "cisa-alert-php-20261021",
+   "nsa-press-php-4630238",
+   "ncsc-news-php",
+   "cccs-al26-026",
+   "certfr-2026-ale-014",
+   "acn-it-php2shell",
+   "cloudflare-blog-php2shell-waf",
+   "wiz-blog-php2shell",
+   "calif-php2shell",
+   "php-foundation-blog-security-release",
+   "daubois-blog-php2shell-rumors"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site",
+  "note": "Date only; none of these pages carries a time."
+ },
+ {
+  "at": "2026-10-21T15:20Z",
+  "event": "CERT-EU Security Advisory 2026-018 (stated 15:20:18, timezone not given).",
+  "sources": [
+   "certeu-sa-2026-018"
+  ],
+  "confidence": "inferred",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T15:24:37Z",
+  "event": "Aaron Rainbolt relays to oss-security a Fediverse report that the 8.5.12 fix may be incomplete; a Debian maintainer adds that the poster called it a different bug.",
+  "sources": [
+   "openwall-oss-security-109619-thread"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T15:25Z",
+  "event": "NCSC-NL's php2shell README last significant change (17:25 CEST). CERT.LV publishes: Latvia restricts access to several state digital resources from abroad (18:25 EEST).",
+  "sources": [
+   "ncsc-nl-php2shell",
+   "certlv-php-preventive"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site",
+  "note": "Both converted to UTC by this site."
+ },
+ {
+  "at": "2026-10-21T17:29Z",
+  "event": "Per a Matrix channel, Canonical asked PHP about the Fediverse report and was told it is 'unrelated and not a real issue'.",
+  "sources": [
+   "openwall-oss-security-109619-thread"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site",
+  "note": "Second-hand."
+ },
+ {
+  "at": "2026-10-21T20:00Z",
+  "event": "CERT.LV update: the unified state website platform is patched; lsm.lv and 112.lv restored; about 6,000 potentially affected resources in Latvia; automated attempts seen, none successful.",
+  "sources": [
+   "certlv-php-preventive"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T20:15Z",
+  "event": "NCSC New Zealand: 'aware of reports of active exploitation' (09:15 NZDT 22 October; updated 21:20Z).",
+  "sources": [
+   "ncsc-nz-alert-php"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site",
+  "note": "Converted from NZDT."
+ },
+ {
+  "at": "2026-10-22T00:43:58Z",
+  "event": "NSA Cybersecurity posts 'UPDATE: Specific mitigation guidance ... is now available', linking the press release.",
+  "sources": [
+   "nsa-x-2113068811058622971",
+   "nsa-press-php-4630238"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T05:20Z",
+  "event": "JVN publishes its note (14:20 JST); JPCERT/CC alert JPCERT-AT-2026-0033 is dated 22 October.",
+  "sources": [
+   "jpcert-home",
+   "jpcert-at260033"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T06:16:24Z",
+  "event": "BBC News opens its live page: 'Global scramble to fix critical cyber-security flaws as many websites taken offline'.",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T06:45:47Z",
+  "event": "Greenbone on oss-security: the backports imply versions down to 7.4 are affected, whatever the subject line says.",
+  "sources": [
+   "openwall-oss-security-109619-thread"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T06:55:50Z",
+  "event": "The BBC reports the NSA's X post.",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T07:00Z",
+  "event": "Ryan Austin on BBC Radio 4: no evidence of exploitation yet.",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site",
+  "note": "08:00 BST post."
+ },
+ {
+  "at": "2026-10-22T07:30:02Z",
+  "event": "The UK NCSC page is modified (HTTP last-modified).",
+  "sources": [
+   "ncsc-news-php"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T08:03Z",
+  "event": "The evidence vault behind this site is opened; the first capture of the BBC live page is at 08:04:53Z.",
+  "sources": [
+   "bbc-live-ckgel5xp2xv9t"
+  ],
+  "confidence": "stated",
+  "phase": "method",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22T08:40:58Z",
+  "event": "NCSC-NL merges pull request 10; the inventory has 674 entries at commit cca173c64ec5.",
+  "sources": [
+   "ncsc-nl-php2shell-software-list",
+   "ncsc-nl-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "The Hacker News publishes Amazon's account of the 17 October honeypot attempt and VulnCheck's count of 2,608,039 hosts.",
+  "sources": [
+   "thehackernews-php2shell-4days"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-18T15:26:39Z",
+  "event": "Arnaud Le Blanc authors the fix, 'Avoid state corruption via bailout', with Ilija Tovilo, Jakub Zelenka, Nora Dossche and Nicolas Grekas; the 7.4 minimal backport is authored at 18:09 UTC.",
+  "sources": [
+   "github-php-src-fix-commit-3584a98bd"
+  ],
+  "confidence": "stated",
+  "phase": "coordination",
+  "agent": "claude-story-site",
+  "note": "Author timestamps from the commits."
+ },
+ {
+  "at": "2026-10-20",
+  "event": "Qualys publishes on the pre-announcement.",
+  "sources": [
+   "qualys-blog-php-preannounce"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T07:43Z",
+  "event": "Cloudflare's CTO reports early attacks emerging, before the release.",
+  "sources": [
+   "insurancebusiness-uk-councils-met",
+   "securityweek-exploitation-days-before"
+  ],
+  "confidence": "stated",
+  "phase": "leak",
+  "agent": "claude-story-site",
+  "note": "Second-hand; the post itself is not captured."
+ },
+ {
+  "at": "2026-10-21T09:45Z",
+  "event": "Finland's Valtori begins restricting public traffic to government web services (12:45 local).",
+  "sources": [
+   "helsinkitimes-finland-shutdown",
+   "yle-finland-government-sites-shut"
+  ],
+  "confidence": "inferred",
+  "phase": "response",
+  "agent": "claude-story-site",
+  "note": "Converted from Finnish time."
+ },
+ {
+  "at": "2026-10-21T14:06:22Z",
+  "event": "The fix commit enters the public php-src branches (commit timestamp); merged into 8.3 at 14:12, 8.4 at 14:27 and 8.5 at 14:30 UTC.",
+  "sources": [
+   "github-php-src-fix-commit-3584a98bd"
+  ],
+  "confidence": "stated",
+  "phase": "release",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "The Dutch NCSC takes its own website offline as a precaution; DigiD, MijnOverheid and Overheid.nl follow. Weird Gloop turns off its wiki web servers for 13 hours. Amazon, Imperva, Fastly, Akamai and Huntress publish.",
+  "sources": [
+   "rijksoverheid-ncsc-php-news",
+   "weirdgloop-blog-php2shell",
+   "aws-security-blog-madpot",
+   "imperva-blog-php2shell",
+   "fastly-blog-php2shell",
+   "akamai-blog-php-core-rce",
+   "huntress-php2shell-rapid-response"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-21T20:30Z",
+  "event": "Huntress: no exploitation observed on partner systems (16:30 ET).",
+  "sources": [
+   "huntress-php2shell-rapid-response"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site",
+  "note": "Converted from Eastern time."
+ },
+ {
+  "at": "2026-10-22T01:25Z",
+  "event": "Matthew Prince posts Cloudflare's attempt counts: thousands before, millions after.",
+  "sources": [
+   "x-eastdakota-php2shell-stats"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "The Register carries Dan Lorenc's reply to the PHP Foundation; Fortinet publishes FortiWeb signatures; The Record carries the Foundation's account of the 2024 signs.",
+  "sources": [
+   "theregister-php-blames-chainguard",
+   "fortinet-fortiweb-php2shell",
+   "therecord-php-foundation-statement"
+  ],
+  "confidence": "stated",
+  "phase": "aftermath",
+  "agent": "claude-story-site"
+ }
+]

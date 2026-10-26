@@ -291,6 +291,22 @@
    "kind": "missing",
    "journalist_run": "20261025T1134Z-journalist",
    "fixed_in": "data v0.1.19 or later (correspondent)"
+  },
+  {
+   "on": "2026-10-26",
+   "what": "Offline ledger, East Westphalia-Lippe: Neue Westfälische lists fifteen organisations that had been offline and were back by 23 October (among them Klinikum Bielefeld, Universität Paderborn and the Polizei NRW) beside the two still offline; the row named only the two. The same miss as Shizuoka Bank on 25 October: a second time, so the journalist's brief is tightened.",
+   "file": "data: files/impact.json",
+   "kind": "missing",
+   "journalist_run": "20261026T1114Z-journalist",
+   "fixed_in": "data, correspondent's release of 26 October"
+  },
+  {
+   "on": "2026-10-26",
+   "what": "Scherzer's timeline (13:31 to 13:35 UTC) held back as contradicting release-time, which was already 'disputed' and already cited the tags at 13:34 to 13:35 UTC: it settles the dispute rather than contradicting it. release-time revised: scheduled 14:00, published 13:31 to 13:35 UTC, confirmed.",
+   "file": "data: files/claims.json, files/claim-review.json",
+   "kind": "verdict",
+   "journalist_run": "20261026T1114Z-journalist",
+   "fixed_in": "data, correspondent's release of 26 October"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."

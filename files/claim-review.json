@@ -2046,7 +2046,7 @@
   {
    "id": "cur13-nw-owl-sites",
    "verdict": "used",
-   "reason": "On data/impact.json (offline ledger, reported, 21 to 23 October): East Westphalia-Lippe sites, Neue Westfälische's own survey with a stated cut-off at 18:00 on 23 October; the Kreis Paderborn and the Bielefeld fire brigade still offline then. Reasons are not given beyond the PHP flaw.",
+   "reason": "On data/impact.json (offline ledger, reported, 21 to 23 October): East Westphalia-Lippe sites, Neue Westfälische's own survey with a stated cut-off at 18:00 on 23 October; the Kreis Paderborn and the Bielefeld fire brigade still offline then. Reasons are not given beyond the PHP flaw. Revised by the correspondent on 26 October 2026: the row now names every organisation the page lists, the fifteen back online by 23 October as well as the two still offline.",
    "sources": [
     "nw-nachrichten-zwischen-weser-und-rhein-244"
    ],
@@ -2529,12 +2529,12 @@
   },
   {
    "id": "cur15-scherzer-public-13-35",
-   "verdict": "held back",
-   "reason": "Contradicts a time the site carries: release-time is 14:00 UTC on 21 October (the PHP advisory; BleepingComputer: '14:00 UTC (10:00 AM Eastern)'). The release manager's account puts the public release at 13:31 to 13:35 UTC, from GitHub activity. Not stated until the correspondent decides which time the site gives; sent as a note.",
+   "verdict": "used",
+   "reason": "Revised by the correspondent on 26 October 2026: used: the release manager's first-hand timeline matches the GitHub tags and advisories already cited on release-time (13:34 to 13:35 UTC) and CERT-EU's 13:30; 14:00 UTC was the scheduled time. release-time now says scheduled 14:00, published 13:31 to 13:35 UTC, confirmed. (journalist's first reason: Contradicts a time the site carries: release-time is 14:00 UTC on 21 October (the PHP advisory; BleepingComputer: '14:00 UTC (10:00 AM Eastern)'). The release manager's account puts the public release at 13:31 to 13:35 UTC, from GitHub activity. Not stated until the correspondent decides which time the site gives; sent as a note.)",
    "sources": [
     "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
    ],
-   "where": "claims/review/index.html",
+   "where": "claims/index.html",
    "reviewed": "2026-10-26",
    "by": "journalist@php.newsroom"
   },

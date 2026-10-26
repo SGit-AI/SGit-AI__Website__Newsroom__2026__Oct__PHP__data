@@ -1,0 +1,270 @@
+{
+ "note": "Another model's reading of the story, set beside the evidence vault row by row. The other model's text is published in full and credited; each row says what it found, what the vault holds on the same point, and which way they differ. Nothing in another model's notes is cited on this site until a collector has captured its source.",
+ "verdicts": [
+  {
+   "id": "agrees",
+   "name": "agrees",
+   "what": "the vault holds the same finding, from captured sources"
+  },
+  {
+   "id": "resolves",
+   "name": "the vault resolves it",
+   "what": "the other model left it open or unverified; a primary source in the vault settles it"
+  },
+  {
+   "id": "further",
+   "name": "the vault goes further",
+   "what": "the vault holds a more specific or earlier finding on the same point"
+  },
+  {
+   "id": "lead",
+   "name": "a new lead",
+   "what": "the other model names something the vault does not hold; listed for capture, not cited"
+  },
+  {
+   "id": "open",
+   "name": "open in both",
+   "what": "neither reading can settle it"
+  }
+ ],
+ "readings": [
+  {
+   "id": "perplexity-2026-10-22",
+   "model": "Perplexity",
+   "title": "PHP2Shell: intelligence notes from this chat",
+   "compiled": "2026-10-22",
+   "how": "A research chat run by the editor in Perplexity on 22 October 2026, compiled by Perplexity into notes and given to this site by the editor. Perplexity read the web through search excerpts; it did not read the evidence vault.",
+   "file": "admin/content/external/2026-10-22__perplexity__php2shell-intelligence-notes.md",
+   "rows": [
+    {
+     "point": "The name and the pair",
+     "found": "PHP2Shell names two PHP core vulnerabilities, CVE-2026-109618 and CVE-2026-109619: a pair, not one CVE.",
+     "section": "3",
+     "verdict": "agrees",
+     "vault": "Confirmed from the CVE records, the GitHub advisories and php.net.",
+     "claims": [
+      "two-cves-9.2"
+     ],
+     "sources": [
+      "cve-cve-2026-109618",
+      "cve-cve-2026-109619",
+      "php-net-advisory"
+     ]
+    },
+    {
+     "point": "What 70% is a share of",
+     "found": "W3Techs says PHP is used by 69.3% of all the websites 'whose server-side programming language we know'. Usage is not exposure: a site using PHP, running a flawed version, and being reachable through the flaw are three different populations.",
+     "section": "2",
+     "verdict": "further",
+     "vault": "The vault already carries the qualifier, second-hand: a security founder's post on X, captured on 22 October, says 'PHP runs 69% of websites whose server-side language is known'. The three pages that carry the bare 70% figure do not name the measurement. W3Techs itself is not captured; capturing it would make this first-hand and close the front page's open question.",
+     "claims": [
+      "scale-70pc-websites",
+      "scale-70pc-internet"
+     ],
+     "sources": [
+      "x-feross-chainguard",
+      "wiz-blog-php2shell",
+      "cloudflare-blog-php2shell-waf",
+      "x-openai-php2shell"
+     ]
+    },
+    {
+     "point": "Who said 70% of the Internet",
+     "found": "Wiz's own headline says 'affecting 70% of the Internet', so the broad wording is not only a journalist's paraphrase.",
+     "section": "2",
+     "verdict": "agrees",
+     "vault": "The same: the vault attributes '70% of the Internet' to Wiz's headline and X post, and marks it unverified.",
+     "claims": [
+      "scale-70pc-internet"
+     ],
+     "sources": [
+      "wiz-blog-php2shell",
+      "x-wiz-io-php2shell"
+     ]
+    },
+    {
+     "point": "The BBC and the 70% figure",
+     "found": "A BBC article attributes 'roughly 70%' to Wiz and says the BBC could not independently verify it.",
+     "section": "1",
+     "verdict": "agrees",
+     "vault": "The vault's capture of the BBC live page carries the same attribution. The BBC article Perplexity read is a different page and is not in the vault; it is listed below for capture.",
+     "claims": [
+      "scale-70pc-internet"
+     ],
+     "sources": [
+      "bbc-live-ckgel5xp2xv9t"
+     ]
+    },
+    {
+     "point": "How each flaw works",
+     "found": "The per-CVE mechanisms (out-of-memory handling leaving request memory uninitialised; request state outliving its memory into the next request) are marked unverified, pending a primary advisory or a patch review.",
+     "section": "4",
+     "verdict": "resolves",
+     "vault": "Both mechanisms are stated in the CVE records and the GitHub advisories, and the fix commit was read from a clone of php-src. Perplexity's earlier descriptions were right; its caution was right too, given what it could read.",
+     "claims": [
+      "fix-engine",
+      "fix-bailout"
+     ],
+     "sources": [
+      "github-ghsa-w8hw-w9fx-j79w",
+      "github-ghsa-6wmf-4rv5-p3rp",
+      "github-php-src-fix-commit-3584a98bd"
+     ]
+    },
+    {
+     "point": "The fixed versions",
+     "found": "8.2.35, 8.3.36, 8.4.27 and 8.5.12, treated as a collected lead because no official PHP advisory was retrieved.",
+     "section": "5",
+     "verdict": "resolves",
+     "vault": "Confirmed by php.net's advisory, the CVE records and the signed tags in php-src.",
+     "claims": [
+      "two-cves-9.2"
+     ],
+     "sources": [
+      "php-net-advisory",
+      "github-php-src-tags"
+     ]
+    },
+    {
+     "point": "Versions back to 5.4",
+     "found": "Earlier answers said affected releases go back to PHP 5.4; not validated.",
+     "section": "4",
+     "verdict": "further",
+     "vault": "Disputed in the vault: Wiz says 5.4 and later, NCSC-NL from 5, CERT-FR lists 5.x to 8.1, while the CVE records list only 8.2 to 8.5; the project published backports down to 7.4.",
+     "claims": [
+      "versions-old"
+     ],
+     "sources": [
+      "x-wiz-io-php2shell",
+      "ncsc-nl-advisories",
+      "certfr-2026-ale-014",
+      "github-php-src-branch-7.4-backport"
+     ]
+    },
+    {
+     "point": "Demonstrations against applications",
+     "found": "Demonstrations against WordPress, Drupal and Joomla; not validated.",
+     "section": "4",
+     "verdict": "further",
+     "vault": "Reported, not confirmed: Calif lists eleven applications and Wiz two, each by its own account; no third party has reproduced them in a captured source.",
+     "claims": [
+      "wordpress-drupal"
+     ],
+     "sources": [
+      "calif-php2shell",
+      "wiz-blog-php2shell"
+     ]
+    },
+    {
+     "point": "Where the name came from",
+     "found": "A FAQ at php2shell.uk says the label began as the name of the researchers' combined exploit script. No earlier use of the name was found, which is not proof of first use.",
+     "section": "6",
+     "verdict": "lead",
+     "vault": "The FAQ is not in the vault. What the vault holds fits it: on 20 October a screenshot of a 'PHP2Shell tool' credited to Calif.io circulated, per a PHP security team member's account, and the NSA calls the pair PHP2Shell.",
+     "claims": [
+      "leak-hn"
+     ],
+     "sources": [
+      "daubois-blog-php2shell-rumors",
+      "nsa-press-php-4630238"
+     ]
+    },
+    {
+     "point": "Exploitation before disclosure",
+     "found": "The collected evidence does not establish exploitation before disclosure; absence of evidence is not proof.",
+     "section": "7",
+     "verdict": "further",
+     "vault": "Amazon reports one exploit attempt against a honeypot on 17 October, four days before disclosure, from an anonymisation network. That is an attempt against a sensor, still not a compromise.",
+     "claims": [
+      "amazon-honeypot"
+     ],
+     "sources": [
+      "aws-security-blog-madpot",
+      "thehackernews-php2shell-4days"
+     ]
+    },
+    {
+     "point": "Attempts are not compromises",
+     "found": "Reports of exploitation attempts on 21 October are not proof of successful compromise.",
+     "section": "7",
+     "verdict": "agrees",
+     "vault": "The same, counted across every captured source: no named organisation has confirmed a compromise.",
+     "claims": [
+      "no-confirmed-compromise",
+      "cf-millions"
+     ],
+     "sources": [
+      "cisa-kev-json",
+      "x-eastdakota-php2shell-stats",
+      "huntress-php2shell-rapid-response"
+     ]
+    },
+    {
+     "point": "Measured exposure",
+     "found": "Outstanding: a measured global exposure, rather than PHP's market share.",
+     "section": "8",
+     "verdict": "open",
+     "vault": "Open here too. The nearest are host counts: VulnCheck's 2.6 million internet-facing hosts and Censys's 1.57 million unpatched on 21 October, which count machines, not sites, and say nothing about configuration.",
+     "claims": [
+      "scale-2.6m-hosts"
+     ],
+     "sources": [
+      "thehackernews-php2shell-4days",
+      "securityweek-exploitation-days-before"
+     ]
+    },
+    {
+     "point": "Its own earlier answers",
+     "found": "The notes say that some technical details in Perplexity's earlier answers in the same chat were more specific than the excerpts it had retrieved could support, and mark them rather than repeat them.",
+     "section": "Scope",
+     "verdict": "agrees",
+     "vault": "This is the rule the verifier role exists to enforce here: a statement the captured text does not carry is downgraded, not repeated. A model applying it to itself is worth recording.",
+     "claims": [],
+     "sources": []
+    }
+   ],
+   "leads": [
+    {
+     "url": "https://w3techs.com/technologies/details/pl-php",
+     "what": "W3Techs on PHP: the 69.3% figure and its denominator",
+     "priority": "first: it would close the front page's open question on what 70% measures"
+    },
+    {
+     "url": "https://w3techs.com/technologies/overview/programming_language",
+     "what": "W3Techs: server-side languages overview",
+     "priority": "with the above"
+    },
+    {
+     "url": "https://php2shell.uk/faq",
+     "what": "A FAQ on the name's origin",
+     "priority": "second: the only account of where the name came from"
+    },
+    {
+     "url": "https://www.bbc.com/news/articles/cmly0lg3w5x2o",
+     "what": "A BBC article, separate from the live page in the vault",
+     "priority": "third"
+    },
+    {
+     "url": "https://x.com/sagitz_/status/2112901395229597922",
+     "what": "A Wiz researcher's post on the bug class",
+     "priority": "third: social posts get deleted"
+    },
+    {
+     "url": "https://www.bleepingcomputer.com/news/security/php-ships-emergency-patches-for-critical-php2shell-flaws/",
+     "what": "BleepingComputer on the emergency patches",
+     "priority": "later"
+    },
+    {
+     "url": "https://www.elastic.co/security-labs/threat-command/php2shell-php-rce-detection",
+     "what": "Elastic Security Labs on detection",
+     "priority": "later: for the detection and defence page"
+    },
+    {
+     "url": "https://blog.authon.dev/php2shell-cve-2026-109618-patch-check-php-version",
+     "what": "A blog post with the fixed-version list",
+     "priority": "later: secondary, the vault holds the primary"
+    }
+   ]
+  }
+ ]
+}

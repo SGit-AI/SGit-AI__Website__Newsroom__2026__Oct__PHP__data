@@ -428,8 +428,8 @@
  },
  {
   "id": "release-time",
-  "claim": "The fixes were released at 14:00 UTC on 21 October",
-  "by": "php.net pre-announcement; Daubois; CERT-FR (16:00 Paris)",
+  "claim": "The fixes were scheduled for 14:00 UTC on 21 October and were published between 13:31 and 13:35 UTC",
+  "by": "PHP 8.5's release manager, Daniel Scherzer, from the repositories' history; the GitHub tags and advisories (13:34 to 13:35 UTC); php.net pre-announcement (scheduled 14:00 UTC); CERT-EU (13:30 UTC)",
   "sources": [
    "openwall-oss-security-2026-10-20-34",
    "daubois-blog-php2shell-rumors",
@@ -438,12 +438,13 @@
    "github-php-src-tags",
    "github-ghsa-w8hw-w9fx-j79w",
    "github-php-src-tag-php-8.5.12",
-   "php-net-advisory"
+   "php-net-advisory",
+   "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell"
   ],
-  "status": "disputed",
+  "status": "confirmed",
   "topic": "timing",
   "agent": "claude-story-site",
-  "note": "CERT-EU says 13:30 UTC; the tags and advisories are stamped 13:34 to 13:35 UTC; the GitHub release 14:06 UTC; the php.net feed entries carry 00:05 to 00:35 UTC, which are authoring times, not publication times."
+  "note": "CERT-EU says 13:30 UTC; the tags and advisories are stamped 13:34 to 13:35 UTC; the GitHub release 14:06 UTC; the php.net feed entries carry 00:05 to 00:35 UTC, which are authoring times, not publication times. Revised by the correspondent on 26 October 2026: the release manager's own timeline (22 October) gives 13:31 (tarballs), 13:33 (announcements), 13:34 (GitHub advisories) and 13:35 (php-src), matching the tags' stamps; 14:00 UTC was the scheduled time, which BleepingComputer and others repeat. Status from disputed to confirmed, the claim reworded to say both."
  },
  {
   "id": "preannounce-time",
