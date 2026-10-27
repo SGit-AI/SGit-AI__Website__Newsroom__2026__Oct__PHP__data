@@ -259,6 +259,16 @@
   {
    "name": "world.json",
    "group": "story"
+  },
+  {
+   "name": "sections.json",
+   "group": "runtime",
+   "built_by_v1": true
+  },
+  {
+   "name": "briefs-published.json",
+   "group": "runtime",
+   "built_by_v1": true
   }
  ]
 }

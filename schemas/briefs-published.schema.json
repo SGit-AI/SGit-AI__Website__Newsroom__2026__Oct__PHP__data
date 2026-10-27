@@ -1,0 +1,365 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "note": {
+   "type": "string"
+  },
+  "published": {
+   "properties": {
+    "2026-10-22__brief": {
+     "type": "string"
+    },
+    "2026-10-22__brief__collaborators": {
+     "type": "string"
+    },
+    "2026-10-22__brief__every-agent-a-folder-a-policy-and-a-round": {
+     "type": "string"
+    },
+    "2026-10-22__brief__external-collectors": {
+     "type": "string"
+    },
+    "2026-10-22__brief__feedback-keys-and-review": {
+     "type": "string"
+    },
+    "2026-10-22__brief__grc-fractal-risk-registers": {
+     "type": "string"
+    },
+    "2026-10-22__brief__how-many-sites-went-offline": {
+     "type": "string"
+    },
+    "2026-10-22__brief__research-stories-and-the-patching-story": {
+     "type": "string"
+    },
+    "2026-10-22__brief__scheduled-capture-json-and-analysis": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-cartographer-joins": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-conductor-and-the-updates": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-corrections-liaison": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-fact-checker": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-news-desk-chief": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-organisation-as-a-digital-twin": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-phone-app": {
+     "type": "string"
+    },
+    "2026-10-22__brief__the-second-stories-and-the-signals": {
+     "type": "string"
+    },
+    "2026-10-22__feeds-the-delta-and-subscriptions": {
+     "type": "string"
+    },
+    "2026-10-22__from-the-newsroom__review-of-the-site-at-v0.2.2": {
+     "type": "string"
+    },
+    "2026-10-22__handing-the-editor-a-vault-key": {
+     "type": "string"
+    },
+    "2026-10-22__review__front-page-and-navigation": {
+     "type": "string"
+    },
+    "2026-10-22__talk-to-the-site": {
+     "type": "string"
+    },
+    "2026-10-22__telemetry-over-an-append-lane": {
+     "type": "string"
+    },
+    "2026-10-22__triage__the-newsrooms-review": {
+     "type": "string"
+    },
+    "2026-10-23__brief__day-two-situation-awareness": {
+     "type": "string"
+    },
+    "2026-10-23__brief__moving-a-vault-to-pack-mode": {
+     "type": "string"
+    },
+    "2026-10-23__brief__perplexity-community-signals": {
+     "type": "string"
+    },
+    "2026-10-23__brief__phased-source-watch-pass": {
+     "type": "string"
+    },
+    "2026-10-23__brief__scanner-noise": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-front-page-on-day-two": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-journalist-unblocked": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-journalists-views": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-redesign": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-risk-graph-as-a-tool": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-schedule-vault": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-scheduled-curator": {
+     "type": "string"
+    },
+    "2026-10-23__brief__the-scheduled-source-watch": {
+     "type": "string"
+    },
+    "2026-10-23__brief__three-views-over-time": {
+     "type": "string"
+    },
+    "2026-10-24__brief__application-security": {
+     "type": "string"
+    },
+    "2026-10-24__brief__asking-for-corrections": {
+     "type": "string"
+    },
+    "2026-10-24__brief__commit-fs-lite": {
+     "type": "string"
+    },
+    "2026-10-24__brief__factcheck-investigations-how-much-php": {
+     "type": "string"
+    },
+    "2026-10-24__brief__schedules-in-git": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-correspondent": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-desk-on-a-schedule": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-graph-reviewed-and-a-first-step": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-journalist": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-lane-cap-and-sharded-lanes": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-lens": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-ontologist": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-pipeline-researcher-to-correspondent": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-redesign-live": {
+     "type": "string"
+    },
+    "2026-10-24__brief__the-scheduled-journalist": {
+     "type": "string"
+    },
+    "2026-10-24__plan__the-journalists-full-pass": {
+     "type": "string"
+    },
+    "2026-10-24__review__the-redesign-for-communication": {
+     "type": "string"
+    },
+    "2026-10-25__brief__a-deck-per-persona": {
+     "type": "string"
+    },
+    "2026-10-25__brief__decks-the-ruv-model": {
+     "type": "string"
+    },
+    "2026-10-25__brief__interviews-and-outreach": {
+     "type": "string"
+    },
+    "2026-10-25__brief__the-404-router-and-two-modes": {
+     "type": "string"
+    },
+    "2026-10-25__brief__the-line": {
+     "type": "string"
+    },
+    "2026-10-25__brief__the-split-for-every-agent": {
+     "type": "string"
+    },
+    "2026-10-25__brief__urls-personas-and-a-single-page-site": {
+     "type": "string"
+    },
+    "2026-10-25__brief__wikipedia-as-an-anchor": {
+     "type": "string"
+    },
+    "2026-10-25__plan__one-repository-into-six-implementation": {
+     "type": "string"
+    },
+    "2026-10-25__proposal__one-repository-into-six": {
+     "type": "string"
+    },
+    "2026-10-25__report__one-repository-into-six-how-to-work-in-it": {
+     "type": "string"
+    },
+    "2026-10-25__report__one-repository-into-six-the-challenges": {
+     "type": "string"
+    },
+    "2026-10-25__report__one-repository-into-six-the-first-day": {
+     "type": "string"
+    },
+    "2026-10-25__report__one-source-for-every-file": {
+     "type": "string"
+    },
+    "2026-10-25__review__the-line-and-the-router-on-the-live-site": {
+     "type": "string"
+    },
+    "2026-10-25__review__the-split-as-served": {
+     "type": "string"
+    },
+    "2026-10-26__brief__every-release-is-live-again": {
+     "type": "string"
+    },
+    "2026-10-26__brief__for-the-sgit-cli-team-0-25-0-in-the-newsroom": {
+     "type": "string"
+    },
+    "2026-10-26__brief__reader-questions": {
+     "type": "string"
+    },
+    "2026-10-26__brief__sgit-0-25-0": {
+     "type": "string"
+    },
+    "2026-10-26__decision__the-curator-writes-data": {
+     "type": "string"
+    },
+    "2026-10-26__proposal__curator-data-files": {
+     "type": "string"
+    },
+    "2026-10-27__breaking__breaking-001-cisa-lists-both-php2shell-flaws-as-exploited": {
+     "type": "string"
+    },
+    "2026-10-27__brief__centers-of-gravity": {
+     "type": "string"
+    },
+    "2026-10-27__brief__five-lanes-and-a-cap-per-tab": {
+     "type": "string"
+    },
+    "2026-10-27__brief__sgit-0-26-0": {
+     "type": "string"
+    },
+    "2026-10-27__brief__the-breaking-news-desk": {
+     "type": "string"
+    },
+    "2026-10-27__brief__the-story-as-days": {
+     "type": "string"
+    },
+    "2026-10-27__decision__which-model-each-agent-runs": {
+     "type": "string"
+    },
+    "2026-10-27__report__the-kev-listing-run": {
+     "type": "string"
+    },
+    "2026-10-27__runbook__breaking-desk-onboarding": {
+     "type": "string"
+    }
+   },
+   "required": [
+    "2026-10-22__brief",
+    "2026-10-22__brief__collaborators",
+    "2026-10-22__brief__every-agent-a-folder-a-policy-and-a-round",
+    "2026-10-22__brief__external-collectors",
+    "2026-10-22__brief__feedback-keys-and-review",
+    "2026-10-22__brief__grc-fractal-risk-registers",
+    "2026-10-22__brief__how-many-sites-went-offline",
+    "2026-10-22__brief__research-stories-and-the-patching-story",
+    "2026-10-22__brief__scheduled-capture-json-and-analysis",
+    "2026-10-22__brief__the-cartographer-joins",
+    "2026-10-22__brief__the-conductor-and-the-updates",
+    "2026-10-22__brief__the-corrections-liaison",
+    "2026-10-22__brief__the-fact-checker",
+    "2026-10-22__brief__the-news-desk-chief",
+    "2026-10-22__brief__the-organisation-as-a-digital-twin",
+    "2026-10-22__brief__the-phone-app",
+    "2026-10-22__brief__the-second-stories-and-the-signals",
+    "2026-10-22__feeds-the-delta-and-subscriptions",
+    "2026-10-22__from-the-newsroom__review-of-the-site-at-v0.2.2",
+    "2026-10-22__handing-the-editor-a-vault-key",
+    "2026-10-22__review__front-page-and-navigation",
+    "2026-10-22__talk-to-the-site",
+    "2026-10-22__telemetry-over-an-append-lane",
+    "2026-10-22__triage__the-newsrooms-review",
+    "2026-10-23__brief__day-two-situation-awareness",
+    "2026-10-23__brief__moving-a-vault-to-pack-mode",
+    "2026-10-23__brief__perplexity-community-signals",
+    "2026-10-23__brief__phased-source-watch-pass",
+    "2026-10-23__brief__scanner-noise",
+    "2026-10-23__brief__the-front-page-on-day-two",
+    "2026-10-23__brief__the-journalist-unblocked",
+    "2026-10-23__brief__the-journalists-views",
+    "2026-10-23__brief__the-redesign",
+    "2026-10-23__brief__the-risk-graph-as-a-tool",
+    "2026-10-23__brief__the-schedule-vault",
+    "2026-10-23__brief__the-scheduled-curator",
+    "2026-10-23__brief__the-scheduled-source-watch",
+    "2026-10-23__brief__three-views-over-time",
+    "2026-10-24__brief__application-security",
+    "2026-10-24__brief__asking-for-corrections",
+    "2026-10-24__brief__commit-fs-lite",
+    "2026-10-24__brief__factcheck-investigations-how-much-php",
+    "2026-10-24__brief__schedules-in-git",
+    "2026-10-24__brief__the-correspondent",
+    "2026-10-24__brief__the-desk-on-a-schedule",
+    "2026-10-24__brief__the-graph-reviewed-and-a-first-step",
+    "2026-10-24__brief__the-journalist",
+    "2026-10-24__brief__the-lane-cap-and-sharded-lanes",
+    "2026-10-24__brief__the-lens",
+    "2026-10-24__brief__the-ontologist",
+    "2026-10-24__brief__the-pipeline-researcher-to-correspondent",
+    "2026-10-24__brief__the-redesign-live",
+    "2026-10-24__brief__the-scheduled-journalist",
+    "2026-10-24__plan__the-journalists-full-pass",
+    "2026-10-24__review__the-redesign-for-communication",
+    "2026-10-25__brief__a-deck-per-persona",
+    "2026-10-25__brief__decks-the-ruv-model",
+    "2026-10-25__brief__interviews-and-outreach",
+    "2026-10-25__brief__the-404-router-and-two-modes",
+    "2026-10-25__brief__the-line",
+    "2026-10-25__brief__the-split-for-every-agent",
+    "2026-10-25__brief__urls-personas-and-a-single-page-site",
+    "2026-10-25__brief__wikipedia-as-an-anchor",
+    "2026-10-25__plan__one-repository-into-six-implementation",
+    "2026-10-25__proposal__one-repository-into-six",
+    "2026-10-25__report__one-repository-into-six-how-to-work-in-it",
+    "2026-10-25__report__one-repository-into-six-the-challenges",
+    "2026-10-25__report__one-repository-into-six-the-first-day",
+    "2026-10-25__report__one-source-for-every-file",
+    "2026-10-25__review__the-line-and-the-router-on-the-live-site",
+    "2026-10-25__review__the-split-as-served",
+    "2026-10-26__brief__every-release-is-live-again",
+    "2026-10-26__brief__for-the-sgit-cli-team-0-25-0-in-the-newsroom",
+    "2026-10-26__brief__reader-questions",
+    "2026-10-26__brief__sgit-0-25-0",
+    "2026-10-26__decision__the-curator-writes-data",
+    "2026-10-26__proposal__curator-data-files",
+    "2026-10-27__breaking__breaking-001-cisa-lists-both-php2shell-flaws-as-exploited",
+    "2026-10-27__brief__centers-of-gravity",
+    "2026-10-27__brief__five-lanes-and-a-cap-per-tab",
+    "2026-10-27__brief__sgit-0-26-0",
+    "2026-10-27__brief__the-breaking-news-desk",
+    "2026-10-27__brief__the-story-as-days",
+    "2026-10-27__decision__which-model-each-agent-runs",
+    "2026-10-27__report__the-kev-listing-run",
+    "2026-10-27__runbook__breaking-desk-onboarding"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "note",
+  "published"
+ ],
+ "title": "briefs-published.json",
+ "type": "object"
+}

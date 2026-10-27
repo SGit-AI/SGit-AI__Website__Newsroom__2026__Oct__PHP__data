@@ -1,0 +1,3157 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "note": {
+   "type": "string"
+  },
+  "sections": {
+   "properties": {
+    "briefing-analyst": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-appsec": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-board": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-cfo": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-ciso": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-comms": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-cto": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-developer": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-dpo": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-engineer": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-everyone": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-journalist": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-pm": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-researcher": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-security": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "briefing-site-owner": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-ac-high": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-affected-sites": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-ahead-of-attackers": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-ai-found": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-amazon-honeypot": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-cf-millions": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-chainguard": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-cisa-none": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-cloudflare-traffic": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-cvss-10": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-disclosure-22oct": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-edinburgh": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-fi-offline": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-fix-authored": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-fix-bailout": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-fix-engine": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-fix-incomplete": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-four-reporters": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-gov-patch-required": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-huntress-none": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-imperva-none": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-kev-precedent": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-latvia-attempts": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-latvia-offline": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-leak-cve-ids": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-leak-hn": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-leak-mitigations": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-leak-video": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-leak-watchtowr": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-lorenc-ai-found": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-more-paths": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-most-severe": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-nl-offline": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-no-confirmed-compromise": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-no-exploitation": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-nz-active": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-offline-allies": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-offline-cisa": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-offline-ncsc": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-offline-nsa": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-only-update": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-openai-same-day": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-oxford": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-pocs-wrong": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-preannounce-time": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-probing": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-quarkslab-2024": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-quarkslab-redacted": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-rce-fpm": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-rce-modphp": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-release-moved": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-release-time": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-scale-2.6m-hosts": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-scale-30m": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-scale-70pc-internet": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-scale-70pc-websites": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-scale-latvia": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-scale-ncsc-nl": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-two-cves-9.2": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-uk-list": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-versions-old": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-vibe-code": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-waf": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-waf-nine-hours": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-watchtowr-itw": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-weirdgloop-13h": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-who-first": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-wikimedia-precaution": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-wiz-independent": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "fact-wordpress-drupal": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "front-facts": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "front-glance": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "front-latest": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "front-now": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "front-unknown": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-actors": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-affected": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-agencies": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-claims": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-code": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-context": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-defence": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-discovery": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-explained": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-exploitation": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-flaws": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-glossary": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-impact": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-interview": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-leak": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-method": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-numbers": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-playbook": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-summary": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-timeline": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    },
+    "page-views-state": {
+     "properties": {
+      "kind": {
+       "type": "string"
+      },
+      "path": {
+       "type": "string"
+      },
+      "scope": {
+       "type": "string"
+      },
+      "title": {
+       "type": "string"
+      },
+      "versions": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "kind",
+      "path",
+      "scope",
+      "title",
+      "versions"
+     ],
+     "type": "object"
+    }
+   },
+   "required": [
+    "briefing-analyst",
+    "briefing-appsec",
+    "briefing-board",
+    "briefing-cfo",
+    "briefing-ciso",
+    "briefing-comms",
+    "briefing-cto",
+    "briefing-developer",
+    "briefing-dpo",
+    "briefing-engineer",
+    "briefing-everyone",
+    "briefing-journalist",
+    "briefing-pm",
+    "briefing-researcher",
+    "briefing-security",
+    "briefing-site-owner",
+    "fact-ac-high",
+    "fact-affected-sites",
+    "fact-ahead-of-attackers",
+    "fact-ai-found",
+    "fact-amazon-honeypot",
+    "fact-cf-millions",
+    "fact-chainguard",
+    "fact-cisa-none",
+    "fact-cloudflare-traffic",
+    "fact-cvss-10",
+    "fact-disclosure-22oct",
+    "fact-edinburgh",
+    "fact-fi-offline",
+    "fact-fix-authored",
+    "fact-fix-bailout",
+    "fact-fix-engine",
+    "fact-fix-incomplete",
+    "fact-four-reporters",
+    "fact-gov-patch-required",
+    "fact-huntress-none",
+    "fact-imperva-none",
+    "fact-kev-precedent",
+    "fact-latvia-attempts",
+    "fact-latvia-offline",
+    "fact-leak-cve-ids",
+    "fact-leak-hn",
+    "fact-leak-mitigations",
+    "fact-leak-video",
+    "fact-leak-watchtowr",
+    "fact-lorenc-ai-found",
+    "fact-more-paths",
+    "fact-most-severe",
+    "fact-nl-offline",
+    "fact-no-confirmed-compromise",
+    "fact-no-exploitation",
+    "fact-nz-active",
+    "fact-offline-allies",
+    "fact-offline-cisa",
+    "fact-offline-ncsc",
+    "fact-offline-nsa",
+    "fact-only-update",
+    "fact-openai-same-day",
+    "fact-oxford",
+    "fact-pocs-wrong",
+    "fact-preannounce-time",
+    "fact-probing",
+    "fact-quarkslab-2024",
+    "fact-quarkslab-redacted",
+    "fact-rce-fpm",
+    "fact-rce-modphp",
+    "fact-release-moved",
+    "fact-release-time",
+    "fact-scale-2.6m-hosts",
+    "fact-scale-30m",
+    "fact-scale-70pc-internet",
+    "fact-scale-70pc-websites",
+    "fact-scale-latvia",
+    "fact-scale-ncsc-nl",
+    "fact-two-cves-9.2",
+    "fact-uk-list",
+    "fact-versions-old",
+    "fact-vibe-code",
+    "fact-waf",
+    "fact-waf-nine-hours",
+    "fact-watchtowr-itw",
+    "fact-weirdgloop-13h",
+    "fact-who-first",
+    "fact-wikimedia-precaution",
+    "fact-wiz-independent",
+    "fact-wordpress-drupal",
+    "front-facts",
+    "front-glance",
+    "front-latest",
+    "front-now",
+    "front-unknown",
+    "page-actors",
+    "page-affected",
+    "page-agencies",
+    "page-claims",
+    "page-code",
+    "page-context",
+    "page-defence",
+    "page-discovery",
+    "page-explained",
+    "page-exploitation",
+    "page-flaws",
+    "page-glossary",
+    "page-impact",
+    "page-interview",
+    "page-leak",
+    "page-method",
+    "page-numbers",
+    "page-playbook",
+    "page-summary",
+    "page-timeline",
+    "page-views-state"
+   ],
+   "type": "object"
+  }
+ },
+ "required": [
+  "note",
+  "sections"
+ ],
+ "title": "sections.json",
+ "type": "object"
+}
