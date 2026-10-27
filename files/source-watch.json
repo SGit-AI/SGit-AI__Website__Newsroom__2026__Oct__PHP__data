@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "3c5e727b84f8",
-  "message": "researcher@php.newsroom: PROJECT-002 step 1: 28 corrections and contact pages of 14 outlets, with the findings"
+  "commit": "c18e84740da7",
+  "message": "researcher@php.newsroom: pass 20261027T1433Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "c18e84740da7",
+   "message": "researcher@php.newsroom: pass 20261027T1433Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "1253241d54d9",
+   "message": "researcher@php.newsroom: pass 20261027T1433Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "3c5e727b84f8",
    "message": "researcher@php.newsroom: PROJECT-002 step 1: 28 corrections and contact pages of 14 outlets, with the findings"
@@ -149,18 +157,6 @@
   {
    "commit": "c856bdc40ed2",
    "message": "researcher@php.newsroom: pass 20261023T2347Z"
-  },
-  {
-   "commit": "630988b9680c",
-   "message": "researcher@php.newsroom: benchmark, a one-file push on the pack vault"
-  },
-  {
-   "commit": "ae551123f08a",
-   "message": "researcher@php.newsroom: pass 20261023T1631Z"
-  },
-  {
-   "commit": "bff62f9dc08f",
-   "message": "researcher@php.newsroom: scanner-noise angle (index/angles/scanner-noise.json, 7 new pages), job-03-community for Perplexity with its prompt, three new kinds, login-wall fix for Bluesky and LinkedIn search"
   }
  ],
  "pages": 1365,
@@ -284,22 +280,21 @@
   "sl": 1
  },
  "access": {
-  "open": 1164,
-  "bot-challenge": 97,
-  "down": 65,
-  "paywalled": 21,
-  "gone": 9,
-  "unchecked": 7,
+  "open": 1151,
+  "bot-challenge": 98,
+  "down": 84,
+  "paywalled": 20,
+  "gone": 10,
   "login-wall": 2
  },
  "tiers": {
   "A": 74,
-  "B": 927,
+  "B": 933,
   "C": 16
  },
- "snapshots": 15981,
- "graphs": 15981,
- "files": 123468,
+ "snapshots": 16742,
+ "graphs": 16742,
+ "files": 128747,
  "world_graph": {
   "nodes": 2472,
   "edges": 4928
@@ -1611,6 +1606,38 @@
    "changed": 28,
    "access": {
     "open": 28
+   }
+  },
+  {
+   "run": "20261027T143429Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-27T14:34:29Z",
+   "finished": "2026-10-27T14:41:19Z",
+   "pages_due": 188,
+   "pages_total": 1365,
+   "changed": 59,
+   "access": {
+    "open": 135,
+    "bot-challenge": 14,
+    "down": 38,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261027T144120Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-27T14:41:20Z",
+   "finished": "2026-10-27T15:19:33Z",
+   "pages_due": 1110,
+   "pages_total": 1365,
+   "changed": 702,
+   "access": {
+    "open": 954,
+    "bot-challenge": 82,
+    "down": 46,
+    "paywalled": 20,
+    "gone": 6,
+    "login-wall": 2
    }
   }
  ],
