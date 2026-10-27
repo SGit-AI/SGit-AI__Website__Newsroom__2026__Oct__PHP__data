@@ -1,0 +1,71 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "files": {
+   "items": {
+    "properties": {
+     "by": {
+      "type": "string"
+     },
+     "from": {
+      "type": "string"
+     },
+     "layer": {
+      "type": "string"
+     },
+     "path": {
+      "type": "string"
+     },
+     "used_on": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "by",
+     "from",
+     "layer",
+     "path",
+     "used_on"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "layers": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "rule": {
+      "type": "string"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "name",
+     "rule",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "note": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "files",
+  "layers",
+  "note"
+ ],
+ "title": "layers.json",
+ "type": "object"
+}

@@ -1,0 +1,56 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "anonymous_limit": {
+   "type": "string"
+  },
+  "api": {
+   "type": "string"
+  },
+  "sites": {
+   "items": {
+    "properties": {
+     "branch": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "repo": {
+      "type": "string"
+     },
+     "site": {
+      "type": "string"
+     },
+     "workflow": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "branch",
+     "id",
+     "name",
+     "repo",
+     "site",
+     "workflow"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "anonymous_limit",
+  "api",
+  "sites"
+ ],
+ "title": "pipeline.json",
+ "type": "object"
+}

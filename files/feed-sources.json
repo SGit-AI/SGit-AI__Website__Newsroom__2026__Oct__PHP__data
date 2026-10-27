@@ -1,0 +1,28 @@
+{
+ "about": "The feeds the viewer at /reader/ offers. 'Open to browsers' sources send a CORS header, so a reader's browser can fetch them directly; each was checked on 22 October 2026. The closed ones send none: they are listed so a reader knows they exist and why the viewer cannot read them. Readers add their own feeds in their browser.",
+ "checked": "2026-10-22",
+ "feeds": [
+  {"id": "site-all", "group": "This site", "name": "Everything new and changed", "url": "feeds/all.xml", "what": "Every new or changed fact, page, briefing, story, question, source and dated event on this site."},
+  {"id": "site-research", "group": "This site", "name": "Research", "url": "feeds/research.xml", "what": "The incident, the analysis and the evidence."},
+  {"id": "site-for-you", "group": "This site", "name": "For you", "url": "feeds/for-you.xml", "what": "Questions, briefings and the start-here pages."},
+  {"id": "site-stories", "group": "This site", "name": "Stories", "url": "feeds/stories.xml", "what": "Stories written here, signed and dated."},
+  {"id": "site-site", "group": "This site", "name": "About the site", "url": "feeds/site.xml", "what": "The site's own pages: method, vaults, billing."},
+  {"id": "site-releases", "group": "This site", "name": "Releases", "url": "feed.xml", "what": "Every release of this site (Atom)."},
+  {"id": "cve-org", "group": "The records", "name": "CVE.org: the two CVE records", "adapter": "cve5", "urls": ["https://cveawg.mitre.org/api/cve/CVE-2026-109618", "https://cveawg.mitre.org/api/cve/CVE-2026-109619"], "what": "The CVE Program's records for CVE-2026-109618 and CVE-2026-109619, with the time each was last updated."},
+  {"id": "nvd", "group": "The records", "name": "NVD: the two CVEs", "adapter": "nvd", "urls": ["https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-109618", "https://services.nvd.nist.gov/rest/json/cves/2.0?cveId=CVE-2026-109619"], "what": "NIST's National Vulnerability Database entries, with their analysis status."},
+  {"id": "osv", "group": "The records", "name": "OSV: the two CVEs", "adapter": "osv", "urls": ["https://api.osv.dev/v1/vulns/CVE-2026-109618", "https://api.osv.dev/v1/vulns/CVE-2026-109619"], "what": "Google's Open Source Vulnerabilities database. On 22 October it had no record for either."},
+  {"id": "kev", "group": "The records", "name": "CISA KEV: PHP entries", "adapter": "kev", "match": "PHP", "url": "https://raw.githubusercontent.com/cisagov/kev-data/main/known_exploited_vulnerabilities.json", "what": "CISA's catalog of vulnerabilities known to be exploited, filtered to PHP, newest first: the day php2shell is added, it is at the top."},
+  {"id": "gh-advisories", "group": "Code and projects", "name": "php-src security advisories (GitHub)", "adapter": "ghadvisories", "url": "https://api.github.com/repos/php/php-src/security-advisories?per_page=30", "what": "The PHP project's published security advisories on GitHub. GitHub allows 60 reads an hour per address without an account."},
+  {"id": "gh-releases", "group": "Code and projects", "name": "php-src releases (GitHub)", "adapter": "ghreleases", "url": "https://api.github.com/repos/php/php-src/releases?per_page=20", "what": "Releases published on the php-src repository."},
+  {"id": "wikipedia", "group": "Code and projects", "name": "Wikipedia: edits to the PHP2Shell article", "adapter": "wikirevs", "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=PHP2Shell&rvlimit=30&rvprop=ids%7Ctimestamp%7Cuser%7Ccomment&format=json&origin=*", "what": "Every edit to the English Wikipedia article, with the editor's summary."},
+  {"id": "hn", "group": "Discussion", "name": "Hacker News: php2shell", "adapter": "hn", "url": "https://hn.algolia.com/api/v1/search_by_date?query=php2shell&tags=story&hitsPerPage=40", "what": "Stories on Hacker News that mention php2shell, newest first."},
+  {"id": "mastodon", "group": "Discussion", "name": "Mastodon: #php2shell", "adapter": "mastodon", "url": "https://mastodon.social/api/v1/timelines/tag/php2shell?limit=40", "what": "Public posts tagged #php2shell, as mastodon.social sees the network."},
+  {"id": "infosec-exchange", "group": "Discussion", "name": "infosec.exchange: #php2shell", "url": "https://infosec.exchange/tags/php2shell.rss", "what": "The security community's Mastodon server, its #php2shell tag as RSS."},
+  {"id": "php-net", "group": "Closed to browsers", "name": "php.net releases", "cors": false, "url": "https://www.php.net/releases/feed.php", "what": "The PHP project's release feed."},
+  {"id": "ncsc-uk", "group": "Closed to browsers", "name": "NCSC UK reports", "cors": false, "url": "https://www.ncsc.gov.uk/api/1/services/v1/report-rss-feed.xml", "what": "The UK National Cyber Security Centre's reports."},
+  {"id": "cisa-adv", "group": "Closed to browsers", "name": "CISA advisories", "cors": false, "url": "https://www.cisa.gov/cybersecurity-advisories/all.xml", "what": "Every CISA cybersecurity advisory."},
+  {"id": "bleeping", "group": "Closed to browsers", "name": "BleepingComputer", "cors": false, "url": "https://www.bleepingcomputer.com/feed/", "what": "Security news."},
+  {"id": "thn", "group": "Closed to browsers", "name": "The Hacker News", "cors": false, "url": "https://feeds.feedburner.com/TheHackersNews", "what": "Security news."},
+  {"id": "google-news", "group": "Closed to browsers", "name": "Google News: php2shell", "cors": false, "url": "https://news.google.com/rss/search?q=php2shell", "what": "Google News search, as RSS."}
+ ]
+}

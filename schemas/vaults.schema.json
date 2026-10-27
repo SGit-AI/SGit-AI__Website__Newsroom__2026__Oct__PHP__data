@@ -1,0 +1,72 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "vaults": {
+   "items": {
+    "properties": {
+     "access": {
+      "type": "string"
+     },
+     "app": {
+      "type": "boolean"
+     },
+     "data": {
+      "type": "string"
+     },
+     "facts": {
+      "type": "string"
+     },
+     "holds": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "nav": {
+      "type": "boolean"
+     },
+     "note": {
+      "type": "string"
+     },
+     "page": {
+      "type": "string"
+     },
+     "read_key": {
+      "type": "string"
+     },
+     "slug": {
+      "type": "string"
+     },
+     "writers": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "access",
+     "app",
+     "data",
+     "holds",
+     "id",
+     "name",
+     "page",
+     "slug",
+     "writers"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "vaults"
+ ],
+ "title": "vaults.json",
+ "type": "object"
+}

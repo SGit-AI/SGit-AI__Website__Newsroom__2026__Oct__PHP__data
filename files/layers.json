@@ -1,0 +1,717 @@
+{
+ "note": "Every file this site is built from belongs to exactly one layer. Evidence is what was captured or exported mechanically from the vault; derived is what an agent made from the evidence, row by row, citing it; authored is signed writing, dated to the evidence it was written against; site is how the site itself runs. The gate refuses a data file that is not listed here.",
+ "layers": [
+  {
+   "id": "evidence",
+   "name": "Evidence",
+   "what": "Captured or exported from the evidence vault by a script, with no judgement added. Changes only when the vault changes.",
+   "rule": "Never edited by hand: re-export it from the vault."
+  },
+  {
+   "id": "derived",
+   "name": "Derived",
+   "what": "Transformations of the evidence written by agents: claims with a status, dated events, counts, comparisons, graphs. Every row cites source slugs, and the pages built from them are rebuilt on every release.",
+   "rule": "A row that cites nothing is deleted; a row whose sources change is re-checked."
+  },
+  {
+   "id": "authored",
+   "name": "Authored",
+   "what": "Signed writing: the editor's brief and memos, and articles by the journalist, historian and other agent roles. Each article names the site version, vault commit and capture time it was written against, and is not revised afterwards.",
+   "rule": "Dated and signed; a later piece supersedes, it does not overwrite."
+  },
+  {
+   "id": "site",
+   "name": "Site",
+   "what": "How the site runs: roles, release history, billing, admin and telemetry. Not evidence about the story.",
+   "rule": "Kept current by whoever ships."
+  }
+ ],
+ "files": [
+  {
+   "path": "data/sources.json",
+   "layer": "evidence",
+   "by": "admin/build/export_vault.py",
+   "from": "every source.json in the vault, with the sha256 of every captured file",
+   "used_on": "sources/index.html"
+  },
+  {
+   "path": "data/vault.json",
+   "layer": "evidence",
+   "by": "admin/build/export_vault.py",
+   "from": "the vault head, its counts and the agents that wrote to it",
+   "used_on": "admin/vault/index.html"
+  },
+  {
+   "path": "data/vault-claims.json",
+   "layer": "evidence",
+   "by": "admin/build/export_vault.py",
+   "from": "claims/<agent>.json in the vault, one file per agent, merged unedited",
+   "used_on": "claims/index.html"
+  },
+  {
+   "path": "data/vault-timeline.json",
+   "layer": "evidence",
+   "by": "admin/build/export_vault.py",
+   "from": "timeline/<agent>.json in the vault, merged unedited",
+   "used_on": "timeline/index.html"
+  },
+  {
+   "path": "data/software.json",
+   "layer": "evidence",
+   "by": "admin/build/export_vault.py",
+   "from": "the NCSC-NL php2shell inventory, parsed row by row at commit cca173c64ec5",
+   "used_on": "affected/software.html"
+  },
+  {
+   "path": "review/code/files.json",
+   "layer": "evidence",
+   "by": "a parser over git show -U0 of the fix commit",
+   "from": "php/php-src commit 3584a98bd: files, hunks and the functions they fall in",
+   "used_on": "review/index.html"
+  },
+  {
+   "path": "data/inventory-history.json",
+   "layer": "evidence",
+   "by": "admin/build/inventory_history.py",
+   "from": "a git clone of NCSC-NL/php2shell: every commit that changed the inventory, counted per status, with every change of status; content-addressed and checked against the vault's own capture at cca173c64ec5. Read from the public repository, not yet captured into the vault",
+   "used_on": "patching/inventory/index.html"
+  },
+  {
+   "path": "data/signals.json",
+   "layer": "derived",
+   "by": "claude-journalist and claude-historian",
+   "from": "the claims, the exploitation and defence data, the inventory and the timeline, arranged as the ladder from exposed to exploited, four signal families and the time of each barrier",
+   "used_on": "signals/index.html"
+  },
+  {
+   "path": "data/claim-review.json",
+   "layer": "derived",
+   "by": "claude-journalist",
+   "from": "the vault's per-agent claims (data/vault-claims.json) checked against the saved pages, the site's claims and the contradiction ledger",
+   "used_on": "claims/review/index.html"
+  },
+  {
+   "path": "data/state.json",
+   "layer": "derived",
+   "by": "claude-journalist",
+   "from": "the evidence vault, the source watch's dated series and the NCSC-NL inventory's history: the measures of the state of affairs, one row per version, each with its as-of time and basis",
+   "used_on": "views/state/index.html"
+  },
+  {
+   "path": "data/claims.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the vault's notes and per-agent claims, re-traced to primary sources",
+   "used_on": "claims/index.html"
+  },
+  {
+   "path": "data/timeline.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the vault's notes and per-agent timelines, with every time conversion marked",
+   "used_on": "timeline/index.html"
+  },
+  {
+   "path": "data/numbers.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the scale figures in the captures, with what each measures",
+   "used_on": "numbers/index.html"
+  },
+  {
+   "path": "data/agencies.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "each agency's captured advisory, read for its offline and exploitation stance",
+   "used_on": "agencies/index.html"
+  },
+  {
+   "path": "data/affected.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the CVE records, advisories and agency pages: versions, SAPIs, mitigations",
+   "used_on": "affected/index.html"
+  },
+  {
+   "path": "data/exploitation.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "every exploitation signal in the captures, in order",
+   "used_on": "exploitation/index.html"
+  },
+  {
+   "path": "data/impact.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the offline and compromise reports in the captures, as two ledgers",
+   "used_on": "impact/index.html"
+  },
+  {
+   "path": "data/defence.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the WAF vendors' posts and the community rule sets",
+   "used_on": "defence/index.html"
+  },
+  {
+   "path": "data/history.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "ten earlier CVE records and the KEV catalog captured on 22 October",
+   "used_on": "context/index.html"
+  },
+  {
+   "path": "data/code.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "a clone of php/php-src: the fix commit, the mechanism, the backport",
+   "used_on": "code/index.html"
+  },
+  {
+   "path": "data/review.json",
+   "layer": "derived",
+   "by": "a parser for the code layer; claude-story-site for the remediation layer",
+   "from": "the fix commit's diff, its message and the two GitHub advisories",
+   "used_on": "review/index.html"
+  },
+  {
+   "path": "data/actors.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the parties named in the claims",
+   "used_on": "actors/index.html"
+  },
+  {
+   "path": "data/story.json",
+   "layer": "derived",
+   "by": "claude-story-site",
+   "from": "the claims, as the front page's lead, what is established and what is not",
+   "used_on": "index.html"
+  },
+  {
+   "path": "data/questions.json",
+   "layer": "derived",
+   "by": "librarian@php.newsroom",
+   "from": "the questions readers ask, each short answer re-traced to claims and captured sources",
+   "used_on": "questions/index.html"
+  },
+  {
+   "path": "data/readings.json",
+   "layer": "derived",
+   "by": "claude-journalist",
+   "from": "other models' notes, compared point by point with the claims and captured sources",
+   "used_on": "readings/index.html"
+  },
+  {
+   "path": "data/patching.json",
+   "layer": "derived",
+   "by": "claude-journalist",
+   "from": "the PHP project's releases and backport branches, and the NCSC-NL inventory's own rows, named exactly and checked by the gate",
+   "used_on": "patching/index.html"
+  },
+  {
+   "path": "data/graph.json",
+   "layer": "derived",
+   "by": "admin/build/build.py",
+   "from": "every claim, number, event, exploitation signal, agency's advice, source, capture and contradiction, joined through data/entities.json and data/attribution.json under the verbs of data/ontology.json; generated at build",
+   "used_on": "graph/index.html"
+  },
+  {
+   "path": "data/ontology.json",
+   "layer": "authored",
+   "by": "the ontologist",
+   "from": "the estate's grammar (graphs.sgit.ai, newsroom.sgit.ai's ontologies), board 030 and 062, the newsroom review's change 10",
+   "used_on": "graph/index.html"
+  },
+  {
+   "path": "data/entities.json",
+   "layer": "authored",
+   "by": "the ontologist",
+   "from": "the publisher strings of data/sources.json and the parties named in the claims, numbers, exploitation and agency rows; actor ids reused from data/actors.json",
+   "used_on": "graph/parties/index.html"
+  },
+  {
+   "path": "data/attribution.json",
+   "layer": "authored",
+   "by": "the ontologist",
+   "from": "the free-text 'by' and 'who' of each claim, number and exploitation row, resolved to entities",
+   "used_on": "graph/parties/index.html"
+  },
+  {
+   "path": "data/crosswalk.json",
+   "layer": "authored",
+   "by": "the ontologist",
+   "from": "the node ids of the story, code-review and risk graphs, and data/grc.json's stakeholders",
+   "used_on": "graph/index.html"
+  },
+  {
+   "path": "data/wikidata-links.json",
+   "layer": "authored",
+   "by": "the ontologist, from the candidates admin/wikipedia/wikidata_links.py finds on Wikidata",
+   "from": "each party's name searched on Wikidata; a proposal is the tool's, a confirmed item is the ontologist's, and the build reads only confirmed ones",
+   "used_on": "graph/parties/index.html"
+  },
+  {
+   "path": "data/wikipedia/",
+   "layer": "evidence",
+   "by": "admin/wikipedia/fetch.py, run by the ontologist",
+   "from": "the English Wikipedia's API: every revision of each watched article with its wikitext (CC BY-SA 4.0, by its contributors), its Wikidata item and the articles that link in; the text is third-party material",
+   "used_on": "wikipedia/index.html"
+  },
+  {
+   "path": "data/wikipedia/<article>/graph.json",
+   "layer": "derived",
+   "by": "admin/build/build.py (the ontologist's block) with admin/build/wikitext.py",
+   "from": "the article's latest revision parsed into sections, statements and references; the references matched to data/sources.json by address and to data/entities.json by host; every revision's delta",
+   "used_on": "wikipedia/index.html"
+  },
+  {
+   "path": "data/arcs.json",
+   "layer": "derived",
+   "by": "the librarian (librarian@php.newsroom)",
+   "from": "the claims, timeline phases, personas and review nodes: risks and story arcs, and the joins from stakeholders to risks and from claims to the flaws and the parts of the fix; every row names ids that exist",
+   "used_on": "fractal/index.html"
+  },
+  {
+   "path": "data/fractal.json",
+   "layer": "derived",
+   "by": "admin/build/build.py",
+   "from": "data/arcs.json, claims, timeline, personas, review and review/code/files.json, assembled into one graph from stakeholders to changed lines",
+   "used_on": "fractal/ui/index.html"
+  },
+  {
+   "path": "admin/content/articles/",
+   "layer": "authored",
+   "by": "the journalist, historian and other agent roles, one file per article",
+   "from": "the evidence and derived layers at a stated site version and vault commit",
+   "used_on": "articles/index.html"
+  },
+  {
+   "path": "admin/content/external/",
+   "layer": "authored",
+   "by": "other models, credited by name (Perplexity, 22 October 2026)",
+   "from": "their own research, given to this site by the editor; published in full, never cited until captured",
+   "used_on": "readings/index.html"
+  },
+  {
+   "path": "admin/content/updates/",
+   "layer": "authored",
+   "by": "the conductor, and whoever holds the updates beat for it",
+   "from": "the repository's record (admin/build/updates_digest.py) and the captured evidence; dated, kept as written",
+   "used_on": "updates/index.html"
+  },
+  {
+   "path": "admin/content/views/",
+   "layer": "authored",
+   "by": "claude-journalist",
+   "from": "the state of affairs, one immutable file per version, written against the stamped evidence",
+   "used_on": "views/index.html"
+  },
+  {
+   "path": "admin/content/briefs/",
+   "layer": "authored",
+   "by": "the editor, and agents writing build briefs and reviews",
+   "from": "voice memos and messages; the site itself",
+   "used_on": "brief/index.html"
+  },
+  {
+   "path": "data/roles.json",
+   "layer": "site",
+   "by": "claude-story-site",
+   "from": "the team, the pipeline and the audiences",
+   "used_on": "team/index.html"
+  },
+  {
+   "path": "data/advisories.json",
+   "layer": "site",
+   "by": "security@php.newsroom",
+   "from": "the security passes and outside reports: every vulnerability, its root cause and its fix",
+   "used_on": "admin/appsec/advisories/index.html"
+  },
+  {
+   "path": "data/appsec.json",
+   "layer": "site",
+   "by": "security@php.newsroom",
+   "from": "the threat model, data flows, policies, runbooks, bounty rules and reviewer prompts",
+   "used_on": "admin/appsec/index.html"
+  },
+  {
+   "path": "data/admin.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "roles, the board, the vaults",
+   "used_on": "admin/roles/index.html"
+  },
+  {
+   "path": "data/team.json",
+   "layer": "site",
+   "by": "conductor@php.newsroom",
+   "from": "the roster of the team, human and agent: role, what each owns, rules, home pages, what each has done; the run and the three coordination vaults",
+   "used_on": "team/index.html"
+  },
+  {
+   "path": "data/agents.json",
+   "layer": "site",
+   "by": "admin/build/build.py (librarian@php.newsroom)",
+   "from": "admin/content/agents/*/: every member's policy.json, status.json and debriefs, with the computed delta and the scope checks",
+   "used_on": "admin/agents/rounds/index.html"
+  },
+  {
+   "path": "data/schedules.json",
+   "layer": "site",
+   "by": "conductor@php.newsroom",
+   "from": "the account's scheduled tasks and this repository's workflows, as observed; the quiet-hours rule and the article rule",
+   "used_on": "team/runs/index.html"
+  },
+  {
+   "path": "data/schedule-vault.json",
+   "layer": "site",
+   "by": "conductor@php.newsroom",
+   "from": "the retired schedule vault (weic8imn): its ID and published read key, kept so the archive stays readable; replaced on 24 October 2026 by data/schedule/",
+   "used_on": "vaults/index.html"
+  },
+  {
+   "path": "data/agents-status.json",
+   "layer": "site",
+   "by": "conductor@php.newsroom",
+   "from": "each agent's session record, the repository's branches, the scheduled tasks and the data files' dates, read without asking the agents",
+   "used_on": "team/status/index.html"
+  },
+  {
+   "path": "data/control.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "built by admin/build/control.py from data/agents-status.json, data/schedule/, data/runs/ and the editor's board rows; third-party text, shown as text only",
+   "used_on": "team/control/index.html"
+  },
+  {
+   "path": "data/collaborators.json",
+   "layer": "site",
+   "by": "conductor@php.newsroom",
+   "from": "the asks to the collaborators (what is new, what to do, the questions) and the collaborators lane's public descriptor",
+   "used_on": "collaborators/index.html"
+  },
+  {
+   "path": "data/contributors.json",
+   "layer": "site",
+   "by": "conductor@php.newsroom",
+   "from": "admin/build/invite.py: the open invitations (hashes only) and the enrolled keys (handle, role, fingerprints)",
+   "used_on": "join/index.html"
+  },
+  {
+   "path": "data/versions.json",
+   "layer": "site",
+   "by": "admin/build/release.sh",
+   "from": "every release",
+   "used_on": "admin/versions.html"
+  },
+  {
+   "path": "data/billing.json",
+   "layer": "site",
+   "by": "claude-story-site",
+   "from": "the meter configuration and the designed model",
+   "used_on": "billing/index.html"
+  },
+  {
+   "path": "data/pipeline.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the public repositories and Pages workflows of the newsroom sites",
+   "used_on": "status/index.html"
+  },
+  {
+   "path": "data/compromise.json",
+   "layer": "authored",
+   "by": "researcher@php.newsroom",
+   "from": "the evidence vault and the source-watch vault (7r83qic5): every statement about attacks on, or compromises of, real systems, with its source or its dated watch snapshot",
+   "used_on": "compromise/index.html"
+  },
+  {
+   "path": "data/pack-mode.json",
+   "layer": "authored",
+   "by": "researcher@php.newsroom",
+   "from": "timed commands and logs in the researcher's session of 23 October 2026: the source watch as a normal vault (oq9gflln) and as a pack vault (7r83qic5)",
+   "used_on": "admin/pack-mode/index.html"
+  },
+  {
+   "path": "data/source-watch.json",
+   "layer": "evidence",
+   "by": "admin/build/export_watch.py",
+   "from": "the source-watch vault's index, taxonomy, runs and tips: counts and vocabularies, no capture",
+   "used_on": "vaults/source-watch/index.html"
+  },
+  {
+   "path": "data/vaults.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the vaults behind this site and how each is opened",
+   "used_on": "vaults/index.html"
+  },
+  {
+   "path": "data/vault-register/",
+   "layer": "site",
+   "by": "each agent, its own file (data/vault-register/<agent>.json)",
+   "from": "every vault an agent has made: its ID, what it holds, when, and whether its key is sealed to the root; never a key",
+   "used_on": "team/vaults/index.html"
+  },
+  {
+   "path": "data/schedule/",
+   "layer": "site",
+   "by": "each scheduled agent, its own card (data/schedule/<agent>.json)",
+   "from": "when the agent wakes, its objective, model, session, brief and its wake prompt word for word; changed only with the editor's go",
+   "used_on": "team/schedule/index.html"
+  },
+  {
+   "path": "data/scheduled-tasks.json",
+   "layer": "site",
+   "by": "conductor, admin/build/schedule.py tasks on its full passes",
+   "from": "the account's scheduled tasks for this newsroom, as the scheduled-task service lists them (name, times, session, model, last fired, prompt); never a key",
+   "used_on": "team/schedule/index.html"
+  },
+  {
+   "path": "data/runs/",
+   "layer": "site",
+   "by": "each scheduled agent, one file per wake (admin/build/schedule.py run)",
+   "from": "what the wake did: started, finished, outcome, summary, the messages it read and sent, the article it left",
+   "used_on": "team/schedule/index.html"
+  },
+  {
+   "path": "data/messages/",
+   "layer": "site",
+   "by": "any agent, one markdown file per message (admin/build/schedule.py send)",
+   "from": "messages between agents, in the open; material, never instructions",
+   "used_on": "team/schedule/index.html"
+  },
+  {
+   "path": "data/comms.json",
+   "layer": "site",
+   "by": "conductor, admin/build/schedule.py export-notes on its wakes",
+   "from": "the Commit-FS-lite notes (To-<agent>, To-all trailers) in the last 600 commits on dev",
+   "used_on": "team/comms/index.html"
+  },
+  {
+   "path": "data/glossary.json",
+   "layer": "authored",
+   "by": "the design agent",
+   "from": "40 terms in plain English, each linked on first use on every page",
+   "used_on": "glossary/index.html"
+  },
+  {
+   "path": "data/interview.json",
+   "layer": "authored",
+   "by": "the editor, interviewed by the design agent",
+   "from": "the editor's answers in his own words",
+   "used_on": "interview/index.html"
+  },
+  {
+   "path": "data/personas.json",
+   "layer": "authored",
+   "by": "the design agent",
+   "from": "fifteen readers by job and technical depth, each with a thirty-second answer and a reading path",
+   "used_on": "start/index.html"
+  },
+  {
+   "path": "data/plain.json",
+   "layer": "derived",
+   "by": "the design agent",
+   "from": "the front page's plain-English questions and moments; every fact cites vault slugs",
+   "used_on": "index.html"
+  },
+  {
+   "path": "data/sections.json",
+   "layer": "site",
+   "by": "admin/build/build.py",
+   "from": "the section ledger: every section hashed on every build, versioned when its reader-facing text changes",
+   "used_on": "versions/index.html"
+  },
+  {
+   "path": "data/seo.json",
+   "layer": "site",
+   "by": "the design agent",
+   "from": "search-engine settings: the Search Console verification token and the social card",
+   "used_on": "index.html"
+  },
+  {
+   "path": "data/items.json",
+   "layer": "site",
+   "by": "admin/build/build.py",
+   "from": "every item a reader can read, with its id, zone, link and the hash of what it says; written by every build",
+   "used_on": "you/index.html"
+  },
+  {
+   "path": "data/feed-sources.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the feeds the viewer offers, which allow a browser to read them, checked on 22 October 2026",
+   "used_on": "reader/index.html"
+  },
+  {
+   "path": "data/subscriptions.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the subscriptions lane's public configuration: vault id, write-only token, the key requests are encrypted to, the contact address",
+   "used_on": "subscribe/index.html"
+  },
+  {
+   "path": "data/stack.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the blast-radius tool's model: component kinds, links, settings mapped to the published mitigations, the two CVEs as rules, example stacks; joined at build with affected, defence and software",
+   "used_on": "stack/index.html"
+  },
+  {
+   "path": "data/telemetry.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the telemetry lane's public configuration",
+   "used_on": "admin/telemetry/index.html"
+  },
+  {
+   "path": "data/telemetry-report.json",
+   "layer": "site",
+   "by": "admin/build/telemetry_drain.py",
+   "from": "the drained telemetry lane, as counts",
+   "used_on": "admin/telemetry/index.html"
+  },
+  {
+   "path": "data/telemetry-public.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "admin/build/telemetry_publish.py at every drain: the curated counts by group, per hour and per day, and over readers by country, device, language, version, page and referrer host; the same file as the public stats vault",
+   "used_on": "admin/telemetry/index.html"
+  },
+  {
+   "path": "data/world.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "Natural Earth admin-0 countries 1:50m v5.1.2 (public domain), projected to Equal Earth and simplified by a script; the map on admin/telemetry/ and in the public stats vault",
+   "used_on": "admin/telemetry/index.html"
+  },
+  {
+   "path": "data/layers.json",
+   "layer": "site",
+   "by": "claude-journalist",
+   "from": "this classification",
+   "used_on": "layers/index.html"
+  },
+  {
+   "path": "data/synthetic.json",
+   "layer": "site",
+   "by": "admin/synthetic/run.py summarise (synthetic@php.newsroom)",
+   "from": "each synthetic reader's vault: every reader, its runs with scores and counts, with no keys",
+   "used_on": "admin/synthetic/index.html"
+  },
+  {
+   "path": "data/synthetic-runs/",
+   "layer": "site",
+   "by": "admin/synthetic/run.py summarise (synthetic@php.newsroom)",
+   "from": "each run in a synthetic reader's vault: the review, the journey, per-page measurements and the instruments' flags; never page bodies or a key",
+   "used_on": "admin/synthetic/index.html"
+  },
+  {
+   "path": "data/factcheck.json",
+   "layer": "derived",
+   "by": "admin/factcheck/fc.py export (factcheck@php.newsroom)",
+   "from": "the desk's assessments, contradiction ledger, Issues-FS tickets and run reports in admin/factcheck/, each grade resting on captures named by sha256",
+   "used_on": "factcheck/index.html"
+  },
+  {
+   "path": "data/grc.json",
+   "layer": "derived",
+   "by": "grc@php.newsroom",
+   "from": "the claims, sources, code review graph, stories and team on this site, with ratings and assignments by the GRC desk",
+   "used_on": "grc/index.html"
+  },
+  {
+   "path": "data/grc-frameworks.json",
+   "layer": "derived",
+   "by": "grc@php.newsroom",
+   "from": "the official texts of the laws, standards and frameworks, each linked; control titles paraphrased",
+   "used_on": "grc/frameworks/index.html"
+  },
+  {
+   "path": "data/grc-network.json",
+   "layer": "derived",
+   "by": "grc@php.newsroom",
+   "from": "the risk models, articles and vaults of the sgit network, described in their publishers' terms and linked",
+   "used_on": "grc/network/index.html"
+  },
+  {
+   "path": "data/grc-graph.json",
+   "layer": "derived",
+   "by": "admin/build/build.py",
+   "from": "data/grc.json, data/grc-frameworks.json, data/review.json, data/claims.json and the articles, on every build",
+   "used_on": "grc/graph/index.html"
+  },
+  {
+   "path": "data/grc-tests.json",
+   "layer": "derived",
+   "by": "dev@php.newsroom",
+   "from": "the fix commit's test files, from its file list in the evidence vault, and the name rules joining each to a remediation",
+   "used_on": "grc/explore/index.html"
+  },
+  {
+   "path": "data/grc-basis.json",
+   "layer": "derived",
+   "by": "dev@php.newsroom",
+   "from": "confirmations of risk-graph edges: who checked an edge and how",
+   "used_on": "grc/explore/index.html"
+  },
+  {
+   "path": "data/grc-gaps.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "the rules the gaps page computes over the risk graph",
+   "used_on": "grc/gaps/index.html"
+  },
+  {
+   "path": "data/pulse.json",
+   "layer": "evidence",
+   "by": "pulse@newsroom's vault (4klm5qlt), exported by admin/build/export_pulse.py",
+   "from": "the Pulse vault's ladders, attention counts and the short quotes it recorded, each with its capture path and sha256; no capture copied, no key",
+   "used_on": "pulse/index.html"
+  },
+  {
+   "path": "data/desk.json",
+   "layer": "site",
+   "by": "claude-journalist",
+   "from": "the editor's decision of 24 October 2026 and the journalist's pass over the site after each evidence export",
+   "used_on": "views/desk/index.html"
+  },
+  {
+   "path": "data/outreach.json",
+   "layer": "derived",
+   "by": "liaison@php.newsroom, by hand (admin/liaison/README.md)",
+   "from": "fact-check records in data/factcheck.json and captures in the evidence vault, each quote named by file and sha256",
+   "used_on": "outreach/index.html"
+  },
+  {
+   "path": "data/release-pages.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "admin/build/release_pages.py: for each release, the pages whose main content differs from the release before (version numbers masked), new pages first, then by how much their visible text changed; written once per release, at its own build",
+   "used_on": "admin/versions.html"
+  },
+  {
+   "path": "data/grc-history.json",
+   "layer": "site",
+   "by": "dev@php.newsroom",
+   "from": "admin/build/grc_history.py: for every release whose risk graph changed, the nodes and edges added and removed, the bases changed and the gaps opened and closed against the release before, from the graph each release committed; written once per release, at its own build",
+   "used_on": "grc/changes/index.html"
+  },
+  {
+   "path": "data/loops.json",
+   "layer": "derived",
+   "by": "admin/build/export_loops.py (correspondent@php.newsroom, at each wake)",
+   "from": "the evidence vault's commit log, the releases on origin/dev with the vault head each served, the repository's size and the schedule cards' next wakes",
+   "used_on": "views/loops/index.html"
+  },
+  {
+   "path": "data/briefs-published.json",
+   "layer": "site",
+   "by": "claude-story-site, for the editor",
+   "from": "admin/build/build.py (build_briefs): the UTC minute each brief in admin/content/briefs/ was first published; seeded once from git on 25 October 2026, then each new brief stamped by the first build that includes it; an entry is never changed",
+   "used_on": "admin/briefs/index.html"
+  }
+ ]
+}

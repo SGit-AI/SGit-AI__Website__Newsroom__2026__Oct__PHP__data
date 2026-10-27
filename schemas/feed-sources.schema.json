@@ -1,0 +1,59 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "checked": {
+   "type": "string"
+  },
+  "feeds": {
+   "items": {
+    "properties": {
+     "adapter": {
+      "type": "string"
+     },
+     "cors": {
+      "type": "boolean"
+     },
+     "group": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "match": {
+      "type": "string"
+     },
+     "name": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string"
+     },
+     "urls": {
+      "type": "array"
+     },
+     "what": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "group",
+     "id",
+     "name",
+     "what"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "about",
+  "checked",
+  "feeds"
+ ],
+ "title": "feed-sources.json",
+ "type": "object"
+}

@@ -239,6 +239,26 @@
   {
    "name": "subscriptions.json",
    "group": "runtime"
+  },
+  {
+   "name": "layers.json",
+   "group": "story"
+  },
+  {
+   "name": "feed-sources.json",
+   "group": "evidence"
+  },
+  {
+   "name": "pipeline.json",
+   "group": "runtime"
+  },
+  {
+   "name": "vaults.json",
+   "group": "runtime"
+  },
+  {
+   "name": "world.json",
+   "group": "story"
   }
  ]
 }

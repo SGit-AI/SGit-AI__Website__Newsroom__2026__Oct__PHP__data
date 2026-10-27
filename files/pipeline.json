@@ -1,0 +1,10 @@
+{
+ "about": "The sites whose deploy pipeline /status/ reads from GitHub's public API, in the browser, with no credential. Each repository is public; its workflow deploys the dev branch to GitHub Pages.",
+ "api": "https://api.github.com",
+ "anonymous_limit": "60 requests an hour per IP address, shared by every page that calls api.github.com from that address",
+ "sites": [
+  {"id": "php", "name": "php2shell (this site)", "site": "https://php.oct.2026.newsroom.sgit.ai/", "repo": "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP", "branch": "dev", "workflow": "pages.yml"},
+  {"id": "oct", "name": "October 2026", "site": "https://oct.2026.newsroom.sgit.ai/", "repo": "SGit-AI/SGit-AI__Website__Newsroom__2026__Oct", "branch": "dev", "workflow": "pages.yml"},
+  {"id": "year", "name": "2026", "site": "https://2026.newsroom.sgit.ai/", "repo": "SGit-AI/SGit-AI__Website__Newsroom__2026", "branch": "dev", "workflow": "pages.yml"}
+ ]
+}

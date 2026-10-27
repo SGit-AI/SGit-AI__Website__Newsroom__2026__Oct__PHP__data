@@ -24,7 +24,7 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 | `schemas/` | one schema per top-level file, inferred by `tools/schema.py` | changed only on purpose, in the release that changes the file's shape, and said in its message |
 | `tools/catalogue.json` | which files are published, and their group | dev, on a writer's request |
 | `VERSION` | the newest version: written by CI only, in its release commit, after the gate passes (CI owns the version; a pushed commit that changes it fails the run) | CI |
-| tags `v<version>` | a published version: CI tags its release commit; the deploy serves `/v/<version>/manifest.json` for every version, each file once at `/blobs/<sha256>`, the newest five versions plain, `/latest/`, `versions.json` and the front page (`tools/package.py`); the versions published before 27 October are served from the tag `archive/v-folders` | CI |
+| tags `v<version>` | a published version: CI tags its release commit; the deploy serves `/v/<version>/manifest.json` for every version, each file once at `/blobs/<sha256>`, the newest five versions plain, `/latest/`, `versions.json` and the front page (`tools/package.py`); the versions published before 27 October are served from the last commit that held them as folders (`tools/package.py` finds it in the history) | CI |
 
 ## Releasing
 
@@ -35,8 +35,8 @@ RELEASE_TRAILER="Agent: <you>" tools/release.sh "what changed and why"   # CI nu
 ```
 
 The gate takes seconds: JSON, schemas, provenance (every source a claim cites exists; every risk-graph edge joins two
-nodes and says how it is known), every version against its manifest, nothing published changed, the same bytes on a
-second publish, and no credential shapes.
+nodes and says how it is known), that the next version builds from `files/` (CI numbers and publishes it after the gate),
+and no credential shapes.
 
 ## Consuming
 
