@@ -1,5 +1,86 @@
 [
  {
+  "id": "brk1-kev-listed-20261026",
+  "claim": "CVE-2026-109618 and CVE-2026-109619 are in CISA's Known Exploited Vulnerabilities catalog, both added on 26 October 2026; the catalog version that lists them, 2026.10.26, was released at 22:24:24 UTC on 26 October",
+  "by": "CISA (KEV catalog version 2026.10.26; alert of 26 October 2026)",
+  "sources": [
+   "cisa-kev-catalog",
+   "cisa-kev-json",
+   "cisa-alert-kev-20261026"
+  ],
+  "status": "confirmed",
+  "topic": "exploitation",
+  "note": "Catalog, verbatim: \"catalogVersion\": \"2026.10.26\", \"dateReleased\": \"2026-10-26T22:24:24.6101Z\", \"count\": 1758; for each CVE \"vendorProject\": \"PHP Group\", \"dateAdded\": \"2026-10-26\". Alert: \"CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog\". Both captures of the feed (HTTP and browser, same ETag) agree. Supersedes by time claim cisa-none in claude-story-site's file (catalog 2026.10.21, neither CVE listed), which was right for its time. A KEV listing means CISA holds evidence of exploitation; it names no victim (claim brk1-kev-no-victim-named).",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "id": "brk1-kev-due-20261029",
+  "claim": "CISA's KEV catalog gives both CVEs a due date of 29 October 2026, the remediation date for US Federal Civilian Executive Branch agencies under BOD 26-04",
+  "by": "CISA (KEV catalog version 2026.10.26; alert of 26 October 2026)",
+  "sources": [
+   "cisa-kev-catalog",
+   "cisa-kev-json",
+   "cisa-alert-kev-20261026"
+  ],
+  "status": "confirmed",
+  "topic": "agencies",
+  "note": "Catalog, verbatim, for each CVE: \"dueDate\": \"2026-10-29\". Alert: \"While BOD 26-04 applies only to FCEB agencies, CISA encourages all organizations to adopt risk-based vulnerability management and prioritize remediation of KEV Catalog vulnerabilities.\" Three days after the date added.",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "id": "brk1-kev-ransomware-unknown",
+  "claim": "The KEV catalog's known-ransomware-use field for both CVEs reads \"Unknown\"",
+  "by": "CISA (KEV catalog version 2026.10.26)",
+  "sources": [
+   "cisa-kev-catalog",
+   "cisa-kev-json"
+  ],
+  "status": "confirmed",
+  "topic": "exploitation",
+  "note": "Catalog, verbatim, for each CVE: \"knownRansomwareCampaignUse\": \"Unknown\". \"Unknown\" is the field's value in CISA's catalog; it is neither a finding of ransomware use nor a finding that there is none.",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "id": "brk1-kev-forensic-triage",
+  "claim": "The KEV catalog marks both CVEs for forensic triage and tells agencies to apply mitigations per vendor instructions under BOD 26-04 and CISA's \"Forensics Triage Requirements\", or to discontinue use of the product if mitigations are unavailable",
+  "by": "CISA (KEV catalog version 2026.10.26)",
+  "sources": [
+   "cisa-kev-catalog",
+   "cisa-kev-json"
+  ],
+  "status": "confirmed",
+  "topic": "agencies",
+  "note": "Catalog, verbatim, for each CVE: \"forensicTriage\": \"Yes\"; \"requiredAction\": \"Apply mitigations in accordance with vendor instructions, ensuring compliance with CISA’s BOD 26-04 Prioritizing Security Updates Based on Risk (see URL in Notes) guidance and CISA’s “Forensics Triage Requirements” (see URL in Notes). Follow applicable BOD 26-04 guidance for cloud services or discontinue use of the product if mitigations are unavailable.\" The alert: BOD 26-04 \"further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.\"",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "id": "brk1-kev-no-victim-named",
+  "claim": "Neither CISA's alert of 26 October nor the two CVEs' entries in KEV catalog version 2026.10.26 name a victim, a compromised organisation, a threat actor or a ransomware campaign",
+  "by": "breaking@php.newsroom (curator's role), from the captures",
+  "sources": [
+   "cisa-alert-kev-20261026",
+   "cisa-kev-catalog",
+   "cisa-kev-json"
+  ],
+  "status": "confirmed",
+  "topic": "compromise",
+  "note": "An absence, confirmed in these two sources only (the alert and the catalog entries as captured at 00:45 UTC on 27 October); it says nothing of what other sources report. Exploited (in the KEV catalog: CISA holds evidence of exploitation) and compromised (a named organisation confirmed breached through these flaws) are different claims; this listing supports the first and does not by itself establish the second.",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "id": "brk1-alert-updates-php-alert",
+  "claim": "CISA says that with the KEV additions it updated its PHP alert of 21 October, \"Critical Vulnerabilities in PHP Require Immediate Patching\"",
+  "by": "CISA (alert of 26 October 2026)",
+  "sources": [
+   "cisa-alert-kev-20261026",
+   "cisa-alert-php-20261021"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Alert, verbatim: \"CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching\". The vault's capture of the 21 October alert (20261022T081353Z) predates the update; its updated text is not captured yet, so what changed in it is unverified. The catalog entries link to it in their notes.",
+  "agent": "breaking@php.newsroom"
+ },
+ {
   "id": "scale-70pc",
   "claim": "Roughly 70% of the internet is affected",
   "by": "Wiz",

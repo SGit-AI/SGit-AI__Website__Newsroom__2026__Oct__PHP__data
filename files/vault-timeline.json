@@ -1,5 +1,26 @@
 [
  {
+  "at": "2026-10-26",
+  "event": "CISA alert 'CISA Adds Two Known Exploited Vulnerabilities to Catalog' (Release Date October 26, 2026): CVE-2026-109618 and CVE-2026-109619 added to the KEV catalog, and the PHP alert of 21 October updated",
+  "sources": [
+   "cisa-alert-kev-20261026"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-26T22:24Z",
+  "event": "CISA releases KEV catalog version 2026.10.26 (1,758 entries), listing CVE-2026-109618 and CVE-2026-109619 with date added 2026-10-26, due date 2026-10-29 and known ransomware use \"Unknown\"",
+  "sources": [
+   "cisa-kev-catalog",
+   "cisa-kev-json"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
   "at": "2024",
   "event": "PHP Foundation researchers find a theoretical flaw in PHP but cannot work out how an attacker could use it",
   "sources": [

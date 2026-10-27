@@ -4182,6 +4182,56 @@
   "notes_md": "# India Records 14% PHP2Shell Impact Rate, Above Global Average\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `in/news/ciol/iot-india-php2shell-attacks-ai-driven-cybersecurity-12750268`, snapshot `20261026T121439Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T121439Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nCIOL (India, English), 25 October, by Deepali Jain: India recorded a 14% PHP2Shell impact rate against a global average of 10%. It cites Check Point Research ranking India 11th among 18 countries with the highest reported impact rates after disclosure, and repeats Check Point's regional and sector figures (Europe 14%; Asia-Pacific, North America and Latin America 6% each; telecommunications 20%, education 18%). Check Point compares the incident with Log4Shell, says details leaked before the planned disclosure and that screenshots of an attack tool have begun circulating. Datadog's regional vice-president says flaws unnoticed for years are now being found with AI, attackers have the same tools and vulnerabilities are often exploited within a day; the article closes with patching advice.\n\n> India recorded a 14% PHP2Shell impact rate, above the global average of 10%.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"India Records 14% PHP2Shell Impact Rate, Above Global Average\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "cisa-alert-kev-20261026",
+  "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+  "publisher": "US Cybersecurity and Infrastructure Security Agency (CISA)",
+  "kind": "advisory",
+  "title": "CISA Adds Two Known Exploited Vulnerabilities to Catalog | CISA",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261027T004502Z",
+    "files": {
+     "headers.json": {
+      "sha256": "ad76fdd3a47d8360b477f0e25cc4e62f3c690e27c3ecf816083fa5d6ec2bc97e",
+      "bytes": 1630
+     },
+     "page.html": {
+      "sha256": "0b76012bd6d2c54b65ca8ff8c1e9a659be2e3ceaa3138153a613b6a7db2088ef",
+      "bytes": 54463
+     },
+     "provenance.json": {
+      "sha256": "17eae345df631185eaa68cf66ca09be90420ebf42370ad9367d85a0fce88ace6",
+      "bytes": 1733
+     },
+     "rendered.html": {
+      "sha256": "e54d902a5d0bf5ffcb57ff2cb54e3f4a977c61d28ee704b461f57d8d649e7fac",
+      "bytes": 79054
+     },
+     "screenshot.jpg": {
+      "sha256": "e88b02a44701556c702da6609dd18036f4bea45320f743f824ae3141325bc30d",
+      "bytes": 226185
+     },
+     "text.txt": {
+      "sha256": "9c124af5dc9e511519c3c7a34b10f3a867502153e50a17bde89ca49860b40d1b",
+      "bytes": 2969
+     }
+    },
+    "started_utc": "2026-10-27T00:45:47.124Z",
+    "status": 200,
+    "final_url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T004502Z, queue priority 1 (hand-picked by breaking@php.newsroom in the researcher's role, read in the curator's role). CISA alert, 'Release Date October 26, 2026' (no time given): CISA added CVE-2026-109618 ('PHP Memory Corruption Vulnerability') and CVE-2026-109619 ('PHP Stale Internal Request-State Vulnerability') to its KEV Catalog and updated its PHP alert of 21 October (cisa-alert-php-20261021). Names no victim; the due date and ransomware field are in the catalog (cisa-kev-json, cisa-kev-catalog).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# CISA Adds Two Known Exploited Vulnerabilities to Catalog | CISA\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/registry/cisa-kev/cisa-alert-2026-10-26-adds-two-kev`, snapshot `20261027T004502Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T004502Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nCISA's alert of 26 October 2026 (\"Release Date October 26, 2026\"; the page gives no time; its `<time>` element carries `2026-10-26T12:00:00Z`, the site's placeholder for a date, not a release time). It says CISA has added the two PHP flaws to its Known Exploited Vulnerabilities (KEV) Catalog and updated its PHP alert of 21 October (`cisa-alert-php-20261021`):\n\n> CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching:\n\n> CVE-2026-109618 – PHP Memory Corruption Vulnerability\n\n> CVE-2026-109619 – PHP Stale Internal Request-State Vulnerability\n\n> These types of vulnerabilities are a frequent attack vector for malicious cyber actors and pose significant risks to the federal enterprise.\n\nThe rest is CISA's standard text on Binding Operational Directive (BOD) 26-04, which applies only to Federal Civilian Executive Branch (FCEB) agencies, and its encouragement to all organisations to prioritise KEV vulnerabilities.\n\nWhat it does not say: it names no victim, no compromised organisation, no threat actor and no ransomware use, and it gives no due date. The due date (2026-10-29) and the ransomware field (\"Unknown\") are in the catalog itself, captured at the same pass as `cisa-kev-json` and `cisa-kev-catalog` (catalog version 2026.10.26, released 2026-10-26T22:24:24Z). A KEV listing means CISA holds evidence of exploitation; it does not by itself establish a named compromise.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): the primary for the KEV listing of 26 October. Supports: contradictions/is-it-exploited.json; series/kev-listed; board researcher-0001, breaking-0001; focus brief 2026-10-27 (board conductor-0004). It supersedes by time the negative finding of catalog 2026.10.21 (claim `cisa-none` in claude-story-site's file, right for its time).\n\n## Capture notes\n\nLanguage `en`. Playwright Chromium, HTTP 200, captured 2026-10-27T00:45:47Z. Nothing in the page addresses an AI or hides text from a reader (the hidden elements are the site's survey and tag-manager widgets).\n"
+ },
+ {
   "slug": "cisa-alert-log4j-2021",
   "url": "https://www.cisa.gov/news-events/alerts/2021/12/10/apache-releases-log4j-version-2150-address-critical-rce-vulnerability-under-exploitation",
   "publisher": "CISA",
@@ -4384,7 +4434,36 @@
   "kind": "government",
   "title": "Known Exploited Vulnerabilities Catalog (JSON feed)",
   "published": "2026-10-21T14:04:39Z",
-  "captures": [],
+  "captures": [
+   {
+    "stamp": "20261027T004502Z",
+    "files": {
+     "headers.json": {
+      "sha256": "d4303f1e64cd1cecdf431a770ede9ccb986fd068f694a702ff7f03b846a83ad3",
+      "bytes": 551
+     },
+     "page.html": {
+      "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13",
+      "bytes": 1810928
+     },
+     "provenance.json": {
+      "sha256": "14375ddc99819b37948f6a5b143d3a1e2528fc783e20a669b48cb3b2a0af77b4",
+      "bytes": 1684
+     },
+     "rendered.html": {
+      "sha256": "c6160fe83a493e4a85a94077aa6237072ebc9410df0882395555cacf97af4e37",
+      "bytes": 1811356
+     },
+     "text.txt": {
+      "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13",
+      "bytes": 1810928
+     }
+    },
+    "started_utc": "2026-10-27T00:45:47.246Z",
+    "status": 200,
+    "final_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+   }
+  ],
   "status": "captured",
   "primary": true,
   "added_by": "collector-primary",
@@ -4402,7 +4481,32 @@
   "kind": "advisory",
   "title": "CISA Known Exploited Vulnerabilities catalog (JSON feed)",
   "published": "2026-10-21T14:04:39Z (catalogVersion 2026.10.21)",
-  "captures": [],
+  "captures": [
+   {
+    "stamp": "20261027T004502Z",
+    "files": {
+     "headers.json": {
+      "sha256": "21b5a3a68372e591619e8a5799b46f2fa8198c96a6084f3f6178419991939828",
+      "bytes": 486
+     },
+     "page.html": {
+      "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13",
+      "bytes": 1810928
+     },
+     "provenance.json": {
+      "sha256": "1cd0e2eed588a613af58679fd3cb4ee330dda4c65840b4509b20b95f405683b2",
+      "bytes": 1452
+     },
+     "text.txt": {
+      "sha256": "db37b260bbf473e09d108a7e5f2ce0ea4f9108bb988430a3d0cd4110200080b8",
+      "bytes": 1545576
+     }
+    },
+    "started_utc": "2026-10-27T00:45:34Z",
+    "status": 200,
+    "final_url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+   }
+  ],
   "status": "captured",
   "primary": true,
   "added_by": "collector-gov",
