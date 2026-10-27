@@ -1419,6 +1419,14 @@
    "summary": "Light check 21:15 London, the last of the day; team at a5df1e75f961. Since 20:17 there is one commit across the six: fact-check run 11 (team a5df1e75, data v0.1.47 c120f54 at 21:03). Each repository's last commit: data c120f54 21:03; press 0ab74db v1.0.47 19:45; site c02b5ff6, refs 0b0e98ba and upd…"
   },
   {
+   "agent": "security",
+   "finished": "2026-10-26T23:55:54Z",
+   "outcome": "ok",
+   "run": "20261026T2320Z-security",
+   "started": "2026-10-26T23:20:00Z",
+   "summary": "Wired into the six repositories, with a security pass. Card: repositories push team and press (review branches only), pull data, site, updates, refs, never v1; every v1 path moved to its home (records/, press build/ and rules/, team tools/release.sh). Task trig_01NEArPo2mvgVQ5VghLADnHw: prompt set…"
+  },
+  {
    "agent": "sherpa",
    "finished": "2026-10-26T23:46:31Z",
    "outcome": "ok",
@@ -1427,12 +1435,52 @@
    "summary": "Wired into the six repositories, at the editor's request. Card records/schedule/sherpa.json: repositories push team; pull press and data; press push when needed (assets/sherpa/, through security); never v1. Paths in the six; the drain step now uses the press's fixed drains (v1.0.41, NEWSROOM_DATA_F…"
   },
   {
+   "agent": "desk",
+   "finished": "2026-10-26T23:53:00Z",
+   "outcome": "ok",
+   "run": "20261026T2345Z-desk",
+   "started": "2026-10-26T23:45:00Z",
+   "summary": "wired into the six repositories: team attached and cloned at dev; card records/schedule/desk.json given repositories (push: team; pull: none, the sites and data are read by URL; never v1), every v1 path moved to its home (brief and runbook in records/briefs/, board rows as records/board/desk-NNNN.j…"
+  },
+  {
+   "agent": "librarian",
+   "finished": "2026-10-26T23:52:55Z",
+   "outcome": "ok",
+   "run": "20261026T2345Z-librarian",
+   "started": "2026-10-26T23:45:00Z",
+   "summary": "wired into the six repositories, at the editor's request in the librarian's session: card records/schedule/librarian.json now has repositories (push team, data, press; pull none; never v1) from the split brief's table, and its brief, runbook, policy and each_wake steps moved from v1 paths to their…"
+  },
+  {
+   "agent": "ontologist",
+   "finished": "2026-10-26T23:52:55Z",
+   "outcome": "ok",
+   "run": "20261026T2345Z-ontologist",
+   "started": "2026-10-26T23:45Z",
+   "summary": "wired into the six repositories: card records/schedule/ontologist.json now has repositories (push: team, data, press; pull: refs; never: v1), its brief, runbook, reads, writes and each_wake moved from v1 paths to their homes (team records/desks/ontologist/ and records/desks/wikipedia/, data files/,…"
+  },
+  {
    "agent": "pulse",
    "finished": "2026-10-26T23:48:01Z",
    "outcome": "ok",
    "run": "20261026T2347Z-pulse",
    "started": "2026-10-26T23:47:28Z",
    "summary": "Wired into the six repositories, checked at the editor's request of 26 October (23:47 UTC), not a scheduled wake. Card records/schedule/pulse.json: repositories.push is now team and data (data is attached; I write nothing there yet), pull empty, never v1, with a note (the Pulse vault is the pack va…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-27T00:02:04Z",
+   "outcome": "ok",
+   "run": "20261027T0005Z-observability",
+   "started": "2026-10-27T00:05:00Z",
+   "summary": "wired into the six repositories: card records/schedule/observability.json proposed (status proposed; three wakes a day, 08:33, 14:33 and 20:33 London; repositories push team, pull press and data, never v1); no scheduled task exists yet: it waits on the editor's go, and is to fire into observability…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-27T00:31:54Z",
+   "outcome": "ok",
+   "run": "20261027T0020Z-observability",
+   "started": "2026-10-27T00:20:00Z",
+   "summary": "Not a scheduled wake: the editor's session. Lane found full (1,000) by the editor, who drained it; then 4 drained here (vault 84wr8mib at 3,431 events, 915 sessions; lane empty). Cause: one Googlebot rendering session, 960 events over 811 pages, 26 Oct 17:00 to 19:23 UTC; the lane refused for about…"
   }
  ],
  "schedules": [
@@ -1548,6 +1596,17 @@
    ]
   },
   {
+   "agent": "observability",
+   "model": "Sonnet",
+   "objective": "Keep the telemetry lane drained and readable: three times a day, drain what waits in the telemetry vault's lane (84wr8mib) before it nears the server's 1,000-event cap, read what came in as untrusted claims, and say in the run record who read what, what looks wrong, and what waits on whom.",
+   "status": "active",
+   "times": [
+    "08:33",
+    "14:33",
+    "20:33"
+   ]
+  },
+  {
    "agent": "ontologist",
    "model": "the session's model",
    "objective": "Keep the site's fractal semantic graphs whole as the evidence grows: every new party, spelling, claim, number and signal resolved into the ontology, the site's graphs joined by declared bridges, and the long tail found by connection handed to the desk that owns it.",
@@ -1609,5 +1668,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.36"
+ "version": "0.22.37"
 }

@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.36",
+ "version": "0.22.37",
  "vault_commit": "1dceaa1dfa7f",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
