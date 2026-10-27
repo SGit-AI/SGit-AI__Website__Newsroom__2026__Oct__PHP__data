@@ -320,6 +320,40 @@
    "sources": [
     "bitpage-php2shell-php-sicherheitsluecke-webseite"
    ]
+  },
+  {
+   "who": "Brazil: Anatel (its SEI electronic information system); the Tribunal Regional Federal da 1a Regiao (TRF1: external access to its SEI); the Justica Federal da 4a Regiao (access to its digital systems); the Tribunal Regional Federal da 6a Regiao (TRF6, Minas Gerais: work and procedural deadlines suspended)",
+   "country": "BR",
+   "what": "Systems taken offline or suspended as a precaution on 21 October; Anatel confirmed its SEI shutdown to Canaltech; the TRF6 suspension is from O Fator, as Canaltech reports it, 'amid problems in its systems'. UOL Tilt (22 October) names Anatel and the regional federal courts TRF-1 and TRF-6 and says offline does not mean hacked. As of 15:48 BRT, 18:48 UTC, on 21 October (Canaltech)",
+   "when": "2026-10-21",
+   "said_by": "Canaltech (Anatel itself, confirming); UOL Tilt",
+   "status": "reported",
+   "sources": [
+    "canaltech-seguranca-falhas-no-php-chegam-ao-brasil-e-fazem-a",
+    "uol-tilt-noticias-redacao-2026-10-22-falha-n"
+   ]
+  },
+  {
+   "who": "Denmark: Kombit, the public-sector IT body (a number of services, the national school communication platform among them)",
+   "country": "DK",
+   "what": "Closed temporarily as a precaution, per Reuters as WinPoin relays it on 22 October; the same Reuters list names the Netherlands, Finland, France and Germany (on this ledger), the Wikimedia Foundation and the Internet Archive",
+   "when": "2026-10-22",
+   "said_by": "Reuters, via WinPoin",
+   "status": "reported",
+   "sources": [
+    "winpoin-situs-pemerintah-di-eropa-sampai-downtim"
+   ]
+  },
+  {
+   "who": "The Internet Archive",
+   "country": "US",
+   "what": "Briefly offline to deal with the PHP flaws, per Reuters as WinPoin relays it; the same list names Denmark's Kombit and others",
+   "when": "2026-10-22",
+   "said_by": "Reuters, via WinPoin",
+   "status": "reported",
+   "sources": [
+    "winpoin-situs-pemerintah-di-eropa-sampai-downtim"
+   ]
   }
  ],
  "compromised": [

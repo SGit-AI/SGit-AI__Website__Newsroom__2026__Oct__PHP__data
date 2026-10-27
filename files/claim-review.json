@@ -3338,6 +3338,127 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-27",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-enter-honeypot-rce-confirmed",
+   "verdict": "used",
+   "reason": "On data/compromise.json (vendor-exploitation, 26 October): ENTER.CO, citing BleepingComputer, says Adel Karimi of Perplexity documented, with honeypots, a successful remote code execution against Apache with mod_php and PHP 8.4.26 (the attacker obtained server memory, then ran a command), and that Marcus Hutchins of Expel called it the best-quality confirmation of exploitation he had seen (checked on the page). Limits: a decoy on a vulnerable build (8.4.26 is below the fixed 8.4.27), not an organisation; searched all captures for 'Karimi': this page alone, and the BleepingComputer article is not among the captures. No organisation is named as compromised.",
+   "sources": [
+    "enter-chips-bits-fallas-criticas-php2shell-exp"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-enter-colcert-8699",
+   "verdict": "held back",
+   "reason": "An official alert and a count on one page: searched all captures for 'ColCERT' and 'AL-20261021': ENTER.CO alone; ColCERT's own alert is not captured. The page itself says the figure (8,699 exposed PHP services in Colombia) measures exposure, not vulnerable or attacked servers.",
+   "sources": [
+    "enter-chips-bits-fallas-criticas-php2shell-exp"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-unwire-hn-poster-apology",
+   "verdict": "noted",
+   "reason": "The Hacker News user's own account of their motive, relayed by unwire.hk (a warning meant for people who build PHP themselves; they say they were told there was no confidentiality restriction). Second-hand; the outlet says the information does not support blaming the whole leak on one person. Consistent with leak-hn on the site; not used.",
+   "sources": [
+    "unwire-2026-10-23-php2shell-hacker-news-leak-ap"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-uol-anatel-trf",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 21 October): Brazil's Anatel (its SEI electronic information system, which Anatel confirmed to Canaltech), the Tribunal Regional Federal da 1ª Região (TRF1, external access to SEI), the Justiça Federal da 4ª Região (access to digital systems) and the TRF6 in Minas Gerais (work and procedural deadlines suspended), from Canaltech (21 October, 15:48 BRT, 18:48 UTC) and UOL Tilt (22 October). Precautionary; UOL says offline does not mean hacked.",
+   "sources": [
+    "uol-tilt-noticias-redacao-2026-10-22-falha-n"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-uzone-conflates-shutdown-exploitation",
+   "verdict": "held back",
+   "reason": "Conflates precautionary shutdowns with exploitation: the 32 UK government services were suspended as a 'necessary precaution' (the UK cyber minister, Liz Lloyd, per VietNamNet and QA Financial; searched all captures for 'Liz Lloyd'), and the BBC, the Internet Archive, Wikipedia and 4chan went offline as a precaution; none is said to be exploited. Not stated.",
+   "sources": [
+    "uzone-celah-php2shell-ancam-33-juta-situs-sera"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-vietnamnet-uk-32-services",
+   "verdict": "noted",
+   "reason": "Liz Lloyd's statement to Parliament (32 government public services suspended as a 'necessary precaution' during updates; no critical public service affected or breached) is carried by VietNamNet, Uzone and QA Financial (searched all captures); the Hansard record is not captured. Consistent with the UK rows on data/impact.json; not used.",
+   "sources": [
+    "vietnamnet-website-toan-cau-hung-chiu-hang-trieu-do"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-vietnamnet-ncsc-50000",
+   "verdict": "noted",
+   "reason": "The Guardian page in the vault carries the 50,000 technical warnings (searched all captures); VietNamNet relays it. The NCSC's own statement is not captured. A scale remark by the agency; not used.",
+   "sources": [
+    "vietnamnet-website-toan-cau-hung-chiu-hang-trieu-do"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-vtv-nl-fi-exploited",
+   "verdict": "held back",
+   "reason": "Contradicted: Reuters, as WinPoin relays it, says Dutch and Finnish bodies took services offline as a precaution, and that offline does not mean hacked ('situs yang offline bukan berarti semuanya sudah di hack'). The site's offline ledger carries them as precautions. VTV's 'hackers beginning to exploit' is not stated.",
+   "sources": [
+    "vtv-canh-bao-lo-hong-php-website-viet-nam-ca"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-hankooki-kisa-rules",
+   "verdict": "noted",
+   "reason": "KISA's corporate response rules (update; if hard, interim measures; if hard, block external access or suspend; check logs from 20 October, rotate credentials, report compromises) are on Weekly Hankook and on seven other Korean pages that carry KISA (searched all captures); KISA's own notice is not captured. Guidance, not a finding; not used.",
+   "sources": [
+    "weekly-hankooki-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-winpoin-denmark-kombit",
+   "verdict": "used",
+   "reason": "On data/impact.json (offline ledger, reported, 22 October): Denmark's public-sector IT body Kombit closed some services, the national school communication platform among them. WinPoin, relaying Reuters, lists with it the Netherlands (the NCSC site, MijnOverheid, Overheid.nl), Finland (Valtori), France (the Interior Ministry's local administration sites), Germany (sites run by the federal government's IT provider), the Wikimedia Foundation and the Internet Archive: the Denmark and Internet Archive rows are new, the rest are on the ledger. Precautionary.",
+   "sources": [
+    "winpoin-situs-pemerintah-di-eropa-sampai-downtim"
+   ],
+   "where": "impact/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur19-wsws-duong-wsj",
+   "verdict": "noted",
+   "reason": "A prediction by Calif's chief executive Thai Duong to the Wall Street Journal, relayed by the World Socialist Web Site (Thai Duong is also on five other pages in the vault; searched all captures): someone could run AI against the patches and post an exploit script. A forecast, not an observation; not used.",
+   "sources": [
+    "wsws-en-articles-2026-10-23-rfdk-o23-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
   }
  ]
 }

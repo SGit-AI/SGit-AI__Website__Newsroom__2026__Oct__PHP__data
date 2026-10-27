@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-27T00:45Z",
+ "as_of": "2026-10-27T07:15Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 562,
+   "count": 580,
    "unit": "sources",
-   "detail": "head 24f0b0e22666 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head 6fe04cc074f9 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -541,6 +541,16 @@
     "cisa-alert-kev-20261026",
     "cisa-kev-json",
     "cisa-kev-catalog"
+   ]
+  },
+  {
+   "kind": "vendor-exploitation",
+   "when": "2026-10-26",
+   "who": "Adel Karimi (Perplexity), with honeypots; Marcus Hutchins (Expel) on it (via ENTER.CO, citing BleepingComputer)",
+   "says": "Honeypots recorded a successful remote code execution against Apache with mod_php and PHP 8.4.26: the attacker obtained server memory and then ran a command. Hutchins called it the best-quality confirmation of exploitation he had seen.",
+   "reading": "A decoy server on a vulnerable build (8.4.26 is below the fixed 8.4.27), not an organisation; one page, and the BleepingComputer article is not among the captures. No victim named",
+   "sources": [
+    "enter-chips-bits-fallas-criticas-php2shell-exp"
    ]
   }
  ],

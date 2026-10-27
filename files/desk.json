@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "known[6] (the exploitation paragraph) re-read and rewritten by the correspondent on 27 October against nnd3i8iw at 24f0b0e22666: CISA's KEV listing of 26 October, exploited kept apart from compromised, as of 00:45 UTC on 27 October, CISA's alert of 21 October dated and superseded (step 3 had moved data_as_of only: a catch); open[2] now names the listing. The rest not re-read in full."
+   "note": "exploitation paragraph: 'as of' moved to 07:15 UTC on 27 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "no-confirmed-compromise refreshed to 00:45 UTC on 27 October (vault nnd3i8iw at 24f0b0e22666, 562 sources) by the breaking desk and reviewed by the correspondent: the KEV listing names no victim, so the claim stands, keeping 'exploited' (CISA's position) apart from 'compromised'. cisa-none and kev-precedent kept as dated claims, marked superseded by the listing (correspondent, 27 October). The other claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 07:15 UTC on 27 October (vault 6fe04cc074f9, 580 sources); the other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Belgium (the ministries Takvim names), Japan's games and web services and Canada (Bitpage's lists) added, vault 2fc7e432584b; other rows not re-read in full. Vault 24f0b0e22666 checked: the three new captures (CISA's KEV alert and the catalog) name no organisation taking a site offline; no row added."
+   "note": "Brazil (Anatel, TRF1, Justica Federal da 4a Regiao, TRF6), Denmark (Kombit) and the Internet Archive added, vault 6fe04cc074f9; other rows not re-read in full."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "24f0b0e22666",
-   "note": "Re-read in full against nnd3i8iw at 24f0b0e22666: CISA's KEV listing of 26 October added (official-signal, no victim named); as of 00:45 UTC on 27 October; searched count 562. The KEV row of 23 October ('neither CVE listed') and CISA's 'has not observed exploitation' row of 21 October stand as dated. would_change_it no longer waits for a KEV listing (correspondent, 27 October). The source-watch count and the layers not re-read."
+   "checked_against": "6fe04cc074f9",
+   "note": "A decoy server's successful RCE (Karimi, Perplexity; ENTER.CO citing BleepingComputer; one page) added; as of 07:15 UTC on 27 October; searched count 580; head 6fe04cc074f9."
   },
   {
    "path": "data/exploitation.json",
