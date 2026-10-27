@@ -87,7 +87,7 @@
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 12:13 UTC on 27 October (vault 9b5fd6786c2d, 612 sources); the other 69 claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 14:41 UTC on 27 October (vault d21ea5df2a32, 614 sources); the other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
@@ -98,8 +98,8 @@
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "9b5fd6786c2d",
-   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row; as of 12:13 UTC on 27 October; searched count 612; head 9b5fd6786c2d."
+   "checked_against": "d21ea5df2a32",
+   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row; as of 14:41 UTC on 27 October; searched count 614; head d21ea5df2a32. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added."
   },
   {
    "path": "data/exploitation.json",

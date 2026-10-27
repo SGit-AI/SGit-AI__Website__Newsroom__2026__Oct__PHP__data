@@ -3879,6 +3879,54 @@
    "where": "none: held back",
    "reviewed": "2026-10-27T14:20Z",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur22-fortuneindia-zscaler-1156",
+   "verdict": "used",
+   "reason": "Fortune India (27 October, 15:33 India time, 10:03 UTC) says Zscaler ThreatLabz's global decoy network saw 1,156 exploitation attempts from 156 unique attacker IP addresses targeting 70 organisations in the first 48 hours after the 21 October disclosure, with scanning and possible exploitation by several tools including code-execution payloads. The number carries its basis (a decoy network, 48 hours). Searched all captures for Zscaler and for 1,156: the figure is on this page only, Zscaler's own post is not in the vault (Zscaler appears elsewhere only in a vendor list in The Hacker News and in an Italian page about a different ThreatLabz campaign), so it is second-hand; 'organisations' is the outlet's word for what the decoys stood for, not a statement that 70 real organisations were hit. Added to compromise.json as attempts. The page also has an AI-generated summary block; I took the figure from the article body, which says the same.",
+   "sources": [
+    "fortuneindia-technology-php2shell-shows-how-ai-is-shr"
+   ],
+   "where": "data/compromise.json",
+   "reviewed": "2026-10-27T16:35Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur22-jauns-certlv-6000",
+   "verdict": "agrees",
+   "reason": "Jauns.lv / LETA (27 October, 12:32 Latvia time, 10:32 UTC) says CERT.LV's checks of Latvian cyberspace found about 6,000 potentially vulnerable resources, only a few hundred in the public sector, and that it informed the private-sector operators of essential services, critical infrastructure, hosting and telecom providers with vulnerable sites. CERT.LV's own page in the vault (certlv-php-preventive, 22 October) already gives the same 6,000 and 'only a few hundred' public-sector; Delfi (22 October) gives it from the deputy head, Varis Teivans. Agrees with the primary; the site's Latvia rows (impact.json) are CERT.LV's own words.",
+   "sources": [
+    "jauns-raksts-zinas-735243-atklata-jauna-un-lot",
+    "certlv-php-preventive",
+    "delfi-bizness-44467736-tehnologijas-120139480-certlv-novero"
+   ],
+   "where": "data/impact.json (Latvia row)",
+   "reviewed": "2026-10-27T16:35Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur22-jauns-certlv-no-attacks",
+   "verdict": "used",
+   "reason": "Jauns.lv / LETA (27 October) relays CERT.LV: no successful cyberattack exploiting the critical PHP flaws had been recorded in Latvia so far, though attacker activity may increase and tools may improve; incidents tied to exploitation 'not yet found'; public-sector sites almost fully restored, most resources reachable from abroad again by Monday evening, latvija.lv and the shared website platform among them. Delfi (22 October) already had the deputy head saying attempts happened and were not successful, and the 21 October compromise.json row carries CERT.LV's own page. Added a no-success-known row dated 27 October and updated the Latvia row in impact.json with the later restoration. Not a statement that nothing happened outside CERT.LV's view.",
+   "sources": [
+    "jauns-raksts-zinas-735243-atklata-jauna-un-lot",
+    "delfi-bizness-44467736-tehnologijas-120139480-certlv-novero",
+    "certlv-php-preventive"
+   ],
+   "where": "data/compromise.json, data/impact.json",
+   "reviewed": "2026-10-27T16:35Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur22-jauns-certlv-fake-tools",
+   "verdict": "noted",
+   "reason": "The page relays CERT.LV's advice: to find out whether a system is vulnerable, ask its maintainer or developer, and do not use tools found online that must be downloaded to the machine, because attackers use high-profile events to publish fake diagnostic tools that infect the machine. Matches the page. Not used on a page; the site's own practice is not to run code from captured pages and nothing on the site contradicts it.",
+   "sources": [
+    "jauns-raksts-zinas-735243-atklata-jauna-un-lot"
+   ],
+   "where": "none",
+   "reviewed": "2026-10-27T16:35Z",
+   "by": "journalist@php.newsroom"
   }
  ]
 }

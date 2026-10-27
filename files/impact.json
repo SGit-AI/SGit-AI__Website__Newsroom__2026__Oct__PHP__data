@@ -28,12 +28,13 @@
   {
    "who": "Latvia: several state digital resources, lsm.lv, 112.lv",
    "country": "LV",
-   "what": "Access restricted from abroad; state website platform patched by 20:00 UTC; lsm.lv and 112.lv restored; restrictions on others possibly until 26 October",
+   "what": "Access restricted from abroad; state website platform patched by 20:00 UTC; lsm.lv and 112.lv restored; restrictions on others possibly until 26 October; by the evening of 26 October most resources were reachable from abroad again, latvija.lv and the shared website platform among them, and public-sector sites were almost fully restored (CERT.LV, as Jauns.lv / LETA report on 27 October)",
    "when": "2026-10-21T15:25Z",
    "said_by": "CERT.LV itself",
    "status": "confirmed",
    "sources": [
-    "certlv-php-preventive"
+    "certlv-php-preventive",
+    "jauns-raksts-zinas-735243-atklata-jauna-un-lot"
    ]
   },
   {

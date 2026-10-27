@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-27T12:13Z",
+ "as_of": "2026-10-27T14:41Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 612,
+   "count": 614,
    "unit": "sources",
-   "detail": "head 9b5fd6786c2d (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head d21ea5df2a32 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -627,6 +627,27 @@
    "reading": "One security executive's reading of the public record, in an interview; not a count of what attackers have done",
    "sources": [
     "zdnet-view"
+   ]
+  },
+  {
+   "kind": "attempts",
+   "when": "2026-10-27",
+   "who": "Zscaler ThreatLabz (via Fortune India, 27 October; Zscaler's own post is not in the vault)",
+   "says": "Its global decoy network observed 1,156 exploitation attempts from 156 unique attacker IP addresses targeting 70 organisations in the first 48 hours after the 21 October disclosure, including scanning and possible exploitation with several tools and code-execution payloads.",
+   "reading": "Attempt volume against a decoy network, not a compromise; 'organisations' is the outlet's word. Second-hand, on this page only. No victim named",
+   "sources": [
+    "fortuneindia-technology-php2shell-shows-how-ai-is-shr"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-27",
+   "who": "CERT.LV (Latvia), as Jauns.lv / LETA report it on 27 October; the deputy head, Varis Teivans, said the same on 22 October (Delfi)",
+   "says": "No successful cyberattack exploiting the critical PHP flaws had been recorded in Latvia so far, and no incidents tied to their exploitation had been found; attacker activity could grow and tools improve. About 6,000 potentially vulnerable resources were found, a few hundred of them public-sector.",
+   "reading": "What the national CERT has seen in Latvia, not a statement about elsewhere. No victim named",
+   "sources": [
+    "jauns-raksts-zinas-735243-atklata-jauna-un-lot",
+    "delfi-bizness-44467736-tehnologijas-120139480-certlv-novero"
    ]
   }
  ],
