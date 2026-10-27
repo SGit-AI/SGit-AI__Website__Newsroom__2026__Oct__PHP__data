@@ -4506,5 +4506,269 @@
   "topic": "exploitation",
   "note": "A prediction by a researcher involved in the discovery, relayed second-hand; the outlet adds that the flaws have high attack complexity and not every attacker instantly had a working tool. The WSJ interview is the primary.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-scworld-unit42-retraction",
+  "claim": "Palo Alto Networks Unit 42, in a 25 October blog, retracted its 23 October statement that an attack on a European government agency was related to a vulnerable PHP2Shell application, saying it could not confirm that initial access was tied to either of the two bugs",
+  "by": "SC Media",
+  "sources": [
+   "scworld-news-php2shell-exploitation-confirmed-bu"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Walks back the earlier attribution of a European government incident to PHP2Shell; Unit 42's blog update is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-scworld-delft-telescope",
+  "claim": "Delft Threat Intelligence Lab's honeypots and network telescope had recorded over 50,000 PHP2Shell exploitation requests from over 600 addresses in 70 countries as of the morning of 26 October, with 171 of those addresses sending code or droppers rather than probes",
+  "by": "SC Media (citing Suzu Labs' CTO relaying Delft)",
+  "sources": [
+   "scworld-news-php2shell-exploitation-confirmed-bu"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attempt volume, not successful compromise; second-hand through Suzu Labs. The busiest hour so far was the morning of 26 October, over 5,100 requests.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-scworld-trailofbits-exploit",
+  "claim": "Trail of Bits holds a working exploit that has not been released publicly, which its CEO Dan Guido has described as production-grade, working against stock production configurations",
+  "by": "SC Media (citing Suzu Labs)",
+  "sources": [
+   "scworld-news-php2shell-exploitation-confirmed-bu"
+  ],
+  "status": "unverified",
+  "topic": "exploitation",
+  "note": "A capability claim by the exploit's owner, relayed third-hand; nothing in the capture shows it independently tested. Recorded as a statement, not a fact about the exploit.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-infosec-kev-deadline",
+  "claim": "CISA added CVE-2026-109618 and CVE-2026-109619 to its Known Exploited Vulnerabilities catalogue on 26 October, and US federal agencies must update by 29 October",
+  "by": "Information Security (資安人), compiled from foreign press",
+  "sources": [
+   "informationsecurity-article-article-detail-aspx"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand; CISA's KEV entry is the primary, held in the vault as cisa-alert-kev-20261026. Note the KEV listing is a CISA determination of exploitation, while SC Media the same day reports no known public successful exploitation on a real victim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-infosec-censys-3251",
+  "claim": "Censys estimates that over 32.51 million PHP services still run affected versions",
+  "by": "Information Security (資安人), citing Censys",
+  "sources": [
+   "informationsecurity-article-article-detail-aspx"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "An exposure estimate of services running affected versions, not of compromised or attacked servers; Censys is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-infosec-windows-repack",
+  "claim": "On 26 October the PHP Foundation repackaged its official Windows builds of PHP 8.2 to 8.5 (8.5.12-1, 8.4.27-1, 8.3.36-1, 8.2.35-1) to ship a patched Brotli 1.2.1 for CVE-2026-111497, keeping the 21 October PHP source and the PHP2Shell fix",
+  "by": "Information Security (資安人), citing PHP's announcement",
+  "sources": [
+   "informationsecurity-article-article-detail-aspx"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "A separate vulnerability (Brotli decoder) that also reaches PHP on Windows; the version number does not change, so the file name's '-1' and its SHA-256 identify the new build.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-wwwhatsnew-bamboohr",
+  "claim": "The payroll company BambooHR shut its service down in the United States, Canada and Ireland as a precaution",
+  "by": "WWWhat's new (citing The Hacker News)",
+  "sources": [
+   "wwwhatsnew-2026-10-21-php2shell-que-pasa-si-no-actu"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary and third-hand; BambooHR's own notice is the primary. Not an intrusion.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-wwwhatsnew-cloudflare-waf",
+  "claim": "Cloudflare deployed web application firewall protections against the PHP2Shell flaws from 03:02 UTC on 21 October, including on its free plan, and said it saw attack traffic against its customers after the leak, with attackers altering their payloads to evade its rules",
+  "by": "WWWhat's new (citing Cloudflare)",
+  "sources": [
+   "wwwhatsnew-2026-10-21-php2shell-que-pasa-si-no-actu"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Second-hand; Cloudflare's post is the primary. Attack traffic, not successful compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-wwwhatsnew-wiz-atlas-models",
+  "claim": "Wiz found its first flaw on 19 August using its Wiz Atlas tool with the Gemini 4 Argon and GPT-5.6 Sol models",
+  "by": "WWWhat's new (citing Wiz)",
+  "sources": [
+   "wwwhatsnew-2026-10-21-php2shell-que-pasa-si-no-actu"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Second-hand; Wiz's own write-up is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-eadaily-russia-nkcki",
+  "claim": "Russia's National Coordination Centre for Computer Incidents under the FSB sent critical-infrastructure owners, on 22 October through GosSOPKA, a directive to update PHP to a fixed version, to consider temporarily restricting external access to vulnerable web servers up to switching them off if they cannot update, then to run antivirus checks, review logs and report suspicious activity",
+  "by": "EADaily",
+  "sources": [
+   "eadaily-ru-news-2026-10-27-php2shell-kak-odna-dy"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Single source and second-hand; the FSB centre's own notice is the primary. The outlet calls it the harshest official reaction of any country.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-eadaily-ai-lazarus-story",
+  "claim": "Between 23 and 25 October an autonomous AI agent breached a European ministry's internal network in two hours, and the work looks like the North Korean group Lazarus",
+  "by": "EADaily (reporting a story circulating online)",
+  "sources": [
+   "eadaily-ru-news-2026-10-27-php2shell-kak-odna-dy"
+  ],
+  "status": "unverified",
+  "topic": "attribution",
+  "note": "The outlet itself says authoritative sources do not confirm it and that it is a version, not a fact. No ministry, victim or primary report is named.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-eadaily-darkweb-forums-closed",
+  "claim": "The BreachForums and Dread dark-web forums closed voluntarily on 21 October out of fear that their own PHP servers could be taken over",
+  "by": "EADaily",
+  "sources": [
+   "eadaily-ru-news-2026-10-27-php2shell-kak-odna-dy"
+  ],
+  "status": "unverified",
+  "topic": "attribution",
+  "note": "No source given for the closure or the reason, and the motive is the outlet's inference.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-annahar-11-countries",
+  "claim": "Government bodies and companies in 11 countries, from Japan to Europe and Australia, suspended electronic services as a precaution after the PHP2Shell flaws were disclosed, which does not necessarily mean the services were breached",
+  "by": "An-Nahar (citing CNN, Reuters and The Register)",
+  "sources": [
+   "annahar-technology-359743-d8-ab-d8-ba-d8-b1-d8-a"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A roundup, second- and third-hand; the outlet's own figure of 11 countries. Consistent with the precautionary-shutdown reporting in the vault, and not evidence of compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-annahar-uk-lords-30",
+  "claim": "In the UK more than 30 government services stopped and four were partly disrupted, according to official statements to the House of Lords",
+  "by": "An-Nahar",
+  "sources": [
+   "annahar-technology-359743-d8-ab-d8-ba-d8-b1-d8-a"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand; compare the UK cyber minister's figure of 32 services suspended 'as a precaution' recorded from VietNamNet (cur19-vietnamnet-uk-32-services). Hansard is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-sixactualites-stealmybitcoin",
+  "claim": "A public hacking challenge site, StealMyBitcoin, was compromised through a PHP2Shell exploit against PHP 8.4.26 after 19.28 hours; the 2,000 dollars in bitcoin was the challenge prize, and no real users' wallets were reported stolen",
+  "by": "Sixactualités",
+  "sources": [
+   "sixactualites-securite-stealmybitcoin-compromis-en-19"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "A deliberate challenge target, not a victim organisation, reported by a thinly sourced rewrite that names no primary or attacker. Not evidence of in-the-wild harm.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-securitynext-panos",
+  "claim": "Palo Alto Networks' PAN-OS is affected by CVE-2026-109618 and CVE-2026-109619 through its management web interface and XML API, with fixed versions available as of 26 October only for parts of PAN-OS 11.2, 11.1 and 10.2 and the rest due by 30 October",
+  "by": "Security NEXT (citing Palo Alto Networks' advisory)",
+  "sources": [
+   "security-next-192013"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "A vendor product that embeds PHP; risk rises if the management interface is reachable from outside. Palo Alto's advisory is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-upi-kisa-cannot-scan",
+  "claim": "KISA's president Lee Sang-jung told a parliamentary audit that the agency cannot determine how many systems in South Korea use vulnerable PHP versions or whether patches are complete, and that under current regulations it cannot scan those systems",
+  "by": "UPI (translating Asia Today)",
+  "sources": [
+   "upi-top-news-world-news-2026-10-26-cybersecu"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand through two outlets; the audit record is the primary. A statement about the agency's visibility, not a count.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-upi-cyfirma-i2p",
+  "claim": "Singapore-based Cyfirma detected signs that Korean-speaking members of an organisation were simulating cyberattacks using PHP vulnerabilities on the I2P anonymous network",
+  "by": "UPI (translating Asia Today, citing Cyfirma)",
+  "sources": [
+   "upi-top-news-world-news-2026-10-26-cybersecu"
+  ],
+  "status": "unverified",
+  "topic": "attribution",
+  "note": "Vague, second-hand and about 'simulating' on a closed network; the organisation is not named. Cyfirma's own report is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-sociedademilitar-sgex",
+  "claim": "On 26 October the Brazilian Army General Secretariat (SGEx) site, which publishes the Army's bulletins, showed a notice that the page was in maintenance because of the PHP vulnerability",
+  "by": "Revista Sociedade Militar",
+  "sources": [
+   "sociedademilitar-2026-10-site-do-exercito-brasileiro-sai"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The outlet says it saw the notice itself; precautionary and not evidence of an attack.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-suedostschweiz-basel",
+  "claim": "The website of the University of Basel was unreachable on 21 October, among first Swiss municipalities, authorities, universities and hospitals reported to have switched their sites off as a precaution",
+  "by": "Südostschweiz",
+  "sources": [
+   "suedostschweiz-panorama-php-sicherheitsluecke-weltweite"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Local report; the outlet attributes it to 'the information available', and a site being unreachable is not evidence of an attack. The university's own notice is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-telehealth-no-healthcare-attacks",
+  "claim": "As of 22 October no healthcare-specific attacks or patient-data breaches linked to PHP2Shell had been identified in the publicly available reporting the author reviewed, and Fortified Health Security reported no evidence of attacks targeting the sector",
+  "by": "Telehealth.org news (AI-assisted, edited)",
+  "sources": [
+   "telehealth-news-critical-php2shell-vulnerabilities"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "An absence-of-evidence statement dated 22 October, from an AI-assisted secondary article; not a finding that none occurred.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur20-bloter-ahnlab-github",
+  "claim": "According to an AhnLab analysis published on 22 October, 99 of the top 100 GitHub repositories found by searching 'php2shell' dealt with the PHP flaws, most created around 21 October, and 83% of their 1,394 stars went to attack-reproduction code",
+  "by": "Bloter (citing AhnLab)",
+  "sources": [
+   "bloter-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A measure of public interest in attack code, not of working exploits: the column says not all public code works and some is proof of concept. AhnLab's analysis is the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]

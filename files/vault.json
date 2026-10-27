@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "6fe04cc074f9",
-  "subject": "curator@php.newsroom (scheduled): batch 19, 18 sources from the researcher's queue (ENTER.CO honeypot RCE, unwire.hk, UOL, VietNamNet, VTV, Weekly Hankook, WinPoin, WSWS and others), 11 claims, 1 timeline row  +144 ~4  [blobs:+148 trees:+62]",
-  "commits": 39
+  "commit": "55b47c4d6af1",
+  "subject": "curator@php.newsroom (scheduled): batch 20, 18 sources from the researcher's queue (SC Media Unit 42 retraction, CISA KEV via Information Security, EADaily, An-Nahar, Security NEXT PAN-OS, UPI, Bloter and others), 22 claims, 1 timeline row  +144 ~4  [blobs:+148 trees:+59]",
+  "commits": 40
  },
- "sources": 580,
- "captures": 645,
- "hashed_files": 3759,
+ "sources": 598,
+ "captures": 663,
+ "hashed_files": 3867,
  "primary": 90,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-27T07:15Z",
+ "latest_capture": "2026-10-27T09:43Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

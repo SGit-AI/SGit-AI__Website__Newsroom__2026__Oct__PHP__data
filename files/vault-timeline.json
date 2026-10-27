@@ -1103,5 +1103,15 @@
   "confidence": "stated",
   "phase": "exploitation",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-25",
+  "event": "Palo Alto Networks Unit 42 retracted its 23 October statement tying an attack on a European government agency to PHP2Shell, saying it could not confirm the initial access",
+  "sources": [
+   "scworld-news-php2shell-exploitation-confirmed-bu"
+  ],
+  "confidence": "stated",
+  "phase": "compromise",
+  "agent": "curator@php.newsroom"
  }
 ]
