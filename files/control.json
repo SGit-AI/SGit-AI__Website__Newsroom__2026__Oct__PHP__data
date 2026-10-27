@@ -500,6 +500,12 @@
    "owner": "editor",
    "status": "waiting",
    "title": "Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site"
+  },
+  {
+   "id": "dev-0003",
+   "owner": "editor",
+   "status": "open",
+   "title": "Tag ruleset on the six repositories, so a published version can never move or vanish (CI owns the version: the editor's setting)"
   }
  ],
  "branches": [
@@ -1481,6 +1487,14 @@
    "run": "20261027T0020Z-observability",
    "started": "2026-10-27T00:20:00Z",
    "summary": "Not a scheduled wake: the editor's session. Lane found full (1,000) by the editor, who drained it; then 4 drained here (vault 84wr8mib at 3,431 events, 915 sessions; lane empty). Cause: one Googlebot rendering session, 960 events over 811 pages, 26 Oct 17:00 to 19:23 UTC; the lane refused for about…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-27T02:10:12Z",
+   "outcome": "ok",
+   "run": "20261027T0120Z-dev",
+   "started": "2026-10-27T01:20Z",
+   "summary": "CI owns the version in all six (https://sharness.ai/articles/ci-owns-the-version.html): after the gate, CI writes VERSION in a GitHub Actions commit, tags it and deploys it; release.sh never touches VERSION, and a pushed change to it fails the guard. First CI versions: press v1.0.58, data v0.1.52,…"
   }
  ],
  "schedules": [
@@ -1668,5 +1682,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.39"
+ "version": "0.22.40"
 }
