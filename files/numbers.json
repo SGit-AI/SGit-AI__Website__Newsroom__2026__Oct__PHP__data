@@ -148,7 +148,19 @@
   ],
   "status": "reported",
   "measures": "Hosts whose HTTP response announces a PHP version below the fixed one. Hosts that hide the version (a million of them) are not counted either way.",
-  "note": "Censys's own post was not found; nearly 3 million hosts by 22 October per the same report."
+  "note": "Censys's own post was not found; nearly 3 million hosts by 22 October per the same report. Not to be set beside n-censys-services (Censys's live tracker, 32.5 million on 27 October): that counts PHP services, this counts hosts: different units, not comparable. Added by the correspondent on 27 October."
+ },
+ {
+  "id": "n-censys-services",
+  "value": "32.5 million",
+  "of": "PHP services still reporting an affected version at Censys's most recent scan (32,545,698 at its update of 18:15 UTC on 27 October); 42.8 million seen on an affected version at some point since 21 October, 10.3 million seen to move to a fixed version",
+  "who": "Censys, its PHP2Shell exposure tracker",
+  "sources": [
+   "censys-php2shell-exposure"
+  ],
+  "status": "reported",
+  "measures": "Services, not hosts, by the PHP version they report. In Censys's words, 'Version-based counts are an upper bound: Linux distributions often backport fixes without changing the version.' Another 61.3 million services (58% of all detected) reveal no version and are not counted; 1.1 million reporting never-released versions are excluded as likely honeypots. About 24 million of the affected are on PHP 8.1 or older, which receive no official fix. Exposure, not compromise.",
+  "note": "A live counter: the page says 'Updated 18:15 UTC' without a date; the date is the capture's (19:13 UTC on 27 October). The Hacker News's 'more than 32.51 million' (27 October) is an earlier reading of it, given without Censys's caveat. Not comparable with n-censys, which counts hosts. Added by the correspondent on 27 October."
  },
  {
   "id": "n-millions-attempts",

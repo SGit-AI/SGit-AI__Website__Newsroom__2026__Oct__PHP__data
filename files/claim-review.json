@@ -3814,7 +3814,7 @@
   {
    "id": "cur21-xenospectrum-asustor-synology",
    "verdict": "held back",
-   "reason": "Both are vendor statements that rest on this one outlet: Asustor's advisory AS-2026-023 (affected NAS where PHP was added to ADM; stop the web server until a fix; status 'Ongoing' in the outlet's table) and Synology's (fixes on 22 October for the PHP packages; the OS-embedded PHP's risk rated very low; no fix for PHP 7.3). Searched all captures for AS-2026-023 and the Synology advisory: neither vendor's own page is in the vault, only XenoSpectrum. Held back until a vendor source is captured; it is not stated on the site.",
+   "reason": "Both are vendor statements that rest on this one outlet: Asustor's advisory AS-2026-023 (affected NAS where PHP was added to ADM; stop the web server until a fix; status 'Ongoing' in the outlet's table) and Synology's (fixes on 22 October for the PHP packages; the OS-embedded PHP's risk rated very low; no fix for PHP 7.3). Searched all captures for AS-2026-023 and the Synology advisory: neither vendor's own page is in the vault, only XenoSpectrum. Held back until a vendor source is captured; it is not stated on the site. Checked by the correspondent on 27 October: Synology's own advisory is now in the vault (synology-sa-26-14, updated 26 October) and bears out the Synology half (fixed PHP packages; no fix for PHP 7.3, end of life; 'The built-in PHP in OS is not exposed to external attack surfaces, and the risk of exploitation is considered very low'); Asustor's AS-2026-023 is still not captured, so the claim as worded stays held back.",
    "sources": [
     "xenospectrum-php2shell-nas-qnap-synology-patch-gap"
    ],
@@ -4009,7 +4009,7 @@
   {
    "id": "brk2-thn-brotli-windows",
    "verdict": "used",
-   "reason": "The page says, verbatim, 'As of October 26, 2026, the PHP Foundation also released Windows builds 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 to address CVE-2026-111497', and quotes the PHP Foundation: 'In PHP Windows builds, the vulnerable decoder can be reached through the cURL extension when automatic HTTP response decompression is enabled ... This is disabled by default in cURL'. Searched all captures for '111497', 'Brotli' and 'Broccoli': a second outlet gives the same four builds (資安人 / Information Security, Taiwan, 27 October: the PHP Foundation repackaged the Windows builds on 26 October with Brotli 1.2.1, the same PHP source as 21 October), and Security NEXT (27 October) lists a headline on it; php.net's own entry (#2026-10-26-1) is not captured (the vault's php-net-advisory capture is of 22 October). Searched the site's data for 'Brotli' and '111497': nothing. Used, attributed to THN, on the front page's Latest beside CISA's Brotli listing, and in compromise.json's Brotli row: a different flaw from php2shell, reaching PHP only in its Windows builds.",
+   "reason": "The page says, verbatim, 'As of October 26, 2026, the PHP Foundation also released Windows builds 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 to address CVE-2026-111497', and quotes the PHP Foundation: 'In PHP Windows builds, the vulnerable decoder can be reached through the cURL extension when automatic HTTP response decompression is enabled ... This is disabled by default in cURL'. Searched all captures for '111497', 'Brotli' and 'Broccoli': a second outlet gives the same four builds (資安人 / Information Security, Taiwan, 27 October: the PHP Foundation repackaged the Windows builds on 26 October with Brotli 1.2.1, the same PHP source as 21 October), and Security NEXT (27 October) lists a headline on it; php.net's own entry (#2026-10-26-1) is not captured (the vault's php-net-advisory capture is of 22 October). Searched the site's data for 'Brotli' and '111497': nothing. Used, attributed to THN, on the front page's Latest beside CISA's Brotli listing, and in compromise.json's Brotli row: a different flaw from php2shell, reaching PHP only in its Windows builds. Revised by the correspondent on 27 October: there is no Brotli row in compromise.json (the desk kept the Brotli listing off the compromise ledger as a different flaw, as the release message says); it is used on the front page's Latest only. Latest's line also said the flaw is reached 'only' when cURL's decompression is on, 'off by default', dropping the PHP Foundation's 'but applications and HTTP client libraries can enable it' and calling the builds 'repackaged', THN's 'released': corrected in plain.json.",
    "sources": [
     "the-hacker-news-cisa-confirms-php2shell-exploitation",
     "informationsecurity-article-article-detail-aspx",
@@ -4036,24 +4036,24 @@
   {
    "id": "brk2-kevpage-brotli",
    "verdict": "used",
-   "reason": "The catalog page (19:13 UTC on 27 October) lists 'GOOGLE | BROTLI', CVE-2026-111497, 'Google Brotli Unchecked Return Value Vulnerability' (a crafted Brotli-compressed stream; possibly arbitrary code), known ransomware use 'Unknown', forensic triage required 'No', date added 2026-10-27, due date 2026-11-10. Newer than the JSON catalog the vault holds (2026.10.26), so the addition time is not known. The entry names Google's Brotli, not PHP, and no victim. It is tied to this story only through PHP's official Windows builds, which bundle Brotli (THN; 資安人, 27 October). Used: compromise.json, as an official signal for a different flaw (not php2shell), and the front page's Latest. THN does not report this listing; broccoli2shell.com's 'As of 2026-10-22, no attacks in the wild had been reported' is older than it.",
+   "reason": "The catalog page (19:13 UTC on 27 October) lists 'GOOGLE | BROTLI', CVE-2026-111497, 'Google Brotli Unchecked Return Value Vulnerability' (a crafted Brotli-compressed stream; possibly arbitrary code), known ransomware use 'Unknown', forensic triage required 'No', date added 2026-10-27, due date 2026-11-10. Newer than the JSON catalog the vault holds (2026.10.26), so the addition time is not known. The entry names Google's Brotli, not PHP, and no victim. It is tied to this story only through PHP's official Windows builds, which bundle Brotli (THN; 資安人, 27 October). Used: compromise.json, as an official signal for a different flaw (not php2shell), and the front page's Latest. THN does not report this listing; broccoli2shell.com's 'As of 2026-10-22, no attacks in the wild had been reported' is older than it. Revised by the correspondent on 27 October: compromise.json has no Brotli row (kept off the compromise ledger as a different flaw, as the release message says); used on the front page's Latest only.",
    "sources": [
     "cisa-kev-kev-catalog-page",
     "the-hacker-news-cisa-confirms-php2shell-exploitation",
     "informationsecurity-article-article-detail-aspx"
    ],
-   "where": "compromise/index.html",
+   "where": "index.html",
    "reviewed": "2026-10-27",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
    "id": "brk2-censys-exposure",
-   "verdict": "noted",
-   "reason": "Found on the page: '32,545,698' 'PHP services still on an affected version at their most recent scan', 42,790,125 seen affected since 21 October, 10,270,095 seen to move to a fixed version, 'Updated 18:15 UTC' (no date on the page; the capture began at 19:13 UTC on 27 October), and its caveats: 'Version-based counts are an upper bound: Linux distributions often backport fixes without changing the version' and 61,303,506 services (58%) that do not reveal a version are not shown. Not used on a page yet. Searched numbers.json and claims.json for 'Censys': the site's n-censys and scale-2.6m-hosts count hosts (2.58 million seen, 1.57 million not patched, 22 October, via SecurityWeek); this counts services, a different unit, so not a contradiction, but the two should not be set side by side without saying so. For the correspondent (numbers).",
+   "verdict": "used",
+   "reason": "Found on the page: '32,545,698' 'PHP services still on an affected version at their most recent scan', 42,790,125 seen affected since 21 October, 10,270,095 seen to move to a fixed version, 'Updated 18:15 UTC' (no date on the page; the capture began at 19:13 UTC on 27 October), and its caveats: 'Version-based counts are an upper bound: Linux distributions often backport fixes without changing the version' and 61,303,506 services (58%) that do not reveal a version are not shown. Not used on a page yet. Searched numbers.json and claims.json for 'Censys': the site's n-censys and scale-2.6m-hosts count hosts (2.58 million seen, 1.57 million not patched, 22 October, via SecurityWeek); this counts services, a different unit, so not a contradiction, but the two should not be set side by side without saying so. For the correspondent (numbers). Revised by the correspondent on 27 October: used, as numbers.json's n-censys-services (32.5 million services, with Censys's upper-bound caveat and the unrevealed versions), and n-censys's note now says the two count different units and are not to be set side by side.",
    "sources": [
     "censys-php2shell-exposure"
    ],
-   "where": "claims/review/index.html",
+   "where": "numbers/index.html",
    "reviewed": "2026-10-27",
    "by": "breaking@php.newsroom (journalist's role)"
   },

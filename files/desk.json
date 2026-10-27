@@ -81,7 +81,7 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The correspondent added Unit 42's withdrawal and Square Enix to that paragraph on 27 October. The CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
@@ -99,7 +99,7 @@
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
    "checked_against": "d21ea5df2a32",
-   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen), and CISA's KEV listing of Google Brotli CVE-2026-111497 (a different flaw, PHP's Windows builds only) added; the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
+   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen) added; CISA's KEV listing of Google Brotli CVE-2026-111497 kept off the ledger, a different flaw (corrected by the correspondent on 27 October: this note had said it was added); the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
   },
   {
    "path": "data/exploitation.json",
@@ -153,7 +153,7 @@
    "path": "data/plain.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Now site's content/data/plain.json. 'As of' lines: the impact page line and the hacked card moved to 19:13 UTC on 27 October; Right now's exploitation text ('The one security company that had claimed a successful break-in, Sophos, withdrew it': Unit 42 withdrew one too, 25 October) and the 'been hacked' answer ('One company in Japan is investigating a break-in': Square Enix is a second, cause not stated) left at 09:43 UTC for the correspondent. CISA's KEV listing of Google Brotli (27 October) added to Latest, American Banker (23 October) out. Not re-read in full; Latest still lacks other events after 23 October."
+   "note": "Now site's content/data/plain.json. 'As of' lines: the impact page line and the hacked card moved to 19:13 UTC on 27 October; Right now's exploitation text and the 'been hacked' answer moved to 19:13 UTC by the correspondent on 27 October, with Unit 42's withdrawal (25 October) beside Sophos's and Square Enix (named, cause not stated) beside GMO; Latest's Brotli line given the PHP Foundation's full caveat. CISA's KEV listing of Google Brotli (27 October) added to Latest, American Banker (23 October) out. Not re-read in full; Latest still lacks other events after 23 October."
   },
   {
    "path": "data/personas.json",
@@ -165,7 +165,7 @@
    "path": "data/questions.json",
    "kept_by_before": "librarian",
    "checked_against": null,
-   "note": "Now site's content/data/questions.json. Partly: 'Has anyone actually been hacked?' short answer as of 19:13 UTC on 27 October; the break-ins answer left at 09:43 UTC ('the four named cases in the press' leaves out Square Enix, on the ledger since 26 October): the correspondent's. The other answers not yet re-read."
+   "note": "Now site's content/data/questions.json. Partly: 'Has anyone actually been hacked?' short answer as of 19:13 UTC on 27 October; the break-ins answer moved to 19:13 UTC by the correspondent on 27 October, with Square Enix as a fifth named case and the vendors' no-exploitation statements of the brk2 batch beside Craft's pre-patch exploitation line. The other answers not yet re-read."
   },
   {
    "path": "data/signals.json",
@@ -355,6 +355,30 @@
    "kind": "verdict",
    "journalist_run": "20261027T0500Z-journalist",
    "fixed_in": "data, correspondent's release of 27 October"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "brk2-kevpage-brotli and brk2-thn-brotli-windows said they were used in a Brotli row in compromise.json, and the ledger's compromise.json note said CISA's Brotli listing was added there; compromise.json has no such row, and the release message says the desk kept it off the ledger as a different flaw. The two verdicts revised (brk2-kevpage-brotli's 'where' to the front page) and the ledger note corrected.",
+   "file": "data: files/claim-review.json, files/desk.json",
+   "kind": "contradiction",
+   "journalist_run": "breaking-0002 step 3",
+   "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0002, 27 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "Latest's Brotli line (site content/data/plain.json) said the flaw is reached in PHP's Windows builds 'only' when cURL's automatic decompression is on, 'which is off by default', dropping the PHP Foundation's 'but applications and HTTP client libraries can enable it', and called the builds 'repackaged' where The Hacker News says 'released'. A reassurance stronger than the source. The caveat restored and THN's word used.",
+   "file": "site: content/data/plain.json",
+   "kind": "row",
+   "journalist_run": "breaking-0002 step 3",
+   "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0002, 27 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "story.json's exploitation paragraph had its 'as of' moved to 19:13 UTC with 'every fact in the paragraph checked to hold', while it still gave Sophos as the only withdrawal and four named cases, the same two gaps the step left open in plain.json (Unit 42's withdrawal of 25 October; Square Enix on the ledger, cause not stated). Both added, with their sources.",
+   "file": "data: files/story.json",
+   "kind": "missing",
+   "journalist_run": "breaking-0002 step 3",
+   "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0002, 27 October, for the editor's release"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."
