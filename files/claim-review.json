@@ -3120,6 +3120,81 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-26",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "brk1-kev-listed-20261026",
+   "verdict": "used",
+   "reason": "Checked against the captures of 00:45 UTC on 27 October (00:45 London time, GMT): the KEV feed (cisa-kev-json and cisa-kev-catalog hold the same file, the same sha256) reads catalogVersion 2026.10.26, dateReleased 2026-10-26T22:24:24.6101Z, count 1758, and both CVEs with vendorProject 'PHP Group' and dateAdded 2026-10-26; CISA's alert of 26 October (no time given): 'CISA has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog'. Used: the compromise ledger's official-signal row and the claim no-confirmed-compromise. Searched the site's data first (claims.json, numbers.json, exploitation.json, compromise.json, for 'KEV', 'Known Exploited' and 'not observed exploitation'): the claims cisa-none and kev-precedent, the number n-kev-2026, exploitation.json's CISA row and compromise.json's KEV row of 23 October say neither CVE is in KEV, from catalog 2026.10.21. They were right for their time; this is a later state of the same primary source, not a disputed fact. They are the correspondent's to date.",
+   "sources": [
+    "cisa-kev-catalog",
+    "cisa-kev-json",
+    "cisa-alert-kev-20261026"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27T03:28Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk1-kev-due-20261029",
+   "verdict": "used",
+   "reason": "Both captures of the feed read \"dueDate\": \"2026-10-29\" for each CVE, three days after dateAdded; the alert says BOD 26-04 'applies only to FCEB agencies'. Used in the compromise ledger's KEV row as the due date for US federal civilian agencies. Nothing on the site gives another due date (searched the four files for 'due date', '29 October', '2026-10-29' and 'BOD 26-04').",
+   "sources": [
+    "cisa-kev-catalog",
+    "cisa-kev-json",
+    "cisa-alert-kev-20261026"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27T03:28Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk1-kev-ransomware-unknown",
+   "verdict": "used",
+   "reason": "Both captures read \"knownRansomwareCampaignUse\": \"Unknown\" for each CVE. Used in the compromise ledger's KEV row, quoted as the catalog's field value: 'Unknown' is neither a finding of ransomware use nor a finding that there is none. Nothing on the site says php2shell was used by ransomware (searched the four files for 'ransomware').",
+   "sources": [
+    "cisa-kev-catalog",
+    "cisa-kev-json"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27T03:28Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk1-kev-forensic-triage",
+   "verdict": "noted",
+   "reason": "Both captures read \"forensicTriage\": \"Yes\" and the requiredAction the claim quotes, word for word (the claim stops before the field's last sentence, 'Stakeholders are responsible for evaluating each asset's internet exposure and ensuring adherence to BOD 26-04 patching guidelines.'); the alert: BOD 26-04 'further establishes basic expectations for when agencies must check whether threat actors compromised the system before the patch was applied.' A requirement on US federal agencies to look for a compromise, not a finding of one. Not used on a page yet; nothing on the site contradicts it.",
+   "sources": [
+    "cisa-kev-catalog",
+    "cisa-kev-json"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27T03:28Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk1-kev-no-victim-named",
+   "verdict": "used",
+   "reason": "Read the whole alert capture and both CVEs' catalog entries: the only organisations named are CISA, the PHP Group (the entries' vendorProject) and the US federal civilian agencies BOD 26-04 applies to; no victim, compromised organisation, threat actor or ransomware campaign (the ransomware field reads 'Unknown'). An absence in these two sources only. Used: the compromise ledger's KEV row and the claim no-confirmed-compromise, which stands and now keeps the two words apart: exploited (CISA's listing) is not compromised (no named organisation has said so).",
+   "sources": [
+    "cisa-alert-kev-20261026",
+    "cisa-kev-catalog",
+    "cisa-kev-json"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27T03:28Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk1-alert-updates-php-alert",
+   "verdict": "noted",
+   "reason": "The alert capture says it, verbatim: CISA 'has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog and updated the PHP Alert, Critical Vulnerabilities in PHP Require Immediate Patching'; both catalog entries link to the 21 October alert in their notes. The vault's only capture of that alert (cisa-alert-php-20261021, 20261022T081353Z) predates the update, so what changed in it is not in the vault, and the site still quotes its 'CISA has not observed exploitation of these vulnerabilities as of the time of publication' (exploitation.json, compromise.json, claim cisa-none). Not used; the updated alert needs a fresh capture.",
+   "sources": [
+    "cisa-alert-kev-20261026",
+    "cisa-alert-php-20261021"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27T03:28Z",
+   "by": "breaking@php.newsroom (journalist's role)"
   }
  ]
 }

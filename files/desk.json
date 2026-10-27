@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "exploitation paragraph: 'as of' moved to 12:14 UTC on 26 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "data_as_of and the exploitation paragraph's 'as of' moved to 00:45 UTC on 27 October (vault 24f0b0e22666). The same paragraph still says neither CVE is in KEV (last check 08:03 UTC on 23 October): the correspondent's. Not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "no-confirmed-compromise refreshed to 14:42 UTC on 26 October by the correspondent (vault 2fc7e432584b, 543 sources): Square Enix is named but the cause is not stated, so the claim stands. The other 69 claims not yet re-read."
+   "note": "no-confirmed-compromise refreshed to 00:45 UTC on 27 October (vault nnd3i8iw at 24f0b0e22666, 562 sources): the KEV listing names no victim, so the claim stands, and it now keeps 'exploited' (CISA's position) apart from 'compromised'. cisa-none and kev-precedent (neither CVE in KEV, catalog 2026.10.21) are out of date and left for the correspondent. The other claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Belgium (the ministries Takvim names), Japan's games and web services and Canada (Bitpage's lists) added, vault 2fc7e432584b; other rows not re-read in full."
+   "note": "Belgium (the ministries Takvim names), Japan's games and web services and Canada (Bitpage's lists) added, vault 2fc7e432584b; other rows not re-read in full. Vault 24f0b0e22666 checked: the three new captures (CISA's KEV alert and the catalog) name no organisation taking a site offline; no row added."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "2fc7e432584b",
-   "note": "Square Enix (named, cause not stated, unverified) added; as of 14:42 UTC on 26 October; searched count 543; head 2fc7e432584b."
+   "checked_against": "24f0b0e22666",
+   "note": "Re-read in full against nnd3i8iw at 24f0b0e22666: CISA's KEV listing of 26 October added (official-signal, no victim named); as of 00:45 UTC on 27 October; searched count 562. The KEV row of 23 October ('neither CVE listed'), the CISA 'has not observed exploitation' row of 21 October, would_change_it ('A KEV listing for either CVE') and the layers are left for the correspondent."
   },
   {
    "path": "data/exploitation.json",
@@ -153,7 +153,7 @@
    "path": "data/plain.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "'As of' lines to 09:35 UTC on 25 October. Not re-read in full; the desk's message of 25 October on CVE-2026-115560 in Right now is passed to the correspondent."
+   "note": "Now site's content/data/plain.json. 'As of' lines (Right now, the hacked card, the exploitation fact, the impact page line) moved to 00:45 UTC on 27 October, their KEV clauses brought to the listing of 26 October; the KEV listing added to Latest. Not re-read in full; Latest still lacks other events after 23 October."
   },
   {
    "path": "data/personas.json",
@@ -165,7 +165,7 @@
    "path": "data/questions.json",
    "kept_by_before": "librarian",
    "checked_against": null,
-   "note": "Partly: 'Has anyone actually been hacked?' as of 09:35 UTC on 25 October; the other answers not yet re-read."
+   "note": "Now site's content/data/questions.json. Partly: 'Has anyone actually been hacked?' (short and the break-ins answer) as of 00:45 UTC on 27 October, its KEV clauses brought to the listing of 26 October; the other answers not yet re-read."
   },
   {
    "path": "data/signals.json",

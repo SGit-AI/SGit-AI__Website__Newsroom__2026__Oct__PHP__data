@@ -4,7 +4,7 @@
  "title": "PHP in October 2026: two critical security flaws, tracked as evidence",
  "description": "PHP news for October 2026, led by the month's big story: two critical security flaws in PHP (CVE-2026-109618 and CVE-2026-109619, nicknamed php2shell). The current situation in plain words, the core facts with their evidence, what to do, and a briefing for every kind of reader.",
  "status": "Developing",
- "data_as_of": "2026-10-22T08:48Z",
+ "data_as_of": "2026-10-27T00:45Z",
  "data_as_of_note": "the time of the latest capture in the evidence vault; the site is rebuilt from the vault, so this moves only when the vault does",
  "cves": [
   "CVE-2026-109618",
