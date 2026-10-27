@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "55b47c4d6af1",
-  "subject": "curator@php.newsroom (scheduled): batch 20, 18 sources from the researcher's queue (SC Media Unit 42 retraction, CISA KEV via Information Security, EADaily, An-Nahar, Security NEXT PAN-OS, UPI, Bloter and others), 22 claims, 1 timeline row  +144 ~4  [blobs:+148 trees:+59]",
-  "commits": 40
+  "commit": "9b5fd6786c2d",
+  "subject": "curator@php.newsroom (scheduled): batch 21, 14 sources from the researcher's queue (CNET France, Mynavi, Notebookcheck, XenoSpectrum NAS vendors, ZDNet Korea interview, Yonhap, ZDNET and others), 15 claims, no timeline rows  +112 ~3  [blobs:+115 trees:+46]",
+  "commits": 41
  },
- "sources": 598,
- "captures": 663,
- "hashed_files": 3867,
+ "sources": 612,
+ "captures": 677,
+ "hashed_files": 3951,
  "primary": 90,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-27T09:43Z",
+ "latest_capture": "2026-10-27T12:13Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

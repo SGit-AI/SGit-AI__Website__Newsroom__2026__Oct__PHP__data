@@ -4770,5 +4770,185 @@
   "topic": "exploitation",
   "note": "A measure of public interest in attack code, not of working exploits: the column says not all public code works and some is proof of concept. AhnLab's analysis is the primary.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-cnet-cyfirma-lazarus-recon",
+  "claim": "Cyfirma reported a reconnaissance campaign attributed to the North Korean group Lazarus, using 21 already-compromised servers to probe 216 potentially vulnerable targets in the US, Japan, South Korea and the EU, among them government, bank and airport systems",
+  "by": "CNET France (citing Cyfirma via The Hacker News)",
+  "sources": [
+   "fr-cnet-cybersecurite-6121-php2shell-une-premier"
+  ],
+  "status": "unverified",
+  "topic": "attribution",
+  "note": "A vendor's attribution, relayed third-hand; no target is named and no evidence of intrusion is given. Compare the unconfirmed AI-agent-and-Lazarus story recorded from EADaily (cur20-eadaily-ai-lazarus-story), a different claim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-cnet-stealmybitcoin-stolen",
+  "claim": "About 20 hours after the StealMyBitcoin.com challenge launched, a participant exploited the PHP flaws to steal the more than 2,000 dollars in bitcoin placed on it",
+  "by": "CNET France",
+  "sources": [
+   "fr-cnet-cybersecurite-6121-php2shell-une-premier"
+  ],
+  "status": "disputed",
+  "topic": "compromise",
+  "note": "Conflicts with Sixactualités, which says the challenge was reached in 19.28 hours but a key did not open the expected wallet and no wallets were stolen (cur20-sixactualites-stealmybitcoin). A deliberate challenge target in any case, not a real victim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-mynavi-trendmicro-checker",
+  "claim": "Trend Micro published on 23 October a free 'PHP2Shell Exposure Checker' that judges a site's possible exposure from externally visible information such as HTTP headers, without sending attack code or testing exploitability",
+  "by": "Mynavi News TECH+",
+  "sources": [
+   "news-mynavi-techplus-article-20261026-5196687"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "A vendor tool; the outlet notes its result is a guide, not a guarantee, since distributions can patch without changing the version string.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-mediamixi-games",
+  "claim": "On the night of 21 October popular Japanese online games went into emergency maintenance because of the PHP flaws; most recovered by the next day, but World Quest was closed outright on 21 October and another idle RPG ended service on 22 October, while Cygames' Shingeki no Bahamut began a PHP upgrade expected to take over a week",
+  "by": "MEDIAMIXI",
+  "sources": [
+   "mediamixi-news-17350"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary shutdowns and end-of-life closures, not intrusions; the outlet cites the operators' notices, which are the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-mediamixi-takaichi-post",
+  "claim": "Japan's Prime Minister Sanae Takaichi posted on X before the PHP release an urgent request that systems be dealt with that night, which the outlet calls unusual for a prime minister",
+  "by": "MEDIAMIXI",
+  "sources": [
+   "mediamixi-news-17350"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand; the post itself is the primary. Consistent with the Prime Minister's call to firms noted by An-Nahar (cur20-annahar-11-countries).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-notebookcheck-shodan-884k",
+  "claim": "A Shodan count published by Mallory on 20 October found about 884,000 internet-exposed hosts indicating an unsupported PHP version, 59% of the roughly 1.5 million hosts that reveal their version, with about 740,000 more hiding it",
+  "by": "Notebookcheck (citing Mallory and CybelAngel)",
+  "sources": [
+   "notebookcheck-php2shell-deja-a-millones-de-servidores"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Host counts from banners, not confirmed vulnerable or attacked sites; shared hosting puts many sites behind one address and distributions can patch without changing the version string. Taken before the fixes were out, so the 8.2 to 8.5 figure was unpatched when counted.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-xboxdynasty-cloudflare-early",
+  "claim": "Cloudflare began developing defences against the flaws in early October and deployed them about nine hours before the public announcement, available by default from 05:02 German time on 21 October on all plans with its web application firewall",
+  "by": "XboxDynasty (citing Cloudflare)",
+  "sources": [
+   "xboxdynasty-news-internet-cloudflare-erklaert-kritis"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Second-hand through a gaming site; Cloudflare's post is the primary. Whether 'early October' means before the 17 October coordinated-disclosure start is not stated and is the point to check.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-xboxdynasty-115560-affects-8512",
+  "claim": "The related flaw CVE-2026-115560 in the session upload-progress feature affects even fully updated PHP versions including 8.5.12, with a fix due in the next regular release",
+  "by": "XboxDynasty (citing the PHP project's 23 October advisory)",
+  "sources": [
+   "xboxdynasty-news-internet-cloudflare-erklaert-kritis"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "The PHP advisory is the primary; other outlets (ZDNET, Codebook) say it needs an unusual configuration and application-code combination, with a mitigation until the fix.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-xenospectrum-qnap-fixing",
+  "claim": "As of 23 October QNAP's advisory QSA-26-18 listed its affected products, including QTS, QuTS hero and QuTScloud, as 'Fixing' with no fix date, and QNAP said it had received no reports of exploitation targeting its products",
+  "by": "XenoSpectrum (citing QNAP's advisory)",
+  "sources": [
+   "xenospectrum-php2shell-nas-qnap-synology-patch-gap"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Vendor status on one date, second-hand; QNAP's advisory is the primary and has probably changed since.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-xenospectrum-asustor-synology",
+  "claim": "Asustor's advisory AS-2026-023 says NAS products where PHP was added to ADM are affected and recommends stopping the web server until a fix, while Synology published fixes on 22 October for affected PHP packages and rates the OS-embedded PHP's risk as very low",
+  "by": "XenoSpectrum (citing the vendors' advisories)",
+  "sources": [
+   "xenospectrum-php2shell-nas-qnap-synology-patch-gap"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Second-hand; each vendor's advisory is the primary. Shows how the owner's options differ by vendor.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-yna-pipc-guidance",
+  "claim": "South Korea's Personal Information Protection Commission urged data controllers on 22 October to check PHP versions and patch, remove unneeded web services, block direct internet access to database admin tools such as phpMyAdmin, minimise the web account's database permissions, and check for abnormal bulk queries or exports",
+  "by": "Yonhap News (citing the Commission)",
+  "sources": [
+   "yna-view-akr20261022157000530"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The agency's own guidance as relayed; focuses on data-leak prevention. Complements KISA's rules (cur19-hankooki-kisa-rules).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-zdnet-mirai-botnet",
+  "claim": "A threat actor tied to PHP2Shell attack chains is attempting to deploy a Mirai-style botnet",
+  "by": "ZDNET (citing Amazon Threat Intelligence)",
+  "sources": [
+   "zdnet-tech-php2shell-php-patch-mitigation-crit"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Second-hand and unspecific; says nothing about success or scale. Amazon's report is the primary. The article also gives the name once as 'P2P2Shell', a typo.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-zdnetkr-no-verified-breach",
+  "claim": "As of 27 October no publicly verified breach of a real company or institution through PHP2Shell had been confirmed, and Sophos and Palo Alto Networks, which first announced successful attacks, later corrected or withdrew them",
+  "by": "ZDNet Korea (interview with Theori's CEO)",
+  "sources": [
+   "zdnet-view"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "An expert's statement as of 27 October, with the caveat that unknown cases cannot be excluded. Sits against CISA's KEV listing of 26 October (cur20-infosec-kev-deadline) and the honeypot-only confirmations; consistent with the Unit 42 retraction (cur20-scworld-unit42-retraction).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-ziuaveche-dnsc-alert",
+  "claim": "Romania's National Cyber Security Directorate (DNSC) issued an alert on the two PHP flaws, recommending checking the PHP version, updating PHP separately from WordPress and plugins, examining logs, and considering temporary isolation of systems that cannot be updated, and referring to the legal responsibility of those who run IT systems under Law 58/2023 article 5(a)",
+  "by": "Ziua Veche (citing the DNSC)",
+  "sources": [
+   "ziuaveche-stiinta-it-it-alerta-dnsc-doua-vulnerabi"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The agency's alert as relayed; the DNSC's own text is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur21-zoomtec-anci",
+  "claim": "Chile's National Cybersecurity Agency (ANCI) recommended updating PHP immediately after the PHP2Shell flaws were disclosed",
+  "by": "Zoom Tecnológico",
+  "sources": [
+   "zoomtecnologico-2026-10-26-php-php2shell-chile"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A one-line mention in a vendor-quoting article; ANCI's own notice is the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]
