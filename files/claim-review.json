@@ -3195,6 +3195,149 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-27T03:28Z",
    "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur18-tnw-structural-failure",
+   "verdict": "noted",
+   "reason": "The Next Web relays the PHP Foundation: the delay in fixing the memory bug first seen in 2024 was a structural failure (security team's decision process, lack of resources). Cointelegraph's page in the vault is titled 'PHP Foundation admits structural failure'; the Foundation's own post (php-foundation-blog-security-release) tells the 2024 Quarkslab audit but I did not find the words 'structural' or 'resources' in it (searched). It gives the missing source for what Okaz and Bangkok Biz News said (cur13-okaz-php-delay-acknowledged, cur14-bangkokbiz-php-foundation-resources, held back for no named statement). Not used.",
+   "sources": [
+    "thenextweb-wikipedia-ref-9-dation-structural-failur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-tnw-wrong-cve-details",
+   "verdict": "agrees",
+   "reason": "Agrees with leak-cve-ids (about 15:00 UTC on 20 October, with a wrong release time) and explains watchTowr's early 'CVSS10' (BleepingComputer, cur11-watchtower-embargo-thursday); the real scores are 9.2 (two-cves-9.2).",
+   "sources": [
+    "thenextweb-wikipedia-ref-9-dation-structural-failur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-tnw-chainguard-six-hours",
+   "verdict": "agrees",
+   "reason": "Agrees with chainguard. The PHP Foundation's own post is in the vault and says: 'more than six hours before the coordinated release, Chainguard unilaterally broke the embargo and published built images containing the fix'.",
+   "sources": [
+    "thenextweb-wikipedia-ref-9-dation-structural-failur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-tnw-no-working-exploit-at-release",
+   "verdict": "noted",
+   "reason": "The Next Web relays a PHP security-team statement that it had seen no working exploit by the release. Point in time, about 14:00 UTC on 21 October. The Foundation's post does not say it in those words (searched for 'working exploit' and 'exploit code'); later events (Amazon's 17 October honeypot hit, and CISA's KEV listing of 26 October) came after or were not known to it. Not used.",
+   "sources": [
+    "thenextweb-wikipedia-ref-9-dation-structural-failur"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-europeinfos-honeypot-35-shells",
+   "verdict": "held back",
+   "reason": "An unnamed researcher's honeypot result on one page, relayed by Europe Infos with no date or source link: 35 malicious PHP shells launched by Apache on three test servers, on PHP 8.4.26 (below the fixed 8.4.27, so a vulnerable build). Searched all captures for the figure: only this page carries it. Honeypots on vulnerable builds say nothing about real sites; not stated.",
+   "sources": [
+    "europe-infos-actualites-11979-php2shell-decryptage-d"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-tvtech-nadella",
+   "verdict": "noted",
+   "reason": "Satya Nadella's remark ('not seen anything like it in a long, long time') is carried by five pages in the vault (Economic Times, El Observador, FAZ, Salzburg24, SiliconANGLE; searched all captures). A reaction quote by an executive: nothing about exploitation or compromise. Not used.",
+   "sources": [
+    "tvtechnology-infrastructure-security-how-to-protect-y"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-fortune-nsa-advice",
+   "verdict": "agrees",
+   "reason": "Agrees with offline-nsa; the NSA page (nsa-press-php-4630238) is in the vault. Fortune Indonesia adds that Japan, Singapore, Australia and the EU issued similar warnings, which the site carries on their own sources.",
+   "sources": [
+    "fortuneidn-tech-apa-itu-php-celah-keamanan-buat-sit"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-telset-advisory-reserved-early",
+   "verdict": "noted",
+   "reason": "Checked against the PHP advisory in the vault (php-net-advisory, pre-announcement): 'We reserve the right to release earlier should details of either vulnerability become public, or should evidence of active exploitation appear in the wild.' Also in BleepingComputer, Ars Technica, BornCity and oss-security (searched all captures). Consistent with release-moved; not used on a page.",
+   "sources": [
+    "telset-laptop-pc-dua-celah-kritis-php-bocor-seb"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-topagrar-caspers-patch-analysis",
+   "verdict": "noted",
+   "reason": "top agrar relays the BSI's vice-president Thomas Caspers. FAZ (in the vault) quotes him that a short-term, large-scale exploitation within hours of the updates was likely; the Tagesschau interview is a video page with no transcript (searched all captures for 'Caspers': six pages). A general warning about patch analysis, not an observation of attacks. Not used.",
+   "sources": [
+    "topagrar-betriebsleitung-news-php-sicherheitsluck"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-trendmicro-no-confirmed-exploitation",
+   "verdict": "held back",
+   "reason": "Trend Micro Japan's press release is in the vault (trendmicro-ja-jp-about-newsroom-press-releases-2026) but the sentence about independent verification is not on it: it announces Trend Micro's free 'PHP2Shell Exposure Checker' and a web-shielding service (searched for 'TrendAI', '確認' and '悪用'). Point in time in any case: CISA now holds evidence of exploitation (KEV, 26 October).",
+   "sources": [
+    "trendmicro-ja-jp-about-newsroom-press-releases-2026"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-turbolab-moses-quote",
+   "verdict": "agrees",
+   "reason": "Agrees with amazon-honeypot. Checked on Amazon's own post (aws-security-blog-madpot, by CJ Moses): the 17 October attempt came from a commercial anonymization network and 'suggests the activity was conducted by a threat actor, though it remains unclear how the actor acquired exploit information prior to disclosure'.",
+   "sources": [
+    "turbolab-server-1224-php2shell-amazon-ha-rilevato"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-turkeybreaking-third-cve-no-emergency-patch",
+   "verdict": "agrees",
+   "reason": "Agrees with cur6-third-flaw-115560 (used by the correspondent), cur14-acn-third-cve, cur15-zdnet-third-cve-unlikely and cur16-sempre-third-cve: CVE-2026-115560 judged unlikely in real applications, no emergency patch, fix in the next regular release.",
+   "sources": [
+    "turkey-breaking-news-2026-10-25-d8-ab-d8-ba-d8-b1-d8-a9"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur18-onlayer-merchant-rates",
+   "verdict": "noted",
+   "reason": "A company's own analysis of about 1.4 million merchant sites in 20 markets (35.8% of Turkish merchant sites against 45.7% abroad and 56.7% in Europe; one page, searched all captures for 'Onlayer'). 'Affected' appears to mean running an affected PHP version, from the company's own merchants, not the web at large. Not used.",
+   "sources": [
+    "turkiyedeisdunyasi-php2shell-turkiye-avrupa-siber-142939"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "journalist@php.newsroom"
   }
  ]
 }
