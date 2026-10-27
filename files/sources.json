@@ -10180,6 +10180,56 @@
   "notes_md": "# Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/fortuneidn/tech-apa-itu-php-celah-keamanan-buat-situs-web-terganggu-d7w`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nFortune Indonesia (Indonesian), an explainer of what PHP is and why the flaw matters. It says the PHP Foundation disclosed two flaws in PHP's core relating to memory management and error handling, that the US NSA said the flaws could let attackers reach files and databases without credentials, that the PHP Foundation said the fix was a challenge because it touches the core, risking application compatibility, performance and third-party extensions, and that the NSA urged all PHP-using organisations to update at once or disable vulnerable systems, with similar warnings from Japan, Singapore, Australia and the EU.\n\n> NSA turut mengimbau semua organisasi yang menggunakan PHP untuk segera memperbarui sistem atau menonaktifkan sistem yang rentan.\n\n_Curator's translation:_ \"The NSA also urged all organisations that use PHP to update their systems at once or deactivate vulnerable systems.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Apa Itu PHP? Celah Keamanannya Membuat Situs Web Terganggu | FORTUNE Indonesia\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "fortuneindia-technology-php2shell-shows-how-ai-is-shr",
+  "url": "https://www.fortuneindia.com/technology/php2shell-shows-how-ai-is-shrinking-the-window-for-indian-enterprises-to-respond-to-cyber-threats/166898",
+  "publisher": "Fortune India",
+  "kind": "news",
+  "title": "How AI and PHP2Shell Are Redefining Cybersecurity Challenges for Indian Enterprises",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261027T144120Z",
+    "files": {
+     "headers.json": {
+      "sha256": "10fa9e94ab19aad2b5b0d55e3f19055ad67792b81ac7f8f6b8175863afc038e3",
+      "bytes": 3919
+     },
+     "page.html": {
+      "sha256": "72d9f4665c52dd46b29a154caa8cec82cbeaad041325f68999d60d032541227a",
+      "bytes": 797716
+     },
+     "provenance.json": {
+      "sha256": "67268c35e1d16410813da475b6edf7028925fa1f61a49db7342c9730be632363",
+      "bytes": 1897
+     },
+     "rendered.html": {
+      "sha256": "76739c8fa1c8635aa8a2150fecaa77d24a2fabe5d2aed5e9d4ceb81c2606d76e",
+      "bytes": 804309
+     },
+     "screenshot.jpg": {
+      "sha256": "43b028cc55f39feae2693e4114574436acf3c177df2a7dd36672b2c0ba4b025a",
+      "bytes": 532889
+     },
+     "text.txt": {
+      "sha256": "ff1747c11b755edada992509604e6124dfbaeacd483d1225b267e69f23a1bea2",
+      "bytes": 13799
+     }
+    },
+    "started_utc": "2026-10-27T14:44:48.583Z",
+    "status": 200,
+    "final_url": "https://www.fortuneindia.com/technology/php2shell-shows-how-ai-is-shrinking-the-window-for-indian-enterprises-to-respond-to-cyber-threats/166898"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261027T144120Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). Fortune India (English): 'PHP2Shell shows how AI is shrinking the window for Indian enterprises to respond to cyber threats'. It relays Zscaler Threat...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# How AI and PHP2Shell Are Redefining Cybersecurity Challenges for Indian Enterprises\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/fortuneindia/technology-php2shell-shows-how-ai-is-shrinking-the-window-fo`, snapshot `20261027T144120Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T144120Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nFortune India (English): 'PHP2Shell shows how AI is shrinking the window for Indian enterprises to respond to cyber threats'. It relays Zscaler ThreatLabz's figure that its global decoy network saw 1,156 exploitation attempts from 156 unique attacker IP addresses targeting 70 organisations in the first 48 hours after disclosure, including scanning and possible exploitation with remote-code-execution payloads; Amazon's MadPot sighting of an attempt on 17 October, four days before disclosure, with proof-of-concept exploits appearing within hours of the patches and used against its sensors almost immediately; Zscaler's CSO on frontier AI helping adapt working exploits in hours; and Deloitte India partner Sanjeev Singh that defenders may have hours rather than days, that PHP can sit unseen inside appliances and vendor platforms, that exploitation runs with the PHP worker's privileges (in some cases root), and that PHP2Shell should be treated as a potential security incident, not only a patching task. Fortinet's advice on virtual patching is mentioned. Commentary from vendors and consultants.\n\n> Zscaler’s ThreatLabz said its global decoy network observed 1,156 exploitation attempts from 156 unique attacker IP addresses targeting 70 organisations in the first 48 hours after disclosure.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"How AI and PHP2Shell Are Redefining Cybersecurity Challenges for Indian Enterprises\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. The page carries a disclaimer that summaries, FAQs and other supplementary features may be generated or assisted by AI tools: a statement about how parts of the page were made. Nothing in the article text addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "fortuneita-2026-10-22-php2shell-il-bug-che-poteva-m",
   "url": "https://www.fortuneita.com/2026/10/22/php2shell-il-bug-che-poteva-mandare-in-tilt-il-70-dei-siti-mondiali-ecco-cosa-e-successo/",
   "publisher": "Fortune Italia",
@@ -14301,6 +14351,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# 「PHP2Shell」のリスク低減に向けて直ちに実行すべき手順は - ZDNET Japan\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/japan-zdnet/article-35253966`, snapshot `20261026T094033Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T094033Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nZDNET Japan (Japanese translation of Charlie Osborne's ZDNET piece), 26 October: steps to reduce the risk now. It says the PHP Project has published an extra measure against an 'unlikely' remote-code-execution path, registered as CVE-2026-115560, in an advisory dated 23 October (US time), which the 21 October release had already listed as a mitigation, and that this path needs unusual configuration and application code, so the project regards the mitigation as sufficient until its normal release cycle. It quotes Wiz that attackers could run code or read sensitive process memory, that the attack chain took an 'extremely complex series of steps' near what humans can realistically achieve, which frontier AI lowered. It says Amazon Threat Intelligence saw attempts four days before disclosure and, hours later, proof-of-concept code, that threat actors in the attack chain are trying to deploy Mirai-family botnets, and that Cloudflare's CEO Matthew Prince says millions of attempts have been logged. The translated text calls the flaw 'P2P2Shell' in two places, a typo in the capture.\n\n> P2P2Shellの攻撃チェーンに関与する脅威アクターは、「Mirai」系のボットネットを展開しようとしている。\n\n_Curator's translation:_ \"Threat actors involved in the 'P2P2Shell' attack chain are trying to deploy 'Mirai'-family botnets.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"「PHP2Shell」のリスク低減に向けて直ちに実行すべき手順は - ZDNET Japan\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ja`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "jauns-raksts-zinas-735243-atklata-jauna-un-lot",
+  "url": "https://jauns.lv/raksts/zinas/735243-atklata-jauna-un-loti-specifiskos-apstaklos-izmantojama-php-ievainojamiba-bridina-certlv",
+  "publisher": "Jauns.lv",
+  "kind": "news",
+  "title": "Atklāta jauna un ļoti specifiskos apstākļos izmantojama PHP ievainojamība, brīdina \"Cert.lv\"",
+  "published": "2026-10-27T10:32:13.000000Z",
+  "captures": [
+   {
+    "stamp": "20261027T144120Z",
+    "files": {
+     "headers.json": {
+      "sha256": "fd79ab8a66754fa6e9c828316226b78a76447b42fdbb8683000246eaf69c3c17",
+      "bytes": 607
+     },
+     "page.html": {
+      "sha256": "574ac9db2a2c4cf8808e6f6f15cf6f34f957b073d1302d8510af08ece3a3a4b5",
+      "bytes": 409183
+     },
+     "provenance.json": {
+      "sha256": "045d882a0f9d02527df4d9d9bb608fba2eca8ca3911d80118e0e739eb268b544",
+      "bytes": 1855
+     },
+     "rendered.html": {
+      "sha256": "ed3327291a31f57a7dcfbfa4ca3d648e0e35adfa68777c48a91b44273c53c558",
+      "bytes": 415232
+     },
+     "screenshot.jpg": {
+      "sha256": "773cfee26d64626244285b9ad3c17d56a69476c5d56f1899e993123686bc54f2",
+      "bytes": 475794
+     },
+     "text.txt": {
+      "sha256": "cccbebec338c99e4268b2265161043d94018e0c24477f60d6973993cdf3a1a66",
+      "bytes": 7600
+     }
+    },
+    "started_utc": "2026-10-27T15:06:00.282Z",
+    "status": 200,
+    "final_url": "https://jauns.lv/raksts/zinas/735243-atklata-jauna-un-loti-specifiskos-apstaklos-izmantojama-php-ievainojamiba-bridina-certlv"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "lv",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261027T144120Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). Jauns.lv (Latvia, Latvian), 27 October: CERT.LV warns that a new PHP vulnerability, discovered on Monday 26 October, can be exploited only in very spe...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Atklāta jauna un ļoti specifiskos apstākļos izmantojama PHP ievainojamība, brīdina \"Cert.lv\"\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `lv/news/jauns/raksts-zinas-735243-atklata-jauna-un-loti-specifiskos-apstak`, snapshot `20261027T144120Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T144120Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nJauns.lv (Latvia, Latvian), 27 October: CERT.LV warns that a new PHP vulnerability, discovered on Monday 26 October, can be exploited only in very specific circumstances with a specific system configuration, so the PHP team plans to publish its patch with the other scheduled updates and no emergency patch is planned. CERT.LV says the two critical PHP2Shell flaws were fixed by the patch of 21 October, that many resource holders suspended or restricted services in advance, that public-sector websites are almost fully restored (the latvija.lv portal and the shared web platform are available from abroad, and most resources were reachable from abroad by Monday evening), and that no successful cyberattacks exploiting the critical flaws have been recorded so far, though attacker activity may rise and tools may improve. Its checks of Latvian cyberspace found about 6,000 potentially vulnerable resources, only a few hundred in the public sector, and it has informed private-sector operators of essential services, critical infrastructure, hosting and telecom providers; it calls the handling process successful and tells operators to check with their system maintainer or developer and not to use downloadable 'diagnostic' tools found online, since attackers use high-profile events to push fake tools. The article's date for the new flaw (26 October) differs from other items that date the PHP project's advisory on the related flaw to 23 October.\n\n> Pagaidām nav konstatēti veiksmīgi kiberuzbrukumi, kuros uzbrucēji būtu izmantojuši kritiskās PHP ievainojamības\n\n_Curator's translation:_ \"So far no successful cyberattacks have been recorded in which attackers used the critical PHP vulnerabilities.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Atklāta jauna un ļoti specifiskos apstākļos izmantojama PHP ievainojamība, brīdina \"Cert.lv\"\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `lv`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "jawapos-teknologi-2610230446-celah-php2shell-anc",

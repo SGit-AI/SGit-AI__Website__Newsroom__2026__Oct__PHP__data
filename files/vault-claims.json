@@ -4950,5 +4950,53 @@
   "topic": "agencies",
   "note": "A one-line mention in a vendor-quoting article; ANCI's own notice is the primary.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur22-fortuneindia-zscaler-1156",
+  "claim": "Zscaler ThreatLabz's global decoy network observed 1,156 exploitation attempts from 156 unique attacker IP addresses targeting 70 organisations in the first 48 hours after disclosure on 21 October",
+  "by": "Fortune India (citing Zscaler ThreatLabz)",
+  "sources": [
+   "fortuneindia-technology-php2shell-shows-how-ai-is-shr"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attempts against decoy sensors, not successful compromises of real victims; a vendor's own count relayed second-hand. Zscaler's post is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur22-jauns-certlv-6000",
+  "claim": "CERT.LV's checks of Latvian cyberspace found about 6,000 potentially vulnerable resources, only a few hundred of them in the public sector, and it informed private-sector operators of essential services, critical infrastructure, hosting and telecom providers",
+  "by": "Jauns.lv (citing CERT.LV)",
+  "sources": [
+   "jauns-raksts-zinas-735243-atklata-jauna-un-lot"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A national CSIRT's exposure count, not a count of compromised or attacked resources. CERT.LV is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur22-jauns-certlv-no-attacks",
+  "claim": "CERT.LV says no successful cyberattacks exploiting the critical PHP flaws had been recorded in Latvia so far, and that public-sector websites are almost fully restored",
+  "by": "Jauns.lv (citing CERT.LV)",
+  "sources": [
+   "jauns-raksts-zinas-735243-atklata-jauna-un-lot"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A national statement as of 27 October about Latvia; its scope is Latvia, not a global finding. Consistent with the expert statement recorded from ZDNet Korea (cur21-zdnetkr-no-verified-breach).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur22-jauns-certlv-fake-tools",
+  "claim": "CERT.LV warns that attackers use high-profile events to publish fake diagnostic tools that infect the user's computer or server, so operators should check with their system maintainer instead of downloading tools found online",
+  "by": "Jauns.lv (citing CERT.LV)",
+  "sources": [
+   "jauns-raksts-zinas-735243-atklata-jauna-un-lot"
+  ],
+  "status": "reported",
+  "topic": "attribution",
+  "note": "A general warning, no incident named; relevant to the many scanner and checker tools published this week.",
+  "agent": "curator@php.newsroom"
  }
 ]
