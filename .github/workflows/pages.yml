@@ -9,7 +9,7 @@
 #            deletes its tag and tries again, three times;
 #   package  the served tree, from the release commit (tools/package.py: every version (the folders published before 27 October from the last commit that held them, then every tag), each file once at /blobs/<sha256>, the newest five plain, /latest/), read-only;
 #   deploy   publishes only what package built, from the commit release made.
-# On every run (a push, its schedule, by hand) it also takes the newest edition, built in CI by the press (board dev-0005,
+# On every run (a push, or by hand) it also takes the newest edition, built in CI by the press (board dev-0005,
 # tools/edition.sh and .github/workflows/edition.yml there): the gate job downloads this repository's patch from the
 # press's release edition-<edition> (public, read with this run's token), refuses one that touches .github/, .git/ or
 # VERSION, applies it and gates the result; release applies the same patch (its sha256 checked) and numbers it, its
@@ -21,8 +21,6 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [dev]
-  schedule:
-    - cron: '8-59/15 * * * *'   # take the newest edition
   workflow_dispatch:
 permissions:
   contents: read
