@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.43",
+ "version": "0.22.44",
  "kept_by": "grc@php.newsroom",
  "as_of": "2026-10-22",
  "verbs": [
@@ -4462,7 +4462,7 @@
   {
    "id": "page:vaults/index.html",
    "kind": "page",
-   "label": "Every vault behind this site",
+   "label": "vaults/index.html",
    "href": "vaults/index.html"
   },
   {

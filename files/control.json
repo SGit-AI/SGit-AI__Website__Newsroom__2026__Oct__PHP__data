@@ -1535,6 +1535,14 @@
    "summary": "Not a sweep: at the editor's direction opened the read key for the evidence vault's pack vault nnd3i8iw (sealed to the desk's key; the sender's key sha256:6c81ae257fee1938 is not in the register, so the seal was read on the editor's word), updated sgit to 0.26.0 (0.25.0 refuses this vault), cloned…"
   },
   {
+   "agent": "journalist",
+   "finished": "2026-10-27T05:21:39Z",
+   "outcome": "ok",
+   "run": "20261027T0500Z-journalist",
+   "started": "2026-10-27T05:00:24Z",
+   "summary": "Run by hand in this session at the editor's request, outside the schedule (05:00 to 05:40 UTC on 27 October). The editor handed over a sealed read key for the evidence vault's replacement, the pack vault nnd3i8iw (sealed to my key sha256:de0decfc882a0235 by sha256:6c81ae257fee1938, the curator's ne…"
+  },
+  {
    "agent": "conductor",
    "finished": "2026-10-27T05:04:42Z",
    "outcome": "ok",
@@ -1555,7 +1563,7 @@
   },
   {
    "agent": "conductor",
-   "model": "Sonnet",
+   "model": "Opus (the editor, 27 October 2026)",
    "objective": "Keep every agent and the humans in step: what each is doing and waiting for, what came in on the lanes, what ran and what did not.",
    "status": "active",
    "times": [
@@ -1728,5 +1736,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.43"
+ "version": "0.22.44"
 }
