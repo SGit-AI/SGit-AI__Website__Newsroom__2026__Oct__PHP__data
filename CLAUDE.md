@@ -12,7 +12,7 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 - Never print, commit or publish a secret. Everything in this repository is public within minutes of a push to `dev`.
   Captures stay in the evidence vault; this repository holds what the site may show.
 - Release only with `tools/release.sh`. Never `--no-verify`, never force-push, never push to `main`.
-- A published version (`v/<version>/`) is never changed. A correction is a new version.
+- A published version (`/v/<version>/`, its tag) is never changed. A correction is a new version. Never write `VERSION`: CI does.
 - Changes to `tools/gate.py`, `tools/release.sh` and anything under `.github/` go to a branch for security review and
   the editor's go.
 
@@ -23,15 +23,15 @@ SGit-AI/sgit-ai__website__newsroom__2026__oct__php) apply here unchanged. In sho
 | `files/` | the working copy: one JSON file per catalogue entry, `wikipedia/` as a folder | each file's writer: write it here and release; dev's chain carries it into the build box (`tools/sync_v1.py export`; since step B nothing depends on v1's repository) and brings back only what the build derives (the graphs, the items, the history), never over what was written here |
 | `schemas/` | one schema per top-level file, inferred by `tools/schema.py` | changed only on purpose, in the release that changes the file's shape, and said in its message |
 | `tools/catalogue.json` | which files are published, and their group | dev, on a writer's request |
-| `v/<version>/` | a published version: every file, its schema, `manifest.json` with each sha256 | `tools/publish.py`, via `tools/release.sh` |
-| `latest/`, `versions.json`, `index.html` | the newest version, the history, the front page | `tools/publish.py` |
+| `VERSION` | the newest version: written by CI only, in its release commit, after the gate passes (CI owns the version; a pushed commit that changes it fails the run) | CI |
+| tags `v<version>` | a published version: CI tags its release commit; the deploy serves `/v/<version>/manifest.json` for every version, each file once at `/blobs/<sha256>`, the newest five versions plain, `/latest/`, `versions.json` and the front page (`tools/package.py`); the versions published before 27 October are served from the tag `archive/v-folders` | CI |
 
 ## Releasing
 
 ```
 python3 tools/sync_v1.py import --from ../sgit-ai__website__newsroom__2026__oct__php__box   # dev's chain does this; never over your change
 python3 tools/gate.py
-RELEASE_TRAILER="Agent: <you>" tools/release.sh "what changed and why"   # 0.1.1, 0.1.2, ...: the last number, every time
+RELEASE_TRAILER="Agent: <you>" tools/release.sh "what changed and why"   # CI numbers it: the newest tag plus one
 ```
 
 The gate takes seconds: JSON, schemas, provenance (every source a claim cites exists; every risk-graph edge joins two

@@ -1,48 +1,42 @@
 #!/usr/bin/env bash
-# Release the data: take in dev, gate, bump, publish, gate again, commit, push. In that order, every time.
-# Usage: tools/release.sh "<one sentence: what changed and why>"
-# The first release was 0.1.0; every release after it adds one to the last number (0.1.1, 0.1.2, ...), whatever it
-# changes (the editor, 25 October 2026). A change of shape (a new file, a key added or removed) is said in the message,
-# and its schema is rewritten in the same release (tools/schema.py --again); consumers pin the version they read.
-# Never --no-verify, never a force-push, never main. A published version is never changed: this only adds one.
+# Release the data: take in dev, gate, commit, push. That is all. CI owns the version
+# (https://sharness.ai/articles/ci-owns-the-version.html): after its own gate passes, CI writes VERSION (the newest tag
+# plus one on the last number), commits it as GitHub Actions with this commit's subject after the number, tags it and
+# deploys it. So two writers releasing a minute apart never fight over a number, and this script never touches VERSION
+# (a pushed commit that changes it fails CI's guard). Your next release takes CI's commit in first, as it does any other.
+# Usage: tools/release.sh "<one sentence: what changed and why>"   (RELEASE_TRAILER: Agent: <you>, and the rest)
+# Never --no-verify, never a force-push, never main.
 set -euo pipefail
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"; cd "$ROOT"
 MSG="${1:?release message required}"
 BRANCH="${RELEASE_BRANCH:-dev}"
-# 0. take in what landed meanwhile; files/ is the only place two writers can collide, so a conflict stops the release
-git fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH" 2>/dev/null || true   # the tracking ref itself: a clone made for one branch does not move it on a plain fetch
-if git rev-parse -q --verify "origin/$BRANCH" >/dev/null && ! git merge-base --is-ancestor "origin/$BRANCH" HEAD; then
-  if ! git merge -q --ff-only "origin/$BRANCH" 2>/dev/null; then
-    echo "release stopped: origin/$BRANCH has commits this clone does not; commit or stash your files/ change, merge origin/$BRANCH by hand, and run this again"
-    exit 3
-  fi
-fi
-python3 tools/gate.py >/dev/null || { python3 tools/gate.py; echo "release stopped: the gate fails before the release"; exit 1; }
-# Several writers release here within minutes of each other. The version is taken when the push succeeds: a rejected push
-# undoes the commit and the minted version, takes in what landed, numbers again, publishes again. Five tries.
-for attempt in 1 2 3 4 5; do
-  OLD="$(cat VERSION)"; IFS=. read -r MA MI PA <<< "$OLD"
-  if python3 tools/publish.py --same-as "$OLD"; then
-    NEW="$OLD"; echo "nothing new to publish: v$OLD holds these files already"   # a change to the tools still commits
-  else
-    if [ -d "v/$OLD" ]; then PA=$((PA+1)); fi
-    NEW="$MA.$MI.$PA"; echo "$NEW" > VERSION
-    python3 tools/publish.py
-    python3 tools/gate.py
-  fi
-  git add -A
-  if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|\bsk-(or-v1-|proj-|ant-[a-z0-9]+-)?[A-Za-z0-9_]{32,}' ; then
-    echo "tripwire: credential shape in the staged diff; release aborted"; exit 1
-  fi
-  if git diff --cached --quiet; then echo "nothing to release"; exit 0; fi
-  if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "v$NEW: $MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "v$NEW: $MSG"; fi
-  if git push -q -u origin "HEAD:$BRANCH" 2>/dev/null; then echo "pushed v$NEW to $BRANCH"; exit 0; fi
-  echo "push rejected (someone released meanwhile): taking it in and numbering again ($attempt of 5)"
-  git reset -q --soft HEAD~1; git reset -q               # the commit undone, nothing staged: the imported files stay as changes in the tree
-  if [ "$NEW" != "$OLD" ]; then rm -rf "v/$NEW"; fi
-  git checkout -q HEAD -- VERSION versions.json index.html latest 2>/dev/null || true
-  git clean -fdq latest 2>/dev/null || true
+gate() { python3 tools/gate.py; }
+take_in() {
   git fetch -q origin "+refs/heads/$BRANCH:refs/remotes/origin/$BRANCH"
-  git merge -q --ff-only "origin/$BRANCH" || { echo "release stopped: your change and someone else's touch the same file; merge origin/$BRANCH by hand and run this again"; exit 3; }
+  if ! git merge-base --is-ancestor "origin/$BRANCH" HEAD; then
+    git merge -q --ff-only "origin/$BRANCH" 2>/dev/null || {
+      echo "release stopped: your change and one that landed meanwhile touch the same file; commit or stash yours, merge origin/$BRANCH by hand, run this again"; exit 3; }
+  fi
+}
+take_in
+gate || { echo "release stopped: the gate fails"; exit 1; }
+git add -A
+if git diff --cached | grep -E -n 'sgit_private_(vault|read)_[0-9a-f]{12,}|BEGIN [A-Z ]*PRIVATE KEY|AKIA[0-9A-Z]{16}|ghp_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|\bsk-(or-v1-|proj-|ant-[a-z0-9]+-)?[A-Za-z0-9_]{32,}' | head -3; then
+  echo "release stopped: a credential shape in the change"; git reset -q; exit 2
+fi
+if git diff --cached --name-only | grep -qx VERSION; then
+  echo "release stopped: VERSION is written by CI only (git checkout -- VERSION)"; git reset -q; exit 2
+fi
+if git diff --cached --quiet; then echo "nothing to release"; exit 0; fi
+for attempt in 1 2 3 4 5; do
+  if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "$MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "$MSG"; fi
+  if git push -q origin "HEAD:$BRANCH" 2>/dev/null; then
+    echo "pushed to $BRANCH; CI gates it again, tags the next version and deploys"; exit 0
+  fi
+  echo "push rejected (someone released meanwhile): taking it in ($attempt of 5)"
+  git reset -q --soft HEAD~1; git reset -q
+  take_in
+  gate || { echo "release stopped: the gate fails with what landed meanwhile"; exit 1; }
+  git add -A
 done
 echo "release stopped: five tries, five releases by others in between; run this again"; exit 3
