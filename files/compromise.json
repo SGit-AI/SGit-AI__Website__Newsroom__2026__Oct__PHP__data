@@ -569,7 +569,7 @@
  "would_change_it": [
   "A named organisation saying it was compromised through php2shell, in its own notice, filing or statement.",
   "GMO, ČVUT or DMM stating a cause.",
-  "A KEV listing for either CVE, with CISA's evidence.",
+  "CISA naming a victim, in its catalog, its updated PHP alert or elsewhere. Its KEV listing of 26 October (both CVEs) holds evidence of exploitation and names none, so it did not change this statement.",
   "A regulator's breach notice (for example under GDPR or Australia's Notifiable Data Breaches scheme) naming the flaw.",
   "A security vendor naming a victim, with the victim's consent."
  ],

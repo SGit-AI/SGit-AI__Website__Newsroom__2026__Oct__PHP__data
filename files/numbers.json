@@ -201,14 +201,15 @@
  },
  {
   "id": "n-kev-2026",
-  "value": "270",
-  "of": "CVEs added to CISA's Known Exploited Vulnerabilities catalog in 2026 so far; 0 of them php2shell",
+  "value": "274",
+  "of": "CVEs added to CISA's Known Exploited Vulnerabilities catalog in 2026 so far; 2 of them php2shell, both added on 26 October",
   "who": "CISA KEV, counted by this site",
   "sources": [
-   "cisa-kev-json"
+   "cisa-kev-json",
+   "cisa-kev-catalog"
   ],
   "status": "confirmed",
-  "measures": "Entries with dateAdded in 2026 in catalog version 2026.10.21.",
-  "note": "Three PHP core CVEs are in the catalog from earlier years."
+  "measures": "Entries with dateAdded in 2026 in catalog version 2026.10.26 (released 2026-10-26T22:24:24Z, captured 2026-10-27T00:45Z). It was 270, none of them php2shell, in catalog version 2026.10.21.",
+  "note": "Three PHP core CVEs are in the catalog from earlier years. Revised by the correspondent on 27 October (breaking desk, correspondent's role): recounted from the catalog captured at 00:45 UTC on 27 October (1,758 entries), which lists both php2shell CVEs."
  }
 ]

@@ -745,5 +745,17 @@
   "confidence": "stated",
   "phase": "aftermath",
   "agent": "claude-story-site"
+ },
+ {
+  "at": "2026-10-26T22:24:24Z",
+  "event": "CISA releases KEV catalog version 2026.10.26 (1,758 entries), adding CVE-2026-109618 and CVE-2026-109619: date added 26 October, due date 29 October for US federal civilian agencies, known ransomware use \"Unknown\". Its alert of the same day names no victim.",
+  "sources": [
+   "cisa-kev-json",
+   "cisa-kev-catalog",
+   "cisa-alert-kev-20261026"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
  }
 ]

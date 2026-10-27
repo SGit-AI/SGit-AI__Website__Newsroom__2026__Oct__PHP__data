@@ -19,11 +19,12 @@
   "published": "2026-10-21",
   "offline": "yes",
   "offline_text": "Organizations that cannot update immediately, or that continue to use PHP 8.1 or earlier unsupported versions, should take PHP-based systems offline until they can be patched or updated.",
-  "exploitation": "none observed at publication; neither CVE in KEV as of catalog 2026.10.21",
+  "exploitation": "none observed at publication (21 October); neither CVE in KEV as of catalog 2026.10.21. Both added to KEV on 26 October (catalog 2026.10.26), with no victim named",
   "sources": [
    "cisa-alert-php-20261021",
    "cisa-kev-json",
-   "cisa-home"
+   "cisa-home",
+   "cisa-alert-kev-20261026"
   ],
   "note": "'A web application firewall may provide some protection until systems are updated or patched.' The most absolute offline advice, and it covers end-of-life versions explicitly."
  },

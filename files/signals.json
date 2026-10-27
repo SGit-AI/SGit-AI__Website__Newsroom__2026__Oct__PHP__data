@@ -112,13 +112,14 @@
    "id": "exploitation",
    "name": "Exploitation signals",
    "question": "Who is trying, at what scale, and does anything land?",
-   "now": "Attempts at scale from the parties positioned to see them; one honeypot hit four days before release; no confirmed compromise; not in CISA's Known Exploited Vulnerabilities catalog.",
-   "watch": "The KEV listing; a named victim; a gap between the date a site was compromised and the date it says so.",
+   "now": "Attempts at scale from the parties positioned to see them; one honeypot hit four days before release; both CVEs in CISA's Known Exploited Vulnerabilities catalog since 26 October, with no victim named; no confirmed compromise.",
+   "watch": "A named victim; what CISA's updated PHP alert says of its evidence; a gap between the date a site was compromised and the date it says so.",
    "page": "exploitation/index.html",
    "sources": [
     "x-eastdakota-php2shell-stats",
     "aws-security-blog-madpot",
-    "cisa-kev-json"
+    "cisa-kev-json",
+    "cisa-alert-kev-20261026"
    ]
   },
   {

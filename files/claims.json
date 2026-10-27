@@ -473,17 +473,19 @@
  },
  {
   "id": "cisa-none",
-  "claim": "CISA has not observed exploitation; neither CVE is in the Known Exploited Vulnerabilities catalog",
+  "claim": "As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15Z), CISA had not observed exploitation and neither CVE was in the Known Exploited Vulnerabilities catalog. Superseded on 26 October: CISA added both CVEs to KEV (catalog version 2026.10.26, released 22:24 UTC; brk1-kev-listed-20261026)",
   "by": "CISA",
   "sources": [
    "cisa-alert-php-20261021",
    "cisa-kev-json",
-   "cve-cve-2026-109618"
+   "cve-cve-2026-109618",
+   "cisa-alert-kev-20261026",
+   "cisa-kev-catalog"
   ],
   "status": "confirmed",
   "topic": "exploitation",
   "agent": "claude-story-site",
-  "note": "Catalog version 2026.10.21 fetched 2026-10-22T08:15Z, 1,754 entries. A point-in-time negative finding."
+  "note": "Catalog version 2026.10.21 fetched 2026-10-22T08:15Z, 1,754 entries. A point-in-time negative finding. Revised by the correspondent on 27 October (breaking desk, correspondent's role): the claim said in the present tense that neither CVE is in KEV; since catalog version 2026.10.26 (released 22:24:24 UTC on 26 October, captured at 00:45 UTC on 27 October) both are, dateAdded 2026-10-26. Kept as a dated point-in-time claim, true for its time, and marked superseded; the current state is the vault claim brk1-kev-listed-20261026."
  },
  {
   "id": "nz-active",
@@ -932,16 +934,18 @@
  },
  {
   "id": "kev-precedent",
-  "claim": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell is not in KEV after one day",
+  "claim": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell was not in KEV one day after disclosure (catalog version 2026.10.21) and both its CVEs were added on 26 October, five days after the fixes of 21 October (catalog version 2026.10.26)",
   "by": "CISA KEV catalog; Akamai (2024)",
   "sources": [
    "cisa-kev-json",
    "cve-cve-2024-4577",
-   "akamai-blog-cve-2024-4577-one-day"
+   "akamai-blog-cve-2024-4577-one-day",
+   "cisa-kev-catalog",
+   "cisa-alert-kev-20261026"
   ],
   "status": "reported",
   "topic": "exploitation",
   "agent": "claude-story-site",
-  "note": "The KEV dates are counted from the captured catalog; 'exploited in the wild one day after disclosure' rests on Akamai alone."
+  "note": "The KEV dates are counted from the captured catalog; 'exploited in the wild one day after disclosure' rests on Akamai alone. Revised by the correspondent on 27 October (breaking desk, correspondent's role): the claim ended 'php2shell is not in KEV after one day', in the present tense; both CVEs are in catalog version 2026.10.26 with dateAdded 2026-10-26. The one-day check is kept, with its catalog version, and the listing added."
  }
 ]

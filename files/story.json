@@ -71,7 +71,7 @@
    ]
   },
   {
-   "html": "Exploitation attempts are reported from several directions, in millions by Cloudflare's count, but no organisation has said it was compromised through php2shell, as of the evidence vault's latest capture (14:42 UTC on 26 October). Amazon says a honeypot was hit on 17 October, four days before disclosure. Sophos withdrew an earlier claim of a successful compromise; its data showed scanning and a few failed attempts. Four named cases have been tested: Valtec retracted, and ČVUT, GMO and DMM state no php2shell cause. Neither CVE is in CISA's Known Exploited Vulnerabilities catalog at the source watch's last check (08:03 UTC on 23 October). The US, Australia, Germany, Switzerland and Japan say they know of no successful exploitation; New Zealand's NCSC alone says it is <q>aware of reports of active exploitation</q>.",
+   "html": "Exploitation attempts are reported from several directions, in millions by Cloudflare's count. On 26 October CISA added both CVEs to its Known Exploited Vulnerabilities catalog (version 2026.10.26, released 22:24 UTC; due date for US federal civilian agencies 29 October; known ransomware use <q>Unknown</q>): CISA holds evidence that the flaws are exploited, and the listing names no victim. Exploited is not compromised: no organisation has said it was compromised through php2shell, as of the evidence vault's latest capture (00:45 UTC on 27 October). Amazon says a honeypot was hit on 17 October, four days before disclosure. Sophos withdrew an earlier claim of a successful compromise; its data showed scanning and a few failed attempts. Four named cases have been tested: Valtec retracted, and ČVUT, GMO and DMM state no php2shell cause. CISA's alert of 21 October said it had not observed exploitation at publication; its listing of 26 October supersedes that. Australia, Germany, Switzerland and Japan say they know of no successful exploitation; New Zealand's NCSC said on 21 October it is <q>aware of reports of active exploitation</q>.",
    "sources": [
     "x-eastdakota-php2shell-stats",
     "aws-security-blog-madpot",
@@ -83,7 +83,9 @@
     "cisa-alert-php-20261021",
     "acsc-alert-php",
     "ncsc-nz-alert-php",
-    "cybersecuritynews-critical-php2shell-exploit-code"
+    "cybersecuritynews-critical-php2shell-exploit-code",
+    "cisa-alert-kev-20261026",
+    "cisa-kev-catalog"
    ]
   },
   {
@@ -119,7 +121,7 @@
    "html": "Whether the deleted Calif video is the one now embedded on Calif's own write-up. Calif's page does not mention the leak."
   },
   {
-   "html": "Whether any site was actually compromised before it was patched or taken offline. Every claim of exploitation so far is of attempts, probes or honeypot hits, and the named cases do not state php2shell as the cause. Authorities in Singapore and Luxembourg now ask operators to look for traces; the answer will come from those searches, if it comes."
+   "html": "Whether any site was actually compromised before it was patched or taken offline. Every claim of exploitation so far is of attempts, probes or honeypot hits, or, in CISA's Known Exploited Vulnerabilities listing of 26 October, of exploitation with no victim named; the named cases do not state php2shell as the cause. Authorities in Singapore and Luxembourg now ask operators to look for traces; the answer will come from those searches, if it comes."
   },
   {
    "html": "Which sites were really taken offline, and why. The list now draws on more captured reports (Germany's hospitals and hosts, Morocco, Romania, Japan), but most are press accounts; few come from the organisations themselves (the Dutch government, Latvia's agency, Weird Gloop, the Charité's spokesman as quoted). A community tracker counts 51 listed and 50 back."

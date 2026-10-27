@@ -81,13 +81,13 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "data_as_of and the exploitation paragraph's 'as of' moved to 00:45 UTC on 27 October (vault 24f0b0e22666). The same paragraph still says neither CVE is in KEV (last check 08:03 UTC on 23 October): the correspondent's. Not re-read in full."
+   "note": "known[6] (the exploitation paragraph) re-read and rewritten by the correspondent on 27 October against nnd3i8iw at 24f0b0e22666: CISA's KEV listing of 26 October, exploited kept apart from compromised, as of 00:45 UTC on 27 October, CISA's alert of 21 October dated and superseded (step 3 had moved data_as_of only: a catch); open[2] now names the listing. The rest not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "no-confirmed-compromise refreshed to 00:45 UTC on 27 October (vault nnd3i8iw at 24f0b0e22666, 562 sources): the KEV listing names no victim, so the claim stands, and it now keeps 'exploited' (CISA's position) apart from 'compromised'. cisa-none and kev-precedent (neither CVE in KEV, catalog 2026.10.21) are out of date and left for the correspondent. The other claims not yet re-read."
+   "note": "no-confirmed-compromise refreshed to 00:45 UTC on 27 October (vault nnd3i8iw at 24f0b0e22666, 562 sources) by the breaking desk and reviewed by the correspondent: the KEV listing names no victim, so the claim stands, keeping 'exploited' (CISA's position) apart from 'compromised'. cisa-none and kev-precedent kept as dated claims, marked superseded by the listing (correspondent, 27 October). The other claims not yet re-read."
   },
   {
    "path": "data/impact.json",
@@ -99,31 +99,31 @@
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
    "checked_against": "24f0b0e22666",
-   "note": "Re-read in full against nnd3i8iw at 24f0b0e22666: CISA's KEV listing of 26 October added (official-signal, no victim named); as of 00:45 UTC on 27 October; searched count 562. The KEV row of 23 October ('neither CVE listed'), the CISA 'has not observed exploitation' row of 21 October, would_change_it ('A KEV listing for either CVE') and the layers are left for the correspondent."
+   "note": "Re-read in full against nnd3i8iw at 24f0b0e22666: CISA's KEV listing of 26 October added (official-signal, no victim named); as of 00:45 UTC on 27 October; searched count 562. The KEV row of 23 October ('neither CVE listed') and CISA's 'has not observed exploitation' row of 21 October stand as dated. would_change_it no longer waits for a KEV listing (correspondent, 27 October). The source-watch count and the layers not re-read."
   },
   {
    "path": "data/exploitation.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": ""
+   "note": "CISA's alert row of 21 October dated and marked superseded by the KEV listing (correspondent, 27 October). No row added for the listing: a new row needs its attribution row in data/attribution.json (the ontologist's) in the same release, or the build stops. The rest not re-read."
   },
   {
    "path": "data/numbers.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "22.6 million: Palo Alto Networks, via Insurance Business and TechTarget; what it measures."
+   "note": "22.6 million: Palo Alto Networks, via Insurance Business and TechTarget; what it measures. n-kev-2026 recounted from catalog 2026.10.26 (274, 2 of them php2shell) by the correspondent, 27 October. The rest not re-read in full."
   },
   {
    "path": "data/agencies.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": ""
+   "note": "CISA's exploitation field carries the KEV listing of 26 October (correspondent, 27 October). The rest not re-read."
   },
   {
    "path": "data/timeline.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": ""
+   "note": "The KEV listing of 26 October added (catalog 2026.10.26, 22:24 UTC) by the correspondent, 27 October; the 2026.10.21 row stands as dated. The rest not re-read; nothing after 22 October was in it before."
   },
   {
    "path": "data/history.json",
@@ -153,13 +153,13 @@
    "path": "data/plain.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Now site's content/data/plain.json. 'As of' lines (Right now, the hacked card, the exploitation fact, the impact page line) moved to 00:45 UTC on 27 October, their KEV clauses brought to the listing of 26 October; the KEV listing added to Latest. Not re-read in full; Latest still lacks other events after 23 October."
+   "note": "Now site's content/data/plain.json. 'As of' lines (Right now, the hacked card, the exploitation fact, the impact page line) moved to 00:45 UTC on 27 October; the KEV listing added to Latest and, by the correspondent on 27 October, to Right now; Latest's due date says federal civilian agencies. Not re-read in full; Latest still lacks other events after 23 October."
   },
   {
    "path": "data/personas.json",
    "kept_by_before": "briefing writer",
    "checked_against": null,
-   "note": ""
+   "note": "personas[8] (journalist) carries the KEV listing of 26 October (correspondent, 27 October)."
   },
   {
    "path": "data/questions.json",
@@ -171,7 +171,7 @@
    "path": "data/signals.json",
    "kept_by_before": "journalist and historian",
    "checked_against": null,
-   "note": ""
+   "note": "The exploitation family's now and watch carry the KEV listing of 26 October (correspondent, 27 October). The rest not re-read."
   },
   {
    "path": "data/patching.json",
@@ -183,7 +183,7 @@
    "path": "data/state.json",
    "kept_by_before": "journalist",
    "checked_against": "1f38e70921b2",
-   "note": "State of affairs v3."
+   "note": "v4 written by the correspondent on 27 October (vault 24f0b0e22666): kev 0 to 2, compromise-named 0 as of 00:45 UTC on 27 October, no-exploitation-agencies 6 to 5 (the US leaves); every other measure carried from v3 with its own as-of time, not re-checked."
   }
  ],
  "kept_as_written": [
@@ -323,6 +323,30 @@
    "kind": "state",
    "journalist_run": "20261026T1610Z-journalist",
    "fixed_in": "data, correspondent's release of 26 October, 17:20 UTC"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "The pass ledger's note on data/story.json said 'data_as_of and the exploitation paragraph's \"as of\" moved to 00:45 UTC on 27 October'; the release (data b6a80ce) moved data_as_of only, and known[6] still read 'as of the evidence vault's latest capture (14:42 UTC on 26 October)', beside its 'neither CVE is in KEV' and the US among the authorities that know of no successful exploitation. known[6] rewritten: the KEV listing of 26 October, exploited kept apart from compromised, as of 00:45 UTC on 27 October, CISA's alert of 21 October dated and superseded; the ledger note corrected.",
+   "file": "data: files/story.json, files/desk.json",
+   "kind": "as-of",
+   "journalist_run": "breaking-0001 step 3",
+   "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0001, 27 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "Latest on the front page (site content/data/plain.json latest[0]) said the catalog 'gives US federal agencies until 29 October'. The due date is BOD 26-04's, and CISA's alert says BOD 26-04 'applies only to FCEB agencies'; the journalist's own compromise row and verdict brk1-kev-due-20261029 say federal civilian. Now 'US federal civilian agencies'.",
+   "file": "site: content/data/plain.json",
+   "kind": "row",
+   "journalist_run": "breaking-0001 step 3",
+   "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0001, 27 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "Right now (site content/data/plain.json now[2]) moved to 00:45 UTC on 27 October, the time of the KEV captures, but did not say CISA had listed the flaws, though the ledger note says the moved lines had their KEV clauses brought to the listing and the card, the fact and the question beside it carry it. A reader of Right now alone would not learn of the listing. The sentence added, with cisa-alert-kev-20261026.",
+   "file": "site: content/data/plain.json",
+   "kind": "missing",
+   "journalist_run": "breaking-0001 step 3",
+   "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0001, 27 October, for the editor's release"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."
