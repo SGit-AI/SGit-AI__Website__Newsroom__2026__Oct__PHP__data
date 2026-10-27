@@ -1,0 +1,282 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "about": {
+   "type": "string"
+  },
+  "banned": {
+   "items": {
+    "properties": {
+     "verb": {
+      "type": "string"
+     },
+     "why": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "verb",
+     "why"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "bridges": {
+   "items": {
+    "properties": {
+     "basis": {
+      "type": "string"
+     },
+     "from": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "relation": {
+      "type": "string"
+     },
+     "to": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "basis",
+     "from",
+     "note",
+     "relation",
+     "to"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "edges": {
+   "items": {
+    "properties": {
+     "domain": {
+      "type": "array"
+     },
+     "from": {
+      "type": "string"
+     },
+     "inverse": {
+      "type": "string"
+     },
+     "note": {
+      "type": "string"
+     },
+     "origin": {
+      "type": "string"
+     },
+     "range": {
+      "type": "array"
+     },
+     "reads": {
+      "type": "string"
+     },
+     "verb": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "domain",
+     "inverse",
+     "origin",
+     "range",
+     "reads",
+     "verb"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "formulas": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "reads": {
+      "type": "string"
+     },
+     "used_for": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "reads",
+     "used_for"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "id": {
+   "type": "string"
+  },
+  "inherits_from": {
+   "items": {
+    "properties": {
+     "page": {
+      "type": "string"
+     },
+     "site": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "page",
+     "site"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "kept_by": {
+   "type": "string"
+  },
+  "language_rule": {
+   "type": "string"
+  },
+  "node_types": {
+   "items": {
+    "properties": {
+     "altitude": {
+      "type": "string"
+     },
+     "definition": {
+      "type": "string"
+     },
+     "id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "plural": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "altitude",
+     "definition",
+     "id",
+     "label",
+     "plural"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "scopes": {
+   "properties": {
+    "code-review": {
+     "properties": {
+      "edges": {
+       "type": "array"
+      },
+      "graph": {
+       "type": "string"
+      }
+     },
+     "required": [
+      "edges",
+      "graph"
+     ],
+     "type": "object"
+    },
+    "wikipedia": {
+     "properties": {
+      "about": {
+       "type": "string"
+      },
+      "edges": {
+       "type": "array"
+      },
+      "graph": {
+       "type": "string"
+      },
+      "node_types": {
+       "type": "array"
+      },
+      "taxonomy": {
+       "type": "array"
+      }
+     },
+     "required": [
+      "about",
+      "edges",
+      "graph",
+      "node_types",
+      "taxonomy"
+     ],
+     "type": "object"
+    }
+   },
+   "required": [
+    "code-review",
+    "wikipedia"
+   ],
+   "type": "object"
+  },
+  "taxonomy": {
+   "items": {
+    "properties": {
+     "broader": {
+      "type": "null"
+     },
+     "id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "maps": {
+      "type": "object"
+     },
+     "note": {
+      "type": "string"
+     },
+     "types": {
+      "type": "array"
+     }
+    },
+    "required": [
+     "broader",
+     "id",
+     "label",
+     "types"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "updated": {
+   "type": "string"
+  },
+  "version": {
+   "type": "string"
+  }
+ },
+ "required": [
+  "about",
+  "banned",
+  "bridges",
+  "edges",
+  "formulas",
+  "id",
+  "inherits_from",
+  "kept_by",
+  "language_rule",
+  "node_types",
+  "scopes",
+  "taxonomy",
+  "updated",
+  "version"
+ ],
+ "title": "ontology.json",
+ "type": "object"
+}
