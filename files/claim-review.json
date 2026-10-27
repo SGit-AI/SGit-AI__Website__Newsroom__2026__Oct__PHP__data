@@ -3927,6 +3927,465 @@
    "where": "none",
    "reviewed": "2026-10-27T16:35Z",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "brk2-thn-kev-confirmed",
+   "verdict": "agrees",
+   "reason": "The Hacker News (Ravie Lakshmanan, 27 October, capture 19:13 UTC) says, verbatim, that CISA 'on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog'. The site already carries the listing from CISA's own alert and catalog: the claims kev-precedent (both CVEs added 26 October, catalog 2026.10.26) and no-confirmed-compromise, and compromise.json's KEV row. 'Confirmed' is THN's word; it says who (CISA) and how (the KEV addition), and the site keeps its own wording, 'evidence of exploitation'. The catalog page THN links (cisa-kev-kev-catalog-page, 19:13 UTC) shows both CVEs dated 2026-10-26.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "cisa-alert-kev-20261026",
+    "cisa-kev-catalog",
+    "cisa-kev-kev-catalog-page"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-thn-honeypot-rce",
+   "verdict": "used",
+   "reason": "Found on the page, verbatim: the KEV addition 'comes after Adel Karimi, detection and response lead at Perplexity, confirmed successful instances of remote code execution against honeypot systems on October 24, 2026', with Karimi's own caveat: 'The evidence demonstrates this chain on the intentionally favorable single-worker mod_php profile; it is not a measurement of exploit reliability on other worker counts, PHP builds, or applications.' Searched the site first: compromise.json's Karimi row (ENTER.CO, Europe Infos, SC Media) carries the same decoy result. Used: THN joined to that row, with Karimi's caveat in its words. 'Comes after' is THN's sequence, not CISA's stated reason: CISA's alert gives no basis for the listing. Honeypots are decoys, not victims; Karimi's post (x.com) is not in the vault.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "enter-chips-bits-fallas-criticas-php2shell-exp",
+    "scworld-news-php2shell-exploitation-confirmed-bu"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-thn-fixed-versions-deadline",
+   "verdict": "agrees",
+   "reason": "The page says, verbatim, 'The issues have been addressed in PHP versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 released on October 21, 2026. Federal agencies have time until October 29, 2026, to apply the necessary fixes.' Agrees with the claim two-cves-9.2 (the same four versions, CVSS 9.2) and with the KEV due date of 29 October that compromise.json's KEV row and no-confirmed-compromise already carry from CISA's catalog. 'Federal agencies' are, in CISA's words, the US federal civilian (FCEB) agencies BOD 26-04 applies to.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "php-net-advisory",
+    "cisa-kev-kev-catalog-page"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-thn-censys-count",
+   "verdict": "held back",
+   "reason": "The page says, verbatim, 'According to estimates shared by Censys, more than 32.51 million PHP services are still running an affected version.' Held back as a number without its basis and time: THN gives no reading time and omits Censys's own caveat that 'Version-based counts are an upper bound: Linux distributions often backport fixes without changing the version'. Censys's tracker itself is in the vault (censys-php2shell-exposure: 32,545,698 at its update of 18:15 UTC, captured 19:13 UTC on 27 October; brk2-censys-exposure), so THN's figure is an earlier reading of a live counter. Searched numbers.json and claims.json first ('Censys', '32.5'): the site carries Censys's earlier host count (n-censys, scale-2.6m-hosts: 2.58 million hosts, 1.57 million not patched), in hosts, not services; the two are different units and the numbers page is the correspondent's.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "censys-php2shell-exposure"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-thn-70-percent",
+   "verdict": "held back",
+   "reason": "The page says, verbatim, PHP 'is a server-side scripting language used in roughly 70% of all websites on the internet'. Not stated as worded: THN links W3Techs (w3techs-php-usage), whose figure is 'PHP is used by 69.2% of all the websites whose server-side programming language we know' (27 October), and THN drops the qualifier. The site already carries the qualified figure (scale-70pc-websites) and the unqualified form with its doubt (scale-70pc-internet); searched claims.json and numbers.json for '70%'.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "w3techs-php-usage"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-thn-vendor-list",
+   "verdict": "noted",
+   "reason": "Counted on the page: after 'numerous advisories from software and security vendors and government agencies across the world, including -' THN lists 38 names (ABB to WordPress; Siemens has two links). 25 of the 38 vendors are in the vault from this run (26 pages, Siemens twice); the 13 not promoted are ABB, Belden, Canon, Citrix, Dell, Dormakaba, F5, Hikvision, HP, Hitachi Energy, HMS Networks, Ivanti and Schneider Electric. Each held advisory has its own verdict (brk2-<vendor>-*). A listed advisory is a product-status notice, not a report of exploitation or compromise. Not used as a list; nothing on the site contradicts it.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "arista-security-advisory-0200",
+    "siemens-ssa-566435",
+    "wordpress-critical-php-security-release"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-thn-brotli-windows",
+   "verdict": "used",
+   "reason": "The page says, verbatim, 'As of October 26, 2026, the PHP Foundation also released Windows builds 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 to address CVE-2026-111497', and quotes the PHP Foundation: 'In PHP Windows builds, the vulnerable decoder can be reached through the cURL extension when automatic HTTP response decompression is enabled ... This is disabled by default in cURL'. Searched all captures for '111497', 'Brotli' and 'Broccoli': a second outlet gives the same four builds (資安人 / Information Security, Taiwan, 27 October: the PHP Foundation repackaged the Windows builds on 26 October with Brotli 1.2.1, the same PHP source as 21 October), and Security NEXT (27 October) lists a headline on it; php.net's own entry (#2026-10-26-1) is not captured (the vault's php-net-advisory capture is of 22 October). Searched the site's data for 'Brotli' and '111497': nothing. Used, attributed to THN, on the front page's Latest beside CISA's Brotli listing, and in compromise.json's Brotli row: a different flaw from php2shell, reaching PHP only in its Windows builds.",
+   "sources": [
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "informationsecurity-article-article-detail-aspx",
+    "microsoft-dotnet-october-2026-oob-security-updates",
+    "cisa-kev-kev-catalog-page"
+   ],
+   "where": "index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-kevpage-php-entries",
+   "verdict": "used",
+   "reason": "The catalog page (captured 19:13 UTC on 27 October, 19:13 GMT in London) shows both entries, vendor 'PHP GROUP | PHP': CVE-2026-109618 'PHP Memory Corruption Vulnerability' and CVE-2026-109619 'PHP Stale Internal Request-State Vulnerability', each 'Known To Be Used in Ransomware Campaigns? Unknown', forensic triage required per BOD 26-04 'Yes', date added 2026-10-26, due date 2026-10-29; 'Showing 1 to 20 of 1760 results' (the JSON catalog 2026.10.26 had 1,758). The same as the catalog already held (brk1-kev-listed-20261026); still no victim, compromised organisation or threat actor named in the entries. Used: joined to compromise.json's KEV row and to the claim no-confirmed-compromise as the latest check of the listing.",
+   "sources": [
+    "cisa-kev-kev-catalog-page",
+    "cisa-kev-catalog",
+    "cisa-kev-json"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-kevpage-brotli",
+   "verdict": "used",
+   "reason": "The catalog page (19:13 UTC on 27 October) lists 'GOOGLE | BROTLI', CVE-2026-111497, 'Google Brotli Unchecked Return Value Vulnerability' (a crafted Brotli-compressed stream; possibly arbitrary code), known ransomware use 'Unknown', forensic triage required 'No', date added 2026-10-27, due date 2026-11-10. Newer than the JSON catalog the vault holds (2026.10.26), so the addition time is not known. The entry names Google's Brotli, not PHP, and no victim. It is tied to this story only through PHP's official Windows builds, which bundle Brotli (THN; 資安人, 27 October). Used: compromise.json, as an official signal for a different flaw (not php2shell), and the front page's Latest. THN does not report this listing; broccoli2shell.com's 'As of 2026-10-22, no attacks in the wild had been reported' is older than it.",
+   "sources": [
+    "cisa-kev-kev-catalog-page",
+    "the-hacker-news-cisa-confirms-php2shell-exploitation",
+    "informationsecurity-article-article-detail-aspx"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-censys-exposure",
+   "verdict": "noted",
+   "reason": "Found on the page: '32,545,698' 'PHP services still on an affected version at their most recent scan', 42,790,125 seen affected since 21 October, 10,270,095 seen to move to a fixed version, 'Updated 18:15 UTC' (no date on the page; the capture began at 19:13 UTC on 27 October), and its caveats: 'Version-based counts are an upper bound: Linux distributions often backport fixes without changing the version' and 61,303,506 services (58%) that do not reveal a version are not shown. Not used on a page yet. Searched numbers.json and claims.json for 'Censys': the site's n-censys and scale-2.6m-hosts count hosts (2.58 million seen, 1.57 million not patched, 22 October, via SecurityWeek); this counts services, a different unit, so not a contradiction, but the two should not be set side by side without saying so. For the correspondent (numbers).",
+   "sources": [
+    "censys-php2shell-exposure"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-w3techs-share",
+   "verdict": "agrees",
+   "reason": "Found on the page, verbatim: 'PHP is used by 69.2% of all the websites whose server-side programming language we know.' and 'Version 8 is used by 65.6% of all the websites who use PHP.', dated 'W3Techs.com, 27 October 2026'. Agrees with the claim scale-70pc-websites ('almost 70% of websites whose server-side language is known'), whose note says none of its three sources cites the survey: this is a survey of the kind it rests on. A share of websites, not a count of vulnerable servers.",
+   "sources": [
+    "w3techs-php-usage"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-dotnet-brotli-fixed",
+   "verdict": "noted",
+   "reason": "Microsoft's .NET Blog (25 October) says, verbatim, 'This out-of-band release addresses CVE-2026-111497, a vulnerability in the Brotli decompression algorithm.' and '.NET Framework is not affected.'; the fixed versions 8.0.33, 9.0.22 and 10.0.14 are on the page, and '.NET 11 RC2 users should update to RC3 to receive these fixes'. About .NET, not PHP: it corroborates that the Brotli flaw is real and patched elsewhere. Not used on a page; nothing on the site mentions Brotli.",
+   "sources": [
+    "microsoft-dotnet-october-2026-oob-security-updates"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-broccoli2shell-scope",
+   "verdict": "noted",
+   "reason": "Found on the page, verbatim: 'Brotli decoder 1.0.3 through 1.2.0. An out-of-bounds write that can lead to a crash, a memory leak or remote code execution. Rated 9.2 Critical (CVSS 4.0) by GitHub, High by Node.js.', and the fixed 1.0.10 and 1.2.1. The same ranges as THN and 資安人 give. An unattributed site (no author or organisation named); its 'As of 2026-10-22, no attacks in the wild had been reported' is superseded by CISA's KEV listing of the Brotli CVE on 27 October. Not used; the code-level description is not repeated.",
+   "sources": [
+    "broccoli2shell-com"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-arista-not-impacted",
+   "verdict": "used",
+   "reason": "Arista's Security Advisory 0200 (23 October, revised 26 October) says, verbatim, 'No Arista software products are presently impacted by these vulnerabilities.' and 'CloudVision CUE cloud service delivery and Arista Edge Threat Management were impacted but have already been upgraded to unaffected PHP versions with correct patches.' Searching the whole capture for exploitation terms found one more line: 'Arista is not aware of any malicious exploitation of these vulnerabilities in customer networks.' Used: compromise.json (no-success-known, Arista).",
+   "sources": [
+    "arista-security-advisory-0200"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-broadcom-affected",
+   "verdict": "used",
+   "reason": "Broadcom's response page (last updated 23 October) says, verbatim, 'Isolated exposures were promptly mitigated, our security solutions were tuned to detect and prevent exploitation attempts, and no compromise of any infrastructure has been discovered.', with 'three affected products' (Enterprise Security Group), 'four affected products' (Identity Management Security) and Tanzu's three, and 'zero affected products' in its other divisions. Used: compromise.json (no-success-known, Broadcom on its own infrastructure).",
+   "sources": [
+    "broadcom-security-broadcom-php2shell-response"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-craft-cloud-patched",
+   "verdict": "used",
+   "reason": "Read the whole capture (Craft CMS blog, 'posted on October 21, 2026'): 'We’ve confirmed that those rules have effectively protected Craft Cloud-hosted sites, with no known successful attacks.' (the rules are Cloudflare's emergency firewall rules) and 'Save for a small handful of sites with preexisting build issues, at this point all Cloud environments have now been updated to the new images, and are fully protected.' 'Confirmed' is Craft's word, about its own hosted sites. Used: compromise.json (no-success-known, Craft CMS on Craft Cloud).",
+   "sources": [
+    "craft-cms-craft-cloud-and-php2shell"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-craft-preexploit",
+   "verdict": "used",
+   "reason": "Read the whole capture: 'While there is evidence that the vulnerabilities were being exploited even before the PHP updates were released, sites protected by Cloudflare’s firewalls were protected.' Craft does not say what the evidence is, whose it is, or who was hit; the page names no compromised organisation and does not say any Craft Cloud site was compromised (it says the opposite: 'no known successful attacks'). The page also says 'several websites' were taken offline while waiting for the release, naming none. Searched the site first: Amazon's honeypot attempt of 17 October (ahead-of-attackers, exploitation.json) and Cloudflare's attack traffic are carried as attempts. Used: compromise.json (vendor-exploitation, Craft CMS, no victim named); it does not change no-confirmed-compromise.",
+   "sources": [
+    "craft-cms-craft-cloud-and-php2shell"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-drupal-psa",
+   "verdict": "noted",
+   "reason": "Drupal's PSA-2026-10-20 (21 October) says, verbatim, 'Updating to a PHP release containing the patch to these vulnerabilities is the only complete mitigation.' Guidance about PHP, not a Drupal flaw. Not used; nothing on the site contradicts it (the claim wordpress-drupal is about researchers' tests on Drupal sites).",
+   "sources": [
+    "drupal-psa-2026-10-20"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-expressionengine-ahead",
+   "verdict": "held back",
+   "reason": "The page (Tom Jaeger, 22 October) says, verbatim, 'two high risk vulnerabilities disclosed ahead of schedule', with no basis or time. Not stated as worded: the site carries what happened, with sources (release-time: scheduled for 14:00 UTC on 21 October, published 13:31 to 13:35 UTC; leak-cve-ids: the CVE IDs circulated from about 15:00 UTC on 20 October, no technical details), and 'ahead of schedule' could mean either. A community note with a licence discount; no product status.",
+   "sources": [
+    "expressionengine-php-vulnerabilities"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-hpe-impacted",
+   "verdict": "noted",
+   "reason": "HPE's HPESBGN05174 (released 23 October, updated 27 October) says, verbatim, 'This security advisory lists potentially impacted HPE products, including those products from Aruba, Juniper, and other acquisitions.' and lists 'HPE Cray ClusterStor E1000, E2000, C500 software versions 6.x, 7.x'; Private Cloud AI, HP-UX, NonStop and System Management Homepage are on the page. A product list; no exploitation statement. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "hpe-hpesbgn05174"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-huawei-investigating",
+   "verdict": "noted",
+   "reason": "Huawei's notice (22 October) says, verbatim, 'Huawei has launched an immediate investigation. The investigation is still ongoing.' No product named either way. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "huawei-sn-02583971"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-ibm-ace-toolkit",
+   "verdict": "noted",
+   "reason": "IBM's bulletin (26 October): 'IBM App Connect Enterprise Toolkit is vulnerable to remote code execution (CVE-2026-109618, CVE-2026-109619)', versions 12.0.1.0 to 12.0.12.31 and 13.0.1.0 to 13.0.9.0, and 'This ifix disables pattern generation using the PHP API for user-defined patterns.' A product status; no exploitation statement. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "ibm-node-7294053"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-jci-patches",
+   "verdict": "noted",
+   "reason": "Johnson Controls' JCI-PSA-2026-24 (a PDF whose text layer splits letters): it is 'actively evaluating' the vulnerabilities; its table names Illustra camera models and Visonic PowerManage (version 5.0.45), each row 'Patch available' (10 rows). A product status; no exploitation statement. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "johnson-controls-jci-psa-2026-24"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-mitel-affected",
+   "verdict": "noted",
+   "reason": "Mitel's MISA-2026-0008 (first issued 22 October; revision 5.0 of 27 October) says, verbatim, 'Mitel is actively investigating the impact of CVE-2026-109618 and CVE-2026-109619' and 'Unify Phone and CloudLink services are not affected'; its table lists MiVoice 5000 R8.4 and earlier 'Affected' with 'Security update available' (MiVoice 5000 Gateways: 'Planned Update'). Not used; nothing on the site contradicts it.",
+   "sources": [
+    "mitel-misa-2026-0008"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-moxa-not-affected",
+   "verdict": "noted",
+   "reason": "Moxa's MPSA-260001 (22 October), verbatim: 'Moxa has determined that none of our products are affected.' Not used; nothing on the site contradicts it.",
+   "sources": [
+    "moxa-mpsa-260001"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-netgear-nighthawk",
+   "verdict": "used",
+   "reason": "NETGEAR's advisory 000070960 (last updated 22 October), verbatim: 'Only the Nighthawk models listed below were found to include PHP components and their actual impact is under review.' (RAX28, RAX29, RAX30, RAXE290, RAXE300, CAX30; severity MEDIUM), 'It is not accessible from the Internet by default and cannot be exploited by remote attackers.' and 'NETGEAR has not seen any evidence of exploits targeting these devices.' Used: compromise.json (no-success-known, NETGEAR on these devices).",
+   "sources": [
+    "netgear-000070960"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-octobercms-php-not-october",
+   "verdict": "noted",
+   "reason": "October CMS (21 October), verbatim: 'The flaws are in PHP itself, not in October CMS. Every October site on an unpatched PHP is affected, the same as every other PHP application, and no October update can fix it.' The page also relays Cloudflare's report of attacks in the wild before the fixes, which the site carries from Cloudflare (exploitation.json). Not used; nothing on the site contradicts it.",
+   "sources": [
+    "october-cms-php-security-alert"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-okta-oag",
+   "verdict": "noted",
+   "reason": "Okta's advisory (22 October), verbatim: 'Customers using Okta Access Gateway appliance versions running PHP 8.3.x prior to 8.3.36 are affected, which includes appliance versions prior to 2026.44.0.', 'The Okta Access Gateway’s default configuration mitigates known exploitation of these vulnerabilities.' and 'The vulnerabilities are resolved in Okta Access Gateway appliance version 2026.44.0, which includes PHP 8.3.36.' 'Known exploitation' names no event or victim. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "okta-access-gateway-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-rockwell-reviewing",
+   "verdict": "noted",
+   "reason": "Rockwell's SD1802 (23 October), verbatim: 'As of the date of this notice, no Rockwell Automation products have been confirmed as affected.' The same page reads 'Known Exploited Vulnerability (KEV): No', true on 23 October and superseded by CISA's listing of 26 October. Not used; nothing on the site contradicts the claim.",
+   "sources": [
+    "rockwell-automation-rockwell-sd1802"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-ruckus-not-vulnerable",
+   "verdict": "noted",
+   "reason": "RUCKUS's bulletin (v1.1, 26 October), verbatim: 'Current assessment indicates that the evaluated RUCKUS products are not vulnerable.'; it also says it 'is investigating'. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "ruckus-bulletin-339"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-salesforce-informatica",
+   "verdict": "used",
+   "reason": "Salesforce's Trust message 20000267 ('Posted 8:12 pm GMT, Oct 21 2026 · Last updated 4:08 pm GMT, Oct 27 2026'; update 1 posted 16:08:49 UTC on 27 October), verbatim: 'no Salesforce products are affected by the recently disclosed PHP vulnerabilities (CVE-2026-109618 and CVE-2026-109619), with the exception of Informatica where expedited patching is in pr[ogress]', 'At this time, we have no evidence of exploitation affecting Salesforce or customer data.' and 'We have seen no evidence of compromise of Salesforce customers or data.' Used: compromise.json (no-success-known, Salesforce).",
+   "sources": [
+    "salesforce-general-message-20000267"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-siemens-ape1808",
+   "verdict": "noted",
+   "reason": "Siemens SSA-566512 (23 October): 'PHP2Shell Vulnerabilities in Palo Alto Networks PAN-OS on RUGGEDCOM APE1808', all versions with PAN-OS 10.2, 11.1, 11.2, 12.1 and 12.2 'affected by all CVEs', 'Contact customer support to receive patch and update information'. Palo Alto's own PAN-OS advisory is not in the vault. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "siemens-ssa-566512"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-siemens-software-not-affected",
+   "verdict": "noted",
+   "reason": "Siemens SSA-566435 (updated 26 October): 'KNOWN NOT AFFECTED PRODUCTS', 27 rows 'not affected by all CVEs', each because 'PHP is not present in this product'. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "siemens-ssa-566435"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-sonicwall-no-php",
+   "verdict": "noted",
+   "reason": "SonicWall's notice (22 October, updated 27 October), verbatim: its PSIRT 'performed an initial review and found no use of PHP in the following products. Based on this review, SonicWall has no indication that these CVEs apply to them.' and 'This is the current assessment and is not a statement covering the entire SonicWall portfolio.' It also lists signatures against 'any attempted exploitation'. Not used; nothing on the site contradicts it.",
+   "sources": [
+    "sonicwall-php-product-notice"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-splunk-unaffected",
+   "verdict": "used",
+   "reason": "Splunk's SVD-2026-1013 (22 October, updated 26 October), verbatim: 'If a product is not listed within this advisory, the product is not affected.' and 'For Smartlook, Splunk remedied the CVEs by upgrading PHP to a fixed version. There is no action for Smartlook customers and Splunk has not found evidence of exploitation.' Used: compromise.json (no-success-known, Splunk on Smartlook).",
+   "sources": [
+    "splunk-svd-2026-1013"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-synology-fixed",
+   "verdict": "noted",
+   "reason": "Synology-SA-26:14 (updated 26 October): Synology Calendar 'Critical' (upgrade to 3.0.4-21435), Mail Station 'Critical', PHP 7.3 'Critical', 'No fix will be provided as this version has reached end of life.', PHP 7.4 to 8.4 'Critical' each with an upgrade (8.4: 8.4.27-0051), Hyper Backup 'Not affected' (added 26 October). Not used. Note for the correspondent: the verdict cur21-xenospectrum-asustor-synology held Synology back as resting on one outlet; Synology's own advisory is now in the vault.",
+   "sources": [
+    "synology-sa-26-14"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-veeam-not-affected",
+   "verdict": "noted",
+   "reason": "Veeam KB4953 (22 October), verbatim: 'Veeam products and Veeam SaaS solutions are not affected by this vulnerability.' Not used; nothing on the site contradicts it.",
+   "sources": [
+    "veeam-kb4953"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-wibu-clc",
+   "verdict": "noted",
+   "reason": "Wibu-Systems' product alerts (22 October, updated 27 October at 6:00 pm CET, 17:00 UTC), verbatim: 'unpatched systems are affected by these vulnerabilities. CodeMeter Runtime as well as WibuKey installed locally on end-user systems are not affected.', 'Update 2026-10-23, 2:30 pm CEST: CodeMeter License Central 5.2.2 has been released' (12:30 UTC), and WOPS Hosting: 'Updates for all downstream systems and containers have been completed.' Not used; nothing on the site contradicts it.",
+   "sources": [
+    "wibu-systems-wibu-product-alerts"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-wordpress-no-update",
+   "verdict": "noted",
+   "reason": "WordPress.org (John Blackbourn, 21 October), verbatim: 'These vulnerabilities are not specific to WordPress and affect any server that hosts a PHP application. No WordPress update is required or planned for these issues.' It also advises self-hosted sites on PHP before 8.2 to consider taking the server offline, as national agencies advise; it names no site that did. Not used; nothing on the site contradicts it (wordpress-drupal is about researchers' tests).",
+   "sources": [
+    "wordpress-critical-php-security-release"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "brk2-qnap-20261027",
+   "verdict": "held back",
+   "reason": "Compared the two captures (22 October, 19:17 UTC; 27 October, 19:13 UTC). The claim's quotes are on the page ('QNAP is currently investigating and fixing the affected products.'; 'V1.1 (October 24, 2026) - QTS、QuTS hero and QuTScloud Resolved Published'), and QuMagie is gone from the affected list. But as worded the claim reads as a contradiction the page does not have: its product table, on the same capture, marks QTS 6.1.0 and 5.2.11, QuTS hero h6.1.0, h6.0.x and h5.2.11, QuTScloud c5.2.9, QVR Surveillance and TVR OS 'Resolved', with fixed builds of 23 October (for example QTS 6.1.0.3656 build 20261023), and only Notes Station 3 and QNE (ADRA) 'Fixing' ('To be announced'); the header's 'Fixing' covers those two. The claim's note ('no fixed versions') is wrong: for the curator. Unchanged: 'QNAP has not received reports of exploitation targeting QNAP products.'",
+   "sources": [
+    "qnap-qsa-26-18"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-27",
+   "by": "breaking@php.newsroom (journalist's role)"
   }
  ]
 }

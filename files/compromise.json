@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-27T14:41Z",
+ "as_of": "2026-10-27T19:13Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 614,
+   "count": 645,
    "unit": "sources",
-   "detail": "head d21ea5df2a32 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head 6f0d5c50bf12 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -536,12 +536,13 @@
    "kind": "official-signal",
    "when": "2026-10-26T22:24Z",
    "who": "CISA Known Exploited Vulnerabilities catalog, and CISA's alert of 26 October",
-   "says": "Both CVEs added to the catalog on 26 October 2026 (version 2026.10.26, released at 22:24 UTC, 1,758 entries): CISA \"has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog\", and an addition must have \"evidence of exploitation\". Due date for US federal civilian agencies: 29 October. Known ransomware use: \"Unknown\". The alert and the two entries name no victim, no compromised organisation and no threat actor.",
+   "says": "Both CVEs added to the catalog on 26 October 2026 (version 2026.10.26, released at 22:24 UTC, 1,758 entries): CISA \"has added two new vulnerabilities to its Known Exploited Vulnerabilities (KEV) Catalog\", and an addition must have \"evidence of exploitation\". Due date for US federal civilian agencies: 29 October. Known ransomware use: \"Unknown\". The alert and the two entries name no victim, no compromised organisation and no threat actor. The catalog page, as served at 19:13 UTC on 27 October, shows the same two entries (forensic triage required \"Yes\"; 1,760 entries by then), still naming no victim.",
    "reading": "Exploited in the wild, on CISA's evidence; no compromised organisation named",
    "sources": [
     "cisa-alert-kev-20261026",
     "cisa-kev-json",
-    "cisa-kev-catalog"
+    "cisa-kev-catalog",
+    "cisa-kev-kev-catalog-page"
    ]
   },
   {
@@ -549,11 +550,12 @@
    "when": "2026-10-26",
    "who": "Adel Karimi (Perplexity), with honeypots; Marcus Hutchins (Expel) on it (via ENTER.CO, citing BleepingComputer)",
    "says": "Honeypots recorded a successful remote code execution against Apache with mod_php and PHP 8.4.26: the attacker obtained server memory and then ran a command. Hutchins called it the best-quality confirmation of exploitation he had seen.",
-   "reading": "A decoy server on a vulnerable build (8.4.26 is below the fixed 8.4.27), not an organisation; one page, and the BleepingComputer article is not among the captures. No victim named. Europe Infos (26 October, unattributed) gives the same decoy result in numbers: 35 malicious PHP shells launched by Apache processes on three PHP 8.4.26 test servers, first on 24 October. SC Media (26 October) adds, through Suzu Labs' Calderone, that Karimi recorded 35 working shells on unpatched PHP 8.4.26 under Apache mod_php, with packet-to-process evidence tying each captured request to a shell spawned by an Apache worker, in a deliberately favourable single-worker setup: it proves exploitation is real, not that it works reliably everywhere.",
+   "reading": "A decoy server on a vulnerable build (8.4.26 is below the fixed 8.4.27), not an organisation; one page, and the BleepingComputer article is not among the captures. No victim named. Europe Infos (26 October, unattributed) gives the same decoy result in numbers: 35 malicious PHP shells launched by Apache processes on three PHP 8.4.26 test servers, first on 24 October. SC Media (26 October) adds, through Suzu Labs' Calderone, that Karimi recorded 35 working shells on unpatched PHP 8.4.26 under Apache mod_php, with packet-to-process evidence tying each captured request to a shell spawned by an Apache worker, in a deliberately favourable single-worker setup: it proves exploitation is real, not that it works reliably everywhere. The Hacker News (27 October) dates the decoy result to 24 October and quotes Karimi's own limit: \"The evidence demonstrates this chain on the intentionally favorable single-worker mod_php profile; it is not a measurement of exploit reliability on other worker counts, PHP builds, or applications.\" THN says CISA's KEV addition \"comes after\" it: THN's sequence, not a reason CISA gave.",
    "sources": [
     "enter-chips-bits-fallas-criticas-php2shell-exp",
     "europe-infos-actualites-11979-php2shell-decryptage-d",
-    "scworld-news-php2shell-exploitation-confirmed-bu"
+    "scworld-news-php2shell-exploitation-confirmed-bu",
+    "the-hacker-news-cisa-confirms-php2shell-exploitation"
    ]
   },
   {
@@ -648,6 +650,76 @@
    "sources": [
     "jauns-raksts-zinas-735243-atklata-jauna-un-lot",
     "delfi-bizness-44467736-tehnologijas-120139480-certlv-novero"
+   ]
+  },
+  {
+   "kind": "vendor-exploitation",
+   "when": "2026-10-21",
+   "who": "Craft CMS (Pixel & Tonic), on its blog",
+   "says": "\"While there is evidence that the vulnerabilities were being exploited even before the PHP updates were released, sites protected by Cloudflare’s firewalls were protected.\" Craft does not say what the evidence is or whose.",
+   "reading": "Exploitation before the fixes, on Craft's word; no evidence shown, no victim named, and no Craft Cloud site said to be compromised",
+   "sources": [
+    "craft-cms-craft-cloud-and-php2shell"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-21",
+   "who": "Craft CMS, on the sites it hosts (Craft Cloud)",
+   "says": "Cloudflare's emergency firewall rules \"have effectively protected Craft Cloud-hosted sites, with no known successful attacks\"; save \"a small handful of sites with preexisting build issues\", every Cloud environment was moved to patched PHP images the same day.",
+   "reading": "What a host has seen on its own platform, not elsewhere. No victim named",
+   "sources": [
+    "craft-cms-craft-cloud-and-php2shell"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-22",
+   "who": "NETGEAR (advisory 000070960)",
+   "says": "\"NETGEAR has not seen any evidence of exploits targeting these devices\": six Nighthawk models (RAX28, RAX29, RAX30, RAXE290, RAXE300, CAX30) include PHP for local management, \"not accessible from the Internet by default\"; their impact is under review.",
+   "reading": "A vendor on its own devices. No victim named",
+   "sources": [
+    "netgear-000070960"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-23",
+   "who": "Broadcom (its PHP2Shell response page, last updated 23 October)",
+   "says": "\"Isolated exposures were promptly mitigated, our security solutions were tuned to detect and prevent exploitation attempts, and no compromise of any infrastructure has been discovered.\" Ten products have potential exposure (three in the Enterprise Security Group, four in Identity Management Security, three in Tanzu), and their teams are releasing fixes.",
+   "reading": "A vendor on its own infrastructure: exposures mitigated, no compromise found",
+   "sources": [
+    "broadcom-security-broadcom-php2shell-response"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-26",
+   "who": "Arista Networks (Security Advisory 0200, 23 October, revised 26 October)",
+   "says": "\"Arista is not aware of any malicious exploitation of these vulnerabilities in customer networks.\" No Arista software product is presently impacted; its CloudVision CUE service and Arista Edge Threat Management were, and have been upgraded.",
+   "reading": "What a vendor knows of its customers' networks. No victim named",
+   "sources": [
+    "arista-security-advisory-0200"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-26",
+   "who": "Splunk (SVD-2026-1013, 22 October, updated 26 October)",
+   "says": "Splunk fixed its Smartlook service by upgrading PHP, and \"Splunk has not found evidence of exploitation\"; products not listed in the advisory are not affected.",
+   "reading": "A vendor on its own service. No victim named",
+   "sources": [
+    "splunk-svd-2026-1013"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-27T16:08Z",
+   "who": "Salesforce (Trust message 20000267, 21 October, updated 16:08 UTC on 27 October)",
+   "says": "\"At this time, we have no evidence of exploitation affecting Salesforce or customer data\" and \"We have seen no evidence of compromise of Salesforce customers or data\"; no Salesforce product is affected except Informatica, where expedited patching is in progress.",
+   "reading": "A vendor on its own systems and its customers' data. No victim named",
+   "sources": [
+    "salesforce-general-message-20000267"
    ]
   }
  ],

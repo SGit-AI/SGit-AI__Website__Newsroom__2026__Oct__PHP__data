@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "exploitation paragraph: 'as of' moved to 09:43 UTC on 27 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 14:41 UTC on 27 October (vault d21ea5df2a32, 614 sources); the other 69 claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 19:13 UTC on 27 October (vault 6f0d5c50bf12, 645 sources, the 40 brk2-* claims reviewed): Craft CMS's pre-patch exploitation line names no victim, so the claim stands; eight sources added. The other claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "BambooHR, the University of Basel and the Brazilian Army's SGEx added, vault 55b47c4d6af1; other rows not re-read in full."
+   "note": "BambooHR, the University of Basel and the Brazilian Army's SGEx added, vault 55b47c4d6af1; other rows not re-read in full. Vault 6f0d5c50bf12 checked: Craft CMS says 'several websites' went offline before the release, naming none, and WordPress advises self-hosted sites on old PHP to consider going offline; no organisation named, no row added."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
    "checked_against": "d21ea5df2a32",
-   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row; as of 14:41 UTC on 27 October; searched count 614; head d21ea5df2a32. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added."
+   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen), and CISA's KEV listing of Google Brotli CVE-2026-111497 (a different flaw, PHP's Windows builds only) added; the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
   },
   {
    "path": "data/exploitation.json",
@@ -153,7 +153,7 @@
    "path": "data/plain.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Now site's content/data/plain.json. 'As of' lines (Right now, the hacked card, the exploitation fact, the impact page line) moved to 00:45 UTC on 27 October; the KEV listing added to Latest and, by the correspondent on 27 October, to Right now; Latest's due date says federal civilian agencies. Not re-read in full; Latest still lacks other events after 23 October."
+   "note": "Now site's content/data/plain.json. 'As of' lines: the impact page line and the hacked card moved to 19:13 UTC on 27 October; Right now's exploitation text ('The one security company that had claimed a successful break-in, Sophos, withdrew it': Unit 42 withdrew one too, 25 October) and the 'been hacked' answer ('One company in Japan is investigating a break-in': Square Enix is a second, cause not stated) left at 09:43 UTC for the correspondent. CISA's KEV listing of Google Brotli (27 October) added to Latest, American Banker (23 October) out. Not re-read in full; Latest still lacks other events after 23 October."
   },
   {
    "path": "data/personas.json",
@@ -165,7 +165,7 @@
    "path": "data/questions.json",
    "kept_by_before": "librarian",
    "checked_against": null,
-   "note": "Now site's content/data/questions.json. Partly: 'Has anyone actually been hacked?' (short and the break-ins answer) as of 00:45 UTC on 27 October, its KEV clauses brought to the listing of 26 October; the other answers not yet re-read."
+   "note": "Now site's content/data/questions.json. Partly: 'Has anyone actually been hacked?' short answer as of 19:13 UTC on 27 October; the break-ins answer left at 09:43 UTC ('the four named cases in the press' leaves out Square Enix, on the ledger since 26 October): the correspondent's. The other answers not yet re-read."
   },
   {
    "path": "data/signals.json",
