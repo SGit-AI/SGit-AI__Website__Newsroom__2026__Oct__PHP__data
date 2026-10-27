@@ -1,0 +1,74 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "properties": {
+  "author": {
+   "type": "string"
+  },
+  "measures": {
+   "items": {
+    "properties": {
+     "id": {
+      "type": "string"
+     },
+     "label": {
+      "type": "string"
+     },
+     "lead": {
+      "type": "boolean"
+     },
+     "unit": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "id",
+     "label",
+     "unit"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  },
+  "note": {
+   "type": "string"
+  },
+  "versions": {
+   "items": {
+    "properties": {
+     "at": {
+      "type": "string"
+     },
+     "reconstructed": {
+      "type": "boolean"
+     },
+     "stamp": {
+      "type": "object"
+     },
+     "v": {
+      "type": "number"
+     },
+     "values": {
+      "type": "object"
+     }
+    },
+    "required": [
+     "at",
+     "reconstructed",
+     "stamp",
+     "v",
+     "values"
+    ],
+    "type": "object"
+   },
+   "type": "array"
+  }
+ },
+ "required": [
+  "author",
+  "measures",
+  "note",
+  "versions"
+ ],
+ "title": "state.json",
+ "type": "object"
+}

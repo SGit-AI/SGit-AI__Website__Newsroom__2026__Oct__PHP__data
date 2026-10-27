@@ -2,10 +2,22 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "f212898aa0fe",
-  "message": "researcher@php.newsroom: stealmybitcoin.com added as a watched page and captured (board correspondent-0005); the PoC repository on GitHub is not captured, by rule, pending the editor"
+  "commit": "a4bb76c0a37b",
+  "message": "researcher@php.newsroom: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (26 October 2026, due 29 October): catalog and alert captured at 00:45 UTC on 27 October, the series kev-listed reads 2, a fourth statement in the ledger record is-it-exploited"
  },
  "commits": [
+  {
+   "commit": "a4bb76c0a37b",
+   "message": "researcher@php.newsroom: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (26 October 2026, due 29 October): catalog and alert captured at 00:45 UTC on 27 October, the series kev-listed reads 2, a fourth statement in the ledger record is-it-exploited"
+  },
+  {
+   "commit": "dd7f4b06fce5",
+   "message": "researcher@php.newsroom: tip 2026-10-26/001 (a LinkedIn post by Charles Carmakal on the PHP flaws, relayed by the editor as a screenshot; the post cropped, unverified) and a third statement in the ledger record is-it-exploited"
+  },
+  {
+   "commit": "019866e54e9d",
+   "message": "researcher@php.newsroom: OX Security's 'PHP2Shell day 5' added as a watched page (the editor's link; the capture is the bot-challenge page, a plain fetch and the browser both get 403); Cloudflare's post was already watched"
+  },
   {
    "commit": "f212898aa0fe",
    "message": "researcher@php.newsroom: stealmybitcoin.com added as a watched page and captured (board correspondent-0005); the PoC repository on GitHub is not captured, by rule, pending the editor"
@@ -149,24 +161,12 @@
   {
    "commit": "202f981c32cf",
    "message": "researcher@php.newsroom: languages pass (339 non-English pages read, 568 new items with verbatim quotes, translations/ and index/foreign.json, index/translation-demand.json); stats pipeline (taxonomy/stats-sources.json, series/, probes/ of 295 named sites, analysis/, contradictions/ seeded with 7); 15 pages moved out of country 'impact'; docs/workflows.md"
-  },
-  {
-   "commit": "8f9b1f62e599",
-   "message": "researcher@php.newsroom: the languages pass: 33 impact feeds in local languages, Bing headline resolver for Google leads (295 resolved), 196 non-English articles promoted (341 in 28 languages), run 20261022T181608Z: 632 checked, 454 changed"
-  },
-  {
-   "commit": "618b47981765",
-   "message": "researcher@php.newsroom + cyber@php.newsroom: weaponisation sector (Metasploit, nuclei, Sigma, Exploit-DB, Packet Storm, Rapid7 DB, GitHub search, EPSS) and 14 ATT&CK technique pages, runs 175100Z and 175253Z; screenshot kept only on significant change, 8000 px cap; KEV JSON fetched over HTTP; noise and vulnerability term updates"
-  },
-  {
-   "commit": "1fc0b41d5484",
-   "message": "researcher@php.newsroom: run 20261022T171501Z: 384 checked, 297 changed"
   }
  ],
- "pages": 1284,
- "publishers": 945,
+ "pages": 1286,
+ "publishers": 946,
  "country": {
-  "us": 284,
+  "us": 285,
   "int": 217,
   "nl": 76,
   "fr": 49,
@@ -214,13 +214,13 @@
   "gr": 3,
   "ae": 2,
   "ee": 2,
+  "il": 2,
   "lt": 2,
   "my": 2,
   "uy": 2,
   "ai": 1,
   "cl": 1,
   "dk": 1,
-  "il": 1,
   "io": 1,
   "no": 1,
   "pe": 1,
@@ -234,8 +234,8 @@
   "aggregator": 140,
   "cert": 94,
   "tech-press": 50,
-  "security-vendor": 29,
-  "registry": 28,
+  "security-vendor": 30,
+  "registry": 29,
   "reference": 24,
   "project": 18,
   "social": 17,
@@ -248,7 +248,7 @@
   "tool": 1
  },
  "lang": {
-  "en": 577,
+  "en": 579,
   "fr": 91,
   "de": 77,
   "nl": 61,
@@ -284,8 +284,8 @@
   "sl": 1
  },
  "access": {
-  "open": 1100,
-  "bot-challenge": 90,
+  "open": 1101,
+  "bot-challenge": 91,
   "down": 58,
   "paywalled": 21,
   "gone": 10,
@@ -294,15 +294,15 @@
  },
  "tiers": {
   "A": 74,
-  "B": 875,
+  "B": 876,
   "C": 16
  },
- "snapshots": 13600,
- "graphs": 13600,
- "files": 104839,
+ "snapshots": 13604,
+ "graphs": 13604,
+ "files": 104886,
  "world_graph": {
-  "nodes": 2341,
-  "edges": 4664
+  "nodes": 2344,
+  "edges": 4670
  },
  "access_classes": [
   {
@@ -1480,6 +1480,30 @@
    "access": {
     "open": 1
    }
+  },
+  {
+   "run": "20261026T183323Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-26T18:33:23Z",
+   "finished": "2026-10-26T18:33:32Z",
+   "pages_due": 1,
+   "pages_total": 1286,
+   "changed": 1,
+   "access": {
+    "bot-challenge": 1
+   }
+  },
+  {
+   "run": "20261027T004502Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-27T00:45:02Z",
+   "finished": "2026-10-27T00:47:02Z",
+   "pages_due": 3,
+   "pages_total": 1286,
+   "changed": 3,
+   "access": {
+    "open": 3
+   }
   }
  ],
  "tips": [
@@ -1496,6 +1520,23 @@
     "The permissions the listing and the manifest ask for, against 'read-only, nothing leaves the browser'",
     "The version history and user count, run by run",
     "Whether it detects the fixed versions (8.5.12 and the backports) correctly"
+   ]
+  },
+  {
+   "id": "2026-10-26/001",
+   "received": "2026-10-26, about 18:30 UTC (the screenshot's phone clock reads 21:28 local time)",
+   "status": "unverified",
+   "says": "A brief update on the critical vulnerabilities in PHP. 'We have not yet validated exploitation in the wild and we have no evidence of successful wide scale exploitation.' Several exploit PoCs are circulating, many 'vibe-coded' and incapable of remote code execution; some validated PoCs are capable of RCE against default deployments of mod_php but not PHP-FPM. 'Nonetheless, exploitation may have already begun in a limited fashion.' Advice: patch and restart on PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35; layer WAF or proxy safeguards and server configuration if patching must wait; monitor abnormal session traffic and rotate keys and passwords on internet-facing PHP systems exposed before patching. They say their Cloud Security blog post is being updated continually. At the screenshot: 501 reactions, 31 comments, 88 reposts.",
+   "watched_as": [
+    "us/security-vendor/cloudflare/cloudflare-blog-php2shell-waf",
+    "il/security-vendor/ox-security/php2shell-day-5-the-panic-hasnt-turned-into-patching"
+   ],
+   "to_check": [
+    "The post's link, for its exact time and its text as posted (a LinkedIn page cannot be captured: it is a login wall)",
+    "The Google Cloud Security blog post the author says he is updating: its address, its update times and what it says on exploitation",
+    "Whether 'validated PoCs capable of RCE against default mod_php, not PHP-FPM' matches PHP's own statement (PHP's advisory rates mod_php highest and says it demonstrated an exploit there)",
+    "Whether the OX Security article can be read (the watch's capture is a bot-challenge page) and what figures it gives for patching, against the Censys count of 1.57 million of about 2.6 million hosts unpatched on 21 October",
+    "Whether 'no evidence of successful wide scale exploitation' agrees with the others in the ledger record is-it-exploited (Amazon says 'broadly exploited'; CISA and officials in Germany, the Netherlands and Japan have seen none succeed; Cloudflare says it observed attack traffic)"
    ]
   }
  ],
