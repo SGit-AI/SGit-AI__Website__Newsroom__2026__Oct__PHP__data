@@ -9,7 +9,7 @@
 #            deletes its tag and tries again, three times;
 #   package  the served tree, from the release commit (tools/package.py: every version (the folders published before 27 October from the last commit that held them, then every tag), each file once at /blobs/<sha256>, the newest five plain, /latest/), read-only;
 #   deploy   publishes only what package built, from the commit release made.
-# On its schedule (and when run by hand) it also takes the newest edition, built in CI by the press (board dev-0005,
+# On every run (a push, its schedule, by hand) it also takes the newest edition, built in CI by the press (board dev-0005,
 # tools/edition.sh and .github/workflows/edition.yml there): the gate job downloads this repository's patch from the
 # press's release edition-<edition> (public, read with this run's token), refuses one that touches .github/, .git/ or
 # VERSION, applies it and gates the result; release applies the same patch (its sha256 checked) and numbers it, its
@@ -44,7 +44,6 @@ jobs:
           fetch-depth: 0
       - id: take
         name: The newest edition, if this repository has not taken it
-        if: github.event_name != 'push'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -84,6 +83,7 @@ jobs:
           BEFORE: ${{ github.event.before }}
           TAKE: ${{ needs.gate.outputs.take }}
           TAKE_SHA: ${{ needs.gate.outputs.sha }}
+          EVENT: ${{ github.event_name }}
           GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
@@ -122,7 +122,8 @@ jobs:
             new="$MA.$MI.$((PA+1))"                  # on dev, the last number plus one
             printf '%s\n' "$new" > VERSION
             git add VERSION
-            if [ -n "${TAKE:-}" ]; then git commit -q -m "v$new: $subject" -m "Edition: $TAKE"
+            if [ -n "${TAKE:-}" ] && [ "${EVENT:-}" = push ]; then git commit -q -m "v$new: $(git log -1 --format=%s "${GITHUB_SHA}") (with edition v$TAKE)" -m "Edition: $TAKE"
+            elif [ -n "${TAKE:-}" ]; then git commit -q -m "v$new: $subject" -m "Edition: $TAKE"
             else git commit -q -m "v$new: $(git log -1 --format=%s "${GITHUB_SHA}")"; fi
             git tag "v$new"
             if git push -q origin "HEAD:dev"; then git push -q origin "refs/tags/v$new"; release "$new" "released"; exit 0; fi
