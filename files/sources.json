@@ -1745,6 +1745,56 @@
   "notes_md": "# PHP2Shell: vulnerabilidad en PHP amenaza empresas con IA\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `mx/news/areacucuta/php2shell-log4shell-a-la-velocidad-de-la-ia-y-la-perspectiva`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nareacucuta.com (Spanish), a perspective piece 'PHP2Shell: Log4Shell at the speed of AI, and a CISO's view', five years after Log4Shell. It cites Check Point Research that malicious activity linked to PHP2Shell has already impacted 10% of organisations worldwide, 14% in Europe. A vendor-commentary article; the statistic's definition of 'impacted' is not given.\n\n> Informes de la unidad Check Point Research revelan que la actividad maliciosa vinculada a PHP2Shell ya registra impactos en el 10 % de las organizaciones en todo el mundo, con un repunte del 14 % en el mercado europeo.\n\n_Curator's translation:_ \"Reports from the Check Point Research unit reveal that malicious activity linked to PHP2Shell already records impacts on 10% of organisations worldwide, with a 14% rise in the European market.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: vulnerabilidad en PHP amenaza empresas con IA\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "arista-security-advisory-0200",
+  "url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24846-security-advisory-0200",
+  "publisher": "Arista Networks",
+  "kind": "vendor",
+  "title": "Security Advisory 0200 - Arista",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2dcf03cc7f08eca72c83695edb02d004533191544a518777c9ae3716854404da",
+      "bytes": 3113
+     },
+     "page.html": {
+      "sha256": "208037de036790e35e22930af04570f619a1ee7870695e2b81af83e083127659",
+      "bytes": 107997
+     },
+     "provenance.json": {
+      "sha256": "05fc6ae4a71724dc6d63ce54382998e3d281dcbd9544b22c324a5f4b53f20c0e",
+      "bytes": 1697
+     },
+     "rendered.html": {
+      "sha256": "9fd3538d486418b95e4636d58448fd288a2840a5f5b4f9e8dd56271b95501618",
+      "bytes": 229530
+     },
+     "screenshot.jpg": {
+      "sha256": "b79e7ca52cd4b26247ae1477794a8f285d47124166f3268b4026b19ab7395b43",
+      "bytes": 415225
+     },
+     "text.txt": {
+      "sha256": "fc2bd4f45253cc75bcfa7bf3b4997759def025bb07fb7ba75b52be7cf7c58eb7",
+      "bytes": 6588
+     }
+    },
+    "started_utc": "2026-10-27T19:13:36.220Z",
+    "status": 200,
+    "final_url": "https://www.arista.com/en/support/advisories-notices/security-advisory/24846-security-advisory-0200"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Arista Security Advisory 0200 (Date: October 23, 2026; revision 1.1 of October 26).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Security Advisory 0200 - Arista\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/arista/arista-security-advisory-0200`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nArista Security Advisory 0200 (Date: October 23, 2026; revision 1.1 of October 26).\n\n> No Arista software products are presently impacted by these vulnerabilities.\n\n> CloudVision CUE cloud service delivery and Arista Edge Threat Management were impacted but have already been upgraded to unaffected PHP versions with correct patches.\n\n> 1.1 October 26, 2026\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Arista Security Advisory 0200 (23 Oct, rev 1.1 26 Oct): no Arista software products presently impacted; CloudVision CUE and Arista Edge Threat Management were impacted and already upgraded; not aware of exploitation in customer networks.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-gb`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:36Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "armis-php2shell-find-patch",
   "url": "https://www.armis.com/blog/php2shell-how-to-find-prioritize-and-patch-affected-systems/",
   "publisher": "Armis",
@@ -3170,6 +3220,56 @@
   "has_notes": false
  },
  {
+  "slug": "broadcom-security-broadcom-php2shell-response",
+  "url": "https://www.broadcom.com/php2shell",
+  "publisher": "Broadcom (Symantec) Security",
+  "kind": "vendor",
+  "title": "Broadcom Response to PHP2shell Vulnerability",
+  "published": "2026-10-23 (last updated; no publication date on the page)",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "f8c8b9daf5383fa1bf946fe6d0ea62290c0011c3c3e35843ab9a96534ef57447",
+      "bytes": 1528
+     },
+     "page.html": {
+      "sha256": "cc75b60bcccbd3b9f0a12c9eaf230c57004cfa2fa142e8edd2268cad00badb17",
+      "bytes": 16876
+     },
+     "provenance.json": {
+      "sha256": "5670d9ac397c9664edd14cf0c10636635368184a9f205feb450ac497511221c8",
+      "bytes": 1614
+     },
+     "rendered.html": {
+      "sha256": "f83a96c1ca65108c988500bdd70248ac69a28040e1aedfe30a148f70c6cbf513",
+      "bytes": 210566
+     },
+     "screenshot.jpg": {
+      "sha256": "88704b1182b411309aca48f7edeee30caed0bf257f57a91540273ea4629b90e6",
+      "bytes": 152001
+     },
+     "text.txt": {
+      "sha256": "65ccbf1d7355ec8b8c5552110ed5456c825ad19f1ee41b9d77450f9dc5584c98",
+      "bytes": 3264
+     }
+    },
+    "started_utc": "2026-10-27T19:13:37.427Z",
+    "status": 200,
+    "final_url": "https://www.broadcom.com/php2shell"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Broadcom's PHP2shell response page ('Last updated October 23 2026'): its own infrastructure and its product divisions.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Broadcom Response to PHP2shell Vulnerability\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/broadcom-security/broadcom-php2shell-response`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nBroadcom's PHP2shell response page ('Last updated October 23 2026'): its own infrastructure and its product divisions.\n\n> Isolated exposures were promptly mitigated, our security solutions were tuned to detect and prevent exploitation attempts, and no compromise of any infrastructure has been discovered.\n\n> Enterprise Security Group — three affected products\n\n> Identity Management Security Division — four affected products\n\n> Tanzu Division — three affected products\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Broadcom response (updated 23 Oct): isolated exposures in its own infrastructure were mitigated, no compromise found; a small subset of products with potential exposure, fixes being released.\n\nSupports: vendor response: products affected / not affected; vendor's own infrastructure: no compromise found; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:37Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "broadcom-security-php2shell",
   "url": "https://www.security.com/blog-post/php2shell-critical-vulns-cve-2026-109618-109619",
   "publisher": "Broadcom (Symantec) Security",
@@ -3217,6 +3317,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell: Two Critical PHP Flaws Allow Unauthenticated Remote Code Execution | SECURITY.COM\n\nCaptured by claude-story-site. Status: captured. Vendor explainer.\n\n- Captured for the record.\n"
+ },
+ {
+  "slug": "broccoli2shell-com",
+  "url": "https://broccoli2shell.com/",
+  "publisher": "broccoli2shell.com",
+  "kind": "other",
+  "title": "Broccoli2Shell: Brotli decoder RCE (CVE-2026-111497) in Node.js, Python and more",
+  "published": null,
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "7cc8fc882c2d8a4c44fb522aba9e13ff4b1990bea2d447a38cfbcd0100359d77",
+      "bytes": 1270
+     },
+     "page.html": {
+      "sha256": "21fce074438fe5128de38d50965fef2cd8b86991ac6594604d0eca0e9fea5852",
+      "bytes": 48236
+     },
+     "provenance.json": {
+      "sha256": "4d7248dc28c944e3409ffaad66ca13d5defcd9e44a74ded2ac51bd6c12a6340e",
+      "bytes": 1579
+     },
+     "rendered.html": {
+      "sha256": "610f6961536087fdc7946ee9c63e4e9fdb4948fd8442a1b23f04b0a8790351cc",
+      "bytes": 49437
+     },
+     "screenshot.jpg": {
+      "sha256": "0e931b5e1af91fbef85b4779ac30f295883e1bb0e187a3b0945f1a820ec86617",
+      "bytes": 742615
+     },
+     "text.txt": {
+      "sha256": "26da2897718675e1e8f2112ff446d5f2d535dfbe4987d01f8976832b5268e0f9",
+      "bytes": 15996
+     }
+    },
+    "started_utc": "2026-10-27T19:14:21.339Z",
+    "status": 200,
+    "final_url": "https://broccoli2shell.com/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). broccoli2shell.com, a site about CVE-2026-111497 in Google's Brotli C decoder (no author or publisher named on the captured page): affected and fixed versions of Brotli, Node.js, Python packages, and PAN-OS.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Broccoli2Shell: Brotli decoder RCE (CVE-2026-111497) in Node.js, Python and more\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/research/broccoli2shell-com/broccoli2shell-com`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nbroccoli2shell.com, a site about CVE-2026-111497 in Google's Brotli C decoder (no author or publisher named on the captured page): affected and fixed versions of Brotli, Node.js, Python packages, and PAN-OS.\n\n> Brotli decoder 1.0.3 through 1.2.0. An out-of-bounds write that can lead to a crash, a memory leak or remote code execution. Rated 9.2 Critical (CVSS 4.0) by GitHub, High by Node.js.\n\n> Google Brotli (C library) 1.0.3 – 1.2.0 1.0.10, 1.1.1, 1.2.1\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): broccoli2shell.com: CVE-2026-111497, an out-of-bounds write in the Brotli C decoder 1.0.3 to 1.2.0 (9.2 Critical, CVSS 4.0), affecting Node.js, Python and others; notes PAN-OS 11.2 to 12.2 with Brotli inspection affected.\n\nSupports: the related Brotli flaw (CVE-2026-111497): scope and fixed versions; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:21Z. The page describes the decoder bug at code level; that detail is left in the capture and not repeated here.\n"
  },
  {
   "slug": "btc-echo-news-krypto-boersen-akut-bedroht-kritisc",
@@ -3671,6 +3821,56 @@
   },
   "has_notes": true,
   "notes_md": "# CCN-CERT AL 11/26 (blocked)\n\nThe URL comes from the ENISA CNW-2026-04 list. At 08:13-08:14Z, Playwright and curl both got HTTP 403 with a \"Voight-Kampff Browser Test\" bot challenge page (saved in raw/ with SHA256SUMS), and WebFetch got 403 too. The title in the slug (\"actualizacion inmediata de vulnerabilidad critica en php\") points to \"immediate update\" advice, but we have NOT read the content. Another agent with different egress should retry.\n"
+ },
+ {
+  "slug": "censys-php2shell-exposure",
+  "url": "https://php2shell.censys.com/",
+  "publisher": "Censys",
+  "kind": "researcher",
+  "title": "Censys PHP2Shell Exposure Tracker",
+  "published": null,
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "167bb5b87eeb5deacab43aff124611399706e24866ffdbb4d3e811715e57b2a2",
+      "bytes": 962
+     },
+     "page.html": {
+      "sha256": "c2acdf1e68be13010cabcca055f612ffabd85cc94a0a17858b00a2553c43ab3f",
+      "bytes": 7410
+     },
+     "provenance.json": {
+      "sha256": "1f76ba786fd9c894bf7f1e6af4a486968d4e6ab64c598a86b060964ce86c51c7",
+      "bytes": 1533
+     },
+     "rendered.html": {
+      "sha256": "3b5efb7a546edf8e6fb59ab841ea9b72e9dd31f8a1e856ab24df1c1cc6030803",
+      "bytes": 157964
+     },
+     "screenshot.jpg": {
+      "sha256": "9a42840f123abd50975df9fa4aab7b4fdf2f29c89ecfa1f1608fd1b8bf0ec038",
+      "bytes": 374547
+     },
+     "text.txt": {
+      "sha256": "534d8ce44d4b9408b46ed3db6be4937b3e9b572d9e48fb06aff01c0e29b5d3a4",
+      "bytes": 9654
+     }
+    },
+    "started_utc": "2026-10-27T19:13:36.220Z",
+    "status": 200,
+    "final_url": "https://php2shell.censys.com/"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 1 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Censys's PHP2Shell exposure tracker (live page; 'Updated 18:15 UTC', no date on the page; captured 19:13 UTC on 27 October 2026, so the figures are as of 18:15 UTC on 27 October). Version-based counts, which Censys calls an upper bound.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Censys PHP2Shell Exposure Tracker\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/research/censys/censys-php2shell-exposure`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nCensys's PHP2Shell exposure tracker (live page; 'Updated 18:15 UTC', no date on the page; captured 19:13 UTC on 27 October 2026, so the figures are as of 18:15 UTC on 27 October). Version-based counts, which Censys calls an upper bound.\n\n> 32,545,698\n\n> PHP services still on an affected version at their most recent scan\n\n> 42,790,125\n\n> PHP services seen on an affected version at any point since tracking began (Oct 21)\n\n> 10,270,095\n\n> Another 61,303,506 PHP services (58% of all detected) do not reveal their version and are not shown.\n\n> Version-based counts are an upper bound: Linux distributions often backport fixes without changing the version.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): Censys PHP2Shell Exposure Tracker (updated 18:15 UTC, 27 Oct): 42,790,125 PHP services seen on an affected version since 21 Oct, 32,545,698 still affected at last scan, 10,270,095 patched since 21 Oct; version counts are an upper bound (distribution backports); 61.3 million services hide their version.\n\nSupports: exposure: how many PHP services remain on an affected version; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:36Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "ceomagazine-ko-kr-articles-35216",
@@ -4617,6 +4817,56 @@
   },
   "has_notes": true,
   "notes_md": "# CISA KEV catalog (JSON)\n\n- Fetched with curl about 08:15Z on 22 Oct 2026 and saved in raw/ (headers, JSON, SHA256SUMS).\n- `catalogVersion` 2026.10.21, `dateReleased` 2026-10-21T14:04:39.8983Z, `count` 1754; last-modified Wed, 21 Oct 2026 14:04:39 GMT.\n- **Neither CVE-2026-109618 nor CVE-2026-109619 is in the catalog.** That fits CISA alert text \"has not observed exploitation\". The latest additions are dated 2026-10-20 (Plex, SiteGuard, Siemens).\n- Older PHP entries in the catalog: CVE-2024-4577, CVE-2019-11043, CVE-2012-1823.\n- No CISA emergency directive for PHP was found (the home page lists none). Re-check KEV later today.\n"
+ },
+ {
+  "slug": "cisa-kev-kev-catalog-page",
+  "url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog",
+  "publisher": "CISA KEV",
+  "kind": "government",
+  "title": "Known Exploited Vulnerabilities Catalog | CISA",
+  "published": null,
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "b076770eca37bfa1fd7bd8d0513add6aaec385460a5efe954a01566ccd71a6fb",
+      "bytes": 1631
+     },
+     "page.html": {
+      "sha256": "f5f72d35425f7b5cf74b0fb049f4825a9c5b461cedd0c0f60a6d74270ce5b237",
+      "bytes": 285690
+     },
+     "provenance.json": {
+      "sha256": "83c27c9072300db82fd491cde29dc2ab7997cb6d932af5f0150251e7399432f7",
+      "bytes": 1594
+     },
+     "rendered.html": {
+      "sha256": "505bef977254718eab13bce7d78921068d2f6cc2b85f00e738eba28fe14b879f",
+      "bytes": 454516
+     },
+     "screenshot.jpg": {
+      "sha256": "52e07f6b4d53e1aab11c76f4d9aabd869e691ee120244d505fd64fa8a05a6f75",
+      "bytes": 889757
+     },
+     "text.txt": {
+      "sha256": "3899802f0ab1365617cb7e748eaa96589a988dd2e80e514fe397390172237e50",
+      "bytes": 23169
+     }
+    },
+    "started_utc": "2026-10-27T19:13:36.220Z",
+    "status": 200,
+    "final_url": "https://www.cisa.gov/known-exploited-vulnerabilities-catalog"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 1 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). CISA's Known Exploited Vulnerabilities Catalog page as served at 19:13 UTC on 27 October 2026 ('Showing 1 to 20 of 1760 results'). It lists CVE-2026-109618 ('PHP Memory Corruption Vulnerability') and CVE-2026-109619 ('PHP Stale Internal Request-State Vulnerability'), both date added 2026-10-26, due 2026-10-29, ransomware use 'Unknown', forensic triage 'Yes'; and above them, added 2026-10-27, Google Brotli CVE-2026-111497 (due 2026-11-10, forensic triage 'No').",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Known Exploited Vulnerabilities Catalog | CISA\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/registry/cisa-kev/kev-catalog-page`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nCISA's Known Exploited Vulnerabilities Catalog page as served at 19:13 UTC on 27 October 2026 ('Showing 1 to 20 of 1760 results'). It lists CVE-2026-109618 ('PHP Memory Corruption Vulnerability') and CVE-2026-109619 ('PHP Stale Internal Request-State Vulnerability'), both date added 2026-10-26, due 2026-10-29, ransomware use 'Unknown', forensic triage 'Yes'; and above them, added 2026-10-27, Google Brotli CVE-2026-111497 (due 2026-11-10, forensic triage 'No').\n\n> PHP Memory Corruption Vulnerability: PHP contains an out-of-memory corruption vulnerability that allows for unauthenticated remote code execution.\n\n> PHP Stale Internal Request-State Vulnerability: PHP contains a stale internal request-state vulnerability that allows for unauthenticated remote code execution.\n\n> Google Brotli Unchecked Return Value Vulnerability\n\n> Showing 1 to 20 of 1760 results\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): CISA KEV catalog page (HTML): PHP Group | PHP entries CVE-2026-109618 (\"PHP Memory Corruption Vulnerability\") and CVE-2026-109619, Date Added 2026-10-26, Due Date 2026-10-29, ransomware use Unknown, forensic triage required per BOD 26-04 (primary).\n\nSupports: exploited: CISA KEV listing of both CVEs, dates and BOD 26-04 action; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:36Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "cisco-sa-php-october26",
@@ -6001,6 +6251,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Threat Actor Targeted PHP Vulnerabilities Days Before PHP2Shell Disclosure - CPO Magazine\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/cpomagazine/cyber-security-threat-actor-targeted-php-vulnerabilities-day`, snapshot `20261026T144241Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T144241Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nCPO Magazine (English), 26 October, by Scott Ikeda: Amazon's Threat Intelligence group reports probing of the PHP flaws as early as 17 October, three days before the leak and four before public disclosure, so the disclosure that was carefully coordinated to leave time for patching was already known to someone. It says the PHP Foundation had to release patches a day early after pre-release notices and videos reached the Hacker News comments, that Amazon caught multiple attempts on a MadPot honeypot from known anonymisation services with varied payloads, which it takes to mean several actors, and that it is unclear how they knew: either a quieter insider leak to attackers or independent discovery by advanced actors. It adds that the Hacker News leak is thought to have been an employee of a security company with insider access making an honest mistake with the embargo timeline.\n\n> The Hacker News leak is thought to be a case of an employee from a security company that had insider access making an honest mistake with the embargo timeline rather than a malicious effort.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Threat Actor Targeted PHP Vulnerabilities Days Before PHP2Shell Disclosure - CPO Magazine\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "craft-cms-craft-cloud-and-php2shell",
+  "url": "https://craftcms.com/blog/craft-cloud-and-php2shell",
+  "publisher": "Craft CMS (Pixel & Tonic)",
+  "kind": "vendor",
+  "title": "Craft Cloud and php2shell | Craft CMS",
+  "published": "2026-10-21",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "6672b35c4a37dd172da949d56f1c3e02a4ca43985d48c40bb90828128dbfd166",
+      "bytes": 1349
+     },
+     "page.html": {
+      "sha256": "b9cc6f63e876d7bb3bceb92320f3c0d1f700eccebb80d977377e278565f21ddd",
+      "bytes": 66571
+     },
+     "provenance.json": {
+      "sha256": "21414c1e852ce15bfc98ef8c7e19680e224d57c0648fbce5ecd5a35a8423c8ae",
+      "bytes": 1611
+     },
+     "rendered.html": {
+      "sha256": "4a9e5f5bd41d63942a8ed7ad2f2529bbc88f69ffe9940008cd784da79c15b239",
+      "bytes": 68374
+     },
+     "screenshot.jpg": {
+      "sha256": "37a397b0e4c8e160d58306e091dc45c4b69616fe25daf248948da2fe35f2d763",
+      "bytes": 155534
+     },
+     "text.txt": {
+      "sha256": "0fe173566ec8e36831d0c81a7ff2648538f9a77fa112ae21d2f37cd36f407ff0",
+      "bytes": 2387
+     }
+    },
+    "started_utc": "2026-10-27T19:13:40.851Z",
+    "status": 200,
+    "final_url": "https://craftcms.com/blog/craft-cloud-and-php2shell"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Craft CMS blog ('posted on October 21, 2026') on Craft Cloud: Cloudflare rules covered hosted sites, and new Bref images were rolled out after the PHP release.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Craft Cloud and php2shell | Craft CMS\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/craft-cms/craft-cloud-and-php2shell`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nCraft CMS blog ('posted on October 21, 2026') on Craft Cloud: Cloudflare rules covered hosted sites, and new Bref images were rolled out after the PHP release.\n\n> We’ve confirmed that those rules have effectively protected Craft Cloud-hosted sites, with no known successful attacks.\n\n> Save for a small handful of sites with preexisting build issues, at this point all Cloud environments have now been updated to the new images, and are fully protected.\n\n> While there is evidence that the vulnerabilities were being exploited even before the PHP updates were released\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Craft CMS blog (21 Oct): Craft Cloud sites protected by Cloudflare rules, no known successful attacks; new Bref images rolled out about an hour after the PHP release; says there is evidence of exploitation before the release.\n\nSupports: hosting response: platform patched within hours; WAF cover; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-US`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:40Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "criticarad-php2shell-cve-2026-109618-ghid-patch",
@@ -8155,6 +8455,56 @@
   "notes_md": "# PHP曝出代号PHP2Shell高危漏洞- DoNews快讯\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `hk/news/donews/news-detail-8-6750596-html`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nDoNews (Chinese), a brief flash item: PHP disclosed a high-risk flaw codenamed PHP2Shell; the language underpins about 70% of websites; the flaw comes from memory management; after the official patch Europe and the US issued emergency warnings and shut some sites, and several Asian governments and companies are checking and hardening their sites.\n\n> PHP曝出代号PHP2Shell的高危漏洞，该语言支撑全球约70%网站，漏洞源于内存管理问题。\n\n_Curator's translation:_ \"PHP has disclosed a high-risk vulnerability codenamed PHP2Shell; the language supports about 70% of websites worldwide, and the flaw comes from a memory-management problem.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T171501Z, not necessarily this one):_ DoNews page was down; the title only says PHP disclosed a high-risk flaw codenamed PHP2Shell.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP曝出代号PHP2Shell高危漏洞- DoNews快讯\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `zh`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "drupal-psa-2026-10-20",
+  "url": "https://www.drupal.org/psa-2026-10-20",
+  "publisher": "Drupal Security Team",
+  "kind": "advisory",
+  "title": "Critical PHP update on Wednesday, October 21, 2026 (14:00 UTC) - PSA-2026-10-20 | Drupal.org",
+  "published": "2026-10-21 (2026-10-21T03:30:59Z in the page metadata)",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "0bf568278c74489b4ef9d7a971f929ea8a156473310b1b0889a97427c7309470",
+      "bytes": 1273
+     },
+     "page.html": {
+      "sha256": "f6a139b7ce3337806dde6df3da346c3ba83d88f9ceecfd3e355336dfd61b5b46",
+      "bytes": 31183
+     },
+     "provenance.json": {
+      "sha256": "1384273c3132676e4981c87678ce0554c3081549726d8e0d0173ff774ec6183d",
+      "bytes": 1596
+     },
+     "rendered.html": {
+      "sha256": "f9f2ba5e4ab4df5f5c8dccf476578b7ff4f7f4632af14bfbd973024dfc0cbdab",
+      "bytes": 31443
+     },
+     "screenshot.jpg": {
+      "sha256": "9fc92ebc65f8f755102471e633cd9fb9344ec78aa01fb0f075f5d79f668fdc43",
+      "bytes": 211397
+     },
+     "text.txt": {
+      "sha256": "da82b243edfadb9d1c5be1841e0b5324c0eea8ec6a931909185927fb58d4e280",
+      "bytes": 3235
+     }
+    },
+    "started_utc": "2026-10-27T19:13:45.944Z",
+    "status": 200,
+    "final_url": "https://www.drupal.org/psa-2026-10-20"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Drupal Security Team public service announcement PSA-2026-10-20 ('2026-October-21'), announcing the PHP release of 21 October 14:00 UTC.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Critical PHP update on Wednesday, October 21, 2026 (14:00 UTC) - PSA-2026-10-20 | Drupal.org\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `int/project/drupal/drupal-psa-2026-10-20`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nDrupal Security Team public service announcement PSA-2026-10-20 ('2026-October-21'), announcing the PHP release of 21 October 14:00 UTC.\n\n> Updating to a PHP release containing the patch to these vulnerabilities is the only complete mitigation.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Drupal PSA-2026-10-20: PHP critical release on 21 Oct 14:00 UTC; updating PHP is the only complete mitigation; site owners are responsible for the hosting platform.\n\nSupports: project response: CMS ecosystem told to update PHP; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:45Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "dutchitleaders-websites-offline",
   "url": "https://www.dutchitleaders.nl/news/763189/diverse-websites-offline-door-kritieke-kwetsbaarheden-in-php",
   "publisher": "Dutch IT Leaders",
@@ -9475,6 +9825,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Understanding PHP2Shell vulnerabilities and reducing risk while you patch - Express Computer\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `in/news/expresscomputer/guest-blogs-understanding-php2shell-vulnerabilities-and-redu`, snapshot `20261024T110459Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T110459Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nExpress Computer (India), a guest blog of 24 October: two critical PHP vulnerabilities disclosed this week pose an urgent security and business-continuity risk for organisations that depend on websites, customer portals and other web applications; collectively PHP2Shell, the flaws may let an unauthenticated attacker execute code on an affected server. A guest column, with advice on reducing risk while patching.\n\n> Two critical PHP vulnerabilities disclosed this week pose an urgent security and business continuity risk for organisations that depend on websites, customer portals, and other web applications.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Understanding PHP2Shell vulnerabilities and reducing risk while you patch - Express Computer\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "expressionengine-php-vulnerabilities",
+  "url": "https://expressionengine.com/blog/php-vulnerabilities-and-the-expressionengine-community",
+  "publisher": "ExpressionEngine (Packet Tide)",
+  "kind": "vendor",
+  "title": "PHP Vulnerabilities and the ExpressionEngine Community | Blog | ExpressionEngine",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "23367b15c0b8a93c8dc663a4f438d502e5a632f862f3332cf38875d9abc617b8",
+      "bytes": 1491
+     },
+     "page.html": {
+      "sha256": "d2af16b7b0ffac3d734de493523a83036db04e2204c441c65a484a76934f8a7b",
+      "bytes": 20431
+     },
+     "provenance.json": {
+      "sha256": "7845b1cf23db5f6f1e0f0ef04204b635cb4f08807d0ba622dcbea11008b24599",
+      "bytes": 1765
+     },
+     "rendered.html": {
+      "sha256": "b3a189a170b12522fefb1537b9057f1865606f8ddd5b77a392685d6205c468dc",
+      "bytes": 37563
+     },
+     "screenshot.jpg": {
+      "sha256": "26e026214aa50b31ea25c655ecd91c2e994b839d4120fa50e24378dce43ff77c",
+      "bytes": 220181
+     },
+     "text.txt": {
+      "sha256": "9a21f9b89a2431411fa095735e0230dd931f8dd1562d1d8ff1248297bac51173",
+      "bytes": 2177
+     }
+    },
+    "started_utc": "2026-10-27T19:13:45.969Z",
+    "status": 200,
+    "final_url": "https://expressionengine.com/blog/php-vulnerabilities-and-the-expressionengine-community"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). ExpressionEngine blog (Tom Jaeger, '10/22/2026'): a community note, with a discounted licence offer.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP Vulnerabilities and the ExpressionEngine Community | Blog | ExpressionEngine\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/expressionengine/expressionengine-php-vulnerabilities`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nExpressionEngine blog (Tom Jaeger, '10/22/2026'): a community note, with a discounted licence offer.\n\n> The PHP community is recovering from the news of two high risk vulnerabilities disclosed ahead of schedule.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): ExpressionEngine blog (22 Oct, Tom Jaeger): community note on the two PHP vulnerabilities \"disclosed ahead of schedule\", with a discounted licence offer to help upgrades.\n\nSupports: project response: CMS ecosystem; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:45Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "fastly-blog-php2shell",
@@ -12053,6 +12453,52 @@
   "has_notes": false
  },
  {
+  "slug": "hpe-hpesbgn05174",
+  "url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbgn05174en_us&docLocale=en_US",
+  "publisher": "Hewlett Packard Enterprise",
+  "kind": "vendor",
+  "title": "HPESBGN05174 rev.1 - Certain HPE Products Impacted by Multiple PHP Vulnerabilities (PHP2Shell)",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "83164030bd4c163e7a810a47f3adeaf5ef249c0c026fb4a1f498eb4a2836332f",
+      "bytes": 2142
+     },
+     "provenance.json": {
+      "sha256": "22d306a3df1f6b28732b0c9e32271491bf6ee8e9ca859cd64cdce58285c90d31",
+      "bytes": 1608
+     },
+     "rendered.html": {
+      "sha256": "4b1a1710bdebb0461908e1c49eb0a6c64c1f63fcd1ecd408abea9f688c1f6c0e",
+      "bytes": 395099
+     },
+     "screenshot.jpg": {
+      "sha256": "a201a9c58c93b1b0a412b2bee37d743f6b0121cc4ca2cfab09f72daabfbe6500",
+      "bytes": 315716
+     },
+     "text.txt": {
+      "sha256": "c556c46c9cbe1c6fd8599c731f2078be8d3681e6b1cf442040c6ea655a05f448",
+      "bytes": 6766
+     }
+    },
+    "started_utc": "2026-10-27T19:13:47.668Z",
+    "status": 200,
+    "final_url": "https://support.hpe.com/hpesc/public/docDisplay?docId=hpesbgn05174en_us&docLocale=en_US"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). HPE Security Bulletin HPESBGN05174 rev.1 (Release Date 2026-10-23, Last Updated 2026-10-27): potentially impacted HPE products.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# HPESBGN05174 rev.1 - Certain HPE Products Impacted by Multiple PHP Vulnerabilities (PHP2Shell)\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/hpe/hpe-hpesbgn05174`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nHPE Security Bulletin HPESBGN05174 rev.1 (Release Date 2026-10-23, Last Updated 2026-10-27): potentially impacted HPE products.\n\n> Release Date: 2026-10-23\n\n> This security advisory lists potentially impacted HPE products, including those products from Aruba, Juniper, and other acquisitions.\n\n> HPE Cray ClusterStor E1000, E2000, C500 software versions 6.x, 7.x.\n\n> HP-UX OSP 11.31\n\n> HPE System Management Homepage (SMH). Product is End-of-life (EOL).\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): HPE bulletin HPESBGN05174 rev.1 (23 Oct, updated 27 Oct): lists potentially impacted HPE products, including SMH (EOL), Cray ClusterStor, Private Cloud AI, HP-UX OSP, NonStop, and Aruba and Juniper products.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-GB`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:47Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "htxt-2026-10-psa-make-sure-your-website-patch",
   "url": "https://htxt.co.za/2026/10/psa-make-sure-your-website-patches-these-php-vulnerabilities/",
   "publisher": "htxt.co.za",
@@ -12101,6 +12547,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PSA: Make sure your website patches these PHP vulnerabilities - Hypertext\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `za/news/htxt/2026-10-psa-make-sure-your-website-patches-these-php-vulnera`, snapshot `20261027T121358Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T121358Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nHypertext (South Africa, English), 23 October: a public-service item telling site owners to make sure the PHP patch is applied. It quotes the PHP security team's advance notice of a release at 14:00 UTC on 21 October for two critical flaws rated 9.2 on CVSS 4.0, and Sophos Counter Threat Unit's Don Smith that the immediate challenge is finding and managing every instance where PHP runs, that systems which cannot be patched should be isolated from the internet in line with NCSC advice, and that threat actors will move fast with AI help and organisations should watch PHP and web-server processes for unusual command execution. No new facts.\n\n> The immediate challenge is not simply installing a patch, but finding and managing every instance where PHP is running.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PSA: Make sure your website patches these PHP vulnerabilities - Hypertext\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `en-GB`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "huawei-sn-02583971",
+  "url": "https://www.huawei.com/en/psirt/security-notices/2026/huawei-sn-sopsuafvcc-02583971",
+  "publisher": "Huawei PSIRT",
+  "kind": "vendor",
+  "title": "Security Notice - Statement on PHP2Shell Use-After-Free Vulnerabilities (CVE-2026-109619, CVE-2026-109618) - Huawei",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "40c7811266f8d10c8833e10b19593d3d4f77d19a8ef2dc3158965a344affebb1",
+      "bytes": 566
+     },
+     "page.html": {
+      "sha256": "aab8136c6c89efea813914f9e94df8fd7e1834669de52d95d7857b760e8dd0ea",
+      "bytes": 96674
+     },
+     "provenance.json": {
+      "sha256": "09b722f4c912de0246787b59eeb0160288adde10ba65672cc8778c85e38e01fe",
+      "bytes": 1716
+     },
+     "rendered.html": {
+      "sha256": "c1296f73c40fd7d23784c7e4cfd901f9e3204a5b5435d3f443ea30f77ad4aa8c",
+      "bytes": 104305
+     },
+     "screenshot.jpg": {
+      "sha256": "3df95cce407fd7446e3987088b749dd5d750f31eeb243439595bd1c6f5410774",
+      "bytes": 110155
+     },
+     "text.txt": {
+      "sha256": "61aa5a62386f0b91b2b9e96672a028d3c7c26becb8a7df7392ee0fda834bf7a5",
+      "bytes": 1612
+     }
+    },
+    "started_utc": "2026-10-27T19:13:50.100Z",
+    "status": 200,
+    "final_url": "https://www.huawei.com/en/psirt/security-notices/2026/huawei-sn-sopsuafvcc-02583971"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Huawei PSIRT security notice (Initial Release Date 2026-10-22).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Security Notice - Statement on PHP2Shell Use-After-Free Vulnerabilities (CVE-2026-109619, CVE-2026-109618) - Huawei\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `cn/security-vendor/huawei/huawei-sn-02583971`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nHuawei PSIRT security notice (Initial Release Date 2026-10-22).\n\n> Huawei has launched an immediate investigation. The investigation is still ongoing.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Huawei PSIRT security notice (22 Oct): investigation of CVE-2026-109618/109619 launched and ongoing; notice based on current findings.\n\nSupports: vendor response: products affected / not affected (investigation ongoing); board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:50Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "huntress-php2shell-rapid-response",
@@ -12406,6 +12902,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Govt sites go down after AI finds 'critical' PHP vulnerabilities | Information Age | ACS\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `au/news/ia-acs/article-2026-govt-sites-go-down-after-ai-finds-critical-php`, snapshot `20261023T080331Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T080331Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTom Williams: several Australian government sites were down or taken down for maintenance overnight, including the Australian Bureau of Statistics and Jobs and Skills Australia, which were back soon after. The ASD's ACSC issued a 'critical' alert and said it was not aware of active exploitation. The report says Calif found the bugs in August using a large language model and Wiz found them with its own tools, Gemini and GPT.\n\n> not aware of active exploitation related to these vulnerabilities\n\n## Why it is here\n\nNot from the promotion queue. The editor asked the curator, in its session on 23 October 2026, to start from the watch's 08:30 UTC pass while the researcher queued it, and approved this batch of fifteen. Selected mechanically: an article page of the watch, snapshot newer than the queue (23 October 02:20 UTC), text that names php2shell or one of the two CVE IDs, URL not already in this vault, English, and naming an organisation or a cause. Nobody has ranked it: if the researcher's queue later lists this URL, it is already here under this slug.\n\n## Capture notes\n\nLanguage `en`; the text extract is the watch reader's, the page as served is in `captures/20261023T080331Z/page.html`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "ibm-node-7294053",
+  "url": "https://www.ibm.com/support/pages/node/7294053",
+  "publisher": "IBM",
+  "kind": "vendor",
+  "title": "Security Bulletin: IBM App Connect Enterprise Toolkit is vulnerable to remote code execution (CVE-2026-109618, CVE-2026-109619)",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "8246aa8dba1627df00672fd0c6c7a9fcad42c44489de377dead41be1d9576512",
+      "bytes": 2043
+     },
+     "page.html": {
+      "sha256": "a1bb1bc5f1c4e7989173accdbe78de0df4dd1062aca2147081efba2565691e36",
+      "bytes": 56046
+     },
+     "provenance.json": {
+      "sha256": "13538fec0aaabe65fb371b4b6484b8bf81a69e92781eef522f050c21a8db5f5a",
+      "bytes": 1642
+     },
+     "rendered.html": {
+      "sha256": "1a8d0f0ad8029f9f5b1879fd7bad051e89b3a7739358d6d783269a994b933577",
+      "bytes": 136609
+     },
+     "screenshot.jpg": {
+      "sha256": "670509ab2f9981fcc8700dcc96ee06edf3a95b081375a58a5a7397c13f67d5e2",
+      "bytes": 344580
+     },
+     "text.txt": {
+      "sha256": "d03adc4886dc19df7f7e84e6541b36fe6e7ac521613fc7d3961aa09de0a76573",
+      "bytes": 6633
+     }
+    },
+    "started_utc": "2026-10-27T19:13:50.249Z",
+    "status": 200,
+    "final_url": "https://www.ibm.com/support/pages/node/7294053"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). IBM security bulletin ('26 Oct 2026: Initial Publication') for IBM App Connect Enterprise Toolkit.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Security Bulletin: IBM App Connect Enterprise Toolkit is vulnerable to remote code execution (CVE-2026-109618, CVE-2026-109619)\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/ibm/ibm-node-7294053`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nIBM security bulletin ('26 Oct 2026: Initial Publication') for IBM App Connect Enterprise Toolkit.\n\n> Security Bulletin: IBM App Connect Enterprise Toolkit is vulnerable to remote code execution (CVE-2026-109618, CVE-2026-109619)\n\n> 13.0.1.0 - 13.0.9.0\n\n> 12.0.1.0 - 12.0.12.31\n\n> This ifix disables pattern generation using the PHP API for user-defined patterns.\n\n> 26 Oct 2026: Initial Publication\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): IBM security bulletin: IBM App Connect Enterprise Toolkit pattern generation using a PHP API is vulnerable to CVE-2026-109618 and CVE-2026-109619 (CVSS 9.2).\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:50Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "ictjournal-news-2026-10-22-deux-failles-critiques-d",
@@ -14595,6 +15141,56 @@
   "notes": "Row written by claude-newsroom-lead from the capture's provenance.json: the collector-news agent stopped before writing it. The publisher is the host name, and the publication time has not been read from the page yet.",
   "raw_sha256": {},
   "has_notes": false
+ },
+ {
+  "slug": "johnson-controls-jci-psa-2026-24",
+  "url": "https://tyco.widen.net/s/pjjcj5sd2m/jci-psa-2026-24-v2-1",
+  "publisher": "Johnson Controls",
+  "kind": "vendor",
+  "title": "JCI-PSA-2026-24-v2-1.pdf",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "78fe4631fa31156cecb19791fa5503e6fb52b6b2756af8f8d03e5192399e3ca1",
+      "bytes": 551
+     },
+     "page.html": {
+      "sha256": "9c5a617847b863c170e8f36129751acbd31231e9ad24db6f91539d3dfbaa7836",
+      "bytes": 24558
+     },
+     "provenance.json": {
+      "sha256": "83d036bb1cdb730aca5b43cc0eeaf464629b9657d5d0c23b031d0696905d1da0",
+      "bytes": 1599
+     },
+     "rendered.html": {
+      "sha256": "afa90259af8f09c89dee0fdb052163b98ed9a24d0bbbb962a323ee966ec9aea9",
+      "bytes": 103577
+     },
+     "screenshot.jpg": {
+      "sha256": "151dc6f89fcb4b3f3db9739ea4e6ca266a6ecd428a2d354fd40379b7eb65788f",
+      "bytes": 99267
+     },
+     "text.txt": {
+      "sha256": "dfa8b3f1d70c6b0928578e6b7c60121c787947f5f95287206507e271b18a1eef",
+      "bytes": 4870
+     }
+    },
+    "started_utc": "2026-10-27T19:13:51.867Z",
+    "status": 200,
+    "final_url": "https://tyco.widen.net/s/pjjcj5sd2m/jci-psa-2026-24-v2-1"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Johnson Controls product security advisory JCI-PSA-2026-24 (a PDF in a web viewer; the text layer splits words and digits, so 'October 2 2 , 2026' reads October 22, 2026; last updated October 23). Evaluating impact; Illustra cameras and Visonic PowerManage have patches.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# JCI-PSA-2026-24-v2-1.pdf\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `ie/security-vendor/johnson-controls/jci-psa-2026-24`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nJohnson Controls product security advisory JCI-PSA-2026-24 (a PDF in a web viewer; the text layer splits words and digits, so 'October 2 2 , 2026' reads October 22, 2026; last updated October 23). Evaluating impact; Illustra cameras and Visonic PowerManage have patches.\n\n> Patch available\n\n> Visonic\n\n> Power Manage\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Johnson Controls JCI-PSA-2026-24 v2.1 (PDF viewer): evaluating impact; table of analysed products needing mitigation, with patches available for Illustra cameras.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:51Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "journalducanada-php2shell-des-serveurs-exposes-a-une-cyb",
@@ -16972,6 +17568,56 @@
   "notes_md": "# What are the two PHP vulnerabilities behind a global rush to update\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `in/news/medianama/2026-10-223-php-vulnerabilities-global-rush-update`, snapshot `20261023T080331Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T080331Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAZDHAN: the flaws were disclosed on 21 October with patches and named 'php2shell' by Ryan Austin at Calif, who published a paper. It says PHP 5.4 through 8.5.11 are vulnerable, India's CERT-In rates the risk high, and CERT-EU and CISA also issued advisories.\n\n> remote code execution and complete system compromise.\n\n## Why it is here\n\nNot from the promotion queue. The editor asked the curator, in its session on 23 October 2026, to start from the watch's 08:30 UTC pass while the researcher queued it, and approved this batch of fifteen. Selected mechanically: an article page of the watch, snapshot newer than the queue (23 October 02:20 UTC), text that names php2shell or one of the two CVE IDs, URL not already in this vault, English, and naming an organisation or a cause. Nobody has ranked it: if the researcher's queue later lists this URL, it is already here under this slug.\n\n## Capture notes\n\nLanguage `en`; the text extract is the watch reader's, the page as served is in `captures/20261023T080331Z/page.html`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "microsoft-dotnet-october-2026-oob-security-updates",
+  "url": "https://devblogs.microsoft.com/dotnet/dotnet-october-2026-oob-security-updates/",
+  "publisher": "Microsoft",
+  "kind": "vendor",
+  "title": ".NET October 2026 Out-of-Band Security Updates - .NET Blog",
+  "published": "2026-10-25",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "56362570c5cbdc544d1b7119fa22e7388c3fa5e5d925016e4396cd9d044513ef",
+      "bytes": 1486
+     },
+     "page.html": {
+      "sha256": "def17ea5a2074872b1f14d3d1cd963b038b7944b97732bd6cc3cb8d801b00542",
+      "bytes": 231295
+     },
+     "provenance.json": {
+      "sha256": "ec12e00b3c65d811934240969ecc4e54c24fde03b7a3c0bfd0af62a21563cf56",
+      "bytes": 1733
+     },
+     "rendered.html": {
+      "sha256": "1c86756ed8c89c2b0ab2f4b7387f0faf8b6c8c8a0aaca4ef32727d79fa766ded",
+      "bytes": 268419
+     },
+     "screenshot.jpg": {
+      "sha256": "3308d650aa1674c525b3a972f79ecb378c42c917b604eabe0cc7823e933ef00d",
+      "bytes": 326577
+     },
+     "text.txt": {
+      "sha256": "e9df8ee70c7bf32f3f918270e2854454217065395cb51456492642b85327f8d0",
+      "bytes": 8348
+     }
+    },
+    "started_utc": "2026-10-27T19:14:24.558Z",
+    "status": 200,
+    "final_url": "https://devblogs.microsoft.com/dotnet/dotnet-october-2026-oob-security-updates/"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 1 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Microsoft's .NET Blog (Rahul Bhandari, 'October 25th, 2026'): out-of-band security updates for .NET 8, 9, 10 and 11 RC3 addressing CVE-2026-111497 (Brotli) and CVE-2026-114148.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# .NET October 2026 Out-of-Band Security Updates - .NET Blog\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/microsoft/dotnet-october-2026-oob-security-updates`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nMicrosoft's .NET Blog (Rahul Bhandari, 'October 25th, 2026'): out-of-band security updates for .NET 8, 9, 10 and 11 RC3 addressing CVE-2026-111497 (Brotli) and CVE-2026-114148.\n\n> This out-of-band release addresses CVE-2026-111497, a vulnerability in the Brotli decompression algorithm.\n\n> Request decompression and automatic response decompression are not enabled by default. .NET Framework is not affected.\n\n> .NET 8 8.0.33\n\n> .NET 9 9.0.22\n\n> .NET 10 10.0.14\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): .NET Blog (Microsoft, 25 Oct 2026): out-of-band updates for .NET 8, 9, 10 and 11 RC3 fix CVE-2026-111497, a buffer overflow in .NET's use of the Brotli decoder (also CVE-2026-114148). The MSRC record for CVE-2026-111497 rendered empty to the watch.\n\nSupports: the related Brotli flaw (CVE-2026-111497, \"Broccoli2Shell\"): vendor fix; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-US`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:24Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "miltonkeynes-must-read-astra-security-launches-free-t",
   "url": "https://www.miltonkeynes.co.uk/must-read/astra-security-launches-free-tools-to-help-organisations-identify-php2shell-vulnerabilities-9306867",
   "publisher": "Milton Keynes Citizen",
@@ -17020,6 +17666,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Astra Security launches free tools to help organisations identify PHP2Shell vulnerabilities\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/news/miltonkeynes/must-read-astra-security-launches-free-tools-to-help-organis`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nMilton Keynes Citizen, 23 October: a syndicated press release from Astra Security, a security vendor, announcing two free tools to help organisations assess their exposure to PHP2Shell and support remediation. Vendor marketing, repeated by several local news sites with the same text (also in the Peterborough Telegraph, Sunderland Echo and SussexWorld captures). The curator did not fetch or run the tools.\n\n> Astra Security has released two free tools to help organisations assess their exposure to the recently disclosed PHP2Shell vulnerabilities and support remediation efforts.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Astra Security launches free tools to help organisations identify PHP2Shell vulnerabilities\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "mitel-misa-2026-0008",
+  "url": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0008",
+  "publisher": "Mitel",
+  "kind": "vendor",
+  "title": "Mitel Product Security Advisory MISA-2026-0008 | Mitel",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "e353a49f9ad20b594aa32578e6e2a713ffd7b9b7e74c353100a9a88c7c8326d6",
+      "bytes": 1480
+     },
+     "page.html": {
+      "sha256": "ad7b3eac1edb286c30b36609bfce8dba1b1018a622fee1652c824e84cf8f151c",
+      "bytes": 159798
+     },
+     "provenance.json": {
+      "sha256": "e37d1a07ede421b73233d22a0085041b9401093b44ecd50b3afc2d50db8c543c",
+      "bytes": 1685
+     },
+     "rendered.html": {
+      "sha256": "2d9170aa7a03ccb429c39e85ac1faf9dba7219f4e05e6ff7f6cb43c17c409b34",
+      "bytes": 207113
+     },
+     "screenshot.jpg": {
+      "sha256": "b0bcb8ab7a76ec444d9f8f9086f74cca4d69420c4e8f26086fcaf8ab2782a344",
+      "bytes": 580169
+     },
+     "text.txt": {
+      "sha256": "4b75f804a8ad7e35c73cb1a50fe4cf7bd1a7384f6827110724bc5d1da89d16c6",
+      "bytes": 15541
+     }
+    },
+    "started_utc": "2026-10-27T19:13:54.657Z",
+    "status": 200,
+    "final_url": "https://www.mitel.com/support/security-advisories/mitel-product-security-advisory-misa-2026-0008"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Mitel Product Security Advisory MISA-2026-0008 (First Issue Date 2026-10-22, Last Updated 2026-10-27, Revision 5.0).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Mitel Product Security Advisory MISA-2026-0008 | Mitel\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `ca/security-vendor/mitel/mitel-misa-2026-0008`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nMitel Product Security Advisory MISA-2026-0008 (First Issue Date 2026-10-22, Last Updated 2026-10-27, Revision 5.0).\n\n> Mitel is actively investigating the impact of CVE-2026-109618 and CVE-2026-109619 on Mitel software and hardware appliances.\n\n> Specifically, Unify Phone and CloudLink services are not affected by these vulnerabilities\n\n> MiVoice 5000 Affected R8.4 and earlier\n\n> First Issue Date: 2026-10-22\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mitel MISA-2026-0008: advisory on CVE-2026-109618 and CVE-2026-109619 listing affected Mitel products; site banner says some Mitel sites were temporarily blocked.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-US`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:54Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "moncloa-2026-10-22-vulnerabilidad-php2shell-fall",
@@ -17186,6 +17882,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Morocco’s DGSSI Warns of Critical ‘PHP2Shell’ Vulnerabilities\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `gb/news/moroccoworldnews/2026-10-343335-moroccos-dgssi-warns-of-critical-php2shell-vu`, snapshot `20261023T080331Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T080331Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nOumaima Moho Amer: Morocco's DGSSI issued a critical bulletin, reference 69782110/26, on the two flaws, saying proof-of-concept code is available. PHP is used by 75.4% of .ma sites whose server language is identifiable, per W3Techs.\n\n> published the bulletin on Wednesday under reference number 69782110/26\n\n## Why it is here\n\nNot from the promotion queue. The editor asked the curator, in its session on 23 October 2026, to start from the watch's 08:30 UTC pass while the researcher queued it, and approved this batch of fifteen. Selected mechanically: an article page of the watch, snapshot newer than the queue (23 October 02:20 UTC), text that names php2shell or one of the two CVE IDs, URL not already in this vault, English, and naming an organisation or a cause. Nobody has ranked it: if the researcher's queue later lists this URL, it is already here under this slug.\n\n## Capture notes\n\nLanguage `en`; the text extract is the watch reader's, the page as served is in `captures/20261023T080331Z/page.html`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "moxa-mpsa-260001",
+  "url": "https://www.moxa.com/en/support/product-support/security-advisory/mpsa-260001-moxa%E2%80%99s-response-regarding-cve-2026-109618-and-cve-2026-109619-in-php",
+  "publisher": "Moxa",
+  "kind": "vendor",
+  "title": "Moxa’s Response Regarding CVE-2026-109618 and CVE-2026-109619 in PHP | Moxa",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "a935c9372b3d96b3a4685d6edaa16811de7006ef801f9364c43f40f94a617166",
+      "bytes": 1776
+     },
+     "page.html": {
+      "sha256": "289f8db9773f5b51af3b2c0f42fe8a088a2cdb05c2a273307c5e71eeeec1d719",
+      "bytes": 103004
+     },
+     "provenance.json": {
+      "sha256": "b3fe93180871c5cc19d766e57852d318fffb995c2710f405c7c1dff823f8a269",
+      "bytes": 1810
+     },
+     "rendered.html": {
+      "sha256": "c17465d77c879e774a2ce1d9929987657bebb54231fc875bbf4c27c24795097c",
+      "bytes": 157303
+     },
+     "screenshot.jpg": {
+      "sha256": "1709a09784c12d19158dcb757400d87b33756950aa4e4f5a9c78551918359e52",
+      "bytes": 164030
+     },
+     "text.txt": {
+      "sha256": "a4abb96196a4ac618de6b3a969362120ba24254a77bf6eb86b88fb1fb6cd3e49",
+      "bytes": 5288
+     }
+    },
+    "started_utc": "2026-10-27T19:13:55.870Z",
+    "status": 200,
+    "final_url": "https://www.moxa.com/en/support/product-support/security-advisory/mpsa-260001-moxa%E2%80%99s-response-regarding-cve-2026-109618-and-cve-2026-109619-in-php"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Moxa's response MPSA-260001 (Release Date: Oct 22, 2026).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Moxa’s Response Regarding CVE-2026-109618 and CVE-2026-109619 in PHP | Moxa\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `tw/security-vendor/moxa/moxa-mpsa-260001`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nMoxa's response MPSA-260001 (Release Date: Oct 22, 2026).\n\n> Moxa has determined that none of our products are affected.\n\n> Release Date: Oct 22, 2026\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Moxa MPSA-260001 (22 Oct): Moxa has determined that none of its products are affected.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-us`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:55Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "mt-tech-2026-10-24-2026102414170377166",
@@ -17942,6 +18688,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# NCSC NZ alerts listing\n\nCaptured 08:16Z. Top item: \"CVE-2026-109618 and CVE-2026-109619 affecting PHP\", 22 OCTOBER 2026.\n"
+ },
+ {
+  "slug": "netgear-000070960",
+  "url": "https://kb.netgear.com/000070960/NETGEAR-Security-Advisory-for-PHP2SHELL-Vulnerabilities",
+  "publisher": "NETGEAR",
+  "kind": "vendor",
+  "title": "NETGEAR Security Advisory for PHP2Shell Vulnerabilities - NETGEAR Support",
+  "published": "2026-10-22 (last updated; no publication date on the page)",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "0c5ebc2d242be7c5cadd8a2ddbc7ed425c8e317ebf08e62e4bc0f5b3a442ffed",
+      "bytes": 1313
+     },
+     "page.html": {
+      "sha256": "ec745398f901ed633b56c6c7f4f8932807f0d3974cd30b0cfc61158d5cf2a5d9",
+      "bytes": 125019
+     },
+     "provenance.json": {
+      "sha256": "325536c6f52d6cdf62e1d24fdb27bfcd9094cf6e427a08f94f348d2a8ede3a5f",
+      "bytes": 1683
+     },
+     "rendered.html": {
+      "sha256": "c4d40d04ba81ac0c8c05d0e2c65da1d14e473fa323f083bda37d00f8decf9fd4",
+      "bytes": 175211
+     },
+     "screenshot.jpg": {
+      "sha256": "4046bce41398a160760895aadad0a4bb1a151f5f8e8018ac4fb8fa1df8fcc496",
+      "bytes": 240127
+     },
+     "text.txt": {
+      "sha256": "46a663299f104f2fa99eee2acf83b3a6cc2b5f47c6e7bf223a87ea880d2817e8",
+      "bytes": 3413
+     }
+    },
+    "started_utc": "2026-10-27T19:13:56.758Z",
+    "status": 200,
+    "final_url": "https://kb.netgear.com/000070960/NETGEAR-Security-Advisory-for-PHP2SHELL-Vulnerabilities"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). NETGEAR security advisory 000070960 (Last Updated 10/22/2026): six Nighthawk models include PHP.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# NETGEAR Security Advisory for PHP2Shell Vulnerabilities - NETGEAR Support\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/netgear/netgear-000070960`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nNETGEAR security advisory 000070960 (Last Updated 10/22/2026): six Nighthawk models include PHP.\n\n> Only the Nighthawk models listed below were found to include PHP components and their actual impact is under review.\n\n> It is not accessible from the Internet by default and cannot be exploited by remote attackers. NETGEAR has not seen any evidence of exploits targeting these devices.\n\n> This advisory will be updated when fixed firmware versions are available for the affected products.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): NETGEAR advisory: only some Nighthawk models include PHP, used for local web management, not reachable from the Internet by default; no evidence of exploits against these devices.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:56Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "netzpolitik-2026-wir-stehen-auf-den-schultern-vieler",
@@ -19936,6 +20732,56 @@
   "notes_md": "# Gravierende Sicherheitslücke bei PHP: Viele Webseiten aus OWL wieder online | nw.de\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `de/news/nw/nachrichten-zwischen-weser-und-rhein-24445654-gravierende-si`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nNeue Westfälische (German), 23 October, regional report from East Westphalia-Lippe. Since Wednesday afternoon (21 October) websites of public bodies and companies were in 'maintenance' or unreachable; by 23 October many were back, including the Hochschule für Musik Detmold, Hochschule Bielefeld, Universität Paderborn, Stadtwerke Bielefeld, Bielefeld's service portal, Stadt Gütersloh, Klinikum Bielefeld, the Lippe road-traffic office and Polizei NRW. Still offline at 18:00 on 23 October: the Kreis Paderborn and the Bielefeld fire brigade. It cites the BSI, Huntress, the federal CERT and the PHP security team, an IT expert's call to take unpatched systems off the network, the Cloudflare chief's statement to Sky News that there had been 'millions' of exploitation attempts worldwide, and a German parliamentary intelligence-oversight chair, Marc Henrichmann, calling it 'a turning point'.\n\n> Offline sind derzeit unter anderem noch die Internetseiten des Kreises Paderborn und der Feuerwehr Bielefeld (Stand: 23. Oktober, 18 Uhr).\n\n_Curator's translation:_ \"Among others, the websites of the Paderborn district and the Bielefeld fire brigade are still offline (as of 23 October, 18:00).\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Neue Westfälische lists East Westphalia-Lippe (OWL) sites that went offline and are back (HfM Detmold, Hochschule Bielefeld, Uni Paderborn, Stadtwerke Bielefeld, City of Gütersloh, Klinikum Bielefeld, Lippe vehicle registration office, NRW Police, Herford). As of 22 Oct 19:00, Westfalenwind, Kreis Paderborn, the Bielefeld fire brigade and Bitel webmail/webhosting were still offline.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Gravierende Sicherheitslücke bei PHP: Viele Webseiten aus OWL wieder online | nw.de\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `de`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "october-cms-php-security-alert",
+  "url": "https://octobercms.com/blog/post/php-security-alert-critical-php-vulnerabilities-and-your-october-cms-sites",
+  "publisher": "October CMS",
+  "kind": "vendor",
+  "title": "PHP Security Alert: Critical PHP Vulnerabilities and Your October CMS Sites - October CMS",
+  "published": "2026-10-21",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "0531366c7a35c784a7982624229d616c7eaea7ccebd983da296fd142d2891880",
+      "bytes": 2776
+     },
+     "page.html": {
+      "sha256": "9f88f847281daddbf0597e5de638050dac5c58422e2c821c7e9d63c890848bc1",
+      "bytes": 37248
+     },
+     "provenance.json": {
+      "sha256": "0efebdf87827c6bd69497e9e350343d148797d5468ffa15b8a036f935417ae1b",
+      "bytes": 1784
+     },
+     "rendered.html": {
+      "sha256": "69c6cef7ad5edbb31f6df5f1117aa1bc2cbef0f9b624f0c4f09ee9591e4e8680",
+      "bytes": 50885
+     },
+     "screenshot.jpg": {
+      "sha256": "9920758d5743602c01d64388c56b1de68ab80e7ff8967af86554070e3ef352ad",
+      "bytes": 664384
+     },
+     "text.txt": {
+      "sha256": "c3443aeb889c48d9fe2579a45118503b7943ef2a644f8e2f5d2d5bb18909fa71",
+      "bytes": 12315
+     }
+    },
+    "started_utc": "2026-10-27T19:13:58.057Z",
+    "status": 200,
+    "final_url": "https://octobercms.com/blog/post/php-security-alert-critical-php-vulnerabilities-and-your-october-cms-sites"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). October CMS blog ('Posted in Announcements on Oct 21, 2026'): the flaws are in PHP, not October CMS; a guide to checking and updating PHP.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP Security Alert: Critical PHP Vulnerabilities and Your October CMS Sites - October CMS\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `au/security-vendor/october-cms/october-cms-php-security-alert`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nOctober CMS blog ('Posted in Announcements on Oct 21, 2026'): the flaws are in PHP, not October CMS; a guide to checking and updating PHP.\n\n> The flaws are in PHP itself, not in October CMS. Every October site on an unpatched PHP is affected, the same as every other PHP application, and no October update can fix it.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): October CMS blog (21 Oct): the flaws are in PHP, not October CMS; every site on unpatched PHP is affected; says working exploits were built against mod_php and PHP-FPM and Cloudflare reported attacks before the fixes.\n\nSupports: project response: CMS ecosystem; early exploitation claims; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:58Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "okaz-technology-na-2272170",
   "url": "https://www.okaz.com.sa/technology/na/2272170",
   "publisher": "عكاظ",
@@ -19976,6 +20822,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# ثغرتان خطيرتان في «PHP» تهددان ملايين المواقع على الإنترنت - أخبار السعودية | صحيفة عكاظ\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `sa/news/okaz/technology-na-2272170`, snapshot `20261024T133450Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T133450Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nOkaz (Arabic, Saudi Arabia), 24 October, a general explainer. It says, citing the Associated Press, that the two flaws, which AI helped to find the risks of, caused disruptions to some government websites and services in the UK, Finland and Japan; that the FBI warned of remote code execution; that PHP's fixes shipped on 21 October (8.2.35, 8.3.36, 8.4.27, 8.5.12) and ENISA urged organisations to inventory PHP systems and prioritise internet-facing servers. It also says early signs of one of the problems had been known since 2024 and that the PHP project acknowledged the delay in handling it reflects a weakness in how security reports are processed and prioritised; no source is named for that last statement.\n\n> وتسببت الثغرتان، اللتان ساعد الذكاء الاصطناعي في اكتشاف مخاطرهما، في اضطرابات طالت بعض المواقع والخدمات الحكومية في بريطانيا وفنلندا واليابان، بالتزامن مع إجراءات عاجلة لتثبيت التحديثات الأمنية ووفقاً لوكالة «أسوشيتد برس».\n\n_Curator's translation:_ \"The two flaws, whose risks AI helped to uncover, caused disruption to some government sites and services in the UK, Finland and Japan, alongside urgent patching, according to the Associated Press.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"ثغرتان خطيرتان في «PHP» تهددان ملايين المواقع على الإنترنت - أخبار السعودية | صحيفة عكاظ\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. The lead image is captioned as AI-generated (site chrome). Nothing in the article text addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "okta-access-gateway-php",
+  "url": "https://trust.okta.com/security-advisories/php-runtime-vulnerabilities-affecting-okta-access-gateway-cve-2026-109618-cve-2026-109619",
+  "publisher": "Okta",
+  "kind": "vendor",
+  "title": "PHP Runtime Vulnerabilities Affecting Okta Access Gateway CVE-2026-109618 / CVE-2026-109619 - Oct 22, 2026",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "5064957de967b54899f5a889de411d3dacc79502fc1361c73a3953da1af8151f",
+      "bytes": 1198
+     },
+     "page.html": {
+      "sha256": "f26c97d1bcb793e6b65088d507730aa18da3271aa36e00dcb88e0d7a414ad555",
+      "bytes": 53606
+     },
+     "provenance.json": {
+      "sha256": "2d98d2729f5889b1e7e9bacadec4b739e302c9a9190a1178dce299b6a4b51519",
+      "bytes": 1817
+     },
+     "rendered.html": {
+      "sha256": "8b7c353b623d77a3a57f17dcc092fed6967ad45393fc6cf959b8b2e16b517394",
+      "bytes": 311587
+     },
+     "screenshot.jpg": {
+      "sha256": "7707f09b0754a3bd35178a68cbfdf89dfc10dc30338d6b707c0a0dc28afb5d2f",
+      "bytes": 155656
+     },
+     "text.txt": {
+      "sha256": "6a603d2fe5f303008ae2c981f107e7cba437b2b9e1ede88116bf1269c2cd73eb",
+      "bytes": 1848
+     }
+    },
+    "started_utc": "2026-10-27T19:14:03.514Z",
+    "status": 200,
+    "final_url": "https://trust.okta.com/security-advisories/php-runtime-vulnerabilities-affecting-okta-access-gateway-cve-2026-109618-cve-2026-109619/"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Okta security advisory on Okta Access Gateway (Oct 22, 2026).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP Runtime Vulnerabilities Affecting Okta Access Gateway CVE-2026-109618 / CVE-2026-109619 - Oct 22, 2026\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/okta/okta-access-gateway-php`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nOkta security advisory on Okta Access Gateway (Oct 22, 2026).\n\n> Customers using Okta Access Gateway appliance versions running PHP 8.3.x prior to 8.3.36 are affected, which includes appliance versions prior to 2026.44.0.\n\n> The Okta Access Gateway’s default configuration mitigates known exploitation of these vulnerabilities.\n\n> The vulnerabilities are resolved in Okta Access Gateway appliance version 2026.44.0, which includes PHP 8.3.36.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Okta advisory (22 Oct): Okta Access Gateway appliances before 2026.44.0 (PHP 8.3.x before 8.3.36) are affected; default configuration mitigates known exploitation; fixed in 2026.44.0.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:03Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "openaccessgovernment-ncsc-issues-warning-over-critical-php-re",
@@ -22143,6 +23039,34 @@
     "started_utc": "2026-10-22T19:17:21.388Z",
     "status": 202,
     "final_url": "https://www.qnap.com/en/security-advisory/qsa-26-18"
+   },
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "6d88dd580b35cd529b83d2f9c7acc0e512380cce4a67360a35ea2f0e17abc459",
+      "bytes": 739
+     },
+     "provenance.json": {
+      "sha256": "f8832ba78dfec0e892afae7449cbf41d3aba8ae0ffe4790587acdead1e4282b1",
+      "bytes": 1661
+     },
+     "rendered.html": {
+      "sha256": "30598c793f7b49e16d9c60b6b8d8585fb20190fb7ac683f2b23e7f05d21e229a",
+      "bytes": 212150
+     },
+     "screenshot.jpg": {
+      "sha256": "11eecc4b5eee26edaf8a688d2ac0c6a3560c5a0a69577566b17d6efc8fdf34a3",
+      "bytes": 413673
+     },
+     "text.txt": {
+      "sha256": "d38eda86da0ed0b48bfd6b9c372af470d68d36a4e501075d8b2a07ef5dd20198",
+      "bytes": 7411
+     }
+    },
+    "started_utc": "2026-10-27T19:14:26.948Z",
+    "status": 202,
+    "final_url": "https://www.qnap.com/en-us/security-advisory/qsa-26-18"
    }
   ],
   "status": "captured",
@@ -22902,6 +23826,52 @@
   "notes_md": "# PHP2Shell(CVE-2026-109618／CVE-2026-109619)のPoCがGitHubで急増、27件を確認 Amazonは公表4日前からサイバー攻撃の試行を観測|セキュリティとITのニュース-セキュリティ対策Lab\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `jp/news/rocket-boys/security-measures-lab-php2shell-poc-exploitation-20261022`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSecurity Measures Lab / Rocket Boys (Japanese), 22 October: proof-of-concept code for PHP2Shell is surging on GitHub. The Korean firm AhnLabs examined 100 related repositories on GitHub on 22 October and counted 27 classified as PoCs; Amazon Threat Intelligence reported attempts from four days before disclosure. The curator did not fetch any of the repositories or code.\n\n> 韓国のセキュリティ企業AhnLabは2026年10月22日、GitHub上の関連リポジトリ100件を調査し、PoCに分類される27件を確認したと公表しました。\n\n_Curator's translation:_ \"On 22 October 2026 the Korean security company AhnLab announced that it had examined 100 related repositories on GitHub and confirmed 27 classified as PoCs.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T171501Z, not necessarily this one):_ Security Measures Lab (Rocket Boys) analysis. Korean security firm AhnLab surveyed GitHub on 22 Oct: of the top 100 non-fork 'php2shell' repos, 99 were related, 46 defensive and 36 attack/PoC, with 27 classed as PoC; the earliest PoC repo was created 20 Oct 19:16 UTC. It also retells Amazon's MadPot observations from 17 Oct and warns about fake PoCs.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 3): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell(CVE-2026-109618／CVE-2026-109619)のPoCがGitHubで急増、27件を確認 Amazonは公表4日前からサイバー攻撃の試行を観測|セキュリティとITのニュース-セキュリティ対策Lab\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `ja`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "rockwell-automation-rockwell-sd1802",
+  "url": "https://www.rockwellautomation.com/en-ro/trust-center/security-advisories/advisory.SD1802.html",
+  "publisher": "Rockwell Automation",
+  "kind": "vendor",
+  "title": "SD1802 | Security Advisory | Rockwell Automation | US",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "98eb5828c0ec9f9a8513c2b581b3062f4b3875110200bb9830b4044a71ecb5c4",
+      "bytes": 7420
+     },
+     "provenance.json": {
+      "sha256": "20bb35d22bfdde2544e98cf4516ea5d3f9aaf7745349f60003c6cbacdf6cf328",
+      "bytes": 1630
+     },
+     "rendered.html": {
+      "sha256": "acffce3b89b3fd918af7bda361aaa0bfd8c553651aad193988a589492fb86915",
+      "bytes": 1113346
+     },
+     "screenshot.jpg": {
+      "sha256": "fe8f377be686bd5ce9a13e7ea80f488e3dfe12980eade414f01939d876f6c651",
+      "bytes": 348666
+     },
+     "text.txt": {
+      "sha256": "2193744521010eaac31b92e4cfdaed279f4dc9b6ec9e26afc8b53ce5677617f2",
+      "bytes": 6269
+     }
+    },
+    "started_utc": "2026-10-27T19:14:03.533Z",
+    "status": 200,
+    "final_url": "https://www.rockwellautomation.com/en-us/trust-center/security-advisories/advisory.SD1802.html"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Rockwell Automation security advisory SD1802 (Published Date October 23, 2026, revision 1.0).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# SD1802 | Security Advisory | Rockwell Automation | US\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/rockwell-automation/rockwell-sd1802`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nRockwell Automation security advisory SD1802 (Published Date October 23, 2026, revision 1.0).\n\n> As of the date of this notice, no Rockwell Automation products have been confirmed as affected.\n\n> Rockwell Automation is reviewing its product portfolio to determine whether any products include or rely on an affected version of PHP.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Rockwell Automation SD1802 (23 Oct): assessing potential impact on Rockwell products; marks KEV \"No\" as of publication.\n\nSupports: vendor response: products affected / not affected (assessment ongoing); board breaking-0002.\n\n## Capture notes\n\nLanguage `en-US`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:03Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "root-zpravicky-utok-na-php2shell-zacal-uz-cty",
   "url": "https://www.root.cz/zpravicky/utok-na-php2shell-zacal-uz-ctyri-dny-pred-zverejnenim-zranitelnosti-tvrdi-amazon/",
   "publisher": "Root.cz",
@@ -23100,6 +24070,56 @@
   "notes_md": "# Alerta por fallos críticos en PHP: riesgo en servidores web\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `es/news/rtve/noticias-20261022-fallos-criticos-php2shell-vulnerabilidades`, snapshot `20261022T181608Z`. Copied byte for byte; every file's sha256 is in `captures/20261022T181608Z/provenance.json`. Publisher: RTVE.es. Language: es. URL: https://www.rtve.es/noticias/20261022/fallos-criticos-php2shell-vulnerabilidades-servidores-alerta-ciberseguridad/17277748.shtml\n\n## What the page says\n\n_The watch reader's English summary (researcher@php.newsroom, languages pass of 22 October 2026), not the publisher's words:_\n\nRTVE describes the global alert, Spain's INCIBE critical notice and the NSA warning. It lists precautionary shutdowns: ITZBund in Germany, French prefecture sites, Belgian portals, Finland, and Czechia's government page.\n\n## Verbatim quotes, with the watch reader's translation\n\nEach quote is in the snapshot as served. The English is the source watch reader's translation (`translations/es/news/rtve/noticias-20261022-fallos-criticos-php2shell-vulnerabilidades.json`), not the publisher's and not checked word for word by the curator.\n\n**agency**: Spain's INCIBE issued a critical alert on PHP2Shell.\n\n> En España, el Instituto Nacional de Ciberseguridad (Incibe) también ha emitido una alerta crítica.\n\n_Watch reader's translation:_ In Spain, the National Cybersecurity Institute (Incibe) has also issued a critical alert.\n\n**offline**: Germany's federal IT provider ITZBund took several pages offline; the German digital ministry said it was precautionary with no security incidents.\n\n> En Alemania, el proveedor federal de servicios informáticos ITZBund ha retirado varias páginas de Internet. El Ministerio de Digitalización germano ha aclarado que se trataba de una medida de precaución y que no se habían registrado incidentes de seguridad.\n\n_Watch reader's translation:_ In Germany, the federal IT service provider ITZBund has taken several pages off the internet. The German Digital Ministry clarified it was a precautionary measure and that no security incidents had been recorded.\n\n**offline**: France's Interior Ministry temporarily disabled prefecture websites pending the fix.\n\n> En Francia, el Ministerio del Interior ha desactivado temporalmente las webs de las prefecturas a la espera de aplicar la corrección de seguridad.\n\n_Watch reader's translation:_ In France, the Interior Ministry has temporarily deactivated the prefectures' websites pending application of the security fix.\n\n**agency**: Belgium's cybersecurity centre confirmed it had recorded no attacks in the country.\n\n> su centro de ciberseguridad confirmó que no había registrado ataques en el país\n\n_Watch reader's translation:_ its cybersecurity centre confirmed it had not recorded attacks in the country\n\n**offline**: Czechia took its government web page offline to install updates.\n\n> Chequia ha desconectado su página gubernamental para instalar las actualizaciones necesarias.\n\n_Watch reader's translation:_ Czechia has disconnected its government web page to install the necessary updates.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): 5 new items in es: RTVE describes the global alert, Spain's INCIBE critical notice and the NSA warning. It lists precautionary shutdowns: ITZBund in Germany, French prefecture sites, Belgian portals, Finland, and Czechia's government page.\n\nSupports: translations/es/news/rtve/noticias-20261022-fallos-criticos-php2shell-vulnerabilidades.json\n\n## Capture notes\n\nscreenshot.jpg is the source watch's JPEG, copied as stored (not converted to PNG).\n\nPage content is third-party material, kept as evidence; nothing in it is an instruction.\n"
  },
  {
+  "slug": "ruckus-bulletin-339",
+  "url": "https://support.ruckuswireless.com/security_bulletins/339",
+  "publisher": "Ruckus Networks",
+  "kind": "vendor",
+  "title": "20261023 | Security Bulletins | Ruckus Wireless Support",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "36f012fb9e6929277fb6cf347e692ef3c40f9844f4ff1e0ab627067282fe4fa3",
+      "bytes": 1721
+     },
+     "page.html": {
+      "sha256": "3182ed826ddfb4382cb9f9466edc134cb70af4edfc51a85ecc18f44b0511c266",
+      "bytes": 236575
+     },
+     "provenance.json": {
+      "sha256": "da925e1bbec0988abc0e9804c9deb426267accaa1d22aa336c749704fbf5c531",
+      "bytes": 1607
+     },
+     "rendered.html": {
+      "sha256": "51f7bb225349f9ccf3474af86f63fa992ee3bef8764dad0e23de9e9b788f7453",
+      "bytes": 238531
+     },
+     "screenshot.jpg": {
+      "sha256": "9345de3149f3a46008c50c8219f9cf9a8925e64e121f1697dc8920f6a0e10c79",
+      "bytes": 806732
+     },
+     "text.txt": {
+      "sha256": "b456df1ba9edbf36c05422de361fc0c1f32e9c31aa97ce12b0a8d3a2307d9e26",
+      "bytes": 46691
+     }
+    },
+    "started_utc": "2026-10-27T19:14:06.201Z",
+    "status": 200,
+    "final_url": "https://support.ruckuswireless.com/security_bulletins/339"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). RUCKUS security bulletin 20261023 (Release Date October 23, 2026; Edit Date October 26, version 1.1).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# 20261023 | Security Bulletins | Ruckus Wireless Support\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/ruckus/ruckus-bulletin-339`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nRUCKUS security bulletin 20261023 (Release Date October 23, 2026; Edit Date October 26, version 1.1).\n\n> Current assessment indicates that the evaluated RUCKUS products are not vulnerable.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): RUCKUS Security Bulletin 20261023 (v1.1, 26 Oct): current assessment indicates the evaluated RUCKUS products are not vulnerable.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:06Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "safeguard-how-hard-to-exploit",
   "url": "https://safeguard.sh/resources/blog/php2shell-how-hard-to-exploit-php-foundation-changes",
   "publisher": "Safeguard (vendor blog)",
@@ -23260,6 +24280,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell WAF rules: what they block and where they fall short | Safeguard Blog\n\nCaptured by claude-story-site. Status: captured. Secondary comparison of what each WAF vendor said about its own rules; the direct-to-origin check; quotes Cloudflare's CTO 'STOPGAP only' via Reuters/KSL.\n\n- A vendor's round-up, not tested. Records Cloudflare's seven rules per ruleset plus a response-side rule, 03:02 UTC; Akamai 3000991; no AWS managed rule found.\n- 'A response rule cannot undo code that already ran.' 'The WAF only sees what passes through it.'\n- Note: the page's navigation lists model prices, including Anthropic models; irrelevant to the story.\n"
+ },
+ {
+  "slug": "salesforce-general-message-20000267",
+  "url": "https://status.salesforce.com/generalmessages/20000267",
+  "publisher": "Salesforce",
+  "kind": "vendor",
+  "title": "Trust Status",
+  "published": "2026-10-21T20:12Z",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "3b0eb64d720666ad9be0b85947e8e01d0dee03c8efd90b5be25540605650cc0a",
+      "bytes": 1197
+     },
+     "page.html": {
+      "sha256": "0d2c647dbce7755a2b36a94cc47e03924ddcc32b8b24069629030479791f0511",
+      "bytes": 1507
+     },
+     "provenance.json": {
+      "sha256": "676bfc0fbd8e401d8d5a6a076e7ac9511abb80db7b7d064175be69c44d2af30e",
+      "bytes": 1594
+     },
+     "rendered.html": {
+      "sha256": "190f5ab8d1b1d70cddfb9135e5d540ba45916de4448cc400152566d37de73afc",
+      "bytes": 185801
+     },
+     "screenshot.jpg": {
+      "sha256": "d8e9ec3010babf8f3d624b344a36c9f981a3b1a772055d858d97e79edb9f8244",
+      "bytes": 72030
+     },
+     "text.txt": {
+      "sha256": "d6894325bcc726b836eb4c597982b32c376c776257db9e57f5446ffecd267a7f",
+      "bytes": 1689
+     }
+    },
+    "started_utc": "2026-10-27T19:14:10.451Z",
+    "status": 200,
+    "final_url": "https://status.salesforce.com/generalmessages/20000267"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Salesforce Trust status message 20000267 ('Posted 8:12 pm GMT, Oct 21 2026 · Last updated 4:08 pm GMT, Oct 27 2026').",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Trust Status\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/cloud/salesforce/salesforce-general-message-20000267`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nSalesforce Trust status message 20000267 ('Posted 8:12 pm GMT, Oct 21 2026 · Last updated 4:08 pm GMT, Oct 27 2026').\n\n> no Salesforce products are affected by the recently disclosed PHP vulnerabilities (CVE-2026-109618 and CVE-2026-109619), with the exception of Informatica where expedited patching is in pr\n\n> At this time, we have no evidence of exploitation affecting Salesforce or customer data.\n\n> Posted 8:12 pm GMT, Oct 21 2026\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Salesforce Trust status message 20000267 (updated 27 Oct 16:08 UTC): no Salesforce products affected except Informatica, where expedited patching is in progress; no evidence of compromise of customers or data.\n\nSupports: vendor response: products affected / not affected; no evidence of compromise; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:10Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "salzburg24-news-oesterreich-massive-sache-folgen-der-php-sic",
@@ -24710,6 +25780,106 @@
   "notes_md": "# เว็บไซต์ปิดตัวทั่วโลก หลังพบช่องโหว่ PHP แพลตฟอร์มคริปโทฯ เสี่ยงได้รับผลกระทบ\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `th/news/siamblockchain/2026-10-22-crypto-exchange-hack-alert-php2shell-risk`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSiam Blockchain (Thai), 22 October: the Thai-language version of the BeInCrypto crypto-exchange warning recorded as nl-beincrypto-crypto-exchange-hack-waarschuwing-php2sh (it quotes the same tweet by CZ and the same SlowMist and Wiz Research points, and the same three at-risk categories). Cloudflare confirmed attackers tried to exploit the flaws and many sites worldwide went offline as a precaution. The claim about the absence of confirmed exchange compromises is recorded on the Dutch edition.\n\n> Cloudflare ก็ได้ยืนยันว่ามิจฉาชีพได้พยายามฉวยโอกาสในเหตุการณ์ดังกล่าวเพื่อหาผลประโยชน์\n\n_Curator's translation:_ \"Cloudflare has also confirmed that fraudsters have tried to take advantage of the event for gain.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Siam Blockchain: PHP2Shell risks for crypto platforms (payment gateways, small exchanges, DeFi front-ends). Embeds a warning tweet from Binance founder CZ and SlowMist's announcement that its MistEye system scanned crypto-industry PHP assets worldwide. No exchange hack confirmed.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"เว็บไซต์ปิดตัวทั่วโลก หลังพบช่องโหว่ PHP แพลตฟอร์มคริปโทฯ เสี่ยงได้รับผลกระทบ\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `th`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "siemens-ssa-566435",
+  "url": "https://cert-portal.siemens.com/productcert/html/ssa-566435.html",
+  "publisher": "Siemens ProductCERT",
+  "kind": "vendor",
+  "title": "SSA-566435",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "bfdb8f8994d5b66c5d33c4a2bc0abb7a736c79619714cf9b83cd24850430cb77",
+      "bytes": 625
+     },
+     "page.html": {
+      "sha256": "8dc6e0d2b303cfd0221e3a22d99230827910f664cd44ed787adecbfe76a57dda",
+      "bytes": 63245
+     },
+     "provenance.json": {
+      "sha256": "0d8ead298353eff55e05181795eb45b1d835ca08a0b6eccd7f350ff455e6b55b",
+      "bytes": 1575
+     },
+     "rendered.html": {
+      "sha256": "e41e040809e582bd246d4df7460173d08463928d380a51086b1abca407db5c6a",
+      "bytes": 63157
+     },
+     "screenshot.jpg": {
+      "sha256": "59d2efb68244f874fd1a665eb3cf019e3c86d93dc0e0e70fe40ed61c6b05539a",
+      "bytes": 352970
+     },
+     "text.txt": {
+      "sha256": "84a1a35cd2a48164fdc119074d06ede90fb9fac638e819e47833ce55c6541792",
+      "bytes": 7049
+     }
+    },
+    "started_utc": "2026-10-27T19:14:13.453Z",
+    "status": 200,
+    "final_url": "https://cert-portal.siemens.com/productcert/html/ssa-566435.html"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Siemens ProductCERT SSA-566435 (Publication Date 2026-10-23, Last Update 2026-10-26): a list of Siemens software products known not affected.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# SSA-566435\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `de/security-vendor/siemens/siemens-ssa-566435`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nSiemens ProductCERT SSA-566435 (Publication Date 2026-10-23, Last Update 2026-10-26): a list of Siemens software products known not affected.\n\n> SSA-566435: PHP2Shell Vulnerabilities in Siemens Software Products\n\n> KNOWN NOT AFFECTED PRODUCTS\n\n> PHP is not present in this product (Component Not Present)\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Siemens SSA-566435 (V1.1, 26 Oct): status of Siemens software products; lists many as not affected (PHP not present).\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:13Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "siemens-ssa-566512",
+  "url": "https://cert-portal.siemens.com/productcert/html/ssa-566512.html",
+  "publisher": "Siemens ProductCERT",
+  "kind": "vendor",
+  "title": "SSA-566512",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "ad7f63df585ebdab7550122895168e5d5e4e05ef909d9fbae9b193da9d965abc",
+      "bytes": 626
+     },
+     "page.html": {
+      "sha256": "a43a183b1db393a9b0f4b16083e58c4d520944de2fc76d1b3896ef0b16486d81",
+      "bytes": 24399
+     },
+     "provenance.json": {
+      "sha256": "f7b191ed460d9f64d93422201576c05aa79d4280c84d690c2a82e0f658cea93b",
+      "bytes": 1575
+     },
+     "rendered.html": {
+      "sha256": "3a627369dd2ac20245aec8218b08e051597b206ad895d02ba63ff23012cd9955",
+      "bytes": 24491
+     },
+     "screenshot.jpg": {
+      "sha256": "e71412f1ec6874dfa9917caf0e299ca6a895f35b266d4530833f8acbc8426cf7",
+      "bytes": 192141
+     },
+     "text.txt": {
+      "sha256": "8e38f34ce5c991507269739f7c9d2e4921732660427ba36bbeab9f938b130654",
+      "bytes": 3781
+     }
+    },
+    "started_utc": "2026-10-27T19:14:12.995Z",
+    "status": 200,
+    "final_url": "https://cert-portal.siemens.com/productcert/html/ssa-566512.html"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Siemens ProductCERT SSA-566512 (Publication Date 2026-10-23), following Palo Alto Networks' PAN-OS advisory.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# SSA-566512\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `de/security-vendor/siemens/siemens-ssa-566512`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nSiemens ProductCERT SSA-566512 (Publication Date 2026-10-23), following Palo Alto Networks' PAN-OS advisory.\n\n> SSA-566512: PHP2Shell Vulnerabilities in Palo Alto Networks PAN-OS on RUGGEDCOM APE1808 Devices\n\n> All versions with Palo Alto Networks PAN-OS (10.2 All, 11.1 All, 11.2 All, 12.1 All, 12.2 All)\n\n> Contact customer support to receive patch and update information\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Siemens SSA-566512 (23 Oct): RUGGEDCOM APE1808 running Palo Alto Networks PAN-OS (10.2 to 12.2) is affected by both CVEs, following Palo Alto's upstream notice.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:12Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "silicon-cybersecurite-1371-php2shell-vulnerabili",
   "url": "https://www.silicon.fr/cybersecurite-1371/php2shell-vulnerabilites-php-229863",
   "publisher": "Silicon.fr",
@@ -25233,6 +26403,56 @@
   "notes_md": "# PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fr/news/solutions-numeriques/php2shell-derriere-lurgence-des-correctifs-les-fragilites-de`, snapshot `20261026T170916Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T170916Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSolutions Numériques (French), 26 October: behind the urgency of the PHP2Shell fixes, the fragility of web maintenance. Drawing on the PHP Foundation's account, it says that two years earlier, after a Quarkslab security audit, a developer working for the PHP Foundation had identified the first signs of the memory-handling problem later tied to CVE-2026-109618, that several fixes were studied but each had difficulties (possible incompatibilities, risk of new faults, changes needed across many extensions), that discussions dragged on in a team where only a few developers mastered the mechanisms involved, and that it took work by Calif and OpenAI in August 2026 to show that remote code execution was possible. It then asks who maintains the components the web depends on and with what means, and how companies can patch without interrupting their business.\n\n> Deux ans plus tôt, à la suite d’un audit de sécurité réalisé par Quarkslab, un développeur travaillant pour la PHP Foundation avait identifié les premiers signes d’un problème de gestion de la mémoire, qui sera plus tard associé à CVE-2026-109618.\n\n_Curator's translation:_ \"Two years earlier, following a security audit carried out by Quarkslab, a developer working for the PHP Foundation had identified the first signs of a memory-management problem, later associated with CVE-2026-109618.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell : derrière l’urgence des correctifs, les fragilités de la maintenance du Web\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr-FR`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "sonicwall-php-product-notice",
+  "url": "https://www.sonicwall.com/support/notices/product-notice-sonicwall-products-and-php-vulnerabilities-cve-2026-109618-and-cve-2026-109619/kA1VN000002YKw10AG",
+  "publisher": "SonicWall",
+  "kind": "vendor",
+  "title": "Product Notice: SonicWall Products and PHP Vulnerabilities CVE-2026-109618 and CVE-2026-109619",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "ac69f8ea53ba50ba872a343f8069d9ba816c73a32002661e9eb923456ad07593",
+      "bytes": 5931
+     },
+     "page.html": {
+      "sha256": "e758a61dfa5217cbea533698161b8290f48c12117f46c1cba06aa70858c235c6",
+      "bytes": 222027
+     },
+     "provenance.json": {
+      "sha256": "f54e6801c513a73b9fbf032d098d4d9ab8fe138f9c540745214660d2874874ea",
+      "bytes": 1873
+     },
+     "rendered.html": {
+      "sha256": "d745124635483f3388390ac9c42bb6b9e4bae7bdf4ab1d33f9c4a3b3a1053f8f",
+      "bytes": 307307
+     },
+     "screenshot.jpg": {
+      "sha256": "a56550968b4ac99659c83ba848c9256112b0be543f8edb098f9baedd71c8121d",
+      "bytes": 106523
+     },
+     "text.txt": {
+      "sha256": "b29a79a85a7a94a6c8c34a4095a24fec5730263df435d53a6911dee5b25015de",
+      "bytes": 3598
+     }
+    },
+    "started_utc": "2026-10-27T19:14:15.537Z",
+    "status": 200,
+    "final_url": "https://www.sonicwall.com/support/notices/product-notice-sonicwall-products-and-php-vulnerabilities-cve-2026-109618-and-cve-2026-109619/kA1VN000002YKw10AG"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). SonicWall product notice (PUBLISHED: OCTOBER 22, 2026; LAST UPDATED: OCTOBER 27, 2026).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Product Notice: SonicWall Products and PHP Vulnerabilities CVE-2026-109618 and CVE-2026-109619\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/sonicwall/sonicwall-php-product-notice`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nSonicWall product notice (PUBLISHED: OCTOBER 22, 2026; LAST UPDATED: OCTOBER 27, 2026).\n\n> The SonicWall Product Security Incident Response Team (PSIRT) performed an initial review and found no use of PHP in the following products. Based on this review, SonicWall has no indication that these CVEs apply to them.\n\n> This is the current assessment and is not a statement covering the entire SonicWall portfolio.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): SonicWall product notice (22 Oct, updated 27 Oct): PSIRT found no use of PHP in SonicOS, SMA 1000, NSM and other listed products; IPS signatures released.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:15Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "spacemoney-tecnologia-php2shell-falha-critica-php",
   "url": "https://www.spacemoney.com.br/tecnologia/php2shell-falha-critica-php/",
   "publisher": "SpaceMoney",
@@ -25281,6 +26501,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell: falha crítica no PHP exige correção imediata\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `br/news/spacemoney/tecnologia-php2shell-falha-critica-php`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSpaceMoney (Brazil, Portuguese), 22 October: a general explainer saying the flaw sits in the PHP engine, not an application, so sites on platforms such as WordPress, Drupal and Joomla can be affected if the PHP version is vulnerable; that Wiz, which discovered and reported the flaws, describes two CVEs scored up to 9.2; that in demonstrations Wiz achieved remote code execution without authentication on WordPress, Drupal and Joomla and read sensitive process data (passwords, tokens, API keys, certificates); and that every PHP version of the last decade, from 5.4, has at least one of the flaws. No new facts.\n\n> A linguagem sustenta 70% dos sites do mundo, incluindo WordPress, Drupal e Joomla.\n\n_Curator's translation:_ \"The language underpins 70% of the world's sites, including WordPress, Drupal and Joomla.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ SpaceMoney summarises Wiz's research: the bugs date back to 5.4, Wiz demonstrated RCE on WordPress/Drupal/Joomla, and AI (Wiz Atlas, Gemini 4 Argon, GPT-5.6 Sol) cut exploitation time. It lists the indicators of compromise Wiz suggests.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: falha crítica no PHP exige correção imediata\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `pt-BR`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "splunk-svd-2026-1013",
+  "url": "https://advisory.splunk.com/advisories/SVD-2026-1013",
+  "publisher": "Splunk",
+  "kind": "vendor",
+  "title": "SVD-2026-1013 | Splunk Vulnerability Disclosure",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "215e583e7ff4c7c02a693bfd0eebf7bb5d3fc4f537a56c93040f98d02f602ee3",
+      "bytes": 867
+     },
+     "page.html": {
+      "sha256": "b0fb227b28ac08bc9f626a7b8c52d2e5a8ae3bef4be92842204750730b3863e8",
+      "bytes": 9394
+     },
+     "provenance.json": {
+      "sha256": "d76dad001a3d85bba89c293eeabd16b5e79f7b38710f488f12f3f73c57a37ade",
+      "bytes": 1592
+     },
+     "rendered.html": {
+      "sha256": "2e7a87275ee52e2490cd87ba7a24a9731965ed0a9b03f342a686ef476d56e833",
+      "bytes": 9806
+     },
+     "screenshot.jpg": {
+      "sha256": "06c9b2480ad3a40f1e765a508aa861021710b02d81373a6ba95f967930e70852",
+      "bytes": 221260
+     },
+     "text.txt": {
+      "sha256": "ed343126ffea49624387bf46ba87361504818c4d280c9360fa1c0682e35ce538",
+      "bytes": 3193
+     }
+    },
+    "started_utc": "2026-10-27T19:14:16.285Z",
+    "status": 200,
+    "final_url": "https://advisory.splunk.com/advisories/SVD-2026-1013"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Splunk advisory SVD-2026-1013 (Published 2026-10-22, Last Updated 2026-10-26).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# SVD-2026-1013 | Splunk Vulnerability Disclosure\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/splunk/splunk-svd-2026-1013`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nSplunk advisory SVD-2026-1013 (Published 2026-10-22, Last Updated 2026-10-26).\n\n> If a product is not listed within this advisory, the product is not affected.\n\n> For Smartlook, Splunk remedied the CVEs by upgrading PHP to a fixed version. There is no action for Smartlook customers and Splunk has not found evidence of exploitation.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Splunk SVD-2026-1013 (22 Oct, updated 26 Oct): Splunk Cloud, Enterprise, SOAR and other listed products unaffected.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:16Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "stadt-bremerhaven-synology-sicherheitsupdates-fuer-php-geg",
@@ -25862,6 +27132,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Astra Security launches free tools to help organisations identify PHP2Shell vulnerabilities\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/news/sussexexpress/must-read-astra-security-launches-free-tools-to-help-organis`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSussexWorld, 23 October: the same syndicated Astra Security press release as in the Milton Keynes Citizen capture, announcing two free tools to assess exposure to PHP2Shell. Vendor marketing; the tools were not fetched.\n\n> Astra Security has released two free tools to help organisations assess their exposure to the recently disclosed PHP2Shell vulnerabilities and support remediation efforts.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Astra Security launches free tools to help organisations identify PHP2Shell vulnerabilities\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "synology-sa-26-14",
+  "url": "https://www.synology.com/en-in/security/advisory/Synology_SA_26_14",
+  "publisher": "Synology",
+  "kind": "vendor",
+  "title": "Synology_SA_26_14 | Synology Inc.",
+  "published": "2026-10-22T11:45Z",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2eee7eb720598f627c5beb4f3583c4605a084485a1cb2d5b6295c91bff1ca688",
+      "bytes": 6066
+     },
+     "page.html": {
+      "sha256": "bb8c4becb36f39d6fb6662d8ac13c14a1553e03745216d8d4badef8cb88a50ab",
+      "bytes": 121351
+     },
+     "provenance.json": {
+      "sha256": "3ee381c032d2480e348d6f1e426358904bee3c1543b82b252a6a01f877fa6cb4",
+      "bytes": 1601
+     },
+     "rendered.html": {
+      "sha256": "0c85571fffbc0191b60fa1d78902661f351d8da0da0c15573d3b40da646dfc96",
+      "bytes": 140448
+     },
+     "screenshot.jpg": {
+      "sha256": "38a10057a15ee9570e7f0e77394036eb9a56d6b04ee8fb70672fc895b09ecaeb",
+      "bytes": 277018
+     },
+     "text.txt": {
+      "sha256": "400996d23bba87164d73b24106ecb30f8426fb2451efbcc3548ae6ffa884fc65",
+      "bytes": 3679
+     }
+    },
+    "started_utc": "2026-10-27T19:14:16.597Z",
+    "status": 200,
+    "final_url": "https://www.synology.com/en-in/security/advisory/Synology_SA_26_14"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Synology-SA-26:14 (Publish Time 2026-10-22 19:45:00 UTC+8; Last Updated 2026-10-26 21:41:19 UTC+8).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Synology_SA_26_14 | Synology Inc.\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `tw/security-vendor/synology/synology-sa-26-14`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nSynology-SA-26:14 (Publish Time 2026-10-22 19:45:00 UTC+8; Last Updated 2026-10-26 21:41:19 UTC+8).\n\n> Synology Calendar Critical Upgrade to 3.0.4-21435 or above.\n\n> Mail Station Critical Upgrade to 30000002.3.19-20333 or above.\n\n> PHP 7.3 Critical No fix will be provided as this version has reached end of life.\n\n> PHP 8.4 Critical Upgrade to 8.4.27-0051 or above.\n\n> Hyper Backup Not affected\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Synology-SA-26:14 (updated 26 Oct): Synology Calendar, Mail Station and DSM PHP packages 7.3 to 8.4 critical, fixed releases listed (PHP 7.3 no fix, end of life); Hyper Backup not affected.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-in`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:16Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "tagesanzeiger-php-sicherheitsluecke-millionen-hackeran",
@@ -27248,6 +28568,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# “ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `th/news/thansettakij/economy-672045`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThansettakij (Thailand, Thai), 22 October, by Metha Sakawarat: Minister Pharadon Prissananantakul, who oversees the National Cyber Security Agency (NCSA), directed the NCSA to watch for and respond to the critical 'PHP2Shell' flaws; NCSA's ThaiCERT immediately issued a warning to relevant bodies nationwide and raised monitoring. It asks public bodies, organisations and administrators using PHP to inventory their PHP versions (internet-facing systems first), patch as the developer advises, and watch for attacks. Same event as the Post Today item (posttoday-ai-today-750820).\n\n> สกมช. โดยศูนย์ประสานการรักษาความมั่นคงปลอดภัยระบบคอมพิวเตอร์แห่งชาติ (ThaiCERT) ได้ออกประกาศแจ้งเตือนหน่วยงานที่เกี่ยวข้องทั่วประเทศทันที\n\n_Curator's translation:_ \"The NCSA, through the National Computer Emergency Response Team (ThaiCERT), immediately issued a warning to relevant agencies nationwide.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Thansettakij: Minister Paradorn ordered the NCSA to monitor and respond to PHP2Shell on 22 Oct. ThaiCERT issued alerts to agencies nationwide and raised monitoring, focusing on high-risk systems and critical services. It lists three recommended steps.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"“ภราดร” สั่ง สกมช.รับมือด่วน ช่องโหว่ไซเบอร์วิกฤต “PHP2Shell”\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `th`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "the-hacker-news-cisa-confirms-php2shell-exploitation",
+  "url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html",
+  "publisher": "The Hacker News",
+  "kind": "news",
+  "title": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+  "published": "2026-10-27",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "7b257c7d012ab8ff718e8c838ec5905708bd0b5d3130b41a5afb825c8c457c01",
+      "bytes": 854
+     },
+     "page.html": {
+      "sha256": "668ff6b191665a36248505cf5f41340513d01827a3041f9ba0b97ff86f762408",
+      "bytes": 175739
+     },
+     "provenance.json": {
+      "sha256": "1b823de83a79fb5808ac78c84de6b70c84380bd905550dd32d6a46b7ded673a4",
+      "bytes": 1750
+     },
+     "rendered.html": {
+      "sha256": "41054b2f5cef72a9f585f03d3de4cf6e6075cc88e9f0b61ba13063b4786d4ffc",
+      "bytes": 171400
+     },
+     "screenshot.jpg": {
+      "sha256": "af1949f20499f59cf89d2308d5fb31e6586af1d4b3f0fe917b82cd216c34648c",
+      "bytes": 501097
+     },
+     "text.txt": {
+      "sha256": "e0c45db168f660842d168e63b7cf9f6f6c89a11c7adbe45890f0377c078d4019",
+      "bytes": 7474
+     }
+    },
+    "started_utc": "2026-10-27T19:13:36.212Z",
+    "status": 200,
+    "final_url": "https://thehackernews.com/2026/10/cisa-confirms-active-exploitation-of.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 1 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). The Hacker News (Ravie Lakshmanan, 'Oct 27, 2026'): CISA added the two PHP2Shell CVEs to its KEV catalog on Monday (26 October); the addition came after Adel Karimi (Perplexity) confirmed RCE against honeypots on 24 October; fixed in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 (21 October); federal deadline 29 October; Censys estimate of 32.51 million PHP services on an affected version; a list of 38 vendors and projects that published advisories; and the PHP Windows builds of 26 October for CVE-2026-111497 (Brotli, 'Broccoli2Shell'). Third-party reporting: each statement is the publication's, not a primary's.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `in/tech-press/the-hacker-news/cisa-confirms-php2shell-exploitation`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nThe Hacker News (Ravie Lakshmanan, 'Oct 27, 2026'): CISA added the two PHP2Shell CVEs to its KEV catalog on Monday (26 October); the addition came after Adel Karimi (Perplexity) confirmed RCE against honeypots on 24 October; fixed in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 (21 October); federal deadline 29 October; Censys estimate of 32.51 million PHP services on an affected version; a list of 38 vendors and projects that published advisories; and the PHP Windows builds of 26 October for CVE-2026-111497 (Brotli, 'Broccoli2Shell'). Third-party reporting: each statement is the publication's, not a primary's.\n\n> The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog.\n\n> The addition of the two flaws to the KEV catalog comes after Adel Karimi, detection and response lead at Perplexity, confirmed successful instances of remote code execution against honeypot systems on October 24, 2026.\n\n> The evidence demonstrates this chain on the intentionally favorable single-worker mod_php profile; it is not a measurement of exploit reliability on other worker counts, PHP builds, or applications.\n\n> The issues have been addressed in PHP versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 released on October 21, 2026. Federal agencies have time until October 29, 2026, to apply the necessary fixes.\n\n> According to estimates shared by Censys, more than 32.51 million PHP services are still running an affected version.\n\n> As of October 26, 2026, the PHP Foundation also released Windows builds 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 to address CVE-2026-111497\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): The Hacker News (Ravie Lakshmanan, 27 Oct 2026): CISA added CVE-2026-109618 and CVE-2026-109619 to KEV on Monday; Adel Karimi (Perplexity) confirmed RCE against honeypots on 24 Oct; Censys counts 32.51 million PHP services on an affected version; lists about 40 vendor advisories and notes CVE-2026-111497 (Brotli, \"Broccoli2Shell\") fixed in PHP Windows builds of 26 Oct.\n\nSupports: exploitation confirmed (KEV listing, honeypot RCE); the list of vendor responses; exposure count; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:36Z. The page quotes Karimi on the technique (a cookie dump and offsets from a public exploit); that detail is left in the capture and not repeated here. THN links Karimi's post (x.com/0x4D31/status/2114027420084752479), which the vault does not hold.\n"
  },
  {
   "slug": "the-next-web-php2shell-no-confirmed-breaches",
@@ -29180,6 +30550,56 @@
   "notes_md": "# Celah PHP2Shell Ancam 33 Juta Situs, Serangan Siber Melonjak\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/uzone/celah-php2shell-ancam-33-juta-situs-serangan-siber-melonjak`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nUzone.id (Indonesia), 23 October, by Vina Insyani: PHP2Shell 'threatens 33 million sites, cyber attacks surge'. Citing TechCrunch and Malwarebytes, it says the two flaws (9.2 on CVSS) were published on 21 October, that PHP runs about 70% of websites (the number of sites using it, per TechCrunch, exceeds 33 million), and that 'exploitation is already massive, even affecting 32 UK government services that were deactivated, and sites such as the BBC, the Internet Archive, Wikipedia and 4chan'. That sentence runs together precautionary shutdowns and exploitation; other items in the vault describe the 32 UK services as suspended as a precaution (vietnamnet-website-toan-cau-hung-chiu-hang-trieu-do).\n\n> Eksploitasi sudah terjadi secara masif, bahkan memengaruhi 32 layanan pemerintah Inggris yang dinonaktifkan, serta situs seperti BBC, Internet Archive, Wikipedia, dan 4Chan.\n\n_Curator's translation:_ \"Exploitation has already happened on a massive scale, even affecting 32 UK government services that were deactivated, and sites such as the BBC, the Internet Archive, Wikipedia and 4chan.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Celah PHP2Shell Ancam 33 Juta Situs, Serangan Siber Melonjak\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "veeam-kb4953",
+  "url": "https://www.veeam.com/kb4953",
+  "publisher": "Veeam",
+  "kind": "vendor",
+  "title": "KB4953: PHP2Shell Vulnerability (CVE-2026-109618/CVE-2026-109619)",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "abfe24f61f459098150a663597b6aa067ee41cf30ca89a08e1ae42ec5d2e5c04",
+      "bytes": 3166
+     },
+     "page.html": {
+      "sha256": "b4310aa25ec1ea139388b53236524636806ebf27165612e2a9f0f3ce1c1df1ba",
+      "bytes": 204179
+     },
+     "provenance.json": {
+      "sha256": "9695411bf169cba76ec78fd233e91f3fd18a96651e20c92b68fa2475e14ba466",
+      "bytes": 1536
+     },
+     "rendered.html": {
+      "sha256": "4080d4ad507a8a5bf289c9a91fb83cc5a91a9bbb1ceec07f24d232b92b2cdb22",
+      "bytes": 976027
+     },
+     "screenshot.jpg": {
+      "sha256": "d91f16266949496abd01c9995c197ae07d747679d2a67de18768259104668d93",
+      "bytes": 176993
+     },
+     "text.txt": {
+      "sha256": "47b8a096f1d71b2c8a67dbaeca372a3ff51b50886685130a505a3d0b088e261c",
+      "bytes": 2325
+     }
+    },
+    "started_utc": "2026-10-27T19:14:16.873Z",
+    "status": 200,
+    "final_url": "https://www.veeam.com/kb4953"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Veeam KB4953 (Published 2026-10-22).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# KB4953: PHP2Shell Vulnerability (CVE-2026-109618/CVE-2026-109619)\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `us/security-vendor/veeam/veeam-kb4953`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nVeeam KB4953 (Published 2026-10-22).\n\n> Veeam products and Veeam SaaS solutions are not affected by this vulnerability.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Veeam KB4953 (22 Oct): Veeam products and SaaS are not affected; PHP is not used by any Veeam product.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:16Z. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "vg-nemzetkozi-gazdasag-2026-10-internet-php",
   "url": "https://www.vg.hu/nemzetkozi-gazdasag/2026/10/internet-php2shell-kibertamadas-veszely-leallas-ai",
   "publisher": "Világgazdaság",
@@ -29512,6 +30932,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Cảnh báo lỗ hổng PHP, website Việt Nam cần cập nhật bản vá\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `vn/news/vtv/canh-bao-lo-hong-php-website-viet-nam-can-cap-nhat-ban-va-10`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nVTV (Vietnam, Vietnamese), 22 October: a news-desk item advising Vietnamese organisations using PHP to review systems and apply the patch. It says the flaws were found by Wiz's AI system, that many sites worldwide, including government systems, disconnected, and, citing no source, that the Netherlands and Finland recorded hackers beginning to exploit the flaws to break in. It quotes Wiz and OpenAI on AI's role, says no figure for Vietnam's exposure exists, and quotes Vu Ngoc Son of the National Cyber Security Association that this affects only web servers, that ordinary users need not worry directly, and that many providers patched at once.\n\n> Đơn cử như Hà Lan và Phần Lan ghi nhận tin tặc đã bắt đầu khai thác các lỗ hổng này để xâm nhập vào hệ thống.\n\n_Curator's translation:_ \"For example, the Netherlands and Finland recorded hackers having begun to exploit these vulnerabilities to break into systems.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ VTV (Vietnam): warns Vietnamese websites to patch and says there are no Vietnamese impact statistics yet. Vu Ngoc Son of the National Cybersecurity Association says many Vietnamese providers patched and added firewall rules that morning. It also claims the Netherlands and Finland recorded hackers exploiting the flaws.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Cảnh báo lỗ hổng PHP, website Việt Nam cần cập nhật bản vá\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `vi`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "w3techs-php-usage",
+  "url": "https://w3techs.com/technologies/details/pl-php",
+  "publisher": "W3Techs (Q-Success)",
+  "kind": "other",
+  "title": "Usage Statistics and Market Share of PHP for Websites, October 2026",
+  "published": "2026-10-27 (the statistics date on the page)",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "196a4768ecd3596639c3a96e1a5a1550308bf791d9bbd0b7b046e52ff3b8807f",
+      "bytes": 431
+     },
+     "page.html": {
+      "sha256": "e6e1516166079ee4f90fe923ee92b0d12f1a055030aa6b3cd379b26b34cb5cce",
+      "bytes": 22217
+     },
+     "provenance.json": {
+      "sha256": "3b067c32e6fc790d7e3f32b2d5630d220b16c46aa6ab688d2860dda779138021",
+      "bytes": 1583
+     },
+     "rendered.html": {
+      "sha256": "e5d8f5c4a7621e5c4f3dec6bedfb30f9c6b53d9768c49f8c43bcd12874a871a0",
+      "bytes": 38008
+     },
+     "screenshot.jpg": {
+      "sha256": "0f5fb30b7487610cf6471694c7378ba8ac1bcc1bcc12a59c613efe2a2ac45f46",
+      "bytes": 290113
+     },
+     "text.txt": {
+      "sha256": "923287de82a7cb77ecf59d51185f7275ee69667ca3349d331a56f18148422d48",
+      "bytes": 4487
+     }
+    },
+    "started_utc": "2026-10-27T19:13:36.220Z",
+    "status": 200,
+    "final_url": "https://w3techs.com/technologies/details/pl-php"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 1 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). W3Techs' PHP usage page, statistics dated 27 October 2026.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Usage Statistics and Market Share of PHP for Websites, October 2026\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `at/reference/w3techs/w3techs-php-usage`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nW3Techs' PHP usage page, statistics dated 27 October 2026.\n\n> PHP is used by 69.2% of all the websites whose server-side programming language we know.\n\n> Version 8 is used by 65.6% of all the websites who use PHP.\n\n> W3Techs.com, 27 October 2026\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): W3Techs, 27 Oct 2026: PHP is used by 69.2% of websites whose server-side language is known; of those, version 8 65.6%, 7 26.6%, 5 7.7%.\n\nSupports: scale: share of websites running PHP, and by major version; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:36Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "wall-street-articol-it-and-c-important-vulnerabilita",
@@ -30047,6 +31517,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell Shows the Risk of Legacy Web Infrastructure\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `us/news/wersm/php2shell-legacy-infrastructure-web-risk`, snapshot `20261026T013143Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T013143Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nWeRSM (English), updated 25 October, an opinion piece by Marcel D. arguing that PHP2Shell shows how an old shared layer still puts the web at risk. It leans on TechCrunch for the facts: Amazon detected exploitation about a week before the public patches, Cloudflare saw an exponential rise in attempts after disclosure, and Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity. It says Calif found the flaws during a security audit and used AI as an aid in the exploitation work, and that the researchers' own explanation stressed their prior knowledge of PHP. The wider internet 'appears to have avoided the mass compromise many defenders feared'.\n\n> TechCrunch also reports that Amazon detected exploitation about a week before the public patches became available, while Cloudflare saw an exponential increase in exploitation attempts after disclosure.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell Shows the Risk of Legacy Web Infrastructure\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "wibu-systems-wibu-product-alerts",
+  "url": "https://www.wibu.com/support/product-alerts.html",
+  "publisher": "Wibu-Systems",
+  "kind": "vendor",
+  "title": "Wibu Product Alerts and Compatibility Notices - Wibu-Systems",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "68fe744643d49c2f5fe85a694ffe6085fe823682a62e3b09a0cb4f5ecf93eba6",
+      "bytes": 2507
+     },
+     "page.html": {
+      "sha256": "2ddee1691dd220b683fe72048a06dad9ebff6c9cd39ba0b1457e1a33deab5fef",
+      "bytes": 174921
+     },
+     "provenance.json": {
+      "sha256": "2e7e510eda2aa322893d205b5115bd9ad9ef7c765f49aacb7287a04d2af8167d",
+      "bytes": 1619
+     },
+     "rendered.html": {
+      "sha256": "6e13138862dad29fde9f67d02a9b31cbeebc1114d589a9ff12384d6579881958",
+      "bytes": 182712
+     },
+     "screenshot.jpg": {
+      "sha256": "71ff2ab68e1518804a81573f256fb80ac97f655e84a5b31c43b098741995d1f1",
+      "bytes": 987051
+     },
+     "text.txt": {
+      "sha256": "17d7f2f3b6663cccf3f2ff013d2a87934db8268266e59211629641f538b53f65",
+      "bytes": 34620
+     }
+    },
+    "started_utc": "2026-10-27T19:14:18.596Z",
+    "status": 200,
+    "final_url": "https://www.wibu.com/support/product-alerts.html"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). Wibu-Systems product alerts page (advisory initial publication 2026-10-22, 4:30 pm CET; last updated 2026-10-27 6:00 pm CET).",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Wibu Product Alerts and Compatibility Notices - Wibu-Systems\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `de/security-vendor/wibu-systems/wibu-product-alerts`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nWibu-Systems product alerts page (advisory initial publication 2026-10-22, 4:30 pm CET; last updated 2026-10-27 6:00 pm CET).\n\n> unpatched systems are affected by these vulnerabilities. CodeMeter Runtime as well as WibuKey installed locally on end-user systems are not affected.\n\n> Initial Publication 2026-10-22, 4:30 pm CET\n\n> Update 2026-10-23, 2:30 pm CEST: CodeMeter License Central 5.2.2 has been released\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Wibu-Systems product alerts (updated 27 Oct): CodeMeter License Central web interface and its extensions use PHP and unpatched systems are affected; CodeMeter Runtime and WibuKey not affected.\n\nSupports: vendor response: products affected / not affected; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:18Z. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "wikimediastatus-page",
@@ -30904,6 +32424,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Wiz Research blog: \"PHP2Shell: AI uncovers critical RCE vulnerabilities affecting 70% of the Internet\"\n\n- URL https://www.wiz.io/blog/php2shell-php-rce ; dated \"October 21, 2026\". Captured 2026-10-22T08:10:47Z, HTTP 200.\n- 70% basis: body says PHP \"powers 70% of all websites in the world\" — a share-of-websites figure (no source cited for it on the page) that the headline turns into \"70% of the Internet\". Conclusion: \"With 70% of the Internet affected, the impact of PHP2Shell cannot be overstated.\"\n- Severity claim: \"These findings rank among the most severe vulnerabilities discovered in PHP, and arguably in software history.\"\n- AI: \"We used Wiz Atlas, Gemini 4 Argon and GPT-5.6 Sol throughout this research. Notably, Gemini 4 Argon made an invaluable contribution to finding the vulnerability...\" Quote from Raluca Ada Popa, Head of Gemini Security, Google DeepMind. \"a single researcher completed in a week what previously would have taken a world-class team months of work.\"\n- Credits: \"Wiz Research would like to thank the PHP team, Calif and OpenAI for their work on discovery, coordination and patch verification.\"\n- Partners named: \"Google Cloud, Cloudflare, AWS, Microsoft, Automattic, Fastly, Akamai, Imperva, Vercel and many others\".\n\n## Wiz's timeline (verbatim)\n- \"August 19, 2026: Wiz Research discovers the first PHP vulnerability using Wiz Atlas, Gemini 4 Argon, and GPT-5.6 Sol.\"\n- \"August 20, 2026: Unauthenticated RCE is confirmed against Drupal.\"\n- \"August 21, 2026: Unauthenticated RCE is confirmed against WordPress.\"\n- \"August 24, 2026: Wiz Research reports the vulnerabilities to the PHP security team.\"\n- \"September 21, 2026: PHP acknowledges the reports and begins developing a coordinated fix.\"\n- \"October 21, 2026: Patched PHP releases become available.\" / \"Public disclosure.\"\n\n## Notes\n- No mention of the leak, the Calif video or Chainguard.\n- \"September 21 ... begins developing a coordinated fix\" conflicts with the PHP Foundation's account that fixing was \"the top priority\" \"from August 11th onward\" (Daubois: fix PR opened 2026-09-25).\n- The BBC's \"most severe ever found by AI\" wording is not on this page as such; closest is \"arguably in software history\".\n"
+ },
+ {
+  "slug": "wordpress-critical-php-security-release",
+  "url": "https://wordpress.org/news/2026/10/critical-php-security-release/",
+  "publisher": "WordPress.org",
+  "kind": "vendor",
+  "title": "Critical PHP Security Release – WordPress News",
+  "published": "2026-10-21",
+  "captures": [
+   {
+    "stamp": "20261027T191336Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2a02f929d72464fa9c1587cca6ada6e287a422a617b27f484cbc2bdcb6eaef48",
+      "bytes": 766
+     },
+     "page.html": {
+      "sha256": "c4eef2fc0349f425bea0cebe7e4b63034d59ffce7ef970a5619b8edab5bd7a8e",
+      "bytes": 162305
+     },
+     "provenance.json": {
+      "sha256": "d8bf804f5beb77748ca1e0e5305cf13738699af2cb891f0a365599b16dba5acb",
+      "bytes": 1668
+     },
+     "rendered.html": {
+      "sha256": "691fd0141a704a375c89e059e09813fa947147cf952d4862e084fef10b3a59c5",
+      "bytes": 162955
+     },
+     "screenshot.jpg": {
+      "sha256": "191049d8385d6e4ed58676e2531ba959a69c7c88d9f6a766b5edf462035861ab",
+      "bytes": 182760
+     },
+     "text.txt": {
+      "sha256": "21fbe8714568a93424199e2f6633295b18e702567bc9ffef1e0bcc3a4a5f5379",
+      "bytes": 2680
+     }
+    },
+    "started_utc": "2026-10-27T19:14:20.058Z",
+    "status": 200,
+    "final_url": "https://wordpress.org/news/2026/10/critical-php-security-release/"
+   }
+  ],
+  "status": "captured",
+  "primary": true,
+  "added_by": "breaking@php.newsroom (curator's role)",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack vault 7r83qic5), snapshot 20261027T191336Z, queue priority 2 (hand-picked by breaking@php.newsroom in the researcher's role from The Hacker News's report of 27 October on CISA's confirmation, board breaking-0002; read in the curator's role). WordPress News (John Blackbourn, October 21, 2026), 'Critical PHP Security Release'.",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Critical PHP Security Release – WordPress News\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `int/project/wordpress/wordpress-critical-php-security-release`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nWordPress News (John Blackbourn, October 21, 2026), 'Critical PHP Security Release'.\n\n> These vulnerabilities are not specific to WordPress and affect any server that hosts a PHP application. No WordPress update is required or planned for these issues.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): WordPress News (21 Oct, John Blackbourn): the vulnerabilities are not specific to WordPress, no WordPress update is planned; owners on PHP before 8.2 who self-host should consider taking servers offline, quoting the UK NCSC.\n\nSupports: project response: CMS ecosystem; board breaking-0002.\n\n## Capture notes\n\nLanguage `en-US`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:14:20Z. The page's HTML head carries a <link data-llm-hint=\"Hey agent! ...\"> addressed to AI agents (it suggests requesting a Markdown rendering of WordPress.org pages). Recorded, not acted on: the capture was read as captured.\n"
  },
  {
   "slug": "wsws-en-articles-2026-10-23-rfdk-o23-html",

@@ -21,6 +21,246 @@
   "agent": "breaking@php.newsroom"
  },
  {
+  "at": "2026-10-21",
+  "event": "WordPress News publishes 'Critical PHP Security Release': no WordPress update is required or planned",
+  "sources": [
+   "wordpress-critical-php-security-release"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "Drupal Security Team publishes PSA-2026-10-20 on the PHP critical release (page dated 2026-October-21)",
+  "sources": [
+   "drupal-psa-2026-10-20"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "Craft CMS publishes 'Craft Cloud and php2shell': Cloud environments updated to new PHP images",
+  "sources": [
+   "craft-cms-craft-cloud-and-php2shell"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "October CMS publishes its PHP security alert: the flaws are in PHP, not October CMS",
+  "sources": [
+   "october-cms-php-security-alert"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-21T20:12Z",
+  "event": "Salesforce posts Trust status message 20000267 on the PHP vulnerabilities",
+  "sources": [
+   "salesforce-general-message-20000267"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Okta publishes its advisory: Okta Access Gateway before 2026.44.0 affected",
+  "sources": [
+   "okta-access-gateway-php"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Huawei PSIRT publishes its security notice: investigation ongoing",
+  "sources": [
+   "huawei-sn-02583971"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Johnson Controls publishes JCI-PSA-2026-24",
+  "sources": [
+   "johnson-controls-jci-psa-2026-24"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Mitel first issues MISA-2026-0008",
+  "sources": [
+   "mitel-misa-2026-0008"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Moxa publishes MPSA-260001: none of its products affected",
+  "sources": [
+   "moxa-mpsa-260001"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "SonicWall publishes its product notice: no PHP found in the listed products",
+  "sources": [
+   "sonicwall-php-product-notice"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Splunk publishes SVD-2026-1013",
+  "sources": [
+   "splunk-svd-2026-1013"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22T11:45Z",
+  "event": "Synology publishes Synology-SA-26:14 (19:45 UTC+8)",
+  "sources": [
+   "synology-sa-26-14"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Veeam publishes KB4953: its products are not affected",
+  "sources": [
+   "veeam-kb4953"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "Wibu-Systems first publishes its advisory on CodeMeter License Central (4:30 pm CET)",
+  "sources": [
+   "wibu-systems-wibu-product-alerts"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "ExpressionEngine publishes a community note on the PHP vulnerabilities",
+  "sources": [
+   "expressionengine-php-vulnerabilities"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-23",
+  "event": "Arista publishes Security Advisory 0200",
+  "sources": [
+   "arista-security-advisory-0200"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-23",
+  "event": "HPE releases HPESBGN05174",
+  "sources": [
+   "hpe-hpesbgn05174"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-23",
+  "event": "Rockwell Automation publishes SD1802: no product confirmed affected",
+  "sources": [
+   "rockwell-automation-rockwell-sd1802"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-23",
+  "event": "RUCKUS releases security bulletin 20261023",
+  "sources": [
+   "ruckus-bulletin-339"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-23",
+  "event": "Siemens publishes SSA-566512 (RUGGEDCOM APE1808 with PAN-OS affected)",
+  "sources": [
+   "siemens-ssa-566512"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-23",
+  "event": "Siemens publishes SSA-566435 (software products known not affected)",
+  "sources": [
+   "siemens-ssa-566435"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-25",
+  "event": "Microsoft releases out-of-band .NET security updates for CVE-2026-111497 (Brotli)",
+  "sources": [
+   "microsoft-dotnet-october-2026-oob-security-updates"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
+  "at": "2026-10-26",
+  "event": "IBM publishes its bulletin on IBM App Connect Enterprise Toolkit",
+  "sources": [
+   "ibm-node-7294053"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "breaking@php.newsroom"
+ },
+ {
   "at": "2024",
   "event": "PHP Foundation researchers find a theoretical flaw in PHP but cannot work out how an attacker could use it",
   "sources": [

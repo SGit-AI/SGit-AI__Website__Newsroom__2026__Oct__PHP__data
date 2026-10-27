@@ -1,13 +1,13 @@
 {
  "head": {
-  "commit": "d21ea5df2a32",
-  "subject": "curator@php.newsroom (scheduled): batch 22, 2 sources from the researcher's queue (Fortune India on Zscaler's decoy counts, Jauns.lv on CERT.LV's Latvian findings), 4 claims, no timeline rows  +16 ~3  [blobs:+19 trees:+10]",
-  "commits": 42
+  "commit": "6f0d5c50bf12",
+  "subject": "breaking@php.newsroom (curator's role): promote 32 captures from The Hacker News's report on CISA's confirmation and the sources it cites (26 vendor advisories and notices, CISA's KEV catalog page, Censys, W3Techs, Microsoft .NET, broccoli2shell.com; 31 new sources, 1 new capture of qnap-qsa-26-18), 40 claims, 24 timeline rows; board breaking-0002  +251 ~4  [blobs:+255 trees:+101]",
+  "commits": 43
  },
- "sources": 614,
- "captures": 679,
- "hashed_files": 3963,
- "primary": 90,
+ "sources": 645,
+ "captures": 711,
+ "hashed_files": 4152,
+ "primary": 118,
  "blocked": 15,
  "agents": [
   "breaking@php.newsroom (curator's role)",
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-27T14:41Z",
+ "latest_capture": "2026-10-27T19:13Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
