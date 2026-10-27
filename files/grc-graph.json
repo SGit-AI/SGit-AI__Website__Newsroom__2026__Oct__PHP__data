@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.45",
+ "version": "0.22.46",
  "kept_by": "grc@php.newsroom",
  "as_of": "2026-10-22",
  "verbs": [
@@ -3352,7 +3352,7 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 09:43 UTC on 27 October, no named organisation has said it was compromised through p",
+   "label": "As of 19:13 UTC on 27 October, no named organisation has said it was compromised through p",
    "href": "facts/no-confirmed-compromise/index.html"
   },
   {
@@ -3480,6 +3480,54 @@
    "kind": "source",
    "label": "Bitpage.de",
    "href": "sources/bitpage-php2shell-php-sicherheitsluecke-webseite/index.html"
+  },
+  {
+   "id": "source:cisa-kev-kev-catalog-page",
+   "kind": "source",
+   "label": "CISA KEV",
+   "href": "sources/cisa-kev-kev-catalog-page/index.html"
+  },
+  {
+   "id": "source:the-hacker-news-cisa-confirms-php2shell-exploitation",
+   "kind": "source",
+   "label": "The Hacker News",
+   "href": "sources/the-hacker-news-cisa-confirms-php2shell-exploitation/index.html"
+  },
+  {
+   "id": "source:craft-cms-craft-cloud-and-php2shell",
+   "kind": "source",
+   "label": "Craft CMS (Pixel & Tonic)",
+   "href": "sources/craft-cms-craft-cloud-and-php2shell/index.html"
+  },
+  {
+   "id": "source:broadcom-security-broadcom-php2shell-response",
+   "kind": "source",
+   "label": "Broadcom (Symantec) Security",
+   "href": "sources/broadcom-security-broadcom-php2shell-response/index.html"
+  },
+  {
+   "id": "source:salesforce-general-message-20000267",
+   "kind": "source",
+   "label": "Salesforce",
+   "href": "sources/salesforce-general-message-20000267/index.html"
+  },
+  {
+   "id": "source:arista-security-advisory-0200",
+   "kind": "source",
+   "label": "Arista Networks",
+   "href": "sources/arista-security-advisory-0200/index.html"
+  },
+  {
+   "id": "source:splunk-svd-2026-1013",
+   "kind": "source",
+   "label": "Splunk",
+   "href": "sources/splunk-svd-2026-1013/index.html"
+  },
+  {
+   "id": "source:netgear-000070960",
+   "kind": "source",
+   "label": "NETGEAR",
+   "href": "sources/netgear-000070960/index.html"
   },
   {
    "id": "claim:nz-active",
@@ -14308,6 +14356,86 @@
    }
   },
   {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:cisa-kev-kev-catalog-page",
+   "basis": {
+    "kind": "source",
+    "ref": "cisa-kev-kev-catalog-page"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:the-hacker-news-cisa-confirms-php2shell-exploitation",
+   "basis": {
+    "kind": "source",
+    "ref": "the-hacker-news-cisa-confirms-php2shell-exploitation"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:craft-cms-craft-cloud-and-php2shell",
+   "basis": {
+    "kind": "source",
+    "ref": "craft-cms-craft-cloud-and-php2shell"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:broadcom-security-broadcom-php2shell-response",
+   "basis": {
+    "kind": "source",
+    "ref": "broadcom-security-broadcom-php2shell-response"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:salesforce-general-message-20000267",
+   "basis": {
+    "kind": "source",
+    "ref": "salesforce-general-message-20000267"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:arista-security-advisory-0200",
+   "basis": {
+    "kind": "source",
+    "ref": "arista-security-advisory-0200"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:splunk-svd-2026-1013",
+   "basis": {
+    "kind": "source",
+    "ref": "splunk-svd-2026-1013"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:netgear-000070960",
+   "basis": {
+    "kind": "source",
+    "ref": "netgear-000070960"
+   }
+  },
+  {
    "from": "risk:r03-3",
    "rel": "backed_by",
    "inverse": "evidences",
@@ -15404,17 +15532,7 @@
    "to": "claim:offline-allies",
    "basis": {
     "kind": "source",
-    "ref": "bbc-live-ckgel5xp2xv9t"
-   }
-  },
-  {
-   "from": "claim:offline-allies",
-   "rel": "cites",
-   "inverse": "cited_by",
-   "to": "source:bbc-live-ckgel5xp2xv9t",
-   "basis": {
-    "kind": "source",
-    "ref": "bbc-live-ckgel5xp2xv9t"
+    "ref": "acsc-alert-php"
    }
   },
   {
@@ -15465,6 +15583,36 @@
    "basis": {
     "kind": "source",
     "ref": "jpcert-at260033"
+   }
+  },
+  {
+   "from": "claim:offline-allies",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:nsa-press-php-4630238",
+   "basis": {
+    "kind": "source",
+    "ref": "nsa-press-php-4630238"
+   }
+  },
+  {
+   "from": "claim:offline-allies",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:ncsc-news-php",
+   "basis": {
+    "kind": "source",
+    "ref": "ncsc-news-php"
+   }
+  },
+  {
+   "from": "claim:offline-allies",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:certfr-2026-ale-014",
+   "basis": {
+    "kind": "source",
+    "ref": "certfr-2026-ale-014"
    }
   },
   {
@@ -16784,17 +16932,7 @@
    "to": "claim:disclosure-22oct",
    "basis": {
     "kind": "source",
-    "ref": "bbc-live-ckgel5xp2xv9t"
-   }
-  },
-  {
-   "from": "claim:disclosure-22oct",
-   "rel": "cites",
-   "inverse": "cited_by",
-   "to": "source:bbc-live-ckgel5xp2xv9t",
-   "basis": {
-    "kind": "source",
-    "ref": "bbc-live-ckgel5xp2xv9t"
+    "ref": "php-net-advisory"
    }
   },
   {

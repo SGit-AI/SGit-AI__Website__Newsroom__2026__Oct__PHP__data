@@ -502,6 +502,12 @@
    "title": "Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site"
   },
   {
+   "id": "security-0001",
+   "owner": "editor",
+   "status": "waiting",
+   "title": "SA-2026-043: the round is retired (press v1.0.52 removed round.yml and round.sh); left: delete the ROUND_TOKEN secret from the press's settings and revoke the token"
+  },
+  {
    "id": "dev-0003",
    "owner": "editor",
    "status": "open",
@@ -512,12 +518,6 @@
    "owner": "editor",
    "status": "waiting",
    "title": "Decommission the old evidence vault 3ytzxm3g: every card and register off it, then its deletion from the host"
-  },
-  {
-   "id": "conductor-0010",
-   "owner": "editor",
-   "status": "open",
-   "title": "dev's daily wake cannot push: its task starts a fresh session with no repositories and no add_repo"
   }
  ],
  "branches": [
@@ -1724,6 +1724,262 @@
    "run": "20261027T1122Z-conductor",
    "started": "2026-10-27T11:22:48Z",
    "summary": "Full pass 11:15 London, team at 184126152652. Since 10:17 every wake left a record. Curator 10:30: batch 20, data v0.1.71, 598 sources. Desk 10:40: on Sonnet, scope fixed at the editor's word (push team and data; the correction requests), boards desk-0003 to 0005. Ontologist: scripts re-pointed at…"
+  },
+  {
+   "agent": "sherpa",
+   "finished": "2026-10-27T11:53:13Z",
+   "outcome": "ok",
+   "run": "20261027T1149Z-sherpa",
+   "started": "2026-10-27T11:49:21Z",
+   "summary": "Full pass (11:45 London). Lanes: 58526ytp and d6zak0o3 empty (pending 0), no inbox messages beyond those read at 07:45; drains from press v1.0.79's tree, data's contributors.json unchanged; sgit-ai v0.26.0. Read 34 commits since 09:46 (head e749e937) and the notes to me: conductor's PROJECT-001 (ou…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-27T12:01:52Z",
+   "outcome": "ok",
+   "run": "20261027T1156Z-correspondent",
+   "started": "2026-10-27T11:56:12Z",
+   "summary": "Wake 11:55 London. Team dev at 850ee8b7f4b7; sgit 0.26.0; nnd3i8iw pulled. Reviewed the journalist's batch 20 (data, 22 verdicts, vault 55b47c4d6af1) against the captures: SC Media's Unit 42 retraction, Sophos, watchTowr ('a firm No') and Delft numbers (50,000 requests, 5,100 in an hour, 171 addres…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-27T13:00:53Z",
+   "outcome": "ok",
+   "run": "20261027T1205Z-researcher",
+   "started": "2026-10-27T12:05:00Z",
+   "summary": "Wake 12:00 London, 27 October: one pass of the source watch on the pack vault 7r83qic5 (12:06 to 12:54 UTC, 48 min), two phases each committed and pushed, then PROJECT-002 step 1 (conductor-0013): vault head 3c5e727b84f8, on sgit-ai v0.26.0. Cyber desk: both php2shell CVEs remain in the CISA KEV ca…"
+  },
+  {
+   "agent": "projects",
+   "finished": "2026-10-27T12:30:25Z",
+   "outcome": "ok",
+   "run": "20261027T1217Z-projects",
+   "started": "2026-10-27T12:17:00Z",
+   "summary": "Onboarded as projects@php.newsroom (session key sha256:db7c00f5a94f1559, sgit-ai 0.26.0; register records/registers/projects.json; evidence vault read key asked for, not received; data and site attached at the editor's word, refs read only). PROJECT-001 phase 1 run end to end: 1a ontologist (actors…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T12:34:36Z",
+   "outcome": "ok",
+   "run": "20261027T1233Z-conductor",
+   "started": "2026-10-27T12:33:49Z",
+   "summary": "Light check 12:15 London (fired 12:33 UTC), team at d9b62d92eaa5. PROJECT-001 phase 1 is done in the projects desk (Opus coordinating; Sonnet steps of 6 minutes each). It is at checkpoint A with the ten: Huntress, Cloudflare, Fastly, Imperva, Weird Gloop, the PHP security team, NCSC-NL and Rijksove…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-27T13:30:00Z",
+   "outcome": "ok",
+   "run": "20261027T1256Z-factcheck",
+   "started": "2026-10-27T12:55:41Z",
+   "summary": "12:52 London wake (sgit 0.26.0; clone of nnd3i8iw pulled, head 55b47c4d6af1). PROJECT-002 step 2: the desk's twelve correction rows re-graded after the KEV listing, each quote re-found in its newest capture: 9 stand, 1 changed (row 3, BankInfoSecurity), 2 withdrawn (row 2 WIRED, row 12 Security.NL)…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T13:20:13Z",
+   "outcome": "ok",
+   "run": "20261027T1319Z-conductor",
+   "started": "2026-10-27T13:19:31Z",
+   "summary": "Light check 13:15 London, team at 62d6f479aac8. PROJECT-002 phase 1 ran on the schedule. The researcher captured the corrections channels of 14 of 15 outlets (Fortune has none), and the BBC's and the Guardian's promises are quoted (researcher-0003). Fact-check re-graded the twelve rows after the KE…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-27T13:55:58Z",
+   "outcome": "ok",
+   "run": "20261027T1345Z-curator",
+   "started": "2026-10-27T13:45:11Z",
+   "summary": "13:00 wake (fired 13:45 UTC; dev 625fbcc54e58; re-read WAKE.md and CLAUDE.md, now with start and end banners). sgit-ai 0.26.0 in the venv (/usr/local/bin/sgit is still 0.24.0). Pulled watch-pack in 4m42s (13:46:30 to 13:51:19 UTC) and evidence-pack in seconds (up to date). Queue had 14 pending rows…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-27T14:09:49Z",
+   "outcome": "ok",
+   "run": "20261027T1358Z-journalist",
+   "started": "2026-10-27T13:58:30Z",
+   "summary": "Wake 13:40 London (fired 13:58 UTC). Team at 8881aed1b401. Evidence vault nnd3i8iw pulled with sgit 0.26.0 in 2m21s: head 9b5fd6786c2d (curator batch 21, 612 sources, latest capture 12:13 UTC), ahead of the 55b47c4d6af1 my last pass used; the curator had already exported it to data (v0.1.79). 15 un…"
+  },
+  {
+   "agent": "sherpa",
+   "finished": "2026-10-27T14:03:44Z",
+   "outcome": "ok",
+   "run": "20261027T1401Z-sherpa",
+   "started": "2026-10-27T14:01:34Z",
+   "summary": "Drain wake (13:45 London, fired 14:01) and a read-only review of PROJECT-001 phase 1 (steps 1b and 1c, written in the projects desk under my name; I did not write or change them). Lanes: 58526ytp and d6zak0o3 empty (pending 0), no new inbox messages; drains from press v1.0.79's tree, contributors.j…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T14:24:39Z",
+   "outcome": "ok",
+   "run": "20261027T1423Z-conductor",
+   "started": "2026-10-27T14:23:57Z",
+   "summary": "Light check 14:15 London, team at a1adf712bf23. Curator 13:00: vault 9b5fd6786c2d, 612 sources, 341 claims, data v0.1.79. Journalist 13:40: batch 21, 15 verdicts with compromise rows (Cyfirma recon, StealMyBitcoin, Theori CEO), data v0.1.80. It has not yet reviewed PROJECT-002's re-grade: a message…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-27T15:25:07Z",
+   "outcome": "ok",
+   "run": "20261027T1432Z-researcher",
+   "started": "2026-10-27T14:32:30Z",
+   "summary": "Wake 14:30 London, 27 October: one pass of the source watch on the pack vault 7r83qic5 (14:33 to 15:23 UTC, 50 min), two phases each committed and pushed, vault in sync at head c18e84740da7, sgit-ai v0.26.0. Cyber desk: both php2shell CVEs remain in the CISA KEV catalog (series 2, read 00:45 UTC);…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-27T14:36:44Z",
+   "outcome": "ok",
+   "run": "20261027T1434Z-observability",
+   "started": "2026-10-27T14:34:14Z",
+   "summary": "Scheduled wake 14:33 London. team at a308dc3c; 2 notes read as material (projects; wake banners, WAKE.md steps 0 and 6, followed); sgit-ai v0.26.0. Lane (84wr8mib): 105 waiting of 1,000, none refused; drained with drain.py, pushed (vault head f5192ac2a86d) before marking: 105 readable, 0 undecrypta…"
+  },
+  {
+   "agent": "ontologist",
+   "finished": "2026-10-27T14:39:06Z",
+   "outcome": "ok",
+   "run": "20261027T1435Z-ontologist",
+   "started": "2026-10-27T14:35:29Z",
+   "summary": "Wake 14:05 London (fired 14:35 UTC), team a308dc3cc023, data v0.1.80, press v1.0.79; the first scheduled pass end to end in the six repositories. Wikipedia: PHP2Shell 402 and Talk 41 revisions, 0 new; review findings R-01 to R-15 still match revision 1382214384. Parties: 32 new sources (580 to 612)…"
+  },
+  {
+   "agent": "pulse",
+   "finished": "2026-10-27T15:07:13Z",
+   "outcome": "ok",
+   "run": "20261027T1453Z-pulse",
+   "started": "2026-10-27T14:53:40Z",
+   "summary": "Pulse pass 20261027T145421Z (14:52 London), sgit-ai 0.26.0: 441 pages (344 checked, 231 changed), whole pass 736 s (867 s at 07:22, 723 s on 0.25.0 on 26 Oct); commit and push to the pack vault 9f5knw9r in one try, head d2cc04c25606, in sync with the server. Team dev at 51aeb5bdbc75. Opened and clo…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-27T15:01:44Z",
+   "outcome": "ok",
+   "run": "20261027T1456Z-correspondent",
+   "started": "2026-10-27T14:56:06Z",
+   "summary": "Wake 14:25 London (fired 14:56 UTC). Team dev at 9c31b6bf2dfe; sgit 0.26.0, nnd3i8iw pulled (1 m 44 s, 613 sources). Reviewed the journalist's batch 21 (data 00584be, 15 verdicts, vault 9b5fd6786c2d) against the captures: Cyfirma's Lazarus-linked reconnaissance (Money Today; CNET France for 21 serv…"
+  },
+  {
+   "agent": "projects",
+   "finished": "2026-10-27T22:36:36Z",
+   "outcome": "partial",
+   "run": "20261027T1503Z-projects",
+   "started": "2026-10-27T15:03:00Z",
+   "summary": "PROJECT-001 phase 2, from checkpoint A (passed by the editor 15:03) to checkpoint B for the first three drafts (22:36). As the members, each a Sonnet subagent with a note left for it: story-site (the outlet page design, prototype), journalist (BBC re-grade against the vault), ontologist (outlet fil…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T15:24:18Z",
+   "outcome": "ok",
+   "run": "20261027T1523Z-conductor",
+   "started": "2026-10-27T15:23:15Z",
+   "summary": "Full pass 15:15 London, team at 08d2e19b2ce0. First: no built page has updated since 05:54 UTC. The edition schedules in GitHub Actions never fire (correspondent-0008, found by the correspondent at 14:57). I confirmed it in team: 232 runs of 'Deploy to GitHub Pages', 0 from a schedule, all from pus…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-27T15:43:54Z",
+   "outcome": "ok",
+   "run": "20261027T1540Z-curator",
+   "started": "2026-10-27T15:40:45Z",
+   "summary": "15:30 wake (fired 15:40 UTC; dev 58cbf791d026). sgit-ai 0.26.0 in the venv. Pulled watch-pack in 1m21s (15:41:02 to 15:42:30 UTC) and evidence-pack in seconds. Two rows pending; read both in full and promoted batch 22: 2 sources, 4 claims, no timeline rows (Fortune India with Zscaler's decoy counts…"
+  },
+  {
+   "agent": "sherpa",
+   "finished": "2026-10-27T15:58:20Z",
+   "outcome": "idle",
+   "run": "20261027T1557Z-sherpa",
+   "started": "2026-10-27T15:57:19Z",
+   "summary": "Drain wake (15:45 London, fired 15:57). Lanes: 58526ytp and d6zak0o3 empty (pending 0), vaults in sync; drains from press v1.0.79's tree, contributors.json unchanged; sgit-ai v0.26.0. No notes to me, no unread beyond what is read, none of my instruction files changed; 36 commits on dev since 14:02…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-27T16:20:14Z",
+   "outcome": "ok",
+   "run": "20261027T1615Z-journalist",
+   "started": "2026-10-27T16:15:25Z",
+   "summary": "Wake 16:10 London (fired 16:14 UTC). Team at 2253291ab707. Evidence vault nnd3i8iw pulled with sgit 0.26.0 in 2m10s: head d21ea5df2a32 (curator batch 22, 614 sources, latest capture 14:41 UTC), two sources past the 9b5fd6786c2d of my last pass. 4 unreviewed claims read against their captures: used…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T16:18:22Z",
+   "outcome": "ok",
+   "run": "20261027T1617Z-conductor",
+   "started": "2026-10-27T16:17:50Z",
+   "summary": "Light check 16:15 London, team at 2253291ab707. The researcher took the address out of researcher-0003 (names channels now), so the guidance worked. The projects desk staged the BBC clean-hands captures as the researcher: the live page is unchanged; NCSC is unsettled because the archive blocked it.…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-27T19:04:02Z",
+   "outcome": "idle",
+   "run": "20261027T1700Z-researcher",
+   "started": "2026-10-27T17:00:00Z",
+   "summary": "paused for the move: handover written (records/agents/researcher/HANDOVER.md); card corrected (two phases, curator_queue.py); register checked (7r83qic5 held, 3ytzxm3g retired); vault in sync at c18e84740da7, data and team released; nothing exists only in the session. Never printed a key."
+  },
+  {
+   "agent": "sherpa",
+   "finished": "2026-10-27T19:03:32Z",
+   "outcome": "idle",
+   "run": "20261027T1700Z-sherpa",
+   "started": "2026-10-27T17:00:00Z",
+   "summary": "paused for the move: handover written (records/agents/sherpa/HANDOVER.md). Pulled team's dev (281b9c58); read the moving brief. Pushed what existed only in the session: records/sherpa/make_inbox.py (the inbox vault maker, path patched for the press, not run); the two vault clones (58526ytp, d6zak0o…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-27T19:03:40Z",
+   "outcome": "idle",
+   "run": "20261027T1705Z-curator",
+   "started": "2026-10-27T17:05:00Z",
+   "summary": "paused for the move: handover written (records/agents/newsroom-lead/HANDOVER.md; pointer in records/agents/curator/). Promotion tools that existed only in the scratchpad pushed to records/agents/newsroom-lead/curator-tools/ (not the patched pki-agent copies, which bypass the register: the editor an…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T17:16:05Z",
+   "outcome": "idle",
+   "run": "20261027T1715Z-conductor",
+   "started": "2026-10-27T17:15:38Z",
+   "summary": "Light check 17:15 London, team at 7fecfea747ef. Since the pause at 16:51 nothing new from the agents: no handovers yet (records/agents/*/HANDOVER.md), no keys (records/keys/). Those wait on the editor's last-turn words in each session. Only the conductor, security (22:35) and observability (20:33)…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T18:16:12Z",
+   "outcome": "idle",
+   "run": "20261027T1815Z-conductor",
+   "started": "2026-10-27T18:15:52Z",
+   "summary": "Light check 18:15 London, team at ac22cabf47f0. Quiet: no agent commits since 17:17, no handovers or key files yet; the editor's last-turn words are still to be pasted in each paused session. v1 untouched."
+  },
+  {
+   "agent": "breaking",
+   "finished": "2026-10-27T19:55:19Z",
+   "outcome": "ok",
+   "run": "20261027T1900Z-breaking",
+   "started": "2026-10-27T19:00:00Z",
+   "summary": "Breaking run at the editor's word (board breaking-0002): The Hacker News, 'CISA Confirms Active Exploitation of Two PHP2Shell Flaws', and the sources it cites. Found: the article in neither vault; 46 of its 49 sources new; the four lanes paused for the move, so the desk was the only writer. 1 resea…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-27T19:02:12Z",
+   "outcome": "idle",
+   "run": "20261027T1902Z-journalist",
+   "started": "2026-10-27T19:02:12Z",
+   "summary": "paused for the move: handover written (records/agents/journalist/HANDOVER.md). All four repositories clean and level with dev; card and register checked and complete; last data release for vault d21ea5df2a32."
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T19:16:48Z",
+   "outcome": "ok",
+   "run": "20261027T1915Z-conductor",
+   "started": "2026-10-27T19:15:25Z",
+   "summary": "Full pass 19:15 London (the first on four passes a day), team at 0435ac6dbeb3. The move: handovers in from the researcher, the curator (records/agents/newsroom-lead/HANDOVER.md, with a pointer in curator/), the journalist and the Sherpa, each with vaults by id and secrets by name only; no key-shape…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-27T20:35:34Z",
+   "outcome": "ok",
+   "run": "20261027T2033Z-observability",
+   "started": "2026-10-27T20:33:44Z",
+   "summary": "Scheduled wake 20:33 London. team at 82ab02ca; sgit-ai v0.26.0; 1 note read as material (the conductor: 17 schedules paused for the move to a new account; observability's task is not among them and still fires; no handover written, the editor has not asked in this session). Lane (84wr8mib, lane 1):…"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-10-27T22:43:34Z",
+   "outcome": "ok",
+   "run": "20261027T2235Z-security",
+   "started": "2026-10-27T22:35:53Z",
+   "summary": "Nightly pass over the six at team ac3f7f615436 (press c5cbf0c, data 416c837, site ceb6ab97, refs fede0c66, updates 975684e); sgit 0.26.0. Fixed: SA-2026-043, the round's workflow and script are gone (press v1.0.52); board security-0001 now waits on the editor to delete and revoke ROUND_TOKEN. New:…"
   }
  ],
  "schedules": [
@@ -1743,20 +1999,9 @@
    "status": "active",
    "times": [
     "07:15",
-    "08:15",
-    "09:15",
-    "10:15",
     "11:15",
-    "12:15",
-    "13:15",
-    "14:15",
     "15:15",
-    "16:15",
-    "17:15",
-    "18:15",
-    "19:15",
-    "20:15",
-    "21:15"
+    "19:15"
    ]
   },
   {
@@ -1911,5 +2156,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.45"
+ "version": "0.22.46"
 }

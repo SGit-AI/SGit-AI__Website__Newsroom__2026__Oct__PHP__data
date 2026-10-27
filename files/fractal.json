@@ -1,7 +1,7 @@
 {
  "about": "The fractal graph: one graph from the people affected, through the risks, the story and the evidence, to the flaws, the fix and the changed lines of php-src. A node is just a node; meaning lives in the edges. Every node opens into its own neighbourhood in the navigator.",
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.45",
+ "version": "0.22.46",
  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
  "layers": [
   {
@@ -523,7 +523,7 @@
    "id": "claim:disclosure-22oct",
    "layer": "claim",
    "name": "The flaws were disclosed on 22 October 2026",
-   "text": "contradicted, says BBC framing (UK morning coverage)",
+   "text": "contradicted, says Not stated by the BBC. A framing found in coverage and in two sources that date the release to 22 October (php.net's ChangeLog 8, Wiz's X thread: 'Apply the Oct 22 security release'); the origin was the original schedule, 22 October 14:00 UTC, which moved to 21 October. Unattributed to any one outlet.",
    "status": "contradicted",
    "href": "claims/index.html#disclosure-22oct"
   },
@@ -547,8 +547,8 @@
    "id": "claim:no-exploitation",
    "layer": "claim",
    "name": "There is no evidence yet that hackers have exploited the flaw",
-   "text": "reported, says Ryan Austin, Calif, on Radio 4, 08:00 BST 22 October",
-   "status": "reported",
+   "text": "disputed, says Ryan Austin, Calif, on BBC Radio 4, about 07:00 UTC 22 October 2026 ('Not at the moment'); the claim's wording is the BBC headline, not his words",
+   "status": "disputed",
    "href": "claims/index.html#no-exploitation"
   },
   {
@@ -635,8 +635,8 @@
    "id": "claim:offline-allies",
    "layer": "claim",
    "name": "The UK's NCSC, the NSA and their counterparts in the EU and Australia advise taking systems offline where patching is not feasible",
-   "text": "contradicted, says BBC",
-   "status": "contradicted",
+   "text": "disputed, says Not the BBC. This site's synthesis of the agencies' own pages. The BBC wrote only that the NCSC 'as well as its counterparts in the EU and Australia, earlier urged those who use PHP to apply the fixes', quoted the NCSC's offline sentence, and reported the NSA's call to go offline.",
+   "status": "disputed",
    "href": "claims/index.html#offline-allies"
   },
   {
@@ -698,8 +698,8 @@
   {
    "id": "claim:no-confirmed-compromise",
    "layer": "claim",
-   "name": "As of 09:43 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
-   "text": "reported, says this site, from every captured source in the evidence vault (598 sources, vault nnd3i8iw at head 55b47c4d6af1), as of its latest capture at 09:43 UTC on 27 October",
+   "name": "As of 19:13 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "reported, says this site, from every captured source in the evidence vault (645 sources, vault nnd3i8iw at head 6f0d5c50bf12), as of its latest capture at 19:13 UTC on 27 October",
    "status": "reported",
    "href": "claims/index.html#no-confirmed-compromise"
   },
@@ -1560,11 +1560,11 @@
    "href": "sources/scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell/index.html"
   },
   {
-   "id": "source:cisa-kev-json",
+   "id": "source:aws-security-blog-madpot",
    "layer": "source",
-   "name": "CISA",
-   "text": "CISA Known Exploited Vulnerabilities catalog (JSON feed)",
-   "href": "sources/cisa-kev-json/index.html"
+   "name": "Amazon",
+   "text": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot | AWS Security Blog",
+   "href": "sources/aws-security-blog-madpot/index.html"
   },
   {
    "id": "source:cisa-alert-kev-20261026",
@@ -1572,6 +1572,13 @@
    "name": "CISA",
    "text": "CISA Adds Two Known Exploited Vulnerabilities to Catalog | CISA",
    "href": "sources/cisa-alert-kev-20261026/index.html"
+  },
+  {
+   "id": "source:cisa-kev-json",
+   "layer": "source",
+   "name": "CISA",
+   "text": "CISA Known Exploited Vulnerabilities catalog (JSON feed)",
+   "href": "sources/cisa-kev-json/index.html"
   },
   {
    "id": "source:cisa-kev-catalog",
@@ -1586,13 +1593,6 @@
    "name": "NCSC New Zealand",
    "text": "UPDATED: CVE-2026-109618 and CVE-2026-109619 affecting PHP",
    "href": "sources/ncsc-nz-alert-php/index.html"
-  },
-  {
-   "id": "source:aws-security-blog-madpot",
-   "layer": "source",
-   "name": "Amazon",
-   "text": "Amazon Threat Intelligence identifies PHP2Shell exploitation prior to public disclosure in MadPot | AWS Security Blog",
-   "href": "sources/aws-security-blog-madpot/index.html"
   },
   {
    "id": "source:nsa-x-2112903220209098897",
@@ -1831,6 +1831,62 @@
    "name": "Bitpage.de",
    "text": "PHP2Shell: Wer offline ist, wer gepatcht hat und was zu tun ist - Bitpage.de",
    "href": "sources/bitpage-php2shell-php-sicherheitsluecke-webseite/index.html"
+  },
+  {
+   "id": "source:cisa-kev-kev-catalog-page",
+   "layer": "source",
+   "name": "CISA KEV",
+   "text": "Known Exploited Vulnerabilities Catalog | CISA",
+   "href": "sources/cisa-kev-kev-catalog-page/index.html"
+  },
+  {
+   "id": "source:the-hacker-news-cisa-confirms-php2shell-exploitation",
+   "layer": "source",
+   "name": "THN",
+   "text": "CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution",
+   "href": "sources/the-hacker-news-cisa-confirms-php2shell-exploitation/index.html"
+  },
+  {
+   "id": "source:craft-cms-craft-cloud-and-php2shell",
+   "layer": "source",
+   "name": "Craft CMS",
+   "text": "Craft Cloud and php2shell | Craft CMS",
+   "href": "sources/craft-cms-craft-cloud-and-php2shell/index.html"
+  },
+  {
+   "id": "source:broadcom-security-broadcom-php2shell-response",
+   "layer": "source",
+   "name": "Broadcom Security",
+   "text": "Broadcom Response to PHP2shell Vulnerability",
+   "href": "sources/broadcom-security-broadcom-php2shell-response/index.html"
+  },
+  {
+   "id": "source:salesforce-general-message-20000267",
+   "layer": "source",
+   "name": "Salesforce",
+   "text": "Trust Status",
+   "href": "sources/salesforce-general-message-20000267/index.html"
+  },
+  {
+   "id": "source:arista-security-advisory-0200",
+   "layer": "source",
+   "name": "Arista Networks",
+   "text": "Security Advisory 0200 - Arista",
+   "href": "sources/arista-security-advisory-0200/index.html"
+  },
+  {
+   "id": "source:splunk-svd-2026-1013",
+   "layer": "source",
+   "name": "Splunk",
+   "text": "SVD-2026-1013 | Splunk Vulnerability Disclosure",
+   "href": "sources/splunk-svd-2026-1013/index.html"
+  },
+  {
+   "id": "source:netgear-000070960",
+   "layer": "source",
+   "name": "NETGEAR",
+   "text": "NETGEAR Security Advisory for PHP2Shell Vulnerabilities - NETGEAR Support",
+   "href": "sources/netgear-000070960/index.html"
   },
   {
    "id": "source:github-rjmendez-phpup-2026",
@@ -8653,11 +8709,6 @@
   },
   {
    "from": "claim:disclosure-22oct",
-   "to": "source:bbc-live-ckgel5xp2xv9t",
-   "rel": "cites"
-  },
-  {
-   "from": "claim:disclosure-22oct",
    "to": "source:php-net-advisory",
    "rel": "cites"
   },
@@ -8729,6 +8780,16 @@
   {
    "from": "claim:no-exploitation",
    "to": "source:bbc-live-ckgel5xp2xv9t",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-exploitation",
+   "to": "source:aws-security-blog-madpot",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-exploitation",
+   "to": "source:cisa-alert-kev-20261026",
    "rel": "cites"
   },
   {
@@ -8833,11 +8894,6 @@
   },
   {
    "from": "claim:offline-allies",
-   "to": "source:bbc-live-ckgel5xp2xv9t",
-   "rel": "cites"
-  },
-  {
-   "from": "claim:offline-allies",
    "to": "source:acsc-alert-php",
    "rel": "cites"
   },
@@ -8859,6 +8915,21 @@
   {
    "from": "claim:offline-allies",
    "to": "source:jpcert-at260033",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:offline-allies",
+   "to": "source:nsa-press-php-4630238",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:offline-allies",
+   "to": "source:ncsc-news-php",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:offline-allies",
+   "to": "source:certfr-2026-ale-014",
    "rel": "cites"
   },
   {
@@ -9044,6 +9115,46 @@
   {
    "from": "claim:no-confirmed-compromise",
    "to": "source:cisa-kev-catalog",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:cisa-kev-kev-catalog-page",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:the-hacker-news-cisa-confirms-php2shell-exploitation",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:craft-cms-craft-cloud-and-php2shell",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:broadcom-security-broadcom-php2shell-response",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:salesforce-general-message-20000267",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:arista-security-advisory-0200",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:splunk-svd-2026-1013",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:netgear-000070960",
    "rel": "cites"
   },
   {
@@ -13243,14 +13354,14 @@
   }
  ],
  "counts": {
-  "nodes": 908,
-  "edges": 1250,
+  "nodes": 916,
+  "edges": 1261,
   "by_layer": {
    "stakeholder": 16,
    "risk": 9,
    "arc": 7,
    "claim": 139,
-   "source": 103,
+   "source": 111,
    "flaw": 2,
    "fix": 7,
    "code": 73,
