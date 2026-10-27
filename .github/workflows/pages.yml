@@ -9,6 +9,11 @@
 #            deletes its tag and tries again, three times;
 #   package  the served tree, from the release commit (tools/package.py: every version (the folders published before 27 October from the last commit that held them, then every tag), each file once at /blobs/<sha256>, the newest five plain, /latest/), read-only;
 #   deploy   publishes only what package built, from the commit release made.
+# On its schedule (and when run by hand) it also takes the newest edition, built in CI by the press (board dev-0005,
+# tools/edition.sh and .github/workflows/edition.yml there): the gate job downloads this repository's patch from the
+# press's release edition-<edition> (public, read with this run's token), refuses one that touches .github/, .git/ or
+# VERSION, applies it and gates the result; release applies the same patch (its sha256 checked) and numbers it, its
+# commit carrying the trailer Edition: <edition>, so an edition is taken once and a newer one is never followed by an older.
 # The release push uses this run's GITHUB_TOKEN, which starts no new run, so a release is never numbered twice; that is
 # why package and deploy run here, in the same run. Installed by the press; a change goes to security@php.newsroom's
 # review and the editor's go.
@@ -16,6 +21,8 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [dev]
+  schedule:
+    - cron: '8-59/15 * * * *'   # take the newest edition
   workflow_dispatch:
 permissions:
   contents: read
@@ -27,15 +34,40 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+    outputs:
+      take: ${{ steps.take.outputs.take }}
+      sha: ${{ steps.take.outputs.sha }}
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262  # v4.4.0
         with:
           persist-credentials: false
           fetch-depth: 0
+      - id: take
+        name: The newest edition, if this repository has not taken it
+        if: github.event_name != 'push'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          press=SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press
+          name="$(printf '%s' "${GITHUB_REPOSITORY##*__}" | tr 'A-Z' 'a-z')"
+          e="$RUNNER_TEMP/edition"; mkdir -p "$e"
+          gh release download --repo "$press" --pattern edition.json --dir "$e" 2>/dev/null || { echo "no edition yet"; exit 0; }
+          ed="$(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["edition"])' "$e/edition.json")"
+          case "$ed" in *[!0-9.]*|'') echo "::error::not an edition: $ed"; exit 1;; esac
+          last="$(git log --format='%(trailers:key=Edition,valueonly)' | grep -m1 . || true)"
+          if [ -n "$last" ] && [ "$(printf '%s\n%s\n' "$last" "$ed" | sort -V | tail -1)" = "$last" ]; then echo "edition $ed: taken already (the last taken is $last)"; exit 0; fi
+          gh release download "edition-$ed" --repo "$press" --pattern "$name.patch" --dir "$e" 2>/dev/null || { echo "edition $ed changes nothing here"; exit 0; }
+          if git apply --numstat "$e/$name.patch" | cut -f3 | grep -E '^(\.github/|\.git/|VERSION$)'; then echo "::error::edition $ed's patch touches .github/, .git/ or VERSION: refused"; exit 1; fi
+          git apply --3way --index "$e/$name.patch" || { echo "::warning::edition $ed does not apply to this repository's dev (it moved since); the next edition will"; git reset -q --hard; exit 0; }
+          echo "take=$ed" >> "$GITHUB_OUTPUT"; echo "sha=$(sha256sum "$e/$name.patch" | cut -d' ' -f1)" >> "$GITHUB_OUTPUT"
+          echo "edition $ed: applied; the gate runs on it"
       - name: Run the gate
+        if: github.event_name != 'schedule' || steps.take.outputs.take != ''
         run: python3 tools/gate.py
   release:
     needs: gate
+    if: github.event_name != 'schedule' || needs.gate.outputs.take != ''
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -50,6 +82,9 @@ jobs:
         name: The version, written by CI
         env:
           BEFORE: ${{ github.event.before }}
+          TAKE: ${{ needs.gate.outputs.take }}
+          TAKE_SHA: ${{ needs.gate.outputs.sha }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           git config user.name 'GitHub Actions'
@@ -62,13 +97,23 @@ jobs:
             fi
           fi
           release() { echo "version=$1" >> "$GITHUB_OUTPUT"; echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"; echo "$2 v$1"; }
+          if [ -n "${TAKE:-}" ]; then   # the edition the gate job applied and gated: the same patch, byte for byte
+            press=SGit-AI/SGit-AI__Website__Newsroom__2026__Oct__PHP__press; name="$(printf '%s' "${GITHUB_REPOSITORY##*__}" | tr 'A-Z' 'a-z')"; e="$RUNNER_TEMP/edition"; mkdir -p "$e"
+            gh release download "edition-$TAKE" --repo "$press" --pattern "$name.patch" --pattern edition.json --dir "$e"
+            [ "$(sha256sum "$e/$name.patch" | cut -d' ' -f1)" = "$TAKE_SHA" ] || { echo "::error::edition $TAKE's patch changed since the gate"; exit 1; }
+            if git apply --numstat "$e/$name.patch" | cut -f3 | grep -E '^(\.github/|\.git/|VERSION$)'; then echo "::error::refused"; exit 1; fi
+            subject="edition v$TAKE: $(python3 -c 'import json,sys;print(json.load(open(sys.argv[1]))["message"][:180])' "$e/edition.json")"
+          fi
           for attempt in 1 2 3; do
             git fetch -q origin "+refs/heads/dev:refs/remotes/origin/dev"
             git reset -q --hard "${GITHUB_SHA}"
             have="$(git tag --points-at HEAD -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)"
-            if [ -n "$have" ]; then release "${have#v}" "already"; exit 0; fi     # a release commit, run again by hand
+            if [ -n "$have" ] && [ -z "${TAKE:-}" ]; then release "${have#v}" "already"; exit 0; fi     # a release commit, run again by hand
             if [ "$(git rev-parse origin/dev)" != "${GITHUB_SHA}" ]; then
               echo "dev has moved past this run's commit: the run for the newer push gates and releases it"; exit 0
+            fi
+            if [ -n "${TAKE:-}" ]; then
+              git apply --3way --index "$e/$name.patch" || { echo "edition $TAKE no longer applies; the next one will"; exit 0; }
             fi
             last="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)"; last="${last#v}"
             file="$(cat VERSION 2>/dev/null || echo 0.1.0)"          # the version before CI owned it, until a tag passes it
@@ -77,7 +122,8 @@ jobs:
             new="$MA.$MI.$((PA+1))"                  # on dev, the last number plus one
             printf '%s\n' "$new" > VERSION
             git add VERSION
-            git commit -q -m "v$new: $(git log -1 --format=%s "${GITHUB_SHA}")"
+            if [ -n "${TAKE:-}" ]; then git commit -q -m "v$new: $subject" -m "Edition: $TAKE"
+            else git commit -q -m "v$new: $(git log -1 --format=%s "${GITHUB_SHA}")"; fi
             git tag "v$new"
             if git push -q origin "HEAD:dev"; then git push -q origin "refs/tags/v$new"; release "$new" "released"; exit 0; fi
             git tag -d "v$new" >/dev/null; echo "dev moved while releasing ($attempt of 3)"; sleep 3
