@@ -87,7 +87,7 @@
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 09:43 UTC on 27 October (vault 55b47c4d6af1, 598 sources); the other 69 claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 12:13 UTC on 27 October (vault 9b5fd6786c2d, 612 sources); the other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
@@ -98,8 +98,8 @@
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "55b47c4d6af1",
-   "note": "Unit 42's retraction, Sophos, watchTowr (SC Media), Delft's telescope added; the Karimi honeypot row completed; as of 09:43 UTC on 27 October; searched count 598; head 55b47c4d6af1."
+   "checked_against": "9b5fd6786c2d",
+   "note": "Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row; as of 12:13 UTC on 27 October; searched count 612; head 9b5fd6786c2d."
   },
   {
    "path": "data/exploitation.json",

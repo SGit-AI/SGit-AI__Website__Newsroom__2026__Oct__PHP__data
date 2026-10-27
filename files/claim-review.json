@@ -3701,6 +3701,184 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-27",
    "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-cnet-cyfirma-lazarus-recon",
+   "verdict": "used",
+   "reason": "CNET France (27 October, 10:37 Paris time, 09:37 UTC) says Cyfirma reported a reconnaissance campaign attributed to Lazarus, with 21 already-compromised servers probing 216 potentially vulnerable targets in the US, Japan, South Korea and the EU. Read the whole page: it relays The Hacker News, and the 21 and 216 figures appear on this page only. Searched all captures for 'Cyfirma' and for 216: Money Today (24 October) gives the same report as 'June 2026 Minjun', linked to the Lazarus ecosystem at medium confidence, 17 suspect source IPs in eight hours, targets named on 22 October, and says no actual compromise was found; UPI (26 October) says Cyfirma saw Korean-speaking operators simulating attacks on I2P. Added to compromise.json as attempts, with those limits.",
+   "sources": [
+    "fr-cnet-cybersecurite-6121-php2shell-une-premier",
+    "mt-tech-2026-10-24-2026102414170377166",
+    "upi-top-news-world-news-2026-10-26-cybersecu"
+   ],
+   "where": "data/compromise.json",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-cnet-stealmybitcoin-stolen",
+   "verdict": "used",
+   "reason": "CNET France (27 October) says that about 20 hours after the StealMyBitcoin.com challenge launched, a participant exploited the flaws and took the more than 2,000 dollars in bitcoin placed on it; the server was left unpatched on purpose. It agrees with the 19.28 hours Sixactualités gave (cur20-sixactualites-stealmybitcoin, already reviewed). A deliberate challenge target, not a victim organisation, so it does not change no-confirmed-compromise. Added to compromise.json as exploitation reported with no victim named.",
+   "sources": [
+    "fr-cnet-cybersecurite-6121-php2shell-une-premier",
+    "sixactualites-securite-stealmybitcoin-compromis-en-19"
+   ],
+   "where": "data/compromise.json",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-mynavi-trendmicro-checker",
+   "verdict": "noted",
+   "reason": "Mynavi TechPlus (26 October) says Trend Micro published the free 'PHP2Shell Exposure Checker' on 23 October; it judges exposure from URL-visible information such as HTTP headers using ordinary requests, sends no attack code and does not test exploitability, and Mynavi adds that the result is a guide, not a guarantee. Trend Micro's own press release is in the vault under the Japanese newsroom page and names the same tool. Checked against the page; not used, nothing on the site contradicts it.",
+   "sources": [
+    "news-mynavi-techplus-article-20261026-5196687",
+    "trendmicro-ja-jp-about-newsroom-press-releases-2026"
+   ],
+   "where": "none: tools and vendor responses are not on a page",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-mediamixi-games",
+   "verdict": "noted",
+   "reason": "MEDIAMIXI (27 October) says that on the night of 21 October popular Japanese games went into emergency maintenance; most were back by the next day (Uma Musume ended maintenance at 02:30 on 22 October Japan time, Granblue Fantasy from that morning), World Quest was closed outright on 21 October, another idle RPG announced its end on 22 October, and Cygames' Shingeki no Bahamut began a PHP upgrade expected to take over a week. All as the page says. Searched the vault for the World Quest title: one outlet. The site already lists the Japanese game companies that went into maintenance (impact.json offline, the 'Japan, games and web services' row); the closures are not on the site, and they are service decisions, not compromises.",
+   "sources": [
+    "mediamixi-news-17350"
+   ],
+   "where": "none: the closures are not on a page",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-mediamixi-takaichi-post",
+   "verdict": "noted",
+   "reason": "MEDIAMIXI says that before the release Prime Minister Takaichi posted on X an urgent request that systems be dealt with that night, and calls it unusual for a prime minister. Searched all captures for the quoted words: also carried by data-max, digitalpr, news9live and Niigata Nippo, so more than one outlet. Not used: the site carries the Prime Minister's website stopped for countermeasures (impact.json, Jiji Press) but not the post; nothing on the site contradicts it. The post itself is not in the vault.",
+   "sources": [
+    "mediamixi-news-17350",
+    "niigata-nippo-articles-930995",
+    "data-max-article-87622"
+   ],
+   "where": "none",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-notebookcheck-shodan-884k",
+   "verdict": "noted",
+   "reason": "Notebookcheck (Spanish edition) says a Shodan count published by Mallory on 20 October found about 884,000 internet-exposed hosts indicating an unsupported PHP version, 59% of the roughly 1.5 million that reveal a version, with about 740,000 more hiding it; it adds that these are counts of hosts by their banners, not of sites confirmed vulnerable. Searched all captures for 884,000: also in The Hacker News, SOCRadar, Cyberkendra and CybelAngel (the vault holds CybelAngel's own post), so more than one outlet, and the basis is given. Not used: the site does not carry this number; not in numbers.json or claims.json.",
+   "sources": [
+    "notebookcheck-php2shell-deja-a-millones-de-servidores",
+    "cybelangel-php2shell",
+    "thehackernews-php2shell-unpatched-alert"
+   ],
+   "where": "none",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-xboxdynasty-cloudflare-early",
+   "verdict": "agrees",
+   "reason": "XboxDynasty (25 October, German) relays Cloudflare: defences started early October and deployed about nine hours before the public announcement, on by default from 05:02 German time on 21 October (03:02 UTC) on all plans with the web application firewall, the free plan included. The nine hours is already carried on the site (timeline.json and defence.json); the vault holds Cloudflare's own post (22 and 23 October captures), which says the protections were developed 'since early October 2026' and deployed 'about 9 hours ahead of public disclosure', starting 21 October 3:02 am UTC; the German 05:02 is the same moment in summer time. 'Early October' is this page's wording of Cloudflare's account.",
+   "sources": [
+    "xboxdynasty-news-internet-cloudflare-erklaert-kritis",
+    "cloudflare-blog-php2shell-waf"
+   ],
+   "where": "data/timeline.json, data/defence.json",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-xboxdynasty-115560-affects-8512",
+   "verdict": "agrees",
+   "reason": "XboxDynasty says CVE-2026-115560, in the session upload-progress feature, affects even fully updated PHP including 8.5.12, with a fix due in the next regular release, and that Cloudflare has added firewall rules for it. Searched all captures for 115560: 20 sources carry it, among them Cloudflare, SOCRadar and The Hacker News, and the site already carries the flaw (story.json, sections.json, personas.json). Repeats it; the page's one limit is that Cloudflare's rules detect known attempts only.",
+   "sources": [
+    "xboxdynasty-news-internet-cloudflare-erklaert-kritis"
+   ],
+   "where": "data/story.json, data/sections.json",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-xenospectrum-qnap-fixing",
+   "verdict": "agrees",
+   "reason": "XenoSpectrum (23 October, Japanese) says QNAP's QSA-26-18 listed the affected products (QTS, QuTS hero, QuTScloud) as 'Fixing' with no date, as of 23 October, and that QNAP had received no reports of exploitation targeting its products. The vault holds QNAP's own advisory (captured 22 October, 19:17 UTC) and both statements are in it: a 'Fixing' status column, 'QNAP has not received reports of exploitation targeting QNAP products', and updates 'as soon as possible'. Agrees with the primary. Not used on a page; the site's QNAP advisory entries are unchanged.",
+   "sources": [
+    "xenospectrum-php2shell-nas-qnap-synology-patch-gap",
+    "qnap-qsa-26-18"
+   ],
+   "where": "none: vendor status is not on a page",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-xenospectrum-asustor-synology",
+   "verdict": "held back",
+   "reason": "Both are vendor statements that rest on this one outlet: Asustor's advisory AS-2026-023 (affected NAS where PHP was added to ADM; stop the web server until a fix; status 'Ongoing' in the outlet's table) and Synology's (fixes on 22 October for the PHP packages; the OS-embedded PHP's risk rated very low; no fix for PHP 7.3). Searched all captures for AS-2026-023 and the Synology advisory: neither vendor's own page is in the vault, only XenoSpectrum. Held back until a vendor source is captured; it is not stated on the site.",
+   "sources": [
+    "xenospectrum-php2shell-nas-qnap-synology-patch-gap"
+   ],
+   "where": "none: held back",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-yna-pipc-guidance",
+   "verdict": "noted",
+   "reason": "Yonhap (22 October, 16:28 Korea time, 07:28 UTC) reports that South Korea's Personal Information Protection Commission urged data controllers to check PHP versions and apply the patch, remove unneeded web services, block direct internet access to database tools such as phpMyAdmin, minimise the web account's database permissions, and check for abnormal bulk queries and exports; it adds that outsourced developers should also be checked. A wire report of an official act, matching the page; Boannews and NewsCJ also mention the Commission. Not used on a page; nothing contradicts it.",
+   "sources": [
+    "yna-view-akr20261022157000530",
+    "boannews-news-articleview-html"
+   ],
+   "where": "none",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-zdnet-mirai-botnet",
+   "verdict": "used",
+   "reason": "ZDNET (English) writes that a threat actor tied to PHP2Shell attack chains is trying to deploy a Mirai-style botnet, and that Cloudflare's chief executive says Cloudflare is recording millions of exploitation attempts. It names no source for the Mirai line and no actor. It repeats the compromise.json row of 26 October (Amazon, via ZDNET Japan translating ZDNET), so I added this page to that row; an attempt, not a compromise.",
+   "sources": [
+    "zdnet-tech-php2shell-php-patch-mitigation-crit",
+    "japan-zdnet-article-35253966"
+   ],
+   "where": "data/compromise.json",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-zdnetkr-no-verified-breach",
+   "verdict": "used",
+   "reason": "ZDNet Korea (27 October, 15:47 Korea time, 06:47 UTC; updated 17:24, 08:24 UTC) publishes an interview. The statement is Theori's chief executive, Park Se-jun, not the outlet's: attempts are real, but Sophos and Palo Alto Networks first announced successful attacks and then corrected or withdrew them, Palo Alto's government-agency case was never confirmed to have started with the PHP flaw, the honeypot success is a lab and not a company, and 'as of 27 October no publicly verified breach of a real company or institution has been confirmed', though unknown damage cannot be ruled out. Added to compromise.json as a no-success-known row under his name. It agrees with the site's no-confirmed-compromise claim (Unit 42's retraction and Sophos are already rows) and is a view of the evidence, not new evidence; the claim's wording is unchanged.",
+   "sources": [
+    "zdnet-view"
+   ],
+   "where": "data/compromise.json",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-ziuaveche-dnsc-alert",
+   "verdict": "held back",
+   "reason": "Ziua Veche (22 October, Romanian) reports an alert from Romania's DNSC on the two flaws: check the PHP version, update PHP separately from WordPress and plugins, examine logs, and a reminder of Law 58/2023 article 5(a) on responsibility for security. As worded the claim is wrong in one place: on the page it is CERT-EU that recommends evaluating temporary isolation of applications that cannot be updated; the DNSC alert does not say that. Searched all captures for DNSC: Criticarad also describes the alert (issued 20 October, updated after the fixes, same Law 58/2023 article 5(a) reference, names no affected Romanian institution), so the alert exists and the date is 20 October, not the 22 October of Ziua Veche's page; no DNSC page of its own is in the vault. Held back as worded (the isolation attribution and the date); not on the site.",
+   "sources": [
+    "ziuaveche-stiinta-it-it-alerta-dnsc-doua-vulnerabi",
+    "criticarad-php2shell-cve-2026-109618-ghid-patch"
+   ],
+   "where": "none: held back",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
+  },
+  {
+   "id": "cur21-zoomtec-anci",
+   "verdict": "held back",
+   "reason": "Zoomtecnologico (26 October) says in one clause that in Chile the National Cybersecurity Agency (ANCI) recommended updating immediately, with no date, wording or link. An official act on one outlet: searched all captures for ANCI, this is the only page, and no ANCI source is in the vault. Held back until the agency's own notice is captured; not on the site.",
+   "sources": [
+    "zoomtecnologico-2026-10-26-php-php2shell-chile"
+   ],
+   "where": "none: held back",
+   "reviewed": "2026-10-27T14:20Z",
+   "by": "journalist@php.newsroom"
   }
  ]
 }

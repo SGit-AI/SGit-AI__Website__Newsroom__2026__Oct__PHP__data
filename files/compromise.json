@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-27T09:43Z",
+ "as_of": "2026-10-27T12:13Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 598,
+   "count": 612,
    "unit": "sources",
-   "detail": "head 55b47c4d6af1 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head 9b5fd6786c2d (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -505,9 +505,10 @@
    "when": "2026-10-26",
    "who": "Amazon Threat Intelligence (via ZDNET Japan, translating ZDNET)",
    "says": "Threat actors in PHP2Shell attack chains are trying to deploy Mirai-family botnets.",
-   "reading": "Attempts, no named actor; reported on 26 October. Amazon's own post in the vault does not contain the word 'Mirai'",
+   "reading": "Attempts, no named actor; reported on 26 October. Amazon's own post in the vault does not contain the word 'Mirai'. The English ZDNET page (27 October capture) says the same without naming a source or an actor",
    "sources": [
-    "japan-zdnet-article-35253966"
+    "japan-zdnet-article-35253966",
+    "zdnet-tech-php2shell-php-patch-mitigation-crit"
    ]
   },
   {
@@ -593,6 +594,39 @@
    "reading": "Attempt volume, not successful compromise; second-hand through Suzu Labs",
    "sources": [
     "scworld-news-php2shell-exploitation-confirmed-bu"
+   ]
+  },
+  {
+   "kind": "attempts",
+   "when": "2026-10-23",
+   "who": "Cyfirma (via Money Today, 24 October; CNET France, 27 October, relaying The Hacker News)",
+   "says": "A reconnaissance campaign tied to the Lazarus ecosystem at medium confidence, named 'June 2026 Minjun': on 22 October the operators targeted government bodies and banks in the US, Japan, South Korea, the UAE, the EU, Thailand, Indonesia and Saudi Arabia, then manufacturing, logistics, shipping, airports and other sectors; Cyfirma saw 17 suspect source addresses doing web shell tooling and upload-progress session poisoning attempts within eight hours. CNET France adds that 21 already-compromised servers were used to examine 216 potentially vulnerable targets.",
+   "reading": "Preparation and probing, attributed with medium confidence; Money Today says no actual compromise was found. The 21 and 216 figures are on the CNET France page only. No victim named",
+   "sources": [
+    "mt-tech-2026-10-24-2026102414170377166",
+    "fr-cnet-cybersecurite-6121-php2shell-une-premier",
+    "upi-top-news-world-news-2026-10-26-cybersecu"
+   ]
+  },
+  {
+   "kind": "vendor-exploitation",
+   "when": "2026-10-27",
+   "who": "CNET France, 27 October (the developer of StealMyBitcoin.com; Sixactualités 26 October gives 19.28 hours)",
+   "says": "A developer left a PHP server deliberately unpatched at StealMyBitcoin.com with more than 2,000 dollars in bitcoin as the prize; about 20 hours after the challenge launched a participant exploited the flaws and took it.",
+   "reading": "A deliberate challenge target, not an organisation and not a victim; reported on 26 and 27 October by two outlets and not by the developer in the vault. No victim named",
+   "sources": [
+    "fr-cnet-cybersecurite-6121-php2shell-une-premier",
+    "sixactualites-securite-stealmybitcoin-compromis-en-19"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-27",
+   "who": "Park Se-jun, chief executive of Theori, in an interview with ZDNet Korea",
+   "says": "Attempts are real, but a distinction has to be kept between attempts and successful intrusions: Sophos and Palo Alto Networks first announced successful attacks and later corrected or withdrew them, and Palo Alto's government-agency case was not confirmed to have begun with the PHP flaw. The honeypot success is a lab, not a company. As of 27 October no publicly verified breach of a real company or institution had been confirmed; unknown damage cannot be excluded.",
+   "reading": "One security executive's reading of the public record, in an interview; not a count of what attackers have done",
+   "sources": [
+    "zdnet-view"
    ]
   }
  ],
