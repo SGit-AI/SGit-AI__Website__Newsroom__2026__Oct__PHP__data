@@ -75,6 +75,25 @@
      "sha256": "c3e56f432ca15f0f56d27745c523183ae68a7049cee0b40e210a762125863450"
     }
    ]
+  },
+  {
+   "at": "2026-10-27T14:38:07Z",
+   "new_revisions": 0,
+   "hidden_chars_removed": 0,
+   "requests": [
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=Talk%3APHP2Shell&rvlimit=500&rvdir=newer&rvprop=ids%7Ctimestamp%7Cuser%7Cuserid%7Csize%7Csha1%7Ccomment%7Cparentid%7Ctags%7Cflags&format=json&formatversion=2",
+     "at": "2026-10-27T14:38:00Z",
+     "bytes": 14281,
+     "sha256": "7e8f9805ce0a1f753109b30abf6f8b6b93120b9e2a23271278ef2366799bbd0b"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=pageprops%7Cinfo&titles=Talk%3APHP2Shell&format=json&formatversion=2",
+     "at": "2026-10-27T14:38:05Z",
+     "bytes": 262,
+     "sha256": "c3e56f432ca15f0f56d27745c523183ae68a7049cee0b40e210a762125863450"
+    }
+   ]
   }
  ],
  "title": "Talk:PHP2Shell",

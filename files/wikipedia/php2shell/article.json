@@ -226,6 +226,49 @@
      "sha256": "008d2d59aab05205879bfba04e8b7b3c007862268c1920ae465b4e15fd3b75f6"
     }
    ]
+  },
+  {
+   "at": "2026-10-27T14:37:32Z",
+   "new_revisions": 0,
+   "hidden_chars_removed": 0,
+   "requests": [
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=PHP2Shell&rvlimit=500&rvdir=newer&rvprop=ids%7Ctimestamp%7Cuser%7Cuserid%7Csize%7Csha1%7Ccomment%7Cparentid%7Ctags%7Cflags&format=json&formatversion=2",
+     "at": "2026-10-27T14:37:01Z",
+     "bytes": 114415,
+     "sha256": "fe0256fdc98dfd6ffb11079ac52d5eb2e6fca57a3c6179836897cfe54ae5841e"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=pageprops%7Cinfo&titles=PHP2Shell&format=json&formatversion=2",
+     "at": "2026-10-27T14:37:04Z",
+     "bytes": 417,
+     "sha256": "dfe74007ffed1700c36e161ddeffb3f9cf9b188b821807f88dae0d135e118792"
+    },
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q141801185.json",
+     "at": "2026-10-27T14:37:07Z",
+     "bytes": 31950,
+     "sha256": "9ef63ccd32436808251bce9f3c7245e349720273bd947a672ea87a0bfbf24b06"
+    },
+    {
+     "url": "https://www.wikidata.org/w/api.php?action=wbgetentities&ids=P1269%7CP154%7CP1542%7CP18%7CP2283%7CP31%7CP3587%7CP366%7CP373%7CP575%7CP61%7CP6949%7CP793%7CP856%7CP8885%7CP973%7CQ108871753%7CQ125498109%7CQ133698926%7CQ141803449%7CQ21708200%7CQ2299491%7CQ3510521%7CQ59&props=labels&languages=en&format=json",
+     "at": "2026-10-27T14:37:09Z",
+     "bytes": 2804,
+     "sha256": "dff5237b398d6c8cf31263942811f205c356696d93c96a21f3d501397bbfb421"
+    },
+    {
+     "url": "https://www.wikidata.org/w/api.php?action=query&prop=revisions&titles=Q141801185&rvlimit=500&rvdir=newer&rvprop=ids%7Ctimestamp%7Cuser%7Cuserid%7Csize%7Ccomment%7Cparentid%7Ctags%7Cflags&format=json&formatversion=2",
+     "at": "2026-10-27T14:37:11Z",
+     "bytes": 32321,
+     "sha256": "31ffd05974a0971071af2edd58a6e367e2b404593c85eb8e021b82ff6633cad1"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&list=backlinks&bltitle=PHP2Shell&bllimit=500&blnamespace=0&format=json&formatversion=2",
+     "at": "2026-10-27T14:37:13Z",
+     "bytes": 11507,
+     "sha256": "008d2d59aab05205879bfba04e8b7b3c007862268c1920ae465b4e15fd3b75f6"
+    }
+   ]
   }
  ],
  "title": "PHP2Shell",
@@ -241,8 +284,8 @@
  "links_in": 199,
  "dbpedia": {
   "url": "https://dbpedia.org/resource/PHP2Shell",
-  "status": 404,
-  "checked_at": "2026-10-27T10:46:09Z"
+  "status": "<urlopen error [Errno 104] Connection reset by peer>",
+  "checked_at": "2026-10-27T14:37:32Z"
  },
  "kind": "article",
  "of": null

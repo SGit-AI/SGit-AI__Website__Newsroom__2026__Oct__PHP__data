@@ -5003,6 +5003,327 @@
     "천지일보",
     "newscj.com"
    ]
+  },
+  {
+   "id": "annahar",
+   "name": "AnNahar",
+   "kind": "outlet",
+   "country": "LB",
+   "aliases": [
+    "AnNahar",
+    "annahar.com"
+   ]
+  },
+  {
+   "id": "eadaily",
+   "name": "EADaily",
+   "kind": "outlet",
+   "country": "RU",
+   "aliases": [
+    "EADaily",
+    "eadaily.com"
+   ],
+   "note": "A Russian news site; its Russian-language pages are its own copy."
+  },
+  {
+   "id": "evrensel",
+   "name": "Evrensel",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Evrensel",
+    "evrensel.net"
+   ]
+  },
+  {
+   "id": "kaldata-com",
+   "name": "Kaldata.com",
+   "kind": "outlet",
+   "country": "BG",
+   "aliases": [
+    "Kaldata.com",
+    "kaldata.com"
+   ]
+  },
+  {
+   "id": "revista-sociedade-militar",
+   "name": "Revista Sociedade Militar",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "Revista Sociedade Militar",
+    "sociedademilitar.com.br"
+   ],
+   "note": "A Brazilian military-affairs magazine: the page cited is about the Brazilian Army website going offline."
+  },
+  {
+   "id": "sc-media",
+   "name": "SC Media",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "SC Media",
+    "scworld.com"
+   ],
+   "note": "SC Media, whose site is scworld.com."
+  },
+  {
+   "id": "security-next",
+   "name": "Security NEXT",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "Security NEXT",
+    "security-next.com"
+   ]
+  },
+  {
+   "id": "sixactualits",
+   "name": "Sixactualités",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Sixactualités",
+    "sixactualites.fr"
+   ]
+  },
+  {
+   "id": "sdostschweiz",
+   "name": "Südostschweiz",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "Südostschweiz",
+    "suedostschweiz.ch"
+   ]
+  },
+  {
+   "id": "telehealth-org",
+   "name": "Telehealth.org",
+   "kind": "organisation",
+   "country": "US",
+   "aliases": [
+    "Telehealth.org",
+    "telehealth.org"
+   ],
+   "note": "Read from its name and address only: the site answered with a bot challenge. A telehealth training and news publisher, not a security outlet."
+  },
+  {
+   "id": "voi",
+   "name": "VOI",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "VOI",
+    "voi.id"
+   ]
+  },
+  {
+   "id": "wwwhatsnew",
+   "name": "WWWhat's new",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "WWWhat's new",
+    "wwwhatsnew.com"
+   ]
+  },
+  {
+   "id": "welivesecurity",
+   "name": "WeLiveSecurity",
+   "kind": "organisation",
+   "country": "SK",
+   "aliases": [
+    "WeLiveSecurity",
+    "welivesecurity.com"
+   ],
+   "note": "ESET's security blog: the vendor speaking, not an independent outlet."
+  },
+  {
+   "id": "winfuture-de",
+   "name": "WinFuture.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "WinFuture.de",
+    "winfuture.de"
+   ]
+  },
+  {
+   "id": "xataka",
+   "name": "Xataka",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "Xataka",
+    "xataka.com"
+   ]
+  },
+  {
+   "id": "xboxdynasty",
+   "name": "XboxDynasty",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "XboxDynasty",
+    "xboxdynasty.de"
+   ]
+  },
+  {
+   "id": "zdnet",
+   "name": "ZDNET",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "ZDNET",
+    "zdnet.com"
+   ],
+   "note": "The US ZDNET; ZDNET Japan is a separate party."
+  },
+  {
+   "id": "ziua-veche",
+   "name": "Ziua Veche",
+   "kind": "outlet",
+   "country": "RO",
+   "aliases": [
+    "Ziua Veche",
+    "ziuaveche.ro"
+   ]
+  },
+  {
+   "id": "zoom-tecnolgico",
+   "name": "Zoom Tecnológico",
+   "kind": "outlet",
+   "country": "CL",
+   "aliases": [
+    "Zoom Tecnológico",
+    "zoomtecnologico.com"
+   ]
+  },
+  {
+   "id": "machinarecord-codebook",
+   "name": "Codebook (Machina Record)",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "Codebook (Machina Record)",
+    "codebook.machinarecord",
+    "codebook.machinarecord.com"
+   ],
+   "note": "A Japanese threat-intelligence news blog; the cited page is a Silobreaker alert it relays."
+  },
+  {
+   "id": "cnet-france",
+   "name": "CNET France",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "CNET France",
+    "fr.cnet",
+    "fr.cnet.com"
+   ],
+   "note": "The French edition; CNET US is a separate site."
+  },
+  {
+   "id": "htxt-africa",
+   "name": "HTXT.africa",
+   "kind": "outlet",
+   "country": "ZA",
+   "aliases": [
+    "HTXT.africa",
+    "htxt.co.za"
+   ]
+  },
+  {
+   "id": "mediamixi",
+   "name": "mediamixi",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "mediamixi",
+    "mediamixi.jp"
+   ]
+  },
+  {
+   "id": "upi",
+   "name": "UPI",
+   "kind": "agency",
+   "country": "US",
+   "aliases": [
+    "UPI",
+    "upi",
+    "upi.com"
+   ],
+   "note": "United Press International, a wire: its copy is syndicated."
+  },
+  {
+   "id": "xenospectrum",
+   "name": "xenospectrum",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "xenospectrum",
+    "xenospectrum.com"
+   ]
+  },
+  {
+   "id": "news",
+   "name": "マイナビニュース",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "マイナビニュース",
+    "news.mynavi.jp"
+   ],
+   "note": "Mynavi News, the news site of Mynavi."
+  },
+  {
+   "id": "informationsecurity",
+   "name": "資安人科技網",
+   "kind": "outlet",
+   "country": "TW",
+   "aliases": [
+    "資安人科技網",
+    "informationsecurity.com.tw"
+   ]
+  },
+  {
+   "id": "bloter",
+   "name": "블로터",
+   "kind": "outlet",
+   "aliases": [
+    "블로터",
+    "bloter.net"
+   ]
+  },
+  {
+   "id": "yna",
+   "name": "연합뉴스",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "연합뉴스",
+    "yna.co.kr"
+   ]
+  },
+  {
+   "id": "zdnet-co-kr",
+   "name": "지디넷코리아",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "지디넷코리아",
+    "zdnet.co.kr"
+   ]
+  },
+  {
+   "id": "ziksir",
+   "name": "직썰",
+   "kind": "outlet",
+   "aliases": [
+    "직썰",
+    "ziksir.com"
+   ]
   }
  ]
 }
