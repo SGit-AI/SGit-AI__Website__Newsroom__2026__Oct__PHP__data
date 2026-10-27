@@ -601,18 +601,18 @@
   },
   {
    "id": "cisa-none",
-   "claim_hash": "8cb9302544e7fb1f",
-   "run": "Run-1",
+   "claim_hash": "09e69c9376d59d81",
+   "run": "Run-12",
    "mode": "vault",
    "kind": "state",
    "level": 6,
    "verdict": "holds",
-   "tension": "none",
+   "tension": "superseded",
    "contradictions": [],
-   "volatile": true,
-   "as_of": "20261022T081601Z",
+   "volatile": false,
+   "as_of": "20261027T004502Z",
    "status_fit": "ok",
-   "reason": "The CISA alert itself carries the dated negative and the captured KEV JSON (catalogVersion 2026.10.21, 1754 entries, counted by this desk) contains neither CVE; the CVE record's CISA ADP SSVC also says Exploitation none at 14:34Z on 21 Oct. All three are CISA, one party, but each is the authoritative record for what it says.",
+   "reason": "The claim is now a dated statement, true for 21 to 22 October (catalog 2026.10.21, 1,754 entries) and marked superseded by the correspondent on 27 October. CISA's own feed, fetched by the desk at 08:56 UTC on 27 October, is catalog 2026.10.26 released 22:24:24Z on 26 October and lists CVE-2026-109618 and CVE-2026-109619 (PHP Group, PHP), dateAdded 2026-10-26, due 2026-10-29: the same bytes (sha256 653c72ea869c...) as the vault's capture of 00:45 UTC on 27 October. The dated claim holds; the present state is the vault claim brk1-kev-listed-20261026.",
    "checked": [
     {
      "source": "cisa-alert-php-20261021",
@@ -645,6 +645,22 @@
      "result": "absent",
      "excerpt": null,
      "outside_citation": false
+    },
+    {
+     "source": "cisa-alert-kev-20261026",
+     "file": "sources/cisa-alert-kev-20261026/captures/20261027T004502Z/text.txt",
+     "sha256": "9c124af5dc9e511519c3c7a34b10f3a867502153e50a17bde89ca49860b40d1b",
+     "result": "carries",
+     "excerpt": "CVE-2026-109618 – PHP Memory Corruption Vulnerability",
+     "outside_citation": false
+    },
+    {
+     "source": "cisa-kev-catalog",
+     "file": "sources/cisa-kev-catalog/captures/20261027T004502Z/text.txt",
+     "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13",
+     "result": "carries",
+     "excerpt": "\"dateReleased\": \"2026-10-26T22:24:24.6101Z\"",
+     "outside_citation": false
     }
    ],
    "quotes_checked": [],
@@ -653,6 +669,7 @@
     "Evidence-1",
     "Evidence-10",
     "Evidence-18",
+    "Evidence-19",
     "Evidence-6",
     "Finding-13",
     "Finding-63"
@@ -1463,8 +1480,8 @@
   },
   {
    "id": "kev-precedent",
-   "claim_hash": "dd3f297886cc5fd3",
-   "run": "Run-3",
+   "claim_hash": "b1851ff94f93fe07",
+   "run": "Run-12",
    "mode": "vault",
    "kind": "record",
    "level": 2,
@@ -1472,9 +1489,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261022T112501Z",
+   "as_of": "20261027T004502Z",
    "status_fit": "ok",
-   "reason": "'Reported' now fits, and the note says the one-day exploitation rests on Akamai alone. The claim text still calls CVE-2024-4577 'the last PHP core RCE', which the CVE record does not carry (a PHP-CGI argument injection on Windows); and 'not in KEV after one day' should name the catalog version checked. Finding-20 partly fixed; Finding-21 open.",
+   "reason": "'Reported' now fits, and the note says the one-day exploitation rests on Akamai alone. The claim text still calls CVE-2024-4577 'the last PHP core RCE', which the CVE record does not carry (a PHP-CGI argument injection on Windows); and 'not in KEV after one day' should name the catalog version checked. Finding-20 partly fixed; Finding-21 open. Run 12: the claim now carries both halves from the catalogs: version 2026.10.21 (not listed one day after disclosure) and 2026.10.26 (both CVEs added 26 October, five days after the 21 October fixes; due date 29 October). The 2024 half, CVE-2024-4577 'exploited one day after disclosure', still rests on Akamai alone, which keeps the grade at A2 holds-in-part.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -1507,11 +1524,28 @@
      "result": "partial",
      "excerpt": "we observed exploit attempts targeting this PHP flaw on our honeypot network within 24 hours of its disclosure.",
      "outside_citation": false
+    },
+    {
+     "source": "cisa-alert-kev-20261026",
+     "file": "sources/cisa-alert-kev-20261026/captures/20261027T004502Z/text.txt",
+     "sha256": "9c124af5dc9e511519c3c7a34b10f3a867502153e50a17bde89ca49860b40d1b",
+     "result": "carries",
+     "excerpt": "CVE-2026-109618 – PHP Memory Corruption Vulnerability",
+     "outside_citation": false
+    },
+    {
+     "source": "cisa-kev-catalog",
+     "file": "sources/cisa-kev-catalog/captures/20261027T004502Z/text.txt",
+     "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13",
+     "result": "carries",
+     "excerpt": "\"dateReleased\": \"2026-10-26T22:24:24.6101Z\"",
+     "outside_citation": false
     }
    ],
    "quotes_checked": [],
    "tickets": [
     "Evidence-1",
+    "Evidence-19",
     "Finding-20",
     "Finding-21",
     "Finding-76"
@@ -2211,8 +2245,8 @@
   },
   {
    "id": "no-confirmed-compromise",
-   "claim_hash": "18618668cddf9015",
-   "run": "Run-11",
+   "claim_hash": "170c00912944894f",
+   "run": "Run-12",
    "mode": "vault",
    "kind": "state",
    "level": 4,
@@ -2220,9 +2254,9 @@
    "tension": "none",
    "contradictions": [],
    "volatile": true,
-   "as_of": "20261026T144200Z",
+   "as_of": "20261027T071500Z",
    "status_fit": "ok",
-   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4. Run 10 (as of 12:14 UTC on 26 October, vault head 22a0c2920b88): 20 captures made since 09:40 UTC name no compromised organisation; YugaTech says the 70% figure 'does not mean 70% of websites have been confirmed compromised'. Holds at A4. Run 11 (as of 14:42 UTC on 26 October, vault head 2fc7e432584b): the 10 captures made since 12:14 UTC name no compromised organisation. Holds at A4.",
+   "reason": "Refreshed to 16:05 UTC on 24 October, still time-bounded and 'reported', which fits. More independent negatives now carry it: Sophos withdrew its success claim (scanning and a few failed attempts, via Cyber Security News), American Banker finds no US bank or credit union reporting a compromise, The Next Web's officials in three countries have 'not seen one succeed'. The vendor half (Hadrian, Patchstack) is still through the press, A3. Every new quote checked verbatim. Run 6 adds Die Presse ('In Österreich sind bisher keine erfolgreichen Angriffe bekannt') and RainForest's honeypot (21 PHP2Shell POST requests, attempts), both checked in their captures. Run 7 (as of 09:35 UTC on 25 October): the Turkish Presidency's Cyber Security Directorate, via Haber, says e-Devlet is safe and its services continue, naming no compromise; teleSUR, captured at 09:35 UTC on 25 October, says no massive successful intrusion had been publicly confirmed and that most activity was scanning and failed attempts. Of the 20 captures made since 16:05 UTC on 24 October, none names a compromised organisation. Run 8 (as of 14:40 UTC on 25 October, vault head 94352a55fbaa): La Razon, captured 24 October, reports attacks as attempts (Amazon's attempt of 17 October, Cloudflare and Amazon 'detectando ataques') and names no compromised organisation; it supports the attempts half, not the absence, so it is graded partial. No capture since 09:35 UTC on 25 October names a victim. Run 9 (as of 09:40 UTC on 26 October, vault head a7ab84771dfc): a new source, Wersm (captured 26 October), says 'Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity', secondhand from TechCrunch, naming no victim. It does not touch a claim about a named organisation, but it is not backed by any primary capture: Palo Alto's own bulletin, captured 22 October, says it is 'not aware of any malicious exploitation of this issue against our products'. Finding opened; the claim holds at A4. Run 10 (as of 12:14 UTC on 26 October, vault head 22a0c2920b88): 20 captures made since 09:40 UTC name no compromised organisation; YugaTech says the 70% figure 'does not mean 70% of websites have been confirmed compromised'. Holds at A4. Run 11 (as of 14:42 UTC on 26 October, vault head 2fc7e432584b): the 10 captures made since 12:14 UTC name no compromised organisation. Holds at A4. Run 12 (as of 07:15 UTC on 27 October, vault nnd3i8iw at 6fe04cc074f9): the claim now carries CISA's listing of both CVEs in KEV on 26 October, read in the CISA alert and the catalog, checked against CISA's live feed. The listing is exploitation of the flaws, which the claim separates from compromise of a named organisation: it names no victim, no compromised organisation and no threat actor (alert text and catalog entries read). The absence of a named compromise still holds at A4.",
    "checked": [
     {
      "source": "cisa-kev-json",
@@ -2415,6 +2449,14 @@
      "result": "partial",
      "excerpt": "Palo Alto Networks and Trail of Bits later reported confirmed compromises and post-exploit activity",
      "outside_citation": false
+    },
+    {
+     "source": "cisa-alert-kev-20261026",
+     "file": "sources/cisa-alert-kev-20261026/captures/20261027T004502Z/text.txt",
+     "sha256": "9c124af5dc9e511519c3c7a34b10f3a867502153e50a17bde89ca49860b40d1b",
+     "result": "carries",
+     "excerpt": "CVE-2026-109618 – PHP Memory Corruption Vulnerability",
+     "outside_citation": false
     }
    ],
    "quotes_checked": [
@@ -2430,6 +2472,7 @@
     "Evidence-10",
     "Evidence-12",
     "Evidence-18",
+    "Evidence-19",
     "Evidence-3",
     "Finding-128",
     "Finding-26",
@@ -5022,9 +5065,19 @@
       "watchtowr-php2shell-faq",
       "watchtowr-php2shell"
      ]
+    },
+    {
+     "who": "CISA (KEV catalog 2026.10.26 and its alert of 26 October)",
+     "when": "2026-10-26",
+     "says": "Added CVE-2026-109618 and CVE-2026-109619 to the Known Exploited Vulnerabilities catalog; the alert calls these 'a frequent attack vector for malicious cyber actors'.",
+     "measures": "a listing, which takes evidence of exploitation of the flaws; it names no victim, organisation or actor",
+     "sources": [
+      "cisa-alert-kev-20261026",
+      "cisa-kev-catalog"
+     ]
     }
    ],
-   "reading": "They measure different things at different times. Amazon counts attempts against its own sensors and honeypots; CISA and KEV record exploitation it has evidence of against real systems. Both can be true at once: attempts in volume, and no confirmed compromise of a named organisation. The site should never write 'exploited' without saying which of the two it means. Amazon's 'broadly exploited' is the stronger word, sourced to Amazon's own post in the vault; a KEV entry would be the first official signal that attempts have become compromises. Run 3 (24 October): Amazon itself has since narrowed its sentence from 'broadly exploited' to 'broad exploitation attempts', without a note: the strongest word on the exploitation side now agrees with the officials' reading. Run 5 (24 October): Sophos withdrew its earlier success claim at 21:21 UTC on 22 October, the same evening Amazon narrowed its wording: both strongest 'exploited' statements were walked back to attempts.",
+   "reading": "They measure different things at different times. Amazon counts attempts against its own sensors and honeypots; CISA and KEV record exploitation it has evidence of against real systems. Both can be true at once: attempts in volume, and no confirmed compromise of a named organisation. The site should never write 'exploited' without saying which of the two it means. Amazon's 'broadly exploited' is the stronger word, sourced to Amazon's own post in the vault; a KEV entry would be the first official signal that attempts have become compromises. Run 3 (24 October): Amazon itself has since narrowed its sentence from 'broadly exploited' to 'broad exploitation attempts', without a note: the strongest word on the exploitation side now agrees with the officials' reading. Run 5 (24 October): Sophos withdrew its earlier success claim at 21:21 UTC on 22 October, the same evening Amazon narrowed its wording: both strongest 'exploited' statements were walked back to attempts. Run 12: CISA's KEV listing on 26 October settles the question in K-002's own terms: the flaws are exploited, by the authoritative record. It is not a compromise of a named organisation.",
    "settle": "A KEV entry for either CVE, or a named organisation confirming a compromise.",
    "ticket": "Contradiction-2"
   },
@@ -6320,6 +6373,30 @@
    ]
   },
   {
+   "label": "Evidence-19",
+   "type": "evidence",
+   "status": "proposed",
+   "title": "CISA KEV 2026.10.26 (22:24 UTC on 26 October): CVE-2026-109618 and CVE-2026-109619 listed, dateAdded 2026-10-26, due 2026-10-29",
+   "description": "Fetched by the desk from https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json at 08:56 UTC on 27 October: catalogVersion 2026.10.26, dateReleased 2026-10-26T22:24:24.6101Z, sha256 653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13, the same bytes as the evidence vault's capture of 00:45 UTC on 27 October. PHP Group / PHP, knownRansomwareCampaignUse Unknown. No victim or actor named.",
+   "severity": "",
+   "claims": [
+    "cisa-none",
+    "kev-precedent",
+    "no-confirmed-compromise"
+   ],
+   "sources": [
+    "cisa-alert-kev-20261026",
+    "cisa-kev-catalog"
+   ],
+   "pages": [],
+   "url": "",
+   "retrieved_at": "",
+   "sha256": "",
+   "excerpt": "",
+   "run": "Run-12",
+   "links": []
+  },
+  {
    "label": "Finding-1",
    "type": "finding",
    "status": "open",
@@ -6740,7 +6817,7 @@
   {
    "label": "Finding-20",
    "type": "finding",
-   "status": "open",
+   "status": "closed",
    "title": "kev-precedent: Status 'confirmed' outruns the weakest part (A2), and 'last PHP core RCE' is not shown",
    "description": "The one-day exploitation rests on one party (Akamai). The CVE record calls CVE-2024-4577 'Argument Injection in PHP-CGI' on Windows with certain code pages, a SAPI bug rather than the PHP core; and nothing captured shows it is the most recent PHP RCE (only that it is the most recent PHP entry in KEV). Say 'the last PHP flaw in KEV'.",
    "severity": "medium",
@@ -9195,6 +9272,19 @@
    "summary": "no-confirmed-compromise still holds at 14:42 UTC on 26 October (A4); none of the 10 new captures names a compromised organisation. KEV (2026.10.23) lists neither CVE; NVD has no record for CVE-2026-115560."
   },
   {
+   "id": "Run-12",
+   "site_version": "data v0.1.66",
+   "vault_commit": "6fe04cc074f9",
+   "site_export_commit": "6fe04cc074f9",
+   "started": "2026-10-27T08:54Z",
+   "finished": "2026-10-27T09:25Z",
+   "quiet_wakes_before": 0,
+   "checked": "fc.py changed (cisa-none, kev-precedent, no-confirmed-compromise); fc.py check (0 failures); fc.py drift (the same six); CISA's KEV feed fetched live and compared with the vault's capture; NVD; W3Techs",
+   "opened": "1 evidence ticket (Evidence-19: KEV 2026.10.26 lists both CVEs); closed Finding-20",
+   "audit": "fc.py check: 0 failures. fc.py drift: 6, unchanged and explained.",
+   "summary": "CISA added CVE-2026-109618 and CVE-2026-109619 to KEV on 26 October (catalog 2026.10.26, released 22:24:24Z, due 29 October). The desk fetched CISA's feed itself and got the same bytes as the vault's capture (sha256 653c72ea869c...). cisa-none is now a dated claim, superseded; kev-precedent carries both halves (A2); no-confirmed-compromise still holds at A4 as of 07:15 UTC on 27 October: the listing is exploitation of the flaws, names no victim or actor. K-002 gains the CISA statement. W3Techs 69.2%, NVD still has no record for CVE-2026-115560. The desk now reads the pack vault nnd3i8iw (sgit 0.26.0)."
+  },
+  {
    "id": "Run-2",
    "site_version": "0.5.7",
    "vault_commit": "31ccc515c29f",
@@ -9870,6 +9960,13 @@
         "value": 69.2,
         "sha256": "3fc3bc643bf82fd4cda77983dbc283735c98d6e05c46199fb722bb576435fea0",
         "run": "Run-8",
+        "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
+       },
+       {
+        "retrieved_at": "2026-10-27T08:56Z",
+        "value": 69.2,
+        "sha256": "e6e1516166079ee4f90fe923ee92b0d12f1a055030aa6b3cd379b26b34cb5cce",
+        "run": "Run-12",
         "excerpt": "PHP is used by 69.2% of all the websites whose server-side programming language we know."
        }
       ]
