@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "exploitation paragraph: 'as of' moved to 07:15 UTC on 27 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "exploitation paragraph: 'as of' moved to 09:43 UTC on 27 October; the CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "Partly: no-confirmed-compromise refreshed to 07:15 UTC on 27 October (vault 6fe04cc074f9, 580 sources); the other 69 claims not yet re-read."
+   "note": "Partly: no-confirmed-compromise refreshed to 09:43 UTC on 27 October (vault 55b47c4d6af1, 598 sources); the other 69 claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "1f38e70921b2",
-   "note": "Brazil (Anatel, TRF1, Justica Federal da 4a Regiao, TRF6), Denmark (Kombit) and the Internet Archive added, vault 6fe04cc074f9; other rows not re-read in full."
+   "note": "BambooHR, the University of Basel and the Brazilian Army's SGEx added, vault 55b47c4d6af1; other rows not re-read in full."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "6fe04cc074f9",
-   "note": "A decoy server's successful RCE (Karimi, Perplexity; ENTER.CO citing BleepingComputer; one page) added; as of 07:15 UTC on 27 October; searched count 580; head 6fe04cc074f9."
+   "checked_against": "55b47c4d6af1",
+   "note": "Unit 42's retraction, Sophos, watchTowr (SC Media), Delft's telescope added; the Karimi honeypot row completed; as of 09:43 UTC on 27 October; searched count 598; head 55b47c4d6af1."
   },
   {
    "path": "data/exploitation.json",

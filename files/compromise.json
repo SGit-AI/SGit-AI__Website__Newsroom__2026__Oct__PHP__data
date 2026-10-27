@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-27T07:15Z",
+ "as_of": "2026-10-27T09:43Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 580,
+   "count": 598,
    "unit": "sources",
-   "detail": "head 6fe04cc074f9 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head 55b47c4d6af1 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -548,10 +548,51 @@
    "when": "2026-10-26",
    "who": "Adel Karimi (Perplexity), with honeypots; Marcus Hutchins (Expel) on it (via ENTER.CO, citing BleepingComputer)",
    "says": "Honeypots recorded a successful remote code execution against Apache with mod_php and PHP 8.4.26: the attacker obtained server memory and then ran a command. Hutchins called it the best-quality confirmation of exploitation he had seen.",
-   "reading": "A decoy server on a vulnerable build (8.4.26 is below the fixed 8.4.27), not an organisation; one page, and the BleepingComputer article is not among the captures. No victim named. Europe Infos (26 October, unattributed) gives the same decoy result in numbers: 35 malicious PHP shells launched by Apache processes on three PHP 8.4.26 test servers, first on 24 October",
+   "reading": "A decoy server on a vulnerable build (8.4.26 is below the fixed 8.4.27), not an organisation; one page, and the BleepingComputer article is not among the captures. No victim named. Europe Infos (26 October, unattributed) gives the same decoy result in numbers: 35 malicious PHP shells launched by Apache processes on three PHP 8.4.26 test servers, first on 24 October SC Media (26 October) adds, through Suzu Labs' Calderone, that Karimi recorded 35 working shells on unpatched PHP 8.4.26 under Apache mod_php, with packet-to-process evidence tying each captured request to a shell spawned by an Apache worker, in a deliberately favourable single-worker setup: it proves exploitation is real, not that it works reliably everywhere.",
    "sources": [
     "enter-chips-bits-fallas-criticas-php2shell-exp",
-    "europe-infos-actualites-11979-php2shell-decryptage-d"
+    "europe-infos-actualites-11979-php2shell-decryptage-d",
+    "scworld-news-php2shell-exploitation-confirmed-bu"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-25",
+   "who": "Palo Alto Networks Unit 42 (via SC Media)",
+   "says": "In an Oct. 25 blog Unit 42 retracted its Oct. 23 statement that an attack against a European government agency was related to a vulnerable PHP2Shell application, saying it was unable to confirm that initial access was associated with either of the two bugs.",
+   "reading": "A vendor's attribution, made and withdrawn (as Sophos's was); no agency named; the original statement and Unit 42's blog are not captured, only SC Media's account of them",
+   "sources": [
+    "scworld-news-php2shell-exploitation-confirmed-bu"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-26",
+   "who": "Sophos (via SC Media)",
+   "says": "In an Oct. 26 blog Sophos said that, as of its reporting, PHP2Shell had yet to become the mass exploitation event many in the industry braced for.",
+   "reading": "A vendor's own view of what it sees, second-hand; Sophos's blog is not captured",
+   "sources": [
+    "scworld-news-php2shell-exploitation-confirmed-bu"
+   ]
+  },
+  {
+   "kind": "no-success-known",
+   "when": "2026-10-26",
+   "who": "watchTowr's head of threat intelligence, Jake Knott (via SC Media)",
+   "says": "Whether reliable, indiscriminate exploitation is happening in the wild: 'for now, the answer is a firm No'. SC Media adds that as of the afternoon of 26 October there were no known public reports of successful exploitation and no widespread exploitation.",
+   "reading": "A vendor's reading and the outlet's, at one moment; CISA's KEV listing of 26 October is the position that the flaws are exploited",
+   "sources": [
+    "scworld-news-php2shell-exploitation-confirmed-bu"
+   ]
+  },
+  {
+   "kind": "attempts",
+   "when": "2026-10-26",
+   "who": "Delft Threat Intelligence Lab, as Suzu Labs' Denis Calderone gives it to SC Media",
+   "says": "Honeypots and a network telescope recorded more than 50,000 PHP2Shell exploitation requests from more than 600 addresses in 70 countries as of the morning of 26 October; the busiest hour so far brought more than 5,100 requests; 171 of the addresses had moved past probing to sending code or droppers.",
+   "reading": "Attempt volume, not successful compromise; second-hand through Suzu Labs",
+   "sources": [
+    "scworld-news-php2shell-exploitation-confirmed-bu"
    ]
   }
  ],

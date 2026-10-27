@@ -354,6 +354,40 @@
    "sources": [
     "winpoin-situs-pemerintah-di-eropa-sampai-downtim"
    ]
+  },
+  {
+   "who": "BambooHR, the payroll company (its service in the United States, Canada and Ireland)",
+   "country": "US",
+   "what": "Shut its service down in the United States, Canada and Ireland as a precaution, as The Hacker News reports it (WWWhat's new, 21 October, 21:17 UTC); Critic Arad, Cyber Kendra, Estrella Digital and Martin Cid also name BambooHR. BambooHR's own notice is not captured",
+   "when": "2026-10-21",
+   "said_by": "The Hacker News, via WWWhat's new",
+   "status": "reported",
+   "sources": [
+    "wwwhatsnew-2026-10-21-php2shell-que-pasa-si-no-actu",
+    "criticarad-php2shell-cve-2026-109618-ghid-patch"
+   ]
+  },
+  {
+   "who": "Switzerland: the University of Basel's website",
+   "country": "CH",
+   "what": "Unreachable on 21 October, among the first Swiss municipalities, authorities, universities and hospitals reported to have switched their offerings off as a precaution; the page names only the University of Basel (Südostschweiz, 21 October, 15:28 UTC). The university's own notice is not captured",
+   "when": "2026-10-21",
+   "said_by": "Südostschweiz",
+   "status": "reported",
+   "sources": [
+    "suedostschweiz-panorama-php-sicherheitsluecke-weltweite"
+   ]
+  },
+  {
+   "who": "Brazil: the Army General Secretariat (SGEx) website, which publishes the Army's bulletins",
+   "country": "BR",
+   "what": "Showed a notice on 26 October that the page was in maintenance because of the PHP vulnerability; the outlet says it saw the notice itself. Precautionary, not evidence of an attack",
+   "when": "2026-10-26",
+   "said_by": "Revista Sociedade Militar",
+   "status": "reported",
+   "sources": [
+    "sociedademilitar-2026-10-site-do-exercito-brasileiro-sai"
+   ]
   }
  ],
  "compromised": [
