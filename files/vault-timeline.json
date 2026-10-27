@@ -1093,5 +1093,15 @@
   "confidence": "stated",
   "phase": "disclosure",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-26",
+  "event": "A honeypot documented by Adel Karimi of Perplexity recorded successful remote code execution against Apache mod_php with PHP 8.4.26, reported as the first well-documented successful exploitation",
+  "sources": [
+   "enter-chips-bits-fallas-criticas-php2shell-exp"
+  ],
+  "confidence": "stated",
+  "phase": "exploitation",
+  "agent": "curator@php.newsroom"
  }
 ]

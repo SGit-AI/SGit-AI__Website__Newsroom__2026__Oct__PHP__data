@@ -4374,5 +4374,137 @@
   "topic": "scale",
   "note": "A company's own sample of its merchant customers' sites, not the web at large; 'affected' appears to mean running an affected PHP version (98.9% of PHP sites were), not compromised.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-enter-honeypot-rce-confirmed",
+  "claim": "On 26 October a honeypot documented by Adel Karimi of Perplexity recorded successful remote code execution against Apache with mod_php and PHP 8.4.26, in which the attacker obtained server memory and then ran a command; Marcus Hutchins of Expel called it the best-quality confirmation of exploitation he had seen",
+  "by": "ENTER.CO (citing BleepingComputer)",
+  "sources": [
+   "enter-chips-bits-fallas-criticas-php2shell-exp"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "The first well-documented successful exploitation reported in the vault, on a decoy running a vulnerable build (8.4.26 is below the fixed 8.4.27), not a real site. It sharpens the earlier dated claims that exploitation was not confirmed (cur17-technoisy-huntress-no-exploitation, cur18-trendmicro-no-confirmed-exploitation) and matches the unnamed honeypot result in cur18-europeinfos-honeypot-35-shells. Karimi's analysis and BleepingComputer's report are the primaries.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-enter-colcert-8699",
+  "claim": "Colombia's ColCERT issued critical alert AL-20261021-123 on 21 October and counted 8,699 internet-exposed PHP services in Colombia, mostly on ISP and telecom networks",
+  "by": "ENTER.CO (citing ColCERT via Más Colombia)",
+  "sources": [
+   "enter-chips-bits-fallas-criticas-php2shell-exp"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "The outlet itself says the figure measures exposure, not vulnerable or attacked servers, and does not identify the owners.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-unwire-hn-poster-apology",
+  "claim": "The Hacker News user who posted the two CVE identifiers on 20 October, before the planned disclosure, later apologised, saying the person who gave them the information said there was no confidentiality restriction and that they only meant to warn people who build PHP themselves",
+  "by": "unwire.hk (citing the user's apology post on Hacker News)",
+  "sources": [
+   "unwire-2026-10-23-php2shell-hacker-news-leak-ap"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "The user's own account of their motive, second-hand; the outlet says the available information does not support blaming the whole incident on them, since Amazon's honeypot attempt on 17 October and Calif's video and Chainguard's early images came separately (cur15-scherzer-calif-video, cur18-tnw-chainguard-six-hours). A private individual: the handle is deliberately not recorded here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-uol-anatel-trf",
+  "claim": "In Brazil the telecom regulator Anatel temporarily took its SEI electronic information system offline, and there were reports of instability at the regional federal courts TRF-1 and TRF-6",
+  "by": "UOL Tilt",
+  "sources": [
+   "uol-tilt-noticias-redacao-2026-10-22-falha-n"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary and second-hand; the article says offline does not mean hacked, and the courts' instability is reported, not explained.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-uzone-conflates-shutdown-exploitation",
+  "claim": "Exploitation is 'already massive', affecting 32 UK government services that were deactivated and sites such as the BBC, the Internet Archive, Wikipedia and 4chan",
+  "by": "Uzone.id (citing TechCrunch and Malwarebytes)",
+  "sources": [
+   "uzone-celah-php2shell-ancam-33-juta-situs-sera"
+  ],
+  "status": "disputed",
+  "topic": "exploitation",
+  "note": "Conflates precautionary shutdowns with exploitation: the 32 UK services were suspended as a 'necessary precaution' per the UK cyber minister, with no critical service affected or breached (cur19-vietnamnet-uk-32-services). Millions of exploitation attempts were reported, but attempts are not successes.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-vietnamnet-uk-32-services",
+  "claim": "The UK's cyber-security minister Liz Lloyd told Parliament that 32 government public services had been suspended as a 'necessary precaution' during updates, and the Prime Minister's office said no critical public service had been affected or breached",
+  "by": "VietNamNet (citing the UK cyber minister and the Prime Minister's office)",
+  "sources": [
+   "vietnamnet-website-toan-cau-hung-chiu-hang-trieu-do"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand through a Vietnamese outlet; the Hansard record or the government's statement is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-vietnamnet-ncsc-50000",
+  "claim": "The UK's National Cyber Security Centre sent 50,000 technical warnings to relevant organisations and called the scale of the vulnerability 'unprecedented', noting that some old systems cannot take the patch and will have to be replaced",
+  "by": "VietNamNet (citing the NCSC)",
+  "sources": [
+   "vietnamnet-website-toan-cau-hung-chiu-hang-trieu-do"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Second-hand; the NCSC's own statement is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-vtv-nl-fi-exploited",
+  "claim": "The Netherlands and Finland recorded hackers beginning to exploit the flaws to break into systems",
+  "by": "VTV",
+  "sources": [
+   "vtv-canh-bao-lo-hong-php-website-viet-nam-ca"
+  ],
+  "status": "disputed",
+  "topic": "compromise",
+  "note": "Contradicted by other outlets: Dutch and Finnish bodies took services offline as a precaution (Reuters via WinPoin, Notebookcheck, Security.NL) and no successful break-in was confirmed at the time. VTV names no source.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-hankooki-kisa-rules",
+  "claim": "KISA issued corporate response rules for PHP2Shell: update; if that is hard, apply interim measures; if those are hard too, block external access or suspend the service; check logs from 20 October for signs of compromise, rotate credentials on exposed servers and report any compromise to KISA",
+  "by": "Weekly Hankook (citing KISA)",
+  "sources": [
+   "weekly-hankooki-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The agency's own guidance as relayed; the NSA and FBI take-offline advice is repeated from other outlets (cur18-fortune-nsa-advice, cur14-nbc-fr-cisa).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-winpoin-denmark-kombit",
+  "claim": "In Denmark the public-sector IT body Kombit temporarily closed a number of services, including the national school communication platform, as a precaution",
+  "by": "WinPoin (citing Reuters)",
+  "sources": [
+   "winpoin-situs-pemerintah-di-eropa-sampai-downtim"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Precautionary and second-hand; Reuters is the primary. The Dutch, Finnish and French closures in the same list are already in the vault from other outlets.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur19-wsws-duong-wsj",
+  "claim": "Calif's chief executive Thai Duong told the Wall Street Journal that someone could take the patches, run AI against them and post an exploit script, and that 'all hell will break loose'",
+  "by": "World Socialist Web Site (citing the Wall Street Journal)",
+  "sources": [
+   "wsws-en-articles-2026-10-23-rfdk-o23-html"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A prediction by a researcher involved in the discovery, relayed second-hand; the outlet adds that the flaws have high attack complexity and not every attacker instantly had a working tool. The WSJ interview is the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]

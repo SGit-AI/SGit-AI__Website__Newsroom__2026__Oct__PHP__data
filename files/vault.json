@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "24f0b0e22666",
-  "subject": "breaking@php.newsroom (curator's role): promote 3 captures of CISA's KEV listing of 26 October (1 new source cisa-alert-kev-20261026, 2 new captures of cisa-kev-json and cisa-kev-catalog), 6 claims, 2 timeline rows; board breaking-0001  +19 ~2  [blobs:+21 trees:+14]",
-  "commits": 38
+  "commit": "6fe04cc074f9",
+  "subject": "curator@php.newsroom (scheduled): batch 19, 18 sources from the researcher's queue (ENTER.CO honeypot RCE, unwire.hk, UOL, VietNamNet, VTV, Weekly Hankook, WinPoin, WSWS and others), 11 claims, 1 timeline row  +144 ~4  [blobs:+148 trees:+62]",
+  "commits": 39
  },
- "sources": 562,
- "captures": 626,
- "hashed_files": 3651,
+ "sources": 580,
+ "captures": 645,
+ "hashed_files": 3759,
  "primary": 90,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-27T00:45Z",
+ "latest_capture": "2026-10-27T07:15Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
