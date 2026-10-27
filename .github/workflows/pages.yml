@@ -7,7 +7,7 @@
 #            no longer dev's head stands down: the run for the newer head releases it (a run releases only what it gated).
 #            Two releases cannot take one number: one release runs at a time (the concurrency group), and a refused push
 #            deletes its tag and tries again, three times;
-#   package  the served tree, from the release commit (tools/package.py: every version from its tag, each file once at /blobs/<sha256>, the newest five plain, /latest/), read-only;
+#   package  the served tree, from the release commit (tools/package.py: every version (the folders published before 27 October from the last commit that held them, then every tag), each file once at /blobs/<sha256>, the newest five plain, /latest/), read-only;
 #   deploy   publishes only what package built, from the commit release made.
 # The release push uses this run's GITHUB_TOKEN, which starts no new run, so a release is never numbered twice; that is
 # why package and deploy run here, in the same run. Installed by the press; a change goes to security@php.newsroom's
@@ -61,21 +61,6 @@ jobs:
               echo "::error::a pushed commit changed VERSION; it is written by CI only (release.sh never touches it)"; exit 1
             fi
           fi
-          # once, in a repository whose published versions were committed folders (v/<version>/, until 27 October 2026):
-          # tag each on the commit that published it, and the last commit that held them as archive/v-folders (CI owns
-          # every tag, the old ones too)
-          if [ -z "$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*')" ]; then
-            del="$(git log -1 --diff-filter=D --format=%H "${GITHUB_SHA}" -- v/ 2>/dev/null || true)"
-            if [ -n "$del" ]; then
-              arch="$(git rev-parse "${del}^")"; git tag archive/v-folders "$arch"
-              for ver in $(git ls-tree --name-only "$arch:v"); do
-                c="$(git log --diff-filter=A --format=%H "$arch" -- "v/$ver/manifest.json" | tail -1)"
-                [ -n "$c" ] && git tag "v$ver" "$c"
-              done
-              git push -q origin refs/tags/archive/v-folders $(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sed 's#^#refs/tags/#')
-              echo "backfilled $(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | wc -l) version tags and archive/v-folders at ${arch}"
-            fi
-          fi
           release() { echo "version=$1" >> "$GITHUB_OUTPUT"; echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"; echo "$2 v$1"; }
           for attempt in 1 2 3; do
             git fetch -q origin "+refs/heads/dev:refs/remotes/origin/dev"
@@ -85,8 +70,9 @@ jobs:
             if [ "$(git rev-parse origin/dev)" != "${GITHUB_SHA}" ]; then
               echo "dev has moved past this run's commit: the run for the newer push gates and releases it"; exit 0
             fi
-            last="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)"
-            base="${last#v}"; [ -n "$base" ] || base="$(cat VERSION 2>/dev/null || echo 0.1.0)"
+            last="$(git tag -l 'v[0-9]*.[0-9]*.[0-9]*' | sort -V | tail -1)"; last="${last#v}"
+            file="$(cat VERSION 2>/dev/null || echo 0.1.0)"          # the version before CI owned it, until a tag passes it
+            base="$(printf '%s\n%s\n' "${last:-0.0.0}" "$file" | sort -V | tail -1)"
             IFS=. read -r MA MI PA <<< "$base"
             new="$MA.$MI.$((PA+1))"                  # on dev, the last number plus one
             printf '%s\n' "$new" > VERSION

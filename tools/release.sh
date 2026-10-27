@@ -31,7 +31,7 @@ if git diff --cached --quiet; then echo "nothing to release"; exit 0; fi
 for attempt in 1 2 3 4 5; do
   if [ -n "${RELEASE_TRAILER:-}" ]; then git commit -q -m "$MSG" -m "$RELEASE_TRAILER"; else git commit -q -m "$MSG"; fi
   if git push -q origin "HEAD:$BRANCH" 2>/dev/null; then
-    echo "pushed to $BRANCH; CI gates it again, tags the next version and deploys"; exit 0
+    echo "pushed to $BRANCH; CI gates it, numbers it (VERSION and a tag) and deploys it"; exit 0
   fi
   echo "push rejected (someone released meanwhile): taking it in ($attempt of 5)"
   git reset -q --soft HEAD~1; git reset -q

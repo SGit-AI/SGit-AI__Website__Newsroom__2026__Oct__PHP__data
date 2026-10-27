@@ -4,7 +4,7 @@
     python3 tools/package.py --into _site
 
 Every tag v<a>.<b>.<c> is a published version. One published before versions were minted in CI is served from the
-tag archive/v-folders (the last commit that held v/ in the tree), as it was; a newer one is built from its tag's files/,
+last commit that held v/ in the tree (found from the history), as it was; a newer one is built from its tag's files/,
 schemas/ and tools/, the way a version has always been built. The served tree:
 
 - /v/<version>/manifest.json   for every version: each file's name, group, size, sha256 and schema
@@ -22,12 +22,28 @@ import argparse, hashlib, html, io, json, os, shutil, subprocess, sys, tarfile, 
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 SITE = 'https://data.php.oct.2026.newsroom.sgit.ai'
 KEEP_PLAIN = 5
-ARCHIVE = 'archive/v-folders'   # the last commit that held v/ in the tree (26 October 2026): every version published before CI minted them
 
 
 def git(*a, binary=False):
     r = subprocess.run(['git', '-C', ROOT, *a], capture_output=True, check=True)
     return r.stdout if binary else r.stdout.decode()
+
+
+def archive():
+    """The last commit that held v/ in the tree: the parent of the commit that removed it (27 October 2026). Every
+    version published before CI owned the version is read from there, as it was. None in a repository that never had v/."""
+    try:
+        gone = git('log', '-1', '--diff-filter=D', '--format=%H', 'HEAD', '--', 'v/').strip()
+        return git('rev-parse', gone + '^').strip() if gone else None
+    except subprocess.CalledProcessError:
+        return None
+
+
+def before_ci(ref):
+    """The versions published as folders before CI owned the version."""
+    if not ref: return []
+    try: return [x for x in git('ls-tree', '--name-only', f'{ref}:v').split() if x[:1].isdigit()]
+    except subprocess.CalledProcessError: return []
 
 
 def vkey(v):
@@ -133,15 +149,17 @@ def main():
     ap = argparse.ArgumentParser(); ap.add_argument('--into', required=True)
     out = os.path.abspath(ap.parse_args().into)
     shutil.rmtree(out, ignore_errors=True); os.makedirs(out)
-    vs = tags()
+    arch = archive()
+    vs = sorted(set(tags()) | set(before_ci(arch)), key=vkey)   # every version: the folders published before CI, then CI's tags
     if not vs:
         sys.exit('package: no version tags yet')
     hist, prev, blobs, manifest = [], {}, 0, None
+    before_ci_set = set(before_ci(arch))
     for i, v in enumerate(vs):
         tmp = tempfile.mkdtemp()
         try:
             vdir = os.path.join(tmp, '_v')
-            if extract(ARCHIVE, [f'v/{v}'], tmp):           # published before CI minted versions: from the archive, as it was
+            if arch and v in before_ci_set and extract(arch, [f'v/{v}'], tmp):           # published before CI minted versions: from the archive, as it was
                 os.rename(os.path.join(tmp, 'v', v), vdir)
                 manifest = json.load(open(os.path.join(vdir, 'manifest.json'), encoding='utf-8'))
             else:                                          # minted by CI: built from the tag's files, schemas and tools
