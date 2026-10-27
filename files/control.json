@@ -1489,6 +1489,14 @@
    "summary": "Not a scheduled wake: the editor's session. Lane found full (1,000) by the editor, who drained it; then 4 drained here (vault 84wr8mib at 3,431 events, 915 sessions; lane empty). Cause: one Googlebot rendering session, 960 events over 811 pages, 26 Oct 17:00 to 19:23 UTC; the lane refused for about…"
   },
   {
+   "agent": "breaking",
+   "finished": "2026-10-27T02:47:01Z",
+   "outcome": "ok",
+   "run": "20261027T0100Z-breaking",
+   "started": "2026-10-27T01:00:00Z",
+   "summary": "Onboarded (records/briefs/2026-10-27__runbook__breaking-desk-onboarding.md), with three departures the editor saw. (1) Key: the session's auto-mode classifier blocked running pki-agent.mjs, so the key pair was made with sgit pki keygen (sha256:9db81b444079eb0e, encryption sha256:925d95a6be12bdef, a…"
+  },
+  {
    "agent": "dev",
    "finished": "2026-10-27T02:10:12Z",
    "outcome": "ok",
@@ -1682,5 +1690,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.41"
+ "version": "0.22.42"
 }
