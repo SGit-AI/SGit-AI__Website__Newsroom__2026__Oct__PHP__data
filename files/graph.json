@@ -1,7 +1,7 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.42",
- "vault_commit": "1dceaa1dfa7f",
+ "version": "0.22.43",
+ "vault_commit": "24f0b0e22666",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
  "ontology": {
@@ -8434,6 +8434,49 @@
    ]
   },
   {
+   "id": "source:cisa-alert-kev-20261026",
+   "kind": "source",
+   "label": "CISA: CISA Adds Two Known Exploited Vulnerabilities to Catalog | CISA",
+   "href": "sources/cisa-alert-kev-20261026/index.html",
+   "url": "https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+   "primary": true,
+   "published": "2026-10-26",
+   "source_kind": "advisory"
+  },
+  {
+   "id": "capture:cisa-alert-kev-20261026/20261027T004502Z",
+   "kind": "capture",
+   "label": "CISA, captured 20261027T004502Z",
+   "href": "sources/cisa-alert-kev-20261026/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "ad76fdd3a47d8360b477f0e25cc4e62f3c690e27c3ecf816083fa5d6ec2bc97e"
+    },
+    {
+     "name": "page.html",
+     "sha256": "0b76012bd6d2c54b65ca8ff8c1e9a659be2e3ceaa3138153a613b6a7db2088ef"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "17eae345df631185eaa68cf66ca09be90420ebf42370ad9367d85a0fce88ace6"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "e54d902a5d0bf5ffcb57ff2cb54e3f4a977c61d28ee704b461f57d8d649e7fac"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "e88b02a44701556c702da6609dd18036f4bea45320f743f824ae3141325bc30d"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "9c124af5dc9e511519c3c7a34b10f3a867502153e50a17bde89ca49860b40d1b"
+    }
+   ]
+  },
+  {
    "id": "source:cisa-alert-log4j-2021",
    "kind": "source",
    "label": "CISA: Apache Releases Log4j Version 2.15.0 to Address Critical RCE Vulnerability Under Exploitation | CISA",
@@ -8615,6 +8658,35 @@
    "source_kind": "government"
   },
   {
+   "id": "capture:cisa-kev-catalog/20261027T004502Z",
+   "kind": "capture",
+   "label": "CISA, captured 20261027T004502Z",
+   "href": "sources/cisa-kev-catalog/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "d4303f1e64cd1cecdf431a770ede9ccb986fd068f694a702ff7f03b846a83ad3"
+    },
+    {
+     "name": "page.html",
+     "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "14375ddc99819b37948f6a5b143d3a1e2528fc783e20a669b48cb3b2a0af77b4"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "c6160fe83a493e4a85a94077aa6237072ebc9410df0882395555cacf97af4e37"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13"
+    }
+   ]
+  },
+  {
    "id": "source:cisa-kev-json",
    "kind": "source",
    "label": "CISA: CISA Known Exploited Vulnerabilities catalog (JSON feed)",
@@ -8623,6 +8695,31 @@
    "primary": true,
    "published": "2026-10-21T14:04:39Z (catalogVersion 2026.10.21)",
    "source_kind": "advisory"
+  },
+  {
+   "id": "capture:cisa-kev-json/20261027T004502Z",
+   "kind": "capture",
+   "label": "CISA, captured 20261027T004502Z",
+   "href": "sources/cisa-kev-json/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "21b5a3a68372e591619e8a5799b46f2fa8198c96a6084f3f6178419991939828"
+    },
+    {
+     "name": "page.html",
+     "sha256": "653c72ea869cbca7a9198b5e17b97bef516b67494e89bb919a9639d4eedbfa13"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "1cd0e2eed588a613af58679fd3cb4ee330dda4c65840b4509b20b95f405683b2"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "db37b260bbf473e09d108a7e5f2ce0ea4f9108bb988430a3d0cd4110200080b8"
+    }
+   ]
   },
   {
    "id": "source:cisco-sa-php-october26",
@@ -30897,7 +30994,7 @@
   {
    "id": "claim:cisa-none",
    "kind": "claim",
-   "label": "CISA has not observed exploitation; neither CVE is in the Known Exploited Vulnerabilities catalog",
+   "label": "As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15Z), CISA had not observed exploitation and neither CVE was in the Known Exploited Vulnerabilities catalog. Superseded on 26 October: CISA added both CVEs to KEV (catalog version 2026.10.26, released 22:24 UTC; brk1-kev-listed-20261026)",
    "status": "confirmed",
    "href": "facts/cisa-none/index.html",
    "by": "CISA",
@@ -31107,10 +31204,10 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "label": "As of 00:45 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
    "status": "reported",
    "href": "facts/no-confirmed-compromise/index.html",
-   "by": "this site, from every captured source in the evidence vault (543 sources, head 2fc7e432584b), as of its latest capture at 14:42 UTC on 26 October",
+   "by": "this site, from every captured source in the evidence vault (562 sources, vault nnd3i8iw at head 24f0b0e22666), as of its latest capture at 00:45 UTC on 27 October",
    "origins": 1,
    "relays": 0,
    "echo": false
@@ -31285,7 +31382,7 @@
   {
    "id": "claim:kev-precedent",
    "kind": "claim",
-   "label": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell is not in KEV after one day",
+   "label": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell was not in KEV one day after disclosure (catalog version 2026.10.21) and both its CVEs were added on 26 October, five days after the fixes of 21 October (catalog version 2026.10.26)",
    "status": "reported",
    "href": "facts/kev-precedent/index.html",
    "by": "CISA KEV catalog; Akamai (2024)",
@@ -31440,11 +31537,11 @@
   {
    "id": "number:n-kev-2026",
    "kind": "number",
-   "label": "270 CVEs added to CISA's Known Exploited Vulnerabilities catalog in 2026 so far; 0 of them php2shell",
+   "label": "274 CVEs added to CISA's Known Exploited Vulnerabilities catalog in 2026 so far; 2 of them php2shell, both added on 26 October",
    "status": "confirmed",
    "href": "numbers/index.html#n-kev-2026",
    "by": "CISA KEV, counted by this site",
-   "measures": "Entries with dateAdded in 2026 in catalog version 2026.10.21."
+   "measures": "Entries with dateAdded in 2026 in catalog version 2026.10.26 (released 2026-10-26T22:24:24Z, captured 2026-10-27T00:45Z). It was 270, none of them php2shell, in catalog version 2026.10.21."
   },
   {
    "id": "event:ev-2024-15793a",
@@ -32039,6 +32136,14 @@
    "href": "timeline/index.html#ph-aftermath"
   },
   {
+   "id": "event:ev-20261026T2224-7dff93",
+   "kind": "event",
+   "label": "2026-10-26 22:24:24 UTC: CISA releases KEV catalog version 2026.10.26 (1,758 entries), adding CVE-2026-109618 and CVE-2026-109619: date added 26 October, due date 29 October for US federal civilian agencies, known ransomware use \"Unknown\". Its alert of the same day names no victim.",
+   "at": "2026-10-26T22:24:24Z",
+   "confidence": "stated",
+   "href": "timeline/index.html#ph-response"
+  },
+  {
    "id": "signal:48e9d239b2",
    "kind": "signal",
    "label": "Amazon (CJ Moses, AWS Security Blog): One exploit attempt against a MadPot honeypot from a commercial anonymisation network, four days before disclosure; 'it remains unclear how the actor acquired exploit information prior to disclosure'.",
@@ -32093,9 +32198,9 @@
    "signal_class": "assessment"
   },
   {
-   "id": "signal:b621f88078",
+   "id": "signal:a4c26aac13",
    "kind": "signal",
-   "label": "CISA (alert): 'CISA has not observed exploitation of these vulnerabilities as of the time of publication.' Neither CVE is in the Known Exploited Vulnerabilities catalog (version 2026.10.21, fetched 2026-10-22T08:15Z).",
+   "label": "CISA (alert): 'CISA has not observed exploitation of these vulnerabilities as of the time of publication.' Neither CVE was then in the Known Exploited Vulnerabilities catalog (version 2026.10.21, fetched 2026-10-22T08:15Z). Superseded on 26 October: CISA added both CVEs to the catalog (version 2026.10.26, released 22:24 UTC), naming no victim.",
    "status": "confirmed (primary)",
    "href": "exploitation/index.html",
    "when": "2026-10-21",
@@ -32234,7 +32339,7 @@
    "href": "agencies/index.html",
    "offline": "yes",
    "says": "Organizations that cannot update immediately, or that continue to use PHP 8.1 or earlier unsupported versions, should take PHP-based systems offline until they can be patched or updated.",
-   "exploitation": "none observed at publication; neither CVE in KEV as of catalog 2026.10.21"
+   "exploitation": "none observed at publication (21 October); neither CVE in KEV as of catalog 2026.10.21. Both added to KEV on 26 October (catalog 2026.10.26), with no victim named"
   },
   {
    "id": "advice:ncsc-uk",
@@ -33490,6 +33595,16 @@
    "to": "capture:ciol-iot-india-php2shell-attacks-ai-driven-cy/20261026T121439Z"
   },
   {
+   "from": "source:cisa-alert-kev-20261026",
+   "verb": "published_by",
+   "to": "party:cisa"
+  },
+  {
+   "from": "source:cisa-alert-kev-20261026",
+   "verb": "captured_in",
+   "to": "capture:cisa-alert-kev-20261026/20261027T004502Z"
+  },
+  {
    "from": "source:cisa-alert-log4j-2021",
    "verb": "published_by",
    "to": "party:cisa"
@@ -33535,9 +33650,19 @@
    "to": "party:cisa"
   },
   {
+   "from": "source:cisa-kev-catalog",
+   "verb": "captured_in",
+   "to": "capture:cisa-kev-catalog/20261027T004502Z"
+  },
+  {
    "from": "source:cisa-kev-json",
    "verb": "published_by",
    "to": "party:cisa"
+  },
+  {
+   "from": "source:cisa-kev-json",
+   "verb": "captured_in",
+   "to": "capture:cisa-kev-json/20261027T004502Z"
   },
   {
    "from": "source:cisco-sa-php-october26",
@@ -39006,6 +39131,16 @@
   },
   {
    "from": "claim:cisa-none",
+   "verb": "cites",
+   "to": "source:cisa-alert-kev-20261026"
+  },
+  {
+   "from": "claim:cisa-none",
+   "verb": "cites",
+   "to": "source:cisa-kev-catalog"
+  },
+  {
+   "from": "claim:cisa-none",
    "verb": "classified_as",
    "to": "topic:exploitation"
   },
@@ -39499,6 +39634,16 @@
   },
   {
    "from": "claim:no-confirmed-compromise",
+   "verb": "cites",
+   "to": "source:cisa-alert-kev-20261026"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "verb": "cites",
+   "to": "source:cisa-kev-catalog"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
    "verb": "classified_as",
    "to": "topic:impact"
   },
@@ -39936,6 +40081,16 @@
   },
   {
    "from": "claim:kev-precedent",
+   "verb": "cites",
+   "to": "source:cisa-kev-catalog"
+  },
+  {
+   "from": "claim:kev-precedent",
+   "verb": "cites",
+   "to": "source:cisa-alert-kev-20261026"
+  },
+  {
+   "from": "claim:kev-precedent",
    "verb": "classified_as",
    "to": "topic:exploitation"
   },
@@ -40218,6 +40373,11 @@
    "from": "number:n-kev-2026",
    "verb": "cites",
    "to": "source:cisa-kev-json"
+  },
+  {
+   "from": "number:n-kev-2026",
+   "verb": "cites",
+   "to": "source:cisa-kev-catalog"
   },
   {
    "from": "event:ev-2024-15793a",
@@ -41185,6 +41345,36 @@
    "to": "phase:aftermath"
   },
   {
+   "from": "event:ev-20261026T2224-7dff93",
+   "verb": "cites",
+   "to": "source:cisa-kev-json"
+  },
+  {
+   "from": "event:ev-20261026T2224-7dff93",
+   "verb": "cites",
+   "to": "source:cisa-kev-catalog"
+  },
+  {
+   "from": "event:ev-20261026T2224-7dff93",
+   "verb": "cites",
+   "to": "source:cisa-alert-kev-20261026"
+  },
+  {
+   "from": "event:ev-20261026T2224-7dff93",
+   "verb": "classified_as",
+   "to": "phase:response"
+  },
+  {
+   "from": "event:ev-20261026T2224-7dff93",
+   "verb": "names",
+   "to": "cve:CVE-2026-109618"
+  },
+  {
+   "from": "event:ev-20261026T2224-7dff93",
+   "verb": "names",
+   "to": "cve:CVE-2026-109619"
+  },
+  {
    "from": "party:amazon",
    "verb": "states",
    "to": "signal:48e9d239b2"
@@ -41275,22 +41465,27 @@
   {
    "from": "party:cisa",
    "verb": "states",
-   "to": "signal:b621f88078"
+   "to": "signal:a4c26aac13"
   },
   {
-   "from": "signal:b621f88078",
+   "from": "signal:a4c26aac13",
    "verb": "cites",
    "to": "source:cisa-alert-php-20261021"
   },
   {
-   "from": "signal:b621f88078",
+   "from": "signal:a4c26aac13",
    "verb": "cites",
    "to": "source:cisa-kev-json"
   },
   {
-   "from": "signal:b621f88078",
+   "from": "signal:a4c26aac13",
    "verb": "cites",
    "to": "source:cisa-kev-catalog"
+  },
+  {
+   "from": "signal:a4c26aac13",
+   "verb": "cites",
+   "to": "source:cisa-alert-kev-20261026"
   },
   {
    "from": "party:cccs",
@@ -41495,6 +41690,11 @@
    "from": "advice:cisa",
    "verb": "cites",
    "to": "source:cisa-home"
+  },
+  {
+   "from": "advice:cisa",
+   "verb": "cites",
+   "to": "source:cisa-alert-kev-20261026"
   },
   {
    "from": "party:ncsc-uk",

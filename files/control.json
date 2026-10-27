@@ -506,6 +506,12 @@
    "owner": "editor",
    "status": "open",
    "title": "Tag ruleset on the six repositories, so a published version can never move or vanish (CI owns the version: the editor's setting)"
+  },
+  {
+   "id": "conductor-0009",
+   "owner": "editor",
+   "status": "waiting",
+   "title": "Decommission the old evidence vault 3ytzxm3g: every card and register off it, then its deletion from the host"
   }
  ],
  "branches": [
@@ -1503,6 +1509,38 @@
    "run": "20261027T0120Z-dev",
    "started": "2026-10-27T01:20Z",
    "summary": "CI owns the version in all six (https://sharness.ai/articles/ci-owns-the-version.html): after the gate, CI writes VERSION in a GitHub Actions commit, tags it and deploys it; release.sh never touches VERSION, and a pushed change to it fails the guard. First CI versions: press v1.0.58, data v0.1.52,…"
+  },
+  {
+   "agent": "breaking",
+   "finished": "2026-10-27T03:46:15Z",
+   "outcome": "ok",
+   "run": "20261027T0300Z-breaking",
+   "started": "2026-10-27T03:00:00Z",
+   "summary": "Breaking run of CISA's KEV listing of 26 October (both php2shell CVEs added, catalog 2026.10.26, due 29 October, ransomware Unknown, no victim named), board breaking-0001, the conductor's focus brief (conductor-0004). Each step a subagent with that role's card; each output checked before the next.…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T03:16:24Z",
+   "outcome": "ok",
+   "run": "20261027T0312Z-conductor",
+   "started": "2026-10-27T03:12:00Z",
+   "summary": "At the editor's request, 03:12 UTC: the check of the pipeline after the night's changes. The breaking desk is onboarded: it holds 7r83qic5 and nnd3i8iw and made hewphq85, with a session key that is not enrolled (the editor's decision). Its first run, breaking-0001 (the KEV listing), was started by…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-27T05:10:00Z",
+   "outcome": "ok",
+   "run": "20261027T0500Z-factcheck",
+   "started": "2026-10-27T04:50:00Z",
+   "summary": "Not a sweep: at the editor's direction opened the read key for the evidence vault's pack vault nnd3i8iw (sealed to the desk's key; the sender's key sha256:6c81ae257fee1938 is not in the register, so the seal was read on the editor's word), updated sgit to 0.26.0 (0.25.0 refuses this vault), cloned…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-27T05:04:42Z",
+   "outcome": "ok",
+   "run": "20261027T0503Z-conductor",
+   "started": "2026-10-27T05:03:00Z",
+   "summary": "At the editor's request, 05:05 UTC: 3ytzxm3g is decommissioned and the next runs are checked. On nnd3i8iw: the curator, the correspondent (05:03: card, brief, register), fact-check (05:00: card, register) and the breaking desk. Not yet on nnd3i8iw: the journalist's card, which still says pull 3ytzx…"
   }
  ],
  "schedules": [
@@ -1690,5 +1728,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.42"
+ "version": "0.22.43"
 }

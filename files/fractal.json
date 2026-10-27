@@ -1,7 +1,7 @@
 {
  "about": "The fractal graph: one graph from the people affected, through the risks, the story and the evidence, to the flaws, the fix and the changed lines of php-src. A node is just a node; meaning lives in the edges. Every node opens into its own neighbourhood in the navigator.",
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.42",
+ "version": "0.22.43",
  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
  "layers": [
   {
@@ -554,7 +554,7 @@
   {
    "id": "claim:cisa-none",
    "layer": "claim",
-   "name": "CISA has not observed exploitation; neither CVE is in the Known Exploited Vulnerabilities catalog",
+   "name": "As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15Z), CISA had not observed exploitation and neither CVE was in the Known Exploited Vulnerabilities catalog. Superseded on 26 October: CISA added both CVEs to KEV (catalog version 2026.10.26, released 22:24 UTC; brk1-kev-listed-20261026)",
    "text": "confirmed, says CISA",
    "status": "confirmed",
    "href": "claims/index.html#cisa-none"
@@ -698,8 +698,8 @@
   {
    "id": "claim:no-confirmed-compromise",
    "layer": "claim",
-   "name": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through php2shell. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
-   "text": "reported, says this site, from every captured source in the evidence vault (543 sources, head 2fc7e432584b), as of its latest capture at 14:42 UTC on 26 October",
+   "name": "As of 00:45 UTC on 27 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
+   "text": "reported, says this site, from every captured source in the evidence vault (562 sources, vault nnd3i8iw at head 24f0b0e22666), as of its latest capture at 00:45 UTC on 27 October",
    "status": "reported",
    "href": "claims/index.html#no-confirmed-compromise"
   },
@@ -826,7 +826,7 @@
   {
    "id": "claim:kev-precedent",
    "layer": "claim",
-   "name": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell is not in KEV after one day",
+   "name": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure and in KEV three days after; php2shell was not in KEV one day after disclosure (catalog version 2026.10.21) and both its CVEs were added on 26 October, five days after the fixes of 21 October (catalog version 2026.10.26)",
    "text": "reported, says CISA KEV catalog; Akamai (2024)",
    "status": "reported",
    "href": "claims/index.html#kev-precedent"
@@ -1308,6 +1308,13 @@
    "href": "timeline/index.html"
   },
   {
+   "id": "event:68",
+   "layer": "claim",
+   "name": "2026-10-26 22:24:24 UTC: CISA releases KEV catalog version 2026.10.26 (1,758 entries), adding CVE-2026-10",
+   "text": "CISA releases KEV catalog version 2026.10.26 (1,758 entries), adding CVE-2026-109618 and CVE-2026-109619: date added 26 October, due date 29 October for US federal civilian agencies, known ransomware use \"Unknown\". Its alert of the same day names no victim.",
+   "href": "timeline/index.html"
+  },
+  {
    "id": "source:cve-cve-2026-109618",
    "layer": "source",
    "name": "CVE record",
@@ -1558,6 +1565,20 @@
    "name": "CISA",
    "text": "CISA Known Exploited Vulnerabilities catalog (JSON feed)",
    "href": "sources/cisa-kev-json/index.html"
+  },
+  {
+   "id": "source:cisa-alert-kev-20261026",
+   "layer": "source",
+   "name": "CISA",
+   "text": "CISA Adds Two Known Exploited Vulnerabilities to Catalog | CISA",
+   "href": "sources/cisa-alert-kev-20261026/index.html"
+  },
+  {
+   "id": "source:cisa-kev-catalog",
+   "layer": "source",
+   "name": "CISA",
+   "text": "Known Exploited Vulnerabilities Catalog (JSON feed)",
+   "href": "sources/cisa-kev-catalog/index.html"
   },
   {
    "id": "source:ncsc-nz-alert-php",
@@ -8236,6 +8257,11 @@
    "rel": "dated by"
   },
   {
+   "from": "arc:a-plug",
+   "to": "event:68",
+   "rel": "dated by"
+  },
+  {
    "from": "claim:two-cves-9.2",
    "to": "source:cve-cve-2026-109618",
    "rel": "cites"
@@ -8721,6 +8747,16 @@
    "rel": "cites"
   },
   {
+   "from": "claim:cisa-none",
+   "to": "source:cisa-alert-kev-20261026",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:cisa-none",
+   "to": "source:cisa-kev-catalog",
+   "rel": "cites"
+  },
+  {
    "from": "claim:nz-active",
    "to": "source:ncsc-nz-alert-php",
    "rel": "cites"
@@ -9001,6 +9037,16 @@
    "rel": "cites"
   },
   {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:cisa-alert-kev-20261026",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:cisa-kev-catalog",
+   "rel": "cites"
+  },
+  {
    "from": "claim:pocs-wrong",
    "to": "source:github-rjmendez-phpup-2026",
    "rel": "cites"
@@ -9168,6 +9214,16 @@
   {
    "from": "claim:kev-precedent",
    "to": "source:akamai-blog-cve-2024-4577-one-day",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:kev-precedent",
+   "to": "source:cisa-kev-catalog",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:kev-precedent",
+   "to": "source:cisa-alert-kev-20261026",
    "rel": "cites"
   },
   {
@@ -9748,6 +9804,21 @@
   {
    "from": "event:67",
    "to": "source:therecord-php-foundation-statement",
+   "rel": "cites"
+  },
+  {
+   "from": "event:68",
+   "to": "source:cisa-kev-json",
+   "rel": "cites"
+  },
+  {
+   "from": "event:68",
+   "to": "source:cisa-kev-catalog",
+   "rel": "cites"
+  },
+  {
+   "from": "event:68",
+   "to": "source:cisa-alert-kev-20261026",
    "rel": "cites"
   },
   {
@@ -13172,14 +13243,14 @@
   }
  ],
  "counts": {
-  "nodes": 905,
-  "edges": 1240,
+  "nodes": 908,
+  "edges": 1250,
   "by_layer": {
    "stakeholder": 16,
    "risk": 9,
    "arc": 7,
-   "claim": 138,
-   "source": 101,
+   "claim": 139,
+   "source": 103,
    "flaw": 2,
    "fix": 7,
    "code": 73,

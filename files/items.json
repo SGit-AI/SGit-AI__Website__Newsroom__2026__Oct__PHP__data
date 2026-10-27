@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.42",
+"site": "0.22.43",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -19,11 +19,11 @@
 "zone": "research",
 "title": "Timeline",
 "path": "timeline/index.html",
-"hash": "21ed012b2ce0",
-"v": 4,
+"hash": "d875aead7dbd",
+"v": 5,
 "first": "0.1.0",
-"changed": "0.3.1",
-"date": "2026-10-22",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-timeline/index.html"
 },
 "page-discovery": {
@@ -55,11 +55,11 @@
 "zone": "research",
 "title": "Exploitation signals",
 "path": "exploitation/index.html",
-"hash": "7cb6b9c26818",
-"v": 5,
+"hash": "615acec2e1a5",
+"v": 6,
 "first": "0.1.0",
-"changed": "0.3.2",
-"date": "2026-10-22",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-exploitation/index.html"
 },
 "page-playbook": {
@@ -79,11 +79,11 @@
 "zone": "research",
 "title": "Every claim",
 "path": "claims/index.html",
-"hash": "fff2c2e96997",
-"v": 17,
+"hash": "dd377f61a2fe",
+"v": 18,
 "first": "0.1.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-claims/index.html"
 },
 "page-numbers": {
@@ -91,11 +91,11 @@
 "zone": "research",
 "title": "The numbers",
 "path": "numbers/index.html",
-"hash": "eebb73f43685",
-"v": 5,
+"hash": "04c7ffd1e080",
+"v": 6,
 "first": "0.1.0",
-"changed": "0.14.30",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-numbers/index.html"
 },
 "page-agencies": {
@@ -103,11 +103,11 @@
 "zone": "research",
 "title": "The agencies",
 "path": "agencies/index.html",
-"hash": "1f471675ac4a",
-"v": 3,
+"hash": "e34682dee314",
+"v": 4,
 "first": "0.1.0",
-"changed": "0.13.0",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-agencies/index.html"
 },
 "page-affected": {
@@ -127,11 +127,11 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "d656e0b6dd1a",
-"v": 13,
+"hash": "aefdb92512e3",
+"v": 14,
 "first": "0.1.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-method/index.html"
 },
 "briefing-board": {
@@ -139,11 +139,11 @@
 "zone": "for-you",
 "title": "Briefing: Board member or executive",
 "path": "briefings/board/index.html",
-"hash": "e758d11c7a47",
-"v": 21,
+"hash": "5d37f4c68e16",
+"v": 22,
 "first": "0.1.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-board/index.html"
 },
 "briefing-security": {
@@ -151,11 +151,11 @@
 "zone": "for-you",
 "title": "Briefing: Security lead",
 "path": "briefings/security/index.html",
-"hash": "f0c89b3aa72f",
-"v": 11,
+"hash": "4e882721100f",
+"v": 12,
 "first": "0.1.0",
-"changed": "0.18.2",
-"date": "2026-10-25",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-security/index.html"
 },
 "briefing-engineer": {
@@ -163,11 +163,11 @@
 "zone": "for-you",
 "title": "Briefing: PHP or platform engineer",
 "path": "briefings/engineer/index.html",
-"hash": "ae0da9cfe745",
-"v": 10,
+"hash": "8515a89d1a06",
+"v": 11,
 "first": "0.1.0",
-"changed": "0.17.2",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-engineer/index.html"
 },
 "briefing-journalist": {
@@ -175,11 +175,11 @@
 "zone": "for-you",
 "title": "Briefing: Journalist",
 "path": "briefings/journalist/index.html",
-"hash": "afa0d82178b2",
-"v": 10,
+"hash": "8ccc72f40170",
+"v": 11,
 "first": "0.1.0",
-"changed": "0.22.29",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-journalist/index.html"
 },
 "briefing-researcher": {
@@ -187,11 +187,11 @@
 "zone": "for-you",
 "title": "Briefing: Security researcher",
 "path": "briefings/researcher/index.html",
-"hash": "f4630b498acf",
-"v": 9,
+"hash": "b527493b0e4e",
+"v": 10,
 "first": "0.1.0",
-"changed": "0.17.0",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-researcher/index.html"
 },
 "briefing-analyst": {
@@ -199,11 +199,11 @@
 "zone": "for-you",
 "title": "Briefing: Analyst or advisor",
 "path": "briefings/analyst/index.html",
-"hash": "0d01a0995b93",
-"v": 13,
+"hash": "a1763e3156a4",
+"v": 14,
 "first": "0.1.0",
-"changed": "0.22.29",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-analyst/index.html"
 },
 "fact-two-cves-9.2": {
@@ -629,13 +629,13 @@
 "fact-cisa-none": {
 "kind": "fact",
 "zone": "research",
-"title": "CISA has not observed exploitation; neither CVE is in the Known Exploited Vulnerabilities ",
+"title": "As of its alert of 21 October and KEV catalog version 2026.10.21 (fetched 2026-10-22T08:15",
 "path": "facts/cisa-none/index.html",
-"hash": "066f190bb07b",
-"v": 1,
+"hash": "e2e9b2aa6715",
+"v": 2,
 "first": "0.1.0",
-"changed": "0.1.0",
-"date": "2026-10-22",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/fact-cisa-none/index.html"
 },
 "fact-nz-active": {
@@ -811,11 +811,11 @@
 "zone": "research",
 "title": "Impact: offline vs compromised",
 "path": "impact/index.html",
-"hash": "62d042753a99",
-"v": 15,
+"hash": "76b9e05cd5bb",
+"v": 16,
 "first": "0.2.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-impact/index.html"
 },
 "page-defence": {
@@ -859,11 +859,11 @@
 "zone": "for-you",
 "title": "Briefing: CISO",
 "path": "briefings/ciso/index.html",
-"hash": "2d2edeeab340",
-"v": 19,
+"hash": "f099ef983215",
+"v": 20,
 "first": "0.2.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-ciso/index.html"
 },
 "briefing-cto": {
@@ -871,11 +871,11 @@
 "zone": "for-you",
 "title": "Briefing: CTO",
 "path": "briefings/cto/index.html",
-"hash": "dd3d43631924",
-"v": 9,
+"hash": "9c93fa1f80f9",
+"v": 10,
 "first": "0.2.0",
-"changed": "0.22.29",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-cto/index.html"
 },
 "briefing-cfo": {
@@ -883,11 +883,11 @@
 "zone": "for-you",
 "title": "Briefing: CFO",
 "path": "briefings/cfo/index.html",
-"hash": "ed0fb9f1e510",
-"v": 21,
+"hash": "d5628a77d281",
+"v": 22,
 "first": "0.2.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-cfo/index.html"
 },
 "briefing-appsec": {
@@ -895,11 +895,11 @@
 "zone": "for-you",
 "title": "Briefing: Head of AppSec",
 "path": "briefings/appsec/index.html",
-"hash": "2d7d36579280",
-"v": 11,
+"hash": "f9c3e4f4839b",
+"v": 12,
 "first": "0.2.0",
-"changed": "0.18.2",
-"date": "2026-10-25",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-appsec/index.html"
 },
 "briefing-developer": {
@@ -907,11 +907,11 @@
 "zone": "for-you",
 "title": "Briefing: Developer",
 "path": "briefings/developer/index.html",
-"hash": "720d0b62011d",
-"v": 7,
+"hash": "9fe625f30bbf",
+"v": 8,
 "first": "0.2.0",
-"changed": "0.17.0",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-developer/index.html"
 },
 "briefing-comms": {
@@ -919,11 +919,11 @@
 "zone": "for-you",
 "title": "Briefing: Media and communications team",
 "path": "briefings/comms/index.html",
-"hash": "610ee64a2313",
-"v": 16,
+"hash": "ea584aef2e06",
+"v": 17,
 "first": "0.2.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-comms/index.html"
 },
 "fact-cf-millions": {
@@ -977,13 +977,13 @@
 "fact-no-confirmed-compromise": {
 "kind": "fact",
 "zone": "research",
-"title": "As of 14:42 UTC on 26 October, no named organisation has said it was compromised through p",
+"title": "As of 00:45 UTC on 27 October, no named organisation has said it was compromised through p",
 "path": "facts/no-confirmed-compromise/index.html",
-"hash": "e0f1f30d8151",
-"v": 10,
+"hash": "850f1f4d1326",
+"v": 11,
 "first": "0.2.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/fact-no-confirmed-compromise/index.html"
 },
 "fact-pocs-wrong": {
@@ -1171,11 +1171,11 @@
 "zone": "research",
 "title": "The last PHP core RCE, CVE-2024-4577, was exploited in the wild one day after disclosure a",
 "path": "facts/kev-precedent/index.html",
-"hash": "3f9afc698c29",
-"v": 2,
+"hash": "b1a9586c2f94",
+"v": 3,
 "first": "0.2.0",
-"changed": "0.12.1",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/fact-kev-precedent/index.html"
 },
 "page-explained": {
@@ -1195,11 +1195,11 @@
 "zone": "for-you",
 "title": "Glossary: every term, in plain English",
 "path": "glossary/index.html",
-"hash": "93f61a98bd6d",
-"v": 1,
+"hash": "530cafc2b330",
+"v": 2,
 "first": "0.3.0",
-"changed": "0.3.0",
-"date": "2026-10-22",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-glossary/index.html"
 },
 "briefing-everyone": {
@@ -1207,11 +1207,11 @@
 "zone": "for-you",
 "title": "Briefing: Curious reader",
 "path": "briefings/everyone/index.html",
-"hash": "75c7188a8eb6",
-"v": 19,
+"hash": "7023c542a33b",
+"v": 20,
 "first": "0.3.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-everyone/index.html"
 },
 "briefing-site-owner": {
@@ -1219,11 +1219,11 @@
 "zone": "for-you",
 "title": "Briefing: Website owner",
 "path": "briefings/site-owner/index.html",
-"hash": "4a89e2700478",
-"v": 9,
+"hash": "23a6d90e5f32",
+"v": 10,
 "first": "0.3.0",
-"changed": "0.18.2",
-"date": "2026-10-25",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-site-owner/index.html"
 },
 "briefing-pm": {
@@ -1231,11 +1231,11 @@
 "zone": "for-you",
 "title": "Briefing: Project or programme manager",
 "path": "briefings/pm/index.html",
-"hash": "8d4fc886c8ba",
-"v": 15,
+"hash": "f06cbfc12f6c",
+"v": 16,
 "first": "0.3.0",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-pm/index.html"
 },
 "page-summary": {
@@ -1243,11 +1243,11 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "1bece36d3f3d",
-"v": 16,
+"hash": "4dad774cf358",
+"v": 17,
 "first": "0.3.1",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-summary/index.html"
 },
 "front-now": {
@@ -1255,11 +1255,11 @@
 "zone": "research",
 "title": "Front page: right now",
 "path": "index.html#now",
-"hash": "f54a83f91290",
-"v": 7,
+"hash": "13b99779745b",
+"v": 8,
 "first": "0.3.2",
-"changed": "0.19.2",
-"date": "2026-10-25",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/front-now/index.html"
 },
 "front-glance": {
@@ -1279,11 +1279,11 @@
 "zone": "research",
 "title": "Front page: the core facts",
 "path": "index.html#facts",
-"hash": "d3f7c32b0723",
-"v": 6,
+"hash": "43751417a756",
+"v": 7,
 "first": "0.3.2",
-"changed": "0.19.2",
-"date": "2026-10-25",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/front-facts/index.html"
 },
 "front-unknown": {
@@ -1303,11 +1303,11 @@
 "zone": "research",
 "title": "Front page: latest",
 "path": "index.html#latest",
-"hash": "6471202d1aaf",
-"v": 5,
+"hash": "fe930cf0fe3a",
+"v": 6,
 "first": "0.3.2",
-"changed": "0.17.0",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/front-latest/index.html"
 },
 "page-interview": {
@@ -1327,11 +1327,11 @@
 "zone": "for-you",
 "title": "Briefing: Data protection officer",
 "path": "briefings/dpo/index.html",
-"hash": "9486127ff05f",
-"v": 13,
+"hash": "0a818263d805",
+"v": 14,
 "first": "0.5.9",
-"changed": "0.22.34",
-"date": "2026-10-26",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/briefing-dpo/index.html"
 },
 "page-views-state": {
@@ -1339,11 +1339,11 @@
 "zone": "stories",
 "title": "The state of affairs, now",
 "path": "views/state/index.html",
-"hash": "16914f6587b0",
-"v": 3,
+"hash": "25b032aa5c11",
+"v": 4,
 "first": "0.10.3",
-"changed": "0.14.30",
-"date": "2026-10-24",
+"changed": "0.22.43",
+"date": "2026-10-27",
 "history": "versions/page-views-state/index.html"
 },
 "ev-2024-15793a": {
@@ -1950,6 +1950,17 @@
 "first": "0.4.1",
 "changed": "0.4.1",
 "date": "2026-10-22T05:20Z"
+},
+"ev-20261026T2224-7dff93": {
+"kind": "event",
+"zone": "research",
+"title": "CISA releases KEV catalog version 2026.10.26 (1,758 entries), adding CVE-2026-109618 and CVE-2026-109619: date added 26 ",
+"path": "timeline/index.html",
+"hash": "c54ecb69d62d",
+"v": 1,
+"first": "0.22.43",
+"changed": "0.22.43",
+"date": "2026-10-26T22:24Z"
 },
 "ev-20261021T1524-5fdd04": {
 "kind": "event",
@@ -2963,6 +2974,17 @@
 "changed": "0.22.29",
 "date": "2026-10-26T12:14Z"
 },
+"src-cisa-alert-kev-20261026": {
+"kind": "source",
+"zone": "research",
+"title": "US Cybersecurity and Infrastructure Security Agency (CISA): CISA Adds Two Known Exploited Vulnerabilities to Catalog | CISA",
+"path": "sources/cisa-alert-kev-20261026/index.html",
+"hash": "827b476eb5f2",
+"v": 1,
+"first": "0.22.43",
+"changed": "0.22.43",
+"date": "2026-10-27T00:45Z"
+},
 "src-cisa-alert-log4j-2021": {
 "kind": "source",
 "zone": "research",
@@ -3012,22 +3034,22 @@
 "zone": "research",
 "title": "CISA: Known Exploited Vulnerabilities Catalog (JSON feed)",
 "path": "sources/cisa-kev-catalog/index.html",
-"hash": "68c8df80f8ad",
-"v": 1,
+"hash": "d09c6b082056",
+"v": 2,
 "first": "0.4.1",
-"changed": "0.4.1",
-"date": "2026-10-22"
+"changed": "0.22.43",
+"date": "2026-10-27"
 },
 "src-cisa-kev-json": {
 "kind": "source",
 "zone": "research",
 "title": "CISA: CISA Known Exploited Vulnerabilities catalog (JSON feed)",
 "path": "sources/cisa-kev-json/index.html",
-"hash": "b1b6f91c6808",
-"v": 1,
+"hash": "23297d76771d",
+"v": 2,
 "first": "0.4.1",
-"changed": "0.4.1",
-"date": "2026-10-22"
+"changed": "0.22.43",
+"date": "2026-10-27"
 },
 "src-cisco-sa-php-october26": {
 "kind": "source",
@@ -8336,11 +8358,11 @@
 "zone": "for-you",
 "title": "Has anyone actually been hacked?",
 "path": "questions/been-hacked/index.html",
-"hash": "5c54fc641a8a",
-"v": 7,
+"hash": "89856e5e91c3",
+"v": 8,
 "first": "0.4.1",
-"changed": "0.19.2",
-"date": "2026-10-25"
+"changed": "0.22.43",
+"date": "2026-10-27"
 },
 "q-passwords": {
 "kind": "question",
@@ -8435,11 +8457,11 @@
 "zone": "stories",
 "title": "Has anyone actually been hacked through php2shell? What 525 sources say, five days on",
 "path": "articles/has-anyone-been-hacked/index.html",
-"hash": "69a1b67597ba",
-"v": 2,
+"hash": "d88a4e552335",
+"v": 3,
 "first": "0.22.30",
-"changed": "0.22.34",
-"date": "2026-10-26"
+"changed": "0.22.43",
+"date": "2026-10-27"
 },
 "story-what-wikipedia-knows-about-being-right": {
 "kind": "story",
