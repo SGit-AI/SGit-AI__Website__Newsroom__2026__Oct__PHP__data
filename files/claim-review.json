@@ -485,7 +485,7 @@
   {
    "id": "offline-advice",
    "verdict": "agrees",
-   "reason": "Same as offline-allies; the NSA (nsa-press-php-4630238) and NCSC (ncsc-news-php) pages in the vault carry the advice in their own words.",
+   "reason": "Same as offline-allies; the NSA (nsa-press-php-4630238) and NCSC (ncsc-news-php) pages in the vault carry the advice in their own words. Corrected 27 October 2026, PROJECT-001: 'Same as offline-allies' is superseded; the BBC reported the NSA's call to go offline and quoted the NCSC's offline sentence, it did not say the EU and Australia advise offline; the verdict 'agrees' applies to what the BBC reported.",
    "sources": [
     "bbc-live-ckgel5xp2xv9t"
    ],

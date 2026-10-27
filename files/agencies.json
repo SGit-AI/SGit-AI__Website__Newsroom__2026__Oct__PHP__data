@@ -38,7 +38,7 @@
   "sources": [
    "ncsc-news-php"
   ],
-  "note": "Offline is the fourth of six priority actions, after inventory, update and the PHP Foundation's temporary mitigations. The sentence the BBC quotes ('Where immediate remediation is not feasible...') is not on the page as captured; the page changed on 22 October."
+  "note": "Offline is the fourth of six priority actions, after inventory, update and the PHP Foundation's temporary mitigations. The sentence the BBC quotes ('Where immediate remediation is not feasible...') is not on the page as captured; the page changed on 22 October. Corrected 27 October 2026, PROJECT-001: the BBC's quoted sentence is not shown to be a misquote; the BBC entry (06:30Z, last edited 06:49Z) is earlier than the page's modification (07:30:02Z), and LBC carries the same sentence as the NCSC's. Superseded: 'is not on the page as captured; the page changed on 22 October' read as an error by the BBC."
  },
  {
   "agency": "CERT-EU",
@@ -87,7 +87,7 @@
    "cccs-al26-026",
    "cccs-alerts"
   ],
-  "note": "The opening of this sentence is the one the BBC attributes to the UK NCSC. The wording is shared across Five Eyes and CERT-EU text."
+  "note": "The opening of this sentence matches the one the BBC quotes from the UK NCSC; the ending ('take the system offline until it can be fully mitigated') matches the NSA and NCSC, not CCCS, which says isolate. CERT-EU's opening differs. Corrected 27 October 2026, PROJECT-001; superseded: 'The BBC attributes [it] to the UK NCSC. The wording is shared across Five Eyes and CERT-EU text.' (overstated)."
  },
  {
   "agency": "ASD's ACSC",
@@ -100,7 +100,7 @@
    "acsc-alert-php",
    "acsc-home"
   ],
-  "note": "No take-offline or isolation advice. The BBC's 'Australian counterparts' framing is not supported by the page. Parts of the body are still pre-patch text."
+  "note": "No take-offline or isolation advice. Parts of the body are still pre-patch text. Corrected 27 October 2026, PROJECT-001: the BBC said only that Australia's counterparts 'earlier urged those who use PHP to apply the fixes', which ACSC does; superseded wording: 'The BBC's \\'Australian counterparts\\' framing is not supported by the page.'"
  },
  {
   "agency": "NCSC",
@@ -133,13 +133,13 @@
   "agency": "ACN / CSIRT Italia",
   "country": "IT",
   "published": "2026-10-21",
-  "offline": "none",
-  "offline_text": "Si raccomanda di aggiornare i prodotti vulnerabili.",
+  "offline": "consider",
+  "offline_text": "Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP, sospendendone l'accessibilità fino all'avvenuto aggiornamento.",
   "exploitation": "not stated",
   "sources": [
    "acn-it-php2shell"
   ],
-  "note": "Update only. Lists the four fixed branches and no end-of-life branches."
+  "note": "Lists the four fixed branches and no end-of-life branches. Corrected 27 October 2026, PROJECT-001: this row said offline 'none' ('Update only', offline_text 'Si raccomanda di aggiornare i prodotti vulnerabili.', cut short); the capture (acn-it-php2shell, 20261022T081354Z, sha256 19fac2ed..., line 70) recommends considering taking sites and web services offline until updated."
  },
  {
   "agency": "BACS (NCSC)",

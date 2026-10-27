@@ -812,7 +812,7 @@
    "volatile": false,
    "as_of": "20261022T081658Z",
    "status_fit": "ok",
-   "reason": "The primary records date the disclosure to 21 October UTC: GHSA published 13:34:25Z, tags 13:35:38 UTC, CVE records 13:48:34Z and 13:54:43Z, GitHub release 14:06:46Z, php.net '21 Oct 2026'. '22 October' is only right in Australian or Japanese local time (ACSC: 0100 AEDT on 22 October). The BBC capture never states a disclosure date, so the attribution to the BBC is not carried.",
+   "reason": "The primary records date the disclosure to 21 October UTC: GHSA published 13:34:25Z, tags 13:35:38 UTC, CVE records 13:48:34Z and 13:54:43Z, GitHub release 14:06:46Z, php.net '21 Oct 2026'. '22 October' is only right in Australian or Japanese local time (ACSC: 0100 AEDT on 22 October). The BBC capture never states a disclosure date, so the attribution to the BBC is not carried. Corrected 27 October 2026, PROJECT-001: claims.json no longer attributes the claim to the BBC (Finding-38 fixed).",
    "checked": [
     {
      "source": "bbc-live-ckgel5xp2xv9t",
@@ -2497,7 +2497,7 @@
    "volatile": true,
    "as_of": "20261022T080559Z",
    "status_fit": "ok",
-   "reason": "The BBC (one named outlet, reporting its own Radio 4 interview) carries Austin saying \"Not at the moment\", but the claim's wording is the BBC headline, not his words, and his words are narrower: exploitation has not \"taken off or been widespread\". As a statement of fact it is disputed by Amazon's earlier \"broadly exploited in the wild\" and by NCSC NZ.",
+   "reason": "The BBC (one named outlet, reporting its own Radio 4 interview) carries Austin saying \"Not at the moment\", but the claim's wording is the BBC headline, not his words, and his words are narrower: exploitation has not \"taken off or been widespread\". As a statement of fact it is disputed by Amazon's earlier \"broadly exploited in the wild\" and by NCSC NZ. Corrected 27 October 2026, PROJECT-001: status 'disputed', dated to about 07:00 UTC on 22 October.",
    "checked": [
     {
      "source": "bbc-live-ckgel5xp2xv9t",
@@ -2547,7 +2547,8 @@
    "tickets": [
     "Contradiction-2",
     "Finding-11",
-    "Finding-12"
+    "Finding-12",
+    "Finding-130"
    ],
    "mode2": "Calif's own statement or a transcript/recording of the BBC Radio 4 Today interview at about 09:00 BST, 22 October, to fix the exact words and time.",
    "display": 2,
@@ -2627,8 +2628,8 @@
    "contradictions": [],
    "volatile": true,
    "as_of": "20261022T084815Z",
-   "status_fit": "understated",
-   "reason": "The captured BBC page does not say this: it says the NCSC 'as well as its counterparts in the EU and Australia' urged users 'to apply the fixes', and attributes the offline quote to the NCSC alone. On the substance, NCSC (after mitigations) and NSA advise offline, CERT-EU and CERT-FR advise isolation, and Italy's ACN advises taking sites offline; only Australia is not shown (ACSC's page as captured has no offline advice). 'Contradicted' overstates an absence for one of four parties and mislabels the BBC's statement.",
+   "status_fit": "ok",
+   "reason": "The captured BBC page does not say this: it says the NCSC 'as well as its counterparts in the EU and Australia' urged users 'to apply the fixes', and attributes the offline quote to the NCSC alone. On the substance, NCSC (after mitigations) and NSA advise offline, CERT-EU and CERT-FR advise isolation, and Italy's ACN advises taking sites offline; only Australia is not shown (ACSC's page as captured has no offline advice). 'Contradicted' overstates an absence for one of four parties and mislabels the BBC's statement. Corrected 27 October 2026, PROJECT-001: the claim is no longer attributed to the BBC and its status is now 'disputed', so status_fit is ok.",
    "checked": [
     {
      "source": "bbc-live-ckgel5xp2xv9t",
@@ -2708,7 +2709,9 @@
     "Finding-43",
     "Finding-44",
     "Finding-45",
-    "Finding-87"
+    "Finding-87",
+    "Finding-129",
+    "Finding-131"
    ],
    "mode2": "An archived 21 October version of ACSC's alert (cyber.gov.au/alert/critical-vulnerabilities-in-php) to see whether it ever advised taking systems offline.",
    "display": 1,
@@ -7213,9 +7216,9 @@
   {
    "label": "Finding-38",
    "type": "finding",
-   "status": "open",
+   "status": "fixed",
    "title": "disclosure-22oct: The BBC capture does not say the flaws were disclosed on 22 October",
-   "description": "The claim's 'by' is 'BBC framing (UK morning coverage)', but the captured BBC live page (080559Z, and the 07:55Z raw copy) gives no disclosure date; it says details 'leaked online this week' and the patch 'has been rushed out'. Labelling a BBC statement 'contradicted' when the BBC did not make it misattributes. The '22 October' dates in the vault come from the original schedule (Foundation: 'from October 22nd, 14:00 UTC'), Wiz's thread ('Apply the Oct 22 security release') and ACSC's local time ('22 October 2026 at 0100 AEDT').",
+   "description": "The claim's 'by' is 'BBC framing (UK morning coverage)', but the captured BBC live page (080559Z, and the 07:55Z raw copy) gives no disclosure date; it says details 'leaked online this week' and the patch 'has been rushed out'. Labelling a BBC statement 'contradicted' when the BBC did not make it misattributes. The '22 October' dates in the vault come from the original schedule (Foundation: 'from October 22nd, 14:00 UTC'), Wiz's thread ('Apply the Oct 22 security release') and ACSC's local time ('22 October 2026 at 0100 AEDT'). Outcome, 27 October 2026, PROJECT-001: resolved by correcting claims.json disclosure-22oct: the BBC attribution ('by') and the BBC source are removed; the claim is unattributed, the primary-source note is kept, and the old wording is kept in the note as superseded.",
    "severity": "medium",
    "claims": [
     "disclosure-22oct"
@@ -7323,9 +7326,9 @@
   {
    "label": "Finding-43",
    "type": "finding",
-   "status": "open",
+   "status": "fixed",
    "title": "offline-allies: Italy's ACN does advise taking sites offline; the site says it does not",
-   "description": "acn-it-php2shell text.txt (sha 19fac2ed..., line 70): 'Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP, sospendendone l'accessibilit_ fino all'avvenuto aggiornamento.' The claim note ('Italy ... give[s] no offline advice'), data/agencies.json (IT: offline 'none', 'Update only') and the collector notes ('NO offline or isolation advice') are all wrong against the same capture. agencies.json's offline_text 'Si raccomanda di aggiornare i prodotti vulnerabili.' is also truncated: the sentence continues 'seguendo le indicazioni dei bollettini di sicurezza riportati nella sezione Riferimenti.'",
+   "description": "acn-it-php2shell text.txt (sha 19fac2ed..., line 70): 'Qualora non fosse possibile applicare tempestivamente gli aggiornamenti di sicurezza, si raccomanda di valutare di porre offline i siti e i servizi web che utilizzano versioni vulnerabili di PHP, sospendendone l'accessibilit_ fino all'avvenuto aggiornamento.' The claim note ('Italy ... give[s] no offline advice'), data/agencies.json (IT: offline 'none', 'Update only') and the collector notes ('NO offline or isolation advice') are all wrong against the same capture. agencies.json's offline_text 'Si raccomanda di aggiornare i prodotti vulnerabili.' is also truncated: the sentence continues 'seguendo le indicazioni dei bollettini di sicurezza riportati nella sezione Riferimenti.' Outcome, 27 October 2026, PROJECT-001: fixed: agencies.json ACN row (offline 'consider', full sentence) and the offline-allies note corrected. The same wrong text remains in sources.json (acn-it-php2shell notes_md, and the cybersecitalia source's wording is right), which the evidence vault writes: listed for the curator.",
    "severity": "high",
    "claims": [
     "offline-allies"
@@ -7345,9 +7348,9 @@
   {
    "label": "Finding-44",
    "type": "finding",
-   "status": "open",
+   "status": "fixed",
    "title": "offline-allies: The BBC capture does not make the claim the site marks 'contradicted'",
-   "description": "BBC (06:30 post): 'The UK's National Cyber Security Centre (NCSC), as well as its counterparts in the EU and Australia, earlier urged those who use PHP to apply the fixes.' The offline sentence is then attributed to the NCSC only; the NSA appears in a separate post. The site's claim merges these into the BBC saying all four advise offline, and then marks that 'contradicted'. A reader is told the BBC was wrong about something it did not say.",
+   "description": "BBC (06:30 post): 'The UK's National Cyber Security Centre (NCSC), as well as its counterparts in the EU and Australia, earlier urged those who use PHP to apply the fixes.' The offline sentence is then attributed to the NCSC only; the NSA appears in a separate post. The site's claim merges these into the BBC saying all four advise offline, and then marks that 'contradicted'. A reader is told the BBC was wrong about something it did not say. Outcome, 27 October 2026, PROJECT-001: fixed: offline-allies is no longer attributed to the BBC and is no longer 'contradicted' (now 'disputed', this site's synthesis).",
    "severity": "high",
    "claims": [
     "offline-allies"
@@ -7367,9 +7370,9 @@
   {
    "label": "Finding-45",
    "type": "finding",
-   "status": "open",
+   "status": "fixed",
    "title": "offline-allies: Australia is not-shown, not contradicted, and the EU part largely holds",
-   "description": "ACSC's page lists other actions and no offline advice, but its body text is stale (pre-patch) and absence on one page is not a contradiction. For 'the EU', CERT-EU advises isolating internet-facing applications from public networks, CERT-FR recommends isolating affected equipment, ACN advises taking sites offline, and CERT.LV says systems that cannot be updated must have internet access restricted. Only NCSC-NL, ENISA's CNW page and JPCERT give no such advice.",
+   "description": "ACSC's page lists other actions and no offline advice, but its body text is stale (pre-patch) and absence on one page is not a contradiction. For 'the EU', CERT-EU advises isolating internet-facing applications from public networks, CERT-FR recommends isolating affected equipment, ACN advises taking sites offline, and CERT.LV says systems that cannot be updated must have internet access restricted. Only NCSC-NL, ENISA's CNW page and JPCERT give no such advice. Outcome, 27 October 2026, PROJECT-001: fixed in part: status now follows the agencies' pages; Australia remains not shown.",
    "severity": "medium",
    "claims": [
     "offline-allies"
@@ -9162,6 +9165,72 @@
    "sha256": "",
    "excerpt": "",
    "run": "Run-9",
+   "links": []
+  },
+  {
+   "label": "Finding-129",
+   "type": "finding",
+   "status": "fixed",
+   "title": "offline-allies: no longer attributed to the BBC; status follows the agencies' pages",
+   "description": "Re-grade of the BBC page (27 October 2026, PROJECT-001): the BBC wrote that the NCSC 'as well as its counterparts in the EU and Australia, earlier urged those who use PHP to apply the fixes' (true: ACSC 'Apply available security updates'), quoted the NCSC's offline sentence, and reported the NSA's X post. Claims.json now says by: this site's synthesis, status disputed (holds in part), BBC source removed, attribution.json states ncsc-uk, nsa, cert-eu, acn. Capture 20261022T080559Z, sha256 c88b8c5f4c6bc07d2ef85b78d0d66482f0322075621abb0631ef4352932aa97d, lines 232 and 234.",
+   "severity": "high",
+   "claims": [
+    "offline-allies"
+   ],
+   "sources": [],
+   "pages": [
+    "facts/offline-allies/index.html",
+    "claims/index.html"
+   ],
+   "url": "",
+   "retrieved_at": "",
+   "sha256": "",
+   "excerpt": "",
+   "run": "Run-1",
+   "links": []
+  },
+  {
+   "label": "Finding-130",
+   "type": "finding",
+   "status": "fixed",
+   "title": "no-exploitation: status 'reported' and tension 'disputed' made consistent, and dated",
+   "description": "Status was 'reported' while this file's tension was 'disputed' (status_fit said ok, so nothing caught it). Now status 'disputed', 'by' dated about 07:00 UTC on 22 October: true when said; disputed by Amazon's honeypot (17 October; volume 21 October), NCSC NZ (21 October) and CISA's KEV listing of both CVEs on 26 October, which names no victim. The claim's wording is the BBC headline, not Austin's words.",
+   "severity": "medium",
+   "claims": [
+    "no-exploitation"
+   ],
+   "sources": [],
+   "pages": [
+    "facts/no-exploitation/index.html",
+    "claims/index.html"
+   ],
+   "url": "",
+   "retrieved_at": "",
+   "sha256": "",
+   "excerpt": "",
+   "run": "Run-1",
+   "links": []
+  },
+  {
+   "label": "Finding-131",
+   "type": "finding",
+   "status": "fixed",
+   "title": "offline-allies: Italy's ACN advice corrected in agencies.json",
+   "description": "agencies.json ACN row said offline 'none' and cut the quoted sentence short. acn-it-php2shell, capture 20261022T081354Z, sha256 19fac2edc25161cd867bda0ea1c8bf8b6ce7625fbdd1e9a9a7cd41bdd8d1bef6, line 70, recommends considering taking sites and web services offline until updated. Now offline 'consider' with the sentence in full. Not fixable here: sources.json acn-it-php2shell notes_md ('NO offline or isolation advice') comes from the evidence vault.",
+   "severity": "high",
+   "claims": [
+    "offline-allies"
+   ],
+   "sources": [],
+   "pages": [
+    "facts/offline-allies/index.html",
+    "claims/index.html"
+   ],
+   "url": "",
+   "retrieved_at": "",
+   "sha256": "",
+   "excerpt": "",
+   "run": "Run-1",
    "links": []
   },
   {

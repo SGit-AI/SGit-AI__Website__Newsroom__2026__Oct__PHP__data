@@ -415,16 +415,15 @@
  {
   "id": "disclosure-22oct",
   "claim": "The flaws were disclosed on 22 October 2026",
-  "by": "BBC framing (UK morning coverage)",
+  "by": "Not stated by the BBC. A framing found in coverage and in two sources that date the release to 22 October (php.net's ChangeLog 8, Wiz's X thread: 'Apply the Oct 22 security release'); the origin was the original schedule, 22 October 14:00 UTC, which moved to 21 October. Unattributed to any one outlet.",
   "sources": [
-   "bbc-live-ckgel5xp2xv9t",
    "php-net-advisory",
    "github-php-src-tag-php-8.5.12"
   ],
   "status": "contradicted",
   "topic": "timing",
   "agent": "claude-story-site",
-  "note": "Primary sources put the release at 21 October: GHSAs 13:34Z, tags 13:35Z, CVE records 13:48Z and 13:54Z, GitHub release 14:06Z."
+  "note": "Primary sources put the release at 21 October: GHSAs 13:34Z, tags 13:35Z, CVE records 13:48Z and 13:54Z, GitHub release 14:06Z. Corrected 27 October 2026, PROJECT-001: this claim was attributed to 'BBC framing (UK morning coverage)' and cited the BBC live page. The BBC page (capture 20261022T080559Z, sha256 c88b8c5f...) states no disclosure date; it says details 'leaked online this week'. Superseded attribution: by = 'BBC framing (UK morning coverage)'; superseded source: bbc-live-ckgel5xp2xv9t."
  },
  {
   "id": "release-time",
@@ -463,13 +462,16 @@
  {
   "id": "no-exploitation",
   "claim": "There is no evidence yet that hackers have exploited the flaw",
-  "by": "Ryan Austin, Calif, on Radio 4, 08:00 BST 22 October",
+  "by": "Ryan Austin, Calif, on BBC Radio 4, about 07:00 UTC 22 October 2026 ('Not at the moment'); the claim's wording is the BBC headline, not his words",
   "sources": [
-   "bbc-live-ckgel5xp2xv9t"
+   "bbc-live-ckgel5xp2xv9t",
+   "aws-security-blog-madpot",
+   "cisa-alert-kev-20261026"
   ],
-  "status": "reported",
+  "status": "disputed",
   "topic": "exploitation",
-  "agent": "claude-story-site"
+  "agent": "claude-story-site",
+  "note": "Corrected 27 October 2026, PROJECT-001: true when said (about 07:00 UTC on 22 October: Austin, 'it doesn't look like exploitation has taken off or been widespread'), disputed since. Amazon's honeypot saw an attempt on 17 October and volume from 21 October (aws-security-blog-madpot); NCSC NZ reported active exploitation on 21 October; CISA added both CVEs to KEV on 26 October (cisa-alert-kev-20261026), still naming no victim. Superseded: status 'reported', 'by' 'Ryan Austin, Calif, on Radio 4, 08:00 BST 22 October' (the time was also wrong)."
  },
  {
   "id": "cisa-none",
@@ -597,24 +599,26 @@
   "status": "disputed",
   "topic": "advice",
   "agent": "claude-story-site",
-  "note": "That sentence is not on the NCSC page as captured at 08:09Z on 22 October. The page's offline advice is step 4 of 6 and is worded differently. The page was modified at 07:30Z that morning. The sentence's opening matches the Canadian CCCS text."
+  "note": "That sentence is not on the NCSC page as captured at 08:09Z on 22 October. The page's offline advice is step 4 of 6 and is worded differently. The page was modified at 07:30Z that morning. The sentence's opening matches the Canadian CCCS text. Corrected 27 October 2026, PROJECT-001: this is not shown to be a BBC misquote. The BBC entry was first published 06:30:26Z and last edited 06:49:45Z, before the NCSC page was modified at 07:30:02Z; LBC (21 October) carries the same sentence as the NCSC's, so an earlier NCSC text is the likely source (not yet found in any capture)."
  },
  {
   "id": "offline-allies",
   "claim": "The UK's NCSC, the NSA and their counterparts in the EU and Australia advise taking systems offline where patching is not feasible",
-  "by": "BBC",
+  "by": "Not the BBC. This site's synthesis of the agencies' own pages. The BBC wrote only that the NCSC 'as well as its counterparts in the EU and Australia, earlier urged those who use PHP to apply the fixes', quoted the NCSC's offline sentence, and reported the NSA's call to go offline.",
   "sources": [
-   "bbc-live-ckgel5xp2xv9t",
    "acsc-alert-php",
    "certeu-sa-2026-018",
    "ncsc-nl-php2shell",
    "acn-it-php2shell",
-   "jpcert-at260033"
+   "jpcert-at260033",
+   "nsa-press-php-4630238",
+   "ncsc-news-php",
+   "certfr-2026-ale-014"
   ],
-  "status": "contradicted",
+  "status": "disputed",
   "topic": "advice",
   "agent": "claude-story-site",
-  "note": "Australia's ACSC gives no offline advice. CERT-EU says isolate. The Netherlands, Italy, Japan and New Zealand give no offline advice."
+  "note": "Australia's ACSC gives no offline advice (as captured). CERT-EU says isolate internet-facing applications, CERT-FR isolate affected equipment. Italy's ACN does say to consider taking sites offline (acn-it-php2shell, capture 20261022T081354Z, line 70). The Netherlands and Japan give no offline advice; New Zealand's page gives none. Corrected 27 October 2026, PROJECT-001: this claim was attributed to the BBC ('by': 'BBC') and marked 'contradicted'; the BBC did not write it, so it cannot be contradicted against the BBC; the status now follows the agencies' own pages (holds in part: Australia not shown). Superseded note: 'Australia's ACSC gives no offline advice. CERT-EU says isolate. The Netherlands, Italy, Japan and New Zealand give no offline advice.' (its statement that Italy gives no offline advice was wrong)."
  },
  {
   "id": "affected-sites",
