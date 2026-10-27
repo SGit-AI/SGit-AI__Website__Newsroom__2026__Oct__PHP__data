@@ -2,10 +2,14 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "8172c87f435a",
-  "message": "researcher@php.newsroom: pass 20261027T1206Z phase 2 of 2: discovery"
+  "commit": "3c5e727b84f8",
+  "message": "researcher@php.newsroom: PROJECT-002 step 1: 28 corrections and contact pages of 14 outlets, with the findings"
  },
  "commits": [
+  {
+   "commit": "3c5e727b84f8",
+   "message": "researcher@php.newsroom: PROJECT-002 step 1: 28 corrections and contact pages of 14 outlets, with the findings"
+  },
   {
    "commit": "8172c87f435a",
    "message": "researcher@php.newsroom: pass 20261027T1206Z phase 2 of 2: discovery"
@@ -157,31 +161,27 @@
   {
    "commit": "bff62f9dc08f",
    "message": "researcher@php.newsroom: scanner-noise angle (index/angles/scanner-noise.json, 7 new pages), job-03-community for Perplexity with its prompt, three new kinds, login-wall fix for Bluesky and LinkedIn search"
-  },
-  {
-   "commit": "9066c155341b",
-   "message": "researcher@php.newsroom: pass 20261023T0830Z"
   }
  ],
- "pages": 1330,
- "publishers": 988,
+ "pages": 1365,
+ "publishers": 995,
  "country": {
-  "us": 286,
+  "us": 293,
   "int": 223,
-  "nl": 77,
-  "de": 50,
+  "nl": 79,
+  "de": 54,
+  "gb": 54,
   "fr": 50,
   "kr": 47,
-  "gb": 46,
-  "jp": 40,
-  "au": 36,
+  "jp": 42,
+  "au": 39,
   "tr": 35,
   "it": 30,
+  "ch": 27,
   "be": 26,
   "br": 26,
   "id": 26,
-  "ch": 24,
-  "in": 21,
+  "in": 23,
   "ar": 20,
   "eg": 19,
   "ca": 18,
@@ -194,16 +194,16 @@
   "th": 11,
   "sg": 10,
   "vn": 10,
+  "ie": 9,
   "pt": 9,
-  "ie": 8,
+  "nz": 8,
   "sa": 8,
   "eu": 7,
   "fi": 7,
   "hu": 6,
-  "nz": 6,
+  "lv": 6,
   "tw": 6,
   "bg": 5,
-  "lv": 5,
   "za": 5,
   "co": 4,
   "lu": 4,
@@ -229,11 +229,11 @@
   "tn": 1
  },
  "sector": {
-  "news": 694,
+  "news": 721,
   "affected": 188,
   "aggregator": 140,
   "cert": 94,
-  "tech-press": 50,
+  "tech-press": 56,
   "security-vendor": 30,
   "registry": 29,
   "reference": 24,
@@ -241,16 +241,16 @@
   "social": 17,
   "community": 16,
   "weaponisation": 12,
-  "research": 9,
+  "research": 11,
   "ai-lab": 3,
   "cloud": 3,
   "government": 2,
   "tool": 1
  },
  "lang": {
-  "en": 593,
+  "en": 622,
   "fr": 93,
-  "de": 81,
+  "de": 86,
   "nl": 63,
   "es": 61,
   "ko": 47,
@@ -268,8 +268,8 @@
   "vi": 13,
   "fi": 9,
   "hu": 9,
+  "lv": 9,
   "bg": 8,
-  "lv": 8,
   "uk": 7,
   "sv": 6,
   "el": 5,
@@ -284,11 +284,12 @@
   "sl": 1
  },
  "access": {
-  "open": 1136,
+  "open": 1164,
   "bot-challenge": 97,
   "down": 65,
   "paywalled": 21,
   "gone": 9,
+  "unchecked": 7,
   "login-wall": 2
  },
  "tiers": {
@@ -296,12 +297,12 @@
   "B": 927,
   "C": 16
  },
- "snapshots": 15953,
- "graphs": 15953,
- "files": 123185,
+ "snapshots": 15981,
+ "graphs": 15981,
+ "files": 123468,
  "world_graph": {
-  "nodes": 2430,
-  "edges": 4844
+  "nodes": 2472,
+  "edges": 4928
  },
  "access_classes": [
   {
@@ -1598,6 +1599,18 @@
     "paywalled": 21,
     "gone": 5,
     "login-wall": 2
+   }
+  },
+  {
+   "run": "20261027T125642Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-27T12:56:42Z",
+   "finished": "2026-10-27T12:58:00Z",
+   "pages_due": 28,
+   "pages_total": 1365,
+   "changed": 28,
+   "access": {
+    "open": 28
    }
   }
  ],
