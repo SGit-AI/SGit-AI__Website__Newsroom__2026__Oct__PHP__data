@@ -3242,8 +3242,8 @@
   },
   {
    "id": "cur18-europeinfos-honeypot-35-shells",
-   "verdict": "held back",
-   "reason": "An unnamed researcher's honeypot result on one page, relayed by Europe Infos with no date or source link: 35 malicious PHP shells launched by Apache on three test servers, on PHP 8.4.26 (below the fixed 8.4.27, so a vulnerable build). Searched all captures for the figure: only this page carries it. Honeypots on vulnerable builds say nothing about real sites; not stated.",
+   "verdict": "noted",
+   "reason": "Corrected by the correspondent, 27 October: held back as an undated, unsourced honeypot result that 'says nothing about real sites'. The page does date it (the first honeypot incidents on 24 October, in its own timeline) and lists its sources (IT for Business, ITdaily, Recorded Future), and its details (honeypots on PHP 8.4.26, shells launched by Apache processes) match Adel Karimi's honeypots, which ENTER.CO reports (Apache with mod_php, PHP 8.4.26, a successful RCE) and which this desk used a batch later (cur19-enter-honeypot-rce-confirmed). Noted as an unattributed account of the same decoy result: 35 shells on three test servers. A decoy, not an organisation; it names no victim.",
    "sources": [
     "europe-infos-actualites-11979-php2shell-decryptage-d"
    ],

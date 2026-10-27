@@ -347,6 +347,14 @@
    "kind": "missing",
    "journalist_run": "breaking-0001 step 3",
    "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0001, 27 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-27",
+   "what": "cur18-europeinfos-honeypot-35-shells was held back as undated and unsourced and as saying 'nothing about real sites'; the page dates the first honeypot incidents to 24 October and lists three sources, and its details match the Karimi honeypot the desk used one batch later (cur19-enter-honeypot-rce-confirmed). Two accounts of one decoy result got opposite verdicts. Re-graded noted; the Europe Infos source and its figure (35 shells, three servers) added to the honeypot row in compromise.json.",
+   "file": "data: files/claim-review.json, files/compromise.json",
+   "kind": "verdict",
+   "journalist_run": "20261027T0500Z-journalist",
+   "fixed_in": "data, correspondent's release of 27 October"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."
