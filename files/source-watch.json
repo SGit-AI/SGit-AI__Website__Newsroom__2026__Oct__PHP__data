@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "a4bb76c0a37b",
-  "message": "researcher@php.newsroom: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (26 October 2026, due 29 October): catalog and alert captured at 00:45 UTC on 27 October, the series kev-listed reads 2, a fourth statement in the ledger record is-it-exploited"
+  "commit": "6a96f221696a",
+  "message": "researcher@php.newsroom: pass 20261027T0707Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "6a96f221696a",
+   "message": "researcher@php.newsroom: pass 20261027T0707Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "b8bed3c1c7c5",
+   "message": "researcher@php.newsroom: pass 20261027T0707Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "a4bb76c0a37b",
    "message": "researcher@php.newsroom: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (26 October 2026, due 29 October): catalog and alert captured at 00:45 UTC on 27 October, the series kev-listed reads 2, a fourth statement in the ledger record is-it-exploited"
@@ -149,25 +157,13 @@
   {
    "commit": "105413da19d8",
    "message": "researcher@php.newsroom: probe and analysis 21:05 UTC; rendered DOM kept only with the screenshot and under 1 MB (pushes over ~30 min were being cut); push retries 8"
-  },
-  {
-   "commit": "5c63cc10b0f3",
-   "message": "researcher@php.newsroom: pass 20261022T2053Z"
-  },
-  {
-   "commit": "21c2b64f0b9a",
-   "message": "cyber@php.newsroom + researcher@php.newsroom: compromise leads chased (Valtec resolved: not PHP; GMO FX VPS compromise, cause unstated; ČVUT attack stopped, success unconfirmed; DMM unstated); appliance bulletins captured (Palo Alto PAN-OS, QNAP, Cisco, Fortinet); 5 ledger records; probe and series runs"
-  },
-  {
-   "commit": "202f981c32cf",
-   "message": "researcher@php.newsroom: languages pass (339 non-English pages read, 568 new items with verbatim quotes, translations/ and index/foreign.json, index/translation-demand.json); stats pipeline (taxonomy/stats-sources.json, series/, probes/ of 295 named sites, analysis/, contradictions/ seeded with 7); 15 pages moved out of country 'impact'; docs/workflows.md"
   }
  ],
- "pages": 1286,
- "publishers": 946,
+ "pages": 1288,
+ "publishers": 948,
  "country": {
   "us": 285,
-  "int": 217,
+  "int": 219,
   "nl": 76,
   "fr": 49,
   "de": 48,
@@ -230,7 +226,7 @@
  },
  "sector": {
   "news": 656,
-  "affected": 182,
+  "affected": 184,
   "aggregator": 140,
   "cert": 94,
   "tech-press": 50,
@@ -248,7 +244,7 @@
   "tool": 1
  },
  "lang": {
-  "en": 579,
+  "en": 581,
   "fr": 91,
   "de": 77,
   "nl": 61,
@@ -284,25 +280,24 @@
   "sl": 1
  },
  "access": {
-  "open": 1101,
-  "bot-challenge": 91,
-  "down": 58,
-  "paywalled": 21,
-  "gone": 10,
-  "unchecked": 3,
+  "open": 1106,
+  "bot-challenge": 85,
+  "down": 67,
+  "paywalled": 19,
+  "gone": 9,
   "login-wall": 2
  },
  "tiers": {
   "A": 74,
-  "B": 876,
+  "B": 904,
   "C": 16
  },
- "snapshots": 13604,
- "graphs": 13604,
- "files": 104886,
+ "snapshots": 14441,
+ "graphs": 14441,
+ "files": 112580,
  "world_graph": {
-  "nodes": 2344,
-  "edges": 4670
+  "nodes": 2348,
+  "edges": 4678
  },
  "access_classes": [
   {
@@ -1503,6 +1498,38 @@
    "changed": 3,
    "access": {
     "open": 3
+   }
+  },
+  {
+   "run": "20261027T070855Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-27T07:08:55Z",
+   "finished": "2026-10-27T07:15:09Z",
+   "pages_due": 184,
+   "pages_total": 1288,
+   "changed": 73,
+   "access": {
+    "open": 135,
+    "bot-challenge": 13,
+    "down": 35,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261027T071509Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-27T07:15:09Z",
+   "finished": "2026-10-27T07:51:26Z",
+   "pages_due": 1099,
+   "pages_total": 1288,
+   "changed": 764,
+   "access": {
+    "open": 968,
+    "bot-challenge": 72,
+    "down": 32,
+    "paywalled": 19,
+    "gone": 6,
+    "login-wall": 2
    }
   }
  ],
