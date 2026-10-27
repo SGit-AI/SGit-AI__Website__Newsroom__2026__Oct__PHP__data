@@ -2,7 +2,7 @@
  "item": "Q141801185",
  "label": "PHP2Shell",
  "description": "2026 security vulnerability in PHP",
- "modified": "2026-10-24T18:38:02Z",
+ "modified": "2026-10-27T08:18:13Z",
  "sitelinks": [
   "arwiki",
   "cawiki",
@@ -21,6 +21,7 @@
   "idwiki",
   "jawiki",
   "kowiki",
+  "kswiki",
   "lmowiki",
   "mswiki",
   "nlwiki",
@@ -147,6 +148,13 @@
     "type": "url"
    }
   ],
+  "P8885": [
+   {
+    "value": "PHP2Shell",
+    "rank": "normal",
+    "type": "external-id"
+   }
+  ],
   "P973": [
    {
     "value": "https://github.com/php/php-src/security/advisories/GHSA-w8hw-w9fx-j79w",
@@ -175,6 +183,7 @@
   "P6949": "announcement date",
   "P793": "significant event",
   "P856": "official website",
+  "P8885": "Namuwiki ID",
   "P973": "described at URL",
   "Q108871753": "Wiz, Inc.",
   "Q125498109": "named vulnerability",
@@ -185,5 +194,5 @@
   "Q3510521": "computer security",
   "Q59": "PHP"
  },
- "fetched_at": "2026-10-25T14:08:10Z"
+ "fetched_at": "2026-10-27T10:45:12Z"
 }

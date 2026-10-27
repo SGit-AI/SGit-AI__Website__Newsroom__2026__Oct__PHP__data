@@ -1,6 +1,6 @@
 {
  "item": "Q141801185",
- "fetched_at": "2026-10-25T14:09:03Z",
+ "fetched_at": "2026-10-27T10:45:14Z",
  "revisions": [
   {
    "revid": 2559460288,
@@ -1535,6 +1535,215 @@
    },
    "size": 37334,
    "comment": "/* wbsetdescription-set:1|vi */ hai lỗ hổng bảo mật PHP được công bố vào năm 2026",
+   "tags": [
+    "wikidata-ui"
+   ]
+  },
+  {
+   "revid": 2560984695,
+   "parentid": 2560373089,
+   "timestamp": "2026-10-26T06:47:08Z",
+   "editor": {
+    "name": "Jianhui67 - 261026·1521",
+    "kind": "registered"
+   },
+   "size": 37362,
+   "comment": "/* wbsetdescription-set:1|en */ 2026 security vulnerability in PHP. Dokdo is Korean territory.",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "description ending with punctuation",
+    "mw-reverted",
+    "wikidata-ui",
+    "termbox"
+   ]
+  },
+  {
+   "revid": 2560984821,
+   "parentid": 2560984695,
+   "timestamp": "2026-10-26T06:48:06Z",
+   "editor": {
+    "name": "Jianhui67 - 261026·1521",
+    "kind": "registered"
+   },
+   "size": 37419,
+   "comment": "/* wbeditentity-update-languages-short:0||ko, ja, en-us */",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "mw-reverted",
+    "wikidata-ui",
+    "termbox"
+   ]
+  },
+  {
+   "revid": 2560984929,
+   "parentid": 2560984821,
+   "timestamp": "2026-10-26T06:49:04Z",
+   "editor": {
+    "name": "NDG",
+    "kind": "registered"
+   },
+   "size": 37334,
+   "comment": "Reverted edits by [[Special:Contributions/Jianhui67 - 261026·1521|Jianhui67 - 261026·1521]] ([[User talk:Jianhui67 - 261026·1521|talk]]) to last revision by [[:User:Pminh141|Pminh141]]",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "mw-rollback"
+   ]
+  },
+  {
+   "revid": 2560985090,
+   "parentid": 2560984929,
+   "timestamp": "2026-10-26T06:50:25Z",
+   "editor": {
+    "name": "Jianhui67 - 261026·1521",
+    "kind": "registered"
+   },
+   "size": 37419,
+   "comment": "/* undo:0||2560984929|NDG */",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "mw-undo",
+    "advanced mobile edit",
+    "mw-reverted"
+   ]
+  },
+  {
+   "revid": 2560985978,
+   "parentid": 2560985090,
+   "timestamp": "2026-10-26T06:56:29Z",
+   "editor": {
+    "name": "NDG",
+    "kind": "registered"
+   },
+   "size": 37334,
+   "comment": "Reverted edits by [[Special:Contributions/Jianhui67 - 261026·1521|Jianhui67 - 261026·1521]] ([[User talk:Jianhui67 - 261026·1521|talk]]) to last revision by [[:User:NDG|NDG]]",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "mw-rollback"
+   ]
+  },
+  {
+   "revid": 2561030355,
+   "parentid": 2560985978,
+   "timestamp": "2026-10-26T09:55:10Z",
+   "editor": {
+    "name": "Charp238",
+    "kind": "registered"
+   },
+   "size": 37685,
+   "comment": "/* wbsetclaim-create:2||1 */ [[Property:P8885]]: PHP2Shell",
+   "tags": [
+    "wikidata-ui"
+   ]
+  },
+  {
+   "revid": 2561119034,
+   "parentid": 2561030355,
+   "timestamp": "2026-10-26T16:56:06Z",
+   "editor": {
+    "name": "آیات محراج",
+    "kind": "registered"
+   },
+   "size": 37793,
+   "comment": "/* wblinktitles-connect:2| */ enwiki:PHP2Shell, kswiki:پی ایچ پی2 شیٚل",
+   "tags": [
+    "mobile edit",
+    "mobile web edit"
+   ]
+  },
+  {
+   "revid": 2561307846,
+   "parentid": 2561119034,
+   "timestamp": "2026-10-27T04:03:41Z",
+   "editor": {
+    "name": "버몬트 2026년10월27일화요일12시46분",
+    "kind": "registered"
+   },
+   "size": 37843,
+   "comment": "/* wbeditentity-update-languages-short:0||ko, ja */",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "mw-reverted",
+    "wikidata-ui",
+    "termbox"
+   ]
+  },
+  {
+   "revid": 2561308077,
+   "parentid": 2561307846,
+   "timestamp": "2026-10-27T04:04:53Z",
+   "editor": {
+    "name": "버몬트 2026년10월27일화요일12시46분",
+    "kind": "registered"
+   },
+   "size": 38002,
+   "comment": "/* wbsetlabeldescriptionaliases:3|ko */ PHP2Shell, 2026년 10월 21일, PHP 버전 5.4~8.5에 존재하는 두 가지 고위험 취약점, PHP2Shell 사태",
+   "tags": [
+    "mobile edit",
+    "mobile web edit",
+    "mw-reverted",
+    "wikidata-ui",
+    "termbox"
+   ]
+  },
+  {
+   "revid": 2561313666,
+   "parentid": 2561308077,
+   "timestamp": "2026-10-27T04:25:05Z",
+   "editor": {
+    "name": "Jianhui67",
+    "kind": "registered"
+   },
+   "size": 37793,
+   "comment": "Reverted edits by [[Special:Contributions/버몬트 2026년10월27일화요일12시46분|버몬트 2026년10월27일화요일12시46분]] ([[User talk:버몬트 2026년10월27일화요일12시46분|talk]]) to last revision by [[:User:آیات محراج|آیات محراج]]",
+   "tags": [
+    "mw-rollback"
+   ]
+  },
+  {
+   "revid": 2561323730,
+   "parentid": 2561313666,
+   "timestamp": "2026-10-27T05:01:25Z",
+   "editor": {
+    "name": "~2026-57287-15",
+    "kind": "registered"
+   },
+   "size": 38002,
+   "comment": "/* undo:0||2561313666|Jianhui67 */",
+   "tags": [
+    "mw-undo",
+    "mw-reverted"
+   ]
+  },
+  {
+   "revid": 2561326355,
+   "parentid": 2561323730,
+   "timestamp": "2026-10-27T05:12:23Z",
+   "editor": {
+    "name": "Jianhui67",
+    "kind": "registered"
+   },
+   "size": 37793,
+   "comment": "Reverted edits by [[Special:Contributions/~2026-57287-15|~2026-57287-15]] ([[User talk:~2026-57287-15|talk]]) to last revision by [[:User:Jianhui67|Jianhui67]]",
+   "tags": [
+    "mw-rollback"
+   ]
+  },
+  {
+   "revid": 2561366356,
+   "parentid": 2561326355,
+   "timestamp": "2026-10-27T08:18:13Z",
+   "editor": {
+    "name": "آیات محراج",
+    "kind": "registered"
+   },
+   "size": 37879,
+   "comment": "/* wbsetlabel-add:1|ks */ پی ایچ پی2 شیٚل",
    "tags": [
     "wikidata-ui"
    ]

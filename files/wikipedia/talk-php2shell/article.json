@@ -50,6 +50,31 @@
      "sha256": "03e61babbf5df5de191d0f787766946d133071c3cc8d09903b517518b1ba1be1"
     }
    ]
+  },
+  {
+   "at": "2026-10-27T10:47:03Z",
+   "new_revisions": 1,
+   "hidden_chars_removed": 0,
+   "requests": [
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&titles=Talk%3APHP2Shell&rvlimit=500&rvdir=newer&rvprop=ids%7Ctimestamp%7Cuser%7Cuserid%7Csize%7Csha1%7Ccomment%7Cparentid%7Ctags%7Cflags&format=json&formatversion=2",
+     "at": "2026-10-27T10:46:10Z",
+     "bytes": 14281,
+     "sha256": "7e8f9805ce0a1f753109b30abf6f8b6b93120b9e2a23271278ef2366799bbd0b"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=revisions&revids=1382040296&rvprop=ids%7Ccontent&rvslots=main&format=json&formatversion=2",
+     "at": "2026-10-27T10:46:12Z",
+     "bytes": 9740,
+     "sha256": "5e5175728af92fff2ebc4894df7515dbdba17c71cbeb9079f4cd7030d5d5fc59"
+    },
+    {
+     "url": "https://en.wikipedia.org/w/api.php?action=query&prop=pageprops%7Cinfo&titles=Talk%3APHP2Shell&format=json&formatversion=2",
+     "at": "2026-10-27T10:47:01Z",
+     "bytes": 262,
+     "sha256": "c3e56f432ca15f0f56d27745c523183ae68a7049cee0b40e210a762125863450"
+    }
+   ]
   }
  ],
  "title": "Talk:PHP2Shell",
@@ -59,10 +84,10 @@
  "url": "https://en.wikipedia.org/wiki/Talk%3APHP2Shell",
  "wikidata_item": null,
  "licence": "CC BY-SA 4.0, by the contributors to the English Wikipedia; each revision id is the attribution",
- "latest_revid": 1381886750,
- "revisions": 40,
+ "latest_revid": 1382040296,
+ "revisions": 41,
  "first_revision": "2026-10-21T11:22:20Z",
- "latest_revision": "2026-10-25T12:13:36Z",
- "editors": 26,
+ "latest_revision": "2026-10-26T05:16:26Z",
+ "editors": 27,
  "links_in": 0
 }

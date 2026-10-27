@@ -2335,7 +2335,11 @@
    "kind": "outlet",
    "country": "DE",
    "aliases": [
-    "Notebookcheck"
+    "Notebookcheck",
+    "notebookcheck",
+    "notebookcheck.info",
+    "notebookcheck-cn",
+    "notebookcheck-cn.com"
    ],
    "added_by": "claude-journalist, 24 October 2026, to carry the export at 1f38e70921b2; for the ontologist to check"
   },
@@ -2519,7 +2523,8 @@
    "kind": "outlet",
    "country": "UK",
    "aliases": [
-    "theguardian.com"
+    "theguardian.com",
+    "The Guardian"
    ]
   },
   {
@@ -2609,7 +2614,8 @@
    "kind": "organisation",
    "aliases": [
     "blog.cloudlinux.com",
-    "cloudlinux.com"
+    "cloudlinux.com",
+    "CloudLinux"
    ]
   },
   {
@@ -3577,6 +3583,1425 @@
     "헬로티",
     "hellot.net",
     "HelloT"
+   ]
+  },
+  {
+   "id": "agenda-digitale",
+   "name": "Agenda Digitale",
+   "kind": "outlet",
+   "aliases": [
+    "Agenda Digitale",
+    "agendadigitale.eu"
+   ]
+  },
+  {
+   "id": "anadolu-ajans",
+   "name": "Anadolu Ajansı",
+   "kind": "agency",
+   "country": "TR",
+   "aliases": [
+    "Anadolu Ajansı",
+    "aa.com.tr"
+   ],
+   "note": "Turkey's state news agency; a wire, so its copy is syndicated by other Turkish outlets."
+  },
+  {
+   "id": "beincrypto",
+   "name": "BeInCrypto",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "BeInCrypto",
+    "BeInCrypto Polska",
+    "BeInCrypto Việt Nam",
+    "beincrypto.com"
+   ],
+   "note": "A crypto-news network with national editions (nl., pl., vn.); the three publisher strings are one party."
+  },
+  {
+   "id": "berliner-morgenpost",
+   "name": "Berliner Morgenpost",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Berliner Morgenpost",
+    "morgenpost.de"
+   ]
+  },
+  {
+   "id": "bisnis-tekno",
+   "name": "Bisnis Tekno",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Bisnis Tekno",
+    "teknologi.bisnis.com"
+   ]
+  },
+  {
+   "id": "bitcoin-news",
+   "name": "Bitcoin News",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Bitcoin News",
+    "news.bitcoin.com"
+   ]
+  },
+  {
+   "id": "bo-qun-i-nhn-dn",
+   "name": "Báo Quân đội nhân dân",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "Báo Quân đội nhân dân",
+    "qdnd.vn"
+   ]
+  },
+  {
+   "id": "bo-vietnamnet",
+   "name": "Báo VietNamNet",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "Báo VietNamNet",
+    "vietnamnet.vn"
+   ]
+  },
+  {
+   "id": "ciol",
+   "name": "CIOL",
+   "kind": "outlet",
+   "country": "IN",
+   "aliases": [
+    "CIOL",
+    "ciol.com"
+   ]
+  },
+  {
+   "id": "cpo-magazine",
+   "name": "CPO Magazine",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "CPO Magazine",
+    "cpomagazine.com"
+   ]
+  },
+  {
+   "id": "computing",
+   "name": "Computing",
+   "kind": "outlet",
+   "country": "UK",
+   "aliases": [
+    "Computing",
+    "computing.co.uk"
+   ]
+  },
+  {
+   "id": "convergenciadigital",
+   "name": "ConvergenciaDigital",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "ConvergenciaDigital",
+    "convergenciadigital.com.br"
+   ]
+  },
+  {
+   "id": "distributique",
+   "name": "Distributique",
+   "kind": "outlet",
+   "aliases": [
+    "Distributique",
+    "distributique.com"
+   ]
+  },
+  {
+   "id": "enter-co",
+   "name": "ENTER.CO",
+   "kind": "outlet",
+   "country": "CO",
+   "aliases": [
+    "ENTER.CO",
+    "enter.co"
+   ]
+  },
+  {
+   "id": "en-cause",
+   "name": "En cause",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "En cause",
+    "encause.fr"
+   ]
+  },
+  {
+   "id": "fortune-indonesia",
+   "name": "Fortune Indonesia",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Fortune Indonesia",
+    "fortuneidn.com"
+   ]
+  },
+  {
+   "id": "homodigital",
+   "name": "HomoDigital",
+   "kind": "outlet",
+   "country": "PL",
+   "aliases": [
+    "HomoDigital",
+    "homodigital.pl"
+   ]
+  },
+  {
+   "id": "it168",
+   "name": "IT168 软件·学院",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "IT168 软件·学院",
+    "software.it168.com"
+   ]
+  },
+  {
+   "id": "kompas-tekno",
+   "name": "Kompas Tekno",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Kompas Tekno",
+    "tekno.kompas.com"
+   ]
+  },
+  {
+   "id": "lampost-co",
+   "name": "LAMPOST.CO",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "LAMPOST.CO",
+    "lampost.co"
+   ]
+  },
+  {
+   "id": "leptidigital",
+   "name": "LEPTIDIGITAL",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "LEPTIDIGITAL",
+    "leptidigital.fr"
+   ]
+  },
+  {
+   "id": "lisa-news",
+   "name": "LISA News",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "LISA News",
+    "lisanews.org"
+   ]
+  },
+  {
+   "id": "la-razn",
+   "name": "La Razón",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "La Razón",
+    "larazon.es"
+   ]
+  },
+  {
+   "id": "la-tercera",
+   "name": "La Tercera",
+   "kind": "outlet",
+   "country": "CL",
+   "aliases": [
+    "La Tercera",
+    "latercera.com"
+   ]
+  },
+  {
+   "id": "la-vanguardia",
+   "name": "La Vanguardia",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "La Vanguardia",
+    "lavanguardia.com"
+   ]
+  },
+  {
+   "id": "le-quotidien-de-la-runion",
+   "name": "Le Quotidien de la Réunion",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Le Quotidien de la Réunion",
+    "lequotidien.re"
+   ]
+  },
+  {
+   "id": "libertatea",
+   "name": "Libertatea",
+   "kind": "outlet",
+   "country": "RO",
+   "aliases": [
+    "Libertatea",
+    "libertatea.ro"
+   ]
+  },
+  {
+   "id": "lineaedp",
+   "name": "LineaEDP",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "LineaEDP",
+    "lineaedp.it"
+   ]
+  },
+  {
+   "id": "moncloa-com",
+   "name": "MONCLOA.COM",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "MONCLOA.COM",
+    "moncloa.com"
+   ]
+  },
+  {
+   "id": "malay-mail",
+   "name": "Malay Mail",
+   "kind": "outlet",
+   "country": "MY",
+   "aliases": [
+    "Malay Mail",
+    "malaymail.com"
+   ]
+  },
+  {
+   "id": "matrice-digitale",
+   "name": "Matrice Digitale",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "Matrice Digitale",
+    "matricedigitale.it"
+   ]
+  },
+  {
+   "id": "medcom-id",
+   "name": "Medcom.id",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Medcom.id",
+    "medcom.id"
+   ]
+  },
+  {
+   "id": "media-indonesia",
+   "name": "Media Indonesia",
+   "kind": "outlet",
+   "aliases": [
+    "Media Indonesia",
+    "mediaindonesia.com"
+   ]
+  },
+  {
+   "id": "muycomputer",
+   "name": "MuyComputer",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "MuyComputer",
+    "muycomputer.com"
+   ]
+  },
+  {
+   "id": "mynet",
+   "name": "Mynet",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Mynet",
+    "mynet.com"
+   ]
+  },
+  {
+   "id": "newscast",
+   "name": "NEWSCAST",
+   "kind": "platform",
+   "country": "JP",
+   "aliases": [
+    "NEWSCAST",
+    "newscast.jp"
+   ],
+   "note": "A press-release and event-information site: the issuing company states, it relays."
+  },
+  {
+   "id": "npr",
+   "name": "NPR",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "NPR",
+    "npr.org"
+   ]
+  },
+  {
+   "id": "netzpolitik-org",
+   "name": "Netzpolitik.org",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Netzpolitik.org",
+    "netzpolitik.org"
+   ]
+  },
+  {
+   "id": "neue-westflische",
+   "name": "Neue Westfälische",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Neue Westfälische",
+    "nw.de"
+   ]
+  },
+  {
+   "id": "notimrica",
+   "name": "Notimérica",
+   "kind": "outlet",
+   "country": "ES",
+   "aliases": [
+    "Notimérica",
+    "notimerica.com"
+   ]
+  },
+  {
+   "id": "pcgamer-com",
+   "name": "PC Gamer",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "PC Gamer",
+    "pcgamer.com"
+   ]
+  },
+  {
+   "id": "pc-watch",
+   "name": "PC Watch",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "PC Watch",
+    "pc.watch.impress.co.jp"
+   ],
+   "note": "An outlet of Impress; distinct from INTERNET Watch."
+  },
+  {
+   "id": "pr-times",
+   "name": "PR TIMES",
+   "kind": "platform",
+   "country": "JP",
+   "aliases": [
+    "PR TIMES",
+    "prtimes.jp"
+   ],
+   "note": "A press-release distribution service: the issuing company states, PR TIMES relays."
+  },
+  {
+   "id": "polskie-radio-24",
+   "name": "Polskie Radio 24",
+   "kind": "outlet",
+   "country": "PL",
+   "aliases": [
+    "Polskie Radio 24",
+    "polskieradio24.pl"
+   ]
+  },
+  {
+   "id": "pplware",
+   "name": "Pplware",
+   "kind": "outlet",
+   "country": "PT",
+   "aliases": [
+    "Pplware",
+    "sapo.pt"
+   ]
+  },
+  {
+   "id": "pressebox",
+   "name": "PresseBox",
+   "kind": "platform",
+   "country": "DE",
+   "aliases": [
+    "PresseBox",
+    "pressebox.de"
+   ],
+   "note": "A press-release distribution service: the issuing company states, it relays."
+  },
+  {
+   "id": "rbb-today",
+   "name": "RBB TODAY",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "RBB TODAY",
+    "rbbtoday.com"
+   ]
+  },
+  {
+   "id": "radio-world",
+   "name": "Radio World",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Radio World",
+    "radioworld.com"
+   ]
+  },
+  {
+   "id": "root-cz",
+   "name": "Root.cz",
+   "kind": "outlet",
+   "country": "CZ",
+   "aliases": [
+    "Root.cz",
+    "root.cz"
+   ]
+  },
+  {
+   "id": "sz-de",
+   "name": "SZ.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "SZ.de",
+    "sueddeutsche.de"
+   ]
+  },
+  {
+   "id": "salzburger-nachrichten",
+   "name": "Salzburger Nachrichten",
+   "kind": "outlet",
+   "country": "AT",
+   "aliases": [
+    "Salzburger Nachrichten",
+    "sn.at"
+   ]
+  },
+  {
+   "id": "selular-id",
+   "name": "Selular.ID",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Selular.ID",
+    "selular.id"
+   ]
+  },
+  {
+   "id": "sempreupdate",
+   "name": "SempreUpdate",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "SempreUpdate",
+    "sempreupdate.com.br"
+   ]
+  },
+  {
+   "id": "siam-blockchain",
+   "name": "Siam Blockchain",
+   "kind": "outlet",
+   "country": "TH",
+   "aliases": [
+    "Siam Blockchain",
+    "siamblockchain.com"
+   ]
+  },
+  {
+   "id": "silicon-fr",
+   "name": "Silicon.fr",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Silicon.fr",
+    "silicon.fr"
+   ]
+  },
+  {
+   "id": "solutions-numriques",
+   "name": "Solutions Numériques",
+   "kind": "outlet",
+   "aliases": [
+    "Solutions Numériques",
+    "solutions-numeriques.com"
+   ]
+  },
+  {
+   "id": "spacemoney",
+   "name": "SpaceMoney",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "SpaceMoney",
+    "spacemoney.com.br"
+   ]
+  },
+  {
+   "id": "startup-fortune",
+   "name": "Startup Fortune",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Startup Fortune",
+    "startupfortune.com"
+   ]
+  },
+  {
+   "id": "stphane-larue-news",
+   "name": "Stéphane Larue News",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "Stéphane Larue News",
+    "stephanelarue.com"
+   ]
+  },
+  {
+   "id": "suara-nasional",
+   "name": "Suara Nasional",
+   "kind": "outlet",
+   "aliases": [
+    "Suara Nasional",
+    "suaranasional.com"
+   ]
+  },
+  {
+   "id": "tgrt-haber",
+   "name": "TGRT Haber",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "TGRT Haber",
+    "tgrthaber.com"
+   ]
+  },
+  {
+   "id": "tv-tech",
+   "name": "TV Tech",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "TV Tech",
+    "tvtechnology.com"
+   ]
+  },
+  {
+   "id": "tages-anzeiger",
+   "name": "Tages-Anzeiger",
+   "kind": "outlet",
+   "country": "CH",
+   "aliases": [
+    "Tages-Anzeiger",
+    "tagesanzeiger.ch"
+   ]
+  },
+  {
+   "id": "takvim",
+   "name": "Takvim",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Takvim",
+    "takvim.com.tr"
+   ]
+  },
+  {
+   "id": "techgaming-it",
+   "name": "TechGaming.it",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "TechGaming.it",
+    "techgaming.it"
+   ]
+  },
+  {
+   "id": "technotoday",
+   "name": "Technotoday",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Technotoday",
+    "technotoday.com.tr"
+   ]
+  },
+  {
+   "id": "teknotalk",
+   "name": "TeknoTalk",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "TeknoTalk",
+    "teknotalk.com"
+   ]
+  },
+  {
+   "id": "teknoblog",
+   "name": "Teknoblog",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Teknoblog",
+    "teknoblog.com"
+   ]
+  },
+  {
+   "id": "teknfilo",
+   "name": "Teknófilo",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "Teknófilo",
+    "teknofilo.com"
+   ]
+  },
+  {
+   "id": "telset-id",
+   "name": "Telset.id",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Telset.id",
+    "telset.id"
+   ]
+  },
+  {
+   "id": "tia-sng",
+   "name": "Tia Sáng",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "Tia Sáng",
+    "tiasang.com.vn"
+   ]
+  },
+  {
+   "id": "tirto-id",
+   "name": "Tirto.id",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Tirto.id",
+    "tirto.id"
+   ]
+  },
+  {
+   "id": "turbolab-it",
+   "name": "TurboLab.it",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "TurboLab.it",
+    "turbolab.it"
+   ]
+  },
+  {
+   "id": "uol",
+   "name": "UOL",
+   "kind": "outlet",
+   "country": "BR",
+   "aliases": [
+    "UOL",
+    "uol.com.br"
+   ]
+  },
+  {
+   "id": "unite-ai",
+   "name": "Unite.AI",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "Unite.AI",
+    "unite.ai"
+   ]
+  },
+  {
+   "id": "uzone",
+   "name": "Uzone",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Uzone",
+    "uzone.id"
+   ]
+  },
+  {
+   "id": "vol-at",
+   "name": "VOL.AT",
+   "kind": "outlet",
+   "country": "AT",
+   "aliases": [
+    "VOL.AT",
+    "vol.at"
+   ]
+  },
+  {
+   "id": "vtv-vn",
+   "name": "VTV.vn",
+   "kind": "outlet",
+   "country": "VN",
+   "aliases": [
+    "VTV.vn",
+    "vtv.vn"
+   ]
+  },
+  {
+   "id": "vilggazdasg",
+   "name": "Világgazdaság",
+   "kind": "outlet",
+   "country": "HU",
+   "aliases": [
+    "Világgazdaság",
+    "vg.hu"
+   ]
+  },
+  {
+   "id": "wdr",
+   "name": "WDR",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "WDR",
+    "wdr.de"
+   ]
+  },
+  {
+   "id": "warta-ekonomi",
+   "name": "Warta Ekonomi",
+   "kind": "outlet",
+   "country": "ID",
+   "aliases": [
+    "Warta Ekonomi",
+    "wartaekonomi.co.id"
+   ]
+  },
+  {
+   "id": "winpoin",
+   "name": "WinPoin",
+   "kind": "outlet",
+   "aliases": [
+    "WinPoin",
+    "winpoin.com"
+   ]
+  },
+  {
+   "id": "wirtschaftswoche",
+   "name": "WirtschaftsWoche",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "WirtschaftsWoche",
+    "wiwo.de"
+   ]
+  },
+  {
+   "id": "world-socialist-web-site",
+   "name": "World Socialist Web Site",
+   "kind": "outlet",
+   "country": "US",
+   "aliases": [
+    "World Socialist Web Site",
+    "wsws.org"
+   ],
+   "note": "The outlet of the International Committee of the Fourth International, a political party: read its framing as that."
+  },
+  {
+   "id": "yugatech",
+   "name": "YugaTech",
+   "kind": "outlet",
+   "country": "PH",
+   "aliases": [
+    "YugaTech",
+    "yugatech.com"
+   ]
+  },
+  {
+   "id": "zdnet-japan",
+   "name": "ZDNET Japan",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "ZDNET Japan",
+    "japan.zdnet.com"
+   ],
+   "note": "The Japanese edition; not the US ZDNET."
+  },
+  {
+   "id": "bangkokbiznews",
+   "name": "bangkokbiznews",
+   "kind": "outlet",
+   "country": "TH",
+   "aliases": [
+    "bangkokbiznews",
+    "bangkokbiznews.com"
+   ]
+  },
+  {
+   "id": "cybersecitalia",
+   "name": "cybersecitalia",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "cybersecitalia",
+    "cybersecitalia.it"
+   ]
+  },
+  {
+   "id": "europe-infos",
+   "name": "europe-infos",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "europe-infos",
+    "europe-infos.fr"
+   ]
+  },
+  {
+   "id": "kursors",
+   "name": "kursors",
+   "kind": "outlet",
+   "country": "LV",
+   "aliases": [
+    "kursors",
+    "kursors.lv"
+   ]
+  },
+  {
+   "id": "le-blog-des-nouvelles-technologies",
+   "name": "le Blog des Nouvelles Technologies",
+   "kind": "outlet",
+   "country": "FR",
+   "aliases": [
+    "le Blog des Nouvelles Technologies",
+    "blog-nouvelles-technologies.fr"
+   ]
+  },
+  {
+   "id": "microsoft-learn",
+   "name": "Microsoft Learn",
+   "kind": "organisation",
+   "country": "US",
+   "aliases": [
+    "Microsoft Learn",
+    "learn",
+    "learn.microsoft.com"
+   ],
+   "note": "Microsoft's documentation site; the publisher string 'learn' is the site's own metadata, not an outlet."
+  },
+  {
+   "id": "macitynet-it",
+   "name": "macitynet.it",
+   "kind": "outlet",
+   "country": "IT",
+   "aliases": [
+    "macitynet.it"
+   ]
+  },
+  {
+   "id": "mansethaber",
+   "name": "mansethaber",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "mansethaber",
+    "mansethaber.com"
+   ]
+  },
+  {
+   "id": "martincid-pl",
+   "name": "Martin Cid Magazine PL",
+   "kind": "outlet",
+   "country": "PL",
+   "aliases": [
+    "Martin Cid Magazine PL",
+    "pl.martincid",
+    "pl.martincid.com"
+   ],
+   "note": "A Polish magazine (film, TV, music, technology); the publisher string is its host."
+  },
+  {
+   "id": "schieb-de",
+   "name": "schieb.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "schieb.de"
+   ],
+   "note": "The blog of Jörg Schieb, a German technology journalist; his own site, not an outlet's."
+  },
+  {
+   "id": "caschys-blog",
+   "name": "Caschys Blog",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Caschys Blog",
+    "stadt bremerhaven",
+    "stadt-bremerhaven.de"
+   ],
+   "note": "The publisher string 'stadt bremerhaven' (a city's name) is the page's own metadata: the site at stadt-bremerhaven.de titles itself Caschys Blog, a German technology blog. Not the city's administration."
+  },
+  {
+   "id": "startupper",
+   "name": "startupper",
+   "kind": "outlet",
+   "country": "GR",
+   "aliases": [
+    "startupper",
+    "startupper.gr"
+   ]
+  },
+  {
+   "id": "tagesschau-de",
+   "name": "tagesschau.de",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "tagesschau.de"
+   ]
+  },
+  {
+   "id": "tech-noisy",
+   "name": "tech-noisy",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "tech-noisy",
+    "tech-noisy.com"
+   ]
+  },
+  {
+   "id": "top-agrar",
+   "name": "top agrar",
+   "kind": "outlet",
+   "aliases": [
+    "top agrar",
+    "topagrar.com"
+   ]
+  },
+  {
+   "id": "turkiyedeisdunyasi",
+   "name": "turkiyedeisdunyasi",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "turkiyedeisdunyasi",
+    "turkiyedeisdunyasi.com"
+   ]
+  },
+  {
+   "id": "wersm",
+   "name": "wersm",
+   "kind": "organisation",
+   "country": "US",
+   "aliases": [
+    "wersm",
+    "wersm.com"
+   ],
+   "note": "A social-media agency: its post is the agency speaking."
+  },
+  {
+   "id": "tageskarte",
+   "name": "Tageskarte",
+   "kind": "outlet",
+   "country": "DE",
+   "aliases": [
+    "Tageskarte",
+    "www.tageskarte.io",
+    "tageskarte.io"
+   ]
+  },
+  {
+   "id": "istanbul-ticaret-gazetesi",
+   "name": "İstanbul Ticaret Gazetesi",
+   "kind": "outlet",
+   "aliases": [
+    "İstanbul Ticaret Gazetesi",
+    "istanbulticaretgazetesi.com"
+   ]
+  },
+  {
+   "id": "ot",
+   "name": "Οικονομικός Ταχυδρόμος",
+   "kind": "outlet",
+   "country": "GR",
+   "aliases": [
+    "Οικονομικός Ταχυδρόμος",
+    "ot.gr"
+   ]
+  },
+  {
+   "id": "almasryalyoum",
+   "name": "المصري لايت",
+   "kind": "outlet",
+   "country": "EG",
+   "aliases": [
+    "المصري لايت",
+    "almasryalyoum.com"
+   ]
+  },
+  {
+   "id": "turkey-breaking",
+   "name": "تركيا عاجل",
+   "kind": "outlet",
+   "country": "TR",
+   "aliases": [
+    "تركيا عاجل",
+    "turkey-breaking.com"
+   ]
+  },
+  {
+   "id": "albiladpress",
+   "name": "جريدة البلاد",
+   "kind": "outlet",
+   "country": "BH",
+   "aliases": [
+    "جريدة البلاد",
+    "albiladpress.com"
+   ]
+  },
+  {
+   "id": "aljarida",
+   "name": "جريدة الجريدة الكويتية",
+   "kind": "outlet",
+   "country": "KW",
+   "aliases": [
+    "جريدة الجريدة الكويتية",
+    "aljarida.com"
+   ]
+  },
+  {
+   "id": "raya",
+   "name": "جريدة الراية",
+   "kind": "outlet",
+   "country": "QA",
+   "aliases": [
+    "جريدة الراية",
+    "raya.com"
+   ]
+  },
+  {
+   "id": "ra2ej",
+   "name": "رائج",
+   "kind": "outlet",
+   "country": "SA",
+   "aliases": [
+    "رائج",
+    "ra2ej.com"
+   ]
+  },
+  {
+   "id": "okaz",
+   "name": "عكاظ",
+   "kind": "outlet",
+   "country": "SA",
+   "aliases": [
+    "عكاظ",
+    "okaz.com.sa"
+   ]
+  },
+  {
+   "id": "khabaragency",
+   "name": "وكالة خبر للأنباء",
+   "kind": "outlet",
+   "country": "IR",
+   "aliases": [
+    "وكالة خبر للأنباء",
+    "khabaragency.net"
+   ]
+  },
+  {
+   "id": "thansettakij",
+   "name": "ฐานเศรษฐกิจ",
+   "kind": "outlet",
+   "aliases": [
+    "ฐานเศรษฐกิจ",
+    "thansettakij.com"
+   ]
+  },
+  {
+   "id": "dailynews",
+   "name": "เดลินิวส์",
+   "kind": "outlet",
+   "country": "TH",
+   "aliases": [
+    "เดลินิวส์",
+    "dailynews.co.th"
+   ]
+  },
+  {
+   "id": "posttoday",
+   "name": "โพสต์ทูเดย์",
+   "kind": "outlet",
+   "aliases": [
+    "โพสต์ทูเดย์",
+    "posttoday.com"
+   ]
+  },
+  {
+   "id": "atpress",
+   "name": "アットプレス (@Press)",
+   "kind": "platform",
+   "country": "JP",
+   "aliases": [
+    "アットプレス (@Press)",
+    "アットプレス",
+    "atpress.ne.jp"
+   ],
+   "note": "A press-release distribution service: the issuing company states, it relays."
+  },
+  {
+   "id": "pr",
+   "name": "デジタルPRプラットフォーム",
+   "kind": "platform",
+   "country": "JP",
+   "aliases": [
+    "デジタルPRプラットフォーム",
+    "digitalpr.jp"
+   ],
+   "note": "A press-release distribution service: the issuing company states, it relays."
+  },
+  {
+   "id": "trend-micro",
+   "name": "Trend Micro",
+   "kind": "organisation",
+   "country": "JP",
+   "aliases": [
+    "トレンドマイクロ",
+    "Trend Micro",
+    "trendmicro.com"
+   ],
+   "note": "A security vendor; the Japanese-language pages are its own."
+  },
+  {
+   "id": "it",
+   "name": "ビジネス+IT",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "ビジネス+IT",
+    "sbbit.jp"
+   ]
+  },
+  {
+   "id": "10jqka",
+   "name": "同花顺财经股票频道",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "同花顺财经股票频道",
+    "stock.10jqka.com.cn"
+   ]
+  },
+  {
+   "id": "sohu",
+   "name": "搜狐",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "搜狐",
+    "sohu.com"
+   ]
+  },
+  {
+   "id": "niigata-nippo",
+   "name": "新潟日報デジタルプラス",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "新潟日報デジタルプラス",
+    "niigata-nippo.co.jp"
+   ]
+  },
+  {
+   "id": "mainichi",
+   "name": "毎日新聞デジタル",
+   "kind": "outlet",
+   "country": "JP",
+   "aliases": [
+    "毎日新聞デジタル",
+    "mainichi.jp"
+   ]
+  },
+  {
+   "id": "knews",
+   "name": "知新聞",
+   "kind": "outlet",
+   "country": "TW",
+   "aliases": [
+    "知新聞",
+    "knews.com.tw"
+   ]
+  },
+  {
+   "id": "tencent-news",
+   "name": "腾讯网 (Tencent News)",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "腾讯网 (Tencent News)",
+    "腾讯网",
+    "news.qq.com"
+   ]
+  },
+  {
+   "id": "leiphone",
+   "name": "雷峰网",
+   "kind": "outlet",
+   "country": "CN",
+   "aliases": [
+    "雷峰网",
+    "leiphone.com"
+   ]
+  },
+  {
+   "id": "kocpc",
+   "name": "電腦王阿達",
+   "kind": "outlet",
+   "country": "TW",
+   "aliases": [
+    "電腦王阿達",
+    "kocpc.com.tw"
+   ]
+  },
+  {
+   "id": "unwire-hk",
+   "name": "香港 unwire.hk",
+   "kind": "outlet",
+   "country": "HK",
+   "aliases": [
+    "香港 unwire.hk",
+    "unwire.hk"
+   ]
+  },
+  {
+   "id": "public25",
+   "name": "공생공사닷컴",
+   "kind": "outlet",
+   "aliases": [
+    "공생공사닷컴",
+    "public25.com"
+   ]
+  },
+  {
+   "id": "newstap",
+   "name": "뉴스탭",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "뉴스탭",
+    "newstap.co.kr"
+   ]
+  },
+  {
+   "id": "tf",
+   "name": "더팩트",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "더팩트",
+    "tf.co.kr"
+   ]
+  },
+  {
+   "id": "thelec",
+   "name": "디일렉",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "디일렉",
+    "thelec.kr"
+   ]
+  },
+  {
+   "id": "denews",
+   "name": "디지털경제뉴스",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "디지털경제뉴스",
+    "denews.co.kr"
+   ]
+  },
+  {
+   "id": "ddaily",
+   "name": "디지털데일리",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "디지털데일리",
+    "ddaily.co.kr"
+   ]
+  },
+  {
+   "id": "mt",
+   "name": "머니투데이",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "머니투데이",
+    "mt.co.kr"
+   ]
+  },
+  {
+   "id": "jkn",
+   "name": "재경일보",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "재경일보",
+    "jkn.co.kr"
+   ]
+  },
+  {
+   "id": "etnews",
+   "name": "전자신문",
+   "kind": "outlet",
+   "aliases": [
+    "전자신문",
+    "etnews.com"
+   ]
+  },
+  {
+   "id": "weekly",
+   "name": "주간한국",
+   "kind": "outlet",
+   "country": "KR",
+   "aliases": [
+    "주간한국",
+    "weekly.hankooki.com"
+   ]
+  },
+  {
+   "id": "newscj",
+   "name": "천지일보",
+   "kind": "outlet",
+   "aliases": [
+    "천지일보",
+    "newscj.com"
    ]
   }
  ]
