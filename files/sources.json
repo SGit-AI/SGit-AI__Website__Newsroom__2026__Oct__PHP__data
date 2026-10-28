@@ -2567,6 +2567,56 @@
   "notes_md": "# Критична уязвимост в PHP спря правителствени сайтове в Европа - Bgonair\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `bg/news/bgonair/a-5-science-434196-kritichna-uyazvimost-v-php-sprya-pravitel`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nBgonair (Bulgarian): a critical PHP vulnerability stopped government sites in Europe. The flaws are known together as PHP2Shell and carry a risk of remote execution of malicious code under certain conditions.\n\n> Те са известни под общото название PHP2Shell и създават риск от дистанционно изпълнение на злонамерен код при определени условия.\n\n_Curator's translation:_ \"They are known under the common name PHP2Shell and create a risk of remote execution of malicious code under certain conditions.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Bulgarian site Bgonair summarises Reuters and WSJ reporting that government sites in Europe were temporarily shut over the PHP2Shell flaws, rated 9.2. Generic advice to check PHP versions; no Bulgarian angle.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Критична уязвимост в PHP спря правителствени сайтове в Европа - Bgonair\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `bg`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "bitmat-news-caso-php2shell-la-vera-sfida-e-nell",
+  "url": "https://www.bitmat.it/news/caso-php2shell-la-vera-sfida-e-nelle-competenze/",
+  "publisher": "BitMAT",
+  "kind": "news",
+  "title": "Caso PHP2Shell: la vera sfida è nelle competenze - BitMat",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261028T122416Z",
+    "files": {
+     "headers.json": {
+      "sha256": "c2344180496f76753f69b1221a236c58f5dfcc51f619026f0340841c7051d5a5",
+      "bytes": 707
+     },
+     "page.html": {
+      "sha256": "cb5cf0171aad9cbc631a5985d43696360ac6d61792d529579b776bd7df930606",
+      "bytes": 327531
+     },
+     "provenance.json": {
+      "sha256": "2c6ac140d08748bd3dd5a39cc10aa81607efef65745f9b5cf9414994e2c15f52",
+      "bytes": 1700
+     },
+     "rendered.html": {
+      "sha256": "8fb615d4b9042e306675778a813784e07d943bdf5fb308f92345c50db77377c7",
+      "bytes": 374885
+     },
+     "screenshot.jpg": {
+      "sha256": "539854510348dcdab91261c3b8bcebb2de70317071f6c14ecd5d452d7c81c72f",
+      "bytes": 868769
+     },
+     "text.txt": {
+      "sha256": "16be8f4277a301abc176665e8b773951d63e6f6fac1bbce5c940c2ebd40d7381",
+      "bytes": 11294
+     }
+    },
+    "started_utc": "2026-10-28T12:39:54.791Z",
+    "status": 200,
+    "final_url": "https://www.bitmat.it/news/caso-php2shell-la-vera-sfida-e-nelle-competenze/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "it-IT",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261028T122416Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Italian IT-trade piece (BitMAT, 28 October) arguing that the real challenge of PHP2Shell is skills: technical debt and legacy systems that few peop...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Caso PHP2Shell: la vera sfida è nelle competenze - BitMat\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/bitmat/news-caso-php2shell-la-vera-sfida-e-nelle-competenze`, snapshot `20261028T122416Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T122416Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Italian IT-trade piece (BitMAT, 28 October) arguing that the real challenge of PHP2Shell is skills: technical debt and legacy systems that few people understand, and a growing demand for software modernisation, application security, cloud reliability and technology-leadership profiles. It restates that both flaws score 9.2 on CVSS 4.0 and were patched on 21 October, that PHP runs about 70% of sites whose server-side language is known (per W3Techs), that PHP 8.1 and earlier are out of support but got minimal source backports for 7.4, 8.0 and 8.1, that PHP 8.2 security support ends on 31 December 2026, and that the flaws were found by researchers at Calif, Wiz and OpenAI, with AI tools contributing significantly to the research and to working exploits according to Wiz.\n\n> Una patch chiude una vulnerabilità, ma non restituisce a un’azienda la conoscenza di come e perché un sistema è stato costruito.\n\n_Curator's translation:_ \"A patch closes a vulnerability, but it does not give a company back the knowledge of how and why a system was built.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Caso PHP2Shell: la vera sfida è nelle competenze - BitMat\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `it-IT`. Commentary: the quoted view is that of the founder of a technology-recruitment firm, and the piece is about hiring demand rather than the incident. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "bitpage-php2shell-php-sicherheitsluecke-webseite",
   "url": "https://bitpage.de/php2shell-php-sicherheitsluecke-webseiten-offline/",
   "publisher": "Bitpage.de",
@@ -14424,6 +14474,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# UK councils and Met Police among sites pulled offline after NCSC alert | Insurance Business\n\nCaptured by claude-story-site. Status: captured. Edinburgh and Oxford councils and the Met Police unavailable; Bristol, Lambeth and Barnet errors; Dutch NCSC offline; Valtori; Cloudflare CTO 'STOPGAP only'; Unit 42 22.6 million systems; W3Techs Aug 2026 ~70%.\n\n- 'Palo Alto Networks' Unit 42 has counted more than 22.6 million internet-facing systems that could be vulnerable.' Method not given.\n- 'According to W3Techs, PHP runs around 70% of websites whose server-side language can be identified.' The one page on this beat that names the survey.\n- Insurance angle: aggregation event; business-interruption cover for precautionary shutdowns depends on wording.\n"
+ },
+ {
+  "slug": "iphonemod-cisa-warns-hackers-exploiting-critical-p",
+  "url": "https://www.iphonemod.net/cisa-warns-hackers-exploiting-critical-php-bugs.html",
+  "publisher": "iMoD",
+  "kind": "news",
+  "title": "สหรัฐฯ ยัน แฮกเกอร์เริ่มโจมตีช่องโหว่ PHP หวั่นกระทบทั่วโลก เสี่ยงถูกโจมตี",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261028T122416Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2f67ebab34db6677071d9a96b923b5d0c9f551a0f421f4beabaa427e4809d788",
+      "bytes": 941
+     },
+     "page.html": {
+      "sha256": "8d5ed2a0b926f103dc780d485302c97e62d1e6e066bf47005e51e7176df14449",
+      "bytes": 293876
+     },
+     "provenance.json": {
+      "sha256": "aeba620553f2cad229a70f1b8aabe884df2b72f152bd1bb18493a85166703cb4",
+      "bytes": 1868
+     },
+     "rendered.html": {
+      "sha256": "b6ae2c1191420021a2544306a96ae8140b102ecb55c7beb5a571e709832f2ce2",
+      "bytes": 668077
+     },
+     "screenshot.jpg": {
+      "sha256": "b17d2d1c3cb1cafba22ca90d2231a7872c4e5de0724544bdb326f84cb62732f0",
+      "bytes": 693215
+     },
+     "text.txt": {
+      "sha256": "470b86d1326a731e73c05c34662f82b42ac63643cb83494b5ba1076e59456df9",
+      "bytes": 22594
+     }
+    },
+    "started_utc": "2026-10-28T12:47:34.161Z",
+    "status": 200,
+    "final_url": "https://www.iphonemod.net/cisa-warns-hackers-exploiting-critical-php-bugs.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "th",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261028T122416Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Thai consumer-tech site (iPhoneMod, 28 October) reporting that CISA confirmed on 26 October that hackers are exploiting the two critical PHP flaws i...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# สหรัฐฯ ยัน แฮกเกอร์เริ่มโจมตีช่องโหว่ PHP หวั่นกระทบทั่วโลก เสี่ยงถูกโจมตี\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `th/news/iphonemod/cisa-warns-hackers-exploiting-critical-php-bugs-html`, snapshot `20261028T122416Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T122416Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Thai consumer-tech site (iPhoneMod, 28 October) reporting that CISA confirmed on 26 October that hackers are exploiting the two critical PHP flaws in the wild and ordered US civilian federal agencies to fix them within three days; it says CISA did not name the attackers. It adds background: the flaws were first noticed about two years earlier, when the PHP Foundation said no practical exploitation was known so no patch was issued, and that Calif researchers later found, with help from an AI model, how to exploit them. It then comments on open-source funding limits and on AI's growing ability to chain vulnerabilities.\n\n> เมื่อวันที่ 26 ต.ค. 2026 CISA ออกประกาศเตือนเกี่ยวกับช่องโหว่ PHP ระดับวิกฤต 2 จุด หลังยืนยันว่ามีการใช้ช่องโหว่ดังกล่าวโจมตีระบบจริง (In-the-wild Exploitation)\n\n_Curator's translation:_ \"On 26 Oct 2026 CISA issued a warning about the two critical PHP vulnerabilities after confirming they are being exploited in real attacks (in-the-wild exploitation).\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"สหรัฐฯ ยัน แฮกเกอร์เริ่มโจมตีช่องโหว่ PHP หวั่นกระทบทั่วโลก เสี่ยงถูกโจมตี\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `th`. A consumer-tech site; the page also carries unrelated product headlines. Nothing in it addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "iphonesoft-2026-10-22-faille-php-5-8-5-savoir-situa",
@@ -27301,6 +27401,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Sites des préfectures inaccessibles : l'Intérieur les coupe à cause d'une faille PHP\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fr/news/stephanelarue/sites-des-prefectures-inaccessibles-linterieur-les-coupe-a-c`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nStéphane Larue News (French), 21 October: France's Ministry of the Interior took the prefecture websites offline on Wednesday 21 October as a precaution, in a statement reported by Reuters, while waiting for a security fix for the software framework the sites run on. The sites of the Nord, Gironde and Rhône prefectures showed only a 'maintenance in progress' page, and the Paris police prefecture portal returned a 503 error when checked; the statement does not say how many sites or when they return. It says PHP's developers had announced two critical vulnerabilities on 20 October and published the fix on Wednesday at 14:00 UTC (16:00 in Paris), that Belgium and the Netherlands also disconnected public sites, and that vehicle registration, passports and residence permits are handled on other state platforms.\n\n> Le ministère de l’Intérieur indique les avoir mis hors ligne à titre de précaution, dans une déclaration rapportée par Reuters.\n\n_Curator's translation:_ \"The Interior Ministry says it took them offline as a precaution, in a statement reported by Reuters.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Stéphane Larue's site (an AI-written article) reports prefecture sites cut by the Interior Ministry. The Nord, Gironde and Rhône prefectures showed 'Maintenance en cours' and the Paris Préfecture de police returned HTTP 503. It lists alternative state portals (ANTS, ANEF).\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Sites des préfectures inaccessibles : l'Intérieur les coupe à cause d'une faille PHP\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `fr-FR`. The lead image is captioned as AI-generated (site chrome). Nothing in the article text addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "stirileprotv-stiri-actualitate-alerta-de-securitate-c",
+  "url": "https://stirileprotv.ro/stiri/actualitate/alerta-de-securitate-cibernetica-aproape-17-500-de-institutii-publice-notificate-despre-vulnerabilitatea-php2shell-ce-masuri-cere-guvernul.html",
+  "publisher": "Știrile PRO TV",
+  "kind": "news",
+  "title": "Alertă de securitate cibernetică: 17.416 instituții publice, notificate despre vulnerabilitatea PHP2Shell. Reacţia Guvernului - Știrile ProTV",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261028T122416Z",
+    "files": {
+     "headers.json": {
+      "sha256": "edd1c83a55e424468f11b37fdeb8cd574e6c43e415b0da528cb91a4dafe970f3",
+      "bytes": 1889
+     },
+     "page.html": {
+      "sha256": "63f1b286addb9e8ff401978c8c3efb14c9518056bb64068bd49c4a4ad3eacd58",
+      "bytes": 298763
+     },
+     "provenance.json": {
+      "sha256": "cac4c04bf94265ef5fdb5ef48386bde9ceef85909b604fb823dc272de61d4277",
+      "bytes": 2042
+     },
+     "rendered.html": {
+      "sha256": "64b649f25948b4a7d997041e5a082dac2e7249cb1ba9bd795b8c9e6147460e79",
+      "bytes": 356966
+     },
+     "screenshot.jpg": {
+      "sha256": "49a2a67df3f1919b3b3ff37304a1bb227e621d526bcf48e8a336885f1f2801ea",
+      "bytes": 718997
+     },
+     "text.txt": {
+      "sha256": "e05f20d1f30f357d3918ec296a77279032e65b8689c99a0b742b9e0b06424381",
+      "bytes": 16322
+     }
+    },
+    "started_utc": "2026-10-28T12:46:48.158Z",
+    "status": 200,
+    "final_url": "https://stirileprotv.ro/stiri/actualitate/alerta-de-securitate-cibernetica-aproape-17-500-de-institutii-publice-notificate-despre-vulnerabilitatea-php2shell-ce-masuri-cere-guvernul.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ro",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261028T122416Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Romanian television-news report (Știrile PRO TV, 28 October), based on News.ro, that Romania's national cybersecurity directorate DNSC has notified...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Alertă de securitate cibernetică: 17.416 instituții publice, notificate despre vulnerabilitatea PHP2Shell. Reacţia Guvernului - Știrile ProTV\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `ro/news/stirileprotv/stiri-actualitate-alerta-de-securitate-cibernetica-aproape-1`, snapshot `20261028T122416Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T122416Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Romanian television-news report (Știrile PRO TV, 28 October), based on News.ro, that Romania's national cybersecurity directorate DNSC has notified 17,416 public-sector entities of the PHP2Shell vulnerability, essentially all civil public bodies in its remit (schools, hospitals, local councils, state companies and others). The Government's General Secretariat says the platforms it runs have had the recommended measures applied and most servers, including gov.ro, already run fixed PHP versions, with other sites being updated under temporary measures. It notes that the Romanian Police site and county inspectorates showed a maintenance notice at the end of the previous week and that Tulcea city hall said its site was down as a preventive measure, and quotes several local institutions, one hospital saying it uses no PHP platforms.\n\n> Sunt 17.416 entităţi din sectorul public, a confirmat DNSC pentru News.ro.\n\n_Curator's translation:_ \"There are 17,416 public-sector entities, DNSC confirmed to News.ro.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Alertă de securitate cibernetică: 17.416 instituții publice, notificate despre vulnerabilitatea PHP2Shell. Reacţia Guvernului - Știrile ProTV\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ro`. A page of news on a television site with unrelated headlines in its sidebar, among them one on a separate cyber incident at another Romanian agency, which the article does not link to PHP2Shell and which is not recorded here. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "stock-10jqka-20261022-c680990008-shtml",

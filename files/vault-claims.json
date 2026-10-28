@@ -6212,5 +6212,125 @@
   "topic": "patching",
   "note": "Operational advice, not a measured finding.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-bitmat-php82-eol",
+  "claim": "PHP 8.2 security support ends on 31 December 2026, and for 8.1 and earlier, which are out of support, the PHP project published minimal source backports for 7.4, 8.0 and 8.1",
+  "by": "BitMAT",
+  "sources": [
+   "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Matches the backports in cur25-sbircia-eol-backports; the 8.2 end date is the article's own statement of the PHP support schedule.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-bitmat-w3techs-70",
+  "claim": "According to W3Techs, PHP is used by about 70% of websites whose server-side language is known",
+  "by": "BitMAT (citing W3Techs)",
+  "sources": [
+   "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A share of identifiable sites, not of vulnerable ones; compare cur24-tecnoandroid-69pct.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-bitmat-ai-discovery",
+  "claim": "The vulnerabilities were found by researchers at Calif, Wiz and OpenAI and, according to Wiz Research, advanced AI tools contributed significantly to the research and to working exploits",
+  "by": "BitMAT (citing Wiz Research)",
+  "sources": [
+   "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "A vendor's account of its own research; consistent with the PHP Foundation's timeline as relayed in cur23-itfb-ai-discovery.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-protv-dnsc-17416",
+  "claim": "Romania's national cybersecurity directorate DNSC has notified 17,416 public-sector entities about the PHP2Shell vulnerability and the measures needed, covering essentially all civil public institutions in its remit, a figure DNSC confirmed to News.ro",
+  "by": "Știrile PRO TV (citing News.ro and DNSC)",
+  "sources": [
+   "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A count of notified bodies, not of vulnerable or compromised ones.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-protv-sgg-measures",
+  "claim": "The Government's General Secretariat said platforms it administers directly had the recommended measures applied, that most servers including gov.ro already run fixed PHP versions, and that its other sites were being updated under temporary measures",
+  "by": "Știrile PRO TV (relaying the Government's statement)",
+  "sources": [
+   "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "A statement made early in the week of the article, as relayed; progress since is not stated.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-protv-sites-down",
+  "claim": "The article says the Romanian Police website and the county police inspectorates displayed a temporary-unavailability notice for maintenance and security updates at the end of the previous week, and that Tulcea city hall said its official site was unavailable as a preventive cyber-security measure over critical PHP vulnerabilities",
+  "by": "Știrile PRO TV (citing News.ro)",
+  "sources": [
+   "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Precautionary outages, not incidents.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-protv-dnsc-impact",
+  "claim": "DNSC's communications director said that failing to apply the necessary measures can lead to database access, theft of sensitive data and compromise of sites and accounts, and that the potential impact is critical because of PHP's reach and the possibility of unauthenticated remote code execution",
+  "by": "Știrile PRO TV (citing DNSC via News.ro)",
+  "sources": [
+   "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "The agency's risk statement, not a finding of compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-iphonemod-cisa-kev",
+  "claim": "CISA confirmed on 26 October that the two critical PHP flaws are being exploited in the wild and ordered US civilian federal agencies to remediate within three days, without saying who the attackers are",
+  "by": "iPhoneMod (relaying CISA)",
+  "sources": [
+   "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The KEV listing itself is the primary; compare cur20-infosec-kev-deadline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-iphonemod-2024-noticed",
+  "claim": "The flaws were first noticed about two years earlier, when the PHP Foundation said there was no practical way to exploit them, so no patch was issued",
+  "by": "iPhoneMod (relaying the PHP Foundation)",
+  "sources": [
+   "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with cur23-itfb-2024-audit.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur26-iphonemod-calif-early-2026",
+  "claim": "Calif researchers found, with help from an AI model, how to exploit the unfixed flaws in early 2026",
+  "by": "iPhoneMod",
+  "sources": [
+   "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+  ],
+  "status": "unverified",
+  "topic": "discovery",
+  "note": "Conflicts with the PHP Foundation's timeline as relayed elsewhere in the vault (Calif's audit began on 30 July, and its report of unconditional remote code execution came twelve days later, cur23-itfb-ai-discovery); the outlet's 'early 2026' looks loose.",
+  "agent": "curator@php.newsroom"
  }
 ]
