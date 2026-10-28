@@ -6332,5 +6332,293 @@
   "topic": "discovery",
   "note": "Conflicts with the PHP Foundation's timeline as relayed elsewhere in the vault (Calif's audit began on 30 July, and its report of unconditional remote code execution came twelve days later, cur23-itfb-ai-discovery); the outlet's 'early 2026' looks loose.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-infoarenales-censys-1-5m",
+  "claim": "Citing Censys, the article says about 1.5 million of 2.6 million identified web servers ran PHP versions that did not yet include the fix, as of 22 October",
+  "by": "Info Arenales (citing Censys)",
+  "sources": [
+   "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A sample of identified servers on the first day; a different base from the later Censys figure of about 32 million vulnerable services (cur23-haendlerbund-32m-unpatched).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-infoarenales-japan-pm-call",
+  "claim": "Japan's prime minister posted on X a call on website operators to check whether their site uses PHP and to prepare to apply the fix",
+  "by": "Info Arenales",
+  "sources": [
+   "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The post itself is the primary; compare Techgoondu (cur27-techgoondu-japan-pm).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-infoarenales-calif-1aug",
+  "claim": "Calif says it found the flaws on 1 August with an advanced language model, and Wiz says it used its autonomous research tool with other AI models",
+  "by": "Info Arenales (relaying Calif and Wiz)",
+  "sources": [
+   "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "The 1 August date differs from the PHP Foundation's account (Calif's audit began on 30 July, with a report twelve days later, cur23-itfb-ai-discovery); vendors' own accounts of their research.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-infoarenales-agencies-advice",
+  "claim": "The article says cybersecurity agencies of various states advised PHP users to update immediately or take their sites offline until patched",
+  "by": "Info Arenales",
+  "sources": [
+   "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A blanket statement; the vault's disputed offline-allies claim records that several agencies gave no offline advice.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-muycomputerpro-kev-29oct",
+  "claim": "CISA added both PHP2Shell flaws to its Known Exploited Vulnerabilities catalog and ordered federal agencies to apply the fixes before 29 October 2026",
+  "by": "MuyComputerPRO (relaying CISA)",
+  "sources": [
+   "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The KEV listing is the primary; compare cur20-infosec-kev-deadline and cur26-iphonemod-cisa-kev.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-muycomputerpro-honeypot-24oct",
+  "claim": "A Perplexity detection-and-response lead confirmed on 24 October remote code execution against honeypot systems",
+  "by": "MuyComputerPRO (citing Perplexity)",
+  "sources": [
+   "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Honeypot systems, not production victims; the technical detail the article quotes is left out.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-muycomputerpro-censys-32m",
+  "claim": "Citing Censys, more than 32.51 million PHP services still used an affected version",
+  "by": "MuyComputerPRO (citing Censys)",
+  "sources": [
+   "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A Censys-derived count of services on affected versions, not of vulnerable or compromised sites; compare cur23-haendlerbund-32m-unpatched.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-muycomputerpro-versions-isolate",
+  "claim": "The article recommends updating to PHP 8.2.35, 8.3.36, 8.4.27 or 8.5.12 according to the branch in use and, until then, temporarily isolating exposed installations",
+  "by": "MuyComputerPRO",
+  "sources": [
+   "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Matches the versions in other outlets; the primary is php.net.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-hindu-millions-exposed",
+  "claim": "The Hindu BusinessLine says millions of websites worldwide could be exposed to cyberattacks following the discovery of serious PHP vulnerabilities, with the risk extending to businesses, government agencies and online retailers",
+  "by": "The Hindu BusinessLine",
+  "sources": [
+   "thehindubusinessline-companies-what-is-the-php2shell-threat-a"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A general statement in an explainer; no figures.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-spiegel-race-home-devices",
+  "claim": "Der Spiegel says that behind the scenes IT experts and attackers are racing over the critical flaw in millions of servers, and that private users should also check their home servers, routers and surveillance cameras",
+  "by": "Der Spiegel (teaser)",
+  "sources": [
+   "spiegel-netzwelt-php-sicherheitsluecke-auf-websi"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Teaser text only; the article body is behind a paywall.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-ammon-cisa-three-days",
+  "claim": "CISA said hackers had begun exploiting the two serious PHP flaws and ordered US civilian federal agencies to fix their affected systems within three days; its statement did not name those exploiting them",
+  "by": "Ammon News (relaying TechCrunch)",
+  "sources": [
+   "ammonnews-article-1040456"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The KEV listing is the primary; compare cur26-iphonemod-cisa-kev.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-ammon-sites-offline",
+  "claim": "Some governments and large companies temporarily took their sites out of service to fix the affected systems",
+  "by": "Ammon News (relaying TechCrunch)",
+  "sources": [
+   "ammonnews-article-1040456"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "General statement without names.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-cisa-no-exploitation-21oct",
+  "claim": "CISA said on 21 October that it had not seen exploitation of the vulnerabilities at the time of publication, though they pose a risk to organisations if not fixed",
+  "by": "Epoch Times France (citing CISA)",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Point-in-time on 21 October; CISA later listed both flaws as exploited (KEV, 26 October, cur20-infosec-kev-deadline).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-nsa-offline",
+  "claim": "The NSA said on 21 October that organisations unable to install the updates immediately should consider taking the affected systems offline until they can fully fix the vulnerabilities",
+  "by": "Epoch Times France (citing the NSA)",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The NSA is one agency among several; the vault's offline-allies claim is disputed because other agencies gave no offline advice.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-shopify-ceo",
+  "claim": "Shopify's chief executive called 21 October 'the craziest day in cybersecurity in a long time' as millions of exploitation attempts had already been detected",
+  "by": "Epoch Times France (quoting Shopify's CEO)",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A quoted remark; attempts, not confirmed compromises.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-huntress-details-leaked",
+  "claim": "Huntress warned early in the week that details of the two vulnerabilities had been disclosed online before the coordinated publication and before patches were available, and that attacks had been reported",
+  "by": "Epoch Times France (citing Huntress)",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Compare Huntress's later point-in-time statement that it had not confirmed exploitation in its monitored environments (cur17-technoisy-huntress-no-exploitation).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-uk-32-services",
+  "claim": "A UK minister told the House of Lords on 22 October that 32 UK government services were unreachable and four partly so because of the PHP problem",
+  "by": "Epoch Times France (citing the UK minister)",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Hansard is the primary; compare cur24-dailystar-uk-32-services.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-eu-offline",
+  "claim": "The article says Dutch organisations including the port of Rotterdam, government portals, the largest political parties and several hospitals took public sites offline, Finland's state IT provider took public government network services offline 'as a precaution', and the French interior ministry took local-authority administrative sites offline pending a fix",
+  "by": "Epoch Times France",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Precautionary outages as reported; individual sites were restored on different days.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-epoch-cloudflare-escalation",
+  "claim": "Cloudflare's chief executive said on 22 October that exploitation attempts seen on the network rose from thousands in the 10 hours before the announcement to tens of thousands within 45 minutes of it, hundreds of thousands within two hours, and millions by that day",
+  "by": "Epoch Times France (citing Cloudflare's CEO on X)",
+  "sources": [
+   "epochtimes-cybersecurite-une-faille-de-securite-php"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attempts seen by one network operator, not successful compromises; compare cur24-cybersecbr-cloudflare-millions.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-frenchweb-certfr-21oct",
+  "claim": "CERT-FR published an alert on 21 October 2026 for the two critical flaws CVE-2026-109618 and CVE-2026-109619, which can let an attacker run their own instructions on a vulnerable server without an account, and fixes were released the same day",
+  "by": "FrenchWeb (citing CERT-FR)",
+  "sources": [
+   "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The CERT-FR alert is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-frenchweb-glpi",
+  "claim": "The maker of GLPI, an IT asset and support tool, says it fixed its cloud offer on 21 October and that self-hosted installations need a PHP update on the server",
+  "by": "FrenchWeb (citing the GLPI publisher)",
+  "sources": [
+   "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
+  ],
+  "status": "reported",
+  "topic": "vendors",
+  "note": "A vendor's statement about its own product.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-frenchweb-ncsc-compromise",
+  "claim": "The UK NCSC recommends looking for signs of compromise and persistent access, with a specialist provider where skills are lacking, because updating PHP does not by itself remove malware an attacker already left",
+  "by": "FrenchWeb (relaying the NCSC)",
+  "sources": [
+   "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Guidance, not evidence of any compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-techgoondu-foundation-staff",
+  "claim": "The PHP Foundation has only one full-time staff member and 14 mostly part-time contractors",
+  "by": "Techgoondu (opinion piece)",
+  "sources": [
+   "techgoondu-2026-10-28-more-flaws-like-php-issues-wi"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "The author's figure, unsourced in the page; the Foundation's own post is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur27-techgoondu-japan-pm",
+  "claim": "Japan's prime minister urged people to check whether their websites ran on PHP",
+  "by": "Techgoondu",
+  "sources": [
+   "techgoondu-2026-10-28-more-flaws-like-php-issues-wi"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Compare cur27-infoarenales-japan-pm-call.",
+  "agent": "curator@php.newsroom"
  }
 ]

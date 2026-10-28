@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "47a99d155a8d",
-  "subject": "curator@php.newsroom: batch 26, three sources from the source watch (BitMAT, Stirile PRO TV, iPhoneMod): 10 claims cur26-  +24 ~3  [blobs:+27 trees:+13]",
-  "commits": 47
+  "commit": "66ea103c4741",
+  "subject": "curator@php.newsroom: batch 27, eight sources from the source watch (Info Arenales, MuyComputerPRO, The Hindu BusinessLine, Spiegel, Ammon News, Epoch Times FR, FrenchWeb, Techgoondu): 24 claims cur27-  +63 ~3  [blobs:+66 trees:+28]",
+  "commits": 48
  },
- "sources": 664,
- "captures": 730,
- "hashed_files": 4266,
+ "sources": 672,
+ "captures": 738,
+ "hashed_files": 4313,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-28T12:24Z",
+ "latest_capture": "2026-10-28T14:43Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
