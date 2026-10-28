@@ -502,12 +502,6 @@
    "title": "Deleting the old source-watch vault oq9gflln: what still names it, checked across team, data, press and site"
   },
   {
-   "id": "security-0001",
-   "owner": "editor",
-   "status": "waiting",
-   "title": "SA-2026-043: the round is retired (press v1.0.52 removed round.yml and round.sh); left: delete the ROUND_TOKEN secret from the press's settings and revoke the token"
-  },
-  {
    "id": "dev-0003",
    "owner": "editor",
    "status": "open",
@@ -518,6 +512,12 @@
    "owner": "editor",
    "status": "waiting",
    "title": "Decommission the old evidence vault 3ytzxm3g: every card and register off it, then its deletion from the host"
+  },
+  {
+   "id": "conductor-0016",
+   "owner": "editor",
+   "status": "open",
+   "title": "The move to a new account: every agent's handover, then onboarding in a fresh session with a new key on the site's key list"
   }
  ],
  "branches": [
@@ -1926,12 +1926,36 @@
    "summary": "paused for the move: handover written (records/agents/newsroom-lead/HANDOVER.md; pointer in records/agents/curator/). Promotion tools that existed only in the scratchpad pushed to records/agents/newsroom-lead/curator-tools/ (not the patched pki-agent copies, which bypass the register: the editor an…"
   },
   {
+   "agent": "ontologist",
+   "finished": "2026-10-27T23:57:08Z",
+   "outcome": "idle",
+   "run": "20261027T1710Z-ontologist",
+   "started": "2026-10-27T17:10:00Z",
+   "summary": "paused for the move: handover written (records/agents/ontologist/HANDOVER.md). Nothing was only in the session except the Chromium tests (60 checks, now in records/desks/ontologist/tests/ with a README, last run green against the component v1.0.1) and the bulk publisher resolver (records/desks/onto…"
+  },
+  {
    "agent": "conductor",
    "finished": "2026-10-27T17:16:05Z",
    "outcome": "idle",
    "run": "20261027T1715Z-conductor",
    "started": "2026-10-27T17:15:38Z",
    "summary": "Light check 17:15 London, team at 7fecfea747ef. Since the pause at 16:51 nothing new from the agents: no handovers yet (records/agents/*/HANDOVER.md), no keys (records/keys/). Those wait on the editor's last-turn words in each session. Only the conductor, security (22:35) and observability (20:33)…"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-27T17:30:00Z",
+   "outcome": "idle",
+   "run": "20261027T1725Z-factcheck",
+   "started": "2026-10-27T17:20:00Z",
+   "summary": "paused for the move: handover written (records/agents/factcheck/HANDOVER.md). Nothing exists only in the session: the repositories are clean and at team f9c1b7ca and data ecffa42. The card names repositories (push team and data, never v1) and its model; the register lists nnd3i8iw (read key), hsmfe…"
+  },
+  {
+   "agent": "librarian",
+   "finished": "2026-10-27T23:57:39Z",
+   "outcome": "idle",
+   "run": "20261027T1730Z-librarian",
+   "started": "2026-10-27T17:30:00Z",
+   "summary": "paused for the move: handover written (records/agents/librarian/HANDOVER.md). Nothing existed only in the session (v1 branch clean and pushed, frozen). Card checked: repositories, times, instructions, each_wake complete; model now in plain words (Sonnet) and status paused; register written (no vaul…"
   },
   {
    "agent": "conductor",
@@ -1974,12 +1998,36 @@
    "summary": "Scheduled wake 20:33 London. team at 82ab02ca; sgit-ai v0.26.0; 1 note read as material (the conductor: 17 schedules paused for the move to a new account; observability's task is not among them and still fires; no handover written, the editor has not asked in this session). Lane (84wr8mib, lane 1):…"
   },
   {
+   "agent": "dev",
+   "finished": "2026-10-27T23:50Z",
+   "outcome": "ok",
+   "run": "20261027T2340Z-dev",
+   "started": "2026-10-27T22:31Z",
+   "summary": "The built pages caught up: edition v0.22.49 (built in CI from every repository's dev at 23:29 UTC, data v0.1.89 and after) is live on all four sites, the front page's newest as-of 19:13 UTC on 27 October. Why they had stopped (board correspondent-0008): the editions are built in CI since 11:26 (boa…"
+  },
+  {
    "agent": "security",
    "finished": "2026-10-27T22:43:34Z",
    "outcome": "ok",
    "run": "20261027T2235Z-security",
    "started": "2026-10-27T22:35:53Z",
    "summary": "Nightly pass over the six at team ac3f7f615436 (press c5cbf0c, data 416c837, site ceb6ab97, refs fede0c66, updates 975684e); sgit 0.26.0. Fixed: SA-2026-043, the round's workflow and script are gone (press v1.0.52); board security-0001 now waits on the editor to delete and revoke ROUND_TOKEN. New:…"
+  },
+  {
+   "agent": "pulse",
+   "finished": "2026-10-27T23:58:22Z",
+   "outcome": "idle",
+   "run": "20261027T2355Z-pulse",
+   "started": "2026-10-27T23:55:03Z",
+   "summary": "paused for the move: handover written (records/agents/pulse/HANDOVER.md). Pushed everything that existed only in the session: nothing was left (the pack vault 9f5knw9r is at d2cc04c25606 and the retired 4klm5qlt at eed0fb50c65d, both in sync with the server; the team, data and v1 clones are clean w…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-27T23:56:31Z",
+   "outcome": "idle",
+   "run": "20261027T2356Z-correspondent",
+   "started": "2026-10-27T23:56:30Z",
+   "summary": "paused for the move: handover written (records/agents/correspondent/HANDOVER.md); the figure and deck generators pushed from the session to records/agents/correspondent/tools/figures/; card complete (repositories, times, model Opus, instructions, each_wake); register: nnd3i8iw read key and 4klm5qlt…"
   }
  ],
  "schedules": [
@@ -2051,7 +2099,7 @@
   },
   {
    "agent": "factcheck",
-   "model": "Sonnet (the editor, 27 October 2026)",
+   "model": "Sonnet (the editor's decision of 27 October 2026)",
    "objective": "Keep every statement on the site either consistent with the evidence or carrying an open ticket that says why not: re-grade what changed, check the fixes others made, look outside for the weak and the contested, and keep the investigations current.",
    "status": "active",
    "times": [
@@ -2076,9 +2124,9 @@
   },
   {
    "agent": "librarian",
-   "model": "the model of the librarian's own session",
+   "model": "Sonnet (a Claude Sonnet model, set by the editor on 26 October 2026); the pass maps ownership and re-checks reader answers against the claims, and keeps the context of earlier passes in its own session.",
    "objective": "Keep everything findable and owned as twenty sessions release on their own: every new file and page mapped to exactly one member, every member's folder in step with the record, every new debrief indexed, and every reader answer re-checked against the claims it rests on.",
-   "status": "active",
+   "status": "paused",
    "times": [
     "20:23"
    ]
@@ -2108,7 +2156,7 @@
   },
   {
    "agent": "pulse",
-   "model": "",
+   "model": "Sonnet (the editor set the session to claude-sonnet-5-5 on 26 October; routine passes run well on it)",
    "objective": "Pulse: exploited vs. talked about. For the recent KEV additions across the industry (20 from 8 to 22 October 2026), php2shell as the reference case, and four more seen in the newsroom's captures, keep two records side by side: the evidence of exploitation as a ladder of dated rungs (public PoC, nuclei template, Metasploit module, named-party attempts, KEV, KEV ransomware flag, national CERT compromise report, named victim), each with its capture, and the attention each gets (news items, languages, front pages, agency alerts, offline advice). Never combined: no score, no ranking, no patch advice. The Pulse vault is the pack vault 9f5knw9r (it replaced the normal vault 4klm5qlt on 26 October 2026).",
    "status": "active",
    "times": [
@@ -2156,5 +2204,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.49"
+ "version": "0.22.50"
 }
