@@ -5024,6 +5024,116 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-28T11:29Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-bitmat-php82-eol",
+   "verdict": "noted",
+   "reason": "Capture checked (Italian): security support for PHP 8.2 ends on 31 December 2026, and minimal source backports exist for 7.4, 8.0 and 8.1. The backports agree with cur25-sbircia-eol-backports and cur24-hackernoon-patched-versions; the 8.2 end date is the article's own statement of the support schedule, not on the site, so not used.",
+   "sources": [
+    "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-bitmat-w3techs-70",
+   "verdict": "agrees",
+   "reason": "Capture checked: W3Techs puts PHP at about 70% of websites whose server-side language is known. Agrees with scale-70pc-websites (a share of websites, an upper bound, not a count of vulnerable ones).",
+   "sources": [
+    "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-bitmat-ai-discovery",
+   "verdict": "agrees",
+   "reason": "Capture checked: found by Calif, Wiz and OpenAI, and Wiz Research says advanced AI tools contributed significantly to the research and to working exploits. Agrees with the site's ai-found and wiz-independent claims; a vendor's account of its own research, as relayed.",
+   "sources": [
+    "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-protv-dnsc-17416",
+   "verdict": "noted",
+   "reason": "Capture checked (Romanian, 28 October): DNSC notified 17,416 public-sector entities; the page lists the sectors (hospitals, transport, energy, utilities, local administration, state companies and others). A count of notified bodies, not of vulnerable or compromised ones; not on the site.",
+   "sources": [
+    "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-protv-sgg-measures",
+   "verdict": "noted",
+   "reason": "Capture checked: the General Secretariat's statement, sent early in the week of the article, says measures were applied to platforms it administers directly, most servers including www.gov.ro run fixed PHP versions, and the other sites it administers were being updated with temporary measures. As relayed from the government; progress since is not stated.",
+   "sources": [
+    "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-protv-sites-down",
+   "verdict": "noted",
+   "reason": "Capture checked: at the end of the previous week the Romanian Police site and the county police inspectorates showed 'temporarily unavailable for maintenance and security updates'; Tulcea city hall said its site was unavailable as a preventive measure over critical PHP vulnerabilities. Precautionary outages, not incidents; the police notice does not name PHP, so it is read only as a maintenance notice. Not used.",
+   "sources": [
+    "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-protv-dnsc-impact",
+   "verdict": "noted",
+   "reason": "Capture checked: DNSC's communications director says not applying the measures can lead to database access, theft of sensitive data and compromise of sites and accounts, and the potential impact is critical. The agency's risk statement, not a finding of compromise.",
+   "sources": [
+    "stirileprotv-stiri-actualitate-alerta-de-securitate-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-iphonemod-cisa-kev",
+   "verdict": "agrees",
+   "reason": "Capture checked (Thai): CISA confirmed that hackers are exploiting both flaws, ordered US civilian federal agencies to fix within three days, and did not say who the attackers are. Agrees with the site's KEV account (listing of 26 October, due 29 October, no victim named) and with no-confirmed-compromise; the KEV listing is the primary.",
+   "sources": [
+    "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-iphonemod-2024-noticed",
+   "verdict": "agrees",
+   "reason": "Capture checked: the flaws were first noticed about two years earlier, when the PHP Foundation said there was no practical way to exploit them, so no patch was issued. Agrees with cur23-itfb-2024-audit and cur5-first-signs-2024.",
+   "sources": [
+    "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur26-iphonemod-calif-early-2026",
+   "verdict": "held back",
+   "reason": "Capture checked: it says Calif found how to exploit the unfixed flaws, with an AI model, in early 2026. The site carries Calif's work as beginning in the summer (cur2-calif-august, agrees) and the foundation's timeline as relayed by ITforBusiness has Calif's audit starting on 30 July (cur23-itfb-ai-discovery). The Thai outlet gives no source for 'early 2026'. Not stated.",
+   "sources": [
+    "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T13:44Z",
+   "by": "claude-journalist"
   }
  ]
 }
