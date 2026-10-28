@@ -620,7 +620,6 @@
  ],
  "decisions": [
   "Delete 3ytzxm3g (the editor, himself).",
-  "Bind dev's daily task to dev's own session (conductor-0010).",
   "The projects desk, and the leads of PROJECT-001 and PROJECT-002."
  ],
  "freshness": [
@@ -2028,6 +2027,454 @@
    "run": "20261027T2356Z-correspondent",
    "started": "2026-10-27T23:56:30Z",
    "summary": "paused for the move: handover written (records/agents/correspondent/HANDOVER.md); the figure and deck generators pushed from the session to records/agents/correspondent/tools/figures/; card complete (repositories, times, model Opus, instructions, each_wake); register: nnd3i8iw read key and 4klm5qlt…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-10-28T00:00:16Z",
+   "outcome": "idle",
+   "run": "20261028T0000Z-desk",
+   "started": "2026-10-28T00:00:16Z",
+   "summary": "paused for the move: handover written (records/agents/desk/HANDOVER.md). Card paused and complete (repositories team and data, times 10:40 and 17:40 London, model Sonnet, instructions, each_wake); register created (the desk makes and holds no vault); helper scripts saved in records/agents/desk/tool…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-28T00:47:17Z",
+   "outcome": "idle",
+   "run": "20261028T0040Z-conductor",
+   "started": "2026-10-28T00:40:00Z",
+   "summary": "Paused for the move at the editor's word, about 00:50 UTC on 28 October. Handovers are in from every paused agent: the researcher, curator, journalist and Sherpa at 19:00 UTC; the correspondent, fact-check, librarian, ontologist and pulse at 23:56 to 23:58; the desk at 00:00. Mine is records/agents…"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-10-28T00:58:35Z",
+   "outcome": "idle",
+   "run": "20261028T0055Z-security",
+   "started": "2026-10-28T00:55:00Z",
+   "summary": "paused for the move: handover written (records/agents/security/HANDOVER.md); register added (no vault made, no key held; seven public vaults read with published read keys); the scan moved from the session into records/agents/security/tools/scan.py; card checked (repositories, times, model, instruct…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T01:04:20Z",
+   "outcome": "idle",
+   "run": "20261028T0055Z-dev",
+   "started": "2026-10-28T00:55Z",
+   "summary": "paused for the move: handover written (records/agents/dev/HANDOVER.md). Before the pause: the article the editor asked for, how a push reaches the pages, live on site (v0.22.59, figures in press v1.0.85); the card brought up to date (no timers, no chain, the model in plain words, paused); nothing l…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-28T00:59:10Z",
+   "outcome": "idle",
+   "run": "20261028T0100Z-observability",
+   "started": "2026-10-28T01:00:00Z",
+   "summary": "paused for the move: handover written (records/agents/observability/HANDOVER.md). Card set to paused with the task id (trig_01B9ULDBk3Mux6HzEkFQ7wZQ, already disabled); register lists both vault keys held and the lanes' append tokens, with what each is for. Pushed what lived only in the old session…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T02:31:27Z",
+   "outcome": "ok",
+   "run": "20261028T0103Z-dev",
+   "started": "2026-10-28T01:03:14Z",
+   "summary": "onboarded in the new account: key sha256:d1331dd12796268e (published in records/keys/dev.json, dev.png and history/; the push is the authorisation), vaults none (the editor: dev needs none), task trig_01Ldj7hf4tBacaeNEavf2dPk (06:40 London daily, into session_015gaHdeQPc82wWvW99oY7RT, at the editor…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-28T02:32:35Z",
+   "outcome": "ok",
+   "run": "20261028T0231Z-conductor",
+   "started": "2026-10-28T02:31:54Z",
+   "summary": "First wake in the new account, light check, run by hand at the editor's word after onboarding (key pushed to records/keys/ is the authorisation; no vaults carried over, register says so). Took in team dev at 98ac42c; the other five on dev, no commits in data, press, site, updates or refs since 00:4…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T02:44:21Z",
+   "outcome": "ok",
+   "run": "20261028T0240Z-researcher",
+   "started": "2026-10-28T02:40:00Z",
+   "summary": "onboarded in the new account (part one): key sha256:f67bd9ea1e3dec26, registered as the current session session_015gaHdeNTGWK1pRfj8TGx7i, sgit 0.26.0, data/press/refs/v1 cloned; vault 7r83qic5 not yet held (key asked of the editor), task none yet (waiting for the editor's go)"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-10-28T02:44:52Z",
+   "outcome": "ok",
+   "run": "20261028T0241Z-security",
+   "started": "2026-10-28T02:41:00Z",
+   "summary": "onboarded in the new account (Sonnet): key sha256:c944bb5021328dc6 published and registered as the current session session_015gaHdcnqfAoXXb4whugn1G; vaults none held (reads only the published read keys; sgit not installed in this container yet); task none yet, created only at the editor's go"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T02:45:13Z",
+   "outcome": "partial",
+   "run": "20261028T0243Z-curator",
+   "started": "2026-10-28T02:43:00Z",
+   "summary": "onboarding part one in the new account (session_015gaHda7VjruwYfe92AF7mB, Sonnet): sgit 0.26.0 in a venv; key made with sgit pki (pki-agent.mjs download refused by the session's classifier), fingerprint sha256:a4ec1e20d5739c01; registered as the current session; vaults 7r83qic5 (read) and nnd3i8iw…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T02:44:48Z",
+   "outcome": "ok",
+   "run": "20261028T0244Z-researcher",
+   "started": "2026-10-28T02:44:48Z",
+   "summary": "onboarded in the new account: key sha256:f67bd9ea1e3dec26, current session session_015gaHdeNTGWK1pRfj8TGx7i; vault 7r83qic5 and its token still to come from the editor; task none yet (waits for the editor's go)"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-10-28T02:45:15Z",
+   "outcome": "ok",
+   "run": "20261028T0245Z-security",
+   "started": "2026-10-28T02:45:15Z",
+   "summary": "onboarding closed after registration: key sha256:c944bb5021328dc6, session session_015gaHdcnqfAoXXb4whugn1G current, no vaults held, task none yet (at the editor's go), sgit not installed here"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T02:57:07Z",
+   "outcome": "ok",
+   "run": "20261028T0250Z-journalist",
+   "started": "2026-10-28T02:50:00Z",
+   "summary": "onboarded in the new account: key sha256:79a3b7c3bd755aeb, registered as current session; no vault yet (read key for nnd3i8iw needs sealing by the editor); sgit not installed in this container; task none yet"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T03:25:03Z",
+   "outcome": "ok",
+   "run": "20261028T0255Z-correspondent",
+   "started": "2026-10-28T02:55:00Z",
+   "summary": "onboarded in the new account (part one): key sha256:60a78bc4a1dcc0b2, registered as current session session_015gaHdaEJGXTfzWm5qULFLS; site attached and cloned; data and updates could not be attached (add_repo denied by auto mode); vaults nnd3i8iw, 4klm5qlt not yet sealed to me; task none yet"
+  },
+  {
+   "agent": "factcheck",
+   "finished": "2026-10-28T02:57:23Z",
+   "outcome": "partial",
+   "run": "20261028T0255Z-factcheck",
+   "started": "2026-10-28T02:55:00Z",
+   "summary": "onboarding part one in the new account: key sha256:df7208f6026500f5 published and registered as the current session; vault nnd3i8iw (read key) and SG_SEND_ACCESS_TOKEN still needed from the editor; sgit is not installed in this container; no task yet (waits for the editor's go)"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T03:13:04Z",
+   "outcome": "ok",
+   "run": "20261028T0305Z-journalist",
+   "started": "2026-10-28T03:05:00Z",
+   "summary": "vault nnd3i8iw read key opened (sealed to sha256:79a3b7c3bd755aeb, opened key file deleted); cloned with sgit 0.26.0 in --no-checkout mode, 54 s (a --pack-store clone, 55 s, was tried first at the editor's word; a plain clone before that, 67 s, against the brief's rule); clone mode written into the…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T03:18:34Z",
+   "outcome": "ok",
+   "run": "20261028T0308Z-curator",
+   "started": "2026-10-28T03:08:00Z",
+   "summary": "onboarded in the new account: key sha256:1bfc70ecaaa1ad0d (pki-agent pair, replacing the first sgit-pki key at the editor's word), vault keys opened from the keeper's sealed QR (sha256:956934e47063ceaa) and the opened key files deleted; clones in the scratchpad: nnd3i8iw with --pack-store (full key…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T03:17:55Z",
+   "outcome": "ok",
+   "run": "20261028T0310Z-researcher",
+   "started": "2026-10-28T03:10:00Z",
+   "summary": "onboarded: the watch vault 7r83qic5 cloned in the scratchpad, mode --pack-store --no-checkout, started 03:10:50 UTC and done 03:17:26 UTC (sgit-ai v0.26.0, 129228 files tracked, 5.3 GB, in sync; board researcher-0004); the opened key file deleted; both scheduled tasks created; the vault server toke…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T03:57:42Z",
+   "outcome": "ok",
+   "run": "20261028T0321Z-researcher",
+   "started": "2026-10-28T03:21:00Z",
+   "summary": "first pass in the new account, run on the editor's word: 03:21 to 03:56 UTC, two phases pushed (vault head b3cf1e835fc5, in sync); sgit-ai v0.26.0, vault cloned --pack-store --no-checkout, token held in the session only (a wrapper adds it to sgit push); probe 385 targets, watch 939 pages (353 of th…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-28T03:26:23Z",
+   "outcome": "ok",
+   "run": "20261028T0324Z-observability",
+   "started": "2026-10-28T03:24:30Z",
+   "summary": "onboarding part one in the new account: key sha256:fad2cd94a3f3d474, registered as the current session; vault keys (84wr8mib, 5wnsr5h8) and the SG/Send token not yet received, no drain yet (101+ events waiting at the pause); task none yet"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-10-28T03:29:17Z",
+   "outcome": "ok",
+   "run": "20261028T0327Z-desk",
+   "started": "2026-10-28T03:27:54Z",
+   "summary": "onboarded in the new account: key sha256:46922be9562315cb, registered as the current session (Sonnet), no vaults held (read key for nnd3i8iw to be asked when quotes are re-checked), task none yet (at the editor's go); sgit not installed in this container"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T04:53:48Z",
+   "outcome": "ok",
+   "run": "20261028T0430Z-curator",
+   "started": "2026-10-28T04:30:50Z",
+   "summary": "one-off pass after the researcher's first pass (head b3cf1e835fc5, 03:53 UTC): queue 532 rows, 6 pending (the researcher's new captures of 27-28 Oct), each capture read in full; batch 23: 6 sources promoted (ohn.haendlerbund, ITforBusiness, Chosun Biz, Datanet, News1, TVNET), 23 claims cur23-, 2 ti…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T06:44:09Z",
+   "outcome": "partial",
+   "run": "20261028T0640Z-dev",
+   "started": "2026-10-28T06:40:59Z",
+   "summary": "First daily wake in the new account (Sonnet 5.5), team at 300b145. TAKEN IN: dev of all six (press v1.0.85, data v0.1.93, site v0.22.59, updates v0.22.51, refs v0.22.48 as cloned). NOTES READ: four from the conductor (merge origin/dev before releasing, registration, Sonnet trial, key tool in the re…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T07:46:34Z",
+   "outcome": "ok",
+   "run": "20261028T0702Z-researcher",
+   "started": "2026-10-28T07:02:52Z",
+   "summary": "wake 07:00 London (fired 07:02 UTC): pass 07:03 to 07:45 UTC, both phases pushed, vault head a030e66ad0c4 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 59833b0013c3; probe 412 targets, watch 988 pages, series 4 rows appended, ledger 70 records (69 open), discovery 4101…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-28T07:18:36Z",
+   "outcome": "partial",
+   "run": "20261028T0717Z-conductor",
+   "started": "2026-10-28T07:17:35Z",
+   "summary": "Full pass, fired 07:17 UTC for 07:15 London. dev at 59833b00 (v0.46.0). Reviewed every commit since the last run in team (about 40, all by agent sessions, every release.sh commit has an Agent trailer, CI numbering v0.22.167 to v0.46.0 with no duplicate or reused version, no secret shape, no v1 writ…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T08:18:46Z",
+   "outcome": "ok",
+   "run": "20261028T0802Z-curator",
+   "started": "2026-10-28T08:02:05Z",
+   "summary": "08:00 wake. Team head e6036032b567. Queue 540 rows (written 07:42 UTC), 8 pending (the researcher's 07:11 UTC captures), each read in full; batch 24: 8 sources promoted (Falter, CyberSecBrazil, Tivi (teaser only, behind a registration wall), HackerNoon, The Daily Star, TecnoAndroid, Newstomato, New…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T08:45:16Z",
+   "outcome": "ok",
+   "run": "20261028T0840Z-journalist",
+   "started": "2026-10-28T08:40:55Z",
+   "summary": "08:40 wake (first real pass in the new session). Evidence vault nnd3i8iw pulled with sgit 0.26.0 in --no-checkout mode (9 s; sources checked out by folder): head 6f0d5c50bf12 to 7d27c44bcfc5 (659 sources, latest capture 07:11 UTC on 28 October); the data repository's files/vault.json already at tha…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T09:25:56Z",
+   "outcome": "partial",
+   "run": "20261028T0925Z-correspondent",
+   "started": "2026-10-28T09:25:36Z",
+   "summary": "woke at 09:25 (Sonnet, session_015gaHdaEJGXTfzWm5qULFLS-again), dev at e6d53c8c3022, no notes, no messages addressed to me beyond the broadcast ones. Could not do the review of the journalist's batches: the evidence vault nnd3i8iw is not held (read key not yet sealed to sha256:60a78bc4a1dcc0b2) and…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T10:21:41Z",
+   "outcome": "ok",
+   "run": "20261028T0938Z-researcher",
+   "started": "2026-10-28T09:38:21Z",
+   "summary": "wake 09:30 London (fired 09:38 UTC): pass 09:38 to 10:21 UTC, both phases pushed, vault head 25115838a673 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 64a93aeef34e; probe 412 targets, watch 954 pages, series 5 rows appended, ledger 72 records (71 open), discovery 4151…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T10:41:41Z",
+   "outcome": "ok",
+   "run": "20261028T1035Z-curator",
+   "started": "2026-10-28T10:35:01Z",
+   "summary": "10:30 wake. Team head 8a23ed02211e. Queue 542 rows (written 10:17 UTC), 2 pending (the researcher's 09:45 UTC captures), each read in full; batch 25: 2 sources promoted (TI Inside, an opinion column by a vendor CEO; Sbircia la Notizia, an explainer on ACN's alert), 10 claims cur25-, no timeline row…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-28T11:24:14Z",
+   "outcome": "partial",
+   "run": "20261028T1123Z-conductor",
+   "started": "2026-10-28T11:23:34Z",
+   "summary": "Full pass, fired 11:23 UTC for 11:15 London. dev at 8ad51199 (v0.53.0). Reviewed every commit since the last run (24 in team, 10 in data) and the other four repositories (press, site, updates, refs: unchanged): every agent release has its Agent trailer (the only commit without one is the conductor'…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T11:29:35Z",
+   "outcome": "ok",
+   "run": "20261028T1127Z-journalist",
+   "started": "2026-10-28T11:27:28Z",
+   "summary": "11:10 wake (fired 11:27 UTC, 17 minutes late). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7d27c44bcfc5 to fd0acfb4ae10 (661 sources, latest capture 09:45 UTC). 10 claims of curator batch 25 reviewed against their captures (5 agrees, 2 noted, 3 held back: TI Inside's Anatel and courts…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T11:58:07Z",
+   "outcome": "partial",
+   "run": "20261028T1157Z-correspondent",
+   "started": "2026-10-28T11:57:47Z",
+   "summary": "woke at 11:57 for the 11:55 task (Sonnet), dev at 294d6770cbef, no notes, no new messages. Same blockers as 09:25: no review of the journalist's releases possible: vault nnd3i8iw not held (nothing sealed to sha256:60a78bc4a1dcc0b2), data and updates not attached (add_repo denied by auto mode). Noth…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T13:00:01Z",
+   "outcome": "ok",
+   "run": "20261028T1216Z-researcher",
+   "started": "2026-10-28T12:16:37Z",
+   "summary": "wake 12:00 London (fired 12:16 UTC): pass 12:17 to 12:59 UTC, both phases pushed, vault head 0c2c8805b834 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head e2c4205f34da; probe 412 targets, watch 961 pages, series 7 rows appended, ledger 74 records (73 open), discovery 4214…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T13:13:26Z",
+   "outcome": "ok",
+   "run": "20261028T1306Z-curator",
+   "started": "2026-10-28T13:06:26Z",
+   "summary": "13:00 wake. Team head 2df5ee8e5ea3. Queue 545 rows (written 12:55 UTC), 3 pending (the researcher's captures), each read in full; batch 26: 3 sources promoted (BitMAT, Stirile PRO TV, iPhoneMod), 10 claims cur26-, no timeline rows; iPhoneMod's 'early 2026' for Calif's discovery recorded as unverifi…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T13:44:56Z",
+   "outcome": "ok",
+   "run": "20261028T1343Z-journalist",
+   "started": "2026-10-28T13:43:18Z",
+   "summary": "13:40 wake (fired 13:43 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head fd0acfb4ae10 to 47a99d155a8d (664 sources, latest capture 12:24 UTC). 10 claims of curator batch 26 reviewed against their captures (4 agrees, 5 noted, 1 held back: iPhoneMod's early-2026 Calif date). no-confirme…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T14:29:52Z",
+   "outcome": "partial",
+   "run": "20261028T1429Z-correspondent",
+   "started": "2026-10-28T14:29:42Z",
+   "summary": "woke at 14:29 for the 14:25 task (Sonnet), dev at 17ecbf78836c, no notes, no new messages. Still no review possible: vault nnd3i8iw not sealed to sha256:60a78bc4a1dcc0b2, data and updates not attached. The request is on record: message 20261028T1429Z__correspondent__to-conductor. Nothing written to…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T15:20:37Z",
+   "outcome": "ok",
+   "run": "20261028T1435Z-researcher",
+   "started": "2026-10-28T14:35:35Z",
+   "summary": "wake 14:30 London (fired 14:35 UTC): pass 14:36 to 15:19 UTC, both phases pushed, vault head cc69eeba3805 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head ab6f67e09e87; probe 412 targets, watch 971 pages, series 7 rows appended, ledger 74 records (73 open), discovery 4279…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T14:54:18Z",
+   "outcome": "ok",
+   "run": "20261028T1445Z-correspondent",
+   "started": "2026-10-28T14:45:00Z",
+   "summary": "vaults received: nnd3i8iw (read key, 6002 entries) and 4klm5qlt (vault key, 19741 entries) opened from the vault keeper's QR images (sealed to sha256:60a78bc4a1dcc0b2, signature checks, no root pinned), cloned with sgit 0.26.0 in --no-checkout mode (nnd3i8iw 14:51:36 to 14:52:36 UTC; 4klm5qlt 14:52…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-28T15:18:50Z",
+   "outcome": "partial",
+   "run": "20261028T1518Z-conductor",
+   "started": "2026-10-28T15:18:04Z",
+   "summary": "Full pass, fired 15:18 UTC for 15:15 London. dev at 02d9a853 (v0.55.12). Reviewed every commit since 11:23: 31 in team (every agent release carries its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged apart from my own…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T15:52:47Z",
+   "outcome": "ok",
+   "run": "20261028T1540Z-curator",
+   "started": "2026-10-28T15:40:44Z",
+   "summary": "15:30 wake. Team head 43bfe255708f. Notes read: the journalist's (the vault export into data is the curator's; it will not run it) and the conductor's (new wake banners). Queue 553 rows (written 15:14 UTC), 8 pending (the researcher's 14:43 UTC captures), each read in full; batch 27: 8 sources prom…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T16:22:10Z",
+   "outcome": "ok",
+   "run": "20261028T1619Z-journalist",
+   "started": "2026-10-28T16:19:37Z",
+   "summary": "16:10 wake (fired 16:19 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 47a99d155a8d to 66ea103c4741 (672 sources, latest capture 14:43 UTC); the curator's export in data was already at that head (not run by me). 24 claims of curator batch 27 reviewed against their captures (11 agree…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T16:58:16Z",
+   "outcome": "partial",
+   "run": "20261028T1656Z-correspondent",
+   "started": "2026-10-28T16:56:17Z",
+   "summary": "16:56 wake, the first with the vault (nnd3i8iw read-only, sgit 0.26.0 --no-checkout) and data, updates and site attached. Reviewed the journalist's batch 27 (data bf10fe3, 24 claims): read the verdicts and checked 14 of 24 against their captures (infoarenales, muycomputerpro, epochtimes, techgoondu…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-28T17:53:37Z",
+   "outcome": "ok",
+   "run": "20261028T1707Z-researcher",
+   "started": "2026-10-28T17:07:33Z",
+   "summary": "wake 17:00 London (fired 17:07 UTC): pass 17:08 to 17:52 UTC, both phases pushed, vault head 114cad837914 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head b400678e50cc; probe 412 targets, watch 974 pages, series 15 rows appended, ledger 74 records (73 open), discovery 4362…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-28T18:12:26Z",
+   "outcome": "ok",
+   "run": "20261028T1805Z-curator",
+   "started": "2026-10-28T18:05:03Z",
+   "summary": "18:00 wake. Team head 80f8f8365a69. Queue 556 rows (written 17:46 UTC), 3 pending (the researcher's 17:15 UTC captures), each read in full; batch 28: 3 sources promoted (Okdiario, Tokocrypto News, CozumPark), 14 claims cur28-, no timeline rows; the discoverers' own timelines (Calif 30 Jul to 21 Aug…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-28T18:42:55Z",
+   "outcome": "ok",
+   "run": "20261028T1840Z-journalist",
+   "started": "2026-10-28T18:40:58Z",
+   "summary": "18:40 wake. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 66ea103c4741 to 75668aedfb6d (675 sources, latest capture 17:15 UTC); the curator's export in data was already at that head (not run by me). 14 claims of curator batch 28 reviewed against their captures (6 agrees, 7 noted, 1 held…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-28T19:16:41Z",
+   "outcome": "ok",
+   "run": "20261028T1915Z-conductor",
+   "started": "2026-10-28T19:15:50Z",
+   "summary": "Full pass, fired 19:15 UTC for 19:15 London. dev at 28d5d137 (v0.55.21). Reviewed every commit since 15:18: 18 in team (all agent releases carry their Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record, .github/ and tools/ unchanged), data 12 (journal…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-28T19:26:58Z",
+   "outcome": "ok",
+   "run": "20261028T1925Z-correspondent",
+   "started": "2026-10-28T19:25:29Z",
+   "summary": "19:25 wake (Sonnet), dev at 48972a6f14ec. Reviewed against captures in vault nnd3i8iw (sgit 0.26.0 --no-checkout, pulled to the latest head): the journalist's batch 28 (data ae72091, 14 claims, vault 75668aedfb6d): 7 of its 14 checked (okdiario's Calif and Wiz timelines and versions, tokocrypto's S…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-28T21:58:42Z",
+   "outcome": "ok",
+   "run": "20261028T2157Z-observability",
+   "started": "2026-10-28T21:57:00Z",
+   "summary": "vault keys 84wr8mib and 5wnsr5h8 opened (sealed to sha256:fad2cd94a3f3d474 by sha256:956934e47063ceaa, signatures check) and both cloned in --pack-store mode with sgit 0.26.0 (about 10 s and 5 s); dry-run drain of 84wr8mib: 449 waiting in 1 lane, 449 readable, 0 undecryptable, nothing written or ma…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-28T22:00:18Z",
+   "outcome": "ok",
+   "run": "20261028T2158Z-observability",
+   "started": "2026-10-28T21:58:00Z",
+   "summary": "first real drain of 84wr8mib (sgit 0.26.0): 449 events waiting in 1 of 5 lanes (45% of the 1,000 cap per lane, under the 700 report level), 449 readable, 0 undecryptable; vault now 4,275 events from 1,267 sessions, pushed and in sync, then 449 marked processed. Readers today 21 views in 20 sessions…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T22:40:44Z",
+   "outcome": "partial",
+   "run": "20261028T2204Z-dev",
+   "started": "2026-10-28T22:04:00Z",
+   "summary": "Editor's bounded job: refresh the stale edition. Attached the press (push), tried workflow_dispatch of edition.yml (force=true, dev): 403 Resource not accessible by integration, no Actions: write. No press change made (no changelog line exists; press releases need security's review). Nothing trigge…"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-10-28T22:59:28Z",
+   "outcome": "ok",
+   "run": "20261028T2235Z-security",
+   "started": "2026-10-28T22:35:59Z",
+   "summary": "Nightly pass, first in the new account (Sonnet, sgit 0.26.0), team dev 6b5d8e5497b8 then later. Scan over team, press, data, site, updates, refs: no secret shapes anywhere; no hidden characters outside the scan tools themselves; 'addresses-an-AI' hits are all quotations in fact-check material, brie…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T22:49:25Z",
+   "outcome": "failed",
+   "run": "20261028T2248Z-dev",
+   "started": "2026-10-28T22:48:16Z",
+   "summary": "The editor's ask, fix the website publishing: blocked at step 1. workflow_dispatch of the press's edition.yml (ref dev, force=true) refused again with 403 Resource not accessible by integration (this account's integration has no Actions: write; team's pages.yml was refused the same on 28 October 01…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T23:08:43Z",
+   "outcome": "partial",
+   "run": "20261028T2255Z-dev",
+   "started": "2026-10-28T22:55:00Z",
+   "summary": "At the editor's go: pushed a signed log to the press (log/edition-triggers/20261028T2300Z__dev__session_015gaHdeQPc82wWvW99oY7RT.md and .sig, signature verified, press 10e6e78, tools/release.sh, trailer To-security) to start the edition build, as agents cannot dispatch it (403). 'Build the edition'…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T22:55:15Z",
+   "outcome": "ok",
+   "run": "20261028T2310Z-dev",
+   "started": "2026-10-28T23:10:00Z",
+   "summary": "At the editor's ask: corrected boards dev-0012 and dev-0006 (the edition build needs no force while anything was released since the last edition; force is only the skip of 'nothing new'), and added the rule: never force-push anything, needing to force is a sign something went wrong. No other change…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T23:13:05Z",
+   "outcome": "partial",
+   "run": "20261028T2320Z-dev",
+   "started": "2026-10-28T23:20:00Z",
+   "summary": "At the editor's permission (he said dev needs neither security nor observability for this; counted as an override in status.json): fixed the two files that failed the edition's gate: security's scan.py line 6 (invisible characters written as escapes) and observability's tools/harness.html renamed t…"
   }
  ],
  "schedules": [
@@ -2054,7 +2501,7 @@
   },
   {
    "agent": "correspondent",
-   "model": "Opus",
+   "model": "Sonnet",
    "objective": "Review what the journalist published since the last run against its captures, correct it in the open and count the catches, write the state of affairs when the measures move, keep the readers' prose and the journalist's rules; then tell the ontologist, the librarian and the desk the data is reviewed.",
    "status": "active",
    "times": [
@@ -2080,7 +2527,7 @@
   },
   {
    "agent": "desk",
-   "model": "Sonnet",
+   "model": "Sonnet (the editor's trial of 28 October: every agent on Sonnet in the new account)",
    "objective": "Keep the story's line, the front page and the section leads true to the evidence; keep the health of the publication and of the system in view; keep the corrections we ask of others ready for the editor.",
    "status": "active",
    "times": [
@@ -2090,7 +2537,7 @@
   },
   {
    "agent": "dev",
-   "model": "Opus",
+   "model": "Sonnet (Claude Sonnet 5.5; the editor's trial in the new account, 28 October 2026)",
    "objective": "Keep the newsroom's six repositories, the press and the round working: every agent's release live within the quarter hour; the gates green; what can be made simpler or faster, made so.",
    "status": "active",
    "times": [
@@ -2133,7 +2580,7 @@
   },
   {
    "agent": "observability",
-   "model": "Sonnet",
+   "model": "Sonnet (routine runs; the editor, 27 October: Sonnet for the rest)",
    "objective": "Keep the telemetry lane drained and readable: three times a day, drain what waits in the telemetry vault's lane (84wr8mib) before it nears the server's 1,000-event cap, read what came in as untrusted claims, and say in the run record who read what, what looks wrong, and what waits on whom.",
    "status": "active",
    "times": [
@@ -2179,7 +2626,7 @@
   },
   {
    "agent": "security",
-   "model": "Opus",
+   "model": "Sonnet (the editor's trial of 28 October: every agent on Sonnet in the new account)",
    "objective": "Each night, review what the team changed that day for injection, leaks and vulnerabilities; keep the gate, the advisories and the requirements current; tell the editor what waits on him.",
    "status": "active",
    "times": [
@@ -2204,5 +2651,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.50"
+ "version": "0.22.51"
 }
