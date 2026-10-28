@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "66ea103c4741",
-  "subject": "curator@php.newsroom: batch 27, eight sources from the source watch (Info Arenales, MuyComputerPRO, The Hindu BusinessLine, Spiegel, Ammon News, Epoch Times FR, FrenchWeb, Techgoondu): 24 claims cur27-  +63 ~3  [blobs:+66 trees:+28]",
-  "commits": 48
+  "commit": "75668aedfb6d",
+  "subject": "curator@php.newsroom: batch 28, three sources from the source watch (Okdiario, Tokocrypto News, CozumPark): 14 claims cur28-  +24 ~3  [blobs:+27 trees:+13]",
+  "commits": 49
  },
- "sources": 672,
- "captures": 738,
- "hashed_files": 4313,
+ "sources": 675,
+ "captures": 741,
+ "hashed_files": 4331,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-28T14:43Z",
+ "latest_capture": "2026-10-28T17:15Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

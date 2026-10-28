@@ -6620,5 +6620,173 @@
   "topic": "agencies",
   "note": "Compare cur27-infoarenales-japan-pm-call.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-okdiario-calif-timeline",
+  "claim": "According to Calif's own timeline, OpenAI invited Calif into its Patch the Planet programme on 30 July, a Calif researcher found several attack paths on 1 August, Calif reported the first flaw to PHP on 11 August, sent a demonstration on 14 August which PHP confirmed on 15 August, and filed a second report on 21 August",
+  "by": "Okdiario (relaying Calif)",
+  "sources": [
+   "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Settles the discovery dates in favour of August: it agrees with cur27-infoarenales-calif-1aug and the Foundation's account (cur23-itfb-ai-discovery) and contradicts the 'early 2026' of cur26-iphonemod-calif-early-2026. The discoverer's own timeline, relayed second hand.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-okdiario-wiz-timeline",
+  "claim": "According to Wiz Research's timeline, Wiz reached the same flaws independently, found the first on 19 August and reported it to PHP on 24 August, and the patch came two months later",
+  "by": "Okdiario (relaying Wiz Research)",
+  "sources": [
+   "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "The vendor's own account; compare the Foundation's note of a Wiz report on 24 August (cur23-itfb-ai-discovery).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-okdiario-versions-scope",
+  "claim": "The patched versions are PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, almost every version since PHP 5.4 has at least one of the two flaws, and the PHP project asks all users to update immediately, rating the risk highest on Apache with mod_php",
+  "by": "Okdiario (relaying the PHP project)",
+  "sources": [
+   "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Consistent with cur24-hackernoon-patched-versions; the primary is php.net.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-okdiario-ai-role",
+  "claim": "Wiz says it used its own research tool with Gemini 4 Argon and GPT-5.6 Sol and that one researcher did in a week what a large team would do in months, while Calif's researcher says he used no special models or tools outside anyone's reach and that the key was knowing PHP's history of flaws",
+  "by": "Okdiario (relaying Wiz and Calif)",
+  "sources": [
+   "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Two vendors' accounts of their own research that differ on how much the AI mattered.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-tokocrypto-slowmist-793",
+  "claim": "SlowMist found traces of PHP on 793 of 1,488 crypto domains (53.3%), which raised concern about exchange, payment-gateway and wallet infrastructure; the article stresses that using PHP does not by itself mean a security hole or a hack",
+  "by": "Tokocrypto News (citing SlowMist)",
+  "sources": [
+   "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Presence of PHP, not vulnerability or compromise, as the article says.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-tokocrypto-imperva-482k",
+  "claim": "After the 21 October emergency update, Imperva recorded 482,342 attack requests targeting 21,998 sites in 103 countries within 24 hours",
+  "by": "Tokocrypto News (citing Imperva)",
+  "sources": [
+   "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attack requests, not successful compromises; the 24-hour window is not dated in the page.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-tokocrypto-bitcoin-bait",
+  "claim": "A researcher's 'Steal My Bitcoin' challenge, run from 24 October on a deliberately unpatched PHP server with a prize that grew to 0.0251 BTC (about US$2,021), was broken into in 19.28 hours; the key taken was not the prize address's key because of an organiser error, and the prize of about US$2,000 was still paid after the break-in was confirmed",
+  "by": "Tokocrypto News",
+  "sources": [
+   "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A staged bait, not an attack on an unwitting victim; the article says it shows PHP servers can be exploited, not that the Bitcoin network was hacked. Consistent with cur23-haendlerbund-bitcoin-bait (just over 19 hours). The winner's handle is left out.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-tokocrypto-no-exchange-breach",
+  "claim": "The article says there is no verified evidence yet that any major centralised crypto exchange was breached through PHP2Shell",
+  "by": "Tokocrypto News",
+  "sources": [
+   "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "As of 27 October; an absence of verified evidence, not a finding that none occurred.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-cozumpark-kev-26-29oct",
+  "claim": "CISA added both PHP2Shell flaws to its Known Exploited Vulnerabilities catalog on Monday (26 October) and told federal civilian agencies to secure their systems by Thursday (29 October) under BOD 26-04; the directive covers only federal agencies, but CISA urges all organisations to prioritise KEV entries",
+  "by": "ÇözümPark (relaying CISA)",
+  "sources": [
+   "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The KEV listing is the primary; consistent with cur27-muycomputerpro-kev-29oct and cur20-infosec-kev-deadline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-cozumpark-amazon-four-days",
+  "claim": "Amazon Threat Intelligence researchers reported attackers began targeting the PHP2Shell flaws four days before the security patches were published",
+  "by": "ÇözümPark (citing Amazon Threat Intelligence)",
+  "sources": [
+   "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Four days before 21 October is 17 October; compare cur24-hackernoon-amazon-17oct. A honeypot-based observation.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-cozumpark-prewave-attempts",
+  "claim": "Cloudflare, Amazon, Hadrian, watchTowr, Previdian and Patchstack detected wide-scale exploitation attempts before the flaws were made public, and the companies classed the attempts they saw as unsuccessful",
+  "by": "ÇözümPark",
+  "sources": [
+   "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attempts, classed as failed by the firms; no figures given.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-cozumpark-poc-not-working",
+  "claim": "The PHP security team said none of the proof-of-concept samples that circulated online with the leaked details was working",
+  "by": "ÇözümPark (relaying the PHP security team)",
+  "sources": [
+   "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with the Foundation's inspection as relayed in cur24-hackernoon-disclosure-utc; as of the time of disclosure.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-cozumpark-cisa-no-scale",
+  "claim": "CISA had not yet shared further detail on the scope of the ongoing PHP2Shell attacks, so the total number of affected systems and the attackers' methods were not assessed",
+  "by": "ÇözümPark",
+  "sources": [
+   "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "An absence of public figures as of 28 October, not a finding about scale.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur28-cozumpark-virustotal",
+  "claim": "VirusTotal estimates PHP is used on about 70% of websites, with more than 5.1 million internet-facing PHP servers and about 3.8 million instances with at least one reachable port open to attack",
+  "by": "ÇözümPark (citing VirusTotal)",
+  "sources": [
+   "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A presence count, not of vulnerable sites; a different base from the Censys and Bitsight figures (cur27-muycomputerpro-censys-32m, cur24-cybersecbr-bitsight-37m).",
+  "agent": "curator@php.newsroom"
  }
 ]
