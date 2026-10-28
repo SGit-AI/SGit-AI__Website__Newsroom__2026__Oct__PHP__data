@@ -4914,6 +4914,116 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-28T08:55Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-tiinside-brazil-offline",
+   "verdict": "held back",
+   "reason": "Capture read whole (Portuguese, 26 October opinion column): it says Anatel took its SEI and other digital services offline as a precaution, regional courts interrupted access and European governments did the same, with no dates and no source. The Anatel and court outages appear in no other source in the vault; the European part agrees with the site's offline rows (latvia-offline, nl-offline, fi-offline). Not stated for Brazil.",
+   "sources": [
+    "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-tiinside-nsa-certeu-offline",
+   "verdict": "held back",
+   "reason": "Capture checked: 'agencies such as the NSA and CERT-EU advised switching off whatever could not be patched'. The NSA does (the site's offline-nsa, confirmed), but CERT-EU says isolate exposed applications, not switch off (offline-allies, disputed). As worded the claim puts CERT-EU's advice as the NSA's. Not stated.",
+   "sources": [
+    "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-tiinside-embargo-leak",
+   "verdict": "agrees",
+   "reason": "Capture checked: the CVE numbers leaked a day before the fix, the embargo broke, and attack attempts were reported by the morning of release. Agrees with the site's account (release 21 October; the ids circulating from 20 October, cur24-hackernoon-disclosure-utc and cur23-itfb-leak-sequence; Amazon's attempts from about 02:00 UTC on 21 October). Loose on timing, not repeated.",
+   "sources": [
+    "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-tiinside-wiz-ai-adapt",
+   "verdict": "noted",
+   "reason": "Capture checked: Wiz says AI models helped find the flaw and adapt the attack to WordPress, Drupal and Joomla in hours; the page also gives Wiz's 70% of websites (scale-70pc-websites). A security vendor's claim about its own research, relayed; the site's ai-found and wiz-independent claims carry the primary account. Not used.",
+   "sources": [
+    "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-sbircia-acn-285k",
+   "verdict": "noted",
+   "reason": "Capture checked (Italian, 26 October): ACN's alert covers more than 285,000 Italian sites, reported via Adnkronos; the page says this is exposure, with compromise needing separate evidence in the logs. Exposure, not compromise; the ACN figure is the primary and is not on the site, so not used.",
+   "sources": [
+    "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-sbircia-certeu-ncsc-isolate",
+   "verdict": "held back",
+   "reason": "Capture checked: CERT-EU asked for the fix at once and to isolate exposed applications when that is impractical (agrees with offline-allies: CERT-EU says isolate). The second half, that the UK NCSC gives the same direction (public access suspended), is the sentence the site marks disputed: it is not on the NCSC page as captured on 22 October (offline-ncsc, disputed, corrected 27 October). Relayed second hand, so not stated; the CERT-EU half stands alone as agreeing.",
+   "sources": [
+    "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-sbircia-advisory-23oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: a 23 October advisory recommends a setting change until the next regular release for a further RCE vector judged unlikely, CVE-2026-115560, in an unusual configuration. Agrees with cur6-third-flaw-115560 (used) and cur24-cybersecbr-third-flaw; the configuration details are not repeated.",
+   "sources": [
+    "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-sbircia-amazon-17oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: Reuters documented an attempt Amazon detected against a decoy on 17 October and further activity on 21 October, before the embargo ended; the page says this confirms hostile interest, not a compromise. Agrees with the site's amazon-honeypot claim and cur2-madpot-17-oct.",
+   "sources": [
+    "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-sbircia-eol-backports",
+   "verdict": "agrees",
+   "reason": "Capture checked: 8.1 and earlier ended official support; minimal source backports for 7.4 and 8.0, and the same for 8.1, for those who compile themselves or have long-term support. Agrees with cur24-hackernoon-patched-versions; the site's versions-old claim stays disputed.",
+   "sources": [
+    "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur25-sbircia-restart",
+   "verdict": "held back",
+   "reason": "Capture read whole: the page asks that a provider report the active release, patch date, restart of PHP workers and domains covered, and says 'updated' is too vague; it does not say, as the claim does, that a worker left on the old binary prolongs exposure even when the package manager shows the update done. The claim states more than the page. Operational advice; not stated.",
+   "sources": [
+    "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T11:29Z",
+   "by": "claude-journalist"
   }
  ]
 }

@@ -80,8 +80,8 @@
   {
    "path": "data/story.json",
    "kept_by_before": "story-site",
-   "checked_against": "7d27c44bcfc5",
-   "note": "28 October (journalist, new session): data_as_of and the exploitation paragraph's 'as of' moved to 07:11 UTC on 28 October (vault nnd3i8iw at 7d27c44bcfc5, 659 sources); every fact in the paragraph re-read against the 48 claims of batches 23 and 24 and still holds. data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The correspondent added Unit 42's withdrawal and Square Enix to that paragraph on 27 October. The CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "checked_against": "fd0acfb4ae10",
+   "note": "28 October (journalist, 11:29 UTC): moved to 09:45 UTC and fd0acfb4ae10 (661 sources); batch 25's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, new session): data_as_of and the exploitation paragraph's 'as of' moved to 07:11 UTC on 28 October (vault nnd3i8iw at 7d27c44bcfc5, 659 sources); every fact in the paragraph re-read against the 48 claims of batches 23 and 24 and still holds. data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The correspondent added Unit 42's withdrawal and Square Enix to that paragraph on 27 October. The CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
@@ -98,8 +98,8 @@
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
-   "checked_against": "7d27c44bcfc5",
-   "note": "28 October: as_of and the vault line moved to 07:11 UTC and 7d27c44bcfc5 (659 sources); no new source names an organisation compromised through php2shell. Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen) added; CISA's KEV listing of Google Brotli CVE-2026-111497 kept off the ledger, a different flaw (corrected by the correspondent on 27 October: this note had said it was added); the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
+   "checked_against": "fd0acfb4ae10",
+   "note": "28 October (journalist, 11:29 UTC): moved to 09:45 UTC and fd0acfb4ae10 (661 sources); batch 25's 10 claims reviewed, no new source names an organisation compromised. 28 October: as_of and the vault line moved to 07:11 UTC and 7d27c44bcfc5 (659 sources); no new source names an organisation compromised through php2shell. Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen) added; CISA's KEV listing of Google Brotli CVE-2026-111497 kept off the ledger, a different flaw (corrected by the correspondent on 27 October: this note had said it was added); the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
   },
   {
    "path": "data/exploitation.json",
