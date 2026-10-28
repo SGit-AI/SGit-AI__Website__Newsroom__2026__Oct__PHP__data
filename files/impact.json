@@ -389,6 +389,28 @@
    "sources": [
     "sociedademilitar-2026-10-site-do-exercito-brasileiro-sai"
    ]
+  },
+  {
+   "who": "Bangladesh: Bangladesh Bank's website, and the sites of Agrani, Janata and Bengal Commercial banks",
+   "country": "BD",
+   "what": "The Daily Star reports Bangladesh Bank kept its website down from the Thursday, and Agrani, Janata and Bengal Commercial banks' sites were offline at 5pm the day before the article; IFIC, Standard Islami and SBAC were back after patching. As reported at the time of the article; a precaution, not evidence of an attack",
+   "when": "2026-10-27",
+   "said_by": "The Daily Star",
+   "status": "reported",
+   "sources": [
+    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+   ]
+  },
+  {
+   "who": "Bangladesh: the land ministry's digital land services (land.gov.bd)",
+   "country": "BD",
+   "what": "Suspended for 36 hours, from midnight on the Thursday to noon on the Saturday, after an urgent alert from BGD e-GOV CIRT dated 22 October; the article says the portal notice was still up after the stated deadline. Precautionary, not evidence of an attack",
+   "when": "2026-10-22",
+   "said_by": "The Daily Star",
+   "status": "reported",
+   "sources": [
+    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+   ]
   }
  ],
  "compromised": [

@@ -4386,6 +4386,534 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-27",
    "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur23-haendlerbund-honeypot-code-run",
+   "verdict": "noted",
+   "reason": "Read the whole capture (27 October, German): it relays Golem.de, saying attackers ran their own code on a researcher's honeypot. A honeypot, not a named organisation: consistent with no-confirmed-compromise, which it does not change. Secondhand; not used on a page.",
+   "sources": [
+    "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-haendlerbund-bitcoin-bait",
+   "verdict": "noted",
+   "reason": "Capture checked: the page gives 0.025 bitcoin and 'just over 19 hours' for a deliberately exposed bait site. A staged bait, not a victim: consistent with no-confirmed-compromise. Relayed second hand, so not used on a page.",
+   "sources": [
+    "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-haendlerbund-32m-unpatched",
+   "verdict": "held back",
+   "reason": "Capture checked: it says about 42 million affected, just over 10 million patched since 21 October, about 32 million still vulnerable, citing Censys. The site does not state this: it is a derived figure from one relayed estimate, and other counts in the vault differ in method (scale-2.6m-hosts, the Bitsight count). Not stated as the site's number.",
+   "sources": [
+    "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-haendlerbund-offline",
+   "verdict": "agrees",
+   "reason": "Capture checked: 'several authorities and companies temporarily took their sites offline', no names. Agrees with the site's offline claims (offline-cisa, latvia-offline); adds nothing to repeat.",
+   "sources": [
+    "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-itfb-2024-audit",
+   "verdict": "noted",
+   "reason": "Capture checked (French): the problem was glimpsed in 2024 in a Sovereign Tech Agency-funded audit and left unfixed. Relays the PHP Foundation's post; the foundation's own post is not in the vault. Not used on a page until it is read.",
+   "sources": [
+    "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-itfb-leak-sequence",
+   "verdict": "agrees",
+   "reason": "Capture checked: Tuesday 20 October about 17:00 Paris time the ids circulated with a wrong time and CVSS 10.0 instead of 9.2; pre-advisory 21:30; publication moved from Thursday 22 to Wednesday 21 October at 16:00 Paris. Agrees with the site's correction of disclosure-22oct (contradicted: released on 21 October) and with HackerNoon in UTC (cur24-hackernoon-disclosure-utc: 15:00 UTC = 17:00 Paris on 20 October, a UTC offset of two hours). Not repeated.",
+   "sources": [
+    "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-itfb-calif-video",
+   "verdict": "agrees",
+   "reason": "Capture checked: about 22:00 Paris time on 20 October (20:00 UTC) Calif mistakenly published a video of its proof of concept; it was deleted but copied. Agrees with the site's leak-video claim, which carries the caveat that Calif's own page does not mention it. Relayed second hand from the foundation.",
+   "sources": [
+    "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-itfb-ai-discovery",
+   "verdict": "noted",
+   "reason": "Capture checked: Calif audit from 30 July, Calif's report twelve days later, OpenAI's report of the same root cause, Wiz on 24 August, OpenAI on 18 September. The discovery history is the foundation's, relayed. The site's ai-found and who-first claims carry the same story from primary parties; the dates here are not repeated until checked against them.",
+   "sources": [
+    "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-itfb-report-flood",
+   "verdict": "noted",
+   "reason": "Capture checked: 'since 1 July the security team published 15 CVEs and triaged more than a hundred invalid, duplicate or non-reproducible reports'. Relayed from the foundation; context, not used on a page.",
+   "sources": [
+    "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-chosun-fortinet-guide",
+   "verdict": "noted",
+   "reason": "Capture checked (Korean, 27 October): Fortinet's four steps (identify, patch and verify, interim protections such as IPS, WAF and virtual patching, investigate for compromise) are on the page. Vendor guidance as relayed; Fortinet's own page is not in the vault.",
+   "sources": [
+    "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-chosun-fortinet-virtual-patch",
+   "verdict": "noted",
+   "reason": "Capture checked: FortiGuard released a virtual patch and IPS signature; Fortinet says these cannot block every attack and the PHP update is still needed. A vendor statement about its own product, relayed; the site carries only fortinet-investigating.",
+   "sources": [
+    "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-chosun-fortinet-not-affected",
+   "verdict": "noted",
+   "reason": "Capture checked: Fortinet says FortiGate, FortiManager, FortiAnalyzer and FortiWeb are not affected. A vendor's statement about its own products, not verified; the site's fortinet-investigating is an earlier statement and nothing here contradicts it.",
+   "sources": [
+    "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-chosun-update-leaves-access",
+   "verdict": "noted",
+   "reason": "Capture checked: updating does not remove access an attacker already has, so check for compromise as well as patch. Guidance, not evidence of any compromise.",
+   "sources": [
+    "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-datanet-logpresso-scanner",
+   "verdict": "noted",
+   "reason": "Capture checked (Korean): Logpresso's scanner for its SIEM and XDR released on 26 October, with a history for rechecking. A vendor tool; cur14-denews-logpresso-scanner is the earlier note. Not tested.",
+   "sources": [
+    "datanet-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-datanet-patches-8x",
+   "verdict": "agrees",
+   "reason": "Capture checked: patches on 21 October for 8.2 to 8.5; reports of versions since 5.4.0 in range. Agrees with the site's carried versions and with its versions-old claim, which is disputed (the CVE records list only 8.2 to 8.5): the article's 'since 5.4.0' is a report, not the CVE records, and is not repeated.",
+   "sources": [
+    "datanet-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-datanet-scan-not-compromise",
+   "verdict": "noted",
+   "reason": "Capture checked: a scan shows vulnerability, not past compromise; logs must be read. Guidance, not evidence of compromise.",
+   "sources": [
+    "datanet-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-news1-kisa-no-attacks",
+   "verdict": "noted",
+   "reason": "Capture checked (Korean, 25 October): a KISA official said no attack cases linked to the flaws had been reported to the agency. About reports received, as of 25 October, and not a finding that no attacks occurred. Consistent with no-confirmed-compromise; not used.",
+   "sources": [
+    "news1-it-science-security-hacking-6330361"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-news1-cyfirma-korean-group",
+   "verdict": "noted",
+   "reason": "Capture checked: CYFIRMA, on 22 October, saw a Korean-speaking group discussing targets and reconnaissance, collecting exploit code and assessing it with AI, planning a first target list by 25 October. Intent seen by a vendor, not an attack, and not a compromise.",
+   "sources": [
+    "news1-it-science-security-hacking-6330361"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-news1-kr-caution-alert",
+   "verdict": "agrees",
+   "reason": "Capture checked: the Korean cyber crisis alert was raised to 'caution' on 22 October. Agrees with cur24-newstomato-kr-alert-22oct from a second Korean outlet (noon on 22 October). The alert's own notice is not in the vault.",
+   "sources": [
+    "news1-it-science-security-hacking-6330361"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-news1-php81-eol",
+   "verdict": "noted",
+   "reason": "Capture checked: 8.1 and older get no official fixes; Cafe24 recommended moving; Gabia also backported or mitigated for unsupported versions. Hosting-provider statements as relayed; the site's versions-old claim is disputed and these are not added to it.",
+   "sources": [
+    "news1-it-science-security-hacking-6330361"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-tvnet-certlv-6000",
+   "verdict": "agrees",
+   "reason": "Capture checked (Latvian, 27 October): about 6,000 potentially vulnerable resources, a few hundred of them public sector. Agrees with the site's scale-latvia claim (CERT.LV's own page); not repeated.",
+   "sources": [
+    "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-tvnet-certlv-no-attacks",
+   "verdict": "agrees",
+   "reason": "Capture checked: no successful cyberattack exploiting the flaws found in Latvia, though activity may rise. Agrees with the site's latvia-attempts claim (CERT.LV, 'none succeeded'). Not repeated.",
+   "sources": [
+    "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur23-tvnet-new-vuln-26oct",
+   "verdict": "noted",
+   "reason": "Capture checked: a new PHP flaw found on Monday 26 October is exploitable only in very specific configurations, so no emergency patch. No id on the page; likely the same as the third flaw (cur6-third-flaw-115560, used) but the page does not say so, so not equated.",
+   "sources": [
+    "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-falter-offline-then-patched",
+   "verdict": "agrees",
+   "reason": "Capture checked (German): a short statement that many sites were taken offline as a precaution and have since been updated. Agrees with the site's offline claims; no sites or numbers.",
+   "sources": [
+    "falter-zeitung-20261027-schwachstelle-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-cybersecbr-unit42-eu-gov",
+   "verdict": "held back",
+   "reason": "Capture read whole: the page reports Unit 42 finding a European government entity compromised, with password hashes and MFA secrets reached in under two hours and an NTLM relay to Active Directory, with no mention of a retraction. Unit 42 withdrew its statement tying that incident to PHP2Shell on 25 October (cur20-scworld-unit42-retraction, used). The site's no-confirmed-compromise stands; this is not stated and is not a named organisation.",
+   "sources": [
+    "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-cybersecbr-cyfirma-216",
+   "verdict": "held back",
+   "reason": "Capture read whole: one CYFIRMA report (suspected North Korea-linked, moderate confidence, 21 compromised nodes watching 216 servers), now relayed by several outlets, so one source. The page does not say the 216 were compromised and the site does not state this; the operator identifiers on the page are left out.",
+   "sources": [
+    "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-cybersecbr-third-flaw",
+   "verdict": "agrees",
+   "reason": "Capture checked: CVE-2026-115560 appears on the page as the third flaw, with its fix in the regular cycle. Agrees with cur6-third-flaw-115560 (used) and the others that agree with it; nothing new.",
+   "sources": [
+    "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-cybersecbr-bitsight-37m",
+   "verdict": "held back",
+   "reason": "Capture checked: Bitsight's roughly 37 million is internet-accessible systems running PHP or related software, which the article says is presence of the technology, not vulnerable servers. The site would read it as an exposure count; as worded it is not one. Not stated.",
+   "sources": [
+    "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-cybersecbr-cloudflare-millions",
+   "verdict": "agrees",
+   "reason": "Capture checked: Cloudflare detected 'millions' of exploitation attempts since disclosure; attempts, not compromises. Agrees with cloudflare-attempts-not-compromises; no dates or volumes beyond 'millions'.",
+   "sources": [
+    "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-tivi-successful-exploitation",
+   "verdict": "held back",
+   "reason": "Capture read whole: the Finnish teaser says the flaws are now proven used in an attack, citing Bleeping Computer; the rest is behind a registration wall, so the detail is not in the capture. 'Proven used to carry out an attack' can be read as a production victim; the vault's other sources tie the confirmations to researcher honeypots and a bait site (cur23-haendlerbund-honeypot-code-run, -bitcoin-bait), and the site's no-confirmed-compromise names no victim. Not stated as worded.",
+   "sources": [
+    "tivi-uutiset-a-76dfed20-ffb8-48e7-ad18-12f44a"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-hackernoon-disclosure-utc",
+   "verdict": "agrees",
+   "reason": "Capture checked: 15:00 UTC on 20 October the ids circulated with a wrong time and CVSS 10.0; pre-announcement moved to 19:30 UTC; release from 22 October to 21 October at 14:00 UTC. Agrees with the site's release-time and the contradicted disclosure-22oct, and with ITforBusiness in Paris time (cur23-itfb-leak-sequence).",
+   "sources": [
+    "hackernoon-what-you-need-to-know-about-the-php2shel"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-hackernoon-chainguard-embargo",
+   "verdict": "noted",
+   "reason": "Capture checked: Chainguard published fixed images at 07:41 UTC on 21 October, over six hours before the release; the PHP Foundation calls it a unilateral break of the embargo; Chainguard argues exploitation in the wild justified it, which a foundation board member disputes. The site already carries the Chainguard accounts (chainguard-lorenc-account, cur8-chainguard-early-images, agrees); the dispute is unresolved and is not stated as fact.",
+   "sources": [
+    "hackernoon-what-you-need-to-know-about-the-php2shel"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-hackernoon-patched-versions",
+   "verdict": "agrees",
+   "reason": "Capture checked: 8.5.12, 8.4.27, 8.3.36, 8.2.35; none for 8.1 and older; minimal backports for 7.4, 8.0 and 8.1; no complete mitigations. Agrees with cur2-fixed-versions (agrees) and the site's carried versions; the primary is php.net.",
+   "sources": [
+    "hackernoon-what-you-need-to-know-about-the-php2shel"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-hackernoon-amazon-17oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: MadPot logged an attempt as early as 17 October; a honeypot attempt, not a compromise, which the article says. Agrees with cur2-madpot-17-oct and the site's amazon-honeypot claim.",
+   "sources": [
+    "hackernoon-what-you-need-to-know-about-the-php2shel"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-hackernoon-wiz-70pct",
+   "verdict": "agrees",
+   "reason": "Capture checked: Wiz puts PHP at around 70% of websites; the BBC could not verify it. Agrees with the site's scale-70pc-websites (a share of websites, an upper bound, not a count of vulnerable sites).",
+   "sources": [
+    "hackernoon-what-you-need-to-know-about-the-php2shel"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-dailystar-bd-banks-offline",
+   "verdict": "noted",
+   "reason": "Capture read whole: Bangladesh Bank's site down from the Thursday; Agrani, Janata and Bengal Commercial offline at 5pm the day before the article; IFIC, Standard Islami and SBAC back after patching. As reported at the time of the article, with sites being restored; the site carries no Bangladesh claim yet.",
+   "sources": [
+    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-dailystar-land-ministry",
+   "verdict": "noted",
+   "reason": "Capture checked: the land ministry suspended digital land services for 36 hours, from midnight on the Thursday to noon on the Saturday, after an alert from BGD e-GOV CIRT dated 22 October; the article says the notice was still up after the deadline. A precautionary suspension, not a compromise.",
+   "sources": [
+    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-dailystar-uk-32-services",
+   "verdict": "noted",
+   "reason": "Capture checked: the UK cybersecurity minister's 32 government services offline, and the Dutch, French, Danish and Finnish governments' sites. The same figure is already noted from VietNamNet (cur19-vietnamnet-uk-32-services, noted); second hand again, Hansard is the primary and is not in the vault.",
+   "sources": [
+    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-dailystar-related-vuln-23oct",
+   "verdict": "noted",
+   "reason": "Capture checked: a related flaw reported on 23 October also affects the patched versions and will be fixed in a later regular release. No id on the page; likely the third flaw (cur6-third-flaw-115560) but the page does not say so, so not equated.",
+   "sources": [
+    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-tecnoandroid-69pct",
+   "verdict": "agrees",
+   "reason": "Capture checked: 69.3% of sites whose server-side language is known, figures to 21 October. Agrees with scale-70pc-websites (a share of websites, not a count of vulnerable ones); the survey is not named.",
+   "sources": [
+    "tecnoandroid-news-php2shell-due-falle-critiche-il-per"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-tecnoandroid-hidden-php",
+   "verdict": "noted",
+   "reason": "Capture checked (Italian): PHP hidden in appliances, panels and containers; a php:8.5 tag does not guarantee the patch. Commentary and advice, not a measured finding.",
+   "sources": [
+    "tecnoandroid-news-php2shell-due-falle-critiche-il-per"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-tecnoandroid-lts-backports",
+   "verdict": "agrees",
+   "reason": "Capture checked: long-term-support distributions can fix older versions leaving the version number unchanged, so comparing numbers is a first step only. Agrees with cur14-nbc-fr-backports and the Datanet note (cur23-datanet-patches-8x).",
+   "sources": [
+    "tecnoandroid-news-php2shell-due-falle-critiche-il-per"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-newstomato-fsi-sharing",
+   "verdict": "noted",
+   "reason": "Capture checked (Korean): the Financial Security Institute is exchanging basic information with the US FS-ISAC and Japan's F-ISAC under a memorandum of November 2022. Information sharing, not a finding about attacks.",
+   "sources": [
+    "newstomato-readnews-aspx"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-newstomato-banks-php",
+   "verdict": "held back",
+   "reason": "Capture checked: KB Kookmin Bank and Woori Bank were confirmed to use PHP and both began remediation. Using PHP is not being vulnerable or compromised, and a bank named beside a vulnerability can read as an incident. The page reports remediation only; not stated on the site.",
+   "sources": [
+    "newstomato-readnews-aspx"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-newstomato-kr-alert-22oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: the alert was raised from 'attention' to 'caution' from noon on 22 October, from a photo caption. Agrees with cur23-news1-kr-caution-alert.",
+   "sources": [
+    "newstomato-readnews-aspx"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-newstopkorea-sga-free",
+   "verdict": "noted",
+   "reason": "Capture checked: SGA Solutions offers vAegis and RedCastle free for one month as interim protection. A vendor offer relayed by the press; not tested.",
+   "sources": [
+    "newstopkorea-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-newstopkorea-patched-versions",
+   "verdict": "agrees",
+   "reason": "Capture checked: 8.2.35, 8.3.36, 8.4.27 and 8.5.12 or later; older versions get no official update. Agrees with cur24-hackernoon-patched-versions and cur2-fixed-versions.",
+   "sources": [
+    "newstopkorea-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur24-newstopkorea-kisa-update",
+   "verdict": "noted",
+   "reason": "Capture checked: KISA recommended that companies using PHP update and respond quickly. As relayed; KISA's own notice is the primary and is not in the vault.",
+   "sources": [
+    "newstopkorea-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T08:55Z",
+   "by": "claude-journalist"
   }
  ]
 }
