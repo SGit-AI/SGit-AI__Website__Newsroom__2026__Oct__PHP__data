@@ -5398,6 +5398,160 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-28T16:21Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-okdiario-calif-timeline",
+   "verdict": "agrees",
+   "reason": "Capture checked (Spanish): OpenAI invited Calif into Patch the Planet on 30 July; Ryan Austin found several attack paths on 1 August; first report to PHP on 11 August; a demonstration three days later (14 August, by the page's own count) that PHP confirmed on 15 August; a second report on 21 August. Agrees with cur27-infoarenales-calif-1aug, cur2-calif-august and cur23-itfb-ai-discovery, and sets aside the 'early 2026' of cur26-iphonemod-calif-early-2026 (held back). Calif's own timeline, relayed.",
+   "sources": [
+    "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-okdiario-wiz-timeline",
+   "verdict": "agrees",
+   "reason": "Capture checked: Wiz reached the same flaws independently, found the first on 19 August, reported it on 24 August, and the patch came two months later. Agrees with the 24 August Wiz report in cur23-itfb-ai-discovery and the site's wiz-independent claim; the vendor's own account.",
+   "sources": [
+    "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-okdiario-versions-scope",
+   "verdict": "agrees",
+   "reason": "Capture checked: 8.5.12, 8.4.27, 8.3.36 and 8.2.35; almost every version since PHP 5.4 has at least one flaw; the project asks all users to update immediately and rates Apache with mod_php highest. Agrees with cur24-hackernoon-patched-versions; 'almost every version since 5.4' is the page's reading and the site's versions-old claim stays disputed (the CVE records list only 8.2 to 8.5).",
+   "sources": [
+    "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-okdiario-ai-role",
+   "verdict": "noted",
+   "reason": "Capture checked: OpenAI says Calif identified a critical flaw with GPT-5.6 Sol; the page gives Wiz's tool with Gemini 4 Argon and GPT-5.6 Sol, one researcher doing in a week what a large team would in months, and Calif's researcher saying no special models or tools were used and that PHP's history of flaws was the key. Two vendors' accounts of their own work that differ on how much the AI mattered; the site's ai-found claim carries the three parties' accounts. Not used.",
+   "sources": [
+    "okdiario-techy-php2shell-fallos-criticos-php-ia-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-tokocrypto-slowmist-793",
+   "verdict": "noted",
+   "reason": "Capture checked (Indonesian, 27 October): SlowMist found traces of PHP on 793 of 1,488 crypto domains (53.3%), and the page says using PHP does not by itself mean a hole or a hack. Presence of PHP, not vulnerability or compromise; not on the site.",
+   "sources": [
+    "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-tokocrypto-imperva-482k",
+   "verdict": "noted",
+   "reason": "Capture checked: after the 21 October emergency update Imperva recorded 482,342 attack requests against 21,998 sites in 103 countries within 24 hours; the page gives no date for the window. Attack requests, not compromises; the site carries Imperva's blog only as a source for no-confirmed-compromise.",
+   "sources": [
+    "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-tokocrypto-bitcoin-bait",
+   "verdict": "agrees",
+   "reason": "Capture checked: the 'Steal My Bitcoin' challenge, from 24 October on a deliberately unpatched PHP server, prize raised to 0.0251 BTC (about US,021), broken in 19.28 hours on 25 October; the key taken was not the prize address's. A staged bait, not an organisation: agrees with cur23-haendlerbund-bitcoin-bait (0.025 bitcoin, just over 19 hours) and leaves no-confirmed-compromise unchanged. The page names the organiser and the winner; not repeated.",
+   "sources": [
+    "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-tokocrypto-no-exchange-breach",
+   "verdict": "noted",
+   "reason": "Capture checked: 'no verified evidence yet' that a major centralised exchange was breached through PHP2Shell, as of 27 October. An absence of verified evidence on one page, not a finding; consistent with no-confirmed-compromise, which it does not extend.",
+   "sources": [
+    "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-cozumpark-kev-26-29oct",
+   "verdict": "agrees",
+   "reason": "Capture checked (Turkish): CISA added both flaws to KEV on Monday and told federal civilian agencies to secure systems by Thursday under BOD 26-04. The page gives the weekdays only; the dates 26 and 29 October are the curator's, and they match the KEV listing the site carries (26 October, due 29 October, no victim named). Agrees with cur27-muycomputerpro-kev-29oct.",
+   "sources": [
+    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-cozumpark-amazon-four-days",
+   "verdict": "agrees",
+   "reason": "Capture checked: Amazon Threat Intelligence says attackers began targeting the flaws four days before the patches (17 October). A honeypot-based observation; agrees with the site's amazon-honeypot claim.",
+   "sources": [
+    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-cozumpark-prewave-attempts",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Cloudflare, Amazon, Hadrian, watchTowr, Previdian and Patchstack detected wide-scale exploitation attempts before the flaws were made public, and classed them as unsuccessful'. The site carries before-release activity only for Amazon (a honeypot attempt on 17 October, amazon-honeypot); Cloudflare's thousands of attempts are dated to the 10 hours before its announcement, not before disclosure, and the other four firms' timing is not in this page. One sentence lumping six firms is not stated as worded.",
+   "sources": [
+    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-cozumpark-poc-not-working",
+   "verdict": "noted",
+   "reason": "Capture checked: the PHP security team said none of the proof-of-concept samples that became public worked. Consistent with the site's pocs-wrong claim (VulnCheck, The Hacker News, Fastly); as of the time of disclosure, and relayed.",
+   "sources": [
+    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-cozumpark-cisa-no-scale",
+   "verdict": "noted",
+   "reason": "Capture checked: CISA had not shared further detail on the scope of the attacks, so the number of affected systems and the attackers' methods were not assessed. An absence of public figures as of 28 October, not a finding about scale; consistent with a KEV listing that names no victim.",
+   "sources": [
+    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur28-cozumpark-virustotal",
+   "verdict": "noted",
+   "reason": "Capture checked: VirusTotal estimates PHP at about 70% of websites, more than 5.1 million internet-facing PHP servers and about 3.8 million instances with at least one reachable port. A presence count on its own base, not of vulnerable sites; the 70% agrees with scale-70pc-websites, the server counts are not on the site and not used.",
+   "sources": [
+    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T18:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
