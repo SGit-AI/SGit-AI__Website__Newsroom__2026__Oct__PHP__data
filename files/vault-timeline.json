@@ -1373,5 +1373,15 @@
   "confidence": "stated",
   "phase": "response",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-21",
+  "event": "Chainguard published built images containing the fix at 07:41 UTC, more than six hours before the coordinated 14:00 UTC release, which the PHP Foundation describes as breaking the embargo and Chainguard's leadership defended (as relayed by HackerNoon)",
+  "sources": [
+   "hackernoon-what-you-need-to-know-about-the-php2shel"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
  }
 ]

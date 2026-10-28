@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "2fe8a8ccacaa",
-  "subject": "curator@php.newsroom: batch 23, six sources from the source watch (ohn.haendlerbund, ITforBusiness, Chosun Biz, Datanet, News1, TVNET): 23 claims cur23-, 2 timeline rows  +48 ~4  [blobs:+52 trees:+23]",
-  "commits": 44
+  "commit": "7d27c44bcfc5",
+  "subject": "curator@php.newsroom: batch 24, eight sources from the source watch (Falter, CyberSecBrazil, Tivi, HackerNoon, The Daily Star, TecnoAndroid, Newstomato, Newstop): 25 claims cur24-, 1 timeline row; corrections to the acn-it-php2shell and php-net-advisory notes (projects desk, PROJECT-001 step 1)  +64 ~6  [blobs:+70 trees:+31]",
+  "commits": 45
  },
- "sources": 651,
- "captures": 717,
- "hashed_files": 4188,
+ "sources": 659,
+ "captures": 725,
+ "hashed_files": 4236,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-28T03:27Z",
+ "latest_capture": "2026-10-28T07:11Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

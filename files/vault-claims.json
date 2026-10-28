@@ -5792,5 +5792,305 @@
   "topic": "disclosure",
   "note": "A further flaw separate from the two PHP2Shell CVEs; no identifier is given in the page.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-falter-offline-then-patched",
+  "claim": "Falter says the two PHP2Shell flaws led to many websites being taken offline as a precaution the previous week and have since been closed by updates",
+  "by": "Falter",
+  "sources": [
+   "falter-zeitung-20261027-schwachstelle-php2shell"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "A short general statement; no sites or numbers named.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-cybersecbr-unit42-eu-gov",
+  "claim": "The article reports that Palo Alto Networks Unit 42 found attackers exploiting PHP2Shell to compromise a European government entity and reach password hashes and multi-factor secrets in under two hours, with signs of agentic AI use in the post-intrusion activity",
+  "by": "CyberSecBrazil (relaying Unit 42)",
+  "sources": [
+   "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+  ],
+  "status": "disputed",
+  "topic": "compromise",
+  "note": "Written before or without the retraction: in a 25 October blog Unit 42 withdrew its statement tying that incident to PHP2Shell (cur20-scworld-unit42-retraction). Do not cite this as a confirmed intrusion.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-cybersecbr-cyfirma-216",
+  "claim": "CYFIRMA reports a suspected North Korea-linked, Lazarus-ecosystem campaign (moderate confidence) using 21 compromised nodes to watch 216 unpatched or partly mitigated servers across many countries; the report does not confirm all 216 were compromised",
+  "by": "CyberSecBrazil (relaying CYFIRMA)",
+  "sources": [
+   "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "One vendor's report, now relayed by several outlets (see cur21-cnet-cyfirma-lazarus-recon, cur7-cyfirma-lazarus): one source, not several. Operator identifiers named in the page are left out.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-cybersecbr-third-flaw",
+  "claim": "The PHP Foundation warned of a third remote-code-execution flaw, CVE-2026-115560, that depends on an unusual combination of application configuration and behaviour, with its fix planned for the regular update cycle",
+  "by": "CyberSecBrazil (relaying the PHP Foundation)",
+  "sources": [
+   "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "The conditions the page describes are not repeated here. Compare the new flaw reported on 26 October by CERT.LV (cur23-tvnet-new-vuln-26oct).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-cybersecbr-bitsight-37m",
+  "claim": "Bitsight counted about 37 million internet-accessible systems running PHP or related software, most in the United States, Germany, France, the Netherlands and Japan",
+  "by": "CyberSecBrazil (citing Bitsight)",
+  "sources": [
+   "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "The article stresses this is the presence of the technology, not a count of vulnerable servers.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-cybersecbr-cloudflare-millions",
+  "claim": "Cloudflare reported detecting millions of exploitation attempts since the public disclosure",
+  "by": "CyberSecBrazil (citing Cloudflare)",
+  "sources": [
+   "cybersecbrazil-post-hackers-exploram-php2shell-e-invade"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attempts, not successful compromises; no dates or volumes beyond 'millions'.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-tivi-successful-exploitation",
+  "claim": "Tivi, citing Bleeping Computer, reports that the PHP2Shell flaws have now been proven used to carry out an attack online, where earlier only many attempts had been seen",
+  "by": "Tivi (citing Bleeping Computer)",
+  "sources": [
+   "tivi-uutiset-a-76dfed20-ffb8-48e7-ad18-12f44a"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Teaser only; the detail is behind a registration wall. Other sources in the vault tie the confirmation to researcher-run honeypot and bait systems, not to a production victim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-hackernoon-disclosure-utc",
+  "claim": "HackerNoon reports that the two CVE ids began circulating online around 15:00 UTC on 20 October with a wrong release time and a CVSS of 10.0 (the official score is 9.2), that the PHP Foundation moved its pre-announcement to 19:30 UTC and brought the release forward from 22 October to 21 October at 14:00 UTC",
+  "by": "HackerNoon (relaying the PHP Foundation)",
+  "sources": [
+   "hackernoon-what-you-need-to-know-about-the-php2shel"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with the Paris-time account of ITforBusiness (cur23-itfb-leak-sequence: 17:00 Paris = 15:00 UTC).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-hackernoon-chainguard-embargo",
+  "claim": "HackerNoon reports that Chainguard published built images containing the fix at 07:41 UTC on 21 October, more than six hours before the coordinated release, which the PHP Foundation describes as unilaterally breaking the embargo; Chainguard's leadership argued early shipping was justified by reports of exploitation in the wild, which a PHP Foundation board member disputed",
+  "by": "HackerNoon (relaying the PHP Foundation and Chainguard)",
+  "sources": [
+   "hackernoon-what-you-need-to-know-about-the-php2shel"
+  ],
+  "status": "disputed",
+  "topic": "disclosure",
+  "note": "The dispute between the two parties is the point; the article treats it as unresolved.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-hackernoon-patched-versions",
+  "claim": "The patched PHP versions are 8.5.12, 8.4.27, 8.3.36 and 8.2.35; PHP 8.1 and older get no updates from the PHP project, minimal source backports were published for 7.4, 8.0 and 8.1, and php.net says there are no complete mitigations",
+  "by": "HackerNoon (relaying php.net)",
+  "sources": [
+   "hackernoon-what-you-need-to-know-about-the-php2shel"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Matches the version numbers in the other outlets; the primary is php.net.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-hackernoon-amazon-17oct",
+  "claim": "Amazon Threat Intelligence said its MadPot honeypots logged a PHP2Shell exploitation attempt as early as 17 October",
+  "by": "HackerNoon (citing Amazon Threat Intelligence)",
+  "sources": [
+   "hackernoon-what-you-need-to-know-about-the-php2shel"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A honeypot attempt, not a confirmed compromise of a production site; the article says so. Compare cur2-acsc-no-exploitation.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-hackernoon-wiz-70pct",
+  "claim": "Wiz puts the share of websites powered by PHP at around 70%; the BBC noted it could not independently verify that figure",
+  "by": "HackerNoon (citing Wiz)",
+  "sources": [
+   "hackernoon-what-you-need-to-know-about-the-php2shel"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A share of the public web running PHP, not a count of vulnerable sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-dailystar-bd-banks-offline",
+  "claim": "The Daily Star reports that Bangladesh Bank kept its website down from the Thursday, and that Agrani, Janata and Bengal Commercial banks' sites were offline at 5pm the day before the article, while IFIC, Standard Islami and SBAC sites were back after patching",
+  "by": "The Daily Star",
+  "sources": [
+   "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "As reported at the time of the article; individual sites were being restored.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-dailystar-land-ministry",
+  "claim": "The land ministry suspended its digital land services (land.gov.bd) for 36 hours, from midnight on the Thursday to noon on the Saturday, following an urgent cyber alert issued by BGD e-GOV CIRT on 22 October",
+  "by": "The Daily Star",
+  "sources": [
+   "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The portal notice was still up after the stated deadline, according to the article.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-dailystar-uk-32-services",
+  "claim": "The UK cybersecurity minister told Parliament that 32 government services had been taken offline, and the Dutch, French, Danish and Finnish governments also took sites offline",
+  "by": "The Daily Star",
+  "sources": [
+   "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Relayed second hand; the Hansard statement is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-dailystar-related-vuln-23oct",
+  "claim": "A related vulnerability reported on 23 October also affects the patched versions and is expected to be addressed in a subsequent regular PHP release",
+  "by": "The Daily Star",
+  "sources": [
+   "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "No identifier is given in the page; compare the third flaw CVE-2026-115560 in cur24-cybersecbr-third-flaw.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-tecnoandroid-69pct",
+  "claim": "PHP is used by 69.3% of the sites whose server-side language can be identified, on figures updated to 21 October 2026",
+  "by": "TecnoAndroid",
+  "sources": [
+   "tecnoandroid-news-php2shell-due-falle-critiche-il-per"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A share of identifiable sites, not a count of vulnerable ones; the survey behind it is not named in the page.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-tecnoandroid-hidden-php",
+  "claim": "The article says the real difficulty is PHP hidden inside third-party software, appliances, hosting panels and containers, and that a container tag such as php:8.5 does not guarantee the patch is present",
+  "by": "TecnoAndroid",
+  "sources": [
+   "tecnoandroid-news-php2shell-due-falle-critiche-il-per"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Commentary and advice, not a measured finding.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-tecnoandroid-lts-backports",
+  "claim": "Long-term-support Linux distributions may apply the security fixes to older versions without changing the version number, so comparing version numbers with the PHP team's list is only a first step",
+  "by": "TecnoAndroid",
+  "sources": [
+   "tecnoandroid-news-php2shell-due-falle-critiche-il-per"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Advice consistent with the Datanet note on distribution advisories (cur23-datanet-patches-8x).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-newstomato-fsi-sharing",
+  "claim": "Korea's Financial Security Institute says it is exchanging basic information on the PHP vulnerability situation with the US FS-ISAC and Japan's F-ISAC, under a memorandum signed in November 2022",
+  "by": "Newstomato (citing the Financial Security Institute)",
+  "sources": [
+   "newstomato-readnews-aspx"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Information sharing, not a finding about attacks.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-newstomato-banks-php",
+  "claim": "The article says KB Kookmin Bank and Woori Bank were confirmed to use PHP, which raised concern about the vulnerabilities, and that both began remediation",
+  "by": "Newstomato",
+  "sources": [
+   "newstomato-readnews-aspx"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Using PHP is not the same as being vulnerable or compromised; the article reports remediation, not an incident.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-newstomato-kr-alert-22oct",
+  "claim": "The Korean government raised the private-sector cyber crisis alert from 'attention' to 'caution' from noon on 22 October",
+  "by": "Newstomato",
+  "sources": [
+   "newstomato-readnews-aspx"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "From a photo caption; compare cur23-news1-kr-caution-alert.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-newstopkorea-sga-free",
+  "claim": "SGA Solutions is offering its server antivirus vAegis and server security RedCastle free for one month, as interim protection for organisations that cannot apply the PHP security patch immediately",
+  "by": "Newstop Korea (relaying SGA Solutions)",
+  "sources": [
+   "newstopkorea-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "tooling",
+  "note": "A vendor offer relayed by the press; not tested here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-newstopkorea-patched-versions",
+  "claim": "The patched versions are PHP 8.2.35, 8.3.36, 8.4.27 and 8.5.12 or later, and some older versions receive no official update and must move to a supported version",
+  "by": "Newstop Korea",
+  "sources": [
+   "newstopkorea-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Matches the versions in other outlets.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur24-newstopkorea-kisa-update",
+  "claim": "KISA recommended that companies using PHP apply security updates and response measures quickly",
+  "by": "Newstop Korea",
+  "sources": [
+   "newstopkorea-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "As relayed; KISA's own notice is the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]
