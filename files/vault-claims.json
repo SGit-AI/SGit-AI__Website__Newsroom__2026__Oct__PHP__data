@@ -6092,5 +6092,125 @@
   "topic": "agencies",
   "note": "As relayed; KISA's own notice is the primary.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-tiinside-brazil-offline",
+  "claim": "The column says Brazil's telecoms regulator Anatel took its SEI system and other digital services offline as a precaution, regional courts interrupted access to their systems, and European governments did the same",
+  "by": "TI Inside (opinion column)",
+  "sources": [
+   "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "General statements without dates or sources; the Brazilian outages are not otherwise recorded in this vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-tiinside-nsa-certeu-offline",
+  "claim": "The column says agencies such as the NSA and CERT-EU advised switching off whatever could not be patched",
+  "by": "TI Inside (opinion column)",
+  "sources": [
+   "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Names only the NSA and CERT-EU; sits with the disputed offline-allies claim, where CERT-EU says isolate and several other agencies give no offline advice.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-tiinside-embargo-leak",
+  "claim": "The column says the CVE numbers leaked a day before the fix and the embargo was broken, with reports of attack attempts by the morning of release",
+  "by": "TI Inside (opinion column)",
+  "sources": [
+   "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Loose on timing; the UTC sequence is in cur24-hackernoon-disclosure-utc.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-tiinside-wiz-ai-adapt",
+  "claim": "The column, relaying Wiz, says AI models helped find the flaw and adapt the attack to WordPress, Drupal and Joomla in a few hours",
+  "by": "TI Inside (relaying Wiz)",
+  "sources": [
+   "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "A security vendor's claim about its own research, relayed by a vendor's CEO.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-sbircia-acn-285k",
+  "claim": "ACN's alert covers more than 285,000 Italian sites, a figure the national cybersecurity agency made public and Adnkronos reported; the article stresses that this describes exposure, not compromise",
+  "by": "Sbircia la Notizia (citing ACN via Adnkronos)",
+  "sources": [
+   "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Exposure, not compromise, as the article says; the ACN figure itself is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-sbircia-certeu-ncsc-isolate",
+  "claim": "The article says CERT-EU asked for the fix to be installed at once and for exposed applications to be isolated when that is impractical, and that the UK NCSC gives the same direction: public access to systems that take too long to update or mitigate should be suspended until they are secured",
+  "by": "Sbircia la Notizia (relaying CERT-EU and the NCSC)",
+  "sources": [
+   "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "As relayed by this outlet; the agencies' own pages are the primary. Relevant to the disputed offline-allies claim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-sbircia-advisory-23oct",
+  "claim": "An informational advisory published on 23 October recommends a setting change until the next regular release to cover a further remote-code-execution vector judged unlikely, identified as CVE-2026-115560",
+  "by": "Sbircia la Notizia (relaying the PHP project)",
+  "sources": [
+   "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "The setting and the conditions the page describes are not repeated here. See cur24-cybersecbr-third-flaw.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-sbircia-amazon-17oct",
+  "claim": "The article, citing Reuters, says Amazon detected an attempt against a decoy system on 17 October 2026 and recorded other activity on 21 October, before the embargo ended",
+  "by": "Sbircia la Notizia (citing Reuters)",
+  "sources": [
+   "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A decoy-system attempt, not a confirmed compromise; compare cur24-hackernoon-amazon-17oct.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-sbircia-eol-backports",
+  "claim": "PHP 8.1 and earlier series have ended official support; minimal source backports were published for PHP 7.4 and 8.0 and also for 8.1, for people who compile themselves or have long-term support",
+  "by": "Sbircia la Notizia",
+  "sources": [
+   "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Compare cur24-hackernoon-patched-versions.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur25-sbircia-restart",
+  "claim": "Installing the fixed package only takes effect when the PHP processes are restarted; a worker left running the old binary prolongs exposure even if the package manager shows the update as complete",
+  "by": "Sbircia la Notizia",
+  "sources": [
+   "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Operational advice, not a measured finding.",
+  "agent": "curator@php.newsroom"
  }
 ]

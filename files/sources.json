@@ -25101,6 +25101,56 @@
   "notes_md": "# 【高市総理も注意喚起】インターネット崩壊危機？PHP重大脆弱性でWebサイト緊急停止 世界のWebサイトの約7割で利用、国内サービスも緊急メンテナンス｜ビジネス+IT\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `jp/news/sbbit/article-cont1-187672`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nBusiness+IT (Japanese), a feature on the PHP flaws with the PM's alert in its headline; the capture holds the free part, the rest is behind a registration wall. It says one trigger was a post to Hacker News ahead of the planned disclosure, rates 9.2 on CVSS 4.0, describes the two memory-management flaws, notes that mod_php has a demonstrated path from an unauthenticated request before application code runs while other set-ups need other conditions, and gives W3Techs (October 2026) figures: PHP on 69.3% of sites whose server-side language is known; PHP 8 65.2%, 7 27.0%, 5 7.7% of those, so at least about 35% are on end-of-life lines. In Japan from the afternoon of 21 October BASE, Kodomon, pixiv, Niconico, game companies and Sakura Internet suspended all or part of their services; BASE and Kodomon named the PHP flaw; the Ministry of Finance paused related web content.\n\n> 日本国内では21日午後から、BASE、コドモン、pixiv、ニコニコ、ゲーム各社、さくらインターネットなどがサービスの全部または一部を停止し、緊急メンテナンスに入った。\n\n_Curator's translation:_ \"In Japan, from the afternoon of the 21st, BASE, Kodomon, pixiv, Niconico, game companies, Sakura Internet and others suspended all or part of their services and went into emergency maintenance.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Business+IT (SB Creative): in Japan, from the afternoon of 21 Oct, BASE, Codmon, pixiv, Niconico, game firms and Sakura Internet stopped all or part of their services. The Ministry of Finance suspended web content. PM Takaichi made an unusual appeal. W3Techs October data: PHP used by 69.3% of sites; versions 8.x 65.2%, 7.x 27.0%, 5.x 7.7%.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"【高市総理も注意喚起】インターネット崩壊危機？PHP重大脆弱性でWebサイト緊急停止 世界のWebサイトの約7割で利用、国内サービスも緊急メンテナンス｜ビジネス+IT\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ja`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "sbircialanotizia-articoli-2026-10-26-php2shell-italia-lst",
+  "url": "https://www.sbircialanotizia.it/articoli/2026/10/26/php2shell-italia-lstfv/",
+  "publisher": "Sbircia la Notizia Magazine",
+  "kind": "news",
+  "title": "PHP2Shell, l’allerta ACN copre oltre 285mila siti italiani",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261028T094557Z",
+    "files": {
+     "headers.json": {
+      "sha256": "a11e69ea8669f377e772da460b3e79675f599da7bb7b8ea3d129e31fae1b71ce",
+      "bytes": 528
+     },
+     "page.html": {
+      "sha256": "15ae9d3c00739eac9ed635b3c085fff8ed022a5f02f5d917937cc78a8270f6d0",
+      "bytes": 89590
+     },
+     "provenance.json": {
+      "sha256": "2dfdbf92ba2e16252c2b020d3a6ebaf07d61765c2ff30f5999628f661894e648",
+      "bytes": 1712
+     },
+     "rendered.html": {
+      "sha256": "db270a7bf9ecce4bd58c4cee875e853aa196712571202ec7e8066bebeadd9bed",
+      "bytes": 89675
+     },
+     "screenshot.jpg": {
+      "sha256": "6f2600471fb39856a83a18ee123f3da4188f40e8306ed16f9745f54af8e5d5fd",
+      "bytes": 820068
+     },
+     "text.txt": {
+      "sha256": "398ecd2cfea4d72a6f1fe7218a15b7c224d91cf51b21418201eef1df932e966d",
+      "bytes": 16205
+     }
+    },
+    "started_utc": "2026-10-28T10:02:23.752Z",
+    "status": 200,
+    "final_url": "https://www.sbircialanotizia.it/articoli/2026/10/26/php2shell-italia-lstfv/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "it",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261028T094557Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). An Italian magazine explainer (Sbircia la Notizia, 26 October) on ACN's alert, which per ACN as reported by Adnkronos covers more than 285,000 Italian...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell, l’allerta ACN copre oltre 285mila siti italiani\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/sbircialanotizia/articoli-2026-10-26-php2shell-italia-lstfv`, snapshot `20261028T094557Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T094557Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Italian magazine explainer (Sbircia la Notizia, 26 October) on ACN's alert, which per ACN as reported by Adnkronos covers more than 285,000 Italian sites; it stresses that exposure is a technical condition and that compromise needs separate evidence in each server's logs and files. It gives the patched PHP versions (8.5.12, 8.4.27, 8.3.36, 8.2.35), notes that the CMS update does not fix the PHP runtime, that the actual release serving HTTP must be checked (the command-line version can differ), that PHP processes must be restarted after updating, and that PHP 8.1 and earlier are out of support, with minimal source backports offered for 7.4, 8.0 and 8.1. It relays CERT-EU (install now, isolate exposed applications if that is not possible) and the UK NCSC (suspend public access for systems that cannot be updated or mitigated quickly), mentions an informational advisory of 23 October about a further, less likely flaw (CVE-2026-115560), and cites Reuters on an attempt Amazon saw against a decoy system on 17 October and other activity on 21 October before the embargo ended.\n\n> L’allerta riguarda oltre 285mila siti italiani\n\n_Curator's translation:_ \"The alert covers more than 285,000 Italian sites.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell, l’allerta ACN copre oltre 285mila siti italiani\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `it`. Secondhand on ACN, CERT-EU, the NCSC and Reuters. The page explains how the flaws work and which configuration a further flaw needs; none of that is copied into the notes. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "scherzer-dev-wikipedia-ref-15-blog-20261022-php2shell",
   "url": "https://scherzer.dev/Blog/20261022-php2shell-timeline",
   "publisher": "scherzer.dev",
@@ -30169,6 +30219,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `vn/news/tiasang/lo-hong-php-ai-khien-dieu-bi-lang-quen-thanh-moi-de-doa-5135`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nTia Sáng (Vietnam, Vietnamese), a long feature, 'PHP vulnerability: AI turns what was forgotten into a threat'. It says many European bodies proactively disconnected or closed sites after information on the two flaws leaked before patches could be applied, quotes Professor Phan Duong Hieu of the Paris Polytechnic's telecom school on the unauthenticated remote control risk, says the flaws were found from August while the PHP team prepared patches quietly, that governments worry hackers could use AI to shorten exploitation, and that an estimated 1.5 million of 2.6 million servers still run unpatched PHP. The explanation of PHP and the AI discussion follow; no new facts beyond the Censys-derived estimate already held.\n\n> Ước tính hiện có khoảng 1,5 triệu trong số 2,6 triệu máy chủ đang sử dụng phiên bản PHP chưa vá lỗi.\n\n_Curator's translation:_ \"It is estimated that about 1.5 million of 2.6 million servers are currently using unpatched PHP versions.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Tia Sang (Vietnam) feature: European agencies, schools and hospitals went offline. Prof. Phan Duong Hieu explains the risk, and an estimate says about 1.5 million of 2.6 million servers still run unpatched PHP. It highlights that Calif is led by Vietnamese engineer Duong Ngoc Thai and covers the history from Esser in 2004 to OSTIF/Quarkslab in 2024.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Lỗ hổng bảo mật PHP: AI khiến điều bị lãng quên thành mối đe dọa\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `vi`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "tiinside-26-10-2026-php2shell-corrigido-no-codigo",
+  "url": "https://tiinside.com.br/26/10/2026/php2shell-corrigido-no-codigo-exposto-em-producao/",
+  "publisher": "TI INSIDE Online",
+  "kind": "news",
+  "title": "PHP2Shell: corrigido no código, exposto em produção | TI INSIDE Online",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261028T094557Z",
+    "files": {
+     "headers.json": {
+      "sha256": "07145f1076f7cb788154da4b1ac3e780c8abebcc1cb9f798c0cb1deda9f002b5",
+      "bytes": 2493
+     },
+     "page.html": {
+      "sha256": "7c8f959e58c22e7cc85c78db01ae4d9464467a76afc511630f2f0425d27746cb",
+      "bytes": 216733
+     },
+     "provenance.json": {
+      "sha256": "260d3ad170d7b8ae2c3c9a63555a9442cd64a090a18e64e5c2dbd01130df218d",
+      "bytes": 1757
+     },
+     "rendered.html": {
+      "sha256": "464bbcc7ddf578cf7034bdf3af369dd2b36773b615583630f12e2acafcd4fc4a",
+      "bytes": 235737
+     },
+     "screenshot.jpg": {
+      "sha256": "6818c1866494fa03038e79b18903ec13074d39408bc537e0669212a238ea408d",
+      "bytes": 404975
+     },
+     "text.txt": {
+      "sha256": "ebb76190abbed166248fd24940ccb53b95ce9a563d2ecdc4c41846582f6d00ca",
+      "bytes": 7294
+     }
+    },
+    "started_utc": "2026-10-28T09:50:42.412Z",
+    "status": 200,
+    "final_url": "https://tiinside.com.br/26/10/2026/php2shell-corrigido-no-codigo-exposto-em-producao/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "pt-BR",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261028T094557Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Brazilian IT-management opinion column (TI Inside, 26 October, by the CEO of a Kubernetes-security company) arguing that PHP2Shell is fixed in the c...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell: corrigido no código, exposto em produção | TI INSIDE Online\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `br/news/tiinside/26-10-2026-php2shell-corrigido-no-codigo-exposto-em-producao`, snapshot `20261028T094557Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T094557Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Brazilian IT-management opinion column (TI Inside, 26 October, by the CEO of a Kubernetes-security company) arguing that PHP2Shell is fixed in the code but still exposed in production. It relays Wiz that PHP runs about 70% of websites and that AI models helped find the flaw and adapt the attack to WordPress, Drupal and Joomla within hours, says the CVE numbers leaked a day before the fix and the embargo was broken, cites Palo Alto's count of more than 22.6 million exposed instances, and describes last week's choice between staying exposed and going offline: Anatel took its SEI and other digital services offline, regional courts interrupted access, European governments did the same, and the NSA and CERT-EU advised switching off whatever could not be patched. The rest is advice on rebuilding container images, software inventories and supplier responsibility under Brazilian central-bank rules.\n\n> Na semana passada, quem não conseguiu atualizar a tempo teve que escolher entre ficar exposto e sair do ar.\n\n_Curator's translation:_ \"Last week, whoever could not update in time had to choose between staying exposed and going offline.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: corrigido no código, exposto em produção | TI INSIDE Online\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `pt-BR`. The capture shows no publication date; 26 October is taken from the page address. First-person opinion by a vendor's CEO, with a plug for the author's own hardened images. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "tirto-website-sedunia-geger-ditemukan-celah-ke",
