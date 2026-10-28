@@ -5134,6 +5134,270 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-28T13:44Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-infoarenales-censys-1-5m",
+   "verdict": "noted",
+   "reason": "Capture checked (Spanish, 22 October): 'cerca de 1,5 millones de los 2,6 millones de servidores web identificados' ran PHP versions without the fix, citing Censys. A sample of identified servers on the first day, the same base as the site's scale-2.6m-hosts; not a later or wider count, and not repeated.",
+   "sources": [
+    "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-infoarenales-japan-pm-call",
+   "verdict": "agrees",
+   "reason": "Capture checked: Japan's prime minister called on website operators to check whether they use PHP and prepare to apply the fix. Agrees with the earlier reading in cur3-jp-pm-emergency-order (a request, not an order); no emergency order is claimed here.",
+   "sources": [
+    "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-infoarenales-calif-1aug",
+   "verdict": "agrees",
+   "reason": "Capture checked: Calif says it found the flaws on 1 August with an advanced language model; Wiz says it used its autonomous research tool. Agrees with cur2-calif-august and does not conflict with the PHP Foundation's account as relayed (Calif's audit began on 30 July, cur23-itfb-ai-discovery); vendors' own accounts of their research.",
+   "sources": [
+    "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-infoarenales-agencies-advice",
+   "verdict": "held back",
+   "reason": "Capture checked: a blanket line that agencies of various states advised updating at once or taking sites offline. The site's offline-allies claim is disputed (ACSC gives no offline advice; CERT-EU says isolate; the NCSC sentence is not on its page as captured). Only the NSA's offline advice is confirmed (offline-nsa). Not stated as worded.",
+   "sources": [
+    "infoarenales-2026-10-22-que-es-php-y-por-que-una-fall"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-muycomputerpro-kev-29oct",
+   "verdict": "agrees",
+   "reason": "Capture checked (Spanish, 28 October): both flaws added to CISA's KEV catalog with remediation due 29 October 2026. Agrees with the site's KEV account (listing of 26 October, due 29 October, no victim named); the listing is the primary.",
+   "sources": [
+    "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-muycomputerpro-honeypot-24oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: Adel Karimi (Perplexity) confirmed on 24 October remote code execution against honeypot systems. Agrees with brk2-thn-honeypot-rce (used) and cur19-enter-honeypot-rce-confirmed; honeypots, not an organisation, so no-confirmed-compromise is unchanged.",
+   "sources": [
+    "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-muycomputerpro-censys-32m",
+   "verdict": "held back",
+   "reason": "Capture checked: 'more than 32.51 million PHP services' still on an affected version, citing Censys. The same figure is held back at brk2-thn-censys-count and cur20-infosec-censys-3251: a version-based count is an upper bound (distributions backport fixes), a different measure from the Censys host counts the site carries. Not stated.",
+   "sources": [
+    "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-muycomputerpro-versions-isolate",
+   "verdict": "agrees",
+   "reason": "Capture checked: update to 8.2.35, 8.3.36, 8.4.27 or 8.5.12 by branch and isolate exposed installations meanwhile. Agrees with cur24-hackernoon-patched-versions and cur2-fixed-versions; the primary is php.net.",
+   "sources": [
+    "muycomputerpro-2026-10-28-cisa-confirma-la-explotacion"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-hindu-millions-exposed",
+   "verdict": "noted",
+   "reason": "Capture checked: an explainer saying millions of websites could be exposed, with the risk extending to businesses, government agencies and retailers; no figures, so nothing to compare. Not used.",
+   "sources": [
+    "thehindubusinessline-companies-what-is-the-php2shell-threat-a"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-spiegel-race-home-devices",
+   "verdict": "noted",
+   "reason": "Capture checked: the teaser (by Torsten Kleinz, 4 minutes' reading) says IT experts and attackers are racing over the flaw in millions of servers and that private users should also check home servers, routers and surveillance cameras. Teaser only; the body is behind a paywall, so the advice for home devices is not read in full. Not used.",
+   "sources": [
+    "spiegel-netzwelt-php-sicherheitsluecke-auf-websi"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-ammon-cisa-three-days",
+   "verdict": "agrees",
+   "reason": "Capture checked (Arabic, 28 October, relaying TechCrunch): CISA said hackers began exploiting both flaws and ordered civilian federal agencies to fix within three days, without naming who exploits them. Agrees with cur26-iphonemod-cisa-kev and the site's KEV account.",
+   "sources": [
+    "ammonnews-article-1040456"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-ammon-sites-offline",
+   "verdict": "agrees",
+   "reason": "Capture checked: some governments and large companies took sites out of service temporarily, per TechCrunch. A general statement without names; agrees with the site's offline claims and adds nothing to repeat.",
+   "sources": [
+    "ammonnews-article-1040456"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-cisa-no-exploitation-21oct",
+   "verdict": "agrees",
+   "reason": "Capture checked (French, 23 October): CISA said on 21 October it had not seen exploitation at the time of publication. Agrees with the site's story, which keeps CISA's 21 October alert as superseded by its 26 October listing; a point-in-time statement.",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-nsa-offline",
+   "verdict": "agrees",
+   "reason": "Capture checked: the NSA said on 21 October that organisations unable to update immediately should consider taking affected systems offline. Agrees with the site's offline-nsa (confirmed); the NSA alone, not the other agencies (offline-allies stays disputed).",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-shopify-ceo",
+   "verdict": "held back",
+   "reason": "Capture checked: Shopify's CEO called it 'the craziest day in cybersecurity in a long time' in a post of 22 October on X, as millions of attempts had been detected. The claim dates the day as 21 October; the page gives the post's date, not the day he meant. A quoted remark about attempts, not compromises. Not stated as worded.",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-huntress-details-leaked",
+   "verdict": "noted",
+   "reason": "Capture checked: Huntress warned early in the week that details had been disclosed online before the coordinated publication and before patches, and that attacks had been reported. Agrees with the site's disclosure account in substance; the later Huntress statement that it had not confirmed exploitation in its monitored environments (cur17-technoisy-huntress-no-exploitation) is a different point in time.",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-uk-32-services",
+   "verdict": "noted",
+   "reason": "Capture checked: a UK minister told the House of Lords on 22 October that 32 government services were unreachable and four partly so. The same figure is noted from VietNamNet and The Daily Star (cur19-vietnamnet-uk-32-services, cur24-dailystar-uk-32-services); Hansard is the primary and is not in the vault. Not used.",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-eu-offline",
+   "verdict": "held back",
+   "reason": "Capture checked: the Dutch part (the port of Rotterdam, government portals, the biggest parties, hospitals) rests on the press, and the site already marks the Dutch DigiD and MijnOverheid part overstated (nl-offline; fact-check desk, holds in part); this page also calls DigiD a data-protection authority, which it is not. Finland's Valtori taking public network services offline as a precaution agrees with fi-offline. The French interior ministry taking local-authority sites offline pending a fix is noted. Not stated as one claim.",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-epoch-cloudflare-escalation",
+   "verdict": "agrees",
+   "reason": "Capture checked: Cloudflare's CEO said in a post of 22 October on X that attempts rose from thousands in the 10 hours before the announcement to tens of thousands within 45 minutes, hundreds of thousands within two hours and millions that day. Agrees with cloudflare-attempts-not-compromises; attempts, not compromises.",
+   "sources": [
+    "epochtimes-cybersecurite-une-faille-de-securite-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-frenchweb-certfr-21oct",
+   "verdict": "noted",
+   "reason": "Capture checked (French): CERT-FR published an alert on 21 October for both CVEs. The page also says fixes were released the same day, which agrees with the site's release-time claim. The CERT-FR alert is the primary and is not in the vault.",
+   "sources": [
+    "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-frenchweb-glpi",
+   "verdict": "noted",
+   "reason": "Capture checked: GLPI's publisher says its cloud offer was fixed on 21 October and that self-hosted installations need a PHP update on the server. A vendor's statement about its own product, relayed.",
+   "sources": [
+    "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-frenchweb-ncsc-compromise",
+   "verdict": "noted",
+   "reason": "Capture checked: the NCSC recommends looking for signs of compromise and persistence, with a specialist where skills are lacking, because updating does not remove what an attacker left. Guidance relayed by a French outlet, not evidence of any compromise; the NCSC's own page is the primary.",
+   "sources": [
+    "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-techgoondu-foundation-staff",
+   "verdict": "held back",
+   "reason": "Capture checked: 'only one full-time staff with 14 mostly part-time contractors' is in the opinion piece, unsourced. It states a fact about the PHP Foundation's size; the Foundation's own post is the primary and is not in the vault. Not stated.",
+   "sources": [
+    "techgoondu-2026-10-28-more-flaws-like-php-issues-wi"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur27-techgoondu-japan-pm",
+   "verdict": "agrees",
+   "reason": "Capture checked: 'The Japanese Prime Minister Sanae Takaichi even urged people to check if their websites ran on PHP.' Agrees with cur27-infoarenales-japan-pm-call and cur3-jp-pm-emergency-order (a request, not an order).",
+   "sources": [
+    "techgoondu-2026-10-28-more-flaws-like-php-issues-wi"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-28T16:21Z",
+   "by": "claude-journalist"
   }
  ]
 }
