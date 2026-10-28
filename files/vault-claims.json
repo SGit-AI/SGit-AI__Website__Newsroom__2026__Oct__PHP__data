@@ -5516,5 +5516,281 @@
   "topic": "attribution",
   "note": "A general warning, no incident named; relevant to the many scanner and checker tools published this week.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-haendlerbund-honeypot-code-run",
+  "claim": "German retail trade press, relaying Golem.de, reports confirmed successful PHP2Shell attacks on a researcher's honeypot systems in which the attackers also executed their own code",
+  "by": "ohn.haendlerbund (relaying Golem.de)",
+  "sources": [
+   "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Secondhand and undated beyond the article's 27 October date; the honeypot report itself is recorded from other sources in this vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-haendlerbund-bitcoin-bait",
+  "claim": "The article reports that a researcher deliberately set up a PHP site vulnerable to PHP2Shell holding 0.025 bitcoin and invited attackers to take it, and that it was taken after just over 19 hours",
+  "by": "ohn.haendlerbund (relaying a researcher's account)",
+  "sources": [
+   "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A staged bait, not an attack on an unwitting victim. The researcher is named in the page and left out here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-haendlerbund-32m-unpatched",
+  "claim": "The article, citing Censys, puts about 42 million sites as affected by PHP2Shell, of which just over 10 million had been patched since 21 October, leaving about 32 million still vulnerable",
+  "by": "ohn.haendlerbund (citing Censys)",
+  "sources": [
+   "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A Censys-derived estimate relayed second hand; other counts in the vault differ in method.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-haendlerbund-offline",
+  "claim": "The article says several authorities and companies temporarily took their websites offline as a precaution to apply the patches",
+  "by": "ohn.haendlerbund",
+  "sources": [
+   "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "General statement, no organisations named.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-itfb-2024-audit",
+  "claim": "ITforBusiness reports, from the PHP Foundation's post, that the memory-handling problem behind CVE-2026-109618 was first glimpsed in 2024 during a Sovereign Tech Agency-funded audit, but no concrete exploitation vector was identified and the fix stalled for months because the security team could not choose between competing approaches",
+  "by": "ITforBusiness (relaying the PHP Foundation)",
+  "sources": [
+   "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Secondhand; check the foundation's own post before relying on the 2024 detail.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-itfb-leak-sequence",
+  "claim": "The article says the coordinated disclosure held until two days before the target date: on Tuesday 20 October around 17:00 Paris time the two CVE ids began to circulate with a wrong publication time and a CVSS of 10.0 instead of 9.2, the pre-advisory moved to 21:30 and publication was brought forward from Thursday 22 to Wednesday 21 October at 16:00",
+  "by": "ITforBusiness (relaying the PHP Foundation)",
+  "sources": [
+   "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Times are Paris time as given by the article. Other sources in the vault date the disclosure differently.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-itfb-calif-video",
+  "claim": "The article says that about 22:00 Paris time on 20 October one of the reporting researchers, Calif, mistakenly published a video of its proof of concept running against several targets, which was deleted but copied on social media and sped up exploit development",
+  "by": "ITforBusiness (relaying the PHP Foundation)",
+  "sources": [
+   "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "A claim about a named company's mistake as relayed second hand; not verified here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-itfb-ai-discovery",
+  "claim": "The article says AI-assisted research (an audit by Calif from 30 July, and OpenAI tooling) demonstrated within days the exploitability that months of internal deliberation had not, with the same root cause reported independently by Calif and OpenAI, and further vectors reported by Wiz on 24 August and OpenAI on 18 September",
+  "by": "ITforBusiness (relaying the PHP Foundation)",
+  "sources": [
+   "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Discovery history is as the foundation tells it, relayed by the article.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-itfb-report-flood",
+  "claim": "The article says that since 1 July the PHP security team published 15 CVEs and triaged more than a hundred invalid, duplicate or non-reproducible reports",
+  "by": "ITforBusiness (relaying the PHP Foundation)",
+  "sources": [
+   "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Counts as relayed; the foundation's own post and a post of 14 October are the sources.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-chosun-fortinet-guide",
+  "claim": "Fortinet published a PHP2Shell response guide recommending four steps: identify affected systems, test and deploy security updates and verify them in production, apply interim protections (IPS, WAF, virtual patching, restricting exposure), and investigate for compromise",
+  "by": "Chosun Biz (relaying Fortinet)",
+  "sources": [
+   "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Vendor guidance as relayed by the press, 27 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-chosun-fortinet-virtual-patch",
+  "claim": "Fortinet says FortiGuard Labs released a virtual patch and IPS signature for PHP2Shell, and that virtual patching and security appliances cannot block every attack, so the PHP security update remains necessary",
+  "by": "Chosun Biz (relaying Fortinet)",
+  "sources": [
+   "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Vendor statement about its own product.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-chosun-fortinet-not-affected",
+  "claim": "Fortinet says its main products (FortiGate, FortiManager, FortiAnalyzer, FortiWeb) are not affected by these vulnerabilities",
+  "by": "Chosun Biz (relaying Fortinet)",
+  "sources": [
+   "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "A vendor's own statement about its products; not independently verified.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-chosun-update-leaves-access",
+  "claim": "The article says applying the update does not remove access an attacker already obtained, so compromise should be investigated as well as patched",
+  "by": "Chosun Biz (relaying Fortinet)",
+  "sources": [
+   "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Guidance, not evidence of any compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-datanet-logpresso-scanner",
+  "claim": "Logpresso released a PHP2Shell vulnerability scanner for its SIEM and XDR products on 26 October, free to its customers, which checks registered URLs for the vulnerability and the PHP version found and keeps a history for rechecking after patching",
+  "by": "Datanet (relaying Logpresso)",
+  "sources": [
+   "datanet-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "tooling",
+  "note": "A vendor tool announcement; not tested here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-datanet-patches-8x",
+  "claim": "The PHP security team released security patches on 21 October for the supported PHP 8.2 to 8.5 versions, and the article says reports include versions since 5.4.0 in the affected range",
+  "by": "Datanet",
+  "sources": [
+   "datanet-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "The article's account; whether a given system is patched also depends on distribution and vendor advisories, as the article notes.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-datanet-scan-not-compromise",
+  "claim": "The article says a vulnerability scan does not reveal past compromise, so logs and system traces must be examined alongside patching",
+  "by": "Datanet (relaying Logpresso)",
+  "sources": [
+   "datanet-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Guidance, not evidence of any compromise.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-news1-kisa-no-attacks",
+  "claim": "A KISA official told News1, as of 25 October, that no attack cases linked to the PHP vulnerabilities had been reported to the agency and that it was continuing to monitor",
+  "by": "News1 (citing KISA)",
+  "sources": [
+   "news1-it-science-security-hacking-6330361"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "As of 25 October and about reports received by KISA, not a finding that no attacks occurred.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-news1-cyfirma-korean-group",
+  "claim": "CYFIRMA said on 22 October it had seen a Korean-speaking group discussing target selection and reconnaissance for attacks using the PHP flaws, collecting published exploit code and assessing it with AI, planning a first target list by 25 October",
+  "by": "News1 (citing CYFIRMA)",
+  "sources": [
+   "news1-it-science-security-hacking-6330361"
+  ],
+  "status": "reported",
+  "topic": "actors",
+  "note": "A vendor's observation of a forum discussion relayed second hand; intent, not an attack.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-news1-kr-caution-alert",
+  "claim": "The Korean government issued a cyber crisis 'caution' alert on 22 October and recommended that organisations update immediately",
+  "by": "News1",
+  "sources": [
+   "news1-it-science-security-hacking-6330361"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "As reported; the alert itself is held, if at all, in another source.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-news1-php81-eol",
+  "claim": "PHP 8.1 and older versions no longer receive official security fixes, so operators on them must change version; Cafe24 recommended this, and Gabia also applied backported patches or mitigations to unsupported versions",
+  "by": "News1",
+  "sources": [
+   "news1-it-science-security-hacking-6330361"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Hosting-provider statements as relayed.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-tvnet-certlv-6000",
+  "claim": "CERT.LV found about 6,000 potentially vulnerable resources in Latvia, only a few hundred of them in the public sector, and informed the private-sector operators of essential and critical services, hosts and telecoms that had vulnerable sites",
+  "by": "TVNET/LETA (citing CERT.LV)",
+  "sources": [
+   "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Latvia's national figure from CERT.LV's own checks, as of 27 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-tvnet-certlv-no-attacks",
+  "claim": "CERT.LV says no successful cyberattacks exploiting the critical PHP vulnerabilities had been found in Latvia, though attacker activity may increase and attack tools may be improved",
+  "by": "TVNET/LETA (citing CERT.LV)",
+  "sources": [
+   "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "National scope, as of 27 October; consistent with the same statement recorded from Jauns.lv (cur22-jauns-certlv-no-attacks).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur23-tvnet-new-vuln-26oct",
+  "claim": "CERT.LV says a new PHP vulnerability found on Monday 26 October is exploitable only under very specific system configurations, so no emergency patch is planned and the fix will ship with the other scheduled updates",
+  "by": "TVNET/LETA (citing CERT.LV)",
+  "sources": [
+   "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "A further flaw separate from the two PHP2Shell CVEs; no identifier is given in the page.",
+  "agent": "curator@php.newsroom"
  }
 ]

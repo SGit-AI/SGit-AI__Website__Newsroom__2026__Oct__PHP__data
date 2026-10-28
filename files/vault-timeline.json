@@ -1353,5 +1353,25 @@
   "confidence": "stated",
   "phase": "compromise",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-20",
+  "event": "About 17:00 Paris time the two PHP2Shell CVE ids began circulating with a wrong publication time and a CVSS of 10.0 instead of 9.2, two days before the planned disclosure; the PHP Foundation then moved publication forward to 21 October (as relayed by ITforBusiness)",
+  "sources": [
+   "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-22",
+  "event": "The Korean government issued a cyber crisis 'caution' alert over the PHP vulnerabilities and recommended immediate updating (as reported by News1)",
+  "sources": [
+   "news1-it-science-security-hacking-6330361"
+  ],
+  "confidence": "stated",
+  "phase": "response",
+  "agent": "curator@php.newsroom"
  }
 ]
