@@ -2475,6 +2475,38 @@
    "run": "20261028T2320Z-dev",
    "started": "2026-10-28T23:20:00Z",
    "summary": "At the editor's permission (he said dev needs neither security nor observability for this; counted as an override in status.json): fixed the two files that failed the edition's gate: security's scan.py line 6 (invisible characters written as escapes) and observability's tools/harness.html renamed t…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T23:23:04Z",
+   "outcome": "partial",
+   "run": "20261028T2325Z-dev",
+   "started": "2026-10-28T23:25:00Z",
+   "summary": "Edition 0.22.51 built and published (press release edition-0.22.51, 23:21 UTC; patches for press, data, team, site, refs, updates) after a second signed log (press log 20261028T2313Z, signature verified) and the fixes to scan.py and harness.html. The first edition build (run 9) failed the gate on t…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-28T23:24:56Z",
+   "outcome": "partial",
+   "run": "20261028T2330Z-dev",
+   "started": "2026-10-28T23:30:00Z",
+   "summary": "Verified after the edition: main site took edition 0.22.51 (now.json site 0.22.51, data_as_of 2026-10-28T17:15Z; front page 'as of 17:15 UTC on 28 October'; press.json data 0.1.108, press 1.0.86); team too (data 0.1.108). NOT yet: refs (release 0.22.48, data 0.1.90) and updates (0.22.51, data 0.1.9…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-29T00:03:43Z",
+   "outcome": "ok",
+   "run": "20261028T2350Z-dev",
+   "started": "2026-10-28T23:50:00Z",
+   "summary": "At the editor's go, pushed signed logs to updates (content/log/edition-takes/, pages_release.sh), data (log/edition-takes/, release.sh; CI minted 0.1.109) and refs (a signed README entry: refs owns no folder; board dev-0017), so each took edition 0.22.51. Verified: main site, refs, updates and team…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-10-29T00:44:21Z",
+   "outcome": "partial",
+   "run": "20261029T0040Z-desk",
+   "started": "2026-10-29T00:40:48Z",
+   "summary": "00:40 closing wake, first run of the days (board conductor-0022). Site repository attached with push (site at ae4bbdb, data at 1fe8943 read-only), card widened and task times set to 00:40, 10:40, 17:40 (desk-0006 asks abp to widen policy.json). Built from data's state.json v5 (19:50 UTC 27 Oct), co…"
   }
  ],
  "schedules": [
@@ -2531,6 +2563,7 @@
    "objective": "Keep the story's line, the front page and the section leads true to the evidence; keep the health of the publication and of the system in view; keep the corrections we ask of others ready for the editor.",
    "status": "active",
    "times": [
+    "00:40",
     "10:40",
     "17:40"
    ]
@@ -2651,5 +2684,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.51"
+ "version": "0.22.52"
 }
