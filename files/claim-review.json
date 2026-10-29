@@ -5564,19 +5564,19 @@
     "cypro-php2shell-exploit-roots-firewalls"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
    "id": "cur30-dream-24-plus-1",
    "verdict": "used",
-   "reason": "Checked: Dream's page gives 24 rooted firewalls plus an internal firewall-management server as the 25th. reported by Dream, not independently confirmed; the arithmetic is Dream's own. CyPro says the breakdown is not established by the primary findings (cur58-cypro-breakdown-not-established).",
+   "reason": "Checked: Dream's page gives 24 rooted firewalls plus an internal firewall-management server as the 25th. reported by Dream, not independently confirmed; the arithmetic is Dream's own, and its text is not fully consistent: it counts 24 firewalls rooted in an automated batch, says the second government firewall timed out in that batch and was rooted in a separate campaign, and counts it among the 24; the first rooted firewall crashed and never came back. Whether the 24 includes it is not clear from the page. CyPro says the breakdown is not established by the primary findings (cur58-cypro-breakdown-not-established).",
    "sources": [
     "dreamgroup-chained-php2shell-roots-25-servers",
     "cypro-php2shell-exploit-roots-firewalls"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5589,7 +5589,7 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5602,7 +5602,7 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5615,7 +5615,7 @@
     "cypro-php2shell-exploit-roots-firewalls"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5627,7 +5627,7 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5638,7 +5638,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5649,7 +5649,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5661,19 +5661,19 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
    "id": "cur38-dream-unknown-outcomes",
    "verdict": "used",
-   "reason": "Checked: Dream says the spray, backdoor-account and signing-key results were not among the artifacts it recovered, 'so we cannot determine the full extent of the compromise'. The Hacker News repeats it. This is what the report does not establish, and the compromise page says so beside the claim.",
+   "reason": "Checked: Dream says the spray, backdoor-account and signing-key results were not among the artifacts it recovered: 'This means we cannot determine the full extent of the compromise'. The Hacker News repeats it. This is what the report does not establish, and the compromise page says so beside the claim.",
    "sources": [
     "dreamgroup-chained-php2shell-roots-25-servers",
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5685,7 +5685,7 @@
     "cypro-php2shell-exploit-roots-firewalls"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5697,7 +5697,7 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5709,18 +5709,18 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
    "id": "cur42-dream-still-active",
    "verdict": "noted",
-   "reason": "Dream's page, as of its post on 26 October: the webshells on the other 22 firewalls and the tunnel into the government organisation are 'likely still active'. A vendor's estimate, unconfirmed, no later status in the vault; not used on a page.",
+   "reason": "Dream's page, as of its post on 26 October: Dream's page, as of its post on 26 October: the root webshells on the two government-affiliated firewalls and the management server, and the tunnel into the organisation, are 'likely still active'; it says flatly that the 22 other firewalls 'remain parked with active webshells'. Estimates by the vendor, unconfirmed, no later status in the vault; not used on a page.",
    "sources": [
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5732,7 +5732,7 @@
     "dreamgroup-hercules-on-prem-ai-vuln-model-cybergym"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5743,7 +5743,7 @@
     "dreamgroup-hercules-on-prem-ai-vuln-model-cybergym"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5754,7 +5754,7 @@
     "dreamgroup-multi-agent-ai-framework-asian-governme"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5765,7 +5765,7 @@
     "dreamgroup-multi-agent-ai-framework-asian-governme"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5777,7 +5777,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5789,7 +5789,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5801,7 +5801,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5813,7 +5813,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5824,7 +5824,7 @@
     "the-hacker-news-thehackernews-php2shell-roots-25-s"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5835,7 +5835,7 @@
     "the-next-web-php2shell-cisa-kev-dream-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5847,7 +5847,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5860,7 +5860,7 @@
     "cisa-alert-kev-20261026"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5871,7 +5871,7 @@
     "the-next-web-php2shell-cisa-kev-dream-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5882,7 +5882,7 @@
     "the-next-web-php2shell-cisa-kev-dream-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5894,7 +5894,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5906,7 +5906,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5918,7 +5918,7 @@
     "the-next-web-php2shell-cisa-kev-dream-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5929,7 +5929,7 @@
     "cypro-php2shell-exploit-roots-firewalls"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5941,7 +5941,7 @@
     "dreamgroup-chained-php2shell-roots-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5953,7 +5953,7 @@
     "cisa-kev-json"
    ],
    "where": "claims/review/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   },
   {
@@ -5966,7 +5966,7 @@
     "the-next-web-php2shell-cisa-kev-dream-25-servers"
    ],
    "where": "compromise/index.html",
-   "reviewed": "2026-10-29T01:50Z",
+   "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
   }
  ]

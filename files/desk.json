@@ -81,25 +81,25 @@
    "path": "data/story.json",
    "kept_by_before": "story-site",
    "checked_against": "6c07e190d81e",
-   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:50 UTC): moved to 00:09 UTC and 6c07e190d81e (681 sources); the 35 claims cur29 to cur63 reviewed; known[6] and open[2] now carry Dream Research's report of 25 servers as reported, not confirmed. 28 October (journalist, 18:42 UTC): moved to 17:15 UTC and 75668aedfb6d (675 sources); batch 28's 14 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 16:21 UTC): moved to 14:43 UTC and 66ea103c4741 (672 sources); batch 27's 24 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 13:44 UTC): moved to 12:24 UTC and 47a99d155a8d (664 sources); batch 26's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 11:29 UTC): moved to 09:45 UTC and fd0acfb4ae10 (661 sources); batch 25's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, new session): data_as_of and the exploitation paragraph's 'as of' moved to 07:11 UTC on 28 October (vault nnd3i8iw at 7d27c44bcfc5, 659 sources); every fact in the paragraph re-read against the 48 claims of batches 23 and 24 and still holds. data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The correspondent added Unit 42's withdrawal and Square Enix to that paragraph on 27 October. The CVE-2026-115560 question is the correspondent's; not re-read in full."
+   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:47 UTC): moved to 00:09 UTC and 6c07e190d81e (681 sources); the 35 claims cur29 to cur63 reviewed; known[6] and open[2] now carry Dream Research's report of 25 servers as reported, not confirmed. 28 October (journalist, 18:42 UTC): moved to 17:15 UTC and 75668aedfb6d (675 sources); batch 28's 14 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 16:21 UTC): moved to 14:43 UTC and 66ea103c4741 (672 sources); batch 27's 24 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 13:44 UTC): moved to 12:24 UTC and 47a99d155a8d (664 sources); batch 26's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 11:29 UTC): moved to 09:45 UTC and fd0acfb4ae10 (661 sources); batch 25's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, new session): data_as_of and the exploitation paragraph's 'as of' moved to 07:11 UTC on 28 October (vault nnd3i8iw at 7d27c44bcfc5, 659 sources); every fact in the paragraph re-read against the 48 claims of batches 23 and 24 and still holds. data_as_of and the exploitation paragraph's 'as of' moved to 19:13 UTC on 27 October (vault nnd3i8iw at 6f0d5c50bf12, 645 sources; every fact in the paragraph checked to hold at that time). The correspondent added Unit 42's withdrawal and Square Enix to that paragraph on 27 October. The CVE-2026-115560 question is the correspondent's; not re-read in full."
   },
   {
    "path": "data/claims.json",
    "kept_by_before": "story-site",
    "checked_against": null,
-   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:50 UTC): no-confirmed-compromise refreshed to 00:09 UTC on 29 October (vault 6c07e190d81e) and carries Dream Research's report beside it. Partly: no-confirmed-compromise refreshed to 19:13 UTC on 27 October (vault 6f0d5c50bf12, 645 sources, the 40 brk2-* claims reviewed): Craft CMS's pre-patch exploitation line names no victim, so the claim stands; eight sources added. The other claims not yet re-read."
+   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:47 UTC): no-confirmed-compromise refreshed to 00:09 UTC on 29 October (vault 6c07e190d81e) and carries Dream Research's report beside it. Partly: no-confirmed-compromise refreshed to 19:13 UTC on 27 October (vault 6f0d5c50bf12, 645 sources, the 40 brk2-* claims reviewed): Craft CMS's pre-patch exploitation line names no victim, so the claim stands; eight sources added. The other claims not yet re-read."
   },
   {
    "path": "data/impact.json",
    "kept_by_before": "story-site",
    "checked_against": "6c07e190d81e",
-   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:50 UTC): Dream Research's report added to the compromised ledger as reported, not confirmed. 28 October: two Bangladesh offline rows added (The Daily Star: Bangladesh Bank and three banks; the land ministry's services), vault 7d27c44bcfc5; other rows not re-read. BambooHR, the University of Basel and the Brazilian Army's SGEx added, vault 55b47c4d6af1; other rows not re-read in full. Vault 6f0d5c50bf12 checked: Craft CMS says 'several websites' went offline before the release, naming none, and WordPress advises self-hosted sites on old PHP to consider going offline; no organisation named, no row added."
+   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:47 UTC): Dream Research's report added to the compromised ledger as reported, not confirmed. 28 October: two Bangladesh offline rows added (The Daily Star: Bangladesh Bank and three banks; the land ministry's services), vault 7d27c44bcfc5; other rows not re-read. BambooHR, the University of Basel and the Brazilian Army's SGEx added, vault 55b47c4d6af1; other rows not re-read in full. Vault 6f0d5c50bf12 checked: Craft CMS says 'several websites' went offline before the release, naming none, and WordPress advises self-hosted sites on old PHP to consider going offline; no organisation named, no row added."
   },
   {
    "path": "data/compromise.json",
    "kept_by_before": "story-site",
    "checked_against": "6c07e190d81e",
-   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:50 UTC): moved to 00:09 UTC and 6c07e190d81e (681 sources); a dated 'reported, unconfirmed' row for Dream Research's 25-server report and its three relays, a layer and a would-change line; the statement stands (no named organisation). 28 October (journalist, 18:42 UTC): moved to 17:15 UTC and 75668aedfb6d (675 sources); batch 28's 14 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 16:21 UTC): moved to 14:43 UTC and 66ea103c4741 (672 sources); batch 27's 24 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 13:44 UTC): moved to 12:24 UTC and 47a99d155a8d (664 sources); batch 26's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 11:29 UTC): moved to 09:45 UTC and fd0acfb4ae10 (661 sources); batch 25's 10 claims reviewed, no new source names an organisation compromised. 28 October: as_of and the vault line moved to 07:11 UTC and 7d27c44bcfc5 (659 sources); no new source names an organisation compromised through php2shell. Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen) added; CISA's KEV listing of Google Brotli CVE-2026-111497 kept off the ledger, a different flaw (corrected by the correspondent on 27 October: this note had said it was added); the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
+   "note": "29 October (breaking@php.newsroom in the journalist's role, 01:47 UTC): moved to 00:09 UTC and 6c07e190d81e (681 sources); a dated 'reported, unconfirmed' row for Dream Research's 25-server report and its three relays, a layer and a would-change line; the statement stands (no named organisation). 28 October (journalist, 18:42 UTC): moved to 17:15 UTC and 75668aedfb6d (675 sources); batch 28's 14 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 16:21 UTC): moved to 14:43 UTC and 66ea103c4741 (672 sources); batch 27's 24 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 13:44 UTC): moved to 12:24 UTC and 47a99d155a8d (664 sources); batch 26's 10 claims reviewed, no new source names an organisation compromised. 28 October (journalist, 11:29 UTC): moved to 09:45 UTC and fd0acfb4ae10 (661 sources); batch 25's 10 claims reviewed, no new source names an organisation compromised. 28 October: as_of and the vault line moved to 07:11 UTC and 7d27c44bcfc5 (659 sources); no new source names an organisation compromised through php2shell. Batch 21: Cyfirma's Lazarus reconnaissance, StealMyBitcoin, Theori's CEO on no verified breach added, ZDNET's Mirai line joined to its row. Batch 22: Zscaler's decoy counts and CERT.LV's Latvian findings added. Vault 6f0d5c50bf12 (brk2): Craft CMS (exploitation before the fixes, no victim; Craft Cloud no known successful attacks), NETGEAR, Broadcom, Arista, Splunk and Salesforce (none seen) added; CISA's KEV listing of Google Brotli CVE-2026-111497 kept off the ledger, a different flaw (corrected by the correspondent on 27 October: this note had said it was added); the KEV page joined to the KEV row and The Hacker News to the Karimi row; as of 19:13 UTC on 27 October; searched count 645; head 6f0d5c50bf12. Not re-read in full."
   },
   {
    "path": "data/exploitation.json",
@@ -379,6 +379,46 @@
    "kind": "missing",
    "journalist_run": "breaking-0002 step 3",
    "fixed_in": "data and site, the correspondent's step (4 of 4) of breaking-0002, 27 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-29",
+   "what": "cur38-dream-unknown-outcomes put 'so we cannot determine the full extent of the compromise' in quotation marks as Dream's words; the page reads 'This means we cannot determine the full extent of the compromise.' The quote made verbatim.",
+   "file": "data: files/claim-review.json",
+   "kind": "verdict",
+   "journalist_run": "breaking-0005 step 3",
+   "fixed_in": "the correspondent's step (4 of 4) of breaking-0005, 29 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-29",
+   "what": "cur42-dream-still-active said Dream calls the webshells on the 22 other firewalls 'likely still active'. Dream says the 22 'remain parked with active webshells' and says 'likely still active' of the tunnel and the root webshells on the two government-affiliated firewalls and the management server. Reason rewritten to say which.",
+   "file": "data: files/claim-review.json",
+   "kind": "verdict",
+   "journalist_run": "breaking-0005 step 3",
+   "fixed_in": "the correspondent's step (4 of 4) of breaking-0005, 29 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-29",
+   "what": "cur30-dream-24-plus-1 called the arithmetic 'Dream's own' and passed it. Dream's text is not fully consistent: 24 firewalls rooted in a batch, the second government firewall timed out in that batch and was rooted in a separate campaign yet is counted among the 24, and the first crashed and never came back; whether the 24 includes it is not clear. Said in the verdict.",
+   "file": "data: files/claim-review.json",
+   "kind": "missing",
+   "journalist_run": "breaking-0005 step 3",
+   "fixed_in": "the correspondent's step (4 of 4) of breaking-0005, 29 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-29",
+   "what": "The 35 verdicts, 4 desk notes and the no-confirmed-compromise note were stamped 01:50 UTC (reviewed 2026-10-29T01:50Z) in a commit made at 01:47:02 UTC: three minutes ahead of the clock. Moved to 01:47. The release message also counts 14 used, 11 noted and 5 held back; the file holds 16 used, 7 agrees, 8 noted and 4 held back (35). Message not rewritten (a published commit).",
+   "file": "data: files/claim-review.json, files/desk.json, files/claims.json",
+   "kind": "as-of",
+   "journalist_run": "breaking-0005 step 3",
+   "fixed_in": "the correspondent's step (4 of 4) of breaking-0005, 29 October, for the editor's release"
+  },
+  {
+   "on": "2026-10-29",
+   "what": "The 'been hacked' answers in the readers' prose (site content/data/plain.json: the question, the front page's line, the 'right now' line and the impact page's description; content/data/questions.json: the question's short answer and its break-ins answer) still said 'no named organisation ... as of 17:15 UTC on 28 October' and did not mention Dream Research's report, while the story and the compromise ledger carried it. The as-of moved to 00:09 UTC on 29 October with the report added as reported, not confirmed, and its four sources.",
+   "file": "site: content/data/plain.json, content/data/questions.json",
+   "kind": "missing",
+   "journalist_run": "breaking-0005 step 3",
+   "fixed_in": "the correspondent's step (4 of 4) of breaking-0005, 29 October, for the editor's release"
   }
  ],
  "catches_about": "What the correspondent corrected in the journalist's work, one row per correction: when, what, the file, its kind (verdict, row, as-of, missing, contradiction), the journalist's run and the release that fixed it. Counted on /views/desk/, so the editor can see what a Sonnet journalist misses."
