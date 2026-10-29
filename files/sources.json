@@ -3715,6 +3715,52 @@
   "notes_md": "# Akute Warnung: PHP-Schwachstelle gefährdet Krypto-Dienste\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `de/news/btc-echo/news-krypto-boersen-akut-bedroht-kritische-php-luecke-239718`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nBTC-ECHO (German), 22 October: a critical PHP flaw puts crypto-infrastructure operators on alert after the emergency patches for CVE-2026-109618 and CVE-2026-109619, rated 9.2. It says that so far there is no evidence that large crypto exchanges or payment providers were compromised through PHP2Shell, and that many established exchanges isolate their web servers or use newer languages.\n\n> liegen bislang allerdings keine Nachweise dafür vor, dass große Krypto-Handelsplattformen oder Zahlungsdienstleister durch PHP2Shell kompromittiert wurden\n\n_Curator's translation:_ \"there is so far no evidence that large crypto trading platforms or payment providers have been compromised through PHP2Shell\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Akute Warnung: PHP-Schwachstelle gefährdet Krypto-Dienste\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `de`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "btgunlugu-php-guvenlik-aciklari-red-hat-yama-uyari",
+  "url": "https://www.btgunlugu.com/php-guvenlik-aciklari-red-hat-yama-uyarisi/",
+  "publisher": "BT Günlüğü",
+  "kind": "news",
+  "title": "Kritik PHP Güvenlik Açıkları: Red Hat’ten Acil Yama Uyarısı",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261029T144719Z",
+    "files": {
+     "headers.json": {
+      "sha256": "95282f04fe9581c6939c95c9f8cf82473e60e3a92388b555004cdcf947af87ae",
+      "bytes": 1614
+     },
+     "provenance.json": {
+      "sha256": "316ef7e3f67d3a6780f4c861ca4271f4ff75c6e5933ed93eaa087df74762442b",
+      "bytes": 1603
+     },
+     "rendered.html": {
+      "sha256": "7d41fb83a88f7f03e97103035090f447877e3147beef48cb0ae8a53d54c8065d",
+      "bytes": 40964
+     },
+     "screenshot.jpg": {
+      "sha256": "97c9a511eb3d5a7eddd1871288628958b4b54a10be10d25d2657711090db7af6",
+      "bytes": 75169
+     },
+     "text.txt": {
+      "sha256": "3218f7476fb3437d29d67bcabd1708e1e07d6155956dcdf5896d865317437a01",
+      "bytes": 659
+     }
+    },
+    "started_utc": "2026-10-29T15:15:02.196Z",
+    "status": 200,
+    "final_url": "https://www.btgunlugu.com/php-guvenlik-aciklari-red-hat-yama-uyarisi/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "tr",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T144719Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A very short Turkish IT-news teaser (BT Günlüğü) that the PHP flaws CVE-2026-109618 and CVE-2026-109619 have raised the risk of remote code execution...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Kritik PHP Güvenlik Açıkları: Red Hat’ten Acil Yama Uyarısı\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tr/news/btgunlugu/php-guvenlik-aciklari-red-hat-yama-uyarisi`, snapshot `20261029T144719Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T144719Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA very short Turkish IT-news teaser (BT Günlüğü) that the PHP flaws CVE-2026-109618 and CVE-2026-109619 have raised the risk of remote code execution on internet-facing servers and that Red Hat recommends applying verified and tested security patches without waiting for the regular maintenance schedule. Only the headline and a two-sentence standfirst are captured.\n\n> Red Hat, doğrulanmış ve test edilmiş güvenlik yamalarının olağan bakım takvimi beklenmeden uygulanmasını öneriyor.\n\n_Curator's translation:_ \"Red Hat recommends applying verified and tested security patches without waiting for the regular maintenance schedule.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Kritik PHP Güvenlik Açıkları: Red Hat’ten Acil Yama Uyarısı\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `tr`. A teaser of a few lines (about 600 characters), the rest of the article is not on the page; the capture shows no publication date. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "bursadabugun-haber-php-nedir-php2shell-guvenlik-acigi",
   "url": "https://www.bursadabugun.com/haber/php-nedir-php2shell-guvenlik-acigi-ne-anlama-geliyor-1958356.html",
   "publisher": "Bursada Bugün",
@@ -19142,6 +19188,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Astra Security launches free tools to help organisations identify PHP2Shell vulnerabilities\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/news/miltonkeynes/must-read-astra-security-launches-free-tools-to-help-organis`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nMilton Keynes Citizen, 23 October: a syndicated press release from Astra Security, a security vendor, announcing two free tools to help organisations assess their exposure to PHP2Shell and support remediation. Vendor marketing, repeated by several local news sites with the same text (also in the Peterborough Telegraph, Sunderland Echo and SussexWorld captures). The curator did not fetch or run the tools.\n\n> Astra Security has released two free tools to help organisations assess their exposure to the recently disclosed PHP2Shell vulnerabilities and support remediation efforts.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Astra Security launches free tools to help organisations identify PHP2Shell vulnerabilities\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "mishcon-news-php2shell-what-the-critical-php-vul",
+  "url": "https://www.mishcon.com/news/php2shell-what-the-critical-php-vulnerabilities-mean-for-your-organisation",
+  "publisher": "Mishcon de Reya",
+  "kind": "news",
+  "title": "What the critical PHP vulnerabilities mean for your organisation",
+  "published": "2026-10-22",
+  "captures": [
+   {
+    "stamp": "20261029T144719Z",
+    "files": {
+     "headers.json": {
+      "sha256": "7e37866a06de540ea8cffdb8d03ec3eb75f503d2fd562093a0540ddf912829ae",
+      "bytes": 976
+     },
+     "page.html": {
+      "sha256": "e0e5eaff04cfb01477b187dd95589920998ebd47833e99fa0ae2935ba82ef9f0",
+      "bytes": 173223
+     },
+     "provenance.json": {
+      "sha256": "d7f1d1393d4d7828ee10e554859d70d7a69b21a05cef3872de1c7492261561ba",
+      "bytes": 1781
+     },
+     "rendered.html": {
+      "sha256": "ba6e91fdfe93f16692380b31155c91b31f0b187f78dde50297069cb3e6d09e46",
+      "bytes": 190634
+     },
+     "screenshot.jpg": {
+      "sha256": "277ca372b7452fccb0d95985c2bcf2015a716b5eb64eaacd1d32c4b2037fea18",
+      "bytes": 430174
+     },
+     "text.txt": {
+      "sha256": "5cf1c90c251d85c16092b808e8259e7192d3227c145b15a36d8c041f4374fc5b",
+      "bytes": 10592
+     }
+    },
+    "started_utc": "2026-10-29T14:58:00.893Z",
+    "status": 200,
+    "final_url": "https://www.mishcon.com/news/php2shell-what-the-critical-php-vulnerabilities-mean-for-your-organisation"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T144719Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A UK law firm's client briefing (Mishcon de Reya, information stated as correct as of 22 October) on what the PHP vulnerabilities mean for an organisa...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# What the critical PHP vulnerabilities mean for your organisation\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/mishcon/news-php2shell-what-the-critical-php-vulnerabilities-mean-fo`, snapshot `20261029T144719Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T144719Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA UK law firm's client briefing (Mishcon de Reya, information stated as correct as of 22 October) on what the PHP vulnerabilities mean for an organisation. It says the flaws let an attacker take control of a web server with a crafted request, that technical details leaked before the fix and early attack attempts were reported, and that several governments and organisations took sites offline as a precaution. It points to the UK NCSC's alert, warns that suppliers and cloud services run PHP behind the scenes (the Dutch NCSC had listed more than 600 products from around 430 suppliers), warns that criminals use such headlines as bait for fake-patch scams, and lists steps: find where PHP is used, confirm the patched versions, follow the NCSC's advice to apply PHP's temporary mitigations or consider taking a system offline, check exposed systems for compromise, ask suppliers in writing, and brief staff. It closes with the firm's own assessment and incident-response services.\n\n> Patching closes the door, but it does not remove an intruder who is already inside.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"What the critical PHP vulnerabilities mean for your organisation\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. The capture shows no publication date; the page says its information is correct as of 22 October 2026. A client briefing that ends in the firm's own services, so the last section is marketing and is not recorded. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "mitel-misa-2026-0008",

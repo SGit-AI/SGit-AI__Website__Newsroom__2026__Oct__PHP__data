@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "7f1f7c9514b8",
-  "subject": "curator@php.newsroom: batch 31, three sources from the source watch (Cybersecurity Insiders, Sindonews Tekno, Metro Seoul): 5 claims cur31-  +24 ~3  [blobs:+27 trees:+13]",
+  "commit": "b08a131c66e6",
+  "subject": "curator@php.newsroom: batch 32, two sources from the source watch (Mishcon de Reya, BT Gunlugu): 4 claims cur32-  +15 ~3  [blobs:+18 trees:+10]",
   "commits": 50
  },
- "sources": 699,
- "captures": 765,
- "hashed_files": 4467,
+ "sources": 701,
+ "captures": 767,
+ "hashed_files": 4478,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-29T12:14Z",
+ "latest_capture": "2026-10-29T14:47Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

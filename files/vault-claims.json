@@ -7760,5 +7760,53 @@
   "topic": "scale",
   "note": "A share of systems by language, not a count of vulnerable systems; it concerns the Korean public sector.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur32-mishcon-dutch-ncsc-600",
+  "claim": "The article says the Dutch NCSC had by 22 October listed more than 600 products from around 430 suppliers that may be affected",
+  "by": "Mishcon de Reya (citing the Dutch NCSC)",
+  "sources": [
+   "mishcon-news-php2shell-what-the-critical-php-vul"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "A figure as of 22 October; the Dutch NCSC's own inventory grew later (see the 724-product inventory in the vault's NCSC-NL claim).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur32-mishcon-ncsc-uk-offline",
+  "claim": "Following the UK NCSC's advice, a system that cannot be updated quickly should have the temporary mitigations published by PHP applied, or be considered for taking offline until it can be fixed",
+  "by": "Mishcon de Reya (relaying the UK NCSC)",
+  "sources": [
+   "mishcon-news-php2shell-what-the-critical-php-vul"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The NCSC's own alert is the primary; bears on the disputed offline-allies claim, where the UK NCSC's advice is one of the points in dispute.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur32-mishcon-scam-warning",
+  "claim": "The firm warns that criminals routinely use high-profile vulnerabilities as bait and that organisations should expect emails, texts and calls impersonating IT providers, web hosts, software vendors or the NCSC urging an 'urgent PHP patch', noting that similar fake-patch campaigns have previously led to full compromise of website owners' sites",
+  "by": "Mishcon de Reya",
+  "sources": [
+   "mishcon-news-php2shell-what-the-critical-php-vul"
+  ],
+  "status": "reported",
+  "topic": "actors",
+  "note": "A warning of expected scams, not an observed PHP2Shell campaign; compare CERT.LV's warning about fake diagnostic tools (cur22-jauns-certlv-fake-tools).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur32-btgunlugu-redhat-patch-now",
+  "claim": "Red Hat recommends applying verified and tested security patches for the PHP flaws without waiting for the regular maintenance schedule",
+  "by": "BT Günlüğü (teaser, relaying Red Hat)",
+  "sources": [
+   "btgunlugu-php-guvenlik-aciklari-red-hat-yama-uyari"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "A vendor recommendation relayed in a teaser; Red Hat's own advisory is the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]
