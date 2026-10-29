@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "7e61dadde204",
-  "subject": "curator@php.newsroom: batch 30, eleven sources from the source watch (El Cronista, CIO, CybersecAsia, Tech Business News, ActualApp, Boerse Online, NIEDERLAUSITZ aktuell, Belgium 24, New-Facts, Korea Social Welfare Journal, EcoActu): 28 claims cur30-  +86 ~3  [blobs:+89 trees:+37]",
+  "commit": "7f1f7c9514b8",
+  "subject": "curator@php.newsroom: batch 31, three sources from the source watch (Cybersecurity Insiders, Sindonews Tekno, Metro Seoul): 5 claims cur31-  +24 ~3  [blobs:+27 trees:+13]",
   "commits": 50
  },
- "sources": 696,
- "captures": 762,
- "hashed_files": 4449,
+ "sources": 699,
+ "captures": 765,
+ "hashed_files": 4467,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-29T09:42Z",
+ "latest_capture": "2026-10-29T12:14Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

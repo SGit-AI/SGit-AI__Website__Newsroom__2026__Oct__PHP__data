@@ -7905,6 +7905,56 @@
   "notes_md": "# PHP2Shell, alert di ACN: \"Aggiornare subito, l'ha fatto solo il 18%\"\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/cybersecitalia/lalert-dellacn-in-italia-a-rischio-vulnerabilita-oltre-250mi`, snapshot `20261026T071149Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T071149Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nCyberSecItalia (Italian), 25 October, on an alert by Italy's National Cybersecurity Agency (ACN). From CSIRT Italia monitoring, ACN says 81.9% of PHP services with an identified version are potentially vulnerable; four days after the release, of 741,523 PHP services detected, 285,149 ran potentially vulnerable versions, and only about 18% of the Italian entities concerned had updated. ACN urges immediate updates, WAFs in blocking mode where rules exist, and taking services offline absent effective mitigations. The alert also names a further PHP flaw, CVE-2026-115560, with no patch yet; ACN says the fixes already issued for the first two do not resolve it and that the vendor has given a mitigation pending a patch. Exploitation conditions are left out of the notes.\n\n> emerge che l’81,9% dei servizi PHP con versione identificata risulta potenzialmente vulnerabile a PHP2Shell\n\n_Curator's translation:_ \"it emerges that 81.9% of PHP services with an identified version are potentially vulnerable to PHP2Shell.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell, alert di ACN: \"Aggiornare subito, l'ha fatto solo il 18%\"\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `it-IT`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "cybersecurity-insiders-offsec-launches-free-php2shell-lab-follo",
+  "url": "https://www.cybersecurity-insiders.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/",
+  "publisher": "cybersecurity-insiders",
+  "kind": "news",
+  "title": "OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery - Cybersecurity Insiders",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261029T121438Z",
+    "files": {
+     "headers.json": {
+      "sha256": "ad84348a7ef185c4b6def8b185b5dbea2933594362e2ecbca58a8b75c9cf9eea",
+      "bytes": 1786
+     },
+     "page.html": {
+      "sha256": "f54f73131fe0363c2bc34e4d82084f196e36e60d31fc8c0bb8e62ec6e9983bf8",
+      "bytes": 206586
+     },
+     "provenance.json": {
+      "sha256": "575984c48a94b2755973433b45465e257545fa22b66981b4c50dab4b49115008",
+      "bytes": 1892
+     },
+     "rendered.html": {
+      "sha256": "442a05ae4d68772c8b3d90dc5d9da7a29f4f62dd6fc4327de6055b9cffbfbc2e",
+      "bytes": 211864
+     },
+     "screenshot.jpg": {
+      "sha256": "dd31f4a126fa13f8a26aafc8a8d207660d35de22d41aabe34a46b5ac1b8ac911",
+      "bytes": 604154
+     },
+     "text.txt": {
+      "sha256": "af52cde96d8623a78e372c0ca79dc5a8886d7e3562fb77c500f79ebf29ed0bd7",
+      "bytes": 9339
+     }
+    },
+    "started_utc": "2026-10-29T12:18:01.023Z",
+    "status": 200,
+    "final_url": "https://www.cybersecurity-insiders.com/offsec-launches-free-php2shell-lab-following-critical-vulnerability-discovery/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en-US",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T121438Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). The same OffSec press release already recorded from CIO (source cio-article-4241957-offsec-launches-free-php, claims cur30-cio-): the security-trainin...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery - Cybersecurity Insiders\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/cybersecurity-insiders/offsec-launches-free-php2shell-lab-following-critical-vulner`, snapshot `20261029T121438Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T121438Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThe same OffSec press release already recorded from CIO (source cio-article-4241957-offsec-launches-free-php, claims cur30-cio-): the security-training company announces a free hands-on PHP2Shell lab in Proving Grounds Play, recaps the Wiz timeline from 19 August, the disclosure on 21 October, Amazon's 'broadly exploited' remark, the honeypot confirmation by 24 October, CISA's KEV listing on 26 October and the separate flaw CVE-2026-115560 disclosed on 23 October without a fix, and ends with a patch-and-protect checklist. This copy shows OffSec's staff quotes in capital letters.\n\n> CISA added both flaws to its Known Exploited Vulnerabilities catalog on Oct. 26.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery - Cybersecurity Insiders\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. A republication of a vendor's promotional press release, not independent of the CIO copy; its claims are recorded once, from the CIO source (cur30-cio-wiz-dates, cur30-cio-amazon-broadly-exploited, cur30-cio-third-flaw-no-fix, cur30-cio-offsec-lab), so no claims are added here. The release describes how the flaws work, temporary configuration measures and says a proof-of-concept exploit is on a public exploit database; none is copied. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "cybersecurity360-nuove-minacce-php2shell-due-vulnerabilit",
   "url": "https://www.cybersecurity360.it/nuove-minacce/php2shell-due-vulnerabilita-critiche-in-php-come-proteggere-i-server-in-attesa-delle-patch/",
   "publisher": "Cyber Security 360",
@@ -18942,6 +18992,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# How worried should we be about the PHP cybersecurity crisis? | News Tech | Metro News\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/news/metro/2026-10-22-worried-php-cybersecurity-crisis-29730161`, snapshot `20261029T071401Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T071401Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA UK tabloid explainer (Metro, 22 October) asking how worried ordinary people should be about the PHP flaws. It says about 70% of websites use PHP, that the PHP Foundation announced on Tuesday an update for the following day, that security agencies 'from the UK and the US to China and Japan' called on websites to go dark if they cannot update, and that UK ministers took 32 government services down that day to carry out the fix and announced a 'Be Ready' campaign. It quotes experts: a worry that hackers could reverse-engineer the patches before sites update, a Malwarebytes researcher that attackers can hide behind trusted sites and that a hacked shop's check-out could be edited to skim cards, and a media company's security head that there was still no definite proof the holes had been exploited, so no reason to stop browsing, only to beware suspicious messages. It reports Calif's discovery, OpenAI's remark that the bugs are among the most impactful security issues in recent memory, researchers' reports of 'millions' of attempts, and that the Internet Archive said it was 'attacked' the day before and is back up.\n\n> there’s still no definite proof these PHP holes have been exploited\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"How worried should we be about the PHP cybersecurity crisis? | News Tech | Metro News\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. General-audience explainer relaying experts and vendors second hand. The Internet Archive's statement of an attack is reported in the same article without a link to PHP2Shell and is not recorded as one. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "metroseoul-article-20261029500571",
+  "url": "https://www.metroseoul.co.kr/article/20261029500571",
+  "publisher": "메트로신문",
+  "kind": "news",
+  "title": "AI가 앞당긴 해킹 시계…PHP 취약점에 한국도 표적 되나",
+  "published": "2026-10-29",
+  "captures": [
+   {
+    "stamp": "20261029T121438Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2902a950baa314f6f77a437f6c846c7beaf94718ee2c1ffc5258a353cd27acec",
+      "bytes": 673
+     },
+     "page.html": {
+      "sha256": "006f067985c62de75eb34500e1c31359e904fb5910b87d82e0cf1458d4ef8920",
+      "bytes": 77042
+     },
+     "provenance.json": {
+      "sha256": "040a41e0c46fe16d6d650d0dcd6080267a1fc4c358db8d14366f6cedd630b5d9",
+      "bytes": 1600
+     },
+     "rendered.html": {
+      "sha256": "3439be4f2f3a009ff6492cf7d26c02370f313407bd942c5d3db21bdbcbee2950",
+      "bytes": 440096
+     },
+     "screenshot.jpg": {
+      "sha256": "8ca46281f23b8957d7f3fd13715497141babae1913b6d6a07bc2511503aaf5f7",
+      "bytes": 433887
+     },
+     "text.txt": {
+      "sha256": "aa8d305e2c73814be489bbd56e9c83e91e8799f665b04f1632057bdb815e0f78",
+      "bytes": 24955
+     }
+    },
+    "started_utc": "2026-10-29T12:36:28.570Z",
+    "status": 200,
+    "final_url": "https://www.metroseoul.co.kr/article/20261029500571"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ko",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T121438Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Korean business-press analysis (Metro Seoul, 29 October) asking whether Korea is a target after the PHP flaws. It says attack attempts have continue...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# AI가 앞당긴 해킹 시계…PHP 취약점에 한국도 표적 되나\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `kr/news/metroseoul/article-20261029500571`, snapshot `20261029T121438Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T121438Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Korean business-press analysis (Metro Seoul, 29 October) asking whether Korea is a target after the PHP flaws. It says attack attempts have continued worldwide, that industry reports no damage confirmed in Korea so far, that the Israeli research outfit Dream Research reported attacks aimed at 240 firewalls in Korea, the US, Japan and Taiwan and intrusion into administrator rights on about 25 US government servers, and that honeypots recorded attempts. It adds that, per the interior ministry's 2025 statistics, about 71% of 17,902 public-sector information systems use Java and only about 6% PHP, that small firms using PHP outside core systems are a worry, that the government raised the private-sector alert to 'caution' on 22 October and is considering emergency patch support for small firms, and that Korean security firms have released PHP2Shell check tools.\n\n> 아직까지 국내에서 확인된 피해는 없다.\n\n_Curator's translation:_ \"So far no damage has been confirmed in Korea.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"AI가 앞당긴 해킹 시계…PHP 취약점에 한국도 표적 되나\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ko`. The capture shows no publication date; the text says 29 October. The page ends with unrelated news snippets (housing, chips, a phone launch) and the article's lead image is noted as made with generative AI. The Dream Research figures are the outlet's relay of the research group's report; the breaking desk's own coverage of that report is in the vault (breaking-0005). Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "microsoft-dotnet-october-2026-oob-security-updates",
@@ -30217,6 +30317,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Celah Keamanan \"PHP2Shell\" Berpotensi Ancam 70 Persen Website di Dunia\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/tekno-kompas/read-2026-10-22-14200007-celah-keamanan-php2shell-berpotensi`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nKompas Tekno (Indonesia), 22 October: PHP2Shell potentially threatens 70% of the world's websites. It stresses that W3Techs' figure of about 70% refers to the share of sites with an identifiable server-side language that use PHP, not to the number confirmed vulnerable or attacked; cites Wiz Research's report of 21 October that the flaws are in PHP's core and allow remote code execution without authentication, and links to related coverage of government and hospital sites being closed. It is a general explainer.\n\n> Adapun angka 70 persen ini merujuk pada luasnya penggunaan PHP, bukan jumlah situs web yang dipastikan memiliki celah keamanan atau telah menjadi korban serangan siber.\n\n_Curator's translation:_ \"The figure of 70 percent refers to the wide use of PHP, not the number of websites confirmed to have the vulnerability or to have fallen victim to a cyber attack.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Kompas Tekno explainer based on Wiz Research (W3Techs 70%, RCE and memory disclosure, AI tools used). The related-article list includes local and regional headlines: BSSN warning, Japan cyber emergency and the Korean president ordering an investigation, Nepal government sites closed, government and hospital sites shut.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Celah Keamanan \"PHP2Shell\" Berpotensi Ancam 70 Persen Website di Dunia\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "tekno-sindonews-read-1763797-207-mengenal-php2shell-cela",
+  "url": "https://tekno.sindonews.com/read/1763797/207/mengenal-php2shell-celah-kritis-di-bahasa-pemrograman-yang-menghidupi-70-situs-dunia-1792725003",
+  "publisher": "Sindonews Tekno",
+  "kind": "news",
+  "title": "Mengenal PHP2Shell, Celah Kritis di Bahasa Pemrograman yang Menghidupi 70% Situs Dunia",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261029T121438Z",
+    "files": {
+     "headers.json": {
+      "sha256": "52980d5ec9cf42ab0d74ff688695b54c5610154d7d449f71e72982a7c8a6a0b7",
+      "bytes": 1015
+     },
+     "page.html": {
+      "sha256": "04eadf41ce2ca036d198d03eb187bffddadc5711dbc781fec84bb4c667be2085",
+      "bytes": 143022
+     },
+     "provenance.json": {
+      "sha256": "c30e90b69d9d1679388ec16e8255fa6a34f4de37e523f3dcfde6bd93028212f7",
+      "bytes": 1901
+     },
+     "rendered.html": {
+      "sha256": "ef80d740af7d256f397ac68cc38e9894d9514be5fda355ddcb7da6a15ce20e53",
+      "bytes": 156302
+     },
+     "screenshot.jpg": {
+      "sha256": "d76565a7a48f6096392ad0e3d8d4fcab8e88836f67059ae61d201a5df1dcd166",
+      "bytes": 318958
+     },
+     "text.txt": {
+      "sha256": "193089bdad8d004b7c32b8b3229826a85fa340756a4176b8af30223c641e5cfe",
+      "bytes": 4411
+     }
+    },
+    "started_utc": "2026-10-29T12:30:19.157Z",
+    "status": 200,
+    "final_url": "https://tekno.sindonews.com/read/1763797/207/mengenal-php2shell-celah-kritis-di-bahasa-pemrograman-yang-menghidupi-70-situs-dunia-1792725003"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "id-ID",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T121438Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A short Indonesian tech-news explainer (Sindonews Tekno): two critical flaws in PHP, used by nearly 70% of websites whose server-side language is know...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Mengenal PHP2Shell, Celah Kritis di Bahasa Pemrograman yang Menghidupi 70% Situs Dunia\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/tekno-sindonews/read-1763797-207-mengenal-php2shell-celah-kritis-di-bahasa-p`, snapshot `20261029T121438Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T121438Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA short Indonesian tech-news explainer (Sindonews Tekno): two critical flaws in PHP, used by nearly 70% of websites whose server-side language is known, led some European government sites to be switched off temporarily on Wednesday 21 October, and the US National Security Agency asked organisations to patch immediately or turn off their servers. It names the two CVEs and the 9.2 CVSS 4.0 score and says the flaw is in PHP itself, so even well-written application code is exposed, citing Wiz Research that even a simple 'Hello World' app on a vulnerable PHP version can be attacked.\n\n> Badan Keamanan Nasional Amerika Serikat (NSA) juga meminta organisasi segera memasang patch atau mematikan servernya.\n\n_Curator's translation:_ \"The US National Security Agency (NSA) also asked organisations to install the patch immediately or switch off their servers.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Mengenal PHP2Shell, Celah Kritis di Bahasa Pemrograman yang Menghidupi 70% Situs Dunia\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id-ID`. The capture shows no publication date; the text refers to Wednesday 21 October. Sidebar headlines of related Sindonews articles (on Indonesian servers and government sites) are not themselves captured here and are not recorded. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "teknoblog-php-icin-acil-guncelleme-iki-kritik-guve",

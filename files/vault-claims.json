@@ -7700,5 +7700,65 @@
   "topic": "impact",
   "note": "General reassurance in an explainer; no figures.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur31-sindonews-nsa-patch-or-off",
+  "claim": "The NSA asked organisations to install the patch immediately or switch off their servers",
+  "by": "Sindonews Tekno",
+  "sources": [
+   "tekno-sindonews-read-1763797-207-mengenal-php2shell-cela"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The NSA is one agency among several; consistent with the NSA's advice relayed in cur27-epoch-nsa-offline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur31-sindonews-eu-sites-off",
+  "claim": "Some European government websites were switched off temporarily on Wednesday 21 October because of the flaws",
+  "by": "Sindonews Tekno",
+  "sources": [
+   "tekno-sindonews-read-1763797-207-mengenal-php2shell-cela"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "General statement without names.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur31-metroseoul-no-kr-damage",
+  "claim": "As of 29 October, industry sources told Metro Seoul that no damage from the PHP2Shell flaws had been confirmed in Korea",
+  "by": "Metro Seoul",
+  "sources": [
+   "metroseoul-article-20261029500571"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Scope is Korea, on one outlet's report; compare cur23-news1-kisa-no-attacks (KISA, 25 October).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur31-metroseoul-dream-research",
+  "claim": "The Israeli cyber-security research group Dream Research reportedly identified attacks aimed at 240 firewalls in Korea, the United States, Japan, Taiwan and other countries, and an intrusion into the administrator rights of about 25 US government servers",
+  "by": "Metro Seoul (relaying Dream Research)",
+  "sources": [
+   "metroseoul-article-20261029500571"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "One research group's report relayed second hand; the link to PHP2Shell is the outlet's framing. See the breaking desk's sources on the same report (breaking-0005); do not cite as a confirmed intrusion.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur31-metroseoul-kr-java-share",
+  "claim": "According to the interior ministry's 2025 statistics of public-sector information resources, about 71% of 17,902 public-sector information systems use Java and only about 6% use PHP",
+  "by": "Metro Seoul (citing the interior ministry)",
+  "sources": [
+   "metroseoul-article-20261029500571"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A share of systems by language, not a count of vulnerable systems; it concerns the Korean public sector.",
+  "agent": "curator@php.newsroom"
  }
 ]
