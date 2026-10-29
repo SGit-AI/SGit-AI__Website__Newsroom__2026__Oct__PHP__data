@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "9329f83535bc",
-  "message": "researcher@php.newsroom: pass 20261029T0706Z phase 2 of 2: discovery"
+  "commit": "27df5636ef1c",
+  "message": "researcher@php.newsroom: pass 20261029T0934Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "27df5636ef1c",
+   "message": "researcher@php.newsroom: pass 20261029T0934Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "21c7f5392ebc",
+   "message": "researcher@php.newsroom: pass 20261029T0934Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "9329f83535bc",
    "message": "researcher@php.newsroom: pass 20261029T0706Z phase 2 of 2: discovery"
@@ -185,58 +193,54 @@
   {
    "commit": "4083a49ef208",
    "message": "researcher@php.newsroom: pass 20261025T1507Z"
-  },
-  {
-   "commit": "0370c7b17b1e",
-   "message": "researcher@php.newsroom: pass 20261025T1232Z"
   }
  ],
- "pages": 1470,
- "publishers": 1093,
+ "pages": 1491,
+ "publishers": 1114,
  "country": {
   "us": 319,
   "int": 233,
-  "nl": 82,
-  "de": 64,
+  "nl": 83,
+  "de": 67,
   "gb": 58,
   "fr": 53,
-  "kr": 49,
+  "kr": 51,
+  "au": 46,
   "jp": 43,
-  "au": 42,
   "tr": 36,
   "it": 34,
-  "ch": 30,
+  "ch": 31,
   "br": 29,
+  "be": 27,
   "id": 27,
-  "be": 26,
   "in": 25,
-  "ar": 22,
-  "eg": 21,
+  "ar": 23,
+  "eg": 22,
   "ca": 20,
   "at": 17,
-  "es": 15,
+  "es": 16,
   "ro": 14,
   "hk": 13,
   "cz": 12,
   "th": 12,
   "ie": 11,
   "pl": 11,
+  "pt": 11,
   "sg": 11,
-  "pt": 10,
   "vn": 10,
+  "fi": 9,
   "tw": 9,
-  "fi": 8,
+  "eu": 8,
   "nz": 8,
   "sa": 8,
-  "eu": 7,
   "lv": 7,
   "hu": 6,
+  "mx": 6,
   "za": 6,
   "bg": 5,
+  "cl": 5,
   "cn": 5,
-  "mx": 5,
   "se": 5,
-  "cl": 4,
   "co": 4,
   "lu": 4,
   "ua": 4,
@@ -251,13 +255,14 @@
   "ai": 1,
   "dk": 1,
   "io": 1,
+  "ma": 1,
   "no": 1,
   "pe": 1,
   "re": 1,
   "tn": 1
  },
  "sector": {
-  "news": 771,
+  "news": 792,
   "affected": 196,
   "aggregator": 140,
   "cert": 94,
@@ -276,15 +281,15 @@
   "tool": 1
  },
  "lang": {
-  "en": 688,
-  "de": 95,
-  "fr": 95,
-  "nl": 66,
-  "es": 65,
-  "ko": 49,
-  "pt": 46,
-  "ar": 41,
-  "it": 38,
+  "en": 691,
+  "de": 99,
+  "fr": 97,
+  "es": 69,
+  "nl": 67,
+  "ko": 51,
+  "pt": 47,
+  "ar": 42,
+  "it": 39,
   "tr": 37,
   "ja": 33,
   "id": 29,
@@ -294,17 +299,17 @@
   "th": 18,
   "pl": 14,
   "vi": 13,
-  "fi": 10,
+  "fi": 11,
   "lv": 10,
   "hu": 9,
   "bg": 8,
   "uk": 7,
   "sv": 6,
   "el": 5,
+  "lt": 5,
   "ms": 5,
   "sk": 5,
   "he": 4,
-  "lt": 4,
   "nb": 4,
   "et": 3,
   "da": 2,
@@ -312,24 +317,24 @@
   "sl": 1
  },
  "access": {
-  "open": 1252,
-  "bot-challenge": 104,
-  "down": 78,
-  "paywalled": 23,
-  "gone": 11,
+  "open": 1281,
+  "bot-challenge": 110,
+  "down": 64,
+  "paywalled": 22,
+  "gone": 12,
   "login-wall": 2
  },
  "tiers": {
   "A": 76,
-  "B": 1044,
+  "B": 1056,
   "C": 16
  },
- "snapshots": 5842,
- "graphs": 5819,
- "files": 48462,
+ "snapshots": 6678,
+ "graphs": 6655,
+ "files": 54402,
  "world_graph": {
-  "nodes": 2675,
-  "edges": 5334
+  "nodes": 2718,
+  "edges": 5418
  },
  "access_classes": [
   {
@@ -1906,6 +1911,38 @@
     "bot-challenge": 91,
     "down": 41,
     "paywalled": 23,
+    "gone": 8,
+    "login-wall": 2
+   }
+  },
+  {
+   "run": "20261029T093555Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-29T09:35:55Z",
+   "finished": "2026-10-29T09:42:06Z",
+   "pages_due": 196,
+   "pages_total": 1491,
+   "changed": 66,
+   "access": {
+    "open": 149,
+    "bot-challenge": 14,
+    "down": 32,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261029T094207Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-29T09:42:07Z",
+   "finished": "2026-10-29T10:15:17Z",
+   "pages_due": 1184,
+   "pages_total": 1491,
+   "changed": 770,
+   "access": {
+    "open": 1035,
+    "bot-challenge": 92,
+    "down": 25,
+    "paywalled": 22,
     "gone": 8,
     "login-wall": 2
    }
