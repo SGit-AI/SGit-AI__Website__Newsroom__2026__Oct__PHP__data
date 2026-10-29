@@ -7364,5 +7364,341 @@
   "topic": "response",
   "note": "The bodies' own statements, as relayed; part of the same News.ro report as cur26-protv-dnsc-17416, not independent of it.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cronista-colcert",
+  "claim": "Colombia's national incident-response team Colcert issued a critical alert, reported more than 8,600 PHP services exposed to the internet and recommended an inventory of where PHP runs as the first step",
+  "by": "El Cronista (sponsored content, citing Colcert)",
+  "sources": [
+   "cronista-contenido-patrocinado-php2shell-la-vulne"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A presence count of exposed services, not of vulnerable or compromised ones; relayed in a vendor's marketing piece.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cronista-distro-backports",
+  "claim": "Linux distributions such as Ubuntu incorporate the fix without changing PHP's original version number, so a server can look vulnerable in a spreadsheet and be protected, or the reverse",
+  "by": "El Cronista (sponsored content)",
+  "sources": [
+   "cronista-contenido-patrocinado-php2shell-la-vulne"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Consistent with cur25 and cur26 notes on backports (cur24-tecnoandroid-lts-backports).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cio-wiz-dates",
+  "claim": "Wiz researchers found the first flaw on 19 August, used it the next day to take over a Drupal site without a password and the day after on WordPress",
+  "by": "CIO (OffSec press release)",
+  "sources": [
+   "cio-article-4241957-offsec-launches-free-php"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Consistent with Wiz's own timeline as relayed in cur28-okdiario-wiz-timeline (19 August).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cio-amazon-broadly-exploited",
+  "claim": "The release says Amazon calls PHP2Shell broadly exploited in the wild, that by 24 October researchers had confirmed attackers running commands on vulnerable honeypot servers, and that CISA added both flaws to its KEV catalog on 26 October",
+  "by": "CIO (OffSec press release)",
+  "sources": [
+   "cio-article-4241957-offsec-launches-free-php"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A vendor's summary of other parties' statements; the KEV date matches cur28-cozumpark-kev-26-29oct.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cio-third-flaw-no-fix",
+  "claim": "On 23 October PHP disclosed a separate flaw, CVE-2026-115560, that can affect fully patched servers with an unusual session setup, and at the time of writing PHP had no fix for it",
+  "by": "CIO (OffSec press release)",
+  "sources": [
+   "cio-article-4241957-offsec-launches-free-php"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "See also cur24-cybersecbr-third-flaw and cur25-sbircia-advisory-23oct; the conditions are not repeated here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cio-offsec-lab",
+  "claim": "OffSec released a free hands-on PHP2Shell lab in its Proving Grounds Play service for penetration testers and defenders",
+  "by": "CIO (OffSec press release)",
+  "sources": [
+   "cio-article-4241957-offsec-launches-free-php"
+  ],
+  "status": "reported",
+  "topic": "tooling",
+  "note": "A vendor announcement; not tested here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cybersecasia-censys-36-7m",
+  "claim": "Censys's PHP2Shell dashboard, in a 22 October snapshot, identified about 36.7 million internet-facing services reporting potentially affected PHP versions; the author notes these are service counts, not unique servers or organisations, and may include installations already patched through vendor backports",
+  "by": "CybersecAsia (Fortinet author, citing Censys)",
+  "sources": [
+   "cybersecasia-tips-understanding-php2shell-vulnerabili"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A different base from the other Censys figures in the vault: 1.5 million of 2.6 million servers (cur27-infoarenales-censys-1-5m) and over 32.51 million services (cur27-muycomputerpro-censys-32m).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-cybersecasia-fortinet-guidance",
+  "claim": "A Fortinet threat-intelligence director advises organisations to patch affected PHP runtimes urgently, verify deployments, apply interim protections, investigate possible compromise, and assign each affected service an owner and a remediation timeline",
+  "by": "CybersecAsia (Fortinet author)",
+  "sources": [
+   "cybersecasia-tips-understanding-php2shell-vulnerabili"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Vendor guidance; compare cur23-chosun-fortinet-guide.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-synology-affected-packages",
+  "claim": "Synology says the affected packages are Calendar, IDrive, Joomla, KodExplorer, MailStation, MediaWiki, phpMyAdmin, vtigerCRM, Web Station and WordPress, with exposure limited to systems running certain PHP-dependent packages, and that its own Synology Drive service is unaffected",
+  "by": "Tech Business News (relaying Synology)",
+  "sources": [
+   "techbusinessnews-news-synology-issues-urgent-update-warni"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "A vendor's statement about its own products; the advisory is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-synology-dsm-fixes",
+  "claim": "In a 28 October statement Synology confirmed PHP updates for DSM 7.4 and 7.3 and for end-of-life DSM 7.2, 7.1 and 7.0, with a DSM 6.2 patch planned for 29 October, and advised owners of versions earlier than 6.2 to disable affected packages temporarily",
+  "by": "Tech Business News (relaying Synology)",
+  "sources": [
+   "techbusinessnews-news-synology-issues-urgent-update-warni"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "The DSM 6.2 patch is described as planned, not as available.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-synology-package-versions",
+  "claim": "Synology's advisory lists Calendar version 3.0.4-21435 or later and MailStation version 30000002.3.19-20333 or later as fixed releases, and says PHP 7.3 will receive no fix",
+  "by": "Tech Business News (relaying Synology)",
+  "sources": [
+   "techbusinessnews-news-synology-issues-urgent-update-warni"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "MailStation needs a separate manual update through Package Center, per the article.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-synology-internal-php",
+  "claim": "Synology says DSM's internal PHP component has no externally accessible modules and presents minimal risk, with a fix planned for a later DSM release",
+  "by": "Tech Business News (relaying Synology)",
+  "sources": [
+   "techbusinessnews-news-synology-issues-urgent-update-warni"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "A vendor's own risk assessment of its product; not independently verified.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-actualapp-cant-check-by-visit",
+  "claim": "The article says it is not possible to reliably confirm whether a server has the vulnerabilities simply by visiting its website, and that a site owner should check the installed PHP version with the host or in the WordPress administration",
+  "by": "ActualApp",
+  "sources": [
+   "actualapp-tutoriales-vulnerabilidad-critica-php-we"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Advice, not a measured finding.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-boerse-bsi-orange-offline",
+  "claim": "Germany's BSI issued a cybersecurity warning at level 3 / Orange (extraordinarily high) and said that, if patches cannot be installed quickly, a temporary disconnection of the web server from the internet can be considered to prevent a compromise",
+  "by": "Börse Online (quoting the BSI)",
+  "sources": [
+   "boerse-online-nachrichten-aktien-riesige-php-sicherhei"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The BSI is one of the agencies that did give such advice, unlike the Netherlands, Italy, Japan and New Zealand in the disputed offline-allies claim; the BSI's own warning is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-boerse-mainz-offline",
+  "claim": "The city of Mainz deactivated several municipal internet services and its central portal mainz.de after the federal warning, with offices and citizens' bureaus reachable by phone and email",
+  "by": "Börse Online (citing the city administration)",
+  "sources": [
+   "boerse-online-nachrichten-aktien-riesige-php-sicherhei"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A precautionary outage; the date of restoration is not given.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-boerse-heise-exploits-soon",
+  "claim": "Heise Security warned website operators on 22 October that working exploits would appear within hours or, at the latest, days",
+  "by": "Börse Online (citing heise Security)",
+  "sources": [
+   "boerse-online-nachrichten-aktien-riesige-php-sicherhei"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A forecast made before any exploitation was confirmed; compare cur29-metro-no-definite-proof.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-boerse-share-moves",
+  "claim": "On the day, cybersecurity shares rose strongly: Cloudflare by almost 7%, CrowdStrike by 3% and Palo Alto Networks by 4%",
+  "by": "Börse Online",
+  "sources": [
+   "boerse-online-nachrichten-aktien-riesige-php-sicherhei"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Market data as reported by the outlet on 22 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-niederlausitz-outages",
+  "claim": "On Wednesday evening the websites of the city of Cottbus, the medical university MUL-CT, the BTU and the state portal brandenburg.de, among others, were taken offline as a precaution after the BSI warning, and by Thursday morning many were back online while Cottbus's site was still down; the city said no damage had been found",
+  "by": "NIEDERLAUSITZ aktuell",
+  "sources": [
+   "niederlausitz-aktuell-niederlausitz-aktuell-orte-spree-neisse"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Precautionary outages; the outlet polled about 110 regional sites and notes it could not confirm the PHP flaw as the cause for every unreachable one.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-niederlausitz-bsi-no-confirmed",
+  "claim": "The BSI said on Wednesday it knew of no confirmed attacks but of unconfirmed reports of working attack tools, and heise reported that Cloudflare and Amazon were seeing mass attack attempts, with no reports of successful attacks at first",
+  "by": "NIEDERLAUSITZ aktuell (citing the BSI via ZDFheute and heise)",
+  "sources": [
+   "niederlausitz-aktuell-niederlausitz-aktuell-orte-spree-neisse"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Point-in-time on 21 to 22 October; later confirmations are recorded elsewhere (cur27-muycomputerpro-honeypot-24oct).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-belg24-own-server-check",
+  "claim": "Belgium 24's technical team says that after the PHP security updates it checked its own server environment: it confirmed the updates were applied and in use, analysed 73,306 files without finding malicious files, and corrected 385 files with world-writable permissions",
+  "by": "Belgium 24 News Network (own check)",
+  "sources": [
+   "belg24-d8-ab-d8-ba-d8-b1-d8-a7-d8-aa-d8-a8-d9-8"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A single outlet's check of its own server; not independent and not evidence about other sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-newfacts-biberach-offline",
+  "claim": "The Biberach district office took its homepage offline from Wednesday 21 October as a precaution and said that as far as is known none of its systems was hacked and no danger exists, adding that numerous municipalities, authorities, hospitals and universities had been affected since Wednesday afternoon",
+  "by": "New-Facts.eu (citing the district office)",
+  "sources": [
+   "new-facts-biberach-2026-10-22-php-sicherheitslueck"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "The authority's own statement, 22 October; a precautionary outage, not an incident.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-kswnews-fbi-nsa-white-house",
+  "claim": "The article says the NSA advised organisations using PHP to prepare to update, the FBI asked that websites be taken offline if they cannot be updated immediately, and the White House said it was tracking and coordinating the situation with federal agencies and major AI laboratories",
+  "by": "Korea Social Welfare Journal",
+  "sources": [
+   "ksw-news-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The FBI's offline request is not recorded elsewhere in the vault; relayed by a Korean outlet, so check the FBI's own statement. Bears on the disputed offline-allies claim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-kswnews-amazon-17oct",
+  "claim": "Amazon's chief information security officer said a honeypot detected a sophisticated exploitation attempt on 17 October, four days before the announcement, while WatchTowr's threat-intelligence head said it had then confirmed no success; Amazon warned of a surge of intrusion attempts and broad exploitation, and the outlet notes the two assessments differed on confirmed damage",
+  "by": "Korea Social Welfare Journal (citing Amazon and WatchTowr)",
+  "sources": [
+   "ksw-news-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Attempts, not confirmed compromises; consistent with cur24-hackernoon-amazon-17oct and cur28-cozumpark-prewave-attempts.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-kswnews-ahnlab-112k",
+  "claim": "AhnLab's threat-intelligence platform counted 112,183 Korean servers believed to run vulnerable PHP versions, sixth in the world behind the United States (about 550,000), China (about 240,000), Germany (about 190,000), Japan (about 150,000) and France (about 120,000)",
+  "by": "Korea Social Welfare Journal (citing AhnLab TIP)",
+  "sources": [
+   "ksw-news-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A vendor's estimate by version, not a count of vulnerable or compromised servers.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-kswnews-kr-alert-reach",
+  "claim": "The Korean science ministry and KISA raised the private-sector cyber-crisis alert from 'attention' to 'caution' from noon on 22 October and circulated the notice to about 28,000 CISO-registered companies, 111 critical infrastructure operators, 1,068 ISMS-certified companies, 688 hosting companies and data centres and 5,900 threat-sharing members, with a 24-hour response standby",
+  "by": "Korea Social Welfare Journal",
+  "sources": [
+   "ksw-news-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Compare cur23-news1-kr-caution-alert and cur24-newstomato-kr-alert-22oct.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-kswnews-kisa-guidance",
+  "claim": "KISA's guidance is to update to PHP 8.5.12, 8.4.27, 8.3.36 or 8.2.35 or later and restart services (otherwise the old version may stay in memory), move from 8.1 and below to a supported version, check running servers and not only asset lists, check logs after patching and, if compromise is suspected, block external access first and report to KISA",
+  "by": "Korea Social Welfare Journal (relaying KISA)",
+  "sources": [
+   "ksw-news-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "KISA's own notice is the primary; compare cur24-newstopkorea-kisa-update.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-kswnews-w3techs-75",
+  "claim": "Citing W3Techs, about 75% of websites whose language can be identified use PHP, and WordPress, used on about 43% of all websites, is also PHP-based",
+  "by": "Korea Social Welfare Journal (citing W3Techs)",
+  "sources": [
+   "ksw-news-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Differs from the 69.3% to 70% quoted elsewhere (cur24-tecnoandroid-69pct, cur26-bitmat-w3techs-70); a presence share, not a count of vulnerable sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-ecoactu-indirect-danger",
+  "claim": "EcoActu says the flaws target the servers hosting sites, not users' computers or phones, so the danger to internet users is indirect, although a compromised site can cause service interruptions or expose some of its users' data",
+  "by": "EcoActu.ma",
+  "sources": [
+   "ecoactu-php-la-faille-qui-met-une-partie-du-web"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "General reassurance in an explainer; no figures.",
+  "agent": "curator@php.newsroom"
  }
 ]

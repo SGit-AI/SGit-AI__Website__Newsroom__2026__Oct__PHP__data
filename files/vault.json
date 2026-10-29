@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "c19ce304ce2d",
-  "subject": "curator@php.newsroom: batch 29, four sources from the source watch (Metro, Anashim U'Machshevim, InforGames, Digi24): 13 claims cur29-  +32 ~3  [blobs:+35 trees:+16]",
+  "commit": "7e61dadde204",
+  "subject": "curator@php.newsroom: batch 30, eleven sources from the source watch (El Cronista, CIO, CybersecAsia, Tech Business News, ActualApp, Boerse Online, NIEDERLAUSITZ aktuell, Belgium 24, New-Facts, Korea Social Welfare Journal, EcoActu): 28 claims cur30-  +86 ~3  [blobs:+89 trees:+37]",
   "commits": 50
  },
- "sources": 685,
- "captures": 751,
- "hashed_files": 4385,
+ "sources": 696,
+ "captures": 762,
+ "hashed_files": 4449,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-29T07:14Z",
+ "latest_capture": "2026-10-29T09:42Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
