@@ -6474,6 +6474,50 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-29T13:42Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur32-mishcon-dutch-ncsc-600",
+   "verdict": "noted",
+   "reason": "Capture checked (a law firm's note, 22 October): the Dutch NCSC had listed more than 600 products from around 430 suppliers that may be affected. A point-in-time figure as of 22 October that the NCSC-NL inventory outgrew (the site holds back the later 1,836 figure at ncsc-nl-inventory-1836); relayed second hand, and the NCSC-NL's own inventory is the primary. Not used.",
+   "sources": [
+    "mishcon-news-php2shell-what-the-critical-php-vul"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T16:13Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur32-mishcon-ncsc-uk-offline",
+   "verdict": "noted",
+   "reason": "Capture checked: Mishcon writes 'follow the NCSC's advice: apply the temporary mitigations published by PHP or consider taking the system offline until it can be fixed'. A law firm's paraphrase of the NCSC's advice, not a quotation; it does not settle the wording the site marks disputed at offline-ncsc (the sentence is not on the NCSC page as captured on 22 October, whose offline step is worded differently). Not stated as the NCSC's words.",
+   "sources": [
+    "mishcon-news-php2shell-what-the-critical-php-vul"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T16:13Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur32-mishcon-scam-warning",
+   "verdict": "noted",
+   "reason": "Capture checked: criminals routinely use high-profile flaws as bait, so expect emails, texts and calls impersonating IT providers, hosts, vendors or the NCSC urging an 'urgent PHP patch'; similar fake-patch campaigns have previously led to full compromise of site owners' sites. A warning of expected scams, not an observed PHP2Shell campaign; no organisation is named.",
+   "sources": [
+    "mishcon-news-php2shell-what-the-critical-php-vul"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T16:13Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur32-btgunlugu-redhat-patch-now",
+   "verdict": "noted",
+   "reason": "Capture checked (Turkish, 22 October teaser): Red Hat recommends applying verified and tested patches without waiting for the regular maintenance schedule. A vendor recommendation in a teaser; Red Hat's own advisory is the primary and is not in the vault.",
+   "sources": [
+    "btgunlugu-php-guvenlik-aciklari-red-hat-yama-uyari"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T16:13Z",
+   "by": "claude-journalist"
   }
  ]
 }
