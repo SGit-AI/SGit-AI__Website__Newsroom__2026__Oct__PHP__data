@@ -6518,6 +6518,72 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-29T16:13Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur33-lensabanten-tangerang-157-apps",
+   "verdict": "noted",
+   "reason": "Capture checked (Indonesian, 29 October): Tangerang's communications office says it identified and handled 157 applications and sites of all local-government units, used geotag-based access restriction for 79 main applications, moved 36 internal ones to the local network or VPN, and disabled 42 temporarily for updating with offline alternatives. A city's own account of its measures; a precautionary response, not an incident. Not used.",
+   "sources": [
+    "lensabanten-waspada-php2shell-diskominfo-kota-tanger"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur33-lensabanten-sekda-meeting",
+   "verdict": "noted",
+   "reason": "Capture checked: on Wednesday 28 October the city secretary led a PHP2Shell mitigation meeting and asked units to coordinate with the communications office and prepare alternative services, telling the public where access must be restricted. As reported; the minutes are not in the vault. The page's request to report any sign of an incident is not repeated beyond this note.",
+   "sources": [
+    "lensabanten-waspada-php2shell-diskominfo-kota-tanger"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur33-binnenlandsbestuur-bnr-50-sites",
+   "verdict": "held back",
+   "reason": "Capture checked (Dutch, 23 October): BNR checked 'ruim negenhonderd' municipal websites with Assetnote and Nuclei, found more than fifty possibly still vulnerable because of outdated PHP, mostly separate pages (asylum, sustainability subsidies, tourism) rather than main sites, and shared the list with the NCSC and the VNG without publishing addresses. One outlet's scan, unpublished, and the page cautions that scanners can use outdated information and flag sites wrongly, so 'may still be vulnerable' is not 'vulnerable'. Not stated; no organisation is named and nothing is compromised.",
+   "sources": [
+    "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur33-binnenlandsbestuur-nl-sites-offline",
+   "verdict": "held back",
+   "reason": "Capture checked: DigiD, MijnOverheid, Overheid.nl and the House of Representatives' site were taken offline 'afgelopen woensdag' (21 October) because of the two flaws. The site's nl-offline claim carries only NCSC.nl from the government's own notice and holds the DigiD and MijnOverheid part as resting on the press, overstated in part (fact-check desk); the same line was held back from Epoch Times at cur27-epoch-eu-offline. Not stated as one claim.",
+   "sources": [
+    "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur33-binnenlandsbestuur-ncsc-nl-advice",
+   "verdict": "noted",
+   "reason": "Capture checked: the Dutch NCSC strongly advises installing the updates as soon as possible, is investigating whether attackers have actually exploited the flaws, and says the situation can worsen quickly. The NCSC's statement as of 23 October, an investigation under way, not a finding; consistent with cur5-ncsc-nl-mod-php-risk and no-confirmed-compromise.",
+   "sources": [
+    "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur33-binnenlandsbestuur-kamervragen",
+   "verdict": "noted",
+   "reason": "Capture checked: a member of the House of Representatives put written questions to the justice and security minister about which government sites were taken offline, with what consequences, whether there are signs of abuse and whether the government is prepared; the minister has three weeks to answer. Parliamentary questions as reported; no answer is in the vault.",
+   "sources": [
+    "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T18:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
