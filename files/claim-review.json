@@ -6419,6 +6419,61 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-29T11:24Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur31-sindonews-nsa-patch-or-off",
+   "verdict": "noted",
+   "reason": "Capture checked (Indonesian): the NSA asked organisations to install the patch at once or switch off their servers. Agrees in substance with offline-nsa (confirmed: consider taking systems offline until fully mitigated) and cur27-epoch-nsa-offline; the page's wording is firmer than the NSA's own 'consider', so the NSA's text is what the site carries. The NSA alone, not the other agencies.",
+   "sources": [
+    "tekno-sindonews-read-1763797-207-mengenal-php2shell-cela"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T13:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur31-sindonews-eu-sites-off",
+   "verdict": "agrees",
+   "reason": "Capture checked: some European government sites were switched off temporarily on Wednesday 21 October. Agrees with the site's offline rows (latvia-offline, nl-offline, fi-offline); the page names none.",
+   "sources": [
+    "tekno-sindonews-read-1763797-207-mengenal-php2shell-cela"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T13:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur31-metroseoul-no-kr-damage",
+   "verdict": "noted",
+   "reason": "Capture checked (Korean, 29 October): industry sources say no damage from the flaws has been confirmed in Korea. Scope is Korea, on one outlet's report; consistent with cur23-news1-kisa-no-attacks and no-confirmed-compromise, which it does not extend.",
+   "sources": [
+    "metroseoul-article-20261029500571"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T13:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur31-metroseoul-dream-research",
+   "verdict": "held back",
+   "reason": "Capture checked: the page says Dream Research identified attacks aimed at 240 firewalls in Korea, the United States, Japan, Taiwan and other countries, and 'intruded into the administrator rights of about 25 US government servers'. Dream's own report, as carried on the site, is 25 rooted servers in all (24 firewalls plus a management server), three of them in one unnamed US government-affiliated environment (cur31-dream-three-gov-servers, cur47-thn-reports-dream), reported by Dream and not independently confirmed; 240 is one of Dream's scale figures held back at cur41-dream-targeting-funnel. This page puts about 25 in US government servers, which overstates it, and relays one source. Not stated; the compromise claim keeps Dream's report as reported.",
+   "sources": [
+    "metroseoul-article-20261029500571"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T13:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur31-metroseoul-kr-java-share",
+   "verdict": "noted",
+   "reason": "Capture checked: per the interior ministry's 2025 statistics, about 71% of 17,902 public-sector information systems use Java and about 6% PHP. A share of Korean public-sector systems by language, not a count of vulnerable ones; not used.",
+   "sources": [
+    "metroseoul-article-20261029500571"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T13:42Z",
+   "by": "claude-journalist"
   }
  ]
 }

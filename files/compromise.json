@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-29T09:42Z",
+ "as_of": "2026-10-29T12:14Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
  "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it. A vendor's report of unnamed victims (Dream Research, 26 October; row below) names no organisation or victim, and no victim, vendor, CISA or PHP-team statement confirms it, so it does not end the statement; it is carried as a report.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 696,
+   "count": 699,
    "unit": "sources",
-   "detail": "head 7e61dadde204 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head 7f1f7c9514b8 (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
