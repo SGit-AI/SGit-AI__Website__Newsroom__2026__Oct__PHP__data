@@ -481,6 +481,17 @@
    ]
   },
   {
+   "claim": "Dream Research: a chained PHP2Shell and Linux kernel exploit rooted 25 servers (24 firewalls and one internal management server), three in a US government-affiliated environment",
+   "basis": "Dream's own post of 26 October, from artifacts it says it recovered and does not publish; no victim and no firewall vendor named; repeated by The Hacker News, The Next Web (which has not independently verified it) and CyPro (a relay of SecurityWeek, which says two servers where Dream says three)",
+   "status": "reported by Dream, not independently confirmed; a report of compromise, no named organisation",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "the-next-web-php2shell-cisa-kev-dream-25-servers",
+    "cypro-php2shell-exploit-roots-firewalls"
+   ]
+  },
+  {
    "claim": "A named organisation confirms it was compromised through php2shell",
    "basis": "No captured source carries one",
    "status": "none found",

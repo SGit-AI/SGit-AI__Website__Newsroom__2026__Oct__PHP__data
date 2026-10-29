@@ -1,16 +1,16 @@
 {
  "about": "The evidence behind one statement, row by row. Authored by researcher@php.newsroom on 22 October 2026 at the editor's request. Each row says who said what, when, in their words, and where the capture is: 'sources' are evidence-vault slugs the gate checks; 'watch' is a dated snapshot folder in the source-watch vault (7r83qic5), held there until the evidence curator promotes it. This file maps evidence; it makes no assessment of risk.",
  "statement": "No named organisation has said it was compromised through php2shell.",
- "as_of": "2026-10-28T17:15Z",
+ "as_of": "2026-10-29T00:09Z",
  "claim": "no-confirmed-compromise",
  "status": "reported",
- "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it.",
+ "status_note": "A time-bounded absence, not a confirmed fact. It is true only as of the last check, and one statement from one organisation would end it. A vendor's report of unnamed victims (Dream Research, 26 October; row below) names no organisation or victim, and no victim, vendor, CISA or PHP-team statement confirms it, so it does not end the statement; it is carried as a report.",
  "searched": [
   {
    "what": "The evidence vault",
-   "count": 675,
+   "count": 681,
    "unit": "sources",
-   "detail": "head 75668aedfb6d (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
+   "detail": "head 6c07e190d81e (vault nnd3i8iw, the evidence vault since 27 October); the site is built from all of it"
   },
   {
    "what": "The source watch",
@@ -721,6 +721,20 @@
    "sources": [
     "salesforce-general-message-20000267"
    ]
+  },
+  {
+   "kind": "vendor-exploitation",
+   "when": "2026-10-26",
+   "who": "Dream Research (dreamgroup.com, a security vendor that sells the tooling it says it used), in its post of 26 October; repeated on 28 October by The Hacker News, The Next Web and CyPro (which credits SecurityWeek)",
+   "says": "Dream says a campaign chaining CVE-2026-109618 and CVE-2026-109619 with a Linux kernel flaw (CVE-2026-46300) rooted 25 servers in the United States, Japan, Taiwan and South Korea: 24 firewalls of a large vendor it does not name, plus one internal firewall-management server, with three servers in one US government-affiliated environment. It says it found the artifacts on 25 October, notified the vendor, and cannot tell whether later steps (a password spray, backdoor accounts, signing-key extraction) worked. It names no actor and gives Chinese-nexus indicators only. The Next Web: \"TNW has not independently verified Dream's findings.\" CyPro: other sources \"do not independently verify Dream's specific victim details\"; it also says SecurityWeek reported two servers at the organisation where Dream says three, a discrepancy it calls unresolved.",
+   "reading": "Reported by Dream, not independently confirmed. One source: the three outlets repeat Dream's post (CyPro is a relay of SecurityWeek). Dream publishes no artifact and names no victim and no vendor; no vendor, CISA or PHP-team statement about these victims is in the vault. The two PHP2Shell CVE numbers match CISA's KEV listing, which says the flaws are exploited and names no victim; the kernel flaw's number is not in CISA's material. A report of compromise, not a confirmed compromise: no named organisation has said it was compromised through php2shell",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "the-next-web-php2shell-cisa-kev-dream-25-servers",
+    "cypro-php2shell-exploit-roots-firewalls",
+    "cisa-kev-json"
+   ]
   }
  ],
  "layers": [
@@ -743,6 +757,11 @@
    "label": "Named organisations saying php2shell was the way in",
    "value": "0",
    "note": "GMO reports a break-in without a cause; Valtec retracted its attribution"
+  },
+  {
+   "label": "Compromise reported by a vendor, victims unnamed",
+   "value": "1 report, unconfirmed",
+   "note": "Dream Research (26 October): 25 servers rooted, three in a US government-affiliated environment; single source, evidence withheld; repeated by The Hacker News, The Next Web and CyPro; no victim, vendor or agency has confirmed it"
   }
  ],
  "would_change_it": [
@@ -750,7 +769,8 @@
   "GMO, ČVUT or DMM stating a cause.",
   "CISA naming a victim, in its catalog, its updated PHP alert or elsewhere. Its KEV listing of 26 October (both CVEs) holds evidence of exploitation and names none, so it did not change this statement.",
   "A regulator's breach notice (for example under GDPR or Australia's Notifiable Data Breaches scheme) naming the flaw.",
-  "A security vendor naming a victim, with the victim's consent."
+  "A security vendor naming a victim, with the victim's consent.",
+  "A named victim, the firewall's vendor, CISA or the US government-affiliated organisation confirming Dream Research's account of 26 October. Dream names no victim and no vendor, and The Next Web says it has not independently verified the findings: the report did not change this statement."
  ],
  "contradictions": [
   "is-it-exploited",

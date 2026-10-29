@@ -5552,6 +5552,422 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-28T18:42Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-dream-25-servers",
+   "verdict": "used",
+   "reason": "Checked against Dream's page (capture 00:07 UTC on 29 October): it says it found artifacts of a campaign that rooted 25 servers in four countries, including a US government-affiliated environment. reported by Dream, not independently confirmed: Dream is the only source, publishes no artifact, names no victim and no vendor; The Hacker News, The Next Web and CyPro repeat it, The Next Web says it has not independently verified it. Carried on the compromise page as a dated, attributed report, not as a confirmed compromise.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "the-next-web-php2shell-cisa-kev-dream-25-servers",
+    "cypro-php2shell-exploit-roots-firewalls"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur30-dream-24-plus-1",
+   "verdict": "used",
+   "reason": "Checked: Dream's page gives 24 rooted firewalls plus an internal firewall-management server as the 25th. reported by Dream, not independently confirmed; the arithmetic is Dream's own. CyPro says the breakdown is not established by the primary findings (cur58-cypro-breakdown-not-established).",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "cypro-php2shell-exploit-roots-firewalls"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur31-dream-three-gov-servers",
+   "verdict": "used",
+   "reason": "Checked: Dream counts two of the 24 firewalls plus the management server as three in one unnamed US government-affiliated environment. reported by Dream, not independently confirmed. A live discrepancy: CyPro says SecurityWeek reported two (second-hand; SecurityWeek's article is not in the vault); Dream's two-plus-one may explain it, which is a reading, not a source's statement.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "cypro-php2shell-exploit-roots-firewalls",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur32-dream-cves-named",
+   "verdict": "used",
+   "reason": "Checked against the captured CISA KEV feed (cisa-kev-json, 00:45 UTC on 27 October): CVE-2026-109618 and CVE-2026-109619 are both listed, dateAdded 2026-10-26, so the two PHP2Shell numbers match the listing. CVE-2026-46300 (the Linux kernel flaw) is not in any CISA material in the vault, so that number is checked only against Dream, The Hacker News and The Next Web. That these flaws were used in this campaign is Dream's claim only.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "cisa-kev-json",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur33-dream-vendor-withheld",
+   "verdict": "used",
+   "reason": "Checked: Dream withholds the firewall vendor and the versions and says the vendor was notified. reported by Dream, not independently confirmed. No vendor statement, no CISA statement and no PHP-team statement about these victims is in the vault; silence is not read as confirming or denying.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "cypro-php2shell-exploit-roots-firewalls"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur34-dream-custom-build",
+   "verdict": "held back",
+   "reason": "A vendor's characterisation of an exploit it says it recovered and does not publish: single source, no evidence shown, not stated on the site. It also sits uneasily with the relayed forum remark (cur51-thn-limited-exploitation) that real targets need per-build details. Not independently checkable.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur35-dream-event-times",
+   "verdict": "noted",
+   "reason": "Checked against Dream's page: first government firewall rooted 23 October 18:14 UTC, second 24 October 10:09 UTC, management server 24 October 11:35 UTC. reported by Dream, not independently confirmed; times as Dream states them, not used on a page. Note that The Hacker News says the activity 'was observed on October 25', which is Dream's discovery date (cur48-thn-timing-wording).",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur36-dream-discovery-and-post",
+   "verdict": "used",
+   "reason": "Checked: Dream's page says its researchers found the artifacts on 25 October and its date line reads 26 October 2026; no author is named. Used for the dates of the report on the compromise page.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur37-dream-ad-activity",
+   "verdict": "used",
+   "reason": "Checked: Dream says recovered artifacts confirm a decrypted LDAP service-account password and a directory enumeration, and that a password spray, backdoor-account creation and signing-key extraction were attempted. reported by Dream, not independently confirmed; Dream's artifacts are not published. The same page says it cannot tell whether the later steps worked (cur38-dream-unknown-outcomes). No technical detail is repeated on the site.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur38-dream-unknown-outcomes",
+   "verdict": "used",
+   "reason": "Checked: Dream says the spray, backdoor-account and signing-key results were not among the artifacts it recovered, 'so we cannot determine the full extent of the compromise'. The Hacker News repeats it. This is what the report does not establish, and the compromise page says so beside the claim.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur39-dream-no-named-actor",
+   "verdict": "used",
+   "reason": "Checked: Dream says it does not attribute the activity to a named threat actor and lists Chinese-nexus indicators. Indicators only; CyPro calls them circumstantial (cur61-cypro-indicators-circumstantial). The site names no actor.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "cypro-php2shell-exploit-roots-firewalls"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur40-dream-ai-evidence",
+   "verdict": "held back",
+   "reason": "Dream's inference about the attacker's tooling, single source; Dream itself says it has no direct evidence that AI wrote the exploit or the scripts. Not stated on the site as worded.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur41-dream-targeting-funnel",
+   "verdict": "held back",
+   "reason": "Scale figures (about 19,000 firewalls found, about 5,000 responding, 240 targets, 24 rooted, 22 parked) from target lists and logs Dream says it recovered and does not publish; single source, no independent count. The 24 and the 22 are Dream's own figures. Not used on the site.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur42-dream-still-active",
+   "verdict": "noted",
+   "reason": "Dream's page, as of its post on 26 October: the webshells on the other 22 firewalls and the tunnel into the government organisation are 'likely still active'. A vendor's estimate, unconfirmed, no later status in the vault; not used on a page.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur43-dream-own-product",
+   "verdict": "used",
+   "reason": "Checked: Dream says the investigation used its own autonomous product, Hero, and sells Hero and Sphere. Context for reading the report (the publisher sells the tooling), stated beside the claim on the compromise page; not a finding about the claims.",
+   "sources": [
+    "dreamgroup-chained-php2shell-roots-25-servers",
+    "dreamgroup-hercules-on-prem-ai-vuln-model-cybergym"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur44-dream-hero-product",
+   "verdict": "noted",
+   "reason": "Dream's own product claims (96.6% on CyberGym, over 1,000 zero-days) on its own page; not checked and not about PHP2Shell (the post does not mention it). Nothing on the site contradicts it; not used.",
+   "sources": [
+    "dreamgroup-hercules-on-prem-ai-vuln-model-cybergym"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur45-dream-asia-framework",
+   "verdict": "noted",
+   "reason": "Dream's account of a separate incident in July 2026 (an AI attack framework used against Asian governments, victims withheld); the page does not mention PHP2Shell. Single source, no named victim; not used.",
+   "sources": [
+    "dreamgroup-multi-agent-ai-framework-asian-governme"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur46-dream-asia-chinese-language",
+   "verdict": "noted",
+   "reason": "Dream's language-analysis indicator on the separate Asian-governments incident; indicator-based, not attribution, and not about PHP2Shell. Not used; it is not evidence of one actor across the two reports.",
+   "sources": [
+    "dreamgroup-multi-agent-ai-framework-asian-governme"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur47-thn-reports-dream",
+   "verdict": "used",
+   "reason": "Checked against The Hacker News, 28 October: it reports, per Dream, 25 rooted servers including three in a US government-affiliated environment, and quotes Dream only. A relay of one source, not a second source: reported by Dream, not independently confirmed. Named on the compromise page as repeating Dream.",
+   "sources": [
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur48-thn-timing-wording",
+   "verdict": "noted",
+   "reason": "Checked: The Hacker News writes the activity 'was observed on October 25, 2026'; Dream's page gives 25 October as the discovery date and 23 and 24 October as the rooting dates. A wording slip in the coverage; the site uses Dream's dates, attributed.",
+   "sources": [
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur49-thn-vendor-undisclosed",
+   "verdict": "agrees",
+   "reason": "Checked: The Hacker News says the vendor was not named and that Dream notified it. Agrees with cur33-dream-vendor-withheld (a relay of Dream); no vendor statement in the article.",
+   "sources": [
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur50-thn-extent-unclear",
+   "verdict": "agrees",
+   "reason": "Checked: The Hacker News says it is unclear whether valid credentials were found or backdoor accounts created, so the full extent is indeterminate. Agrees with cur38-dream-unknown-outcomes; a relay of Dream's own admission.",
+   "sources": [
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur51-thn-limited-exploitation",
+   "verdict": "noted",
+   "reason": "Checked: The Hacker News says PHP2Shell has seen only limited exploitation and quotes a forum member (c0d3x on the XSS forum, via Flare) calling it 'unexploitable crap' against real targets. A forum member's view relayed by an outlet, not a finding, and not about Dream's claim; it sits beside the KEV listing's exploitation finding. Not used.",
+   "sources": [
+    "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur52-tnw-not-verified",
+   "verdict": "used",
+   "reason": "Checked: The Next Web, 28 October: 'TNW has not independently verified Dream's findings.' The publisher's own caveat, carried on the compromise page next to the report.",
+   "sources": [
+    "the-next-web-php2shell-cisa-kev-dream-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur53-tnw-reports-dream",
+   "verdict": "agrees",
+   "reason": "Checked: The Next Web reports Dream's account (25 servers, 24 firewalls and one management server, US government-affiliated systems). A relay of one source; agrees with cur29-dream-25-servers and cur30-dream-24-plus-1; reported by Dream, not independently confirmed.",
+   "sources": [
+    "the-next-web-php2shell-cisa-kev-dream-25-servers",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur54-tnw-kev-no-evidence",
+   "verdict": "agrees",
+   "reason": "Checked: The Next Web says CISA added both flaws to its KEV catalogue on 26 October and that the entries do not name victims or describe the evidence. Agrees with the site's KEV row (compromise.json, 26 October); TNW keeps the listing and Dream's claim separate, as the site does.",
+   "sources": [
+    "the-next-web-php2shell-cisa-kev-dream-25-servers",
+    "cisa-kev-json",
+    "cisa-alert-kev-20261026"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur55-tnw-honeypot-evidence",
+   "verdict": "noted",
+   "reason": "Checked: The Next Web, citing Adel Karimi (Perplexity) and Marcus Hutchins (Expel): honeypot shells on 24 October on PHP 8.4.26 under Apache mod_php; the evidence matches CVE-2026-109618 and does not show the second flaw in use. Decoys, not victims; the Karimi honeypot result is already a row on the compromise page, and the detail about which CVE it matches is new but not used.",
+   "sources": [
+    "the-next-web-php2shell-cisa-kev-dream-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur56-tnw-earlier-claims-withdrawn",
+   "verdict": "agrees",
+   "reason": "Checked: The Next Web says Sophos corrected a report of successful attacks and Unit 42 withdrew its assessment of an attack on a European government agency; the site already carries both. 'Officials in several countries still saw no confirmed break-ins on Thursday (22 October)' predates Dream's report and is not read as a statement about it.",
+   "sources": [
+    "the-next-web-php2shell-cisa-kev-dream-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur57-cypro-two-vs-three",
+   "verdict": "used",
+   "reason": "Checked: CyPro says Dream described three servers in the US government-affiliated environment while SecurityWeek reported two, and calls the discrepancy unresolved. A live discrepancy and a second-hand one: SecurityWeek's own article is not in the vault. Carried on the compromise page as an open difference, not resolved by the site.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur58-cypro-breakdown-not-established",
+   "verdict": "held back",
+   "reason": "CyPro says the 24-plus-1 breakdown is 'not established by the primary findings' without saying what it means by that; Dream's page as captured does state the breakdown. Not stated on the site: the site says the breakdown is Dream's and unconfirmed, which is the supportable part.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur59-cypro-victims-not-verified",
+   "verdict": "used",
+   "reason": "Checked: CyPro says other researchers and vendors have observed scanning and attempts but do not independently verify Dream's victim details. Used on the compromise page with The Next Web's caveat as the press's own statement that the victim claims are unconfirmed.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls",
+    "the-next-web-php2shell-cisa-kev-dream-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur60-cypro-vendor-undisclosed",
+   "verdict": "agrees",
+   "reason": "Checked: CyPro says neither the firewall vendor nor the versions are disclosed and that public evidence does not support naming a supplier. Agrees with cur33-dream-vendor-withheld.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur61-cypro-indicators-circumstantial",
+   "verdict": "used",
+   "reason": "Checked: CyPro says the Chinese models and FOFA keys behind Dream's China-linked reading are circumstantial and do not prove the operators' identity or sponsorship. Used beside Dream's indicators-only attribution; the site names no actor.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls",
+    "dreamgroup-chained-php2shell-roots-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur62-cypro-kev-confirms-exploitation",
+   "verdict": "agrees",
+   "reason": "Checked: CyPro says CISA's listings confirm both flaws are exploited in the wild, and keeps that apart from Dream's victim details. Agrees with the site's KEV row: exploited in the wild on CISA's evidence, no victim named.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls",
+    "cisa-kev-json"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur63-cypro-is-a-relay",
+   "verdict": "used",
+   "reason": "Checked: CyPro's bulletin ends 'Originally reported by securityweek.com'. The Hacker News, The Next Web and CyPro all trace to Dream's blog post, so they are one source repeated, not three: stated on the compromise page.",
+   "sources": [
+    "cypro-php2shell-exploit-roots-firewalls",
+    "the-hacker-news-thehackernews-php2shell-roots-25-s",
+    "the-next-web-php2shell-cisa-kev-dream-25-servers"
+   ],
+   "where": "compromise/index.html",
+   "reviewed": "2026-10-29T01:50Z",
+   "by": "breaking@php.newsroom (journalist's role)"
   }
  ]
 }
