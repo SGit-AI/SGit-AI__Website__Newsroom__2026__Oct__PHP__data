@@ -5968,6 +5968,149 @@
    "where": "compromise/index.html",
    "reviewed": "2026-10-29T01:47Z",
    "by": "breaking@php.newsroom (journalist's role)"
+  },
+  {
+   "id": "cur29-metro-uk-32-services",
+   "verdict": "agrees",
+   "reason": "Capture checked (22 October): UK ministers took 32 government services down 'today' to carry out the fix, and announced a 'Be Ready' campaign. Agrees with the Lords figure noted at cur27-epoch-uk-32-services and cur19-vietnamnet-uk-32-services; the 'Be Ready' campaign is not tied to PHP2Shell on the page beyond the sentence and is not repeated.",
+   "sources": [
+    "metro-2026-10-22-worried-php-cybersecurity-cri"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-metro-agencies-go-dark",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Security agencies worldwide, from the UK and the US to China and Japan, called on websites to go dark if they can't update'. The page says it; no other source in the vault attributes offline advice to China or Japan, and the site's offline-allies claim is disputed (ACSC no offline advice, CERT-EU isolate, the NCSC sentence not on its page as captured). Only the NSA's is confirmed (offline-nsa). Not stated.",
+   "sources": [
+    "metro-2026-10-22-worried-php-cybersecurity-cri"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-metro-no-definite-proof",
+   "verdict": "noted",
+   "reason": "Capture checked: Voldemaras Kadys, head of security and platform engineering at Mediatech, said on 22 October there was still no definite proof the holes had been exploited, and that people should be wary of suspicious messages. A point-in-time remark; CISA's listing of 26 October and the honeypot results (brk2-thn-honeypot-rce) come later. Not used.",
+   "sources": [
+    "metro-2026-10-22-worried-php-cybersecurity-cri"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-metro-reverse-engineer-patches",
+   "verdict": "noted",
+   "reason": "Capture checked: experts tell Metro hackers could easily reverse-engineer the patches to steal personal information before sites update. An expert concern, not an observed event; the site carries the patch-diffing and early-exploit accounts from primary parties.",
+   "sources": [
+    "metro-2026-10-22-worried-php-cybersecurity-cri"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-pccoil-cisa-kev-29oct",
+   "verdict": "agrees",
+   "reason": "Capture checked (Hebrew): CISA's post of 26 October says it added both flaws to the KEV catalog and the page says civilian federal bodies must apply the updates by 29 October. Agrees with cur27-muycomputerpro-kev-29oct and the site's KEV account; the listing is the primary and names no victim.",
+   "sources": [
+    "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-pccoil-amazon-17oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: Amazon's intelligence unit, in findings on Tenable's blog, recorded first attack attempts on 17 October, four days before the emergency updates. Agrees with amazon-honeypot and cur2-madpot-17-oct; a honeypot observation of attempts.",
+   "sources": [
+    "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-pccoil-expel-confirmation",
+   "verdict": "agrees",
+   "reason": "Capture checked: Marcus Hutchins of Expel, quoted by Cybersecurity Dive, called the honeypot confirmation the highest-quality seen since the crisis began for mod_php servers. Agrees with cur19-enter-honeypot-rce-confirmed (used); a characterisation of the same honeypot evidence, not a new incident.",
+   "sources": [
+    "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-pccoil-cloudflare-stopgap",
+   "verdict": "noted",
+   "reason": "Capture checked: Cloudflare's technology chief posted on 21 October, before the 14:00 UTC release ('Patch as soon as @ThePHPF releases the update at 14:00 UTC today'), that WAF rules for the known vectors were deployed to all customers including free ones, as a stopgap, and that early attacks were emerging. A vendor's statement about its own product; the site already carries Cloudflare's attempt counts (cloudflare-attempts-not-compromises).",
+   "sources": [
+    "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-inforgames-cloudflare-attempts",
+   "verdict": "agrees",
+   "reason": "Capture checked (Portuguese): Cloudflare's CEO reported thousands of attempts in the ten hours before the announcement, tens of thousands within 45 minutes, hundreds of thousands within two hours, then millions; attempts on its network, not successful attacks. The same post as cur27-epoch-cloudflare-escalation, so one source, not two; agrees with cloudflare-attempts-not-compromises.",
+   "sources": [
+    "inforgames-php2shell-falhas-criticas-no-php-desenca"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-inforgames-vercel-waf",
+   "verdict": "noted",
+   "reason": "Capture checked: Vercel's CEO said its WAF mitigations stopped exploitation attempts against PHP servers on the platform. A vendor's statement about its own protections; not tested and not on the site.",
+   "sources": [
+    "inforgames-php2shell-falhas-criticas-no-php-desenca"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-inforgames-crowdstrike-2024",
+   "verdict": "agrees",
+   "reason": "Capture checked: CrowdStrike's CEO noted one underlying problem had been identified by the PHP maintainers in 2024 with its reach not then clear. Agrees with cur23-itfb-audit's 2024 account (cur23-itfb-2024-audit) and cur5-first-signs-2024.",
+   "sources": [
+    "inforgames-php2shell-falhas-criticas-no-php-desenca"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-inforgames-eol-versions",
+   "verdict": "agrees",
+   "reason": "Capture checked: PHP 8.1 and earlier are also affected but outside normal support or need specific vendor updates; confirm the fix or plan a move to a supported version. Agrees with cur25-sbircia-eol-backports and cur24-hackernoon-patched-versions; the site's versions-old claim stays disputed (the CVE records list only 8.2 to 8.5).",
+   "sources": [
+    "inforgames-php2shell-falhas-criticas-no-php-desenca"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur29-digi24-local-statements",
+   "verdict": "noted",
+   "reason": "Capture checked (Romanian): the Teleorman prefecture says its PHP platforms are administered centrally and its ministry's CERT structure kept it informed; the Timis public-health directorate says it applied all measures in the first hours and finished; Galati city hall says it was not affected and works with DNSC; Campina's municipal hospital says it uses no PHP platforms. The bodies' own statements, as relayed by News.ro; the same report as cur26-protv-dnsc-17416, not independent of it. Not used.",
+   "sources": [
+    "digi24-stiri-sci-tech-lumea-digitala-aproape-17"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-29T08:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
