@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "b08a131c66e6",
-  "subject": "curator@php.newsroom: batch 32, two sources from the source watch (Mishcon de Reya, BT Gunlugu): 4 claims cur32-  +15 ~3  [blobs:+18 trees:+10]",
+  "commit": "cd9375f1aefd",
+  "subject": "curator@php.newsroom: batch 33, two sources from the source watch (Lensa Banten, Binnenlands Bestuur): 6 claims cur33-  +16 ~3  [blobs:+19 trees:+10]",
   "commits": 50
  },
- "sources": 701,
- "captures": 767,
- "hashed_files": 4478,
+ "sources": 703,
+ "captures": 769,
+ "hashed_files": 4490,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-29T14:47Z",
+ "latest_capture": "2026-10-29T17:13Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

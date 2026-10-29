@@ -7808,5 +7808,77 @@
   "topic": "patching",
   "note": "A vendor recommendation relayed in a teaser; Red Hat's own advisory is the primary.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-lensabanten-tangerang-157-apps",
+  "claim": "Tangerang City's communications office says it identified and handled 157 official applications and websites of all local-government units, used geotag-based access restriction for 79 main applications that stay accessible, moved 36 internal applications to the local network or a VPN, and disabled 42 applications temporarily for updating with offline service alternatives",
+  "by": "Lensa Banten (citing Tangerang City's communications office)",
+  "sources": [
+   "lensabanten-waspada-php2shell-diskominfo-kota-tanger"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "A city's own account of its measures; a precautionary response, not an incident.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-lensabanten-sekda-meeting",
+  "claim": "On 28 October the Tangerang City secretary led a PHP2Shell mitigation meeting and asked all units to coordinate with the communications office, report any sign of an incident, and prepare alternative services and tell the public where access to an application must be restricted",
+  "by": "Lensa Banten",
+  "sources": [
+   "lensabanten-waspada-php2shell-diskominfo-kota-tanger"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "As reported; the meeting minutes are not in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-binnenlandsbestuur-bnr-50-sites",
+  "claim": "BNR scanned over 900 Dutch municipal websites with the Assetnote and Nuclei tools and found more than fifty that may still be vulnerable because of outdated PHP, mostly separate pages on asylum, sustainability subsidies and tourism rather than main sites, and shared the list with the NCSC and the municipalities' association without publishing the addresses",
+  "by": "Binnenlands Bestuur (relaying BNR)",
+  "sources": [
+   "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+  ],
+  "status": "unverified",
+  "topic": "scale",
+  "note": "The article itself cautions that the findings do not mean all those sites are vulnerable and that scanners can use outdated information and flag sites wrongly; nothing was confirmed by the owners.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-binnenlandsbestuur-nl-sites-offline",
+  "claim": "DigiD, MijnOverheid, Overheid.nl and the website of the House of Representatives were temporarily taken offline the previous Wednesday because of the two serious PHP vulnerabilities, while information about them was circulating and updates were not yet available",
+  "by": "Binnenlands Bestuur",
+  "sources": [
+   "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Precautionary outages; consistent with cur27-epoch-eu-offline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-binnenlandsbestuur-ncsc-nl-advice",
+  "claim": "The Dutch NCSC strongly advises organisations to install the available updates as soon as possible, is investigating whether attackers have actually exploited the vulnerabilities, and says the situation can worsen quickly",
+  "by": "Binnenlands Bestuur (citing the NCSC)",
+  "sources": [
+   "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The NCSC's own statement is the primary; an investigation under way on 23 October, not a finding.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-binnenlandsbestuur-kamervragen",
+  "claim": "A member of the Dutch House of Representatives put written questions to the justice and security minister on which government sites were taken offline, with what consequences, whether there are signs of abuse and whether the government is prepared for similar situations; the minister has three weeks to answer",
+  "by": "Binnenlands Bestuur",
+  "sources": [
+   "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Parliamentary questions as reported; the answers are not yet in the vault.",
+  "agent": "curator@php.newsroom"
  }
 ]

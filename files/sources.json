@@ -2713,6 +2713,56 @@
   "notes_md": "# Критична уязвимост в PHP спря правителствени сайтове в Европа - Bgonair\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `bg/news/bgonair/a-5-science-434196-kritichna-uyazvimost-v-php-sprya-pravitel`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nBgonair (Bulgarian): a critical PHP vulnerability stopped government sites in Europe. The flaws are known together as PHP2Shell and carry a risk of remote execution of malicious code under certain conditions.\n\n> Те са известни под общото название PHP2Shell и създават риск от дистанционно изпълнение на злонамерен код при определени условия.\n\n_Curator's translation:_ \"They are known under the common name PHP2Shell and create a risk of remote execution of malicious code under certain conditions.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Bulgarian site Bgonair summarises Reuters and WSJ reporting that government sites in Europe were temporarily shut over the PHP2Shell flaws, rated 9.2. Generic advice to check PHP versions; no Bulgarian angle.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Критична уязвимост в PHP спря правителствени сайтове в Европа - Bgonair\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `bg`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit",
+  "url": "https://www.binnenlandsbestuur.nl/digitaal/tientallen-gemeentelijke-websites-nog-kwetsbaar",
+  "publisher": "Binnenlands Bestuur",
+  "kind": "news",
+  "title": "Tientallen gemeentelijke websites nog kwetsbaar na groot PHP-lek",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261029T171350Z",
+    "files": {
+     "headers.json": {
+      "sha256": "ac673745f1f0c14396711e72f485f253fd9022b1aab510d207fab922b8227917",
+      "bytes": 598
+     },
+     "page.html": {
+      "sha256": "c890b7ce26b4d14ca1fadae0217a907bc5ae15440f5216f6169aaff8464c80aa",
+      "bytes": 96805
+     },
+     "provenance.json": {
+      "sha256": "01ed6776392d45ecdbe6bf4cf865a266f98606fa7bbeea8eef93e211312e3f75",
+      "bytes": 1780
+     },
+     "rendered.html": {
+      "sha256": "913771e81ae5a7c3affe20a3e0b36a57f3299ce5df8256eb39d323271d0c41e5",
+      "bytes": 135962
+     },
+     "screenshot.jpg": {
+      "sha256": "458e42b53c0b9e9ade2205a14f57c856b1efebbbff0ca37d447bc6d86e56343f",
+      "bytes": 477191
+     },
+     "text.txt": {
+      "sha256": "cf4c106f62dc4fb8c8905e8960b3708e690c13693da9115827d209a57e4830dc",
+      "bytes": 6925
+     }
+    },
+    "started_utc": "2026-10-29T17:35:41.726Z",
+    "status": 200,
+    "final_url": "https://www.binnenlandsbestuur.nl/digitaal/tientallen-gemeentelijke-websites-nog-kwetsbaar"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "nl",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T171350Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Dutch government-affairs news report (Binnenlands Bestuur, 23 October) that research by the broadcaster BNR, scanning over 900 municipal websites wi...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Tientallen gemeentelijke websites nog kwetsbaar na groot PHP-lek\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `nl/news/binnenlandsbestuur/digitaal-tientallen-gemeentelijke-websites-nog-kwetsbaar`, snapshot `20261029T171350Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T171350Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Dutch government-affairs news report (Binnenlands Bestuur, 23 October) that research by the broadcaster BNR, scanning over 900 municipal websites with the Assetnote and Nuclei tools, suggests more than fifty municipal sites may still be vulnerable because of outdated PHP, mostly separate pages (asylum, sustainability subsidies, tourism) rather than main sites, with ministries and provinces possibly also at risk. BNR shared the list with the NCSC and the municipalities' association VNG without publishing addresses. An ethical hacker from Orange Cyberdefense cautions that scanners can use outdated information and flag sites wrongly, and the VNG says municipalities know the urgency. The article adds the NCSC urges installing updates at once and is checking whether attackers actually exploited the flaws, recalls that DigiD, MijnOverheid, Overheid.nl and the House of Representatives' site went offline last Wednesday, and reports that a member of the House has put written questions to the justice minister, who has three weeks to answer.\n\n> Meer dan vijftig gemeentelijke websites zijn mogelijk nog kwetsbaar voor cyberaanvallen vanwege verouderde PHP-software.\n\n_Curator's translation:_ \"More than fifty municipal websites may still be vulnerable to cyberattacks because of outdated PHP software.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Tientallen gemeentelijke websites nog kwetsbaar na groot PHP-lek\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `nl`. The scan results are BNR's, relayed here; the article stresses the findings do not mean all the sites found are actually vulnerable. The page also carries unrelated headlines and a course advertisement. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "bitmat-news-caso-php2shell-la-vera-sfida-e-nell",
   "url": "https://www.bitmat.it/news/caso-php2shell-la-vera-sfida-e-nelle-competenze/",
   "publisher": "BitMAT",
@@ -17710,6 +17760,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Deux failles critiques dans PHP : les entreprises sous pression - Le Monde Informatique\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fr/news/lemondeinformatique/actualites-lire-deux-failles-critiques-dans-php-les-entrepri`, snapshot `20261023T080331Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T080331Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nLe Monde Informatique (French): two critical PHP flaws put companies under pressure. Both are CVSS 9.2 and could let an attacker run arbitrary code on a vulnerable server without prior credentials.\n\n> sans disposer au préalable d’identifiants de connexion\n\n_Curator's translation:_ \"without first having login credentials\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 3): Mentions CVE-2026-109618/109619 or php2shell: \"Deux failles critiques dans PHP : les entreprises sous pression - Le Monde Informatique\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "lensabanten-waspada-php2shell-diskominfo-kota-tanger",
+  "url": "https://lensabanten.co.id/waspada-php2shell-diskominfo-kota-tangerang-amankan-157-aplikasi/",
+  "publisher": "Lensa Banten",
+  "kind": "news",
+  "title": "lensabanten-waspada-php2shell-diskominfo-kota-tanger",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261029T171350Z",
+    "files": {
+     "headers.json": {
+      "sha256": "1c52e7289b69162262e3884f5852813012561b93f976ec5eec404ffdc2d5b79e",
+      "bytes": 1130
+     },
+     "page.html": {
+      "sha256": "4c92e9733a4657be05f263e29535c891a8a30a0d8a28c7ac7458001caf1a3064",
+      "bytes": 192188
+     },
+     "provenance.json": {
+      "sha256": "f5ab5cddeb6964e9000e5876a53cdb71a25f778ac5a8f78da7fa715f8153ed55",
+      "bytes": 1705
+     },
+     "rendered.html": {
+      "sha256": "3abea10ef7164483c0cecddd92463b93cb721a34c35ad63ed781916c4f3e4611",
+      "bytes": 1348117
+     },
+     "screenshot.jpg": {
+      "sha256": "06051697c319708776a8bdb72cc8422a7bc2b135b41be253e3dd653ec5363686",
+      "bytes": 579762
+     },
+     "text.txt": {
+      "sha256": "b093516cf5f90f69a2ac532755dce71e2bb596240179bb727451a17a48d3bcbe",
+      "bytes": 7202
+     }
+    },
+    "started_utc": "2026-10-29T17:28:09.838Z",
+    "status": 200,
+    "final_url": "https://lensabanten.co.id/waspada-php2shell-diskominfo-kota-tangerang-amankan-157-aplikasi/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "id",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T171350Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Indonesian regional news report (Lensa Banten) on Tangerang City government's PHP2Shell mitigation. At a mitigation meeting on Wednesday 28 October...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# lensabanten-waspada-php2shell-diskominfo-kota-tanger\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/lensabanten/waspada-php2shell-diskominfo-kota-tangerang-amankan-157-apli`, snapshot `20261029T171350Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T171350Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Indonesian regional news report (Lensa Banten) on Tangerang City government's PHP2Shell mitigation. At a mitigation meeting on Wednesday 28 October the city secretary asked all local-government units to coordinate with the communications office, report any sign of an incident and prepare alternative services where access to an application must be restricted. The head of the communications office said it had identified and handled 157 official applications and websites of all units, districts and villages, used geotag-based access restriction for 79 main applications (such as the public hospital, health centres and online tax) that stay accessible, moved 36 internal applications to the local network or a VPN, and offers offline service alternatives for 42 applications temporarily disabled for updating, and urged residents not to panic.\n\n> Diskominfo mengalihkan 36 aplikasi internal ke jaringan lokal atau VPN, serta menyediakan alternatif layanan offline bagi 42 aplikasi yang dinonaktifkan sementara untuk keperluan pembaruan sistem\n\n_Curator's translation:_ \"The communications office moved 36 internal applications to the local network or a VPN and provides offline service alternatives for 42 applications temporarily disabled for system updates.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. The capture shows no title in its metadata and no publication date; the text places the meeting on 28 October 2026. The page also carries unrelated local-news snippets and an unrelated lead about a digital-literacy index, which are not recorded. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "leptidigital-securite-informatique-cybersecurite-fail",
