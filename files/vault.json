@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "6c07e190d81e",
-  "subject": "breaking-0005: Dream Research PHP2Shell story promoted: 6 sources, 35 claims (Role: curator)  +42 ~4  [blobs:+46 trees:+23]",
+  "commit": "c19ce304ce2d",
+  "subject": "curator@php.newsroom: batch 29, four sources from the source watch (Metro, Anashim U'Machshevim, InforGames, Digi24): 13 claims cur29-  +32 ~3  [blobs:+35 trees:+16]",
   "commits": 50
  },
- "sources": 681,
- "captures": 747,
- "hashed_files": 4361,
+ "sources": 685,
+ "captures": 751,
+ "hashed_files": 4385,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-29T00:09Z",
+ "latest_capture": "2026-10-29T07:14Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

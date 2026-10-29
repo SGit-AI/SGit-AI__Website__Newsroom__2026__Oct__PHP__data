@@ -7208,5 +7208,161 @@
   "topic": "disclosure",
   "note": "Independence check: The Hacker News, The Next Web and CyPro (via SecurityWeek) all trace to Dream's blog post.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-metro-uk-32-services",
+  "claim": "UK ministers took 32 government services down on 22 October to carry out the fix and announced a 'Be Ready' campaign urging people to prepare for, among other things, cyber attacks",
+  "by": "Metro",
+  "sources": [
+   "metro-2026-10-22-worried-php-cybersecurity-cri"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Consistent with the Lords statement relayed in cur27-epoch-uk-32-services (32 unreachable and four partly so).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-metro-agencies-go-dark",
+  "claim": "Metro says security agencies worldwide, 'from the UK and the US to China and Japan', called on websites to go dark if they cannot update",
+  "by": "Metro",
+  "sources": [
+   "metro-2026-10-22-worried-php-cybersecurity-cri"
+  ],
+  "status": "unverified",
+  "topic": "agencies",
+  "note": "A blanket statement. No other source in the vault attributes such advice to China, and the disputed offline-allies claim records that several agencies gave no offline advice.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-metro-no-definite-proof",
+  "claim": "A security head at a media company told Metro on 22 October there was still no definite proof that the PHP holes had been exploited, and that users should be wary of suspicious messages because it was not known what data attackers might have stolen",
+  "by": "Metro (quoting an expert)",
+  "sources": [
+   "metro-2026-10-22-worried-php-cybersecurity-cri"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Point-in-time on 22 October; later sources record honeypot-confirmed exploitation and CISA's KEV listing (cur20-infosec-kev-deadline).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-metro-reverse-engineer-patches",
+  "claim": "Experts told Metro the worry is that hackers could easily reverse-engineer the patches to steal personal information before sites update",
+  "by": "Metro (quoting experts)",
+  "sources": [
+   "metro-2026-10-22-worried-php-cybersecurity-cri"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "An expert concern, not an observed event; compare the Chainguard early-images dispute (cur24-hackernoon-chainguard-embargo).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-pccoil-cisa-kev-29oct",
+  "claim": "CISA confirmed on X that it added both PHP2Shell flaws to its Known Exploited Vulnerabilities catalog and required all US civilian federal bodies to apply the updates by 29 October",
+  "by": "Anashim U'Machshevim (relaying CISA)",
+  "sources": [
+   "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The KEV listing is the primary; compare cur27-muycomputerpro-kev-29oct and cur28-cozumpark-kev-26-29oct.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-pccoil-amazon-17oct",
+  "claim": "According to Amazon's intelligence unit, in findings published on Tenable's blog, first attack attempts were recorded on 17 October, four days before the PHP team released the emergency updates",
+  "by": "Anashim U'Machshevim (relaying Amazon via Tenable)",
+  "sources": [
+   "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A honeypot-based observation of attempts; compare cur24-hackernoon-amazon-17oct and cur28-cozumpark-amazon-four-days.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-pccoil-expel-confirmation",
+  "claim": "A principal threat researcher at Expel said, as quoted by Cybersecurity Dive, that the honeypot confirmation was the highest-quality confirmation seen since the crisis began for servers using the Apache mod_php configuration",
+  "by": "Anashim U'Machshevim (citing Cybersecurity Dive)",
+  "sources": [
+   "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "An expert's characterisation of the honeypot evidence (cur27-muycomputerpro-honeypot-24oct), not a new incident.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-pccoil-cloudflare-stopgap",
+  "claim": "Cloudflare's technology chief said it had deployed WAF rules for the known exploit vectors to all customers, including free ones, as a stopgap only, and that early attacks were emerging and mitigations were being updated",
+  "by": "Anashim U'Machshevim (citing Cloudflare on X)",
+  "sources": [
+   "pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "The quoted post was made before the patch release at 14:00 UTC on 21 October, so it describes the hours before disclosure; a vendor's statement about its own product.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-inforgames-cloudflare-attempts",
+  "claim": "Cloudflare's chief executive reported thousands of exploitation attempts in the ten hours before the public announcement, tens of thousands within 45 minutes after it, hundreds of thousands within two hours and then millions; the article stresses these are attempts seen on Cloudflare's network, not necessarily successful attacks or total compromised systems",
+  "by": "InforGames (citing Cloudflare's CEO via GlobalData)",
+  "sources": [
+   "inforgames-php2shell-falhas-criticas-no-php-desenca"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "The same Cloudflare post as cur27-epoch-cloudflare-escalation: one source, not two.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-inforgames-vercel-waf",
+  "claim": "Vercel's chief executive said its web application firewall mitigations stopped exploitation attempts against PHP servers protected by the platform",
+  "by": "InforGames (citing Vercel's CEO via GlobalData)",
+  "sources": [
+   "inforgames-php2shell-falhas-criticas-no-php-desenca"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "A vendor's statement about its own protections.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-inforgames-crowdstrike-2024",
+  "claim": "CrowdStrike's chief executive noted that one of the underlying problems had already been identified by the PHP maintainers in 2024, though its reach was not then clear",
+  "by": "InforGames (citing CrowdStrike's CEO via GlobalData)",
+  "sources": [
+   "inforgames-php2shell-falhas-criticas-no-php-desenca"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with the Foundation's account as relayed in cur23-itfb-2024-audit.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-inforgames-eol-versions",
+  "claim": "PHP 8.1 and earlier are also affected but are outside normal support or need specific updates from certain vendors, so a fix must be confirmed or a move to a supported version planned",
+  "by": "InforGames",
+  "sources": [
+   "inforgames-php2shell-falhas-criticas-no-php-desenca"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "Compare cur25-sbircia-eol-backports and cur24-hackernoon-patched-versions.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-digi24-local-statements",
+  "claim": "Local Romanian public bodies told News.ro that the Teleorman prefecture's PHP platforms are administered centrally and its ministry's CERT structure kept them informed, that a county public-health directorate applied all measures in the first hours and finished, that Galați city hall was not affected and works with DNSC, and that a municipal hospital uses no PHP platforms",
+  "by": "Digi24 (relaying News.ro)",
+  "sources": [
+   "digi24-stiri-sci-tech-lumea-digitala-aproape-17"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "The bodies' own statements, as relayed; part of the same News.ro report as cur26-protv-dnsc-17416, not independent of it.",
+  "agent": "curator@php.newsroom"
  }
 ]
