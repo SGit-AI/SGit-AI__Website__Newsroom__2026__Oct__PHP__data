@@ -2,10 +2,22 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "114cad837914",
-  "message": "researcher@php.newsroom: pass 20261028T1708Z phase 2 of 2: discovery"
+  "commit": "9329f83535bc",
+  "message": "researcher@php.newsroom: pass 20261029T0706Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "9329f83535bc",
+   "message": "researcher@php.newsroom: pass 20261029T0706Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "5851400af294",
+   "message": "researcher@php.newsroom: pass 20261029T0706Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
+  {
+   "commit": "f203ac4e2bb8",
+   "message": "breaking-0005: Dream Research PHP2Shell story: 6 captures, 6 priority-1 queue rows (Role: researcher)"
+  },
   {
    "commit": "114cad837914",
    "message": "researcher@php.newsroom: pass 20261028T1708Z phase 2 of 2: discovery"
@@ -177,24 +189,16 @@
   {
    "commit": "0370c7b17b1e",
    "message": "researcher@php.newsroom: pass 20261025T1232Z"
-  },
-  {
-   "commit": "f23987eb3b23",
-   "message": "researcher@php.newsroom (scheduled): the 25 references of the Wikipedia article PHP2Shell that the watch did not hold are now watched pages (hourly) and captured once (run 20261025T114552Z: 19 open, 5 paywalled, 1 bot-challenge); brief 2026-10-25__brief__wikipedia-as-an-anchor"
-  },
-  {
-   "commit": "a8300425e215",
-   "message": "researcher@php.newsroom: pass 20261025T1002Z"
   }
  ],
- "pages": 1460,
- "publishers": 1083,
+ "pages": 1470,
+ "publishers": 1093,
  "country": {
   "us": 319,
-  "int": 232,
-  "nl": 80,
-  "de": 63,
-  "gb": 57,
+  "int": 233,
+  "nl": 82,
+  "de": 64,
+  "gb": 58,
   "fr": 53,
   "kr": 49,
   "jp": 43,
@@ -207,19 +211,19 @@
   "be": 26,
   "in": 25,
   "ar": 22,
+  "eg": 21,
   "ca": 20,
-  "eg": 20,
   "at": 17,
   "es": 15,
+  "ro": 14,
   "hk": 13,
-  "ro": 13,
   "cz": 12,
   "th": 12,
   "ie": 11,
   "pl": 11,
   "sg": 11,
+  "pt": 10,
   "vn": 10,
-  "pt": 9,
   "tw": 9,
   "fi": 8,
   "nz": 8,
@@ -230,16 +234,16 @@
   "za": 6,
   "bg": 5,
   "cn": 5,
+  "mx": 5,
   "se": 5,
   "cl": 4,
   "co": 4,
   "lu": 4,
-  "mx": 4,
   "ua": 4,
   "ae": 3,
   "gr": 3,
+  "il": 3,
   "ee": 2,
-  "il": 2,
   "lt": 2,
   "my": 2,
   "sk": 2,
@@ -253,8 +257,8 @@
   "tn": 1
  },
  "sector": {
-  "news": 762,
-  "affected": 195,
+  "news": 771,
+  "affected": 196,
   "aggregator": 140,
   "cert": 94,
   "security-vendor": 68,
@@ -272,22 +276,22 @@
   "tool": 1
  },
  "lang": {
-  "en": 686,
+  "en": 688,
+  "de": 95,
   "fr": 95,
-  "de": 94,
-  "es": 64,
-  "nl": 64,
+  "nl": 66,
+  "es": 65,
   "ko": 49,
-  "pt": 45,
-  "ar": 40,
+  "pt": 46,
+  "ar": 41,
   "it": 38,
   "tr": 37,
   "ja": 33,
   "id": 29,
   "zh": 21,
   "cs": 20,
+  "ro": 18,
   "th": 18,
-  "ro": 17,
   "pl": 14,
   "vi": 13,
   "fi": 10,
@@ -299,33 +303,33 @@
   "el": 5,
   "ms": 5,
   "sk": 5,
+  "he": 4,
   "lt": 4,
   "nb": 4,
   "et": 3,
-  "he": 3,
   "da": 2,
   "hr": 1,
   "sl": 1
  },
  "access": {
-  "open": 1243,
-  "bot-challenge": 105,
-  "down": 76,
+  "open": 1252,
+  "bot-challenge": 104,
+  "down": 78,
   "paywalled": 23,
   "gone": 11,
   "login-wall": 2
  },
  "tiers": {
   "A": 76,
-  "B": 1022,
+  "B": 1044,
   "C": 16
  },
- "snapshots": 4888,
- "graphs": 4881,
- "files": 39725,
+ "snapshots": 5842,
+ "graphs": 5819,
+ "files": 48462,
  "world_graph": {
-  "nodes": 2655,
-  "edges": 5294
+  "nodes": 2675,
+  "edges": 5334
  },
  "access_classes": [
   {
@@ -1871,6 +1875,38 @@
     "paywalled": 23,
     "down": 31,
     "gone": 7,
+    "login-wall": 2
+   }
+  },
+  {
+   "run": "20261029T070756Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-29T07:07:56Z",
+   "finished": "2026-10-29T07:14:01Z",
+   "pages_due": 196,
+   "pages_total": 1470,
+   "changed": 90,
+   "access": {
+    "open": 145,
+    "bot-challenge": 13,
+    "down": 37,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261029T071401Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-29T07:14:01Z",
+   "finished": "2026-10-29T07:48:14Z",
+   "pages_due": 1241,
+   "pages_total": 1470,
+   "changed": 848,
+   "access": {
+    "open": 1076,
+    "bot-challenge": 91,
+    "down": 41,
+    "paywalled": 23,
+    "gone": 8,
     "login-wall": 2
    }
   }
