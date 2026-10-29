@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "0d4c17b62bda",
-  "message": "researcher@php.newsroom: pass 20261029T1207Z phase 2 of 2: discovery"
+  "commit": "6d39bf9cd527",
+  "message": "researcher@php.newsroom: pass 20261029T1440Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "6d39bf9cd527",
+   "message": "researcher@php.newsroom: pass 20261029T1440Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "1da2f6915293",
+   "message": "researcher@php.newsroom: pass 20261029T1440Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "0d4c17b62bda",
    "message": "researcher@php.newsroom: pass 20261029T1207Z phase 2 of 2: discovery"
@@ -189,29 +197,21 @@
   {
    "commit": "5619a889d98a",
    "message": "researcher@php.newsroom: pass 20261026T0125Z phase 1 of 3: captures and the curator queue"
-  },
-  {
-   "commit": "4c59b212a5b7",
-   "message": "researcher@php.newsroom: fix: tools/queue.py shadowed the standard library queue module (every tools/ script that imports it broke); renamed tools/curator_queue.py; pass.sh calls the new name. Also holds the few captures of a stopped test pass"
-  },
-  {
-   "commit": "6efd721d847e",
-   "message": "researcher@php.newsroom: pass.sh in three phases, each with its own commit and push (capture and the curator queue; series and analysis; discovery), a time line before every stage; tools/queue.py adds this pass's pages to the curator queue, idempotent"
   }
  ],
- "pages": 1503,
- "publishers": 1126,
+ "pages": 1507,
+ "publishers": 1130,
  "country": {
   "us": 319,
   "int": 233,
   "nl": 83,
   "de": 68,
   "gb": 58,
-  "fr": 54,
+  "fr": 55,
   "kr": 52,
   "au": 47,
   "jp": 44,
-  "tr": 37,
+  "tr": 38,
   "it": 34,
   "ch": 32,
   "br": 29,
@@ -231,10 +231,10 @@
   "pl": 11,
   "pt": 11,
   "sg": 11,
-  "vn": 10,
+  "vn": 11,
+  "tw": 10,
   "fi": 9,
   "sa": 9,
-  "tw": 9,
   "eu": 8,
   "nz": 8,
   "lv": 7,
@@ -266,7 +266,7 @@
   "tn": 1
  },
  "sector": {
-  "news": 804,
+  "news": 808,
   "affected": 196,
   "aggregator": 140,
   "cert": 94,
@@ -287,22 +287,22 @@
  "lang": {
   "en": 692,
   "de": 100,
-  "fr": 99,
+  "fr": 100,
   "es": 70,
   "nl": 67,
   "ko": 52,
   "pt": 47,
   "ar": 44,
   "it": 39,
-  "tr": 38,
+  "tr": 39,
   "ja": 34,
   "id": 30,
-  "zh": 21,
+  "zh": 22,
   "cs": 20,
   "ro": 19,
   "th": 18,
   "pl": 14,
-  "vi": 13,
+  "vi": 14,
   "fi": 11,
   "lv": 10,
   "hu": 9,
@@ -321,24 +321,24 @@
   "sl": 1
  },
  "access": {
-  "open": 1286,
-  "bot-challenge": 116,
-  "down": 64,
-  "paywalled": 24,
+  "open": 1282,
+  "bot-challenge": 112,
+  "down": 77,
+  "paywalled": 23,
   "gone": 11,
   "login-wall": 2
  },
  "tiers": {
   "A": 76,
-  "B": 1060,
+  "B": 1065,
   "C": 16
  },
- "snapshots": 7495,
- "graphs": 7472,
- "files": 60177,
+ "snapshots": 8327,
+ "graphs": 8304,
+ "files": 66007,
  "world_graph": {
-  "nodes": 2742,
-  "edges": 5466
+  "nodes": 2750,
+  "edges": 5482
  },
  "access_classes": [
   {
@@ -1979,6 +1979,38 @@
     "bot-challenge": 99,
     "down": 26,
     "paywalled": 24,
+    "gone": 7,
+    "login-wall": 2
+   }
+  },
+  {
+   "run": "20261029T144103Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-29T14:41:03Z",
+   "finished": "2026-10-29T14:47:18Z",
+   "pages_due": 196,
+   "pages_total": 1507,
+   "changed": 58,
+   "access": {
+    "open": 149,
+    "bot-challenge": 14,
+    "down": 32,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261029T144719Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-29T14:47:19Z",
+   "finished": "2026-10-29T15:22:23Z",
+   "pages_due": 1203,
+   "pages_total": 1507,
+   "changed": 774,
+   "access": {
+    "open": 1039,
+    "bot-challenge": 94,
+    "down": 38,
+    "paywalled": 23,
     "gone": 7,
     "login-wall": 2
    }
