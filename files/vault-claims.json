@@ -6788,5 +6788,425 @@
   "topic": "scale",
   "note": "A presence count, not of vulnerable sites; a different base from the Censys and Bitsight figures (cur27-muycomputerpro-censys-32m, cur24-cybersecbr-bitsight-37m).",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur29-dream-25-servers",
+  "claim": "Dream Research says a campaign rooted 25 servers across the United States, Japan, Taiwan and South Korea, including systems in a US government-affiliated environment",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. A claim about victims, from artifacts Dream says it recovered and does not publish; the page names no victim and no vendor.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur30-dream-24-plus-1",
+  "claim": "Dream Research counts the 25 as 24 firewalls rooted in an automated batch plus one internal firewall-management server, exploited through a tunnel from the second government firewall",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. The arithmetic is Dream's own: 24 firewalls + 1 management server = 25.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur31-dream-three-gov-servers",
+  "claim": "Dream Research says three servers were in a US government-affiliated environment: two of the 24 firewalls and the internal firewall-management server; it does not name the organisation",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "Coverage differs: SecurityWeek is reported by CyPro as saying two (see cur57-cypro-two-vs-three). Dream's two-plus-one reading may explain the difference; that is the curator's reading, not a source's statement.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur32-dream-cves-named",
+  "claim": "Dream Research names CVE-2026-109618 and CVE-2026-109619 (PHP2Shell) chained with CVE-2026-46300 (Fragnesia, a Linux kernel privilege-escalation flaw) as the flaws used in what it describes as a chained remote-code-execution and privilege-escalation attack",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "The CVE numbers are those of the PHP2Shell advisories and of the KEV listing; matching is for the journalist's step. That the flaws were used in this campaign is Dream's claim only.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur33-dream-vendor-withheld",
+  "claim": "Dream Research says the affected devices run specific versions of a large vendor's firewall software, that it is not disclosing the vendor or the versions, and that the vendor has been notified",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "reported",
+  "topic": "vendors",
+  "note": "No vendor statement exists in the captured material. The vendor's silence cannot be read as either confirming or denying.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur34-dream-custom-build",
+  "claim": "Dream Research says the exploit implementation it recovered is a custom, non-public build, independently developed and tailored to the targeted firewall platform, not a copy of any known public exploit for PHP2Shell",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "exploitation",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. ",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-dream-event-times",
+  "claim": "Dream Research dates the first government-affiliated firewall rooted at 18:14 UTC on 23 October (it then crashed and never came back), the second at 10:09 UTC on 24 October, and the internal firewall-management server at 11:35 UTC on 24 October",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. Times as Dream states them; see the timeline rows.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-dream-discovery-and-post",
+  "claim": "Dream Research says its researchers found the artifacts on 25 October 2026 and published its report on 26 October 2026",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "The page's date line reads October 26, 2026; no author is named.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur37-dream-ad-activity",
+  "claim": "Dream Research says recovered artifacts confirm the attacker decrypted an LDAP service account password and enumerated every user and group in the Active Directory domain, and that password spraying, backdoor-account creation and signing-key extraction were attempted",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. ",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-dream-unknown-outcomes",
+  "claim": "Dream Research says it cannot determine whether the password spray, backdoor-account creation or signing-key extraction succeeded, because those results were not among the artifacts it recovered, so it cannot determine the full extent of the compromise",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "What Dream says it does NOT know. Dream states it 'cannot determine the full extent of the compromise'.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-dream-no-named-actor",
+  "claim": "Dream Research does not attribute the activity to a named threat actor; it lists Chinese-nexus indicators (target countries, the FOFA search platform, a Chinese tunnelling tool, DeepSeek and Kimi models, UTC+8 timestamps, Chinese-language prompts)",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "reported",
+  "topic": "attribution",
+  "note": "Indicators, not attribution. Dream says it 'does not attribute this activity to a named threat actor'.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-dream-ai-evidence",
+  "claim": "Dream Research says Claude Code was installed on the attacker's infrastructure and an AI offensive-security platform was configured with DeepSeek and Kimi, but it has no direct evidence that AI wrote the exploit or the scripts, and says the operation does not appear to be a fully autonomous nation-state attack",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "tooling",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. Dream's wording: it suggests AI-assisted development from code style, not proof.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur41-dream-targeting-funnel",
+  "claim": "Dream Research says the attacker found about 19,000 internet-facing firewalls, about 5,000 responded, filtering to four countries and exploit-matched versions left 240 targets, 24 were rooted, and 22 of those were only given a webshell and left parked",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "scale",
+  "note": "Dream is the only source; no vendor, CISA or other independent statement confirms it. Scale of the campaign as Dream states it, from target lists and logs it says it recovered.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-dream-still-active",
+  "claim": "Dream Research says the webshells on the 22 other firewalls and on the government-affiliated systems, and the tunnel into the government organisation, are likely still active",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "unverified",
+  "topic": "compromise",
+  "note": "A statement as of Dream's post (26 October). No later status is in the captured material.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-dream-own-product",
+  "claim": "Dream Research says its investigation was conducted using its own autonomous cyber-research product, Hero, and the page presents Dream's products Sphere and Hero",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "status": "reported",
+  "topic": "vendors",
+  "note": "Context for reading the report: the publisher sells the tooling used. Not a finding about the claims.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur44-dream-hero-product",
+  "claim": "Dream Research describes Hero as its autonomous AI vulnerability researcher for governments, powered by its Hercules model, and says it scored 96.6% on the CyberGym benchmark and has found over 1,000 zero-day vulnerabilities",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-hercules-on-prem-ai-vuln-model-cybergym"
+  ],
+  "status": "unverified",
+  "topic": "vendors",
+  "note": "Dream's own product claims, not checked. Relevant to the 25-servers report only as the tool Dream says it used (cur43-dream-own-product); the post does not mention PHP2Shell.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur45-dream-asia-framework",
+  "claim": "Dream Research reports that in early July 2026 it found the workspace of an AI attack framework (built on Hermes and OpenClaw agents) used for about four days against government entities in Asia, and says it withheld the targeted entities and the operator",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-multi-agent-ai-framework-asian-governme"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "Dream's account, with no named victim. A separate incident from the 25-servers report; it does not mention PHP2Shell. Dream says some details were first shared with the Financial Times, which is not in this vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur46-dream-asia-chinese-language",
+  "claim": "Dream Research says language analysis of the framework's documentation points to a Chinese-language operator",
+  "by": "Dream Research (dreamgroup.com)",
+  "sources": [
+   "dreamgroup-multi-agent-ai-framework-asian-governme"
+  ],
+  "status": "unverified",
+  "topic": "attribution",
+  "note": "Indicator-based, as in the 25-servers report (cur39-dream-no-named-actor). The two reports share a style of attribution, not evidence of one actor.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur47-thn-reports-dream",
+  "claim": "The Hacker News reports that, per Dream, an attacker combined PHP2Shell with a kernel privilege escalation exploit to root 25 servers, including three systems in a U.S. government-affiliated environment; its account rests on Dream's blog post and quotes Dream only",
+  "by": "The Hacker News (Ravie Lakshmanan), reporting Dream Research",
+  "sources": [
+   "the-hacker-news-thehackernews-php2shell-roots-25-s"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Secondary report of a single source. No independent source, vendor or CISA statement about the victims in the article.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur48-thn-timing-wording",
+  "claim": "The Hacker News writes that the activity 'was observed on October 25, 2026' while its own timeline gives the rooting on 23 and 24 October",
+  "by": "The Hacker News (Ravie Lakshmanan), reporting Dream Research",
+  "sources": [
+   "the-hacker-news-thehackernews-php2shell-roots-25-s"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "A wording slip in the coverage: 25 October is Dream's discovery date, not when the servers were rooted (23 and 24 October per Dream).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur49-thn-vendor-undisclosed",
+  "claim": "The Hacker News reports that the name of the affected vendor was not disclosed and that Dream says it notified the vendor",
+  "by": "The Hacker News (Ravie Lakshmanan), reporting Dream Research",
+  "sources": [
+   "the-hacker-news-thehackernews-php2shell-roots-25-s"
+  ],
+  "status": "reported",
+  "topic": "vendors",
+  "note": "No vendor statement in the article.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur50-thn-extent-unclear",
+  "claim": "The Hacker News reports it is unclear whether the activity let the attacker find valid credentials or create backdoor Active Directory accounts, so the full extent of the compromise remains indeterminate",
+  "by": "The Hacker News (Ravie Lakshmanan), reporting Dream Research",
+  "sources": [
+   "the-hacker-news-thehackernews-php2shell-roots-25-s"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Repeats Dream's own admission (cur38-dream-unknown-outcomes).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur51-thn-limited-exploitation",
+  "claim": "The Hacker News says PHP2Shell has seen only limited exploitation in the wild, and quotes a forum member (via Flare) who calls it 'unexploitable crap' against real targets without prior access to them",
+  "by": "The Hacker News (Ravie Lakshmanan), reporting Dream Research",
+  "sources": [
+   "the-hacker-news-thehackernews-php2shell-roots-25-s"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Context placed by the journalist beside Dream's claim, with the XSS-forum member's remark relayed from Flare. It is not about Dream's findings, and it sits uneasily with Dream's claim of a custom, tailored build.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur52-tnw-not-verified",
+  "claim": "The Next Web says: 'TNW has not independently verified Dream's findings.'",
+  "by": "The Next Web (Ana Maria Constantin), reporting Dream Research",
+  "sources": [
+   "the-next-web-php2shell-cisa-kev-dream-25-servers"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Publisher's own caveat on the 25-servers claim.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur53-tnw-reports-dream",
+  "claim": "The Next Web reports that Dream, in a blog post on Monday (26 October), said it found traces of a campaign that rooted 25 servers, including systems in a US government-affiliated environment, and that the attackers took 24 firewalls and one internal management server",
+  "by": "The Next Web (Ana Maria Constantin), reporting Dream Research",
+  "sources": [
+   "the-next-web-php2shell-cisa-kev-dream-25-servers"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Secondary report; no source other than Dream.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur54-tnw-kev-no-evidence",
+  "claim": "The Next Web reports that CISA put both PHP2Shell flaws in its Known Exploited Vulnerabilities catalogue on Monday (26 October), and that the new catalogue entries do not name victims or describe the evidence behind the decision",
+  "by": "The Next Web (Ana Maria Constantin), reporting Dream Research",
+  "sources": [
+   "the-next-web-php2shell-cisa-kev-dream-25-servers"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A KEV listing says the flaws are exploited, not that any named victim is compromised. TNW does not link the listing to Dream's report; it presents Dream's claim as separate.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur55-tnw-honeypot-evidence",
+  "claim": "The Next Web reports that honeypots run by Adel Karimi of Perplexity recorded shell commands started by the Apache web server on 24 October, that the evidence matches CVE-2026-109618 and does not show the second flaw in use, and that Marcus Hutchins of Expel confirmed the findings",
+  "by": "The Next Web (Ana Maria Constantin), reporting Dream Research",
+  "sources": [
+   "the-next-web-php2shell-cisa-kev-dream-25-servers"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Decoy servers, not real victims; a separate line of evidence from Dream's. TNW calls it the most detailed public evidence so far, which makes Dream's account the claim about real victims.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur56-tnw-earlier-claims-withdrawn",
+  "claim": "The Next Web reports that officials in several countries still saw no confirmed break-ins on Thursday (22 October) and that some earlier claims did not hold up: Sophos corrected a report of successful attacks on its customers and Palo Alto Networks' Unit 42 withdrew its assessment that PHP2Shell was used against a European government agency",
+  "by": "The Next Web (Ana Maria Constantin), reporting Dream Research",
+  "sources": [
+   "the-next-web-php2shell-cisa-kev-dream-25-servers"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Bears on the 'no confirmed compromise' line. The Thursday statement is dated before Dream's report (26 October).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur57-cypro-two-vs-three",
+  "claim": "CyPro says Dream described three affected servers in a US government-affiliated environment while SecurityWeek reported that two servers at the organisation were compromised, and that the discrepancy remains unresolved",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "disputed",
+  "topic": "compromise",
+  "note": "Coverage discrepancy, quoted from CyPro. SecurityWeek's own article is not in the vault, so the 'two' is second-hand. Dream's page counts two firewalls plus the management server (cur31-dream-three-gov-servers).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur58-cypro-breakdown-not-established",
+  "claim": "CyPro says the breakdown of 24 firewalls and one management server is not established by the primary findings",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "disputed",
+  "topic": "compromise",
+  "note": "Disagrees with the Dream page as captured, which states 24 rooted firewalls and a management server as the 25th (cur30-dream-24-plus-1). CyPro's meaning of 'primary findings' is not stated.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur59-cypro-victims-not-verified",
+  "claim": "CyPro says other researchers and vendors have observed scanning and attack attempts, but these sources do not independently verify Dream's specific victim details",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "The press's own statement that Dream's victim claims are not independently confirmed (with cur52-tnw-not-verified).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur60-cypro-vendor-undisclosed",
+  "claim": "CyPro says neither the firewall vendor nor the affected software versions have been disclosed, and that public evidence does not support naming a particular supplier",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "reported",
+  "topic": "vendors",
+  "note": "",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur61-cypro-indicators-circumstantial",
+  "claim": "CyPro says the references to Chinese large language models and FOFA API keys contributed to Dream's China-linked assessment but are circumstantial and do not prove the identity or sponsorship of the operators",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "reported",
+  "topic": "attribution",
+  "note": "",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur62-cypro-kev-confirms-exploitation",
+  "claim": "CyPro says CISA's listings confirm that both PHP vulnerabilities are being exploited in the wild",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Exploited in the wild, which CyPro keeps apart from Dream's victim details (cur59-cypro-victims-not-verified).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur63-cypro-is-a-relay",
+  "claim": "CyPro's bulletin ends 'Originally reported by securityweek.com', so it adds no reporting of its own on the 25-servers claim",
+  "by": "CyPro (Rob McBride), relaying SecurityWeek and Dream Research",
+  "sources": [
+   "cypro-php2shell-exploit-roots-firewalls"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Independence check: The Hacker News, The Next Web and CyPro (via SecurityWeek) all trace to Dream's blog post.",
+  "agent": "curator@php.newsroom"
  }
 ]

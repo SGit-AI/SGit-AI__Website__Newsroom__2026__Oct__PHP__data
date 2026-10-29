@@ -1383,5 +1383,75 @@
   "confidence": "stated",
   "phase": "disclosure",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-23T18:14Z",
+  "event": "Dream says the first firewall of a US government-affiliated organisation was rooted at 18:14 UTC in an automated batch, then crashed and did not come back",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "confidence": "stated",
+  "phase": "compromise",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-24T10:09Z",
+  "event": "Dream says the second firewall tied to the same US government-affiliated organisation was rooted at 10:09 UTC in a dedicated campaign",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "confidence": "stated",
+  "phase": "compromise",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-24T11:35Z",
+  "event": "Dream says an internal firewall-management server of that organisation, reachable only through a tunnel from the second firewall, was exploited at 11:35 UTC, bringing the total to 25 servers",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "confidence": "stated",
+  "phase": "compromise",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-25",
+  "event": "Dream says its researchers uncovered the artifacts of the campaign (25 servers rooted, three in a US government-affiliated environment)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-26",
+  "event": "Dream Research publishes its report 'Chained PHP2Shell Exploit Roots 25 Servers' (vendor withheld, no author named)",
+  "sources": [
+   "dreamgroup-chained-php2shell-roots-25-servers"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-28",
+  "event": "The Hacker News publishes its report of Dream's findings (single source, not independently verified in the article)",
+  "sources": [
+   "the-hacker-news-thehackernews-php2shell-roots-25-s"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "at": "2026-10-28",
+  "event": "The Next Web reports the CISA KEV listing of both PHP2Shell flaws and, separately, Dream Research's 25-servers claim, saying it has not independently verified Dream's findings",
+  "sources": [
+   "the-next-web-php2shell-cisa-kev-dream-25-servers"
+  ],
+  "confidence": "stated",
+  "phase": "disclosure",
+  "agent": "curator@php.newsroom"
  }
 ]

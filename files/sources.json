@@ -7709,6 +7709,52 @@
   "notes_md": "# Critical PHP2Shell Exploit Code Goes Public as Hackers Attempt to Deploy Botnet Malware\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/cybersecuritynews/critical-php2shell-exploit-code`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nCyber Security News, 23 October: exploit code has gone public and hackers are attempting to deploy botnet malware through PHP2Shell. One attempt tried to drop a botnet variant; security controls blocked it, so the malware was not delivered, and analysis of the sample showed a larger, updated version of a Mirai-derived threat seen earlier in 2026. It says the Dutch NCSC notes Apache mod_php carries the highest risk because exploitation can occur before application code starts running, and that PHP, FPM, mod_php, php-cgi, FrankenPHP and LiteSpeed installs are affected. The curator did not fetch the exploit code the page refers to; the capture only holds the article.\n\n> Security controls blocked the attempt, so the malware was not delivered.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Critical PHP2Shell Exploit Code Goes Public as Hackers Attempt to Deploy Botnet Malware\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "cypro-php2shell-exploit-roots-firewalls",
+  "url": "https://cypro.co.uk/insights/cyber-bulletins/php2shell-exploit-used-to-root-firewalls/",
+  "publisher": "CyPro",
+  "kind": "news",
+  "title": "PHP2Shell Exploit Roots Firewalls | CyPro",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261029T000936Z",
+    "files": {
+     "headers.json": {
+      "sha256": "4f7b5a1ad05502cb1c10618d4250c11f48d14565c4db173a8b64fc1d174b8bd4",
+      "bytes": 1648
+     },
+     "meta.json": {
+      "sha256": "481e4ed7ca709c7ec695d725450ee3160466248a1eff4e11bb8b223e3a1bbe13",
+      "bytes": 363
+     },
+     "page.html": {
+      "sha256": "7cfde349d283a14e17e01448bd5f5350d0aff70e12e8588cb8744b9bdc9da2ba",
+      "bytes": 369877
+     },
+     "provenance.json": {
+      "sha256": "6ba92d4fb6bb94849d93f0c9b24c30b3501d6484e8e2f8d3859fc9e13a1334f9",
+      "bytes": 1863
+     },
+     "text.txt": {
+      "sha256": "0103588390c0208856fb301c62ae9739c2436f337f44eb418f927181ae5d5626",
+      "bytes": 21286
+     }
+    },
+    "started_utc": null,
+    "status": 200,
+    "final_url": "https://cypro.co.uk/insights/cyber-bulletins/php2shell-exploit-used-to-root-firewalls/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T000936Z, queue priority 1 (mechanical selection by researcher@php.newsroom, read by the curator). A CyPro bulletin of 28 October 2026 (by Rob McBride) that restates Dream Research's report and ends 'Originally reported by securityweek.com'; it is a...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell Exploit Roots Firewalls | CyPro\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/security-vendor/cypro/php2shell-exploit-roots-firewalls`, snapshot `20261029T000936Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T000936Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA CyPro bulletin of 28 October 2026 (by Rob McBride) that restates Dream Research's report and ends 'Originally reported by securityweek.com'; it is a rewrite, not original reporting. It notes that Dream reported three affected servers in a US government-affiliated environment while SecurityWeek reported two, 'The discrepancy remains unresolved'; that the 24-firewalls-plus-one-management-server breakdown is not established by the primary findings (the Dream page as captured does state it); that neither the vendor nor the versions are disclosed; that the China-link indicators are circumstantial; and that other sources 'do not independently verify Dream's specific victim details'. It says CISA's listings confirm exploitation of both flaws in the wild.\n\n> It described three affected servers in a US government-affiliated environment, while SecurityWeek reported that two servers at the organisation were compromised. The discrepancy remains unresolved.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): CyPro bulletin on Dream's report; notes the vendor and versions are undisclosed, SecurityWeek says two servers where Dream says three, and that other sources do not independently verify Dream's victim details. Not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader. SecurityWeek's article of 28 October, which CyPro relays, is not in the vault. The bulletin's technical paragraphs are not reproduced in these notes.\n"
+ },
+ {
   "slug": "dailynews-news-6303237",
   "url": "https://www.dailynews.co.th/news/6303237/",
   "publisher": "เดลินิวส์",
@@ -8753,6 +8799,144 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP曝出代号PHP2Shell高危漏洞- DoNews快讯\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `hk/news/donews/news-detail-8-6750596-html`, snapshot `20261023T232528Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T232528Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nDoNews (Chinese), a brief flash item: PHP disclosed a high-risk flaw codenamed PHP2Shell; the language underpins about 70% of websites; the flaw comes from memory management; after the official patch Europe and the US issued emergency warnings and shut some sites, and several Asian governments and companies are checking and hardening their sites.\n\n> PHP曝出代号PHP2Shell的高危漏洞，该语言支撑全球约70%网站，漏洞源于内存管理问题。\n\n_Curator's translation:_ \"PHP has disclosed a high-risk vulnerability codenamed PHP2Shell; the language supports about 70% of websites worldwide, and the flaw comes from a memory-management problem.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T171501Z, not necessarily this one):_ DoNews page was down; the title only says PHP disclosed a high-risk flaw codenamed PHP2Shell.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP曝出代号PHP2Shell高危漏洞- DoNews快讯\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `zh`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "dreamgroup-chained-php2shell-roots-25-servers",
+  "url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers",
+  "publisher": "Dream Research",
+  "kind": "news",
+  "title": "Chained PHP2Shell Exploit Roots 25 Servers | Dream Research",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261029T000715Z",
+    "files": {
+     "headers.json": {
+      "sha256": "51ecc96e61db9b8b4c0fec9976e45c5acaebdbaf9372e517f6d7cd7d116b6466",
+      "bytes": 1330
+     },
+     "meta.json": {
+      "sha256": "169f11d122200b0f48840d5e46298641f1cbbdbd50abdf1d200d48085554dda7",
+      "bytes": 348
+     },
+     "page.html": {
+      "sha256": "1264c26fa85b5a78df1d3dff85b75ccd58ca13b14c374cacd25b38a54024a5be",
+      "bytes": 60794
+     },
+     "provenance.json": {
+      "sha256": "fc6d6ada4a4e4be3b53fdf9a2fc732c4f79c89ad33026c2a2319a4bb2d6cf82a",
+      "bytes": 1867
+     },
+     "text.txt": {
+      "sha256": "e97a2343aa094a3374d02020d5258bbeef80bf6ebd907170fae87f8ae9d4ed6d",
+      "bytes": 18988
+     }
+    },
+    "started_utc": null,
+    "status": 200,
+    "final_url": "https://dreamgroup.com/blog/chained-php2shell-exploit-roots-25-servers"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T000715Z, queue priority 1 (mechanical selection by researcher@php.newsroom, read by the curator). Dream Research (an Israeli security company, a vendor of the Hero and Sphere products) says its researchers found, on 25 October, recovered artifacts...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Chained PHP2Shell Exploit Roots 25 Servers | Dream Research\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `il/security-vendor/dreamgroup/chained-php2shell-roots-25-servers`, snapshot `20261029T000715Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T000715Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nDream Research (an Israeli security company, a vendor of the Hero and Sphere products) says its researchers found, on 25 October, recovered artifacts of a campaign that rooted 25 servers in the United States, Japan, Taiwan and South Korea: 24 firewalls of an undisclosed large vendor plus one internal firewall-management server, with three servers in a US government-affiliated environment. It says the attackers chained the PHP2Shell flaws (CVE-2026-109618, CVE-2026-109619) with the Linux kernel flaw it calls Fragnesia (CVE-2026-46300), a chained remote-code-execution and privilege-escalation attack as Dream describes it. The vendor and affected versions are withheld and the vendor is said to have been notified. It then describes Active Directory attacks from the management server, says it cannot tell whether the later steps succeeded, does not name an actor (Chinese-nexus indicators only) and has no direct evidence that AI wrote the exploit. The page cites no outside source or confirmation and publishes none of the artifacts; it is Dream's own account, written with Dream's own product Hero.\n\n> On October 25, Dream researchers uncovered artifacts of what appeared to be a Chinese AI-assisted campaign that rooted 25 servers, including systems in a US government-affiliated environment.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): Dream Research report of 26 Oct 2026: says a chained PHP2Shell (CVE-2026-109618/109619) plus Fragnesia (CVE-2026-46300) exploit rooted 25 servers, two firewalls and a firewall-management server tied to a US government-affiliated organisation. Single source, vendor withheld; reported, not confirmed. Not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader. The page names Claude Code only as software Dream says was installed on the attacker's infrastructure. The technical steps in the page are deliberately not reproduced in these notes. The page's own date line is 26 October 2026; the capture has no machine-readable published date.\n"
+ },
+ {
+  "slug": "dreamgroup-hercules-on-prem-ai-vuln-model-cybergym",
+  "url": "https://dreamgroup.com/blog/hercules-on-premises-ai-vulnerability-model-ranked-1-on-cybergym",
+  "publisher": "Dream Research",
+  "kind": "news",
+  "title": "Hercules: On-Prem AI Vulnerability Model | Dream Research",
+  "published": "2026-09-03",
+  "captures": [
+   {
+    "stamp": "20261029T000715Z",
+    "files": {
+     "headers.json": {
+      "sha256": "12d7fb7753184bba973b3a4053028890ee6c89732b517e9050190567d377b31d",
+      "bytes": 1330
+     },
+     "meta.json": {
+      "sha256": "2a4a0c5111200212af1e5062776adfbdcddb6c0dd3c92780f117e8f6ad010474",
+      "bytes": 390
+     },
+     "page.html": {
+      "sha256": "572175d252f1402528fe33a0ce82c324f951ecdb6a961a1532ca597d2583b230",
+      "bytes": 53699
+     },
+     "provenance.json": {
+      "sha256": "e0847df75d7b93e14989a65436ad3d997ac5ce4e685ac5e6e9aa602f7f2796af",
+      "bytes": 1924
+     },
+     "text.txt": {
+      "sha256": "69e5baf8be7e9340b932df2966b6e6fb81bea436ed01c8df3c830635aa9e2b48",
+      "bytes": 11848
+     }
+    },
+    "started_utc": null,
+    "status": 200,
+    "final_url": "https://dreamgroup.com/blog/hercules-on-premises-ai-vulnerability-model-ranked-1-on-cybergym"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T000715Z, queue priority 1 (mechanical selection by researcher@php.newsroom, read by the curator). A Dream Research post of 3 September 2026 about Hero, Dream's autonomous AI vulnerability-research product for governments, and Hercules, the speciali...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Hercules: On-Prem AI Vulnerability Model | Dream Research\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `il/security-vendor/dreamgroup/hercules-on-prem-ai-vuln-model-cybergym`, snapshot `20261029T000715Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T000715Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Dream Research post of 3 September 2026 about Hero, Dream's autonomous AI vulnerability-research product for governments, and Hercules, the specialised model behind it, which Dream says scored 96.6% on the CyberGym benchmark and has found more than 1,000 zero-day vulnerabilities. The post does not mention PHP2Shell or the 25-servers incident. It is linked from the 25-servers report as context for the publisher, and it bears on that story only because the report says it was written with Hero.\n\n> Hero achieved a 96.6% score on UC Berkeley’s CyberGym - the highest score EVER recorded on the benchmark.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): Dream post linked from the 25-servers report: Hercules, Dream's on-premises vulnerability model (CyberGym ranking), context on the publisher and its Hero product. Not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader (the only invisible characters are two zero-width joiners in page layout).\n"
+ },
+ {
+  "slug": "dreamgroup-multi-agent-ai-framework-asian-governme",
+  "url": "https://dreamgroup.com/blog/inside-a-multi-agent-ai-framework-used-to-compromise-government-entities-in-asia",
+  "publisher": "Dream Research",
+  "kind": "news",
+  "title": "Multi-Agent AI Attacks on Asian Governments | Dream Research",
+  "published": "2026-08-12",
+  "captures": [
+   {
+    "stamp": "20261029T000716Z",
+    "files": {
+     "headers.json": {
+      "sha256": "37f31e0b883c734b9db985235b5e9abf8ccbe0f129d33d3ea6ce734d9aef6daa",
+      "bytes": 1330
+     },
+     "meta.json": {
+      "sha256": "5ec2a7b9f7fbd39629921ba05e4b3714a926e9db0e41868441aa6dc1c55d070a",
+      "bytes": 425
+     },
+     "page.html": {
+      "sha256": "8ef6be3ff73638769a83056c47117156c6bf969603d27c0aaa5bf4fd0e2babfe",
+      "bytes": 61864
+     },
+     "provenance.json": {
+      "sha256": "126fa5fac545e0d165c0ffe25be20e35c4010d1ccd8285a199f6b626eaef996c",
+      "bytes": 1965
+     },
+     "text.txt": {
+      "sha256": "86b54895b41dce23482fe8731c5390417eaeaf26eb6ef3af67798e0fba02e658",
+      "bytes": 17568
+     }
+    },
+    "started_utc": null,
+    "status": 200,
+    "final_url": "https://dreamgroup.com/blog/inside-a-multi-agent-ai-framework-used-to-compromise-government-entities-in-asia"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T000716Z, queue priority 1 (mechanical selection by researcher@php.newsroom, read by the curator). A Dream Research report of 12 August 2026 on a multi-agent AI attack framework (built on the Hermes and OpenClaw agents) whose workspace Dream says it...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Multi-Agent AI Attacks on Asian Governments | Dream Research\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `il/security-vendor/dreamgroup/multi-agent-ai-framework-asian-governments`, snapshot `20261029T000716Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T000716Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Dream Research report of 12 August 2026 on a multi-agent AI attack framework (built on the Hermes and OpenClaw agents) whose workspace Dream says it found in early July 2026 and which had been used over about four days against government entities in Asia. Dream says it withheld the targets and the operator, that some details were first shared with the Financial Times, and that language analysis points to a Chinese-language operator. It does not mention PHP2Shell, firewalls or the 25-servers incident. It supports only this: the 25-servers report is the second Dream report in about ten weeks that describes an AI-assisted, Chinese-nexus operation against governments, in each case from artifacts Dream says it recovered and with the victims withheld.\n\n> In early July 2026, DREAM Lab's Threat Research team uncovered the complete operational workspace of an autonomous AI attack framework that had been actively conducting intrusion campaigns against government entities in Asia.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): Dream post linked from the 25-servers report: a multi-agent AI framework used against Asian government entities (separate Dream report). Not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader (two zero-width joiners in page layout only). The report describes AI tooling in the attacker's framework; none of it is directed at a reader.\n"
  },
  {
   "slug": "drupal-psa-2026-10-20",
@@ -29864,6 +30048,98 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# CISA Confirms Active Exploitation of Two PHP2Shell Flaws Enabling Remote Code Execution\n\nPromoted by breaking@php.newsroom (in the curator's role) from the source watch (pack vault `7r83qic5`), page `in/tech-press/the-hacker-news/cisa-confirms-php2shell-exploitation`, snapshot `20261027T191336Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T191336Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Read in the curator's role._\n\nThe Hacker News (Ravie Lakshmanan, 'Oct 27, 2026'): CISA added the two PHP2Shell CVEs to its KEV catalog on Monday (26 October); the addition came after Adel Karimi (Perplexity) confirmed RCE against honeypots on 24 October; fixed in PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 (21 October); federal deadline 29 October; Censys estimate of 32.51 million PHP services on an affected version; a list of 38 vendors and projects that published advisories; and the PHP Windows builds of 26 October for CVE-2026-111497 (Brotli, 'Broccoli2Shell'). Third-party reporting: each statement is the publication's, not a primary's.\n\n> The U.S. Cybersecurity and Infrastructure Security Agency (CISA) on Monday confirmed active exploitation of the recently patched PHP2Shell flaws by adding them to its Known Exploited Vulnerabilities (KEV) catalog.\n\n> The addition of the two flaws to the KEV catalog comes after Adel Karimi, detection and response lead at Perplexity, confirmed successful instances of remote code execution against honeypot systems on October 24, 2026.\n\n> The evidence demonstrates this chain on the intentionally favorable single-worker mod_php profile; it is not a measurement of exploit reliability on other worker counts, PHP builds, or applications.\n\n> The issues have been addressed in PHP versions 8.5.12, 8.4.27, 8.3.36, and 8.2.35 released on October 21, 2026. Federal agencies have time until October 29, 2026, to apply the necessary fixes.\n\n> According to estimates shared by Censys, more than 32.51 million PHP services are still running an affected version.\n\n> As of October 26, 2026, the PHP Foundation also released Windows builds 8.5.12-1, 8.4.27-1, 8.3.36-1 and 8.2.35-1 to address CVE-2026-111497\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): The Hacker News (Ravie Lakshmanan, 27 Oct 2026): CISA added CVE-2026-109618 and CVE-2026-109619 to KEV on Monday; Adel Karimi (Perplexity) confirmed RCE against honeypots on 24 Oct; Censys counts 32.51 million PHP services on an affected version; lists about 40 vendor advisories and notes CVE-2026-111497 (Brotli, \"Broccoli2Shell\") fixed in PHP Windows builds of 26 Oct.\n\nSupports: exploitation confirmed (KEV listing, honeypot RCE); the list of vendor responses; exposure count; board breaking-0002.\n\n## Capture notes\n\nLanguage `en`. tools/capture_batch.mjs (Playwright Chromium), HTTP 200, captured 2026-10-27T19:13:36Z. The page quotes Karimi on the technique (a cookie dump and offsets from a public exploit); that detail is left in the capture and not repeated here. THN links Karimi's post (x.com/0x4D31/status/2114027420084752479), which the vault does not hold.\n"
+ },
+ {
+  "slug": "the-hacker-news-thehackernews-php2shell-roots-25-s",
+  "url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html",
+  "publisher": "The Hacker News",
+  "kind": "news",
+  "title": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261029T000934Z",
+    "files": {
+     "headers.json": {
+      "sha256": "232b24cdd0316d14841d50c5c11bcfb0444bc4316fe415e1f54b78054f46bac0",
+      "bytes": 620
+     },
+     "meta.json": {
+      "sha256": "7dc1824bb6de64de7fa55310864de34e519d8fe938b799184ab85f875c755c07",
+      "bytes": 372
+     },
+     "page.html": {
+      "sha256": "64d598fea2980186ea2f4a433dfe7867b2d51399f188b1ec5152ffe7ede09740",
+      "bytes": 174422
+     },
+     "provenance.json": {
+      "sha256": "c0cf0eb85482ef8062ed68293e0c41f21ff1da7833669718831c472915ded693",
+      "bytes": 1907
+     },
+     "text.txt": {
+      "sha256": "07babac5543bd4afe3c47e7464fb7ab0a27200e2f0a2cd324083bc405ae955c3",
+      "bytes": 11887
+     }
+    },
+    "started_utc": null,
+    "status": 200,
+    "final_url": "https://thehackernews.com/2026/10/php2shell-attack-roots-25-servers.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T000934Z, queue priority 1 (mechanical selection by researcher@php.newsroom, read by the curator). The Hacker News (Ravie Lakshmanan, 28 October 2026) reports Dream Research's findings: 25 servers rooted in the US, Japan, Taiwan and South Korea with...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `in/tech-press/the-hacker-news/thehackernews-php2shell-roots-25-servers`, snapshot `20261029T000934Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T000934Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThe Hacker News (Ravie Lakshmanan, 28 October 2026) reports Dream Research's findings: 25 servers rooted in the US, Japan, Taiwan and South Korea with three in a US government-affiliated environment, the PHP2Shell flaws chained with the Linux kernel flaw CVE-2026-46300, the vendor undisclosed, the attacker's Active Directory attempts of unknown outcome, and AI-assisted tooling. It quotes Dream only and cites no independent source, no vendor and no CISA statement for the victims. It adds context that PHP2Shell has seen only limited exploitation, quoting a forum member via Flare. It does not say it verified the findings.\n\n> The activity, which was observed on October 25, 2026, involved an attacker combining PHP2Shell with a kernel privilege escalation exploit to root 25 servers, including three systems in a U.S. government-affiliated environment.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): The Hacker News (28 Oct 2026) reports Dream's 25-servers findings; quotes Dream only, names no vendor, no independent source. Secondary report of a single source. Not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader (one zero-width space in the page layout). The page's byline and date are on the page; the capture has no machine-readable date.\n"
+ },
+ {
+  "slug": "the-next-web-php2shell-cisa-kev-dream-25-servers",
+  "url": "https://thenextweb.com/news/php2shell-flaws-exploited-cisa-kev",
+  "publisher": "The Next Web",
+  "kind": "news",
+  "title": "CISA confirms attackers are exploiting both PHP2Shell flaws",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261029T000935Z",
+    "files": {
+     "headers.json": {
+      "sha256": "f87468dc97b76a577f770a542ab6e0e39dbb31dcf8c1df76b3824a9fe2c96a2b",
+      "bytes": 6253
+     },
+     "meta.json": {
+      "sha256": "55e2dabffbad0b0327329518c051e6f705edda6af203a03f24dbc8ca99fc528f",
+      "bytes": 332
+     },
+     "page.html": {
+      "sha256": "608eff809c826615695677917acecea41853919f099ee4cfaf5a64015f03c4b1",
+      "bytes": 184899
+     },
+     "provenance.json": {
+      "sha256": "91a4eadf9f76164dd0537a756f802db13ebd768909be061ee1e4027205047a30",
+      "bytes": 1850
+     },
+     "text.txt": {
+      "sha256": "c3e1a32a6a628c8ea9fce44ac9cbfc39997ea55124350ca20cf3ee500e1f24e6",
+      "bytes": 8354
+     }
+    },
+    "started_utc": null,
+    "status": 200,
+    "final_url": "https://thenextweb.com/news/php2shell-flaws-exploited-cisa-kev"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261029T000935Z, queue priority 1 (mechanical selection by researcher@php.newsroom, read by the curator). The Next Web (Ana Maria Constantin, 28 October 2026) reports that CISA added both PHP2Shell flaws to its Known Exploited Vulnerabilities catalogue on...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# CISA confirms attackers are exploiting both PHP2Shell flaws\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `nl/tech-press/the-next-web/php2shell-cisa-kev-dream-25-servers`, snapshot `20261029T000935Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T000935Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nThe Next Web (Ana Maria Constantin, 28 October 2026) reports that CISA added both PHP2Shell flaws to its Known Exploited Vulnerabilities catalogue on Monday (26 October), without naming victims or describing its evidence; sets out honeypot evidence of exploitation from a researcher at Perplexity on 24 October; and, separately, reports Dream Research's claim of 25 rooted servers (24 firewalls and one internal management server). It says in terms: 'TNW has not independently verified Dream's findings.' It also notes that some earlier compromise claims did not hold up (Sophos corrected one, Unit 42 withdrew one).\n\n> TNW has not independently verified Dream’s findings.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): TNW: CISA KEV listing of both CVEs, honeypot shells on 24 Oct, and Dream's 25-servers claim; says \"TNW has not independently verified Dream's findings\". Not read by a person.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "the-next-web-php2shell-no-confirmed-breaches",

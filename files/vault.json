@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "75668aedfb6d",
-  "subject": "curator@php.newsroom: batch 28, three sources from the source watch (Okdiario, Tokocrypto News, CozumPark): 14 claims cur28-  +24 ~3  [blobs:+27 trees:+13]",
-  "commits": 49
+  "commit": "6c07e190d81e",
+  "subject": "breaking-0005: Dream Research PHP2Shell story promoted: 6 sources, 35 claims (Role: curator)  +42 ~4  [blobs:+46 trees:+23]",
+  "commits": 50
  },
- "sources": 675,
- "captures": 741,
- "hashed_files": 4331,
+ "sources": 681,
+ "captures": 747,
+ "hashed_files": 4361,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-28T17:15Z",
+ "latest_capture": "2026-10-29T00:09Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
