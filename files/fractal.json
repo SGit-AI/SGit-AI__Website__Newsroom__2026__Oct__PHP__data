@@ -1,7 +1,7 @@
 {
  "about": "The fractal graph: one graph from the people affected, through the risks, the story and the evidence, to the flaws, the fix and the changed lines of php-src. A node is just a node; meaning lives in the edges. Every node opens into its own neighbourhood in the navigator.",
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.52",
+ "version": "0.22.53",
  "commit": "3584a98bda0f2c0d367255b046798b0d3a221a19",
  "layers": [
   {
@@ -698,8 +698,8 @@
   {
    "id": "claim:no-confirmed-compromise",
    "layer": "claim",
-   "name": "As of 17:15 UTC on 28 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts.",
-   "text": "reported, says this site, from every captured source in the evidence vault (675 sources, vault nnd3i8iw at head 75668aedfb6d), as of its latest capture at 17:15 UTC on 28 October",
+   "name": "As of 00:09 UTC on 29 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts. One security vendor, Dream Research, reported on 26 October that a campaign using the two flaws, with a Linux kernel flaw, rooted 25 servers, three of them in a US government-affiliated environment; it names no victim and withholds the firewall vendor and the evidence, says it cannot tell whether later steps worked, and The Hacker News, The Next Web and CyPro repeat it as one source. The Next Web says it has not independently verified it and CyPro says other sources do not independently verify the victim details; no victim, vendor, CISA or PHP-team statement about these victims is in the evidence. Reported by Dream, not independently confirmed: it names no organisation, so it is a report of compromise, not a confirmed one.",
+   "text": "reported, says this site, from every captured source in the evidence vault (681 sources, vault nnd3i8iw at head 6c07e190d81e), as of its latest capture at 00:09 UTC on 29 October",
    "status": "reported",
    "href": "claims/index.html#no-confirmed-compromise"
   },
@@ -1887,6 +1887,34 @@
    "name": "NETGEAR",
    "text": "NETGEAR Security Advisory for PHP2Shell Vulnerabilities - NETGEAR Support",
    "href": "sources/netgear-000070960/index.html"
+  },
+  {
+   "id": "source:dreamgroup-chained-php2shell-roots-25-servers",
+   "layer": "source",
+   "name": "Dream Research",
+   "text": "Chained PHP2Shell Exploit Roots 25 Servers | Dream Research",
+   "href": "sources/dreamgroup-chained-php2shell-roots-25-servers/index.html"
+  },
+  {
+   "id": "source:the-hacker-news-thehackernews-php2shell-roots-25-s",
+   "layer": "source",
+   "name": "THN",
+   "text": "PHP2Shell Attack Roots 25 Servers, Breaches U.S. Government-Affiliated Network",
+   "href": "sources/the-hacker-news-thehackernews-php2shell-roots-25-s/index.html"
+  },
+  {
+   "id": "source:the-next-web-php2shell-cisa-kev-dream-25-servers",
+   "layer": "source",
+   "name": "The Next Web",
+   "text": "CISA confirms attackers are exploiting both PHP2Shell flaws",
+   "href": "sources/the-next-web-php2shell-cisa-kev-dream-25-servers/index.html"
+  },
+  {
+   "id": "source:cypro-php2shell-exploit-roots-firewalls",
+   "layer": "source",
+   "name": "CyPro",
+   "text": "PHP2Shell Exploit Roots Firewalls | CyPro",
+   "href": "sources/cypro-php2shell-exploit-roots-firewalls/index.html"
   },
   {
    "id": "source:github-rjmendez-phpup-2026",
@@ -9158,6 +9186,26 @@
    "rel": "cites"
   },
   {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:dreamgroup-chained-php2shell-roots-25-servers",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:the-hacker-news-thehackernews-php2shell-roots-25-s",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:the-next-web-php2shell-cisa-kev-dream-25-servers",
+   "rel": "cites"
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "to": "source:cypro-php2shell-exploit-roots-firewalls",
+   "rel": "cites"
+  },
+  {
    "from": "claim:pocs-wrong",
    "to": "source:github-rjmendez-phpup-2026",
    "rel": "cites"
@@ -13354,14 +13402,14 @@
   }
  ],
  "counts": {
-  "nodes": 916,
-  "edges": 1261,
+  "nodes": 920,
+  "edges": 1265,
   "by_layer": {
    "stakeholder": 16,
    "risk": 9,
    "arc": 7,
    "claim": 139,
-   "source": 111,
+   "source": 115,
    "flaw": 2,
    "fix": 7,
    "code": 73,

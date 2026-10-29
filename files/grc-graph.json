@@ -1,6 +1,6 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.52",
+ "version": "0.22.53",
  "kept_by": "grc@php.newsroom",
  "as_of": "2026-10-22",
  "verbs": [
@@ -3352,7 +3352,7 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 17:15 UTC on 28 October, no named organisation has said it was compromised through p",
+   "label": "As of 00:09 UTC on 29 October, no named organisation has said it was compromised through p",
    "href": "facts/no-confirmed-compromise/index.html"
   },
   {
@@ -3528,6 +3528,30 @@
    "kind": "source",
    "label": "NETGEAR",
    "href": "sources/netgear-000070960/index.html"
+  },
+  {
+   "id": "source:dreamgroup-chained-php2shell-roots-25-servers",
+   "kind": "source",
+   "label": "Dream Research",
+   "href": "sources/dreamgroup-chained-php2shell-roots-25-servers/index.html"
+  },
+  {
+   "id": "source:the-hacker-news-thehackernews-php2shell-roots-25-s",
+   "kind": "source",
+   "label": "The Hacker News",
+   "href": "sources/the-hacker-news-thehackernews-php2shell-roots-25-s/index.html"
+  },
+  {
+   "id": "source:the-next-web-php2shell-cisa-kev-dream-25-servers",
+   "kind": "source",
+   "label": "The Next Web",
+   "href": "sources/the-next-web-php2shell-cisa-kev-dream-25-servers/index.html"
+  },
+  {
+   "id": "source:cypro-php2shell-exploit-roots-firewalls",
+   "kind": "source",
+   "label": "CyPro",
+   "href": "sources/cypro-php2shell-exploit-roots-firewalls/index.html"
   },
   {
    "id": "claim:nz-active",
@@ -14433,6 +14457,46 @@
    "basis": {
     "kind": "source",
     "ref": "netgear-000070960"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:dreamgroup-chained-php2shell-roots-25-servers",
+   "basis": {
+    "kind": "source",
+    "ref": "dreamgroup-chained-php2shell-roots-25-servers"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:the-hacker-news-thehackernews-php2shell-roots-25-s",
+   "basis": {
+    "kind": "source",
+    "ref": "the-hacker-news-thehackernews-php2shell-roots-25-s"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:the-next-web-php2shell-cisa-kev-dream-25-servers",
+   "basis": {
+    "kind": "source",
+    "ref": "the-next-web-php2shell-cisa-kev-dream-25-servers"
+   }
+  },
+  {
+   "from": "claim:no-confirmed-compromise",
+   "rel": "cites",
+   "inverse": "cited_by",
+   "to": "source:cypro-php2shell-exploit-roots-firewalls",
+   "basis": {
+    "kind": "source",
+    "ref": "cypro-php2shell-exploit-roots-firewalls"
    }
   },
   {

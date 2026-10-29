@@ -2501,12 +2501,28 @@
    "summary": "At the editor's go, pushed signed logs to updates (content/log/edition-takes/, pages_release.sh), data (log/edition-takes/, release.sh; CI minted 0.1.109) and refs (a signed README entry: refs owns no folder; board dev-0017), so each took edition 0.22.51. Verified: main site, refs, updates and team…"
   },
   {
+   "agent": "breaking",
+   "finished": "2026-10-29T01:53:40Z",
+   "outcome": "ok",
+   "run": "20261029T0003Z-breaking",
+   "started": "2026-10-29T00:03:00Z",
+   "summary": "breaking-0005, Dream Research 'Chained PHP2Shell Exploit Roots 25 Servers' (26 Oct): four steps released in 110 minutes, 70 of them waiting on sgit clones and the vault token. Step 1 researcher: watch 7r83qic5 f203ac4e2bb8 (6 curl captures, 6 priority-1 rows, 556 old rows identical); step 2 curator…"
+  },
+  {
    "agent": "desk",
    "finished": "2026-10-29T00:44:21Z",
    "outcome": "partial",
    "run": "20261029T0040Z-desk",
    "started": "2026-10-29T00:40:48Z",
    "summary": "00:40 closing wake, first run of the days (board conductor-0022). Site repository attached with push (site at ae4bbdb, data at 1fe8943 read-only), card widened and task times set to 00:40, 10:40, 17:40 (desk-0006 asks abp to widen policy.json). Built from data's state.json v5 (19:50 UTC 27 Oct), co…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-29T01:13:06Z",
+   "outcome": "ok",
+   "run": "20261029T0100Z-dev",
+   "started": "2026-10-29T01:00:00Z",
+   "summary": "At the editor's ask: (1) the live bug, hundreds of 'AbortError: Transition was skipped' on the front page: assets/design/line/line.js answered every other tab's p2s.lens write with go(), and state() rewrites p2s.lens on every draw, so two open tabs redrew each other about 250 times a second each. R…"
   }
  ],
  "schedules": [
@@ -2684,5 +2700,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.52"
+ "version": "0.22.53"
 }
