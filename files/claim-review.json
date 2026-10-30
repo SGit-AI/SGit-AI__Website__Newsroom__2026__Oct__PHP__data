@@ -6716,6 +6716,116 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-30T11:22Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-weekend-risikomonitor-28622",
+   "verdict": "noted",
+   "reason": "Capture checked (German, 30 October): Risikomonitor.com's remeasurement counts 28,622 Austrian websites still vulnerable, reported patch rate 18.1%, and at disclosure about 3.9 million vulnerable sites with a visible PHP version among 34.9 million reachable sites in the EU states, Switzerland and Liechtenstein. A version-based measurement by one firm, which the page says changes as operators update and rests on different data than other measurements; not a count of hacked sites. Not used.",
+   "sources": [
+    "weekend-chronik-sicherheitsluecke-php-oesterreic"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-weekend-sectors",
+   "verdict": "noted",
+   "reason": "Capture checked: almost half of the attributable affected Austrian sites come from hospitality, retail, transport and catering, with small businesses and sites in direct contact with customers (shops, booking portals) most affected. A sector breakdown of attributable sites only, from one firm's measurement.",
+   "sources": [
+    "weekend-chronik-sicherheitsluecke-php-oesterreic"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-weekend-no-attacks-21oct",
+   "verdict": "noted",
+   "reason": "Capture checked: at the time of the disclosure on 21 October the Austrian interior ministry knew of no successful attacks in Austria. Point-in-time and about Austria only; consistent with no-confirmed-compromise, which it does not extend.",
+   "sources": [
+    "weekend-chronik-sicherheitsluecke-php-oesterreic"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-weekend-enisa-isolate",
+   "verdict": "noted",
+   "reason": "Capture checked: ENISA called for quick action straight after the flaws became known: check which systems use PHP, install the updates quickly, give priority to publicly reachable systems and, where an update is not immediately possible, use extra protective measures or temporarily isolate exposed applications. Isolating, as CERT-EU says (offline-allies, disputed), not taking offline; ENISA's own text is not in the vault.",
+   "sources": [
+    "weekend-chronik-sicherheitsluecke-php-oesterreic"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-innovatopia-dream-chain",
+   "verdict": "held back",
+   "reason": "Capture checked (Japanese, 30 October): the page says Dream's report of 26 October describes PHP2Shell chained with the Linux kernel flaw Fragnesia (CVE-2026-46300) to root 25 firewalls and management servers 'running Palo Alto Networks' PAN-OS', that the attacker found about 19,000 exposed management interfaces with FOFA and attacked 240 devices in the United States, Japan, Taiwan and Korea. Dream's own page, as carried (dreamgroup-chained-php2shell-roots-25-servers), says 'we are not disclosing the vendor or the affected versions', so the vendor name is not Dream's and rests on this page's own wording and, by its references, Unit 42's threat brief and Palo Alto's advisory, neither of which is in the vault. The 19,000 and 240 are Dream's scale figures held back at cur41-dream-targeting-funnel. Not stated; flagged to the correspondent.",
+   "sources": [
+    "innovatopia-cyber-security-cyber-security-news-11955"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-innovatopia-us-gov-ad",
+   "verdict": "agrees",
+   "reason": "Capture checked: at a US government-linked organisation the first firewall was rooted on 23 October at 18:14 UTC, a second reached and then the central management server on 24 October, and attacks on Active Directory began, where Dream could confirm only a decrypted LDAP service-account password and a listing of all users and groups, not whether a password spray, backdoor accounts or signing-key theft succeeded. Agrees with cur35-dream-event-times, cur37-dream-ad-activity and cur38-dream-unknown-outcomes (the page's 'the spray, backdoor accounts and keys' unknowns match Dream's). Reported by Dream, not independently confirmed.",
+   "sources": [
+    "innovatopia-cyber-security-cyber-security-news-11955"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-innovatopia-unit42-verified",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Unit 42 independently verified the attacker's tools and results' (the page's lead), and its reference list says Unit 42's threat brief, updated 29 October, adds a verification of Dream's report. The site carries Dream's report as reported, not independently confirmed (cur29-dream-25-servers and the compromise page) and the vault holds no Unit 42 statement on it: the captured Palo Alto advisory (22 and 23 October) predates it, and The Next Web (29 October) mentions only Unit 42's 25 October withdrawal about a European agency. A second-hand relay of a vendor's verification, primary not captured: not stated as worded, and it bears directly on the compromise claim's sentence that no vendor statement about these victims is in the evidence. Flagged to the correspondent.",
+   "sources": [
+    "innovatopia-cyber-security-cyber-security-news-11955"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-innovatopia-pan-os-exposure",
+   "verdict": "noted",
+   "reason": "Capture checked: Palo Alto Networks says PAN-OS management interfaces are not exposed by default, that about 0.02% of deployed devices exposed them and were affected and each was contacted individually, and that PAN-OS fixes were published by series from 25 to 29 October, those for the targeted 12.1 and 12.2 series from 27 October. A vendor's statement about its own products as relayed by a Japanese outlet; the vault's copy of the advisory (22 and 23 October) has none of it, and the primary (its advisory's update history and Unit 42's brief) is not captured. Not used; it is the first source in the vault to name the vendor behind Dream's unnamed firewalls, flagged to the correspondent.",
+   "sources": [
+    "innovatopia-cyber-security-cyber-security-news-11955"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-innovatopia-ai-tooling",
+   "verdict": "agrees",
+   "reason": "Capture checked: Dream found Claude Code installed, the AI offensive platform aiscan configured with DeepSeek and Kimi, and FOFA keys, and says it has no direct evidence the AI tools wrote the exploit or the post-exploitation scripts, only that the structure, commenting style and consistency across about 40 scripts suggest AI-assisted development. Matches Dream's own page; the page also keeps the presence of AI tools apart from AI doing the attack, as the vault note says. Reported by Dream.",
+   "sources": [
+    "innovatopia-cyber-security-cyber-security-news-11955"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur36-3rd-checkpoint-targeting",
+   "verdict": "noted",
+   "reason": "Capture checked (Japanese, a Check Point release relayed by Third News): about 10% of organisations worldwide were attack targets, attacks concentrated around midnight, European organisations especially targeted (Hungary, Denmark, Austria most), telecommunications, education and media at highest risk. A vendor's telemetry of attempts, not compromises; the base of the 10% is not defined on the page. Not used.",
+   "sources": [
+    "news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T13:43Z",
+   "by": "claude-journalist"
   }
  ]
 }
