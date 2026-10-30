@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.53",
+"site": "0.22.54",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -79,11 +79,11 @@
 "zone": "research",
 "title": "Every claim",
 "path": "claims/index.html",
-"hash": "195454987357",
-"v": 22,
+"hash": "04ed9e81e9bb",
+"v": 23,
 "first": "0.1.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/page-claims/index.html"
 },
 "page-numbers": {
@@ -127,11 +127,11 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "70df71b1ae31",
-"v": 18,
+"hash": "345cb7180e68",
+"v": 19,
 "first": "0.1.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/page-method/index.html"
 },
 "briefing-board": {
@@ -139,11 +139,11 @@
 "zone": "for-you",
 "title": "Briefing: Board member or executive",
 "path": "briefings/board/index.html",
-"hash": "4edec7ffb93a",
-"v": 26,
+"hash": "b86b27cbe70c",
+"v": 27,
 "first": "0.1.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-board/index.html"
 },
 "briefing-security": {
@@ -811,11 +811,11 @@
 "zone": "research",
 "title": "Impact: offline vs compromised",
 "path": "impact/index.html",
-"hash": "b95499993416",
-"v": 20,
+"hash": "99a2c3622b43",
+"v": 21,
 "first": "0.2.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/page-impact/index.html"
 },
 "page-defence": {
@@ -859,11 +859,11 @@
 "zone": "for-you",
 "title": "Briefing: CISO",
 "path": "briefings/ciso/index.html",
-"hash": "905f3e7d62b2",
-"v": 24,
+"hash": "7e37c928e193",
+"v": 25,
 "first": "0.2.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-ciso/index.html"
 },
 "briefing-cto": {
@@ -883,11 +883,11 @@
 "zone": "for-you",
 "title": "Briefing: CFO",
 "path": "briefings/cfo/index.html",
-"hash": "76712126449c",
-"v": 26,
+"hash": "9ab6a47e94e4",
+"v": 27,
 "first": "0.2.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-cfo/index.html"
 },
 "briefing-appsec": {
@@ -919,11 +919,11 @@
 "zone": "for-you",
 "title": "Briefing: Media and communications team",
 "path": "briefings/comms/index.html",
-"hash": "5d57be8d336d",
-"v": 21,
+"hash": "6d0e020bc8b0",
+"v": 22,
 "first": "0.2.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-comms/index.html"
 },
 "fact-cf-millions": {
@@ -977,13 +977,13 @@
 "fact-no-confirmed-compromise": {
 "kind": "fact",
 "zone": "research",
-"title": "As of 00:09 UTC on 29 October, no named organisation has said it was compromised through p",
+"title": "As of 17:13 UTC on 29 October, no named organisation has said it was compromised through p",
 "path": "facts/no-confirmed-compromise/index.html",
-"hash": "b9c56149b81d",
-"v": 15,
+"hash": "c07720c8c6df",
+"v": 16,
 "first": "0.2.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/fact-no-confirmed-compromise/index.html"
 },
 "fact-pocs-wrong": {
@@ -1207,11 +1207,11 @@
 "zone": "for-you",
 "title": "Briefing: Curious reader",
 "path": "briefings/everyone/index.html",
-"hash": "8a2fc5ed9cde",
-"v": 24,
+"hash": "a565c300479e",
+"v": 25,
 "first": "0.3.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-everyone/index.html"
 },
 "briefing-site-owner": {
@@ -1231,11 +1231,11 @@
 "zone": "for-you",
 "title": "Briefing: Project or programme manager",
 "path": "briefings/pm/index.html",
-"hash": "8c1d5135ae70",
-"v": 20,
+"hash": "b8d711f136d0",
+"v": 21,
 "first": "0.3.0",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-pm/index.html"
 },
 "page-summary": {
@@ -1243,11 +1243,11 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "07a5994e3be5",
-"v": 21,
+"hash": "69eaeb18c39f",
+"v": 22,
 "first": "0.3.1",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/page-summary/index.html"
 },
 "front-now": {
@@ -1255,11 +1255,11 @@
 "zone": "research",
 "title": "Front page: right now",
 "path": "index.html#now",
-"hash": "44f07f74bdf6",
-"v": 12,
+"hash": "c012dbfcb9e9",
+"v": 13,
 "first": "0.3.2",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/front-now/index.html"
 },
 "front-glance": {
@@ -1279,11 +1279,11 @@
 "zone": "research",
 "title": "Front page: the core facts",
 "path": "index.html#facts",
-"hash": "653b9741f0b2",
-"v": 11,
+"hash": "c49c93d41806",
+"v": 12,
 "first": "0.3.2",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/front-facts/index.html"
 },
 "front-unknown": {
@@ -1327,11 +1327,11 @@
 "zone": "for-you",
 "title": "Briefing: Data protection officer",
 "path": "briefings/dpo/index.html",
-"hash": "f98b2642af12",
-"v": 18,
+"hash": "9a46561ad1aa",
+"v": 19,
 "first": "0.5.9",
-"changed": "0.22.53",
-"date": "2026-10-29",
+"changed": "0.22.54",
+"date": "2026-10-30",
 "history": "versions/briefing-dpo/index.html"
 },
 "page-views-state": {
@@ -2270,6 +2270,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24"
 },
+"src-actualapp-tutoriales-vulnerabilidad-critica-php-we": {
+"kind": "source",
+"zone": "research",
+"title": "ActualAPP: Vulnerabilidad crítica de PHP: cómo saber si tu web está afectada | ActualApp",
+"path": "sources/actualapp-tutoriales-vulnerabilidad-critica-php-we/index.html",
+"hash": "aa85220b7b11",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-actuia-anssi-sites-offline": {
 "kind": "source",
 "zone": "research",
@@ -2622,6 +2633,17 @@
 "changed": "0.4.1",
 "date": "2026-10-22T08:05Z"
 },
+"src-belg24-d8-ab-d8-ba-d8-b1-d8-a7-d8-aa-d8-a8-d9-8": {
+"kind": "source",
+"zone": "research",
+"title": "بلجيكا 24: ثغرات PHP تفتح الباب للقراصنة.. هل موقعك الإلكتروني محمي؟ – شبكة بلجيكا 24 الإخبارية",
+"path": "sources/belg24-d8-ab-d8-ba-d8-b1-d8-a7-d8-aa-d8-a8-d9-8/index.html",
+"hash": "41e31c69ba65",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-bgonair-a-5-science-434196-kritichna-uyazvimost": {
 "kind": "source",
 "zone": "research",
@@ -2632,6 +2654,17 @@
 "first": "0.14.30",
 "changed": "0.14.30",
 "date": "2026-10-23T16:04Z"
+},
+"src-binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit": {
+"kind": "source",
+"zone": "research",
+"title": "Binnenlands Bestuur: Tientallen gemeentelijke websites nog kwetsbaar na groot PHP-lek",
+"path": "sources/binnenlandsbestuur-digitaal-tientallen-gemeentelijke-websit/index.html",
+"hash": "8e781373b669",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T17:13Z"
 },
 "src-bitmat-news-caso-php2shell-la-vera-sfida-e-nell": {
 "kind": "source",
@@ -2776,6 +2809,17 @@
 "changed": "0.14.30",
 "date": "2026-10-23T16:04Z"
 },
+"src-boerse-online-nachrichten-aktien-riesige-php-sicherhei": {
+"kind": "source",
+"zone": "research",
+"title": "Börse Online: Riesige PHP-Sicherheitslücke in Millionen Websites - diese Aktien profitieren davon - BÖRSE ONLINE",
+"path": "sources/boerse-online-nachrichten-aktien-riesige-php-sicherhei/index.html",
+"hash": "7bf45cd3c0ef",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-borncity-blog-2026-10-21-php2shell-php-schwachste": {
 "kind": "source",
 "zone": "research",
@@ -2841,6 +2885,17 @@
 "first": "0.14.30",
 "changed": "0.14.30",
 "date": "2026-10-23T16:04Z"
+},
+"src-btgunlugu-php-guvenlik-aciklari-red-hat-yama-uyari": {
+"kind": "source",
+"zone": "research",
+"title": "BT Günlüğü: Kritik PHP Güvenlik Açıkları: Red Hat’ten Acil Yama Uyarısı",
+"path": "sources/btgunlugu-php-guvenlik-aciklari-red-hat-yama-uyari/index.html",
+"hash": "0c37fd3a8159",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T14:47Z"
 },
 "src-bursadabugun-haber-php-nedir-php2shell-guvenlik-acigi": {
 "kind": "source",
@@ -3061,6 +3116,17 @@
 "first": "0.14.30",
 "changed": "0.14.30",
 "date": "2026-10-23T16:04Z"
+},
+"src-cio-article-4241957-offsec-launches-free-php": {
+"kind": "source",
+"zone": "research",
+"title": "CIO: OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery | CIO",
+"path": "sources/cio-article-4241957-offsec-launches-free-php/index.html",
+"hash": "0f84dd197865",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
 },
 "src-ciol-iot-india-php2shell-attacks-ai-driven-cy": {
 "kind": "source",
@@ -3491,6 +3557,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24"
 },
+"src-cronista-contenido-patrocinado-php2shell-la-vulne": {
+"kind": "source",
+"zone": "research",
+"title": "El Cronista: PHP2Shell: la vulnerabilidad que expone el punto ciego de los activos de TI - El Cronista",
+"path": "sources/cronista-contenido-patrocinado-php2shell-la-vulne/index.html",
+"hash": "7a0086ff9aaf",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-cryptoast-failles-critiques-php-php2shell-france-f": {
 "kind": "source",
 "zone": "research",
@@ -3744,6 +3821,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-cybersecasia-tips-understanding-php2shell-vulnerabili": {
+"kind": "source",
+"zone": "research",
+"title": "CybersecAsia: Understanding PHP2SHELL vulnerabilities and reducing risks when patching - CybersecAsia",
+"path": "sources/cybersecasia-tips-understanding-php2shell-vulnerabili/index.html",
+"hash": "250d4380647b",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-cybersecbrazil-post-hackers-exploram-php2shell-e-invade": {
 "kind": "source",
 "zone": "research",
@@ -3765,6 +3853,17 @@
 "first": "0.22.28",
 "changed": "0.22.28",
 "date": "2026-10-26T07:11Z"
+},
+"src-cybersecurity-insiders-offsec-launches-free-php2shell-lab-follo": {
+"kind": "source",
+"zone": "research",
+"title": "cybersecurity-insiders: OffSec Launches Free PHP2Shell Lab Following Critical Vulnerability Discovery - Cybersecurity Insiders",
+"path": "sources/cybersecurity-insiders-offsec-launches-free-php2shell-lab-follo/index.html",
+"hash": "1fb5e335b50d",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T12:14Z"
 },
 "src-cybersecurity360-nuove-minacce-php2shell-due-vulnerabilit": {
 "kind": "source",
@@ -3964,6 +4063,17 @@
 "changed": "0.15.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-digi24-stiri-sci-tech-lumea-digitala-aproape-17": {
+"kind": "source",
+"zone": "research",
+"title": "Digi24: Aproape 17.500 de instituţii din România au fost notificate cu privire la vulnerabilitatea informatică PHP2Shell. Reacţia Guvernului",
+"path": "sources/digi24-stiri-sci-tech-lumea-digitala-aproape-17/index.html",
+"hash": "212aab26e0e7",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T07:14Z"
+},
 "src-digitalpr-r-146712": {
 "kind": "source",
 "zone": "research",
@@ -4106,6 +4216,17 @@
 "first": "0.15.19",
 "changed": "0.15.19",
 "date": "2026-10-24T13:34Z"
+},
+"src-ecoactu-php-la-faille-qui-met-une-partie-du-web": {
+"kind": "source",
+"zone": "research",
+"title": "EcoActu.ma: PHP : la faille qui met une partie du Web en alerte",
+"path": "sources/ecoactu-php-la-faille-qui-met-une-partie-du-web/index.html",
+"hash": "5d4bd133f66d",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
 },
 "src-economedia-zitec-vulnerabilitatile-in-php-sunt-ampl": {
 "kind": "source",
@@ -5262,6 +5383,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-inforgames-php2shell-falhas-criticas-no-php-desenca": {
+"kind": "source",
+"zone": "research",
+"title": "InforGames: PHP2Shell: falhas críticas no PHP desencadeiam milhões de tentativas de ataque",
+"path": "sources/inforgames-php2shell-falhas-criticas-no-php-desenca/index.html",
+"hash": "7ecc7357c583",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T07:14Z"
+},
 "src-informationsecurity-article-article-detail-aspx": {
 "kind": "source",
 "zone": "research",
@@ -5691,6 +5823,17 @@
 "changed": "0.10.3",
 "date": "2026-10-22T18:16Z"
 },
+"src-ksw-news-news-articleview-html": {
+"kind": "source",
+"zone": "research",
+"title": "한국사회복지저널: PHP 취약점에 세계 비상…웹 인프라의 보안 공백 드러나 < 사회 < 종합 < 기사본문 - 한국사회복지저널",
+"path": "sources/ksw-news-news-articleview-html/index.html",
+"hash": "d7d6ebd8c3b1",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-kursors-2026-10-21-atklatas-kritiskas-ievainojam": {
 "kind": "source",
 "zone": "research",
@@ -5822,6 +5965,17 @@
 "first": "0.10.19",
 "changed": "0.10.19",
 "date": "2026-10-23T08:03Z"
+},
+"src-lensabanten-waspada-php2shell-diskominfo-kota-tanger": {
+"kind": "source",
+"zone": "research",
+"title": "Lensa Banten: lensabanten-waspada-php2shell-diskominfo-kota-tanger",
+"path": "sources/lensabanten-waspada-php2shell-diskominfo-kota-tanger/index.html",
+"hash": "5b88d06ade8a",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T17:13Z"
 },
 "src-leptidigital-securite-informatique-cybersecurite-fail": {
 "kind": "source",
@@ -6109,6 +6263,28 @@
 "changed": "0.10.19",
 "date": "2026-10-23T08:03Z"
 },
+"src-metro-2026-10-22-worried-php-cybersecurity-cri": {
+"kind": "source",
+"zone": "research",
+"title": "Metro.co.uk: How worried should we be about the PHP cybersecurity crisis? | News Tech | Metro News",
+"path": "sources/metro-2026-10-22-worried-php-cybersecurity-cri/index.html",
+"hash": "a1dbe8bf97df",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T07:14Z"
+},
+"src-metroseoul-article-20261029500571": {
+"kind": "source",
+"zone": "research",
+"title": "메트로신문: AI가 앞당긴 해킹 시계…PHP 취약점에 한국도 표적 되나",
+"path": "sources/metroseoul-article-20261029500571/index.html",
+"hash": "d4672e6ae49d",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T12:14Z"
+},
 "src-microsoft-dotnet-october-2026-oob-security-updates": {
 "kind": "source",
 "zone": "research",
@@ -6130,6 +6306,17 @@
 "first": "0.14.30",
 "changed": "0.14.30",
 "date": "2026-10-23T23:25Z"
+},
+"src-mishcon-news-php2shell-what-the-critical-php-vul": {
+"kind": "source",
+"zone": "research",
+"title": "Mishcon de Reya: What the critical PHP vulnerabilities mean for your organisation",
+"path": "sources/mishcon-news-php2shell-what-the-critical-php-vul/index.html",
+"hash": "38aa8e1ea910",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T14:47Z"
 },
 "src-mitel-misa-2026-0008": {
 "kind": "source",
@@ -6340,6 +6527,17 @@
 "changed": "0.22.24",
 "date": "2026-10-24T13:34Z"
 },
+"src-new-facts-biberach-2026-10-22-php-sicherheitslueck": {
+"kind": "source",
+"zone": "research",
+"title": "New-Facts.eu: PHP-Sicherheitslücke: Homepage des Landratsamts Biberach vorübergehend offline",
+"path": "sources/new-facts-biberach-2026-10-22-php-sicherheitslueck/index.html",
+"hash": "6a86466f9bd9",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa": {
 "kind": "source",
 "zone": "research",
@@ -6537,6 +6735,17 @@
 "first": "0.10.19",
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
+},
+"src-niederlausitz-aktuell-niederlausitz-aktuell-orte-spree-neisse": {
+"kind": "source",
+"zone": "research",
+"title": "NIEDERLAUSITZ aktuell: PHP-Lücke legt Webseiten der MUL-CT und der BTU in Cottbus lahm",
+"path": "sources/niederlausitz-aktuell-niederlausitz-aktuell-orte-spree-neisse/index.html",
+"hash": "9db32d88bd60",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
 },
 "src-niigata-nippo-articles-930995": {
 "kind": "source",
@@ -7032,6 +7241,17 @@
 "first": "0.4.1",
 "changed": "0.15.19",
 "date": "2026-10-24"
+},
+"src-pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e": {
+"kind": "source",
+"zone": "research",
+"title": "אנשים ומחשבים: CISA בהתרעת חירום: פרצת PHP2Shell משתוללת ברשת -",
+"path": "sources/pc-news-d7-90-d7-91-d7-98-d7-97-d7-aa-d7-9e/index.html",
+"hash": "1f6020aa602f",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T07:14Z"
 },
 "src-pc-watch-impress-docs-news-2150338-html": {
 "kind": "source",
@@ -8276,6 +8496,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-techbusinessnews-news-synology-issues-urgent-update-warni": {
+"kind": "source",
+"zone": "research",
+"title": "Tech Business News: Synology Issues Urgent Update Warning Over Critical PHP2Shell Security Flaws - Tech Business News",
+"path": "sources/techbusinessnews-news-synology-issues-urgent-update-warni/index.html",
+"hash": "d6489c212cf7",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T09:42Z"
+},
 "src-techgaming-internet-sotto-attacco-php2shell-vulnera": {
 "kind": "source",
 "zone": "research",
@@ -8385,6 +8616,17 @@
 "first": "0.22.30",
 "changed": "0.22.30",
 "date": "2026-10-23T16:04Z"
+},
+"src-tekno-sindonews-read-1763797-207-mengenal-php2shell-cela": {
+"kind": "source",
+"zone": "research",
+"title": "Sindonews Tekno: Mengenal PHP2Shell, Celah Kritis di Bahasa Pemrograman yang Menghidupi 70% Situs Dunia",
+"path": "sources/tekno-sindonews-read-1763797-207-mengenal-php2shell-cela/index.html",
+"hash": "5fd8caddd313",
+"v": 1,
+"first": "0.22.54",
+"changed": "0.22.54",
+"date": "2026-10-29T12:14Z"
 },
 "src-teknoblog-php-icin-acil-guncelleme-iki-kritik-guve": {
 "kind": "source",
@@ -9667,11 +9909,11 @@
 "zone": "for-you",
 "title": "Has anyone actually been hacked?",
 "path": "questions/been-hacked/index.html",
-"hash": "2b77f2a2d8d7",
-"v": 11,
+"hash": "b52d1e6022c3",
+"v": 12,
 "first": "0.4.1",
-"changed": "0.22.53",
-"date": "2026-10-29"
+"changed": "0.22.54",
+"date": "2026-10-30"
 },
 "q-passwords": {
 "kind": "question",

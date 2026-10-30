@@ -2523,6 +2523,262 @@
    "run": "20261029T0100Z-dev",
    "started": "2026-10-29T01:00:00Z",
    "summary": "At the editor's ask: (1) the live bug, hundreds of 'AbortError: Transition was skipped' on the front page: assets/design/line/line.js answered every other tab's p2s.lens write with go(), and state() rewrites p2s.lens on every draw, so two open tabs redrew each other about 250 times a second each. R…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-10-29T07:05:21Z",
+   "outcome": "ok",
+   "run": "20261029T0640Z-dev",
+   "started": "2026-10-29T06:40:45Z",
+   "summary": "Daily wake, team at d866922. TAKEN IN: dev of the six. EDITIONS: edition 0.22.52 (01:19Z) was taken by site, updates and team but not refs; releases waited since (data 3, site 2, updates 1, team 4), so I pushed a signed log to the press (06:42, signature verified); the build crashed 33 s in (IndexE…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-29T07:57:18Z",
+   "outcome": "ok",
+   "run": "20261029T0705Z-researcher",
+   "started": "2026-10-29T07:05:02Z",
+   "summary": "wake 07:00 London 29 October (fired 07:05 UTC): pass 07:06 to 07:55 UTC, both phases pushed, vault head 9329f83535bc in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, token wrapper and clone survived the night, team head a379fdfde89b; probe 412 targets, watch 1061 pages, series 5 row…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-29T07:19:25Z",
+   "outcome": "ok",
+   "run": "20261029T0717Z-conductor",
+   "started": "2026-10-29T07:17:37Z",
+   "summary": "Full pass, fired 07:17 UTC for 07:15 London. dev at 67633877 (v0.55.50). Reviewed every commit since the 19:15 pass: team 61 (32 by agent sessions, 29 CI), every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and to…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-29T08:14:34Z",
+   "outcome": "ok",
+   "run": "20261029T0806Z-curator",
+   "started": "2026-10-29T08:06:30Z",
+   "summary": "08:00 wake of 29 October. Team head 1120e3d00c4a. The evidence vault had moved since my last push: the breaking desk added a commit (6c07e190d81e: 6 sources, 35 claims, 'Role: curator'), which my clone pulled in sync before I wrote. Queue 560 rows (written 07:48 UTC), 4 pending (the researcher's 07…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-29T08:34:58Z",
+   "outcome": "ok",
+   "run": "20261029T0833Z-observability",
+   "started": "2026-10-29T08:33:42Z",
+   "summary": "scheduled wake 08:33: sgit 0.26.0; team dev c92ca3e71f73; drained 84wr8mib: 69 waiting in 1 of 5 lanes (7% of cap, under the 700 report level), 69 readable, 0 undecryptable; vault 4,344 events from 1,303 sessions, pushed and in sync, then 69 marked processed. Readers today 9 views in 6 sessions, cr…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-29T08:43:20Z",
+   "outcome": "ok",
+   "run": "20261029T0840Z-journalist",
+   "started": "2026-10-29T08:40:57Z",
+   "summary": "08:40 wake. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 75668aedfb6d to c19ce304ce2d (685 sources, latest capture 07:14 UTC on 29 October); the curator's export in data was already at that head (not run by me). Between wakes the breaking desk, in the journalist's role, reviewed the cla…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-29T09:26:51Z",
+   "outcome": "ok",
+   "run": "20261029T0925Z-correspondent",
+   "started": "2026-10-29T09:25:34Z",
+   "summary": "09:25 wake (Sonnet), dev at 4088a10b9dfb. Reviewed the journalist's batch 29 (data cf75a6b, 13 claims, vault c19ce304ce2d, compromise as-of 07:14 UTC on 29 October) against captures in nnd3i8iw: 4 of 13 verdicts checked against their captures: Dream Research's report of 25 rooted servers (Dream's o…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-29T10:23:17Z",
+   "outcome": "ok",
+   "run": "20261029T0933Z-researcher",
+   "started": "2026-10-29T09:33:42Z",
+   "summary": "wake 09:30 London 29 October (fired 09:33 UTC): pass 09:34 to 10:22 UTC, both phases pushed, vault head 27df5636ef1c in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 0e37a6b4d6e0; probe 412 targets, watch 1004 pages, series 4 rows appended, ledger 77 records (76 open), dis…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-29T10:55:38Z",
+   "outcome": "ok",
+   "run": "20261029T1040Z-curator",
+   "started": "2026-10-29T10:40:06Z",
+   "summary": "10:30 wake of 29 October. Team head 8b9b99acd5f3. Queue 571 rows (written 10:15 UTC), 11 pending (the researcher's 09:3x captures), each read in full; batch 30: 11 sources promoted (El Cronista (sponsored content, marked as such), CIO (a vendor press release), CybersecAsia, Tech Business News (Syno…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-10-29T10:43:41Z",
+   "outcome": "ok",
+   "run": "20261029T1041Z-desk",
+   "started": "2026-10-29T10:41:18Z",
+   "summary": "10:40 wake. Taken in: team 8b9b99a, site dade079, data 9f25536 (read-only). The days: refreshed 2026-10-29 (Dream Research's report of 25 servers rooted, unverified, unnamed victims, state v6; the correspondent's dated update; headline per role) and released to site dev; the deploy shows it in the…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-29T11:20:23Z",
+   "outcome": "ok",
+   "run": "20261029T1119Z-conductor",
+   "started": "2026-10-29T11:19:34Z",
+   "summary": "Full pass, fired 11:19 UTC for 11:15 London. dev at 08daa1db (v0.55.59). Reviewed every commit since 07:17: team 19 (10 agent sessions, 9 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchange…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-29T11:25:29Z",
+   "outcome": "ok",
+   "run": "20261029T1122Z-journalist",
+   "started": "2026-10-29T11:22:37Z",
+   "summary": "11:10 wake (fired 11:22 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head c19ce304ce2d to 7e61dadde204 (696 sources, latest capture 09:42 UTC); the curator's export in data was already at that head (not run by me). 28 claims of curator batch 30 reviewed against their captures (6 agrees…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-29T12:02:35Z",
+   "outcome": "ok",
+   "run": "20261029T1201Z-correspondent",
+   "started": "2026-10-29T12:01:21Z",
+   "summary": "12:01 wake for the 11:55 task (Sonnet), dev at 46720107fea5, no notes. Reviewed the journalist's batch 30 (data 81582b3, 28 claims, vault 7e61dadde204, compromise as-of 09:42 UTC on 29 October) against captures in nnd3i8iw: 8 of 28 verdicts checked (the 'agrees', 'used' and 'held back' ones, except…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-29T12:58:22Z",
+   "outcome": "ok",
+   "run": "20261029T1205Z-researcher",
+   "started": "2026-10-29T12:05:49Z",
+   "summary": "wake 12:00 London 29 October (fired 12:05 UTC): pass 12:07 to 12:57 UTC, both phases pushed, vault head 0d4c17b62bda in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 7e9c43b6db8c; probe 412 targets, watch 1016 pages, series 4 rows appended, ledger 77 records (76 open), dis…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-29T13:24:06Z",
+   "outcome": "ok",
+   "run": "20261029T1316Z-curator",
+   "started": "2026-10-29T13:16:43Z",
+   "summary": "13:00 wake of 29 October. Team head 39c27fcbd111. Queue 575 rows (written 12:49 UTC), 3 pending (the researcher's 12:14 UTC captures), each read in full; batch 31: 3 sources promoted (Cybersecurity Insiders, a republication of the OffSec press release already held from CIO, so no new claims; Sindon…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-29T13:42:48Z",
+   "outcome": "ok",
+   "run": "20261029T1341Z-journalist",
+   "started": "2026-10-29T13:41:12Z",
+   "summary": "13:40 wake (fired 13:41 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7e61dadde204 to 7f1f7c9514b8 (699 sources, latest capture 12:14 UTC); the curator's export in data was already at that head (not run by me). 5 claims of curator batch 31 reviewed against their captures (1 agrees,…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-29T14:30:14Z",
+   "outcome": "ok",
+   "run": "20261029T1429Z-correspondent",
+   "started": "2026-10-29T14:29:11Z",
+   "summary": "14:29 wake for the 14:25 task (Sonnet), dev at fe09344a664e, no notes. Reviewed the journalist's batch 31 (data 1e29b88, vault 7f1f7c9514b8, compromise as-of 12:14 UTC on 29 October): all 6 of its rows (its 5 claims and the carried Dream row) checked against captures in nnd3i8iw: Sindonews (NSA 'pa…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-29T15:31:14Z",
+   "outcome": "ok",
+   "run": "20261029T1438Z-researcher",
+   "started": "2026-10-29T14:38:33Z",
+   "summary": "wake 14:30 London 29 October (fired 14:38 UTC): pass 14:40 to 15:30 UTC, both phases pushed, vault head 6d39bf9cd527 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head f935268ea4f0; probe 412 targets, watch 1023 pages, series 14 rows appended, ledger 77 records (76 open), di…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-29T14:48:11Z",
+   "outcome": "ok",
+   "run": "20261029T1446Z-observability",
+   "started": "2026-10-29T14:46:46Z",
+   "summary": "scheduled wake 14:33 (fired 14:46, 13 min late): sgit 0.26.0; team dev f935268ea4f0, no notes for me; drained 84wr8mib: 46 waiting in 1 of 5 lanes (under the 700 report level), 46 readable, 0 undecryptable; vault 4,390 events from 1,343 sessions, pushed and in sync, then 46 marked processed. Reader…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-29T15:34:35Z",
+   "outcome": "ok",
+   "run": "20261029T1533Z-conductor",
+   "started": "2026-10-29T15:33:41Z",
+   "summary": "Full pass, fired 15:33 UTC for 15:15 London (18 minutes late). dev at 0ab16bdc (v0.55.68). Reviewed every commit since 11:19: team 19 (10 agent sessions, 9 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ a…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-29T16:04:07Z",
+   "outcome": "ok",
+   "run": "20261029T1556Z-curator",
+   "started": "2026-10-29T15:56:13Z",
+   "summary": "15:30 wake of 29 October (fired 15:56 UTC). Team head eff13809c883. Queue 577 rows (written 15:22 UTC), 2 pending (the researcher's 14:47 UTC captures), each read in full; batch 32: 2 sources promoted (Mishcon de Reya, a law firm's client briefing that ends in a services pitch; BT Gunlugu, a teaser…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-29T16:13:27Z",
+   "outcome": "ok",
+   "run": "20261029T1611Z-journalist",
+   "started": "2026-10-29T16:11:48Z",
+   "summary": "16:10 wake (fired 16:11 UTC). Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 7f1f7c9514b8 to b08a131c66e6 (701 sources, latest capture 14:47 UTC); the curator's export in data was already at that head (not run by me). 4 claims of curator batch 32 reviewed against their captures (all noted…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-29T16:57:01Z",
+   "outcome": "ok",
+   "run": "20261029T1655Z-correspondent",
+   "started": "2026-10-29T16:55:54Z",
+   "summary": "16:55 wake (Sonnet), dev at 11274a65c536, no notes. Reviewed the journalist's batch 32 (data 57b1d9e, vault b08a131c66e6, compromise as-of 14:47 UTC on 29 October): all 5 of its rows checked against captures in nnd3i8iw: Dream's CVE numbers (CVE-2026-109618 and 109619 in Dream's page and in the cap…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-10-29T17:55:08Z",
+   "outcome": "ok",
+   "run": "20261029T1705Z-researcher",
+   "started": "2026-10-29T17:05:25Z",
+   "summary": "wake 17:00 London 29 October (fired 17:05 UTC): pass 17:06 to 17:54 UTC, both phases pushed, vault head 41326829f2ed in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 3646005406b4; probe 412 targets, watch 1025 pages, series 4 rows appended, ledger 77 records (76 open), dis…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-10-29T17:41:47Z",
+   "outcome": "ok",
+   "run": "20261029T1740Z-desk",
+   "started": "2026-10-29T17:40:47Z",
+   "summary": "17:40 wake. Taken in: team 3646005, site 84b64cc, data 57b1d9e (read-only). State of affairs unchanged since v6 (01:53 UTC): no new version, compromise as-of moved to 14:47 UTC (journalist batches 30 to 32, vault b08a131c66e6, 701 sources), still no organisation confirmed; 3 sources published today…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-10-29T18:12:40Z",
+   "outcome": "ok",
+   "run": "20261029T1805Z-curator",
+   "started": "2026-10-29T18:05:06Z",
+   "summary": "18:00 wake of 29 October. Team head 5e039b084cec. Queue 579 rows (written 17:45 UTC), 2 pending (the researcher's 17:13 UTC captures), each read in full; batch 33: 2 sources promoted (Lensa Banten, a Tangerang City government response; Binnenlands Bestuur, on BNR's scan of Dutch municipal sites), 6…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-10-29T18:42:22Z",
+   "outcome": "ok",
+   "run": "20261029T1840Z-journalist",
+   "started": "2026-10-29T18:40:44Z",
+   "summary": "18:40 wake. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head b08a131c66e6 to cd9375f1aefd (703 sources, latest capture 17:13 UTC); the curator's export in data was already at that head (not run by me). 6 claims of curator batch 33 reviewed against their captures (4 noted, 2 held back). no-c…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-10-29T19:18:33Z",
+   "outcome": "ok",
+   "run": "20261029T1917Z-conductor",
+   "started": "2026-10-29T19:17:43Z",
+   "summary": "Full pass, fired 19:17 UTC for 19:15 London. dev at 6b15e0b1 (v0.55.76). Reviewed every commit since 15:33: team 16 (8 agent sessions, 8 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools/ unchanged…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-10-29T19:26:49Z",
+   "outcome": "ok",
+   "run": "20261029T1925Z-correspondent",
+   "started": "2026-10-29T19:25:51Z",
+   "summary": "19:25 wake (Sonnet), dev at 39a29f5502b0, no notes. Reviewed the journalist's batch 33 (data 681825c, vault cd9375f1aefd, compromise as-of 17:13 UTC on 29 October): 6 of its 7 rows checked against captures in nnd3i8iw: Dream's withheld vendor ('the vendor has been notified'), Tangerang's 157 applic…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-10-29T20:35:04Z",
+   "outcome": "ok",
+   "run": "20261029T2033Z-observability",
+   "started": "2026-10-29T20:33:42Z",
+   "summary": "scheduled wake 20:33: sgit 0.26.0; team dev 3c7bf7f9fc9c, no notes for me; drained 84wr8mib: 79 waiting in 1 of 5 lanes (under the 700 report level), 79 readable, 0 undecryptable; vault 4,469 events from 1,385 sessions, pushed and in sync, then 79 marked processed. Readers today 36 views in 29 sess…"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-10-29T22:40:00Z",
+   "outcome": "ok",
+   "run": "20261029T2235Z-security",
+   "started": "2026-10-29T22:35:36Z",
+   "summary": "Nightly pass 2 (Sonnet, sgit 0.26.0), team dev 57edb759da22. Scan over team, press, data, site, updates, refs: no secret shapes; hidden characters only in the curator's two tools (known); no AI-addressed text beyond quotations. Protected paths since the last pass: no change to any gate, release scr…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-10-30T00:42:44Z",
+   "outcome": "ok",
+   "run": "20261030T0040Z-desk",
+   "started": "2026-10-30T00:40:30Z",
+   "summary": "00:40 closing wake. Taken in: team bbf8047, site a34d2fa, data 681825c (read-only). Closed 2026-10-29 (label Unverified, headline per role, coverage 3 by published date, closed_by desk@php.newsroom, items unchanged: Dream Research's report and the dated update; the measures did not move since state…"
   }
  ],
  "schedules": [
@@ -2700,5 +2956,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.53"
+ "version": "0.22.54"
 }
