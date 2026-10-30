@@ -8024,5 +8024,125 @@
   "topic": "response",
   "note": "Shows France's agency asking for sites to be taken offline; bears on the disputed offline-allies claim. Precautionary outages; many were restored within days.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-weekend-risikomonitor-28622",
+  "claim": "According to a remeasurement by Risikomonitor.com, 28,622 Austrian websites still count as vulnerable more than a week after disclosure, with a reported patch rate of 18.1%, and at disclosure about 3.9 million vulnerable sites with a visible PHP version were found in the EU states, Switzerland and Liechtenstein among 34.9 million reachable sites examined",
+  "by": "weekend.at (citing Risikomonitor.com)",
+  "sources": [
+   "weekend-chronik-sicherheitsluecke-php-oesterreic"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A version-based measurement by one firm; the article stresses that a finding does not mean a site was hacked and that figures change as operators update.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-weekend-sectors",
+  "claim": "Almost half of the attributable affected Austrian websites come from hospitality, retail, transport and catering, with small businesses and sites with direct customer contact such as shops and booking portals most affected",
+  "by": "weekend.at (citing Risikomonitor.com)",
+  "sources": [
+   "weekend-chronik-sicherheitsluecke-php-oesterreic"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A sector breakdown of attributable sites only.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-weekend-no-attacks-21oct",
+  "claim": "At the time of the disclosure on 21 October, Austria's interior ministry knew of no successful attacks in Austria",
+  "by": "weekend.at (citing the interior ministry)",
+  "sources": [
+   "weekend-chronik-sicherheitsluecke-php-oesterreic"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Point-in-time and about Austria only.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-weekend-enisa-isolate",
+  "claim": "The EU cybersecurity agency ENISA called for quick action straight after the flaws became known: check which systems use PHP, install the updates quickly, give priority to publicly reachable systems and, where an update is not immediately possible, use extra protective measures or temporarily isolate exposed applications",
+  "by": "weekend.at (relaying ENISA)",
+  "sources": [
+   "weekend-chronik-sicherheitsluecke-php-oesterreic"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "ENISA is one of the bodies whose advice bears on the disputed offline-allies claim; isolation, not necessarily taking offline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-innovatopia-dream-chain",
+  "claim": "Dream Research said on 26 October that it had traces of an attack that chained PHP2Shell with a Linux kernel flaw to gain root on 25 Palo Alto Networks PAN-OS firewalls and management servers; the attacker found about 19,000 exposed management interfaces with a scanning search engine and automatically attacked 240 devices in the United States, Japan, Taiwan and Korea",
+  "by": "Innovatopia (relaying Dream Research)",
+  "sources": [
+   "innovatopia-cyber-security-cyber-security-news-11955"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "One research firm's report, with Unit 42's stated verification (next claim); the firewall management interfaces are a PHP-based appliance surface, not PHP websites. Supersedes the vaguer, unverified relay in cur31-metroseoul-dream-research.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-innovatopia-us-gov-ad",
+  "claim": "At a US government-linked organisation the attacker rooted a firewall on 23 October (UTC), reached a second firewall and then the central firewall-management server on 24 October and began attacks on Active Directory, where Dream could confirm only the decryption of a service-account password and the listing of all users and groups, and not whether password spraying, backdoor accounts or theft of signing keys succeeded",
+  "by": "Innovatopia (relaying Dream Research)",
+  "sources": [
+   "innovatopia-cyber-security-cyber-security-news-11955"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Dream's reconstruction from the attacker's records; the extent of harm is unknown.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-innovatopia-unit42-verified",
+  "claim": "According to the article, Palo Alto Networks' Unit 42 independently verified the attacker's tools and results",
+  "by": "Innovatopia",
+  "sources": [
+   "innovatopia-cyber-security-cyber-security-news-11955"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "As the article puts it; separate from Unit 42's 25 October withdrawal of a different European-government statement (cur20-scworld-unit42-retraction).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-innovatopia-pan-os-exposure",
+  "claim": "Palo Alto Networks says PAN-OS management interfaces are not exposed by default, that about 0.02% of deployed devices exposed it and were affected and each was contacted individually, and that PAN-OS fixes were published by series from 25 to 29 October, those for the targeted 12.1 and 12.2 series from 27 October",
+  "by": "Innovatopia (relaying Palo Alto Networks)",
+  "sources": [
+   "innovatopia-cyber-security-cyber-security-news-11955"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "A vendor's statement about its own products; the vendor's advisory is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-innovatopia-ai-tooling",
+  "claim": "Dream found in the attacker's environment an attack-support tool configured to use AI coding and language models, but says it has no direct evidence that AI wrote the exploits or about 40 scripts and only that the code's structure suggests AI assistance",
+  "by": "Innovatopia (relaying Dream Research)",
+  "sources": [
+   "innovatopia-cyber-security-cyber-security-news-11955"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "The presence of AI tools is not evidence that AI carried out the attack; the article itself says to keep the two apart.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur36-3rd-checkpoint-targeting",
+  "claim": "Check Point's threat-intelligence unit reported that about 10% of organisations worldwide were attack targets, with attacks concentrated around midnight, European organisations especially targeted (Hungary, Denmark and Austria most) and the telecommunications, education and media sectors at highest risk",
+  "by": "Third News (relaying Check Point)",
+  "sources": [
+   "news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A vendor's telemetry of attack attempts, not of successful compromises; the 'about 10%' base is not defined in the item.",
+  "agent": "curator@php.newsroom"
  }
 ]

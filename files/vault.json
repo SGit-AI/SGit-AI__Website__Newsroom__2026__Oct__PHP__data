@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "7e7f2d59181f",
-  "subject": "curator@php.newsroom: batch 35, three sources from the source watch (Der Standard, The Educator, TF1 Info): 7 claims cur35-  +24 ~3  [blobs:+27 trees:+13]",
+  "commit": "fa3306a8d54b",
+  "subject": "curator@php.newsroom: batch 36, three sources from the source watch (weekend.at, Innovatopia, Third News): 10 claims cur36-  +24 ~3  [blobs:+27 trees:+13]",
   "commits": 50
  },
- "sources": 707,
- "captures": 773,
- "hashed_files": 4514,
+ "sources": 710,
+ "captures": 776,
+ "hashed_files": 4532,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-30T09:42Z",
+ "latest_capture": "2026-10-30T12:14Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

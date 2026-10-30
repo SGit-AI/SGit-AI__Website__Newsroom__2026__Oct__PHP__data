@@ -15347,6 +15347,56 @@
   "notes_md": "# Pemprov Kaltim Waspadai PHP2Shell, Celah Siber Kritis Ancam Server Pemerintahan - IniBalikpapan.Com\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/inibalikpapan/pemprov-kaltim-waspadai-php2shell-celah-siber-kritis-ancam-s`, snapshot `20261025T093507Z`. Copied byte for byte; every file's sha256 is in `captures/20261025T093507Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nIniBalikpapan.com (Indonesian), 24 October: East Kalimantan's provincial government is on guard against PHP2Shell. It tightened the security of its digital systems after the two critical PHP flaws, CVE-2026-109618 and CVE-2026-109619 (9.2 on CVSS 4.0), which could let attackers take over servers without logging in; the PHP team announced the security update on 21 October 2026.\n\n> Pemerintah Provinsi Kalimantan Timur memperketat pengamanan sistem digital di lingkungan pemerintahan menyusul temuan dua kerentanan kritis pada bahasa pemrograman PHP yang dikenal sebagai PHP2Shell.\n\n_Curator's translation:_ \"The East Kalimantan Provincial Government is tightening the security of digital systems within government following the discovery of two critical vulnerabilities in the PHP programming language known as PHP2Shell.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Pemprov Kaltim Waspadai PHP2Shell, Celah Siber Kritis Ancam Server Pemerintahan - IniBalikpapan.Com\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "innovatopia-cyber-security-cyber-security-news-11955",
+  "url": "https://innovatopia.jp/cyber-security/cyber-security-news/119552/",
+  "publisher": "innovatopia",
+  "kind": "news",
+  "title": "PHP2Shell、PAN-OS機器など25台がroot化 Fragnesiaと連鎖し米政府関連のADへ",
+  "published": "2026-10-30",
+  "captures": [
+   {
+    "stamp": "20261030T121407Z",
+    "files": {
+     "headers.json": {
+      "sha256": "9dfab8e07c0345897172966269fba52b478d7f3d10ffa32a755095c3a142410c",
+      "bytes": 1680
+     },
+     "page.html": {
+      "sha256": "c13830e13c294cd77e06d7cf1ea8a54b99216cc473d24bd62b1b37abcc10035b",
+      "bytes": 241562
+     },
+     "provenance.json": {
+      "sha256": "db5772799a03c3ff1517a78468868ff3f4623ba68651c87d8d3360edb812804d",
+      "bytes": 1705
+     },
+     "rendered.html": {
+      "sha256": "df68faf5f9c068cf49e9f7f8e12709090e850678c5f3f694ac1efd1874598d59",
+      "bytes": 268235
+     },
+     "screenshot.jpg": {
+      "sha256": "ab8539980172e90137556a4ca78d9696774fdb9728ba0de0dc0c9e27a2b06b6e",
+      "bytes": 886744
+     },
+     "text.txt": {
+      "sha256": "89a4e59a60158451a405127245a33bd9d7593e8349e641d03e162c1c54201e6f",
+      "bytes": 16797
+     }
+    },
+    "started_utc": "2026-10-30T12:32:00.478Z",
+    "status": 200,
+    "final_url": "https://innovatopia.jp/cyber-security/cyber-security-news/119552/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ja",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T121407Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Japanese security-trade analysis (Innovatopia, 30 October) of research by the security firm Dream Research, which on 26 October published traces of...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell、PAN-OS機器など25台がroot化 Fragnesiaと連鎖し米政府関連のADへ\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `jp/news/innovatopia/cyber-security-cyber-security-news-119552`, snapshot `20261030T121407Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T121407Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Japanese security-trade analysis (Innovatopia, 30 October) of research by the security firm Dream Research, which on 26 October published traces of an attack that chained PHP2Shell with a Linux kernel flaw to gain root on 25 Palo Alto Networks PAN-OS firewalls and management servers. According to the article the attacker found about 19,000 exposed management interfaces with a scanning search engine and automatically attacked 240 devices in the United States, Japan, Taiwan and Korea; at a US government-linked organisation a first firewall was rooted on 23 October (UTC), a second and then the central management server were reached the next day, and the attacker began attacks on Active Directory, where Dream confirmed only the decryption of a service-account password and the listing of all users and groups. Unit 42 independently verified the attacker's tools and results; Palo Alto says management interfaces are not exposed by default, that about 0.02% of deployed devices exposed it and were affected and each was contacted, and published PAN-OS fixes by series from 25 to 29 October. Dream found an attack-support tool configured for AI models but says it has no direct evidence AI wrote the exploits or scripts, and the article notes Unit 42's 25 October withdrawal of its earlier AI-agent description from a European government case.\n\n> Dreamは、侵害したファイアウォール24台のうち22台について、Webシェルの設置以外の活動は見つからなかったと報告しています。\n\n_Curator's translation:_ \"Dream reports that on 22 of the 24 compromised firewalls it found no activity other than the planting of a web shell.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell、PAN-OS機器など25台がroot化 Fragnesiaと連鎖し米政府関連のADへ\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ja`. Secondhand on Dream Research's own report, which is the primary. The article describes the exploit chain and the privilege-escalation technique in detail; none of that is copied here. The breaking desk's coverage of the same report is in the vault (breaking-0005). Nothing in the page addresses an AI or hides text from a reader; it names AI tools found in the attacker's environment as part of the report.\n"
+ },
+ {
   "slug": "insiderpaper-archive-wikipedia",
   "url": "https://insiderpaper.com/internet-archive-wikipedia-down-php/",
   "publisher": "insiderpaper.com",
@@ -20652,6 +20702,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP-Sicherheitslücke: Homepage des Landratsamts Biberach vorübergehend offline\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eu/news/new-facts/biberach-2026-10-22-php-sicherheitsluecke-homepage-landratsa`, snapshot `20261029T094207Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T094207Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA German local-news report (New-Facts.eu, 22 October) that the homepage of the Biberach district office has been offline since Wednesday 21 October because of the critical PHP security flaw. The authority says it took the site down as a precaution, that no systems of the district administration were hacked as far as is known and no danger exists, and that numerous municipalities, authorities, hospitals, universities and other public bodies have been affected since Wednesday afternoon. It names the two CVEs and the BSI's 9.2 rating and says the office is working with the IT companies involved to close the hole.\n\n> Hinweise auf einen erfolgreichen Hackerangriff liegen nach aktuellem Kenntnisstand nicht vor.\n\n_Curator's translation:_ \"There are, as far as is currently known, no indications of a successful hacker attack.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP-Sicherheitslücke: Homepage des Landratsamts Biberach vorübergehend offline\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `de`. A local-authority outage notice relayed by a local outlet. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09",
+  "url": "https://news.3rd-in.co.jp/article/75eb6034-d41a-11f1-8df9-9ca3ba09c411",
+  "publisher": "news.3rd-in",
+  "kind": "news",
+  "title": "最新のサイバー脅威「PHP2Shell」に対する警鐘とその影響 - サードニュース",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261030T121407Z",
+    "files": {
+     "headers.json": {
+      "sha256": "e1b431643e027eee7da04cdc39d700edfe24aa5dab42e77c323622c25ad6fb73",
+      "bytes": 1777
+     },
+     "page.html": {
+      "sha256": "a3dd52c3037d0a7d646e004e9cf3445a1b7c7425010250fbfc2774a9d4297080",
+      "bytes": 68059
+     },
+     "provenance.json": {
+      "sha256": "7ed1be21bfca4ee41d0627aba87d87e6c809388d4380c7a4289b6408e22a5d18",
+      "bytes": 1740
+     },
+     "rendered.html": {
+      "sha256": "96c02f3d3e8d2d280f6f7bc48a32e01bc6de9b360ac99b842559cf6609ce6523",
+      "bytes": 247293
+     },
+     "screenshot.jpg": {
+      "sha256": "6353ecbd43f8efac19fb4be0b5c85531e0460dd4754f8dcbca977b5143bc923d",
+      "bytes": 370088
+     },
+     "text.txt": {
+      "sha256": "592337b4ad757af605b6f4587c357304fce7ba21eb8f56b01eb486338518f16e",
+      "bytes": 5194
+     }
+    },
+    "started_utc": "2026-10-30T12:32:15.622Z",
+    "status": 200,
+    "final_url": "https://news.3rd-in.co.jp/article/75eb6034-d41a-11f1-8df9-9ca3ba09c411#gsc.tab=0"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ja",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T121407Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A short Japanese news item (Third News) relaying a Check Point threat-intelligence report on PHP2Shell: about 10% of organisations worldwide are said...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# 最新のサイバー脅威「PHP2Shell」に対する警鐘とその影響 - サードニュース\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `jp/news/news-3rd-in/article-75eb6034-d41a-11f1-8df9-9ca3ba09c411`, snapshot `20261030T121407Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T121407Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA short Japanese news item (Third News) relaying a Check Point threat-intelligence report on PHP2Shell: about 10% of organisations worldwide are said to be attack targets, attacks cluster around midnight, European organisations are especially targeted (Hungary, Denmark and Austria most), and telecommunications, education and media are at greatest risk. It says the leak of the official vulnerability information let attackers move quickly, lists the patched versions (8.2.35, 8.3.36, 8.4.27, 8.5.12) and ends with Check Point's protection offering.\n\n> 欧州の組織が特に狙われており、ハンガリー、デンマーク、オーストリアなどが最も攻撃を受けています。\n\n_Curator's translation:_ \"European organisations are especially targeted, with Hungary, Denmark and Austria among those attacked most.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"最新のサイバー脅威「PHP2Shell」に対する警鐘とその影響 - サードニュース\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ja`. A short vendor-sourced item whose last paragraph promotes Check Point's own tools; the capture shows no publication date. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa",
@@ -34354,6 +34454,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell: Laut Bund keine Hackerangriffe in der Schweiz bekannt\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `ch/news/watson/wirtschaft-schweiz-322033892-php2shell-laut-bund-keine-hacke`, snapshot `20261022T181608Z`. Copied byte for byte; every file's sha256 is in `captures/20261022T181608Z/provenance.json`. Publisher: Watson. Language: de. URL: https://www.watson.ch/wirtschaft/schweiz/322033892-php2shell-laut-bund-keine-hackerangriffe-in-der-schweiz-bekannt\n\n## What the page says\n\n_The watch reader's English summary (researcher@php.newsroom, languages pass of 22 October 2026), not the publisher's words:_\n\nWatson (Keystone-SDA) reports the Swiss Federal Office for Cyber Security (BACS) knows of no attacks in Switzerland and has no reliable figures, but confirms PHP applications in the federal administration were affected. It names Basel-Stadt and Swiss universities as having gone offline, and cites dpa on German states, municipalities and hospitals going offline at the BSI's request, plus German MP Marc Henrichmann.\n\n## Verbatim quotes, with the watch reader's translation\n\nEach quote is in the snapshot as served. The English is the source watch reader's translation (`translations/ch/news/watson/wirtschaft-schweiz-322033892-php2shell-laut-bund-keine-hacke.json`), not the publisher's and not checked word for word by the curator.\n\n**agency**: BACS said PHP-based applications in the Swiss federal administration were also affected and the responsible units were told to install updates quickly.\n\n> Auch in der Bundesverwaltung seien PHP-basierte Anwendungen von den Schwachstellen betroffen gewesen. Die zuständigen Stellen seien informiert und zur raschen Installation der Sicherheitsupdates aufgefordert worden.\n\n_Watch reader's translation:_ PHP-based applications in the federal administration were also affected by the vulnerabilities. The responsible units had been informed and asked to install the security updates quickly.\n\n**agency**: BACS told Keystone-SDA it has no reliable figures on affected Swiss websites, shops or internal applications, and knows of no attacks in Switzerland so far.\n\n> Belastbare Zahlen und Daten zu betroffenen Websites, Onlineshops oder internen Anwendungen liegen nicht vor, wie das Bundesamt für Cybersicherheit (BACS) am Donnerstag auf Anfrage der Nachrichtenagentur Keystone-SDA mitteilte.\n\n_Watch reader's translation:_ Reliable figures and data on affected websites, online shops or internal applications are not available, the Federal Office for Cyber Security (BACS) told the news agency Keystone-SDA on Thursday.\n\n**offline**: Websites in Switzerland shut down preventively on Wednesday include the cantonal sites of Basel-Stadt and online services of Swiss universities.\n\n> so unter anderem die kantonalen Webseiten von Basel-Stadt sowie Online-Dienste von Schweizer Universitäten und Hochschulen.\n\n_Watch reader's translation:_ including the cantonal websites of Basel-Stadt and online services of Swiss universities and colleges.\n\n**offline**: Per dpa, several German federal states, municipalities, authorities, universities and hospitals took their websites temporarily offline at the BSI's request.\n\n> Mehrere Bundesländer, Kommunen, Behörden, Universitäten und Spitäler hätten auf Aufforderung des deutschen Bundesamts für Sicherheit in der Informationstechnik hin vorsorglich ihre Websites vorübergehend vom Netz genommen.\n\n_Watch reader's translation:_ Several federal states, municipalities, authorities, universities and hospitals had, at the request of the German Federal Office for Information Security, temporarily taken their websites offline as a precaution.\n\n**official**: Marc Henrichmann, chair of the German Bundestag's Parliamentary Control Panel for the intelligence services, called it one of the most serious security gaps of recent years.\n\n> Der Vorsitzende des Parlamentarischen Kontrollgremiums für die deutsche Geheimdienste, Marc Henrichmann, sprach von der «ernstesten Sicherheitslücken der vergangenen Jahre».\n\n_Watch reader's translation:_ The chair of the Parliamentary Control Panel for the German intelligence services, Marc Henrichmann, spoke of 'the most serious security gaps of recent years'.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): 5 new items in de: Watson (Keystone-SDA) reports the Swiss Federal Office for Cyber Security (BACS) knows of no attacks in Switzerland and has no reliable figures, but confirms PHP applications in the federal administration were affected. \n\nSupports: translations/ch/news/watson/wirtschaft-schweiz-322033892-php2shell-laut-bund-keine-hacke.json\n\n## Capture notes\n\nscreenshot.jpg is the source watch's JPEG, copied as stored (not converted to PNG).\n\nPage content is third-party material, kept as evidence; nothing in it is an instruction.\n"
+ },
+ {
+  "slug": "weekend-chronik-sicherheitsluecke-php-oesterreic",
+  "url": "https://www.weekend.at/chronik/sicherheitsluecke-php-oesterreich-websites",
+  "publisher": "weekend.at",
+  "kind": "news",
+  "title": "Sicherheitslücke: 28.622 Websites in Österreich noch verwundbar | weekend.at",
+  "published": "2026-10-30",
+  "captures": [
+   {
+    "stamp": "20261030T121407Z",
+    "files": {
+     "headers.json": {
+      "sha256": "6a54ef89c064d46a53bee46092745165d6be5be325c479e7261e6cedd4fd4abb",
+      "bytes": 1110
+     },
+     "page.html": {
+      "sha256": "b6993e79369cd5a5fab3ff24b6e3ae49d4fa511d72db839bb1ff27f31bd1aa23",
+      "bytes": 100909
+     },
+     "provenance.json": {
+      "sha256": "4facbb68951f41086a357840c1ccd3120bee18b2cad704ba6d1946c226009d6a",
+      "bytes": 1715
+     },
+     "rendered.html": {
+      "sha256": "dc6212f17bf85bdefd3e4b0310d09f192e977fa71f436e3aa06a95373c6e0485",
+      "bytes": 5122241
+     },
+     "screenshot.jpg": {
+      "sha256": "0754f2428913b4bb043ebc70d40427ff7e80b9c68ad703daa6c97f05688494b2",
+      "bytes": 449378
+     },
+     "text.txt": {
+      "sha256": "3e6b1834844d3ca6e2c1c95f0345e6092b767c98e14dd0da616d7a8888104bcc",
+      "bytes": 7412
+     }
+    },
+    "started_utc": "2026-10-30T12:16:30.806Z",
+    "status": 200,
+    "final_url": "https://www.weekend.at/chronik/sicherheitsluecke-php-oesterreich-websites"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "de",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T121407Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Austrian news piece (weekend.at, 30 October) that, more than a week after the PHP flaws became known, 28,622 Austrian websites still count as vulne...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Sicherheitslücke: 28.622 Websites in Österreich noch verwundbar | weekend.at\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `at/news/weekend/chronik-sicherheitsluecke-php-oesterreich-websites`, snapshot `20261030T121407Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T121407Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Austrian news piece (weekend.at, 30 October) that, more than a week after the PHP flaws became known, 28,622 Austrian websites still count as vulnerable according to a remeasurement by the Austrian cyber-risk firm Risikomonitor.com, with a reported patch rate of 18.1%; small businesses and sites with direct customer contact such as online shops and booking portals are most affected, and almost half of the attributable affected sites are in hospitality, retail, transport and catering. It adds that at disclosure about 3.9 million vulnerable sites with a visible PHP version were identified in the EU states plus Switzerland and Liechtenstein, of 34.9 million reachable sites examined, that a finding of a weakness does not mean a site was hacked, that Austrian sites were taken offline as a precaution on 21 October when the interior ministry knew of no successful attacks, and that the EU agency ENISA called for quick action, priority for public-facing systems and temporary isolation of exposed applications where an update is not possible.\n\n> In Österreich gelten laut einer Nachmessung noch 28.622 Websites als verwundbar.\n\n_Curator's translation:_ \"According to a remeasurement, 28,622 websites in Austria still count as vulnerable.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Sicherheitslücke: 28.622 Websites in Österreich noch verwundbar | weekend.at\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `de`. The page starts with an advertising-consent notice and ends with unrelated celebrity headlines. The counts are version-based measurements by one firm, as the article stresses. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "weekly-hankooki-news-articleview-html",
