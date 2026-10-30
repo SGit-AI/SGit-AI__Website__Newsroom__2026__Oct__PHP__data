@@ -7940,5 +7940,89 @@
   "topic": "impact",
   "note": "A stated concern about a possible method, not an observed event; compare the expert worry about reverse-engineering patches in cur29-metro-reverse-engineer-patches.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-derstandard-austria-offline",
+  "claim": "Der Standard reports that before the PHP flaws were published numerous websites went completely offline for security reasons, including large hosters, and that in Austria many universities (including the University of Vienna and TU Wien), the NÖN media group and the Caritas did the same",
+  "by": "Der Standard (teaser)",
+  "sources": [
+   "derstandard-story-3000000345274-warnung-vor-extrem-g"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Precautionary outages in Austria, 21 October; the article body is behind a paywall.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-educator-rapid7-caution",
+  "claim": "A Rapid7 vulnerability-intelligence director said the flaws are real critical bugs, that a large exposed surface is not the same as many compromised servers and that landing an attack reliably across PHP versions and host setups is genuinely hard, advising to patch promptly, confirm it took, and treat systems as exposed until a provider confirms in writing; he named Apache with mod_php as the demonstrated unauthenticated path",
+  "by": "The Educator K/12 (quoting a Rapid7 director)",
+  "sources": [
+   "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "An expert's assessment, 30 October; a vendor's view of the threat, not a measurement.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-educator-clinton-worse",
+  "claim": "Anthropic's deputy security chief warned that, as bad as things had been in the past four days, they would get a lot worse before they got better",
+  "by": "The Educator K/12 (quoting Anthropic's deputy security chief)",
+  "sources": [
+   "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A forecast by a security executive at an AI developer, not an observed event; the date of the remark is not given in the page.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-educator-agencies-offline",
+  "claim": "The article says cybersecurity agencies worldwide urgently called for PHP users to update immediately or take their sites offline until they could patch",
+  "by": "The Educator K/12",
+  "sources": [
+   "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "A blanket statement; the vault's disputed offline-allies claim records that several agencies gave no offline advice.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-tf1-anssi-third-party",
+  "claim": "ANSSI warned on 28 October, in a message to AFP, that the problem is not definitively solved and that the risk is shifting from websites to very many third-party products embedding PHP versions, such as routers, firewalls and connected objects",
+  "by": "TF1 Info (relaying AFP and ANSSI)",
+  "sources": [
+   "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "The agency's own message is the primary; consistent with the appliance exposure in cur30-synology-affected-packages.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-tf1-anssi-france-scale",
+  "claim": "ANSSI said more than 660,000 IP addresses in France, and potentially more than 6 million applications, use PHP",
+  "by": "TF1 Info (relaying ANSSI)",
+  "sources": [
+   "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A presence count for France, not of vulnerable or compromised systems.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur35-tf1-anssi-requested-offline",
+  "claim": "At ANSSI's request very many sites were disconnected in France, among them all prefectures, the ministries of Culture and Ecology, the tax site, the newspaper Les Echos and the carmaker Renault, while the UK unplugged 32 government sites and Finland its government portal",
+  "by": "TF1 Info (relaying AFP)",
+  "sources": [
+   "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Shows France's agency asking for sites to be taken offline; bears on the disputed offline-allies claim. Precautionary outages; many were restored within days.",
+  "agent": "curator@php.newsroom"
  }
 ]

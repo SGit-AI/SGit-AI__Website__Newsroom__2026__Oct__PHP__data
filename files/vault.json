@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "c51fe3959911",
-  "subject": "curator@php.newsroom: batch 34, one source from the source watch (Arab Net 5): 5 claims cur34-  +8 ~3  [blobs:+11 trees:+7]",
+  "commit": "7e7f2d59181f",
+  "subject": "curator@php.newsroom: batch 35, three sources from the source watch (Der Standard, The Educator, TF1 Info): 7 claims cur35-  +24 ~3  [blobs:+27 trees:+13]",
   "commits": 50
  },
- "sources": 704,
- "captures": 770,
- "hashed_files": 4496,
+ "sources": 707,
+ "captures": 773,
+ "hashed_files": 4514,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-30T07:14Z",
+ "latest_capture": "2026-10-30T09:42Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

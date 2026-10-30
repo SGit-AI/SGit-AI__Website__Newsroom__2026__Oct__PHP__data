@@ -8851,6 +8851,56 @@
   "notes_md": "# 로그프레소, PHP 원격 코드 실행 취약점 진단 ‘PHP2Shell 스캐너’ 앱 공개 < IT&과학 < 기사본문 - 디지털경제뉴스\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `kr/news/denews/news-articleview-html`, snapshot `20261026T071149Z`. Copied byte for byte; every file's sha256 is in `captures/20261026T071149Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nDigital Economy News (Korean), 26 October, by Park Si-hyun: the security firm Logpresso released a 'PHP2Shell Scanner' app in its Logpresso Store, to be installed in its SIEM/XDR and run against registered URLs, including internal-network PHP assets (management tools, firewalls) that internet-based scanners cannot reach. It logs each asset's result and PHP version, allows re-scanning after patching and CSV export, and ships detection queries and rules. It recaps the two CVEs (9.2), the fixed versions (8.2.35, 8.3.36, 8.4.27, 8.5.12) and says versions from 5.4.0 (2012) are reported affected. Noted as material only: the vault does not run such tools.\n\n> 로그프레소는 PHP 원격 코드 실행 취약점 ‘PHP2Shell’을 진단하는 ‘PHP2Shell 스캐너’ 앱을 로그프레소 스토어에 공개했다.\n\n_Curator's translation:_ \"Logpresso has released, in the Logpresso Store, a 'PHP2Shell Scanner' app that diagnoses the PHP remote code execution vulnerability 'PHP2Shell'.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"로그프레소, PHP 원격 코드 실행 취약점 진단 ‘PHP2Shell 스캐너’ 앱 공개 < IT&과학 < 기사본문 - 디지털경제뉴스\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ko`. The footer carries a copyright line ('무단전재 및 재배포, AI학습 및 활용 금지': no reproduction, redistribution, or AI training or use). It is a rights notice, not an instruction to act; recorded here and flagged to the editor. Nothing else addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "derstandard-story-3000000345274-warnung-vor-extrem-g",
+  "url": "https://www.derstandard.at/story/3000000345274/warnung-vor-extrem-gefaehrlichen-php-luecken-sorgt-fuer-viel-aufregung-im-web",
+  "publisher": "Der Standard",
+  "kind": "news",
+  "title": "Viele Seiten offline: Extrem gefährliche PHP-Lücken sorgen für Chaos im Web, Updates laufen - IT-Security - derStandard.at › Web",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261030T094225Z",
+    "files": {
+     "headers.json": {
+      "sha256": "774ecf2fca782b8fed81007fe503e21d5b46315d3bf7c246975f52dadc3512c9",
+      "bytes": 355
+     },
+     "page.html": {
+      "sha256": "e996af2c5662423d855ac5d54df993af381cc3f28bdc3a927a1f28698110e202",
+      "bytes": 59995
+     },
+     "provenance.json": {
+      "sha256": "f3ead04eb59eb9095b132255a96f7144e3e1e506a39faa1d3d0b07052f50ff76",
+      "bytes": 1916
+     },
+     "rendered.html": {
+      "sha256": "791490dc9a8837ae86095ab3d654e318b11bbbb8e494122d461377e4fd336954",
+      "bytes": 63085
+     },
+     "screenshot.jpg": {
+      "sha256": "bda86af162efac0b01bd17ca588c00678cfcb794ab23734e4ff4dd450838a7ea",
+      "bytes": 112669
+     },
+     "text.txt": {
+      "sha256": "575d839a98e450a18c78f3cf0152eba5134db32850a5f82a08675779f3e831ee",
+      "bytes": 1768
+     }
+    },
+    "started_utc": "2026-10-30T09:44:49.876Z",
+    "status": 200,
+    "final_url": "https://www.derstandard.at/consent/tcf/story/3000000345274/warnung-vor-extrem-gefaehrlichen-php-luecken-sorgt-fuer-viel-aufregung-im-web"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "de-AT",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T094225Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Austrian newspaper's IT-security report (Der Standard), behind a consent and paywall wall: only the headline, standfirst and first paragraph are ca...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Viele Seiten offline: Extrem gefährliche PHP-Lücken sorgen für Chaos im Web, Updates laufen - IT-Security - derStandard.at › Web\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `at/news/derstandard/story-3000000345274-warnung-vor-extrem-gefaehrlichen-php-lue`, snapshot `20261030T094225Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T094225Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Austrian newspaper's IT-security report (Der Standard), behind a consent and paywall wall: only the headline, standfirst and first paragraph are captured. They say that ahead of the publication of the critical PHP flaws numerous websites went completely offline for security reasons, including large hosters, and that in Austria many universities (among them the University of Vienna and TU Wien), media such as the NÖN and the Caritas did so; updates and details were now out, and the standfirst says practically all PHP servers can easily be taken over.\n\n> Im Vorfeld der Veröffentlichung von kritischen Sicherheitslücken in der für Webanwendungen vielgenutzten Software PHP gingen zahlreiche Webseiten aus Sicherheitsgründen komplett offline\n\n_Curator's translation:_ \"Ahead of the publication of critical security holes in PHP, software widely used for web applications, numerous websites went completely offline for security reasons.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Viele Seiten offline: Extrem gefährliche PHP-Lücken sorgen für Chaos im Web, Updates laufen - IT-Security - derStandard.at › Web\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `de-AT`. Behind a consent and subscription wall; only the teaser is readable, and the page's rights notice limits use to private personal use. The standfirst's claim that practically all PHP servers can easily be taken over is the newspaper's own characterisation and is not recorded as a finding. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "detik-tag-php2shell",
   "url": "https://www.detik.com/tag/php2shell",
   "publisher": "detikcom",
@@ -31038,6 +31088,56 @@
   "notes_md": "# php2shell (CVE-2026-109618, CVE-2026-109619): Critical PHP RCE FAQ | Tenable®\n\nCaptured by claude-story-site. Status: captured. Vendor FAQ; notes Cloudflare's rules cover only traffic routed through Cloudflare.\n\n- Captured for the record.\n"
  },
  {
+  "slug": "tf1info-high-tech-cinq-questions-sur-la-faille-c",
+  "url": "https://www.tf1info.fr/high-tech/cinq-questions-sur-la-faille-critique-php-qui-continue-de-secouer-l-internet-mondial-2472703.html",
+  "publisher": "TF1 Info",
+  "kind": "news",
+  "title": "Cinq questions sur la faille critique PHP qui continue de secouer l'Internet mondial | TF1 Info",
+  "published": "2026-10-29",
+  "captures": [
+   {
+    "stamp": "20261030T094225Z",
+    "files": {
+     "headers.json": {
+      "sha256": "2aeb653ecc21d0525b62f7998e844e1bd0c814712a37de3a9eb23e7dca73ef4c",
+      "bytes": 398
+     },
+     "page.html": {
+      "sha256": "18df996d7a8de6c01ebb69006555a6de6744117ee958a57f3f8b8eaba2d49d25",
+      "bytes": 387335
+     },
+     "provenance.json": {
+      "sha256": "12f6ecc1e99301170fed8367c4a6f86ea9230149809e3e34b1055f0fd5c531bd",
+      "bytes": 1866
+     },
+     "rendered.html": {
+      "sha256": "8560086de9758f91a19c4950a7422fdb0fe68c7753070acd36f9e24faa4b8c35",
+      "bytes": 441486
+     },
+     "screenshot.jpg": {
+      "sha256": "2d2e09f1080f1819194908434cf09d7b27724912a1db714af11d95dc903e878f",
+      "bytes": 748992
+     },
+     "text.txt": {
+      "sha256": "aabe59c09d8f05a8e9c54840acf8740cf94ee2e0a7a7b5371b02df717786e6ca",
+      "bytes": 12890
+     }
+    },
+    "started_utc": "2026-10-30T09:54:14.854Z",
+    "status": 200,
+    "final_url": "https://www.tf1info.fr/high-tech/cinq-questions-sur-la-faille-critique-php-qui-continue-de-secouer-l-internet-mondial-2472703.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "fr",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T094225Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A French television-news explainer (TF1 Info, 29 October) in question-and-answer form on the PHP flaws, built on an AFP report. It relays that France'...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Cinq questions sur la faille critique PHP qui continue de secouer l'Internet mondial | TF1 Info\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fr/news/tf1info/high-tech-cinq-questions-sur-la-faille-critique-php-qui-cont`, snapshot `20261030T094225Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T094225Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA French television-news explainer (TF1 Info, 29 October) in question-and-answer form on the PHP flaws, built on an AFP report. It relays that France's cybersecurity agency ANSSI warned on Wednesday 28 October that the problem should not be considered definitively solved because the risk is shifting from websites to very many third-party products that embed PHP, such as routers, firewalls and connected objects; that at ANSSI's request very many sites in France were disconnected, including all prefectures, ministries of Culture and Ecology, the tax site, major media such as Les Echos and companies such as Renault, while the UK unplugged 32 government sites and Finland its government portal; that ANSSI counts over 660,000 IP addresses and potentially over 6 million applications using PHP in France; and OpenAI's statement that the flaws were found with its GPT-5.6 Sol model and that the same capabilities could help attackers develop attacks quickly.\n\n> Il ne faut pas pour autant considérer que le problème est définitivement résolu\n\n_Curator's translation:_ \"That does not mean the problem should be considered definitively solved.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Cinq questions sur la faille critique PHP qui continue de secouer l'Internet mondial | TF1 Info\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `fr`. The page's first lines are unrelated headlines of the day. Secondhand on an AFP report and ANSSI's message; the agency's own statement is the primary. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere",
   "url": "https://www.tgrthaber.com/ekonomi/php2shell-alarmi-sifre-bile-gerekmiyor-milyonlarca-liralik-kayip-riski-3366771",
   "publisher": "TGRT Haber",
@@ -31552,6 +31652,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell Vulnerability | PHP flaw trickles down to service disruptions\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/news/thedailystar/news-bangladesh-news-php-flaw-trickles-down-service-disrupti`, snapshot `20261028T071103Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T071103Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Bangladeshi news report (The Daily Star) on service disruptions after the PHP flaw: Bangladesh Bank's website down since Thursday, three state and commercial banks' sites offline as of 5pm the previous day, others back after patching, and the land ministry suspending its digital land services for 36 hours after an urgent alert from BGD e-GOV CIRT on 22 October. It repeats Wiz's estimate of about 70% of websites, the patch of 21 October, a related vulnerability reported on 23 October that affects the patched versions, and the UK cybersecurity minister's statement that 32 government services were taken offline, and quotes two local experts on old systems that cannot be updated.\n\n> The vulnerability lies in PHP itself, not in website code, leaving even well-coded websites at risk\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell Vulnerability | PHP flaw trickles down to service disruptions\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. The capture shows no publication date; the text places it just after a five-day holiday ended. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "theeducatoronline-k12-news-php-vulnerability-are-your-scho",
+  "url": "https://www.theeducatoronline.com/k12/news/php-vulnerability-are-your-school-portals-exposed/289310",
+  "publisher": "The Educator",
+  "kind": "news",
+  "title": "PHP vulnerability: Are your school portals exposed? | The Educator K/12",
+  "published": "2026-10-30",
+  "captures": [
+   {
+    "stamp": "20261030T094225Z",
+    "files": {
+     "headers.json": {
+      "sha256": "9ff15db2f183004d1201003b84def8bee212284a352b00bd78875e192f47ed9c",
+      "bytes": 1425
+     },
+     "page.html": {
+      "sha256": "8720c4086dd48cd895cfc5c4e2413f169a61024a3bf977303c35743da49f6c80",
+      "bytes": 67391
+     },
+     "provenance.json": {
+      "sha256": "afbec4d8863cb82f6febc45fad5d0cfe4f238b083169f9a9b1fe4fa4d8c51318",
+      "bytes": 1810
+     },
+     "rendered.html": {
+      "sha256": "1b9724adee53d5d544d99fa0689f721afc4be682930b244f3e36a70ba3314601",
+      "bytes": 123364
+     },
+     "screenshot.jpg": {
+      "sha256": "07fdad025c77fec87b3c75156064d955f6649131eb44a78d026c153e95836a79",
+      "bytes": 503272
+     },
+     "text.txt": {
+      "sha256": "9b8d5f3d9553b2d943f6a5e29655e65e45e093e61637963c36ed2c1a25afb690",
+      "bytes": 5702
+     }
+    },
+    "started_utc": "2026-10-30T09:46:16.485Z",
+    "status": 200,
+    "final_url": "https://www.theeducatoronline.com/k12/news/php-vulnerability-are-your-school-portals-exposed/289310"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T094225Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). An Australian school-sector news piece (The Educator K/12, 30 October) on whether school portals are exposed, built around a Rapid7 vulnerability-inte...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP vulnerability: Are your school portals exposed? | The Educator K/12\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/theeducatoronline/k12-news-php-vulnerability-are-your-school-portals-exposed-2`, snapshot `20261030T094225Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T094225Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Australian school-sector news piece (The Educator K/12, 30 October) on whether school portals are exposed, built around a Rapid7 vulnerability-intelligence director. It says researchers using AI spotted the flaw on 21 October, that cybersecurity agencies worldwide urged PHP users to update immediately or take sites offline until patched, and that the crisis has moved from emergency to clean-up, quoting an Anthropic deputy security chief's forecast that things would get a lot worse before better. The Rapid7 director says the flaws are real critical bugs, that a large exposed surface is not the same as many compromised servers and reliably landing an attack across PHP versions and hosts is hard, that schools should patch promptly, confirm it took and demand written confirmation per system from providers, treat Apache with mod_php as the demonstrated unauthenticated path, that responsibility is shared but the principal owns the risk, that signs of intrusion are quiet, and that suspected breaches should go first to incident response and then to Australia's notification scheme.\n\n> A large, exposed surface is not the same as many compromised servers\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP vulnerability: Are your school portals exposed? | The Educator K/12\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Expert commentary written for school principals; advice for schools in Australia, including its notification scheme, is not recorded. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "thehackernews-php2shell-4days",
