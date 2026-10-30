@@ -6639,6 +6639,83 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-30T08:43Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-derstandard-austria-offline",
+   "verdict": "noted",
+   "reason": "Capture checked (German teaser): before the flaws were published numerous sites, including large hosters, went completely offline for security reasons, and in Austria many universities (the Uni Wien and the TU Wien named), the NOeN media group and the Caritas did the same. Precautionary outages; the article body is behind a paywall and the site carries no Austrian offline row yet. Not used.",
+   "sources": [
+    "derstandard-story-3000000345274-warnung-vor-extrem-g"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-educator-rapid7-caution",
+   "verdict": "noted",
+   "reason": "Capture checked (30 October): Douglas McKee of Rapid7 says the flaws are real critical bugs, that 'a large, exposed surface is not the same as many compromised servers and landing this reliably across different PHP versions and host setups is genuinely hard', advises patching, confirming it took and treating systems as exposed until a provider confirms in writing, and names Apache with mod_php as the demonstrated unauthenticated path. A vendor director's assessment, not a measurement; consistent with no-confirmed-compromise, which it does not extend.",
+   "sources": [
+    "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-educator-clinton-worse",
+   "verdict": "noted",
+   "reason": "Capture checked: Anthropic's deputy security chief Jason Clinton warned that 'as bad as things have gotten in the past 4 days, they are going to get a lot worse before they get better'. A forecast by a security executive, not an observed event; the page gives no date for the remark and the four days point to about 25 October. Not used.",
+   "sources": [
+    "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-educator-agencies-offline",
+   "verdict": "held back",
+   "reason": "Capture checked: 'a call by cybersecurity agencies worldwide for PHP users to update immediately or take their sites offline until they could patch'. A blanket line in a school-sector trade piece. The site's offline-allies claim is disputed (ACSC no offline advice, CERT-EU isolate, the NCSC sentence not on its page as captured); only the NSA's advice is confirmed (offline-nsa). Not stated as worded.",
+   "sources": [
+    "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-tf1-anssi-third-party",
+   "verdict": "noted",
+   "reason": "Capture checked (French, relaying AFP): in a message to AFP on Wednesday 28 October ANSSI said the problem is not definitively solved and feared the risk 'se déplace des sites web vers de très nombreux produits tiers intégrant des versions de PHP', 'des routeurs, pare-feu ou objets connectés'. The agency's own message is the primary and is not in the vault; consistent with the appliance exposure in the Synology statement (cur30-synology-affected-packages).",
+   "sources": [
+    "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-tf1-anssi-france-scale",
+   "verdict": "noted",
+   "reason": "Capture checked: ANSSI said more than 660,000 IP addresses in France and 'potentiellement plus de 6 millions d'applications' use PHP. A presence count for France, not of vulnerable or compromised systems; not on the site.",
+   "sources": [
+    "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur35-tf1-anssi-requested-offline",
+   "verdict": "noted",
+   "reason": "Capture checked: at ANSSI's request very many sites were taken offline, all the prefectures, the ministries of Culture and Ecology, the tax site, Les Echos and Renault among them, while the UK disconnected 32 government sites and Finland its government portal. The French agency's request rests on this AFP relay and the page names ANSSI by a wrong expansion; ANSSI's own words are not in the vault. The UK and Finland parts agree with the Lords figure (cur27-epoch-uk-32-services) and fi-offline; ANSSI asking for sites to be taken offline is a French request, not the offline-allies claim the site holds disputed (CERT-FR says isolate). Precautionary outages, many restored within days.",
+   "sources": [
+    "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T11:22Z",
+   "by": "claude-journalist"
   }
  ]
 }
