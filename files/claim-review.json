@@ -6881,6 +6881,94 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-30T16:36Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-spiceworks-eu-joint-statement",
+   "verdict": "noted",
+   "reason": "Capture checked (30 October): the European Commission, ENISA, CERT-EU and Europol urged organisations to take immediate action, warning that products may be affected 'even if they do not appear to use PHP directly'. The joint statement is the primary and is not in the vault; consistent with ANSSI's warning about third-party products (cur35-tf1-anssi-third-party). Not used.",
+   "sources": [
+    "spiceworks-security-how-spiceworks-members-got-ahea"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-spiceworks-leak-channel",
+   "verdict": "held back",
+   "reason": "Capture checked: 'a sysadmin checked the php.net homepage and found ... advance notice of that release' hours before the fix and posted it, with leaked details the PHP team had not confirmed, to the Spiceworks Community. A community member's account, unverified. The site's account is that the two CVE ids circulated from 20 October with a wrong time and CVSS (cur23-itfb-leak-sequence, cur24-hackernoon-disclosure-utc); one outlet names a Hacker News post (cur34-arabnet5-hackernews-leak, held back) and this one the php.net homepage and its own community. Three channels from three outlets, none confirmed by the PHP team: the channel is not stated.",
+   "sources": [
+    "spiceworks-security-how-spiceworks-members-got-ahea"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-spiceworks-unit42-sophos",
+   "verdict": "agrees",
+   "reason": "Capture checked: 'Unit 42 saw an attack on a European government agency but couldn't confirm it used the PHP2Shell flaws, while Sophos found no evidence of exploitation in its customer telemetry'. Agrees with cur20-scworld-unit42-retraction (used; Unit 42's withdrawal of 25 October) and the site's Sophos line; a point-in-time summary of 'mixed' reports in a community article, not new evidence. It concerns Unit 42's European-agency case, not Dream's report.",
+   "sources": [
+    "spiceworks-security-how-spiceworks-members-got-ahea"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-spiceworks-exploit-time",
+   "verdict": "held back",
+   "reason": "Capture checked: 'the time to exploit new flaws has shrunk from about a week to 24 to 48 hours'. The article's assertion with no source, in an opinion close; the site carries no such figure and the related worry about patch diffing (cur29-metro-reverse-engineer-patches) is an expert concern, not a measurement. Not stated.",
+   "sources": [
+    "spiceworks-security-how-spiceworks-members-got-ahea"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-taiwannews-dream-25",
+   "verdict": "held back",
+   "reason": "Capture checked (Taiwan News, 30 October): the page says Dream's report describes an 'AI-assisted campaign' that took control of '25 Palo Alto Networks firewall and management servers' in Taiwan, Japan, South Korea and the US, left 22 firewalls with backdoors, and singled out three servers in a US government-affiliated environment. The counts agree with cur29-dream-25-servers and cur31-dream-three-gov-servers. Two things do not: Dream's own page says 'we are not disclosing the vendor' (dreamgroup-chained-php2shell-roots-25-servers), so the vendor name is the outlet's; and 'AI-assisted campaign' is the outlet's wording, while Dream says it has no direct evidence AI wrote the exploits. A second outlet (after Innovatopia, cur36-innovatopia-dream-chain) naming PAN-OS, and a relay of one report, not an independent source. Not stated; PAN-OS is not named on the site until a Unit 42 or Palo Alto primary is in the vault, per the correspondent.",
+   "sources": [
+    "taiwannews-news-6468726"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-taiwannews-attribution-indicators",
+   "verdict": "noted",
+   "reason": "Capture checked: Dream did not attribute the activity to a specific actor; the page quotes Dream's 'potential nation-state adversary efforts' from the choice of four countries it calls China's primary geopolitical rivals, and adds China Standard Time hours and FOFA. Indicators and an inference by Dream, relayed; agrees with cur39-dream-no-named-actor (indicators only, the site names no actor) and cur61-cypro-indicators-circumstantial. Not used.",
+   "sources": [
+    "taiwannews-news-6468726"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-taiwannews-acs-fixing",
+   "verdict": "noted",
+   "reason": "Capture checked: Taiwan's Administration for Cyber Security called for software updates across government agencies and businesses 'last week' and said on Friday (30 October) that companies have been fixing their systems and updating PHP. The agency's statement as relayed; its own notice is not in the vault.",
+   "sources": [
+    "taiwannews-news-6468726"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur38-techflow-vitalik-view",
+   "verdict": "noted",
+   "reason": "Capture checked (Chinese, 30 October): on 22 October Vitalik Buterin said the end state of cybersecurity in the AI era may favour defenders but the transition will be very difficult, and called for formal verification and a minimal trusted computing base. An opinion relayed in a wallet vendor's commentary, not a finding about PHP2Shell. The same page opens with a Binance theft of 30 October, 'possibly via a DevOps engineer's laptop', and lists it with Bybit and Bitget as incidents whose attack paths 'are not the same'; it does not say Binance was compromised through PHP2Shell, so nothing here names an organisation compromised through it. Flagged to the correspondent because of the headline pairing ('From Binance to PHP2Shell').",
+   "sources": [
+    "techflowpost-article-35013"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
