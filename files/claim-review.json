@@ -6584,6 +6584,61 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-29T18:42Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur34-arabnet5-calif-august",
+   "verdict": "agrees",
+   "reason": "Capture checked (Arabic, 22 October, relaying the Wall Street Journal): Ryan Austin of Calif found the flaw in August while reviewing PHP's source with OpenAI's GPT-5.6 Sol, in an OpenAI-backed programme, and Calif's chief executive contacted the PHP security engineer on 11 August. Agrees with cur28-okdiario-calif-timeline (report to PHP on 11 August), cur27-infoarenales-calif-1aug and cur2-calif-august; a third-hand telling.",
+   "sources": [
+    "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T08:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur34-arabnet5-wiz-independent",
+   "verdict": "agrees",
+   "reason": "Capture checked: Wiz's team found the flaw independently of Calif, and Wiz's co-founder called it the most serious flaw found with AI help to that time. Agrees with the site's wiz-independent claim and cur28-okdiario-wiz-timeline; a vendor's characterisation of its own and a rival's research, relayed.",
+   "sources": [
+    "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T08:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur34-arabnet5-heartbleed-comparison",
+   "verdict": "noted",
+   "reason": "Capture checked: Volker Dusch, a security engineer at the PHP Foundation, called the problem among the most serious the project had faced in over a decade and compared it to Heartbleed of 2014. A maintainer's own characterisation, not a measurement; not used.",
+   "sources": [
+    "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T08:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur34-arabnet5-hackernews-leak",
+   "verdict": "held back",
+   "reason": "Capture checked: the page says the team planned to release on 22 October with details kept secret, but 'a post on the Hacker News site' revealed information about the update before the planned date and pushed the team to bring the announcement forward. The site's account is that the two CVE ids circulated from 20 October with a wrong time and CVSS (cur23-itfb-leak-sequence, cur24-hackernoon-disclosure-utc) and that release moved from 22 to 21 October (disclosure-22oct, contradicted); no other source in the vault names Hacker News as the channel, and this is a third-hand telling of the Wall Street Journal. The planned 22 October date agrees; the channel is not stated.",
+   "sources": [
+    "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T08:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur34-arabnet5-ai-patch-comparison",
+   "verdict": "noted",
+   "reason": "Capture checked: Calif's chief executive warned that people may use AI tools to analyse security updates and turn them into ready-made attack tools, which could put many unpatched systems at greater risk; the page adds that this does not mean every update leads to an attack. A stated concern about a possible method, not an observed event; compare cur29-metro-reverse-engineer-patches. Not used.",
+   "sources": [
+    "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T08:43Z",
+   "by": "claude-journalist"
   }
  ]
 }
