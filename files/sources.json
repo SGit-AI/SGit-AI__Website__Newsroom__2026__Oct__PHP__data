@@ -29025,6 +29025,56 @@
   "notes_md": "# PHP2Shell: falha crítica no PHP exige correção imediata\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `br/news/spacemoney/tecnologia-php2shell-falha-critica-php`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSpaceMoney (Brazil, Portuguese), 22 October: a general explainer saying the flaw sits in the PHP engine, not an application, so sites on platforms such as WordPress, Drupal and Joomla can be affected if the PHP version is vulnerable; that Wiz, which discovered and reported the flaws, describes two CVEs scored up to 9.2; that in demonstrations Wiz achieved remote code execution without authentication on WordPress, Drupal and Joomla and read sensitive process data (passwords, tokens, API keys, certificates); and that every PHP version of the last decade, from 5.4, has at least one of the flaws. No new facts.\n\n> A linguagem sustenta 70% dos sites do mundo, incluindo WordPress, Drupal e Joomla.\n\n_Curator's translation:_ \"The language underpins 70% of the world's sites, including WordPress, Drupal and Joomla.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ SpaceMoney summarises Wiz's research: the bugs date back to 5.4, Wiz demonstrated RCE on WordPress/Drupal/Joomla, and AI (Wiz Atlas, Gemini 4 Argon, GPT-5.6 Sol) cut exploitation time. It lists the indicators of compromise Wiz suggests.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: falha crítica no PHP exige correção imediata\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `pt-BR`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "spiceworks-security-how-spiceworks-members-got-ahea",
+  "url": "https://www.spiceworks.com/security/how-spiceworks-members-got-ahead-of-php2shell/",
+  "publisher": "Spiceworks",
+  "kind": "news",
+  "title": "How Spiceworks members got ahead of PHP2Shell - Spiceworks",
+  "published": "2026-10-30",
+  "captures": [
+   {
+    "stamp": "20261030T171329Z",
+    "files": {
+     "headers.json": {
+      "sha256": "8b982fce7b2fc9ef4e65f4019af73e050cb78889a28e722eac7e7f1b3145074b",
+      "bytes": 1482
+     },
+     "page.html": {
+      "sha256": "0bfe6601a29900e94b8d480f8973d7d47fa8ab0c4f410e86ee792c57df73d329",
+      "bytes": 131950
+     },
+     "provenance.json": {
+      "sha256": "d9722942d81869aa6adaf826c150b5d820976562c330f904056e0a47baa7f14a",
+      "bytes": 1730
+     },
+     "rendered.html": {
+      "sha256": "e0dc12a18a20eb2e3b74bc3aef1159728860f334502496257583cd4665d3ef0b",
+      "bytes": 168116
+     },
+     "screenshot.jpg": {
+      "sha256": "6fac0395afa930d7c865daa225d099da2f93da471628899c41e5ea1c6ffb75f0",
+      "bytes": 933907
+     },
+     "text.txt": {
+      "sha256": "02e44f7b7054589c711f8e9a47df903addd69c15792a523b39deb844c8a6b48a",
+      "bytes": 11450
+     }
+    },
+    "started_utc": "2026-10-30T17:17:05.478Z",
+    "status": 200,
+    "final_url": "https://www.spiceworks.com/security/how-spiceworks-members-got-ahead-of-php2shell/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en-US",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T171329Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A community-forum recap (Spiceworks, 30 October) of how members of its IT community reacted to PHP2Shell. It says that hours before the fix a sysadmin...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# How Spiceworks members got ahead of PHP2Shell - Spiceworks\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/spiceworks/security-how-spiceworks-members-got-ahead-of-php2shell`, snapshot `20261030T171329Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T171329Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA community-forum recap (Spiceworks, 30 October) of how members of its IT community reacted to PHP2Shell. It says that hours before the fix a sysadmin saw advance notice of the release on the php.net homepage and posted it, with leaked details the PHP team had not confirmed, to the Spiceworks Community, giving readers a head start while European organisations were already taking sites offline; that members stressed WordPress updates are not PHP updates, that installing an update is not running it until services restart, and that appliances, admin portals, backup devices and printers may run PHP; and that a vulnerable version does not prove a break-in but rotating credentials after exposure is cheap. It relays that the European Commission, ENISA, CERT-EU and Europol urged immediate action and warned products may be affected even if they do not appear to use PHP directly, that Amazon told defenders to look for evidence from 17 October, that Unit 42 could not confirm that an attack on a European government agency used the flaws and Sophos saw no exploitation in its customer telemetry, and that AI has shortened the time to exploit new flaws, in its words, from about a week to 24 to 48 hours.\n\n> WordPress updates are not the same thing as PHP updates.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"How Spiceworks members got ahead of PHP2Shell - Spiceworks\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. A forum recap quoting community members; private members are not named in the notes. One member's remark about what an exploit needs is not copied. The 24-to-48-hour figure is the article's, unsourced. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "spiegel-netzwelt-php-sicherheitsluecke-auf-websi",
   "url": "https://www.spiegel.de/netzwelt/php-sicherheitsluecke-auf-websites-was-sie-jetzt-tun-muessen-um-sich-abzusichern-a-625f6457-1437-4643-8fd1-b0624da87910",
   "publisher": "Spiegel",
@@ -30012,6 +30062,56 @@
   "has_notes": false
  },
  {
+  "slug": "taiwannews-news-6468726",
+  "url": "https://www.taiwannews.com.tw/news/6468726",
+  "publisher": "Taiwan News",
+  "kind": "news",
+  "title": "Hackers exploit PHP flaws to seize servers in Taiwan | Taiwan News | Oct. 30, 2026 09:42",
+  "published": "2026-10-30",
+  "captures": [
+   {
+    "stamp": "20261030T171329Z",
+    "files": {
+     "headers.json": {
+      "sha256": "7417ade5849b4f96f03741a88acfa2cfd1ec976545ab92b424258c28a7cc9bdd",
+      "bytes": 1724
+     },
+     "page.html": {
+      "sha256": "ab9939ffe4a8e1ef6d8eafa9bd47755508bb251515ffb09e50acadba9b890fa7",
+      "bytes": 133806
+     },
+     "provenance.json": {
+      "sha256": "974c03678c097a06272e2d60b5c7a309526ce1f2827222f2fd65aff073a72fb4",
+      "bytes": 1568
+     },
+     "rendered.html": {
+      "sha256": "47a8484d486ca1d61de329f7ff4dd29945b23b50ab09bd5b1df7d90de8aa916b",
+      "bytes": 135055
+     },
+     "screenshot.jpg": {
+      "sha256": "2933cd87ab05e67b1e7287bd385b2e1fb4d667cb4e94d8257a5659ec080a8ddc",
+      "bytes": 283574
+     },
+     "text.txt": {
+      "sha256": "2d8ad20392ac3a08b764331de7a3bfde30854063fe895405d90c21bfd040bd28",
+      "bytes": 3761
+     }
+    },
+    "started_utc": "2026-10-30T17:41:41.893Z",
+    "status": 200,
+    "final_url": "https://www.taiwannews.com.tw/news/6468726"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T171329Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A Taiwanese English-language news report (Taiwan News, 30 October) on Dream's report: an AI-assisted campaign in October identified and took full cont...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Hackers exploit PHP flaws to seize servers in Taiwan | Taiwan News | Oct. 30, 2026 09:42\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tw/news/taiwannews/news-6468726`, snapshot `20261030T171329Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T171329Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Taiwanese English-language news report (Taiwan News, 30 October) on Dream's report: an AI-assisted campaign in October identified and took full control of 25 Palo Alto Networks firewall and management servers across Taiwan, Japan, South Korea and the United States, with 22 compromised firewalls left with hidden backdoors for return access and three servers in a US government-affiliated environment singled out for deeper intrusion. It relays that Dream said the target selection indicated potential nation-state efforts, the four countries being China's primary geopolitical rivals, did not attribute the activity to a specific actor but pointed to operation on China Standard Time and use of the Chinese search engine FOFA, and found signs of AI tools in the attackers' environment. It adds that Taiwan's cyber-security agency had called for updates last week and said companies had been fixing their systems.\n\n> 22 compromised firewalls across the four countries were left with hidden backdoors that allow return access\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Hackers exploit PHP flaws to seize servers in Taiwan | Taiwan News | Oct. 30, 2026 09:42\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Secondhand on Dream's own report (the primary), the same report relayed in cur36-innovatopia-dream-chain and cur37-orcarouter-dream-25-servers. The page also carries an image caption and a list of unrelated headlines. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "takvim-guncel-2026-10-22-php2shell-guvenlik-aci",
   "url": "https://www.takvim.com.tr/guncel/2026/10/22/php2shell-guvenlik-acigi-nedir-turkiye-ve-dunyada-son-durum",
   "publisher": "Takvim",
@@ -30282,6 +30382,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Synology Issues Urgent Update Warning Over Critical PHP2Shell Security Flaws - Tech Business News\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/techbusinessnews/news-synology-issues-urgent-update-warning-over-critical-php`, snapshot `20261029T094207Z`. Copied byte for byte; every file's sha256 is in `captures/20261029T094207Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Australian tech-news report (Tech Business News, 29 October) that Synology is urging NAS owners to update affected applications after confirming PHP2Shell exposure. Synology's advisory lists the affected packages (Calendar, IDrive, Joomla, KodExplorer, MailStation, MediaWiki, phpMyAdmin, vtigerCRM, Web Station and WordPress), says its own Synology Drive is unaffected, and in a 28 October statement confirmed PHP updates for DSM 7.4 and 7.3 and for end-of-life DSM 7.2, 7.1 and 7.0, with a DSM 6.2 patch planned for 29 October and earlier versions told to disable affected packages temporarily. It names fixed Calendar and MailStation versions, says PHP 7.3 will get no fix, and says DSM's internal PHP component has no externally accessible modules and minimal risk, with a fix planned for a later DSM release.\n\n> Synology says the affected applications are Calendar, IDrive, Joomla, KodExplorer, MailStation, MediaWiki, phpMyAdmin, vtigerCRM, Web Station and WordPress\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Synology Issues Urgent Update Warning Over Critical PHP2Shell Security Flaws - Tech Business News\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Secondhand on a vendor's advisory; the advisory is the primary. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "techflowpost-article-35013",
+  "url": "https://www.techflowpost.com/article/35013",
+  "publisher": "techflowpost",
+  "kind": "news",
+  "title": "从 Binance 到 PHP2Shell：AI 时代，Web 安全的防线亟需再定义",
+  "published": "2026-10-30",
+  "captures": [
+   {
+    "stamp": "20261030T171329Z",
+    "files": {
+     "headers.json": {
+      "sha256": "cf94c60f52b854d89bac59ce86ca40018f7e528f0836d589e49358128224104f",
+      "bytes": 1518
+     },
+     "page.html": {
+      "sha256": "fe54ab90c2f046bccd471564a045e988b8ef420e6bee63faa7c912ead860ef27",
+      "bytes": 316248
+     },
+     "provenance.json": {
+      "sha256": "dc84aa3a1ed612129375b143b168b8612e95f8e17760e5ac55ba10510ff15ab0",
+      "bytes": 1563
+     },
+     "rendered.html": {
+      "sha256": "1924b398ea4b1ecfa1ce0fa543bb6331f3976eecef8fed4eecb5fd787dcf9727",
+      "bytes": 331290
+     },
+     "screenshot.jpg": {
+      "sha256": "f169ee32fee5bfc1a52e9c822609dad80eb4e5f0c1118d3505151c1142453b0e",
+      "bytes": 758115
+     },
+     "text.txt": {
+      "sha256": "21c068e6fdb04063027762880dc2c68fea5db849961c5b64b0b155b8190f219a",
+      "bytes": 18299
+     }
+    },
+    "started_utc": "2026-10-30T17:41:44.810Z",
+    "status": 200,
+    "final_url": "https://www.techflowpost.com/article/35013"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "zh-CN",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T171329Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Chinese-language crypto-news essay (TechFlow, 30 October) titled 'From Binance to PHP2Shell', arguing that attackers increasingly target the whole c...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# 从 Binance 到 PHP2Shell：AI 时代，Web 安全的防线亟需再定义\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tw/news/techflowpost/article-35013`, snapshot `20261030T171329Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T171329Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Chinese-language crypto-news essay (TechFlow, 30 October) titled 'From Binance to PHP2Shell', arguing that attackers increasingly target the whole chain of trust rather than cryptography. It opens with an alleged breach at a large exchange and other crypto thefts, which the page does not attribute to PHP2Shell; it then recaps PHP2Shell (two flaws scoring 9.2, PHP behind about 70% of sites, Palo Alto and Censys scans showing 22.6 million to 36.7 million exposed instances), says the flaws were found with AI, and relays the Ethereum co-founder's view of 22 October that cybersecurity's end state in the AI era may favour defenders but the transition will be hard, with formal verification and a minimal trusted computing base as the long-term answer. It states that not all the attacks it lists were launched by AI.\n\n> 当然，并非上述所有攻击都由 AI 直接发起或执行，但 AI 正在同时放大攻击者与防守方的能力\n\n_Curator's translation:_ \"Of course, not all the attacks above were launched or carried out directly by AI, but AI is amplifying the capabilities of attackers and defenders at once.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"从 Binance 到 PHP2Shell：AI 时代，Web 安全的防线亟需再定义\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `zh-CN`. The alleged exchange breach and other thefts in the opening paragraphs are not attributed to PHP2Shell by the page and are not recorded here; their figures are unverified commentary. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "techgaming-internet-sotto-attacco-php2shell-vulnera",

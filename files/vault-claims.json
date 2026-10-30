@@ -8204,5 +8204,101 @@
   "topic": "tooling",
   "note": "A criminal forum's advertisement relayed second hand; whether the tool works is unknown and nothing of its features is recorded beyond the advertised purpose.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-spiceworks-eu-joint-statement",
+  "claim": "The European Commission, ENISA, CERT-EU and Europol urged organisations to take immediate action, warning that products may be affected even if they do not appear to use PHP directly",
+  "by": "Spiceworks (relaying the EU bodies' statement)",
+  "sources": [
+   "spiceworks-security-how-spiceworks-members-got-ahea"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The joint statement is the primary; consistent with the appliance warnings in cur35-tf1-anssi-third-party.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-spiceworks-leak-channel",
+  "claim": "Hours before the fix, a sysadmin saw advance notice of the release on the php.net homepage and posted it, with leaked details the PHP team had not confirmed, to the Spiceworks Community",
+  "by": "Spiceworks",
+  "sources": [
+   "spiceworks-security-how-spiceworks-members-got-ahea"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "A community-sourced account of one more channel for the early information; another outlet names a Hacker News post (cur34-arabnet5-hackernews-leak) and others the CVE ids circulating on forums on 20 October (cur23-itfb-leak-sequence): the channels are not reconciled.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-spiceworks-unit42-sophos",
+  "claim": "Unit 42 saw an attack on a European government agency but could not confirm it used the PHP2Shell flaws, and Sophos found no evidence of exploitation in its customer telemetry",
+  "by": "Spiceworks",
+  "sources": [
+   "spiceworks-security-how-spiceworks-members-got-ahea"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "Consistent with cur20-scworld-unit42-retraction and cur21-zdnetkr-no-verified-breach (Sophos and Palo Alto Networks later corrected or withdrew early statements); a point-in-time finding, not a finding that no exploitation occurred.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-spiceworks-exploit-time",
+  "claim": "The article says AI makes it easier for attackers to compare a patch with the old code and build a working exploit, and that the time to exploit new flaws has shrunk from about a week to 24 to 48 hours",
+  "by": "Spiceworks",
+  "sources": [
+   "spiceworks-security-how-spiceworks-members-got-ahea"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "The author's assertion without a source; compare the expert worry in cur29-metro-reverse-engineer-patches.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-taiwannews-dream-25",
+  "claim": "Dream's report says an AI-assisted campaign took full control of 25 Palo Alto Networks firewall and management servers across Taiwan, Japan, South Korea and the United States, left 22 compromised firewalls with hidden backdoors for return access, and singled out three servers in a US government-affiliated environment for deeper intrusion",
+  "by": "Taiwan News (relaying Dream)",
+  "sources": [
+   "taiwannews-news-6468726"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A third relay of one report, not independent (cur36-innovatopia-dream-chain, cur37-orcarouter-dream-25-servers). 'AI-assisted' is the outlet's wording: Dream itself says it has no direct evidence AI wrote the exploits (cur36-innovatopia-ai-tooling).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-taiwannews-attribution-indicators",
+  "claim": "Dream did not attribute the activity to a specific actor but said the target selection indicated potential nation-state efforts, the four countries being China's primary geopolitical rivals, that the operation ran on China Standard Time and that the attackers used FOFA, a Chinese search engine, to find targets",
+  "by": "Taiwan News (relaying Dream)",
+  "sources": [
+   "taiwannews-news-6468726"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "Indicators and an inference, not an attribution; the working hours and tool choice are weak evidence, and Dream itself names no actor.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-taiwannews-acs-fixing",
+  "claim": "Taiwan's Administration for Cyber Security had called for software updates across government agencies and businesses and said companies had been fixing their systems and updating PHP",
+  "by": "Taiwan News (citing the ACS)",
+  "sources": [
+   "taiwannews-news-6468726"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "The agency's statement as relayed on 30 October; the exact date of the agency's remark is not given.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur38-techflow-vitalik-view",
+  "claim": "The Ethereum co-founder said on 22 October that the end state of cybersecurity in the AI era may favour defenders but the transition period will be very difficult, and that defence will need software built with formal verification and a minimal trusted computing base, not only researchers finding bugs before hackers",
+  "by": "TechFlow (relaying the Ethereum co-founder)",
+  "sources": [
+   "techflowpost-article-35013"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "An opinion by a public figure, relayed second hand; not a finding about PHP2Shell.",
+  "agent": "curator@php.newsroom"
  }
 ]

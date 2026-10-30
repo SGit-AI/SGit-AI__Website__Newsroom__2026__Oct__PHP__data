@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "03fa6f76ca0f",
-  "subject": "curator@php.newsroom: batch 37, two sources from the source watch (OrcaRouter, FrenchBreaches): 5 claims cur37-  +16 ~3  [blobs:+19 trees:+10]",
+  "commit": "2f80607e87ad",
+  "subject": "curator@php.newsroom: batch 38, three sources from the source watch (Spiceworks, Taiwan News, TechFlow): 8 claims cur38-  +24 ~3  [blobs:+27 trees:+13]",
   "commits": 50
  },
- "sources": 712,
- "captures": 778,
- "hashed_files": 4544,
+ "sources": 715,
+ "captures": 781,
+ "hashed_files": 4562,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-30T14:58Z",
+ "latest_capture": "2026-10-30T17:13Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
