@@ -6826,6 +6826,61 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-30T13:43Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur37-orcarouter-fragnesia-kev",
+   "verdict": "held back",
+   "reason": "Capture checked (a vendor blog, 30 October): it says the Linux kernel flaw CVE-2026-46300 ('Fragnesia'), disclosed in May with a public proof of concept, was added to CISA's KEV catalog on 28 October because attackers used it as the second stage after PHP2Shell, and that CISA added it 'within a day of the report'. The KEV date and the reason are the blog's: the vault holds no CISA alert for it (the captured KEV feed is of 27 October, before the date given, cf. cur32-dream-cves-named), and the chain is Dream's claim only. A kernel flaw outside PHP. Not stated until CISA's own entry is captured.",
+   "sources": [
+    "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T16:36Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur37-orcarouter-dream-25-servers",
+   "verdict": "agrees",
+   "reason": "Capture checked: 'per Dream Security's report on the campaign: 25 servers rooted across the United States, Japan, Taiwan and South Korea, including one network linked to the US government'. Agrees with cur29-dream-25-servers and cur36-innovatopia-us-gov-ad; a second relay of Dream's one report, not an independent source. Reported by Dream, not independently confirmed.",
+   "sources": [
+    "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T16:36Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur37-orcarouter-ai-unconfirmed",
+   "verdict": "agrees",
+   "reason": "Capture checked: the blog says press reports of AI tooling contributing are 'not established' and 'a hypothesis attached to a fast, multi-target operation rather than a finding anyone has published evidence for'. Agrees with cur36-innovatopia-ai-tooling and Dream's own 'no direct evidence' line.",
+   "sources": [
+    "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T16:36Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur37-frenchbreaches-risikomonitor-236908",
+   "verdict": "noted",
+   "reason": "Capture checked (French, 28 October dashboard reading): 2,590,282 web servers analysed, 236,908 flagged as affected (9.1%), 203,143 using PHP with a hidden version, 2,150,231 classed as fixed or not using PHP. A version-based dashboard count that the blog itself says does not mean all flagged servers can be compromised, and a server can host several sites; the same service gave the Austrian figures at cur36-weekend-risikomonitor-28622. Not used.",
+   "sources": [
+    "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T16:36Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur37-frenchbreaches-forum-tool-25oct",
+   "verdict": "held back",
+   "reason": "Capture checked: on Sunday 25 October a forum user posted 'PHP2SHELL EXPLOIT + BACKDOOR + ENUM', claiming a tool that finds vulnerable servers, runs commands and installs a backdoor; the blog says it was not independently verified. A criminal forum's advertisement relayed second hand: whether it works is unknown, so nothing is stated about it, and the pseudonym on the page is left out.",
+   "sources": [
+    "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-30T16:36Z",
+   "by": "claude-journalist"
   }
  ]
 }
