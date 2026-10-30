@@ -8144,5 +8144,65 @@
   "topic": "exploitation",
   "note": "A vendor's telemetry of attack attempts, not of successful compromises; the 'about 10%' base is not defined in the item.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur37-orcarouter-fragnesia-kev",
+  "claim": "The blog says CISA added the Linux kernel local privilege escalation CVE-2026-46300 ('Fragnesia'), disclosed in May 2026 with a public proof of concept, to its Known Exploited Vulnerabilities catalog on 28 October, and that attackers used it as the second stage after PHP2Shell in the reported appliance campaign",
+  "by": "OrcaRouter blog (citing CISA and Dream Security)",
+  "sources": [
+   "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A kernel flaw outside PHP, but the second half of the chain in the Dream Research report (cur36-innovatopia-dream-chain); the KEV date is the blog's, check CISA's own alert.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur37-orcarouter-dream-25-servers",
+  "claim": "As summarised from Dream Security's campaign report, 25 servers were rooted across the United States, Japan, Taiwan and South Korea, including one network linked to the US government",
+  "by": "OrcaRouter blog (relaying Dream Security)",
+  "sources": [
+   "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "The same report as cur36-innovatopia-dream-chain, a second relay of it, not independent.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur37-orcarouter-ai-unconfirmed",
+  "claim": "The blog notes press reports that AI tooling may have contributed to the intrusion and says this is not established, only a hypothesis attached to a fast, multi-target operation, with no published evidence",
+  "by": "OrcaRouter blog",
+  "sources": [
+   "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "Agrees with the caution in cur36-innovatopia-ai-tooling.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur37-frenchbreaches-risikomonitor-236908",
+  "claim": "A monitoring dashboard (risikomonitor), consulted on 28 October 2026, listed 236,908 web servers as potentially affected, 9.1% of 2.59 million analysed, and 2,150,231 as fixed or not using PHP",
+  "by": "FrenchBreaches blog (citing risikomonitor)",
+  "sources": [
+   "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A version-based dashboard count; the blog cautions a flagged server is not necessarily exploitable and a server can host several sites. The same service gave the Austrian figures in cur36-weekend-risikomonitor-28622.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur37-frenchbreaches-forum-tool-25oct",
+  "claim": "On Sunday 25 October a forum user posted a tool presented as able to detect vulnerable servers, run commands, install a web shell and plant a backdoor on servers affected by the PHP flaws; the blog says these capabilities were not independently verified",
+  "by": "FrenchBreaches blog",
+  "sources": [
+   "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out"
+  ],
+  "status": "unverified",
+  "topic": "tooling",
+  "note": "A criminal forum's advertisement relayed second hand; whether the tool works is unknown and nothing of its features is recorded beyond the advertised purpose.",
+  "agent": "curator@php.newsroom"
  }
 ]

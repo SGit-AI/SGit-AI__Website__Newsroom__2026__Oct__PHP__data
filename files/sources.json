@@ -12204,6 +12204,56 @@
   "notes_md": "# MP Government Websites Vulnerable To 'PHP2Shell' Cyber Threat; NIC Issues Critical Security Advisory, MP CERT Reports No Damage So Far\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `in/news/freepressjournal/bhopal-mp-government-websites-vulnerable-to-php2shell-cyber`, snapshot `20261024T133450Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T133450Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nFree Press Journal (India), 23 October: several Madhya Pradesh government websites face potential risk from the critical PHP flaws; the National Informatics Centre issued an advisory urging immediate security patches; the flaws could allow unauthorised remote code execution and sensitive-data exposure; MP CERT says it remains alert with no damage reported yet.\n\n> MP CERT says it remains alert, with no damage reported yet.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"MP Government Websites Vulnerable To 'PHP2Shell' Cyber Threat; NIC Issues Critical Security Advisory, MP CERT Reports No Damage So Far\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out",
+  "url": "https://frenchbreaches.com/blog/faille-php-un-hacker-diffuse-un-outil-capable-de-pirater-des-sites-internet",
+  "publisher": "frenchbreaches",
+  "kind": "news",
+  "title": "Faille PHP : un hacker diffuse un outil capable de pirater des sites internet - Blog FrenchBreaches",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261030T145837Z",
+    "files": {
+     "headers.json": {
+      "sha256": "11a41617b0ff7801181f5e6bf41df7464762bf492b4b8df48e7a2bc2cc9b9deb",
+      "bytes": 3031
+     },
+     "page.html": {
+      "sha256": "711620eeb3291ff1b2c5f7e5275c031080945a29c3e1aacf3f3e4c74f61ad766",
+      "bytes": 107466
+     },
+     "provenance.json": {
+      "sha256": "64e91a89f20b1dc9728306ad3c22b3be36c17f244d20785cd5b4a4dd7635f995",
+      "bytes": 1845
+     },
+     "rendered.html": {
+      "sha256": "464fdb47774bacb1b8117a60a71219b2634cc1f03eff92e5458762419d397679",
+      "bytes": 113344
+     },
+     "screenshot.jpg": {
+      "sha256": "a6202b4d8174bc11a99c93dc77cad0d35a98df4dfb97ec300a53fca3dbc017ce",
+      "bytes": 746590
+     },
+     "text.txt": {
+      "sha256": "ce705dc2fb2e788d13d4f35cdb3a29b02b3dd981f92b8090e89a298ecf918d08",
+      "bytes": 9954
+     }
+    },
+    "started_utc": "2026-10-30T15:02:51.368Z",
+    "status": 200,
+    "final_url": "https://frenchbreaches.com/blog/faille-php-un-hacker-diffuse-un-outil-capable-de-pirater-des-sites-internet"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "fr",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T145837Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A French cyber-news blog (FrenchBreaches) on a tool announced on a hackers' forum on Sunday 25 October under a PHP2SHELL name, whose author claims it...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Faille PHP : un hacker diffuse un outil capable de pirater des sites internet - Blog FrenchBreaches\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `be/news/frenchbreaches/blog-faille-php-un-hacker-diffuse-un-outil-capable-de-pirate`, snapshot `20261030T145837Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T145837Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA French cyber-news blog (FrenchBreaches) on a tool announced on a hackers' forum on Sunday 25 October under a PHP2SHELL name, whose author claims it can detect vulnerable servers, run commands, install a web shell and plant a backdoor; the blog stresses that the claimed capabilities were not independently verified. It also cites the Austrian monitoring service risikomonitor's dashboard, consulted on 28 October, which listed 236,908 web servers as potentially affected, 9.1% of 2.59 million analysed, with 2,150,231 classed as fixed or not using PHP, and cautions that a flagged server is not necessarily exploitable and that one server can host several sites.\n\n> Un serveur signalé comme affecté n'est pas nécessairement exploitable dans les conditions réelles d'une cyberattaque.\n\n_Curator's translation:_ \"A server flagged as affected is not necessarily exploitable under the real conditions of a cyberattack.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Faille PHP : un hacker diffuse un outil capable de pirater des sites internet - Blog FrenchBreaches\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr`. The capture shows no publication date. The forum poster's handle and the tool's claimed features are not recorded here; they are the poster's unverified claims. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "frenchweb-failles-critiques-dans-php-vous-etes-ceo",
   "url": "https://www.frenchweb.fr/failles-critiques-dans-php-vous-etes-ceo-que-devez-vous-faire/464039",
   "publisher": "frenchweb.fr",
@@ -23623,6 +23673,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# oss-security 2026/10/21/7: notes\n- From Jakub Zelenka. Date 21 Oct 2026 16:44:06 +0200 = 14:44:06Z. (A reply at 21/16 quotes it as sent \"10:11 AM\" -0500 = 15:11Z. The quoted time does not match the Date header; it may be the reply client's own receive or display time.)\n- Verbatim: \"CVE: CVE-2026-109619 / Severity: Critical (CVSS v4.0: 9.2)\", same affected ranges.\n- \"Unauthenticated RCE has been demonstrated against Apache mod_php and PHP-FPM. Exploitability depends on the affected state, configuration, and application behavior.\"\n- \"Updating is the only reliable mitigation; there is no complete generic configuration workaround.\"\n"
+ },
+ {
+  "slug": "orcarouter-blog-cve-2026-46300-fragnesia-php2shell",
+  "url": "https://www.orcarouter.ai/blog/cve-2026-46300-fragnesia-php2shell-chain",
+  "publisher": "orcarouter.ai",
+  "kind": "news",
+  "title": "Fragnesia and PHP2Shell: Web Shell to Root in Two Steps",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261030T145837Z",
+    "files": {
+     "headers.json": {
+      "sha256": "cdde41190a4a29c15cc06a7bac7f1a9649591aab289370424324c49e60145f7b",
+      "bytes": 598
+     },
+     "page.html": {
+      "sha256": "411f7c5de96e4414318258908001b4a9b719708db423d29289a4e83922b245d7",
+      "bytes": 38241
+     },
+     "provenance.json": {
+      "sha256": "a0af82089e5385977b46d1f341413c0c826e195d62746bba765a986d42f79859",
+      "bytes": 1686
+     },
+     "rendered.html": {
+      "sha256": "8ccc1e3e92d789d1ca273578c69e17cf58fa12abb934169ecd400043f0a62109",
+      "bytes": 203133
+     },
+     "screenshot.jpg": {
+      "sha256": "ac5952d057a311ad775b462703bd01167c37fd4151917dbb0b3aff275a435d76",
+      "bytes": 579220
+     },
+     "text.txt": {
+      "sha256": "cedd0b4a01168ecb92d9ca0901704a69e62491399f1b353c93340701540c4567",
+      "bytes": 10100
+     }
+    },
+    "started_utc": "2026-10-30T15:01:58.628Z",
+    "status": 200,
+    "final_url": "https://www.orcarouter.ai/blog/cve-2026-46300-fragnesia-php2shell-chain"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T145837Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A blog analysis (OrcaRouter, an AI-incident archive) of the second stage of the campaign Dream Security reported: the Linux kernel local privilege esc...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Fragnesia and PHP2Shell: Web Shell to Root in Two Steps\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `au/news/orcarouter/blog-cve-2026-46300-fragnesia-php2shell-chain`, snapshot `20261030T145837Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T145837Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA blog analysis (OrcaRouter, an AI-incident archive) of the second stage of the campaign Dream Security reported: the Linux kernel local privilege escalation CVE-2026-46300, 'Fragnesia', disclosed in May 2026 with a public proof of concept and added to CISA's Known Exploited Vulnerabilities catalog on 28 October, used after PHP2Shell gave a foothold on internet-exposed Palo Alto management interfaces. Per Dream's report as summarised in press, 25 servers were rooted across the United States, Japan, Taiwan and South Korea, including one network linked to the US government. The author argues the chain shows why patching PHP without the kernel leaves a window open and notes press reports that AI tooling may have contributed to the intrusion, which it says is not established.\n\n> That claim is not established, and the honest reading is that it is a hypothesis attached to a fast, multi-target operation rather than a finding anyone has published evidence for.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Fragnesia and PHP2Shell: Web Shell to Root in Two Steps\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. Commentary on other parties' reports (CISA, Tenable, Dream Security), not a primary source; the capture shows no publication date, and the page carries a product banner and the author's own traffic figures, which are not recorded. The page describes the kernel flaw's mechanism and interim mitigations; none is copied. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "orf-stories-3445806",

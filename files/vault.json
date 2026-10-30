@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "fa3306a8d54b",
-  "subject": "curator@php.newsroom: batch 36, three sources from the source watch (weekend.at, Innovatopia, Third News): 10 claims cur36-  +24 ~3  [blobs:+27 trees:+13]",
+  "commit": "03fa6f76ca0f",
+  "subject": "curator@php.newsroom: batch 37, two sources from the source watch (OrcaRouter, FrenchBreaches): 5 claims cur37-  +16 ~3  [blobs:+19 trees:+10]",
   "commits": 50
  },
- "sources": 710,
- "captures": 776,
- "hashed_files": 4532,
+ "sources": 712,
+ "captures": 778,
+ "hashed_files": 4544,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-30T12:14Z",
+ "latest_capture": "2026-10-30T14:58Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
