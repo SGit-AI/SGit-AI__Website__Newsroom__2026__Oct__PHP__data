@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "cd9375f1aefd",
-  "subject": "curator@php.newsroom: batch 33, two sources from the source watch (Lensa Banten, Binnenlands Bestuur): 6 claims cur33-  +16 ~3  [blobs:+19 trees:+10]",
+  "commit": "c51fe3959911",
+  "subject": "curator@php.newsroom: batch 34, one source from the source watch (Arab Net 5): 5 claims cur34-  +8 ~3  [blobs:+11 trees:+7]",
   "commits": 50
  },
- "sources": 703,
- "captures": 769,
- "hashed_files": 4490,
+ "sources": 704,
+ "captures": 770,
+ "hashed_files": 4496,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-29T17:13Z",
+ "latest_capture": "2026-10-30T07:14Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

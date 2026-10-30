@@ -7880,5 +7880,65 @@
   "topic": "agencies",
   "note": "Parliamentary questions as reported; the answers are not yet in the vault.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur34-arabnet5-calif-august",
+  "claim": "Relaying the Wall Street Journal, a Calif researcher found the flaw in August while reviewing PHP's source code with OpenAI's GPT-5.6 Sol, within an OpenAI-backed programme to help open-source projects, and Calif's chief executive contacted the PHP project's security engineer on 11 August",
+  "by": "Arab Net 5 (relaying the Wall Street Journal)",
+  "sources": [
+   "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Consistent with Calif's own timeline as relayed in cur28-okdiario-calif-timeline (report to PHP on 11 August); a third-hand telling.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur34-arabnet5-wiz-independent",
+  "claim": "The article says Wiz's security team found the flaw independently of Calif, and that Wiz's co-founder called it the most serious flaw found with the help of AI up to that time",
+  "by": "Arab Net 5 (relaying the Wall Street Journal)",
+  "sources": [
+   "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "A vendor's characterisation of its own and a rival's research; compare cur28-okdiario-wiz-timeline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur34-arabnet5-heartbleed-comparison",
+  "claim": "A security engineer at the PHP Foundation described the problem as among the most serious the project had faced in more than a decade and compared it to Heartbleed of 2014",
+  "by": "Arab Net 5 (relaying the Wall Street Journal)",
+  "sources": [
+   "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A maintainer's own characterisation, not a measurement; Wiz also drew the Heartbleed comparison (cur28-okdiario-wiz-timeline context).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur34-arabnet5-hackernews-leak",
+  "claim": "The article says the fix team planned to release on 22 October with details kept as secret as possible, but a post on the Hacker News site revealed information about the update before the planned date, which pushed the team to bring the announcement forward",
+  "by": "Arab Net 5 (relaying the Wall Street Journal)",
+  "sources": [
+   "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Names a channel for the early leak that no other source in the vault names; a single, third-hand source. Other accounts say the CVE ids began circulating on forums and social media on 20 October (cur23-itfb-leak-sequence, cur24-hackernoon-disclosure-utc).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur34-arabnet5-ai-patch-comparison",
+  "claim": "Calif's chief executive warned that people may use AI tools to analyse security updates and turn the information in them into ready-made attack instructions or tools, which could put many unpatched systems at greater risk",
+  "by": "Arab Net 5 (relaying the Wall Street Journal)",
+  "sources": [
+   "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A stated concern about a possible method, not an observed event; compare the expert worry about reverse-engineering patches in cur29-metro-reverse-engineer-patches.",
+  "agent": "curator@php.newsroom"
  }
 ]

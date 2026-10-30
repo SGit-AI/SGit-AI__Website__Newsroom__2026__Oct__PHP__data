@@ -1718,6 +1718,56 @@
   "notes_md": "# ثغرات PHP2Shell حول العالم... أين توقّفت المواقع والخدمات الإلكترونيّة؟\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `eg/news/annahar/technology-359743-d8-ab-d8-ba-d8-b1-d8-a7-d8-aa-php2shell-d8`, snapshot `20261027T094306Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T094306Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn-Nahar (Lebanon, Arabic), 23 October, from London: 'PHP2Shell flaws around the world... where did sites and e-services stop?' It says government bodies and companies in 11 countries suspended electronic services as a precaution and to apply updates, and that a stoppage does not necessarily mean a breach. Japan: ANA, JR West and MUFG suspended some pages (per CNN), and Prime Minister Sanae Takaichi urged firms to consider suspending services where necessary. Europe: government sites in France, Denmark, Finland and the Netherlands (including the Dutch cyber-security agency's site) stopped while fixes were applied; the German federal IT provider ITZBund switched off several sites as a precaution with no known security incidents (Reuters); Belgium's foreign ministry and the Czech government paused sites. UK: more than 30 government services stopped and four were partly disrupted according to official statements to the House of Lords. Ireland: The Journal paused. Australia's cyber-security agency paused its site (The Register) and the Wikimedia Foundation shut down several systems as a precaution.\n\n> وتعكس هذه الإجراءات اتساع نطاق الاستجابة الأمنية لثغرات \"PHP2Shell\"، مع التأكيد أن توقف الخدمات مؤقتاً لا يعني بالضرورة تعرضها للاختراق.\n\n_Curator's translation:_ \"These measures reflect the breadth of the security response to the PHP2Shell flaws, stressing that a temporary stoppage of services does not necessarily mean they were breached.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"ثغرات PHP2Shell حول العالم... أين توقّفت المواقع والخدمات الإلكترونيّة؟\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7",
+  "url": "https://www.arabnet5.com/news/%D8%AB%D8%BA%D8%B1%D8%A9-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-php-%D8%AA%D9%87%D8%AF%D8%AF-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-590091",
+  "publisher": "عرب نت 5",
+  "kind": "news",
+  "title": "ثغرة خطيرة في PHP تهدد ملايين المواقع على الإنترنت | عرب نت 5",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261030T071422Z",
+    "files": {
+     "headers.json": {
+      "sha256": "5fe0ef7d7298bafbdc47f9cca9cebbae4d45d741074b9ea4edc679864c0f632d",
+      "bytes": 1119
+     },
+     "page.html": {
+      "sha256": "89c21993c57d40e922e9d6430488f0328913c824b13bc46550894c5738bf313b",
+      "bytes": 101109
+     },
+     "provenance.json": {
+      "sha256": "99d75824be39eb495845c0c3f6a7416c5fd6bf4ffb0402e5127f99c9fe585205",
+      "bytes": 2183
+     },
+     "rendered.html": {
+      "sha256": "895d162e22546715a214df7677f3fc44261126178e23377c865089b7166b5cc1",
+      "bytes": 122452
+     },
+     "screenshot.jpg": {
+      "sha256": "547359f479fab97bcc717323bb632eea4333f6a05c8726361140754ccf452391",
+      "bytes": 78083
+     },
+     "text.txt": {
+      "sha256": "10fdd5c340767f530cc740258d61b133e67a8e93cf88cf9b12f2506cfb5d617e",
+      "bytes": 18219
+     }
+    },
+    "started_utc": "2026-10-30T07:36:56.890Z",
+    "status": 200,
+    "final_url": "https://www.arabnet5.com/news/%D8%AB%D8%BA%D8%B1%D8%A9-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-php-%D8%AA%D9%87%D8%AF%D8%AF-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-590091"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ar",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261030T071422Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Egyptian general-news site (Arab Net 5) retells, in Arabic, a Wall Street Journal report on PHP2Shell. It says a Calif researcher found the flaw in...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# ثغرة خطيرة في PHP تهدد ملايين المواقع على الإنترنت | عرب نت 5\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `sa/news/arabnet5/news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7-d9-8a-d8-b1-d8-a9-d`, snapshot `20261030T071422Z`. Copied byte for byte; every file's sha256 is in `captures/20261030T071422Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Egyptian general-news site (Arab Net 5) retells, in Arabic, a Wall Street Journal report on PHP2Shell. It says a Calif researcher found the flaw in August while reviewing PHP's source code with OpenAI's GPT-5.6 Sol under an OpenAI-backed programme for open-source projects, that Calif's chief executive contacted the PHP project's security engineer on 11 August, that Wiz's team independently found the flaw and its co-founder called it the most serious found with AI help up to then, that the PHP Foundation's security engineer called it among the most serious flaws the project had faced in over a decade and compared it to Heartbleed, that the team planned to release the fix on 22 October with details kept secret but a post on the Hacker News site revealed information before that date, forcing the announcement forward, and that Calif's chief executive warned people may use AI tools to compare security updates and turn what they find into ready-made attack tools. It stresses that a PHP flaw does not mean every PHP site is compromised or equally exposed.\n\n> ووصف فولكر دوش، مهندس الأمن في المؤسسة غير الربحية المسؤولة عن إدارة مشروع PHP، المشكلة بأنها من أخطر الثغرات التي واجهت المشروع منذ أكثر من عقد\n\n_Curator's translation:_ \"Volker Dusch, security engineer at the non-profit foundation that manages the PHP project, described the problem as among the most serious vulnerabilities the project has faced in more than a decade.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"ثغرة خطيرة في PHP تهدد ملايين المواقع على الإنترنت | عرب نت 5\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. The capture shows no publication date. Secondhand: an Arabic rewrite of a Wall Street Journal report, whose own text is not in the vault. The page's general description of the flaw's memory-handling cause and of a demonstration with a limited number of requests is not copied. The page ends with unrelated headlines and a comment-form challenge. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "arcticwolf-php2shell-exposure",
   "url": "https://arcticwolf.com/resources/blog/arctic-wolf-labs-finding-prioritizing-and-patching-php2shell-exposure/",
   "publisher": "Arctic Wolf Labs",
