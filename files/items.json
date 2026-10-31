@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.54",
+"site": "0.22.55",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -79,11 +79,11 @@
 "zone": "research",
 "title": "Every claim",
 "path": "claims/index.html",
-"hash": "04ed9e81e9bb",
-"v": 23,
+"hash": "efeb0fedc0e8",
+"v": 24,
 "first": "0.1.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/page-claims/index.html"
 },
 "page-numbers": {
@@ -127,11 +127,11 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "345cb7180e68",
-"v": 19,
+"hash": "9022552281d3",
+"v": 20,
 "first": "0.1.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/page-method/index.html"
 },
 "briefing-board": {
@@ -139,11 +139,11 @@
 "zone": "for-you",
 "title": "Briefing: Board member or executive",
 "path": "briefings/board/index.html",
-"hash": "b86b27cbe70c",
-"v": 27,
+"hash": "e527af988940",
+"v": 28,
 "first": "0.1.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-board/index.html"
 },
 "briefing-security": {
@@ -811,11 +811,11 @@
 "zone": "research",
 "title": "Impact: offline vs compromised",
 "path": "impact/index.html",
-"hash": "99a2c3622b43",
-"v": 21,
+"hash": "a7c64f355335",
+"v": 22,
 "first": "0.2.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/page-impact/index.html"
 },
 "page-defence": {
@@ -859,11 +859,11 @@
 "zone": "for-you",
 "title": "Briefing: CISO",
 "path": "briefings/ciso/index.html",
-"hash": "7e37c928e193",
-"v": 25,
+"hash": "eb6ed60b7880",
+"v": 26,
 "first": "0.2.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-ciso/index.html"
 },
 "briefing-cto": {
@@ -883,11 +883,11 @@
 "zone": "for-you",
 "title": "Briefing: CFO",
 "path": "briefings/cfo/index.html",
-"hash": "9ab6a47e94e4",
-"v": 27,
+"hash": "cd890d1ae52a",
+"v": 28,
 "first": "0.2.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-cfo/index.html"
 },
 "briefing-appsec": {
@@ -919,11 +919,11 @@
 "zone": "for-you",
 "title": "Briefing: Media and communications team",
 "path": "briefings/comms/index.html",
-"hash": "6d0e020bc8b0",
-"v": 22,
+"hash": "00e8b74f0399",
+"v": 23,
 "first": "0.2.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-comms/index.html"
 },
 "fact-cf-millions": {
@@ -977,13 +977,13 @@
 "fact-no-confirmed-compromise": {
 "kind": "fact",
 "zone": "research",
-"title": "As of 17:13 UTC on 29 October, no named organisation has said it was compromised through p",
+"title": "As of 09:42 UTC on 30 October, no named organisation has said it was compromised through p",
 "path": "facts/no-confirmed-compromise/index.html",
-"hash": "c07720c8c6df",
-"v": 16,
+"hash": "58519b3fa3d0",
+"v": 17,
 "first": "0.2.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/fact-no-confirmed-compromise/index.html"
 },
 "fact-pocs-wrong": {
@@ -1207,11 +1207,11 @@
 "zone": "for-you",
 "title": "Briefing: Curious reader",
 "path": "briefings/everyone/index.html",
-"hash": "a565c300479e",
-"v": 25,
+"hash": "9787e98853b8",
+"v": 26,
 "first": "0.3.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-everyone/index.html"
 },
 "briefing-site-owner": {
@@ -1231,11 +1231,11 @@
 "zone": "for-you",
 "title": "Briefing: Project or programme manager",
 "path": "briefings/pm/index.html",
-"hash": "b8d711f136d0",
-"v": 21,
+"hash": "9900fd68e541",
+"v": 22,
 "first": "0.3.0",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-pm/index.html"
 },
 "page-summary": {
@@ -1243,11 +1243,11 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "69eaeb18c39f",
-"v": 22,
+"hash": "b74f81b23f1d",
+"v": 23,
 "first": "0.3.1",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/page-summary/index.html"
 },
 "front-now": {
@@ -1255,11 +1255,11 @@
 "zone": "research",
 "title": "Front page: right now",
 "path": "index.html#now",
-"hash": "c012dbfcb9e9",
-"v": 13,
+"hash": "fee62a89947a",
+"v": 14,
 "first": "0.3.2",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/front-now/index.html"
 },
 "front-glance": {
@@ -1279,11 +1279,11 @@
 "zone": "research",
 "title": "Front page: the core facts",
 "path": "index.html#facts",
-"hash": "c49c93d41806",
-"v": 12,
+"hash": "681636a3deda",
+"v": 13,
 "first": "0.3.2",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/front-facts/index.html"
 },
 "front-unknown": {
@@ -1327,11 +1327,11 @@
 "zone": "for-you",
 "title": "Briefing: Data protection officer",
 "path": "briefings/dpo/index.html",
-"hash": "9a46561ad1aa",
-"v": 19,
+"hash": "9dfe67f767b5",
+"v": 20,
 "first": "0.5.9",
-"changed": "0.22.54",
-"date": "2026-10-30",
+"changed": "0.22.55",
+"date": "2026-10-31",
 "history": "versions/briefing-dpo/index.html"
 },
 "page-views-state": {
@@ -2478,6 +2478,17 @@
 "first": "0.22.45",
 "changed": "0.22.45",
 "date": "2026-10-27T09:43Z"
+},
+"src-arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7": {
+"kind": "source",
+"zone": "research",
+"title": "عرب نت 5: ثغرة خطيرة في PHP تهدد ملايين المواقع على الإنترنت | عرب نت 5",
+"path": "sources/arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7/index.html",
+"hash": "687a8e96dc94",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T07:14Z"
 },
 "src-arcticwolf-php2shell-exposure": {
 "kind": "source",
@@ -4019,6 +4030,17 @@
 "changed": "0.22.28",
 "date": "2026-10-26T07:11Z"
 },
+"src-derstandard-story-3000000345274-warnung-vor-extrem-g": {
+"kind": "source",
+"zone": "research",
+"title": "Der Standard: Viele Seiten offline: Extrem gefährliche PHP-Lücken sorgen für Chaos im Web, Updates laufen - IT-Security - derStandard.at › W",
+"path": "sources/derstandard-story-3000000345274-warnung-vor-extrem-g/index.html",
+"hash": "e014a63af8b0",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T09:42Z"
+},
 "src-detik-tag-php2shell": {
 "kind": "source",
 "zone": "research",
@@ -4756,6 +4778,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24T13:34Z"
 },
+"src-frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out": {
+"kind": "source",
+"zone": "research",
+"title": "frenchbreaches: Faille PHP : un hacker diffuse un outil capable de pirater des sites internet - Blog FrenchBreaches",
+"path": "sources/frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out/index.html",
+"hash": "2c3e55a65532",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T14:58Z"
+},
 "src-frenchweb-failles-critiques-dans-php-vous-etes-ceo": {
 "kind": "source",
 "zone": "research",
@@ -5426,6 +5459,17 @@
 "first": "0.19.2",
 "changed": "0.19.2",
 "date": "2026-10-25T09:35Z"
+},
+"src-innovatopia-cyber-security-cyber-security-news-11955": {
+"kind": "source",
+"zone": "research",
+"title": "innovatopia: PHP2Shell、PAN-OS機器など25台がroot化 Fragnesiaと連鎖し米政府関連のADへ",
+"path": "sources/innovatopia-cyber-security-cyber-security-news-11955/index.html",
+"hash": "4dd966418afd",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T12:14Z"
 },
 "src-insiderpaper-archive-wikipedia": {
 "kind": "source",
@@ -6538,6 +6582,17 @@
 "changed": "0.22.54",
 "date": "2026-10-29T09:42Z"
 },
+"src-news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09": {
+"kind": "source",
+"zone": "research",
+"title": "news.3rd-in: 最新のサイバー脅威「PHP2Shell」に対する警鐘とその影響 - サードニュース",
+"path": "sources/news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09/index.html",
+"hash": "8a1ed794b091",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T12:14Z"
+},
 "src-news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa": {
 "kind": "source",
 "zone": "research",
@@ -7153,6 +7208,17 @@
 "first": "0.4.1",
 "changed": "0.4.1",
 "date": "2026-10-22T08:14Z"
+},
+"src-orcarouter-blog-cve-2026-46300-fragnesia-php2shell": {
+"kind": "source",
+"zone": "research",
+"title": "orcarouter.ai: Fragnesia and PHP2Shell: Web Shell to Root in Two Steps",
+"path": "sources/orcarouter-blog-cve-2026-46300-fragnesia-php2shell/index.html",
+"hash": "ca4f81065d69",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T14:58Z"
 },
 "src-orf-stories-3445806": {
 "kind": "source",
@@ -8232,6 +8298,17 @@
 "changed": "0.22.29",
 "date": "2026-10-23T16:04Z"
 },
+"src-spiceworks-security-how-spiceworks-members-got-ahea": {
+"kind": "source",
+"zone": "research",
+"title": "Spiceworks: How Spiceworks members got ahead of PHP2Shell - Spiceworks",
+"path": "sources/spiceworks-security-how-spiceworks-members-got-ahea/index.html",
+"hash": "f0b844c1fa4b",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T17:13Z"
+},
 "src-spiegel-netzwelt-php-sicherheitsluecke-auf-websi": {
 "kind": "source",
 "zone": "research",
@@ -8441,6 +8518,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24"
 },
+"src-taiwannews-news-6468726": {
+"kind": "source",
+"zone": "research",
+"title": "Taiwan News: Hackers exploit PHP flaws to seize servers in Taiwan | Taiwan News | Oct. 30, 2026 09:42",
+"path": "sources/taiwannews-news-6468726/index.html",
+"hash": "21b6acfab3cd",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T17:13Z"
+},
 "src-takvim-guncel-2026-10-22-php2shell-guvenlik-aci": {
 "kind": "source",
 "zone": "research",
@@ -8506,6 +8594,17 @@
 "first": "0.22.54",
 "changed": "0.22.54",
 "date": "2026-10-29T09:42Z"
+},
+"src-techflowpost-article-35013": {
+"kind": "source",
+"zone": "research",
+"title": "techflowpost: 从 Binance 到 PHP2Shell：AI 时代，Web 安全的防线亟需再定义",
+"path": "sources/techflowpost-article-35013/index.html",
+"hash": "d07a25fbb288",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T17:13Z"
 },
 "src-techgaming-internet-sotto-attacco-php2shell-vulnera": {
 "kind": "source",
@@ -8716,6 +8815,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24"
 },
+"src-tf1info-high-tech-cinq-questions-sur-la-faille-c": {
+"kind": "source",
+"zone": "research",
+"title": "TF1 Info: Cinq questions sur la faille critique PHP qui continue de secouer l'Internet mondial | TF1 Info",
+"path": "sources/tf1info-high-tech-cinq-questions-sur-la-faille-c/index.html",
+"hash": "05e7db8c4390",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T09:42Z"
+},
 "src-tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere": {
 "kind": "source",
 "zone": "research",
@@ -8825,6 +8935,17 @@
 "first": "0.22.51",
 "changed": "0.22.51",
 "date": "2026-10-28T07:11Z"
+},
+"src-theeducatoronline-k12-news-php-vulnerability-are-your-scho": {
+"kind": "source",
+"zone": "research",
+"title": "The Educator: PHP vulnerability: Are your school portals exposed? | The Educator K/12",
+"path": "sources/theeducatoronline-k12-news-php-vulnerability-are-your-scho/index.html",
+"hash": "cfdd44b55457",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T09:42Z"
 },
 "src-thehackernews-php2shell-4days": {
 "kind": "source",
@@ -9364,6 +9485,17 @@
 "first": "0.10.3",
 "changed": "0.10.3",
 "date": "2026-10-22T18:16Z"
+},
+"src-weekend-chronik-sicherheitsluecke-php-oesterreic": {
+"kind": "source",
+"zone": "research",
+"title": "weekend.at: Sicherheitslücke: 28.622 Websites in Österreich noch verwundbar | weekend.at",
+"path": "sources/weekend-chronik-sicherheitsluecke-php-oesterreic/index.html",
+"hash": "d968079ae975",
+"v": 1,
+"first": "0.22.55",
+"changed": "0.22.55",
+"date": "2026-10-30T12:14Z"
 },
 "src-weekly-hankooki-news-articleview-html": {
 "kind": "source",
@@ -9909,11 +10041,11 @@
 "zone": "for-you",
 "title": "Has anyone actually been hacked?",
 "path": "questions/been-hacked/index.html",
-"hash": "b52d1e6022c3",
-"v": 12,
+"hash": "625d379f16fb",
+"v": 13,
 "first": "0.4.1",
-"changed": "0.22.54",
-"date": "2026-10-30"
+"changed": "0.22.55",
+"date": "2026-10-31"
 },
 "q-passwords": {
 "kind": "question",

@@ -1,7 +1,7 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.54",
- "vault_commit": "cd9375f1aefd",
+ "version": "0.22.55",
+ "vault_commit": "2f80607e87ad",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
  "ontology": {
@@ -7624,6 +7624,49 @@
    ]
   },
   {
+   "id": "source:arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7",
+   "kind": "source",
+   "label": "عرب نت 5: ثغرة خطيرة في PHP تهدد ملايين المواقع على الإنترنت | عرب نت 5",
+   "href": "sources/arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7/index.html",
+   "url": "https://www.arabnet5.com/news/%D8%AB%D8%BA%D8%B1%D8%A9-%D8%AE%D8%B7%D9%8A%D8%B1%D8%A9-%D9%81%D9%8A-php-%D8%AA%D9%87%D8%AF%D8%AF-%D9%85%D9%84%D8%A7%D9%8A%D9%8A%D9%86-%D8%A7%D9%84%D9%85%D9%88%D8%A7%D9%82%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D9%84%D8%A5%D9%86%D8%AA%D8%B1%D9%86%D8%AA-590091",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7/20261030T071422Z",
+   "kind": "capture",
+   "label": "عرب نت 5, captured 20261030T071422Z",
+   "href": "sources/arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "5fe0ef7d7298bafbdc47f9cca9cebbae4d45d741074b9ea4edc679864c0f632d"
+    },
+    {
+     "name": "page.html",
+     "sha256": "89c21993c57d40e922e9d6430488f0328913c824b13bc46550894c5738bf313b"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "99d75824be39eb495845c0c3f6a7416c5fd6bf4ffb0402e5127f99c9fe585205"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "895d162e22546715a214df7677f3fc44261126178e23377c865089b7166b5cc1"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "547359f479fab97bcc717323bb632eea4333f6a05c8726361140754ccf452391"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "10fdd5c340767f530cc740258d61b133e67a8e93cf88cf9b12f2506cfb5d617e"
+    }
+   ]
+  },
+  {
    "id": "source:arcticwolf-php2shell-exposure",
    "kind": "source",
    "label": "Arctic Wolf Labs: Finding, Prioritizing, and Patching PHP2Shell Exposure | Arctic Wolf",
@@ -13807,6 +13850,49 @@
    ]
   },
   {
+   "id": "source:derstandard-story-3000000345274-warnung-vor-extrem-g",
+   "kind": "source",
+   "label": "Der Standard: Viele Seiten offline: Extrem gefährliche PHP-Lücken sorgen für Chaos im Web, Updates laufen - IT-Security - derStandard.at › Web",
+   "href": "sources/derstandard-story-3000000345274-warnung-vor-extrem-g/index.html",
+   "url": "https://www.derstandard.at/story/3000000345274/warnung-vor-extrem-gefaehrlichen-php-luecken-sorgt-fuer-viel-aufregung-im-web",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:derstandard-story-3000000345274-warnung-vor-extrem-g/20261030T094225Z",
+   "kind": "capture",
+   "label": "Der Standard, captured 20261030T094225Z",
+   "href": "sources/derstandard-story-3000000345274-warnung-vor-extrem-g/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "774ecf2fca782b8fed81007fe503e21d5b46315d3bf7c246975f52dadc3512c9"
+    },
+    {
+     "name": "page.html",
+     "sha256": "e996af2c5662423d855ac5d54df993af381cc3f28bdc3a927a1f28698110e202"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "f3ead04eb59eb9095b132255a96f7144e3e1e506a39faa1d3d0b07052f50ff76"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "791490dc9a8837ae86095ab3d654e318b11bbbb8e494122d461377e4fd336954"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "bda86af162efac0b01bd17ca588c00678cfcb794ab23734e4ff4dd450838a7ea"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "575d839a98e450a18c78f3cf0152eba5134db32850a5f82a08675779f3e831ee"
+    }
+   ]
+  },
+  {
    "id": "source:detik-tag-php2shell",
    "kind": "source",
    "label": "detikcom: Berita dan Informasi Php2shell Terkini dan Terbaru Hari ini - detikcom",
@@ -16658,6 +16744,49 @@
    ]
   },
   {
+   "id": "source:frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out",
+   "kind": "source",
+   "label": "frenchbreaches: Faille PHP : un hacker diffuse un outil capable de pirater des sites internet - Blog FrenchBreaches",
+   "href": "sources/frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out/index.html",
+   "url": "https://frenchbreaches.com/blog/faille-php-un-hacker-diffuse-un-outil-capable-de-pirater-des-sites-internet",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out/20261030T145837Z",
+   "kind": "capture",
+   "label": "frenchbreaches, captured 20261030T145837Z",
+   "href": "sources/frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "11a41617b0ff7801181f5e6bf41df7464762bf492b4b8df48e7a2bc2cc9b9deb"
+    },
+    {
+     "name": "page.html",
+     "sha256": "711620eeb3291ff1b2c5f7e5275c031080945a29c3e1aacf3f3e4c74f61ad766"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "64e91a89f20b1dc9728306ad3c22b3be36c17f244d20785cd5b4a4dd7635f995"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "464fdb47774bacb1b8117a60a71219b2634cc1f03eff92e5458762419d397679"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "a6202b4d8174bc11a99c93dc77cad0d35a98df4dfb97ec300a53fca3dbc017ce"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "ce705dc2fb2e788d13d4f35cdb3a29b02b3dd981f92b8090e89a298ecf918d08"
+    }
+   ]
+  },
+  {
    "id": "source:frenchweb-failles-critiques-dans-php-vous-etes-ceo",
    "kind": "source",
    "label": "frenchweb.fr: Failles critiques dans PHP : vous êtes CEO, que devez-vous faire ?",
@@ -19410,6 +19539,49 @@
     {
      "name": "text.txt",
      "sha256": "308b7d4ed87e6bacd051e9d7cb31466cce51d92f630a99a0138d15cc5f466069"
+    }
+   ]
+  },
+  {
+   "id": "source:innovatopia-cyber-security-cyber-security-news-11955",
+   "kind": "source",
+   "label": "innovatopia: PHP2Shell、PAN-OS機器など25台がroot化 Fragnesiaと連鎖し米政府関連のADへ",
+   "href": "sources/innovatopia-cyber-security-cyber-security-news-11955/index.html",
+   "url": "https://innovatopia.jp/cyber-security/cyber-security-news/119552/",
+   "primary": false,
+   "published": "2026-10-30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:innovatopia-cyber-security-cyber-security-news-11955/20261030T121407Z",
+   "kind": "capture",
+   "label": "innovatopia, captured 20261030T121407Z",
+   "href": "sources/innovatopia-cyber-security-cyber-security-news-11955/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "9dfab8e07c0345897172966269fba52b478d7f3d10ffa32a755095c3a142410c"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c13830e13c294cd77e06d7cf1ea8a54b99216cc473d24bd62b1b37abcc10035b"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "db5772799a03c3ff1517a78468868ff3f4623ba68651c87d8d3360edb812804d"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "df68faf5f9c068cf49e9f7f8e12709090e850678c5f3f694ac1efd1874598d59"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "ab8539980172e90137556a4ca78d9696774fdb9728ba0de0dc0c9e27a2b06b6e"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "89a4e59a60158451a405127245a33bd9d7593e8349e641d03e162c1c54201e6f"
     }
    ]
   },
@@ -24037,6 +24209,49 @@
    ]
   },
   {
+   "id": "source:news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09",
+   "kind": "source",
+   "label": "news.3rd-in: 最新のサイバー脅威「PHP2Shell」に対する警鐘とその影響 - サードニュース",
+   "href": "sources/news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09/index.html",
+   "url": "https://news.3rd-in.co.jp/article/75eb6034-d41a-11f1-8df9-9ca3ba09c411",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09/20261030T121407Z",
+   "kind": "capture",
+   "label": "news.3rd-in, captured 20261030T121407Z",
+   "href": "sources/news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "e1b431643e027eee7da04cdc39d700edfe24aa5dab42e77c323622c25ad6fb73"
+    },
+    {
+     "name": "page.html",
+     "sha256": "a3dd52c3037d0a7d646e004e9cf3445a1b7c7425010250fbfc2774a9d4297080"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "7ed1be21bfca4ee41d0627aba87d87e6c809388d4380c7a4289b6408e22a5d18"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "96c02f3d3e8d2d280f6f7bc48a32e01bc6de9b360ac99b842559cf6609ce6523"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "6353ecbd43f8efac19fb4be0b5c85531e0460dd4754f8dcbca977b5143bc923d"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "592337b4ad757af605b6f4587c357304fce7ba21eb8f56b01eb486338518f16e"
+    }
+   ]
+  },
+  {
    "id": "source:news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa",
    "kind": "source",
    "label": "Bitcoin News: Coinbase y Bitgo niegan impacto por vulnerabilidad de PHP; CZ alerta - Bitcoin News",
@@ -26521,6 +26736,49 @@
     {
      "name": "text.txt",
      "sha256": "ceef70b4943f78182c26af1c04cdac8a7986a9c2c5f5cbb5385a73efdd112384"
+    }
+   ]
+  },
+  {
+   "id": "source:orcarouter-blog-cve-2026-46300-fragnesia-php2shell",
+   "kind": "source",
+   "label": "orcarouter.ai: Fragnesia and PHP2Shell: Web Shell to Root in Two Steps",
+   "href": "sources/orcarouter-blog-cve-2026-46300-fragnesia-php2shell/index.html",
+   "url": "https://www.orcarouter.ai/blog/cve-2026-46300-fragnesia-php2shell-chain",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:orcarouter-blog-cve-2026-46300-fragnesia-php2shell/20261030T145837Z",
+   "kind": "capture",
+   "label": "orcarouter.ai, captured 20261030T145837Z",
+   "href": "sources/orcarouter-blog-cve-2026-46300-fragnesia-php2shell/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "cdde41190a4a29c15cc06a7bac7f1a9649591aab289370424324c49e60145f7b"
+    },
+    {
+     "name": "page.html",
+     "sha256": "411f7c5de96e4414318258908001b4a9b719708db423d29289a4e83922b245d7"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "a0af82089e5385977b46d1f341413c0c826e195d62746bba765a986d42f79859"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "8ccc1e3e92d789d1ca273578c69e17cf58fa12abb934169ecd400043f0a62109"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "ac5952d057a311ad775b462703bd01167c37fd4151917dbb0b3aff275a435d76"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "cedd0b4a01168ecb92d9ca0901704a69e62491399f1b353c93340701540c4567"
     }
    ]
   },
@@ -31219,6 +31477,49 @@
    ]
   },
   {
+   "id": "source:spiceworks-security-how-spiceworks-members-got-ahea",
+   "kind": "source",
+   "label": "Spiceworks: How Spiceworks members got ahead of PHP2Shell - Spiceworks",
+   "href": "sources/spiceworks-security-how-spiceworks-members-got-ahea/index.html",
+   "url": "https://www.spiceworks.com/security/how-spiceworks-members-got-ahead-of-php2shell/",
+   "primary": false,
+   "published": "2026-10-30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:spiceworks-security-how-spiceworks-members-got-ahea/20261030T171329Z",
+   "kind": "capture",
+   "label": "Spiceworks, captured 20261030T171329Z",
+   "href": "sources/spiceworks-security-how-spiceworks-members-got-ahea/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "8b982fce7b2fc9ef4e65f4019af73e050cb78889a28e722eac7e7f1b3145074b"
+    },
+    {
+     "name": "page.html",
+     "sha256": "0bfe6601a29900e94b8d480f8973d7d47fa8ab0c4f410e86ee792c57df73d329"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "d9722942d81869aa6adaf826c150b5d820976562c330f904056e0a47baa7f14a"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "e0dc12a18a20eb2e3b74bc3aef1159728860f334502496257583cd4665d3ef0b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "6fac0395afa930d7c865daa225d099da2f93da471628899c41e5ea1c6ffb75f0"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "02e44f7b7054589c711f8e9a47df903addd69c15792a523b39deb844c8a6b48a"
+    }
+   ]
+  },
+  {
    "id": "source:spiegel-netzwelt-php-sicherheitsluecke-auf-websi",
    "kind": "source",
    "label": "Spiegel: PHP-Sicherheitslücke auf Websites: Was Sie jetzt tun müssen, um sich abzusichern - DER SPIEGEL",
@@ -32077,6 +32378,49 @@
    ]
   },
   {
+   "id": "source:taiwannews-news-6468726",
+   "kind": "source",
+   "label": "Taiwan News: Hackers exploit PHP flaws to seize servers in Taiwan | Taiwan News | Oct. 30, 2026 09:42",
+   "href": "sources/taiwannews-news-6468726/index.html",
+   "url": "https://www.taiwannews.com.tw/news/6468726",
+   "primary": false,
+   "published": "2026-10-30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:taiwannews-news-6468726/20261030T171329Z",
+   "kind": "capture",
+   "label": "Taiwan News, captured 20261030T171329Z",
+   "href": "sources/taiwannews-news-6468726/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "7417ade5849b4f96f03741a88acfa2cfd1ec976545ab92b424258c28a7cc9bdd"
+    },
+    {
+     "name": "page.html",
+     "sha256": "ab9939ffe4a8e1ef6d8eafa9bd47755508bb251515ffb09e50acadba9b890fa7"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "974c03678c097a06272e2d60b5c7a309526ce1f2827222f2fd65aff073a72fb4"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "47a8484d486ca1d61de329f7ff4dd29945b23b50ab09bd5b1df7d90de8aa916b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "2933cd87ab05e67b1e7287bd385b2e1fb4d667cb4e94d8257a5659ec080a8ddc"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "2d8ad20392ac3a08b764331de7a3bfde30854063fe895405d90c21bfd040bd28"
+    }
+   ]
+  },
+  {
    "id": "source:takvim-guncel-2026-10-22-php2shell-guvenlik-aci",
    "kind": "source",
    "label": "Takvim: Siber alemde PHP2Shell alarmı! 5 soruda Avrupa'da siteleri karartan kriz: Türkiye'de durum ne?",
@@ -32302,6 +32646,49 @@
     {
      "name": "text.txt",
      "sha256": "fb2e7689af82c64926244ecb415138b09774d1208a7ec61fdcc9bad0d127cffc"
+    }
+   ]
+  },
+  {
+   "id": "source:techflowpost-article-35013",
+   "kind": "source",
+   "label": "techflowpost: 从 Binance 到 PHP2Shell：AI 时代，Web 安全的防线亟需再定义",
+   "href": "sources/techflowpost-article-35013/index.html",
+   "url": "https://www.techflowpost.com/article/35013",
+   "primary": false,
+   "published": "2026-10-30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:techflowpost-article-35013/20261030T171329Z",
+   "kind": "capture",
+   "label": "techflowpost, captured 20261030T171329Z",
+   "href": "sources/techflowpost-article-35013/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "cf94c60f52b854d89bac59ce86ca40018f7e528f0836d589e49358128224104f"
+    },
+    {
+     "name": "page.html",
+     "sha256": "fe54ab90c2f046bccd471564a045e988b8ef420e6bee63faa7c912ead860ef27"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "dc84aa3a1ed612129375b143b168b8612e95f8e17760e5ac55ba10510ff15ab0"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "1924b398ea4b1ecfa1ce0fa543bb6331f3976eecef8fed4eecb5fd787dcf9727"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "f169ee32fee5bfc1a52e9c822609dad80eb4e5f0c1118d3505151c1142453b0e"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "21c068e6fdb04063027762880dc2c68fea5db849961c5b64b0b155b8190f219a"
     }
    ]
   },
@@ -33179,6 +33566,49 @@
    ]
   },
   {
+   "id": "source:tf1info-high-tech-cinq-questions-sur-la-faille-c",
+   "kind": "source",
+   "label": "TF1 Info: Cinq questions sur la faille critique PHP qui continue de secouer l'Internet mondial | TF1 Info",
+   "href": "sources/tf1info-high-tech-cinq-questions-sur-la-faille-c/index.html",
+   "url": "https://www.tf1info.fr/high-tech/cinq-questions-sur-la-faille-critique-php-qui-continue-de-secouer-l-internet-mondial-2472703.html",
+   "primary": false,
+   "published": "2026-10-29",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:tf1info-high-tech-cinq-questions-sur-la-faille-c/20261030T094225Z",
+   "kind": "capture",
+   "label": "TF1 Info, captured 20261030T094225Z",
+   "href": "sources/tf1info-high-tech-cinq-questions-sur-la-faille-c/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "2aeb653ecc21d0525b62f7998e844e1bd0c814712a37de3a9eb23e7dca73ef4c"
+    },
+    {
+     "name": "page.html",
+     "sha256": "18df996d7a8de6c01ebb69006555a6de6744117ee958a57f3f8b8eaba2d49d25"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "12f6ecc1e99301170fed8367c4a6f86ea9230149809e3e34b1055f0fd5c531bd"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "8560086de9758f91a19c4950a7422fdb0fe68c7753070acd36f9e24faa4b8c35"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "2d2e09f1080f1819194908434cf09d7b27724912a1db714af11d95dc903e878f"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "aabe59c09d8f05a8e9c54840acf8740cf94ee2e0a7a7b5371b02df717786e6ca"
+    }
+   ]
+  },
+  {
    "id": "source:tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere",
    "kind": "source",
    "label": "TGRT Haber: PHP2Shell alarmı: Şifre bile gerekmiyor! Milyonlarca liralık kayıp riski | TGRT Haber",
@@ -33622,6 +34052,49 @@
     {
      "name": "text.txt",
      "sha256": "35f68d9519218a631114d490696341ea1c558f7b090f9b0bacf02377521b7fe8"
+    }
+   ]
+  },
+  {
+   "id": "source:theeducatoronline-k12-news-php-vulnerability-are-your-scho",
+   "kind": "source",
+   "label": "The Educator: PHP vulnerability: Are your school portals exposed? | The Educator K/12",
+   "href": "sources/theeducatoronline-k12-news-php-vulnerability-are-your-scho/index.html",
+   "url": "https://www.theeducatoronline.com/k12/news/php-vulnerability-are-your-school-portals-exposed/289310",
+   "primary": false,
+   "published": "2026-10-30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:theeducatoronline-k12-news-php-vulnerability-are-your-scho/20261030T094225Z",
+   "kind": "capture",
+   "label": "The Educator, captured 20261030T094225Z",
+   "href": "sources/theeducatoronline-k12-news-php-vulnerability-are-your-scho/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "9ff15db2f183004d1201003b84def8bee212284a352b00bd78875e192f47ed9c"
+    },
+    {
+     "name": "page.html",
+     "sha256": "8720c4086dd48cd895cfc5c4e2413f169a61024a3bf977303c35743da49f6c80"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "afbec4d8863cb82f6febc45fad5d0cfe4f238b083169f9a9b1fe4fa4d8c51318"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "1b9724adee53d5d544d99fa0689f721afc4be682930b244f3e36a70ba3314601"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "07fdad025c77fec87b3c75156064d955f6649131eb44a78d026c153e95836a79"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "9b8d5f3d9553b2d943f6a5e29655e65e45e093e61637963c36ed2c1a25afb690"
     }
    ]
   },
@@ -35960,6 +36433,49 @@
     {
      "name": "text.txt",
      "sha256": "6fe889c621b7f2e10f0d7e50707cf7b1293585ce07ebcb55833beb176c3e2ac5"
+    }
+   ]
+  },
+  {
+   "id": "source:weekend-chronik-sicherheitsluecke-php-oesterreic",
+   "kind": "source",
+   "label": "weekend.at: Sicherheitslücke: 28.622 Websites in Österreich noch verwundbar | weekend.at",
+   "href": "sources/weekend-chronik-sicherheitsluecke-php-oesterreic/index.html",
+   "url": "https://www.weekend.at/chronik/sicherheitsluecke-php-oesterreich-websites",
+   "primary": false,
+   "published": "2026-10-30",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:weekend-chronik-sicherheitsluecke-php-oesterreic/20261030T121407Z",
+   "kind": "capture",
+   "label": "weekend.at, captured 20261030T121407Z",
+   "href": "sources/weekend-chronik-sicherheitsluecke-php-oesterreic/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "6a54ef89c064d46a53bee46092745165d6be5be325c479e7261e6cedd4fd4abb"
+    },
+    {
+     "name": "page.html",
+     "sha256": "b6993e79369cd5a5fab3ff24b6e3ae49d4fa511d72db839bb1ff27f31bd1aa23"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "4facbb68951f41086a357840c1ccd3120bee18b2cad704ba6d1946c226009d6a"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "dc6212f17bf85bdefd3e4b0310d09f192e977fa71f436e3aa06a95373c6e0485"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "0754f2428913b4bb043ebc70d40427ff7e80b9c68ad703daa6c97f05688494b2"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "3e6b1834844d3ca6e2c1c95f0345e6092b767c98e14dd0da616d7a8888104bcc"
     }
    ]
   },
@@ -38650,10 +39166,10 @@
   {
    "id": "claim:no-confirmed-compromise",
    "kind": "claim",
-   "label": "As of 17:13 UTC on 29 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts. One security vendor, Dream Research, reported on 26 October that a campaign using the two flaws, with a Linux kernel flaw, rooted 25 servers, three of them in a US government-affiliated environment; it names no victim and withholds the firewall vendor and the evidence, says it cannot tell whether later steps worked, and The Hacker News, The Next Web and CyPro repeat it as one source. The Next Web says it has not independently verified it and CyPro says other sources do not independently verify the victim details; no victim, vendor, CISA or PHP-team statement about these victims is in the evidence. Reported by Dream, not independently confirmed: it names no organisation, so it is a report of compromise, not a confirmed one.",
+   "label": "As of 09:42 UTC on 30 October, no named organisation has said it was compromised through php2shell. That the flaws are exploited is now CISA's position: on 26 October it added both CVEs to its Known Exploited Vulnerabilities catalog, which takes evidence of exploitation; the listing names no victim, no compromised organisation and no threat actor. Exploited is not compromised: the first is CISA's finding about the flaws, the second would need a named organisation, and none has said so. Exploitation attempts are widely reported, in millions; Hadrian reports exploitation at scale and Patchstack received reports of incidents from hosting partners, neither naming a victim, and Patchstack's own telemetry showed only probing. Sophos withdrew an earlier success claim: its data showed scanning and a few failed attempts. One security vendor, Dream Research, reported on 26 October that a campaign using the two flaws, with a Linux kernel flaw, rooted 25 servers, three of them in a US government-affiliated environment; it names no victim and withholds the firewall vendor and the evidence, says it cannot tell whether later steps worked, and The Hacker News, The Next Web and CyPro repeat it as one source. The Next Web says it has not independently verified it and CyPro says other sources do not independently verify the victim details; no victim, vendor, CISA or PHP-team statement about these victims is in the evidence. Reported by Dream, not independently confirmed: it names no organisation, so it is a report of compromise, not a confirmed one.",
    "status": "reported",
    "href": "facts/no-confirmed-compromise/index.html",
-   "by": "this site, from every captured source in the evidence vault (703 sources, vault nnd3i8iw at head cd9375f1aefd), as of its latest capture at 17:13 UTC on 29 October",
+   "by": "this site, from every captured source in the evidence vault (707 sources, vault nnd3i8iw at head 7e7f2d59181f), as of its latest capture at 09:42 UTC on 30 October",
    "origins": 1,
    "relays": 0,
    "echo": false
@@ -40574,6 +41090,11 @@
    "to": "capture:annahar-technology-359743-d8-ab-d8-ba-d8-b1-d8-a/20261027T094306Z"
   },
   {
+   "from": "source:arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7",
+   "verb": "captured_in",
+   "to": "capture:arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7/20261030T071422Z"
+  },
+  {
    "from": "source:arcticwolf-php2shell-exposure",
    "verb": "published_by",
    "to": "party:arctic-wolf"
@@ -41935,6 +42456,11 @@
    "to": "capture:denews-news-articleview-html/20261026T071149Z"
   },
   {
+   "from": "source:derstandard-story-3000000345274-warnung-vor-extrem-g",
+   "verb": "captured_in",
+   "to": "capture:derstandard-story-3000000345274-warnung-vor-extrem-g/20261030T094225Z"
+  },
+  {
    "from": "source:detik-tag-php2shell",
    "verb": "published_by",
    "to": "party:detik"
@@ -42576,6 +43102,11 @@
    "to": "capture:freepressjournal-bhopal-mp-government-websites-vulnerable/20261024T133450Z"
   },
   {
+   "from": "source:frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out",
+   "verb": "captured_in",
+   "to": "capture:frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out/20261030T145837Z"
+  },
+  {
    "from": "source:frenchweb-failles-critiques-dans-php-vous-etes-ceo",
    "verb": "captured_in",
    "to": "capture:frenchweb-failles-critiques-dans-php-vous-etes-ceo/20261028T144312Z"
@@ -43174,6 +43705,11 @@
    "from": "source:inibalikpapan-pemprov-kaltim-waspadai-php2shell-celah",
    "verb": "captured_in",
    "to": "capture:inibalikpapan-pemprov-kaltim-waspadai-php2shell-celah/20261025T093507Z"
+  },
+  {
+   "from": "source:innovatopia-cyber-security-cyber-security-news-11955",
+   "verb": "captured_in",
+   "to": "capture:innovatopia-cyber-security-cyber-security-news-11955/20261030T121407Z"
   },
   {
    "from": "source:insiderpaper-archive-wikipedia",
@@ -44141,6 +44677,11 @@
    "to": "capture:new-facts-biberach-2026-10-22-php-sicherheitslueck/20261029T094207Z"
   },
   {
+   "from": "source:news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09",
+   "verb": "captured_in",
+   "to": "capture:news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09/20261030T121407Z"
+  },
+  {
    "from": "source:news-bitcoin-es-security-coinbase-y-bitgo-niegan-impa",
    "verb": "published_by",
    "to": "party:bitcoin-news"
@@ -44674,6 +45215,11 @@
    "from": "source:openwall-oss-security-2026-10-21-7",
    "verb": "captured_in",
    "to": "capture:openwall-oss-security-2026-10-21-7/20261022T081407Z"
+  },
+  {
+   "from": "source:orcarouter-blog-cve-2026-46300-fragnesia-php2shell",
+   "verb": "captured_in",
+   "to": "capture:orcarouter-blog-cve-2026-46300-fragnesia-php2shell/20261030T145837Z"
   },
   {
    "from": "source:orf-stories-3445806",
@@ -45724,6 +46270,11 @@
    "to": "capture:spacemoney-tecnologia-php2shell-falha-critica-php/20261023T160435Z"
   },
   {
+   "from": "source:spiceworks-security-how-spiceworks-members-got-ahea",
+   "verb": "captured_in",
+   "to": "capture:spiceworks-security-how-spiceworks-members-got-ahea/20261030T171329Z"
+  },
+  {
    "from": "source:spiegel-netzwelt-php-sicherheitsluecke-auf-websi",
    "verb": "captured_in",
    "to": "capture:spiegel-netzwelt-php-sicherheitsluecke-auf-websi/20261028T144312Z"
@@ -45910,6 +46461,11 @@
    "to": "capture:tagesspiegel-dpa-noch-offline/20261023T160435Z"
   },
   {
+   "from": "source:taiwannews-news-6468726",
+   "verb": "captured_in",
+   "to": "capture:taiwannews-news-6468726/20261030T171329Z"
+  },
+  {
    "from": "source:takvim-guncel-2026-10-22-php2shell-guvenlik-aci",
    "verb": "published_by",
    "to": "party:takvim"
@@ -45963,6 +46519,11 @@
    "from": "source:techbusinessnews-news-synology-issues-urgent-update-warni",
    "verb": "captured_in",
    "to": "capture:techbusinessnews-news-synology-issues-urgent-update-warni/20261029T094207Z"
+  },
+  {
+   "from": "source:techflowpost-article-35013",
+   "verb": "captured_in",
+   "to": "capture:techflowpost-article-35013/20261030T171329Z"
   },
   {
    "from": "source:techgaming-internet-sotto-attacco-php2shell-vulnera",
@@ -46150,6 +46711,11 @@
    "to": "capture:tenable-php2shell-faq/20261023T080331Z"
   },
   {
+   "from": "source:tf1info-high-tech-cinq-questions-sur-la-faille-c",
+   "verb": "captured_in",
+   "to": "capture:tf1info-high-tech-cinq-questions-sur-la-faille-c/20261030T094225Z"
+  },
+  {
    "from": "source:tgrthaber-ekonomi-php2shell-alarmi-sifre-bile-gere",
    "verb": "published_by",
    "to": "party:tgrt-haber"
@@ -46248,6 +46814,11 @@
    "from": "source:thedailystar-news-bangladesh-news-php-flaw-trickles-d",
    "verb": "captured_in",
    "to": "capture:thedailystar-news-bangladesh-news-php-flaw-trickles-d/20261028T071103Z"
+  },
+  {
+   "from": "source:theeducatoronline-k12-news-php-vulnerability-are-your-scho",
+   "verb": "captured_in",
+   "to": "capture:theeducatoronline-k12-news-php-vulnerability-are-your-scho/20261030T094225Z"
   },
   {
    "from": "source:thehackernews-php2shell-4days",
@@ -46754,6 +47325,11 @@
    "from": "source:watson-wirtschaft-schweiz-322033892-php2shell-laut-bund-kein",
    "verb": "captured_in",
    "to": "capture:watson-wirtschaft-schweiz-322033892-php2shell-laut-bund-kein/20261022T181608Z"
+  },
+  {
+   "from": "source:weekend-chronik-sicherheitsluecke-php-oesterreic",
+   "verb": "captured_in",
+   "to": "capture:weekend-chronik-sicherheitsluecke-php-oesterreic/20261030T121407Z"
   },
   {
    "from": "source:weekly-hankooki-news-articleview-html",
@@ -52395,6 +52971,9 @@
   "CybersecAsia": [
    "cybersecasia-tips-understanding-php2shell-vulnerabili"
   ],
+  "Der Standard": [
+   "derstandard-story-3000000345274-warnung-vor-extrem-g"
+  ],
   "Digi24": [
    "digi24-stiri-sci-tech-lumea-digitala-aproape-17"
   ],
@@ -52512,6 +53091,9 @@
   "SonicWall": [
    "sonicwall-php-product-notice"
   ],
+  "Spiceworks": [
+   "spiceworks-security-how-spiceworks-members-got-ahea"
+  ],
   "Spiegel": [
    "spiegel-netzwelt-php-sicherheitsluecke-auf-websi"
   ],
@@ -52521,11 +53103,17 @@
   "Synology": [
    "synology-sa-26-14"
   ],
+  "TF1 Info": [
+   "tf1info-high-tech-cinq-questions-sur-la-faille-c"
+  ],
   "TI INSIDE Online": [
    "tiinside-26-10-2026-php2shell-corrigido-no-codigo"
   ],
   "TVNET": [
    "tvnet-8572129-pirmdien-atklata-jauna-un-loti-s"
+  ],
+  "Taiwan News": [
+   "taiwannews-news-6468726"
   ],
   "Tech Business News": [
    "techbusinessnews-news-synology-issues-urgent-update-warni"
@@ -52538,6 +53126,9 @@
   ],
   "The Daily Star": [
    "thedailystar-news-bangladesh-news-php-flaw-trickles-d"
+  ],
+  "The Educator": [
+   "theeducatoronline-k12-news-php-vulnerability-are-your-scho"
   ],
   "The Hindu BusinessLine": [
    "thehindubusinessline-companies-what-is-the-php2shell-threat-a"
@@ -52566,11 +53157,20 @@
   "cybersecurity-insiders": [
    "cybersecurity-insiders-offsec-launches-free-php2shell-lab-follo"
   ],
+  "frenchbreaches": [
+   "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out"
+  ],
   "frenchweb.fr": [
    "frenchweb-failles-critiques-dans-php-vous-etes-ceo"
   ],
   "iMoD": [
    "iphonemod-cisa-warns-hackers-exploiting-critical-p"
+  ],
+  "innovatopia": [
+   "innovatopia-cyber-security-cyber-security-news-11955"
+  ],
+  "news.3rd-in": [
+   "news-3rd-in-article-75eb6034-d41a-11f1-8df9-9ca3ba09"
   ],
   "news.tokocrypto": [
    "news-tokocrypto-mengenal-black-october-2026-celah-php2sh"
@@ -52580,6 +53180,15 @@
   ],
   "ohn.haendlerbund": [
    "ohn-haendlerbund-themen-ki-tech-erste-php2shell-angriffe"
+  ],
+  "orcarouter.ai": [
+   "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+  ],
+  "techflowpost": [
+   "techflowpost-article-35013"
+  ],
+  "weekend.at": [
+   "weekend-chronik-sicherheitsluecke-php-oesterreic"
   ],
   "ÇözümPark": [
    "cozumpark-cisa-php2shell-guvenlik-aciklarinin-sald"
@@ -52592,6 +53201,9 @@
   ],
   "بلجيكا 24": [
    "belg24-d8-ab-d8-ba-d8-b1-d8-a7-d8-aa-d8-a8-d9-8"
+  ],
+  "عرب نت 5": [
+   "arabnet5-news-d8-ab-d8-ba-d8-b1-d8-a9-d8-ae-d8-b7"
   ],
   "وكالة عمون الاخبارية": [
    "ammonnews-article-1040456"
