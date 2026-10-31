@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "551b1d44e1cb",
-  "message": "researcher@php.newsroom: pass 20261030T1706Z phase 2 of 2: discovery"
+  "commit": "b70911e06889",
+  "message": "researcher@php.newsroom: pass 20261031T0706Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "b70911e06889",
+   "message": "researcher@php.newsroom: pass 20261031T0706Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "caf5cff0fab0",
+   "message": "researcher@php.newsroom: pass 20261031T0706Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "551b1d44e1cb",
    "message": "researcher@php.newsroom: pass 20261030T1706Z phase 2 of 2: discovery"
@@ -189,18 +197,10 @@
   {
    "commit": "019866e54e9d",
    "message": "researcher@php.newsroom: OX Security's 'PHP2Shell day 5' added as a watched page (the editor's link; the capture is the bot-challenge page, a plain fetch and the browser both get 403); Cloudflare's post was already watched"
-  },
-  {
-   "commit": "f212898aa0fe",
-   "message": "researcher@php.newsroom: stealmybitcoin.com added as a watched page and captured (board correspondent-0005); the PoC repository on GitHub is not captured, by rule, pending the editor"
-  },
-  {
-   "commit": "6c99788c3513",
-   "message": "researcher@php.newsroom: pass 20261026T1703Z phase 2 of 2: discovery"
   }
  ],
- "pages": 1534,
- "publishers": 1157,
+ "pages": 1535,
+ "publishers": 1158,
  "country": {
   "us": 319,
   "int": 234,
@@ -228,11 +228,11 @@
   "cz": 12,
   "th": 12,
   "tw": 12,
+  "vn": 12,
   "ie": 11,
   "pl": 11,
   "pt": 11,
   "sg": 11,
-  "vn": 11,
   "fi": 9,
   "sa": 9,
   "eu": 8,
@@ -266,7 +266,7 @@
   "tn": 1
  },
  "sector": {
-  "news": 834,
+  "news": 835,
   "affected": 197,
   "aggregator": 140,
   "cert": 94,
@@ -301,8 +301,8 @@
   "cs": 20,
   "ro": 19,
   "th": 18,
+  "vi": 15,
   "pl": 14,
-  "vi": 14,
   "fi": 11,
   "lv": 10,
   "hu": 9,
@@ -321,24 +321,24 @@
   "sl": 1
  },
  "access": {
-  "open": 1315,
-  "bot-challenge": 109,
-  "down": 71,
-  "paywalled": 26,
-  "gone": 11,
+  "open": 1320,
+  "bot-challenge": 116,
+  "down": 62,
+  "paywalled": 25,
+  "gone": 10,
   "login-wall": 2
  },
  "tiers": {
   "A": 76,
-  "B": 1088,
+  "B": 1090,
   "C": 16
  },
- "snapshots": 13360,
- "graphs": 13337,
- "files": 103486,
+ "snapshots": 14276,
+ "graphs": 14253,
+ "files": 111986,
  "world_graph": {
-  "nodes": 2804,
-  "edges": 5590
+  "nodes": 2806,
+  "edges": 5594
  },
  "access_classes": [
   {
@@ -2204,6 +2204,37 @@
     "down": 31,
     "paywalled": 26,
     "gone": 7,
+    "login-wall": 2
+   }
+  },
+  {
+   "run": "20261031T070745Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-31T07:07:45Z",
+   "finished": "2026-10-31T07:13:03Z",
+   "pages_due": 197,
+   "pages_total": 1535,
+   "changed": 67,
+   "access": {
+    "open": 151,
+    "bot-challenge": 13,
+    "down": 33
+   }
+  },
+  {
+   "run": "20261031T071303Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-31T07:13:03Z",
+   "finished": "2026-10-31T07:42:38Z",
+   "pages_due": 1305,
+   "pages_total": 1535,
+   "changed": 849,
+   "access": {
+    "open": 1138,
+    "bot-challenge": 103,
+    "down": 29,
+    "paywalled": 25,
+    "gone": 8,
     "login-wall": 2
    }
   }
