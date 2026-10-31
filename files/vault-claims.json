@@ -8300,5 +8300,125 @@
   "topic": "impact",
   "note": "An opinion by a public figure, relayed second hand; not a finding about PHP2Shell.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-safestate-hn-leak",
+  "claim": "Safestate says that on 20 October a now-deleted Hacker News post published the two CVE numbers, claimed both flaws scored a perfect 10.0 and named the planned date, that watchTowr confirmed within hours that the bugs were real and said it had reproduced one, and that PHP then warned its announce list and moved the release to 21 October at 14:00 UTC",
+  "by": "Safestate (blog)",
+  "sources": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Names Hacker News as the leak's channel, as the Arabic outlet does (cur34-arabnet5-hackernews-leak); the two may share a source, and others name different channels (cur38-spiceworks-leak-channel). The official score is 9.2, not 10.0.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-safestate-amazon-17oct-12h",
+  "claim": "Amazon's threat intelligence team detected an exploit attempt against its MadPot honeypot network on 17 October, from an IP tied to a commercial anonymisation service, four days before anyone went public, and identified multiple proof-of-concept exploits about 12 hours before the scheduled disclosure; how the actor obtained exploit details under embargo is unknown",
+  "by": "Safestate (blog, citing Amazon)",
+  "sources": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A honeypot attempt, not a confirmed compromise; compare cur24-hackernoon-amazon-17oct and cur28-cozumpark-amazon-four-days.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-safestate-cloudflare-rules",
+  "claim": "Cloudflare deployed managed firewall rules at 03:02 UTC on 21 October, covering free and paid customers by default, which the post describes as about nine hours before disclosure",
+  "by": "Safestate (blog)",
+  "sources": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Internally inconsistent: 03:02 UTC to the 14:00 UTC release is nearly eleven hours, not nine. A vendor's own protection; compare cur29-pccoil-cloudflare-stopgap.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-safestate-discovery-credit",
+  "claim": "Calif found multiple routes to remote code execution on 1 August and reported the first bug on 11 August, OpenAI's team found a more complete version in September, and Wiz reached the problem independently around 24 August; OpenAI is listed as finder of CVE-2026-109618 and as reporter of CVE-2026-109619, with Calif and Wiz alongside",
+  "by": "Safestate (blog)",
+  "sources": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Consistent with cur28-okdiario-calif-timeline; Wiz's own timeline puts its find on 19 August and its report on 24 August (cur28-okdiario-wiz-timeline), so '24 August' here is the report date.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-safestate-14-years",
+  "claim": "OpenAI's president said the underlying flaw had lived in PHP for 14 years, with a limited version surfacing in 2024 that nobody treated as significant",
+  "by": "Safestate (blog, quoting OpenAI's president)",
+  "sources": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Compare the 2024 audit account in cur23-itfb-2024-audit and the 'more than a decade' of other outlets.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-safestate-79pct-unsupported",
+  "claim": "About 79% of PHP hosts run versions the project no longer supports, so no official fix will reach them; over 5.1 million PHP hosts are online, about 3.8 million of them exposing at least one open port",
+  "by": "Safestate (blog)",
+  "sources": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "The 5.1 million and 3.8 million figures match the VirusTotal estimates in cur28-cozumpark-virustotal; the 79% figure is not sourced in the post.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-24h-ncsc-50000-alerts",
+  "claim": "The UK NCSC sent 50,000 technical alerts to relevant organisations and said the scale of the flaws was 'unprecedented', noting that some old systems cannot be patched and must be replaced, while the Prime Minister's office said no critical public service had been affected or breached",
+  "by": "24h.com.vn (relaying VietNamNet)",
+  "sources": [
+   "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "As relayed; the NCSC's own statement is the primary. Consistent with the UK 32-services figure in cur27-epoch-uk-32-services.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-24h-china-miit",
+  "claim": "China's Ministry of Industry and Information Technology called on agencies and companies to check their systems at once, upgrade to the latest safe PHP version, strengthen network-traffic monitoring and change all passwords and keys",
+  "by": "24h.com.vn (relaying VietNamNet)",
+  "sources": [
+   "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Advice to check, upgrade and rotate credentials, not to go offline; bears on the unverified claim that China advised sites to go dark (cur29-metro-agencies-go-dark).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-24h-japan-pm-suspend",
+  "claim": "Japan's prime minister continued to urge organisations and businesses to update software quickly or to suspend their websites proactively if they cannot yet fix the problem",
+  "by": "24h.com.vn (relaying VietNamNet)",
+  "sources": [
+   "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Gives Japan's head of government as advising suspension where an update is not possible, against the disputed offline-allies claim's note that Japan gave no offline advice; see also cur27-infoarenales-japan-pm-call.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur39-24h-martin-austin",
+  "claim": "A former NCSC chief executive called it 'the most serious vulnerability in five years', while a Calif researcher said deep exploitation of target systems had not yet broken out on a wide scale",
+  "by": "24h.com.vn (relaying VietNamNet)",
+  "sources": [
+   "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Two experts' assessments at the time of the original report, not measurements; the Calif remark is point-in-time.",
+  "agent": "curator@php.newsroom"
  }
 ]

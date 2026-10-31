@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "2f80607e87ad",
-  "subject": "curator@php.newsroom: batch 38, three sources from the source watch (Spiceworks, Taiwan News, TechFlow): 8 claims cur38-  +24 ~3  [blobs:+27 trees:+13]",
+  "commit": "a017fff46907",
+  "subject": "curator@php.newsroom: batch 39, two sources from the source watch (Safestate, 24h.com.vn): 10 claims cur39-  +16 ~3  [blobs:+19 trees:+10]",
   "commits": 50
  },
- "sources": 715,
- "captures": 781,
- "hashed_files": 4562,
+ "sources": 717,
+ "captures": 783,
+ "hashed_files": 4574,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-30T17:13Z",
+ "latest_capture": "2026-10-31T07:13Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

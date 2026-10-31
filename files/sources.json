@@ -244,6 +244,56 @@
   "notes_md": "# كيف لعب الـAI دوراً حاسماً في اكتشاف ثغرة \"PHP\" تهدد 70% من مواقع العالم؟ - موقع 24\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `ae/news/24/article-969853-ai-php-70`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSite 24 (Arabic, UAE): how AI played a decisive role in finding the PHP flaw said to threaten 70% of the world's sites. It says the researchers, thanks to the models, found a set of flaws in the PHP engine itself, grouped under two: CVE-2026-109618, a memory-management bug when memory runs out while handling requests, and CVE-2026-109619, a bug that leaves pointers behind.\n\n> بفضل قدرات النماذج عثر الباحثون على مجموعة من العيوب الأمنية\n\n_Curator's translation:_ \"Thanks to the capabilities of the models, the researchers found a set of security flaws\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ UAE outlet 24.ae explains how AI (Wiz Atlas, Gemini 4 Argon, GPT-5.6 Sol) helped find the PHP flaws, quoting Wiz and the NSA advice to patch or go offline. It says countries including Japan, the US, France and Denmark disabled some digital services, and a linked teaser says Japanese banks and airlines suspended digital services.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"كيف لعب الـAI دوراً حاسماً في اكتشاف ثغرة \"PHP\" تهدد 70% من مواقع العالم؟ - موقع 24\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ar`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "24h-cong-nghe-thong-tin-website-toan-cau-hun",
+  "url": "https://www.24h.com.vn/cong-nghe-thong-tin/website-toan-cau-hung-chiu-hang-trieu-no-luc-tan-cong-khai-thac-lo-hong-php-c55a1805111.html",
+  "publisher": "Tin tức 24h",
+  "kind": "news",
+  "title": "Website toàn cầu hứng chịu hàng triệu nỗ lực tấn công, khai thác lỗ hổng PHP",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261031T071303Z",
+    "files": {
+     "headers.json": {
+      "sha256": "a6a35f2b6ff092893e071b8ab7fa6d6ecef2b7d45150335cbc9e7531e6bbbc6f",
+      "bytes": 448
+     },
+     "page.html": {
+      "sha256": "b41fcbde4a322dfe8846380cc1155db9394d09435b0cf518f6c3446c66d75824",
+      "bytes": 359981
+     },
+     "provenance.json": {
+      "sha256": "12775b17ce3c566fb0dd87a0a93a4f8dd74fe59787a6298cab79c208151392f9",
+      "bytes": 1867
+     },
+     "rendered.html": {
+      "sha256": "cfadec1ac040c493d3411ebdb67db1334192ca136c24da404aac84892d878da3",
+      "bytes": 373774
+     },
+     "screenshot.jpg": {
+      "sha256": "64472d16a112107ba8b1f54d23f4977b7dd11508aa05273b7228e2b4fe8129c4",
+      "bytes": 397859
+     },
+     "text.txt": {
+      "sha256": "88c714f119295000afb0dc84d4411373c711ccd182620d00ce31f2b1b33d5255",
+      "bytes": 9129
+     }
+    },
+    "started_utc": "2026-10-31T07:40:27.900Z",
+    "status": 200,
+    "final_url": "https://www.24h.com.vn/cong-nghe-thong-tin/website-toan-cau-hung-chiu-hang-trieu-no-luc-tan-cong-khai-thac-lo-hong-php-c55a1805111.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "vi",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261031T071303Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Vietnamese tech-news item (24h.com.vn, rewriting a VietNamNet report) that millions of attempts to exploit the PHP flaws have been seen worldwide, f...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Website toàn cầu hứng chịu hàng triệu nỗ lực tấn công, khai thác lỗ hổng PHP\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `vn/news/24h/cong-nghe-thong-tin-website-toan-cau-hung-chiu-hang-trieu-no`, snapshot `20261031T071303Z`. Copied byte for byte; every file's sha256 is in `captures/20261031T071303Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Vietnamese tech-news item (24h.com.vn, rewriting a VietNamNet report) that millions of attempts to exploit the PHP flaws have been seen worldwide, forcing governments and firms to disconnect services to update. It relays the NSA's warning, the UK minister's statement that 32 public services were suspended as a precaution and the Prime Minister's office saying no critical service was affected or breached, that the UK NCSC sent 50,000 technical alerts and called the scale 'unprecedented' with some old systems needing replacement, Korea's emergency response, China's industry ministry's call to check systems, upgrade to the latest safe PHP, strengthen traffic monitoring and change all passwords and keys, Japan's prime minister's call to update quickly or proactively suspend sites that cannot be fixed, and alerts by Vietnam's authorities. It quotes a former NCSC chief calling it the most serious flaw in five years, Calif's researcher saying deep exploitation had not yet spread widely, Cloudflare's chief executive on tens of thousands of attempts in the first 45 minutes, and Amazon's confirmation of broad probing including before the patch.\n\n> Hàng triệu nỗ lực khai thác lỗ hổng PHP đã diễn ra trên toàn cầu, buộc chính phủ nhiều nước và doanh nghiệp phải tạm ngắt kết nối dịch vụ trực tuyến để cập nhật bản sửa lỗi.\n\n_Curator's translation:_ \"Millions of attempts to exploit the PHP flaws have taken place worldwide, forcing the governments and businesses of many countries to temporarily disconnect online services to update the fix.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Website toàn cầu hứng chịu hàng triệu nỗ lực tấn công, khai thác lỗ hổng PHP\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `vi`. The capture shows no publication date; the page credits a VietNamNet article as its source. The sidebar lists unrelated headlines, among them an alleged exchange hack that this item does not tie to PHP2Shell and which is not recorded. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "24heures-php2shell-qui-est-affecte-par-la-faille",
   "url": "https://www.24heures.ch/php2shell-qui-est-affecte-par-la-faille-en-suisse-196968803007",
   "publisher": "24 Heures",
@@ -26752,6 +26802,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell WAF rules: what they block and where they fall short | Safeguard Blog\n\nCaptured by claude-story-site. Status: captured. Secondary comparison of what each WAF vendor said about its own rules; the direct-to-origin check; quotes Cloudflare's CTO 'STOPGAP only' via Reuters/KSL.\n\n- A vendor's round-up, not tested. Records Cloudflare's seven rules per ruleset plus a response-side rule, 03:02 UTC; Akamai 3000991; no AWS managed rule found.\n- 'A response rule cannot undo code that already ran.' 'The WAF only sees what passes through it.'\n- Note: the page's navigation lists model prices, including Anthropic models; irrelevant to the story.\n"
+ },
+ {
+  "slug": "safestate-post-php2shell-vulnerability-how-the-php",
+  "url": "https://www.safestate.com/post/php2shell-vulnerability-how-the-php-emergency-unfolded",
+  "publisher": "safestate.com",
+  "kind": "news",
+  "title": "PHP2Shell Vulnerability: How the PHP Emergency Unfolded",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261031T071303Z",
+    "files": {
+     "headers.json": {
+      "sha256": "d1d898b0fc455d2487387f31800a0102e6d91443adfc91518df4a8ae5bc8f860",
+      "bytes": 1490
+     },
+     "page.html": {
+      "sha256": "155b6eb56eec7215599ea73b24a0a4080983331b0ff3ed0fbcd9f0d5b4b7b879",
+      "bytes": 38467
+     },
+     "provenance.json": {
+      "sha256": "9fbeaf127e8c86002aac5d299711d01082c86bebabce6af4941832b95445b1a4",
+      "bytes": 1740
+     },
+     "rendered.html": {
+      "sha256": "02647b0a699ce4f00300c459fff881c781b4b565293740d16a2403ffe8a5944f",
+      "bytes": 39976
+     },
+     "screenshot.jpg": {
+      "sha256": "3f5bf70cdbede4e98458413794cee9874b4dc461e9208a6b7709189b1a058992",
+      "bytes": 729191
+     },
+     "text.txt": {
+      "sha256": "ef2a6a3f12968a837b2007a683f80c337d5775e2883775b1e7ffee308a27e65d",
+      "bytes": 8755
+     }
+    },
+    "started_utc": "2026-10-31T07:34:35.527Z",
+    "status": 200,
+    "final_url": "https://www.safestate.com/post/php2shell-vulnerability-how-the-php-emergency-unfolded"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261031T071303Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A blog post by a listed Swedish security firm (Safestate) retelling how the PHP emergency unfolded. It says the maintainers shipped out-of-cycle patch...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell Vulnerability: How the PHP Emergency Unfolded\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `se/news/safestate/post-php2shell-vulnerability-how-the-php-emergency-unfolded`, snapshot `20261031T071303Z`. Copied byte for byte; every file's sha256 is in `captures/20261031T071303Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA blog post by a listed Swedish security firm (Safestate) retelling how the PHP emergency unfolded. It says the maintainers shipped out-of-cycle patches on 21 October, a day early, after an anonymous forum post leaked the details; that the flaws trace to August, when AI models found a defect said to have sat in the engine for 14 years; that Calif found multiple routes to remote code execution on 1 August and reported the first bug on 11 August, OpenAI's team found a more complete version in September and Wiz reached the problem independently around 24 August; that on 20 October a now-deleted Hacker News post published the CVE numbers, claimed a perfect 10.0 score and named the date, watchTowr confirmed within hours that the bugs were real and said it had reproduced one, and PHP moved the release to 21 October at 14:00 UTC; that Cloudflare deployed managed firewall rules at 03:02 UTC on 21 October, which the post says was about nine hours before disclosure; that Amazon detected an exploit attempt against its honeypots on 17 October, four days before anyone went public, from an IP tied to a commercial anonymisation service, and identified multiple proof-of-concept exploits about 12 hours before the scheduled disclosure; that about 79% of over 5.1 million PHP hosts run unsupported versions; and what to patch, hunt for from 17 October, and rotate. It closes that the coordinated response worked better than most, until one anonymous post cost defenders a day.\n\n> One anonymous post cost defenders a full day, and someone was probing for the flaw four days before that post appeared.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell Vulnerability: How the PHP Emergency Unfolded\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. The capture shows no publication date. A vendor's blog post, secondhand on others' reports; it describes how the flaws work and gives temporary configuration settings, none of which is copied here, and names a PHP core developer, left out. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "salesforce-general-message-20000267",
