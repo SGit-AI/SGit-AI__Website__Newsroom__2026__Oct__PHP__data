@@ -2,10 +2,14 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "b70911e06889",
-  "message": "researcher@php.newsroom: pass 20261031T0706Z phase 2 of 2: discovery"
+  "commit": "81861aac5e1b",
+  "message": "researcher@php.newsroom: pass 20261031T0935Z phase 1 of 2: captures, the curator queue, series and analysis"
  },
  "commits": [
+  {
+   "commit": "81861aac5e1b",
+   "message": "researcher@php.newsroom: pass 20261031T0935Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "b70911e06889",
    "message": "researcher@php.newsroom: pass 20261031T0706Z phase 2 of 2: discovery"
@@ -189,23 +193,15 @@
   {
    "commit": "a4bb76c0a37b",
    "message": "researcher@php.newsroom: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (26 October 2026, due 29 October): catalog and alert captured at 00:45 UTC on 27 October, the series kev-listed reads 2, a fourth statement in the ledger record is-it-exploited"
-  },
-  {
-   "commit": "dd7f4b06fce5",
-   "message": "researcher@php.newsroom: tip 2026-10-26/001 (a LinkedIn post by Charles Carmakal on the PHP flaws, relayed by the editor as a screenshot; the post cropped, unverified) and a third statement in the ledger record is-it-exploited"
-  },
-  {
-   "commit": "019866e54e9d",
-   "message": "researcher@php.newsroom: OX Security's 'PHP2Shell day 5' added as a watched page (the editor's link; the capture is the bot-challenge page, a plain fetch and the browser both get 403); Cloudflare's post was already watched"
   }
  ],
- "pages": 1535,
- "publishers": 1158,
+ "pages": 1537,
+ "publishers": 1160,
  "country": {
   "us": 319,
   "int": 234,
   "nl": 85,
-  "de": 70,
+  "de": 71,
   "gb": 58,
   "fr": 56,
   "kr": 54,
@@ -244,8 +240,8 @@
   "za": 6,
   "bg": 5,
   "cn": 5,
+  "co": 5,
   "se": 5,
-  "co": 4,
   "lu": 4,
   "ua": 4,
   "ae": 3,
@@ -266,7 +262,7 @@
   "tn": 1
  },
  "sector": {
-  "news": 835,
+  "news": 837,
   "affected": 197,
   "aggregator": 140,
   "cert": 94,
@@ -286,9 +282,9 @@
  },
  "lang": {
   "en": 698,
-  "de": 104,
+  "de": 105,
   "fr": 102,
-  "es": 75,
+  "es": 76,
   "nl": 69,
   "ko": 54,
   "pt": 48,
@@ -321,11 +317,11 @@
   "sl": 1
  },
  "access": {
-  "open": 1320,
-  "bot-challenge": 116,
-  "down": 62,
+  "open": 1322,
+  "bot-challenge": 113,
+  "down": 64,
   "paywalled": 25,
-  "gone": 10,
+  "gone": 11,
   "login-wall": 2
  },
  "tiers": {
@@ -333,12 +329,12 @@
   "B": 1090,
   "C": 16
  },
- "snapshots": 14276,
- "graphs": 14253,
- "files": 111986,
+ "snapshots": 15027,
+ "graphs": 15004,
+ "files": 117262,
  "world_graph": {
-  "nodes": 2806,
-  "edges": 5594
+  "nodes": 2810,
+  "edges": 5602
  },
  "access_classes": [
   {
@@ -2235,6 +2231,38 @@
     "down": 29,
     "paywalled": 25,
     "gone": 8,
+    "login-wall": 2
+   }
+  },
+  {
+   "run": "20261031T093639Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-31T09:36:39Z",
+   "finished": "2026-10-31T09:42:09Z",
+   "pages_due": 197,
+   "pages_total": 1537,
+   "changed": 51,
+   "access": {
+    "open": 157,
+    "bot-challenge": 13,
+    "down": 26,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261031T094210Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-31T09:42:10Z",
+   "finished": "2026-10-31T10:12:37Z",
+   "pages_due": 1229,
+   "pages_total": 1537,
+   "changed": 700,
+   "access": {
+    "open": 1067,
+    "bot-challenge": 96,
+    "down": 32,
+    "paywalled": 25,
+    "gone": 7,
     "login-wall": 2
    }
   }
