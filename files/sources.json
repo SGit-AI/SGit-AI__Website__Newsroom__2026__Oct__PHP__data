@@ -15898,6 +15898,56 @@
   "notes_md": "# Siber Güvenlik Başkanlığı'ndan PHP2Shell açığı uyarısı: Kritik sistemler için tarama başlatıldı\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tr/news/istanbulticaretgazetesi/siber-guvenlik-baskanligindan-php2shell-acigi-uyarisi-kritik`, snapshot `20261025T120459Z`. Copied byte for byte; every file's sha256 is in `captures/20261025T120459Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nIstanbul Ticaret Gazetesi (Turkish), 22 October: Turkey's Presidency Cybersecurity Directorate started a national-scale scan against the PHP2Shell flaw, which lets attackers run code remotely, with a scan for critical systems. Another Turkish outlet for the same Directorate announcement.\n\n> Cumhurbaşkanlığı Siber Güvenlik Başkanlığı, yaygın kullanılan PHP yazılım altyapısında tespit edilen ve saldırganlara uzaktan kod çalıştırma imkanı tanıyan \"PHP2Shell\" zafiyetine karşı ulusal ölçekte tarama başlattı.\n\n_Curator's translation:_ \"The Presidency's Cybersecurity Directorate has started a national-scale scan against the 'PHP2Shell' vulnerability, found in the widely used PHP software infrastructure, which gives attackers the ability to run code remotely.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Siber Güvenlik Başkanlığı'ndan PHP2Shell açığı uyarısı: Kritik sistemler için tarama başlatıldı\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `tr`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "it-administrator-php2shell-patchtempo-altversionen",
+  "url": "https://www.it-administrator.de/php2shell-patchtempo-altversionen",
+  "publisher": "IT-Administrator",
+  "kind": "news",
+  "title": "PHP2Shell: Altlasten bremsen Patches | IT-Administrator",
+  "published": "2026-10-26",
+  "captures": [
+   {
+    "stamp": "20261031T094210Z",
+    "files": {
+     "headers.json": {
+      "sha256": "3955de5873153e86eca2374a80ce5cf69690e7cfd2a05e8988ab4659b776d16c",
+      "bytes": 681
+     },
+     "page.html": {
+      "sha256": "88687151553392690b6abff15cfd8668be3b27203a162d2e3258d9c39ba97691",
+      "bytes": 86795
+     },
+     "provenance.json": {
+      "sha256": "392affe056363d86e88eed17ee463b035f24b937987445d194cfc857a1e16402",
+      "bytes": 1662
+     },
+     "rendered.html": {
+      "sha256": "66db137e7651492d1385bd679ce93637c7aeb2eca57bf78595dd4aa5143c0f3b",
+      "bytes": 106001
+     },
+     "screenshot.jpg": {
+      "sha256": "1cd70ffccd8a6f73c82d65b88d2da703b0430b15422799b0223b88500970e91d",
+      "bytes": 551666
+     },
+     "text.txt": {
+      "sha256": "3c3a81e0f2454a5dc0ce53496d5737d809e3cf0f7878d477d65cfcb8db054770",
+      "bytes": 7082
+     }
+    },
+    "started_utc": "2026-10-31T09:50:58.030Z",
+    "status": 200,
+    "final_url": "https://www.it-administrator.de/php2shell-patchtempo-altversionen"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "de",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261031T094210Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A German IT-administrator trade piece (IT-Administrator, 26 October) on the pace of patching, built on the public PHP2Shell dashboard of the security...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell: Altlasten bremsen Patches | IT-Administrator\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `de/news/it-administrator/php2shell-patchtempo-altversionen`, snapshot `20261031T094210Z`. Copied byte for byte; every file's sha256 is in `captures/20261031T094210Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA German IT-administrator trade piece (IT-Administrator, 26 October) on the pace of patching, built on the public PHP2Shell dashboard of the security firm Censys as of Monday morning, 26 October, 07:15. It says nearly ten million PHP services have been updated since the patch release, but about 32.4 million still run a vulnerable version and patching is slowing (only about 346,000 newly patched in 24 hours); about 9.9 million services have switched from a vulnerable to a secured version since 21 October and about 42.3 million vulnerable services have been seen since tracking began. By branch, PHP 8.5 is about 75% secured, 8.4 about 64% and 8.2 and 8.3 each just under half. Of about 43 million services that reveal a version, about 24 million run PHP 8.1 or older, where only source backports exist for 7.4, 8.0 and 8.1 although some distributions and long-term-support vendors ship their own fixes without changing the version number; only about 8.8 million vulnerable services could simply move to a ready release and another 11 million are already secured. PHP 7.4.33 is the commonest version (over 6.7 million), PHP 5.6.40 still appears about 1.6 million times, the United States has the most vulnerable services (over 10.3 million) and Germany about 4.2 million. It lists German hosters among the networks with the most vulnerable addresses, notes that about 57% of PHP services hide their version and are missing from the statistics, that Censys scores only the reported version number, that it dropped about 850,000 services with never-released version numbers as likely honeypots, and that patched systems only show as safe after the next scan. It adds that Palo Alto firewalls are also affected, attackers have PAN-OS management interfaces in their sights, and the vendor is distributing hotfixes and interim measures.\n\n> Knapp zehn Millionen PHP-Dienste haben seit dem Patch-Release ein Update bekommen.\n\n_Curator's translation:_ \"Nearly ten million PHP services have received an update since the patch release.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: Altlasten bremsen Patches | IT-Administrator\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `de`. Secondhand on Censys's dashboard, which is the primary; the figures are a version-based count with the method caveats the article states. The page also carries unrelated older news items and an advertisement. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "it-daily-shortnews-php2shell-die-aktuelle-lage",
   "url": "https://www.it-daily.net/shortnews/php2shell-die-aktuelle-lage",
   "publisher": "it-daily.net",

@@ -8420,5 +8420,77 @@
   "topic": "impact",
   "note": "Two experts' assessments at the time of the original report, not measurements; the Calif remark is point-in-time.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-itadmin-censys-32-4m",
+  "claim": "Censys's PHP2Shell dashboard, as of Monday 26 October at 07:15, showed about 32.4 million PHP services still running a vulnerable version, about 9.9 million switched from a vulnerable to a secured version since 21 October, about 42.3 million vulnerable services seen since tracking began, and only about 346,000 newly patched in the previous 24 hours",
+  "by": "IT-Administrator (citing the Censys dashboard)",
+  "sources": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A version-banner count of services, not of unique servers or compromised sites; a different snapshot from cur30-cybersecasia-censys-36-7m (22 October) and close to cur27-muycomputerpro-censys-32m.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-itadmin-branch-rates",
+  "claim": "By branch, about 75% of PHP 8.5 services and about 64% of PHP 8.4 services run the secured version, against just under half of PHP 8.2 and 8.3; of about 43 million services that reveal a version, about 24 million run PHP 8.1 or older, for which only source backports exist (7.4, 8.0, 8.1), and only about 8.8 million vulnerable services could simply move to a ready release while another 11 million are already secured",
+  "by": "IT-Administrator (citing the Censys dashboard)",
+  "sources": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Some distributions and long-term-support vendors fix older versions without changing the version number, which the count cannot see (cur24-tecnoandroid-lts-backports).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-itadmin-versions-geography",
+  "claim": "The most common PHP version online is 7.4.33 with over 6.7 million services, PHP 5.6.40 still appears about 1.6 million times, and the United States has the most vulnerable services (over 10.3 million) against about 4.2 million in Germany at the end of the previous week",
+  "by": "IT-Administrator (citing the Censys dashboard)",
+  "sources": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A presence count by reported version and country.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-itadmin-hosters",
+  "claim": "Among the 15 networks with the most vulnerable addresses are German hosters: Hetzner has about 80,000 PHP addresses reporting a version, 80% of them vulnerable, Contabo 83% of about 29,000 and IONOS 67% of about 42,000, while Amazon leads the list with about 322,000 addresses",
+  "by": "IT-Administrator (citing the Censys dashboard)",
+  "sources": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Hosters are named by network, not blamed; the counts are of addresses reporting a version.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-itadmin-method-limits",
+  "claim": "About 57% of PHP services (about 58.4 million) hide their version and are missing from the statistics, Censys scores only the reported version number although distributions often backport fixes, it dropped about 850,000 services with never-released version numbers as probable honeypots, patched systems show as safe only after the next scan, and Censys calls the dashboard a situational picture and advises admins to check their own systems",
+  "by": "IT-Administrator (relaying Censys's caveats)",
+  "sources": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "The method caveats that qualify every Censys-derived figure in the vault.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur40-itadmin-panos",
+  "claim": "Palo Alto Networks firewalls are also affected, attackers have the PAN-OS management interface in their sights, and the vendor is distributing hotfixes and naming interim measures",
+  "by": "IT-Administrator",
+  "sources": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "As of 26 October, before the Dream Research report (cur36-innovatopia-dream-chain); a vendor's own mitigation as relayed.",
+  "agent": "curator@php.newsroom"
  }
 ]

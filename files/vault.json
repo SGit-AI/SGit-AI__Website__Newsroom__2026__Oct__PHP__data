@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "a017fff46907",
-  "subject": "curator@php.newsroom: batch 39, two sources from the source watch (Safestate, 24h.com.vn): 10 claims cur39-  +16 ~3  [blobs:+19 trees:+10]",
+  "commit": "b79970cfb056",
+  "subject": "curator@php.newsroom: batch 40, one source from the source watch (IT-Administrator): 6 claims cur40-  +8 ~3  [blobs:+11 trees:+7]",
   "commits": 50
  },
- "sources": 717,
- "captures": 783,
- "hashed_files": 4574,
+ "sources": 718,
+ "captures": 784,
+ "hashed_files": 4580,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-31T07:13Z",
+ "latest_capture": "2026-10-31T09:42Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
