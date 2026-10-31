@@ -5983,7 +5983,7 @@
   {
    "id": "cur29-metro-agencies-go-dark",
    "verdict": "held back",
-   "reason": "Capture checked: 'Security agencies worldwide, from the UK and the US to China and Japan, called on websites to go dark if they can't update'. The page says it; no other source in the vault attributes offline advice to China or Japan, and the site's offline-allies claim is disputed (ACSC no offline advice, CERT-EU isolate, the NCSC sentence not on its page as captured). Only the NSA's is confirmed (offline-nsa). Not stated.",
+   "reason": "Capture checked: 'Security agencies worldwide, from the UK and the US to China and Japan, called on websites to go dark if they can't update'. The page says it; no other source in the vault attributes offline advice to China (the MIIT, per cur39-24h-china-miit, said check, upgrade and rotate credentials), and the site's offline-allies claim is disputed (ACSC no offline advice, CERT-EU isolate, the NCSC sentence not on its page as captured). Only the NSA's is confirmed (offline-nsa). Not stated. Corrected 31 October 2026: the original reason also said no source attributed offline advice to Japan; that was too strong, because Japan's prime minister urged companies to consider suspending services (CNN, cur3-jp-pm-emergency-order; also cur39-24h-japan-pm-suspend). The held-back verdict stands: the claim names agencies, not a head of government, and puts China among them.",
    "sources": [
     "metro-2026-10-22-worried-php-cybersecurity-cri"
    ],
@@ -6968,6 +6968,116 @@
    ],
    "where": "claims/review/index.html",
    "reviewed": "2026-10-30T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-safestate-hn-leak",
+   "verdict": "held back",
+   "reason": "Capture checked (Safestate blog, 31 October): the planned 22 October disclosure held until 20 October, when 'a now-deleted Hacker News post' published the CVE numbers, claimed a perfect 10.0 for both flaws and named the date; watchTowr confirmed within hours that the bugs were real and said it had reproduced one; PHP warned its announce list and moved the release to 21 October at 14:00 UTC. The 10.0 and the move to 21 October agree with the site (cur23-itfb-leak-sequence, cur24-hackernoon-disclosure-utc, disclosure-22oct, contradicted). Hacker News as the channel is now named by two outlets (this one and cur34-arabnet5-hackernews-leak, which may share a source) against a third naming the php.net homepage and its own community (cur38-spiceworks-leak-channel) and ITforBusiness naming forums and social networks; the PHP team has not confirmed any. The channel is not stated.",
+   "sources": [
+    "safestate-post-php2shell-vulnerability-how-the-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-safestate-amazon-17oct-12h",
+   "verdict": "agrees",
+   "reason": "Capture checked: Amazon's threat intelligence team detected an exploit attempt against MadPot on 17 October from an IP tied to a commercial anonymisation service, four days before anyone went public, and identified multiple proof-of-concept exploits roughly 12 hours before the scheduled disclosure; how the actor obtained details under embargo is unknown. Agrees with the site's amazon-honeypot claim (17 October; proof-of-concept attempts from about 02:00 UTC on 21 October, about 12 hours before the 14:00 UTC release) and cur24-hackernoon-amazon-17oct; honeypot attempts, not compromises.",
+   "sources": [
+    "safestate-post-php2shell-vulnerability-how-the-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-safestate-cloudflare-rules",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Cloudflare deployed managed firewall rules at 03:02 UTC on October 21, about nine hours before disclosure', for free and paid customers by default. 03:02 UTC to the 14:00 UTC release is nearly eleven hours, so the page contradicts itself; the time of the rules is not stated. A vendor's own protection; compare cur29-pccoil-cloudflare-stopgap (Cloudflare's post on 21 October before 14:00 UTC).",
+   "sources": [
+    "safestate-post-php2shell-vulnerability-how-the-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-safestate-discovery-credit",
+   "verdict": "held back",
+   "reason": "Capture checked: the page says Calif found multiple routes on 1 August and reported the first bug on 11 August; OpenAI's team found a more complete version in September; Wiz 'reached the problem independently on August 24'; and OpenAI appears as finder on CVE-2026-109618 and reporter on CVE-2026-109619 with Calif and Wiz alongside. The Calif dates agree with cur28-okdiario-calif-timeline. The Wiz date does not: Wiz's own timeline has the find on 19 August and the report on 24 August (cur28-okdiario-wiz-timeline, cur30-cio-wiz-dates), so 24 August is the report date, not when it reached the problem; the CVE credit assignment is not checked against the CVE records here. Not stated as worded.",
+   "sources": [
+    "safestate-post-php2shell-vulnerability-how-the-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-safestate-14-years",
+   "verdict": "noted",
+   "reason": "Capture checked: OpenAI president Greg Brockman said the underlying flaw had lived in PHP for 14 years, with a limited version surfacing in 2024 that nobody treated as significant. Agrees with cur23-itfb-2024-audit and cur29-inforgames-crowdstrike-2024 on 2024; the 14 years is a quoted remark relayed by a security blog and the site carries 'more than a decade'. Not used.",
+   "sources": [
+    "safestate-post-php2shell-vulnerability-how-the-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-safestate-79pct-unsupported",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Around 79% run versions the project no longer supports, so no official fix will ever reach them', with over 5.1 million PHP hosts online and about 3.8 million exposing at least one open port. The 5.1 and 3.8 million match the VirusTotal estimates (cur28-cozumpark-virustotal); the 79% has no source or date on the page, and the same page puts PHP at 75 to 80 percent of websites, against the site's 70% (scale-70pc-websites). Not stated.",
+   "sources": [
+    "safestate-post-php2shell-vulnerability-how-the-php"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-24h-ncsc-50000-alerts",
+   "verdict": "noted",
+   "reason": "Capture checked (Vietnamese, relaying VietNamNet): the UK NCSC sent 50,000 technical alerts to relevant organisations and called the scale 'unprecedented', noting that some old systems cannot be patched and must be replaced; the UK Prime Minister's office said no critical public service had been affected or breached. The NCSC's own statement is not in the vault; the 32-services figure on the same page agrees with cur27-epoch-uk-32-services. A point-in-time statement from the UK government, not a finding.",
+   "sources": [
+    "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-24h-china-miit",
+   "verdict": "noted",
+   "reason": "Capture checked: China's Ministry of Industry and Information Technology called on agencies and companies to check systems at once, upgrade to the latest safe PHP, strengthen network-traffic monitoring and change all passwords and keys. Advice to check, upgrade and rotate credentials, not to go offline: this page does not support Metro's line that China told sites to go dark (cur29-metro-agencies-go-dark, held back). The ministry's own notice is not in the vault.",
+   "sources": [
+    "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-24h-japan-pm-suspend",
+   "verdict": "agrees",
+   "reason": "Capture checked: Japan's prime minister Takaichi continued to urge organisations to update software quickly or proactively suspend their websites if they cannot yet fix it. Agrees with the CNN account already reviewed (cur3-jp-pm-emergency-order: urging operators to check and prepare to patch and, in CNN's account, saying companies should consider suspending services: a request, not an order). It is the prime minister's remark, not an agency's page; the site's offline-allies claim (disputed) says Japan's agencies gave no offline advice, which this does not contradict. Not repeated.",
+   "sources": [
+    "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur39-24h-martin-austin",
+   "verdict": "noted",
+   "reason": "Capture checked: former NCSC chief executive Ciaran Martin called it 'the most serious vulnerability in five years', and Ryan Austin of Calif said deep exploitation of target systems had not yet broken out on a wide scale. Two experts' assessments at the time of the original report, not measurements; the Calif remark is point-in-time. Not used.",
+   "sources": [
+    "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T08:42Z",
    "by": "claude-journalist"
   }
  ]
