@@ -7079,6 +7079,72 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-31T08:42Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur40-itadmin-censys-32-4m",
+   "verdict": "held back",
+   "reason": "Capture checked (German, 26 October 08:50): 'rund 32,4 Millionen PHP-Dienste mit einer verwundbaren Version' on Censys's public dashboard as of Monday, knapp 9,9 million switched to a secured version since 21 October, about 42.3 million vulnerable services seen since tracking began, and about 346,000 newly patched in the previous 24 hours. All as quoted. A version-banner count of services, an upper bound (distributions backport fixes), read at 07:15 on 26 October of a live counter whose own tracker is in the vault (censys-php2shell-exposure; see brk2-thn-censys-count). The same measure is held back at cur20-infosec-censys-3251, brk2-thn-censys-count, cur27-muycomputerpro-censys-32m and cur30-cybersecasia-censys-36-7m. Not stated as a site number.",
+   "sources": [
+    "it-administrator-php2shell-patchtempo-altversionen"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur40-itadmin-branch-rates",
+   "verdict": "noted",
+   "reason": "Capture checked: about 75% of PHP 8.5 services and 64% of 8.4 on the secured version, just under half of 8.2 and 8.3; of about 43 million services that reveal a version, about 24 million run PHP 8.1 or older, for which only source backports exist; only about 8.8 million vulnerable services could simply move to a ready release and another 11 million are already secured. Censys's dashboard figures as read on 26 October, by reported version, which the page itself says distributions' backports hide (cur24-tecnoandroid-lts-backports). Not used.",
+   "sources": [
+    "it-administrator-php2shell-patchtempo-altversionen"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur40-itadmin-versions-geography",
+   "verdict": "noted",
+   "reason": "Capture checked: the most common version is PHP 7.4.33 with over 6.7 million services, 5.6.40 about 1.6 million times, the United States with over 10.3 million vulnerable services and Germany about 4.2 million at the end of the previous week. A presence count by reported version and country from the same dashboard reading; not used.",
+   "sources": [
+    "it-administrator-php2shell-patchtempo-altversionen"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur40-itadmin-hosters",
+   "verdict": "held back",
+   "reason": "Capture checked: among the 15 networks with the most vulnerable addresses are Hetzner (about 80,000 PHP addresses reporting a version, 80% vulnerable), Contabo (83% of about 29,000) and IONOS (67% of about 42,000), with Amazon leading at about 322,000 addresses. Quoted as the page has it. It names commercial hosters with percentages from banner counts that the page itself says are by reported version only; stating those on the site would read as a finding about the companies. Not stated.",
+   "sources": [
+    "it-administrator-php2shell-patchtempo-altversionen"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur40-itadmin-method-limits",
+   "verdict": "agrees",
+   "reason": "Capture checked: about 57% of PHP services (about 58.4 million) hide their version and are missing from the statistics; Censys scores only the reported version though distributions often backport fixes; it dropped about 850,000 services with never-released version numbers as probable honeypots; patched systems show as safe only after the next scan; Censys calls the dashboard a situational picture ('Lagebild') and advises admins to check their own systems. Agrees with the Censys caveat quoted in the review of brk2-thn-censys-count ('upper bound: distributions often backport fixes') and with the site's reading of version counts as upper bounds.",
+   "sources": [
+    "it-administrator-php2shell-patchtempo-altversionen"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur40-itadmin-panos",
+   "verdict": "held back",
+   "reason": "Capture checked: the line comes from a teaser in the page's related-posts list, 'PHP2Shell erreicht Palo-Alto-Firewalls', marked 'Vor 1 Tag' at the capture of 31 October 09:42 UTC (so about 30 October, not 26 October as the curator's note has it, and after Dream's report), not from the article itself: 'Auch Firewalls von Palo Alto Networks sind betroffen, und Angreifer haben die Management-Oberfläche von PAN-OS bereits im Visier. Der Hersteller verteilt Hotfixes und nennt Übergangsmaßnahmen.' That PAN-OS is affected by the PHP flaws is in the vendor's own advisory in the vault (paloalto-psirt-cve-2026-109618, 22 October: PAN-OS 12.2, 12.1, 11.2, 11.1 and 10.2 affected, no fix ETA then). The attackers-in-sight and hotfix parts rest on a headline teaser of an article that is not captured, and the page names no victim and does not link Dream's unnamed firewalls to PAN-OS. Not stated as worded; nothing changes in the hold on the compromise stamps.",
+   "sources": [
+    "it-administrator-php2shell-patchtempo-altversionen"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-10-31T11:12Z",
+   "by": "claude-journalist"
   }
  ]
 }
