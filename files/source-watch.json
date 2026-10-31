@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "81861aac5e1b",
-  "message": "researcher@php.newsroom: pass 20261031T0935Z phase 1 of 2: captures, the curator queue, series and analysis"
+  "commit": "5d27e87bfaeb",
+  "message": "researcher@php.newsroom: pass 20261031T1207Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "5d27e87bfaeb",
+   "message": "researcher@php.newsroom: pass 20261031T1207Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "f483a63f020a",
+   "message": "researcher@php.newsroom: pass 20261031T1207Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "81861aac5e1b",
    "message": "researcher@php.newsroom: pass 20261031T0935Z phase 1 of 2: captures, the curator queue, series and analysis"
@@ -189,10 +197,6 @@
   {
    "commit": "b8bed3c1c7c5",
    "message": "researcher@php.newsroom: pass 20261027T0707Z phase 1 of 2: captures, the curator queue, series and analysis"
-  },
-  {
-   "commit": "a4bb76c0a37b",
-   "message": "researcher@php.newsroom: CISA adds CVE-2026-109618 and CVE-2026-109619 to the KEV catalog (26 October 2026, due 29 October): catalog and alert captured at 00:45 UTC on 27 October, the series kev-listed reads 2, a fourth statement in the ledger record is-it-exploited"
   }
  ],
  "pages": 1537,
@@ -317,21 +321,21 @@
   "sl": 1
  },
  "access": {
-  "open": 1322,
-  "bot-challenge": 113,
-  "down": 64,
-  "paywalled": 25,
-  "gone": 11,
+  "open": 1329,
+  "bot-challenge": 112,
+  "down": 56,
+  "paywalled": 26,
+  "gone": 12,
   "login-wall": 2
  },
  "tiers": {
   "A": 76,
-  "B": 1090,
+  "B": 1091,
   "C": 16
  },
- "snapshots": 15027,
- "graphs": 15004,
- "files": 117262,
+ "snapshots": 15775,
+ "graphs": 15750,
+ "files": 122524,
  "world_graph": {
   "nodes": 2810,
   "edges": 5602
@@ -2262,6 +2266,38 @@
     "bot-challenge": 96,
     "down": 32,
     "paywalled": 25,
+    "gone": 7,
+    "login-wall": 2
+   }
+  },
+  {
+   "run": "20261031T120813Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-31T12:08:13Z",
+   "finished": "2026-10-31T12:13:43Z",
+   "pages_due": 197,
+   "pages_total": 1537,
+   "changed": 48,
+   "access": {
+    "open": 156,
+    "bot-challenge": 13,
+    "down": 26,
+    "gone": 2
+   }
+  },
+  {
+   "run": "20261031T121343Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-10-31T12:13:43Z",
+   "finished": "2026-10-31T12:44:20Z",
+   "pages_due": 1229,
+   "pages_total": 1537,
+   "changed": 698,
+   "access": {
+    "open": 1075,
+    "bot-challenge": 95,
+    "paywalled": 26,
+    "down": 24,
     "gone": 7,
     "login-wall": 2
    }
