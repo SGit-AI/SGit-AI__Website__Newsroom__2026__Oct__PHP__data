@@ -50,6 +50,56 @@
   "notes_md": "# Failles PHP : pourquoi c'est un vrai casse-tête pour l'Internet mondial\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `be/news/01net/actualites-failles-php-pourquoi-cest-vrai-casse-tete-interne`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\n01net (French): the PHP2Shell flaws are a headache for the whole Internet because PHP is everywhere and often invisible, so organisations struggle to find where it runs; some public sites are going offline as a precaution. Experts at the security firm Filigran say the real challenge is not fixing PHP's code but locating every deployment, and compare the situation to Log4Shell.\n\n> PHP2Shell réunit bon nombre des ingrédients de Log4Shell : une exécution de code à distance sans authentification, dans un logiciel présent presque partout\n\n_Curator's translation:_ \"PHP2Shell combines many of the ingredients of Log4Shell: unauthenticated remote code execution, in software present almost everywhere\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T171501Z, not necessarily this one):_ 01net explains why PHP2Shell is hard to remediate: the problem is locating every PHP installation, not applying the patch. It quotes French security firm Filigran (CEO Samuel Hassine, Debrah Galea, Mathieu Rigotoo) and Tanium's Matt Psencik, and compares the situation to Log4Shell.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 3): Mentions CVE-2026-109618/109619 or php2shell: \"Failles PHP : pourquoi c'est un vrai casse-tête pour l'Internet mondial\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr-FR`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "12punto-bilim-teknoloji-php2shell-aciklarinda-tu",
+  "url": "https://12punto.com.tr/bilim-teknoloji/php2shell-aciklarinda-turkiye-alarmi-censyse-gore-surumunu-aciklayan-php-hizmetlerinin-yuzde-929u-riskli-156728",
+  "publisher": "12punto",
+  "kind": "news",
+  "title": "PHP2Shell açıklarında Türkiye alarmı: Censys’e göre sürümünü açıklayan PHP hizmetlerinin yüzde 92,9’u riskli",
+  "published": "2026-10-23",
+  "captures": [
+   {
+    "stamp": "20261102T094333Z",
+    "files": {
+     "headers.json": {
+      "sha256": "6edb934ac7785e9dd045d5bf88e258f6b51d8819fac21d6bc61ef11a6cd58063",
+      "bytes": 1014
+     },
+     "page.html": {
+      "sha256": "c27234d1ef7702a28f8520a966459e4877650de9fbe8e72073c348d9fce15472",
+      "bytes": 78083
+     },
+     "provenance.json": {
+      "sha256": "32433c68c6924b1646cb69a86f3bcf64804c34146f7d99090efc87542076e478",
+      "bytes": 1936
+     },
+     "rendered.html": {
+      "sha256": "38a15567d636295d48be24e1a0707ddb841ece2ef65e6fd813fe18f53dd9ee62",
+      "bytes": 397932
+     },
+     "screenshot.jpg": {
+      "sha256": "d641eb1bef36d875af0f57d2a3b592c9d95dfd535ffbb407e1f0a3aa703f9f24",
+      "bytes": 429316
+     },
+     "text.txt": {
+      "sha256": "3d12c1583394e5a804efbd3316a8147fc7c44d34a1484393a87d09238efdab89",
+      "bytes": 5570
+     }
+    },
+    "started_utc": "2026-11-02T10:08:58.990Z",
+    "status": 200,
+    "final_url": "https://12punto.com.tr/bilim-teknoloji/php2shell-aciklarinda-turkiye-alarmi-censyse-gore-surumunu-aciklayan-php-hizmetlerinin-yuzde-929u-riskli-156728"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "tr",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T094333Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Turkish science-and-technology news report (12punto, 23 October) on Censys's PHP2Shell dashboard: since tracking began on 21 October, 41,433,822 ser...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell açıklarında Türkiye alarmı: Censys’e göre sürümünü açıklayan PHP hizmetlerinin yüzde 92,9’u riskli\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tr/news/12punto/bilim-teknoloji-php2shell-aciklarinda-turkiye-alarmi-censyse`, snapshot `20261102T094333Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T094333Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Turkish science-and-technology news report (12punto, 23 October) on Censys's PHP2Shell dashboard: since tracking began on 21 October, 41,433,822 services were found using affected PHP versions, 33,500,304 were still on an affected version in the latest scans, and 7,943,892 had moved to fixed versions, 7,241,171 of them within the last 24 hours; for Turkey the dashboard lists 364,237 services on affected versions, 92.9% of Turkish services that reveal a version, 19th of 233 countries and territories. It stresses that Censys counts services, not servers or institutions, and scores the reported version number, so some patched systems with backported fixes may still appear as affected, and adds the discovery and disclosure background, the AWS honeypot attempt on 17 October and Cloudflare's pre-announcement attempts, and the patched versions.\n\n> Ancak şirketin kullandığı ölçüm, doğrudan sunucu veya kurum sayısını göstermiyor\n\n_Curator's translation:_ \"However, the measure the company uses does not directly show the number of servers or institutions.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell açıklarında Türkiye alarmı: Censys’e göre sürümünü açıklayan PHP hizmetlerinin yüzde 92,9’u riskli\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `tr`. Secondhand on Censys's dashboard (the primary). Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "20-minuten-20min-fr-suisse-romande",
   "url": "https://www.20min.ch/fr/story/vulnerabilite-it-panne-mondiale-des-sites-web-la-suisse-romande-touchee-103653792",
   "publisher": "20 minutes / 20 Minuten",
@@ -8201,6 +8251,56 @@
   "notes_md": "# PHP2Shell: due vulnerabilità critiche in PHP, cosa fare\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/cybersecurity360/nuove-minacce-php2shell-due-vulnerabilita-critiche-in-php-co`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nCyber Security 360 (Italian), 21 October: the PHP Security Team released emergency patches on 21 October 2026 for the two critical vulnerabilities, publicly known as PHP2Shell; the fixed versions are PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35, with advice on protecting servers.\n\n> Il PHP Security Team ha rilasciato il 21 ottobre 2026 le patch d’emergenza per due vulnerabilità critiche\n\n_Curator's translation:_ \"The PHP Security Team released the emergency patches on 21 October 2026 for two critical vulnerabilities\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T181608Z, not necessarily this one):_ Cybersecurity360 headline and standfirst: the PHP Security Team released emergency patches for two CVSS 9.2 vulnerabilities (PHP2Shell) on 21 October, with advice on protecting servers.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: due vulnerabilità critiche in PHP, cosa fare\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `it-IT`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "cybersecuritydive-news-insurance-industry-risk-php2shell-8",
+  "url": "https://www.cybersecuritydive.com/news/insurance-industry-risk-php2shell/873044/",
+  "publisher": "Cybersecurity Dive",
+  "kind": "news",
+  "title": "Insurance industry fears potential impacts from PHP2Shell | Cybersecurity Dive",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261102T094333Z",
+    "files": {
+     "headers.json": {
+      "sha256": "e9d18383f235426aa009a63cb31250e68153aa7f009b15863778e9caf5dc96fb",
+      "bytes": 645
+     },
+     "page.html": {
+      "sha256": "4c5fec473a4bdb8d1c6cefbc7ff81aa5bbebff0f4c6d18a88358a90412ba7239",
+      "bytes": 203010
+     },
+     "provenance.json": {
+      "sha256": "9214ab3c585648aa1ea13b35c4e477ecd6399248cf0c10ca3c168c96900d41ea",
+      "bytes": 1763
+     },
+     "rendered.html": {
+      "sha256": "cb8373cdd3bca1f3bf71abc21b0788142ac8c2afe5094ee1bf89cb89309c6dc5",
+      "bytes": 296047
+     },
+     "screenshot.jpg": {
+      "sha256": "296f6d2e63dea67332ea51e730ae69d957f462408990a89844cb5fef9cb06d81",
+      "bytes": 604484
+     },
+     "text.txt": {
+      "sha256": "0d48586f2e2820c576d4aabc3abf7ca7ea54f175d3599b2e9c544e785ecf5438",
+      "bytes": 7669
+     }
+    },
+    "started_utc": "2026-11-02T09:54:21.875Z",
+    "status": 200,
+    "final_url": "https://www.cybersecuritydive.com/news/insurance-industry-risk-php2shell/873044/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T094333Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A US cybersecurity trade report (Cybersecurity Dive, 28 October) that the cyber-insurance industry is watching PHP2Shell for signs of a systemic event...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Insurance industry fears potential impacts from PHP2Shell | Cybersecurity Dive\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `fi/news/cybersecuritydive/news-insurance-industry-risk-php2shell-873044`, snapshot `20261102T094333Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T094333Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA US cybersecurity trade report (Cybersecurity Dive, 28 October) that the cyber-insurance industry is watching PHP2Shell for signs of a systemic event that could bring billions in claims beyond current risk models. It quotes AM Best researchers (report of Tuesday) that the PHP vulnerability is the systemic-risk scenario that has long worried insurers, and that concern has limited market supply while a high-profile exploitation event could also raise demand and extend liability to directors and officers; CyberCube calls PHP2Shell a 'watershed moment' for AI-driven flaw discovery and says the industry may have avoided a near-term catastrophe but the crisis could become a long-tail event, with slow-burning campaigns like this treated as attritional losses. It adds that researchers say actual impact has been very limited so far, that many agencies, companies and infrastructure providers disconnected sites, and that CISA added the flaws to its KEV catalog on Monday.\n\n> The insurance industry is closely monitoring PHP2Shell amid concerns of a systemic event that could overwhelm the sector with billions in cybersecurity risk claims.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Insurance industry fears potential impacts from PHP2Shell | Cybersecurity Dive\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. The page's related-story list includes an unrelated report of an alleged exchange hack that this article does not tie to PHP2Shell and which is not recorded. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "cybersecuritynews-critical-php2shell-exploit-code",
   "url": "https://cybersecuritynews.com/critical-php2shell-exploit-code/",
   "publisher": "Cyber Security News",
@@ -15948,6 +16048,56 @@
   "notes_md": "# PHP2Shell: Altlasten bremsen Patches | IT-Administrator\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `de/news/it-administrator/php2shell-patchtempo-altversionen`, snapshot `20261031T094210Z`. Copied byte for byte; every file's sha256 is in `captures/20261031T094210Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA German IT-administrator trade piece (IT-Administrator, 26 October) on the pace of patching, built on the public PHP2Shell dashboard of the security firm Censys as of Monday morning, 26 October, 07:15. It says nearly ten million PHP services have been updated since the patch release, but about 32.4 million still run a vulnerable version and patching is slowing (only about 346,000 newly patched in 24 hours); about 9.9 million services have switched from a vulnerable to a secured version since 21 October and about 42.3 million vulnerable services have been seen since tracking began. By branch, PHP 8.5 is about 75% secured, 8.4 about 64% and 8.2 and 8.3 each just under half. Of about 43 million services that reveal a version, about 24 million run PHP 8.1 or older, where only source backports exist for 7.4, 8.0 and 8.1 although some distributions and long-term-support vendors ship their own fixes without changing the version number; only about 8.8 million vulnerable services could simply move to a ready release and another 11 million are already secured. PHP 7.4.33 is the commonest version (over 6.7 million), PHP 5.6.40 still appears about 1.6 million times, the United States has the most vulnerable services (over 10.3 million) and Germany about 4.2 million. It lists German hosters among the networks with the most vulnerable addresses, notes that about 57% of PHP services hide their version and are missing from the statistics, that Censys scores only the reported version number, that it dropped about 850,000 services with never-released version numbers as likely honeypots, and that patched systems only show as safe after the next scan. It adds that Palo Alto firewalls are also affected, attackers have PAN-OS management interfaces in their sights, and the vendor is distributing hotfixes and interim measures.\n\n> Knapp zehn Millionen PHP-Dienste haben seit dem Patch-Release ein Update bekommen.\n\n_Curator's translation:_ \"Nearly ten million PHP services have received an update since the patch release.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: Altlasten bremsen Patches | IT-Administrator\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `de`. Secondhand on Censys's dashboard, which is the primary; the figures are a version-based count with the method caveats the article states. The page also carries unrelated older news items and an advertisement. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri",
+  "url": "https://it.blastingnews.com/tecnologia/2026/10/la-crisi-php2shell-rivela-i-limiti-delle-patch-manuali-serve-automazione-004196305.html",
+  "publisher": "Blasting News",
+  "kind": "news",
+  "title": "La crisi PHP2Shell rivela i limiti delle patch manuali: serve automazione",
+  "published": "2026-10-28",
+  "captures": [
+   {
+    "stamp": "20261102T094333Z",
+    "files": {
+     "headers.json": {
+      "sha256": "3a5b8cc61ddf476a5f042d56a824eced56ca3ada87e48a2d33ebe35aa33a2f59",
+      "bytes": 708
+     },
+     "page.html": {
+      "sha256": "0bfd235819766cfc660194010bb245c6d42d8d175780647be987eedf9c003a90",
+      "bytes": 413421
+     },
+     "provenance.json": {
+      "sha256": "673e92bdee71b5a017057c4f12d7d33777c4ee1d2aabf12b6bed85e80d79e641",
+      "bytes": 1874
+     },
+     "rendered.html": {
+      "sha256": "9c3e7d5679668c70243ba059e47589658e27447097af8382ddf2dfb3addc0084",
+      "bytes": 415821
+     },
+     "screenshot.jpg": {
+      "sha256": "2f47b6f1c2e08254631773ab2eb1da1b735f30709b823ddba02f8b7043b4d436",
+      "bytes": 538447
+     },
+     "text.txt": {
+      "sha256": "dd0ff0301363335ed36765fdd69f0cf03dd30e9257b61ccf05833b034e2e919c",
+      "bytes": 8873
+     }
+    },
+    "started_utc": "2026-11-02T10:00:30.304Z",
+    "status": 200,
+    "final_url": "https://it.blastingnews.com/tecnologia/2026/10/la-crisi-php2shell-rivela-i-limiti-delle-patch-manuali-serve-automazione-004196305.html"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "it",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T094333Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Italian opinion piece on an aggregator site (Blasting News, 28 October), by a technology analyst, arguing that the PHP2Shell crisis shows the limit...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# La crisi PHP2Shell rivela i limiti delle patch manuali: serve automazione\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/it-blastingnews/tecnologia-2026-10-la-crisi-php2shell-rivela-i-limiti-delle`, snapshot `20261102T094333Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T094333Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Italian opinion piece on an aggregator site (Blasting News, 28 October), by a technology analyst, arguing that the PHP2Shell crisis shows the limits of manual patching and the need for automated, continuous security. It quotes a Wiz executive that containment work continues after the alarm leaves the news, recalls the joint work of OpenAI, Calif and the PHP team, draws the lesson that when a widespread component needs urgent patches across thousands of heterogeneous environments manual correction is unsustainable, and reports that the PHP security team flagged a new remote-code-execution flaw, CVE-2026-115560, tied to a session upload-progress mechanism, which will get no emergency patch because it needs a rare combination of configuration and application code, with the interim mitigation of turning that feature off until the next ordinary bugfix release.\n\n> La lezione più rilevante emersa è di natura organizzativa: quando un componente software ampiamente diffuso richiede patch urgenti su migliaia di ambienti eterogenei, la correzione manuale si rivela insostenibile e inefficace.\n\n_Curator's translation:_ \"The most relevant lesson to emerge is organisational: when a widely used software component needs urgent patches across thousands of heterogeneous environments, manual correction proves unsustainable and ineffective.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"La crisi PHP2Shell rivela i limiti delle patch manuali: serve automazione\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `it`. Opinion; the lead image is credited to another site's article under a Creative Commons licence, and the page ends with unrelated television and sports items. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "it-daily-shortnews-php2shell-die-aktuelle-lage",
   "url": "https://www.it-daily.net/shortnews/php2shell-die-aktuelle-lage",
   "publisher": "it-daily.net",
@@ -16719,6 +16869,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# Celah PHP2Shell Ancam Server, Peretas Bisa Ambil Alih Sistem Tanpa Login\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `id/news/jawapos/teknologi-2610230446-celah-php2shell-ancam-server-peretas-bi`, snapshot `20261024T133450Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T133450Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nJawa Pos (Indonesian), 23 October: the PHP2Shell flaw threatens servers; hackers can take over a system without logging in. It is a serious threat to website and server managers because it lets hackers run malicious code remotely without an account or password; it covers vulnerable PHP versions, the RCE risk and mitigation steps.\n\n> Baru-baru ini, ditemukan kalau celah keamanan PHP2Shell menjadi ancaman serius bagi pengelola situs web dan server karena memungkinkan peretas menjalankan kode berbahaya dari jarak jauh tanpa harus memiliki akun atau kata sandi.\n\n_Curator's translation:_ \"Recently it was found that the PHP2Shell security hole is a serious threat to website and server managers because it lets hackers run malicious code remotely without needing an account or password.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Celah PHP2Shell Ancam Server, Peretas Bisa Ambil Alih Sistem Tanpa Login\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `id`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "jeonmae-news-articleview-html",
+  "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1306439",
+  "publisher": "전국매일신문",
+  "kind": "news",
+  "title": "PHP 취약점 악용 사이버 공격…미국 정부 관련 시스템 등 서버 25대 장악 정황 - 전국매일신문 - 전국의 생생한 뉴스를 ‘한눈에’",
+  "published": "2026-10-29",
+  "captures": [
+   {
+    "stamp": "20261102T094333Z",
+    "files": {
+     "headers.json": {
+      "sha256": "bbfe20997e1f5f9b7780eb7f9e06e46dc82d7e774e09354e1e7d2cd2f21ca6f4",
+      "bytes": 549
+     },
+     "page.html": {
+      "sha256": "c844016518e44ef78e4eb51f11e79fd5ed435af29f1298f93c9527b486e05988",
+      "bytes": 198374
+     },
+     "provenance.json": {
+      "sha256": "12549be44aa0d3fdc687f598a4146b810785aba89cac4cc366485568a45ecc57",
+      "bytes": 1706
+     },
+     "rendered.html": {
+      "sha256": "0b8f0f37adbdc455feda7125bdb3f5b840013df629a5b70d7ffdf64536efc1f2",
+      "bytes": 233872
+     },
+     "screenshot.jpg": {
+      "sha256": "03c4d58bc1c3e6c40c316ed35a0e3fe28ac8f79f0d27fdeedeed058d84d5b2be",
+      "bytes": 395253
+     },
+     "text.txt": {
+      "sha256": "fd7150ff3635b6523b72a72faf50ad4615f370240b513d3ddc4e228316ccb972",
+      "bytes": 9150
+     }
+    },
+    "started_utc": "2026-11-02T10:03:19.151Z",
+    "status": 200,
+    "final_url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1306439"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ko",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T094333Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Korean regional-newspaper report (Jeonmae, 29 October) on Dream Research's report: attacks on firewalls in Korea, the United States, Japan and Taiwa...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP 취약점 악용 사이버 공격…미국 정부 관련 시스템 등 서버 25대 장악 정황 - 전국매일신문 - 전국의 생생한 뉴스를 ‘한눈에’\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `kr/news/jeonmae/news-articleview-html`, snapshot `20261102T094333Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T094333Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Korean regional-newspaper report (Jeonmae, 29 October) on Dream Research's report: attacks on firewalls in Korea, the United States, Japan and Taiwan on 23 and 24 October; the attacker scanned about 19,000 firewalls worldwide, chose 240 devices in the four countries, chained PHP2Shell on the firewall management servers with a Linux privilege-escalation flaw to gain top administrator rights on 24 firewalls, and left web shells on 22 of them; at a US government-related organisation two firewalls and then one internal management server were attacked, making 25 in all, with the extent of data leakage and further compromise unconfirmed and no Korean damage yet established. It adds signs hinting at Chinese links (target selection, a Chinese asset-search engine and a China-developed network tool, a time zone matching China Standard Time, Chinese-language prompts in an AI platform's logs) and that traces of an AI coding tool and settings for Chinese models were found, while Dream says there is no evidence AI wrote the attack code and the operation does not appear to have run autonomously end to end.\n\n> 다만 AI가 공격 코드를 직접 작성했다는 증거는 확보되지 않았으며, 공격 전 과정이 AI를 통해 자율적으로 진행된 것으로 보이지는 않는다고 드림 리서치는 설명했다.\n\n_Curator's translation:_ \"However, no evidence has been obtained that AI wrote the attack code directly, and the whole attack does not appear to have been carried out autonomously through AI, Dream Research explained.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP 취약점 악용 사이버 공격…미국 정부 관련 시스템 등 서버 25대 장악 정황 - 전국매일신문 - 전국의 생생한 뉴스를 ‘한눈에’\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ko`. A fourth relay of Dream Research's report (primary), not independent of cur36-innovatopia-dream-chain, cur37-orcarouter-dream-25-servers and cur38-taiwannews-dream-25; the chain's mechanics are not copied. Nothing in the page addresses an AI or hides text from a reader; it names AI tools found in the attacker's environment as part of the report.\n"
  },
  {
   "slug": "jeuxvideo-news-2110338-une-faille-critique-dans-ph",
@@ -37226,5 +37426,55 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell: Fallas Críticas En PHP Ponen En Alerta A Empresas\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `cl/news/zoomtecnologico/2026-10-26-php-php2shell-chile`, snapshot `20261027T121358Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T121358Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nZoom Tecnológico (Chile, Spanish), 26 October: 'PHP2Shell: critical PHP flaws put Chilean companies on alert'. It says patches were published on 21 October for the two flaws (9.2 on CVSS), that cyber-security bodies in several countries recommended updating at once, that Chile's National Cybersecurity Agency (ANCI) did the same, and that some governments suspended digital services as a precaution. It quotes Apiux's head of cyber-security Lucas Ovalle on legacy systems that run unsupervised on outdated PHP and on keeping an inventory so that temporary mitigations can be applied while updating, and says per the PHP Foundation one flaw had shown signs in a 2024 audit, and that Calif, OpenAI and Wiz independently demonstrated remote takeover in August with AI tools. Advice and a vendor quote; no new facts.\n\n> Fallas conocidas como PHP2Shell, ANCI recomienda actualizar de inmediato y Apiux advierte por los sistemas antiguos que nadie vigila.\n\n_Curator's translation:_ \"Flaws known as PHP2Shell: ANCI recommends updating immediately and Apiux warns about old systems that nobody watches.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: Fallas Críticas En PHP Ponen En Alerta A Empresas\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "zscaler-fr-blogs-cybersecurity-best-practices-ph",
+  "url": "https://www.zscaler.com/fr/blogs/cybersecurity-best-practices/php2shell-and-limits-patching-secops-playbook-layered-response",
+  "publisher": "Zscaler",
+  "kind": "news",
+  "title": "PHP2Shell Response | SecOps Remediation Playbook | Zscaler",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261102T072810Z",
+    "files": {
+     "headers.json": {
+      "sha256": "44870fc3e002bcf2d4b868e3e3c7352cdb6543ef18bb3254d4f018357d8ef8cd",
+      "bytes": 7541
+     },
+     "page.html": {
+      "sha256": "636afa9c757f76c9bc8a3e0b837f6568a18a95be4cf4003e76053ffef4ced608",
+      "bytes": 324672
+     },
+     "provenance.json": {
+      "sha256": "14fc14be1c64b9d3244bd22fe73c31eecefd9f3d1fe5a5ba019a70b5c20cd731",
+      "bytes": 1817
+     },
+     "rendered.html": {
+      "sha256": "b5b1257ee44a0aa42c6fc60cd6846c4dcfdde559e4bbfe8228b8cd356cd5180f",
+      "bytes": 552315
+     },
+     "screenshot.jpg": {
+      "sha256": "4d4d964c9a32dac185ef2a4733a5e793d8d4552d9e2991af72cc42ad5511f78f",
+      "bytes": 975698
+     },
+     "text.txt": {
+      "sha256": "7cabdeaedd5c18012a5465fd9ec8a5cb18fa6c0d230a9953dfa83195fbe4714f",
+      "bytes": 20547
+     }
+    },
+    "started_utc": "2026-11-02T07:32:59.348Z",
+    "status": 200,
+    "final_url": "https://www.zscaler.com/fr/blogs/cybersecurity-best-practices/php2shell-and-limits-patching-secops-playbook-layered-response"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "fr-FR",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T072810Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A vendor blog post (Zscaler, a layered-response playbook) on PHP2Shell. It reports the speed of exploitation seen on the vendor's internet-facing deco...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell Response | SecOps Remediation Playbook | Zscaler\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `be/news/zscaler/fr-blogs-cybersecurity-best-practices-php2shell-and-limits-p`, snapshot `20261102T072810Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T072810Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA vendor blog post (Zscaler, a layered-response playbook) on PHP2Shell. It reports the speed of exploitation seen on the vendor's internet-facing decoys (in the first 48 hours 187 events across 23 high-priority IPs, and by the 96-hour mark 3,038 scanning and exploit attempts from 248 unique IPs, with some activity predating the public announcement), relays Qualys's finding that only 199,000 of about 156 million PHP installations were patched within 12 hours and OX Security's that 99.3% were unpatched after 24 hours and nearly 94% after five days (noting the figures omit how many were internet-exposed), and says about a third of PHP sites run PHP 7 or older with no official fix, that about 2.24 million internet-facing hosts advertise PHP of which 59% of those reporting a version run a branch with no official security release, and that PHP 8.2 loses security support on 31 December 2026. It then argues patching alone is not enough and lists layered controls, ending in the vendor's own products.\n\n> Qualys analysis found that only 199,000 of approximately 156 million PHP installations were patched within the first 12 hours after disclosure, a fraction of 1%.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell Response | SecOps Remediation Playbook | Zscaler\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `fr-FR`. A vendor's marketing-adjacent blog: its recommended controls and product descriptions are not recorded, and the exploit-path remark is not copied. The capture shows no publication date; the text refers to the previous week's disclosure. Nothing in the page addresses an AI or hides text from a reader.\n"
  }
 ]

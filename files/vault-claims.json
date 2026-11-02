@@ -8528,5 +8528,161 @@
   "topic": "discovery",
   "note": "11 August is the date Calif reported the first flaw to PHP in the vault's other accounts (cur28-okdiario-calif-timeline, cur34-arabnet5-calif-august), not the date of discovery (1 August).",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-zscaler-decoy-telemetry",
+  "claim": "Zscaler's decoys saw, in the first 48 hours after disclosure, 187 events across 23 high-priority IPs delivering weaponised payloads and, by the 96-hour mark, 3,038 scanning and exploit attempts from 248 unique IPs, with some activity predating the public announcement",
+  "by": "Zscaler blog (own telemetry)",
+  "sources": [
+   "zscaler-fr-blogs-cybersecurity-best-practices-ph"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "A vendor's decoy telemetry of attempts, not of compromises of real systems; compare cur28-cozumpark-prewave-attempts.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-zscaler-patch-rates",
+  "claim": "Qualys found that only 199,000 of about 156 million PHP installations were patched within the first 12 hours, and OX Security found 99.3% of PHP instances unpatched after 24 hours and nearly 94% after five days; the vendor notes these figures omit how many instances were internet-exposed or crown-jewel assets",
+  "by": "Zscaler blog (relaying Qualys and OX Security)",
+  "sources": [
+   "zscaler-fr-blogs-cybersecurity-best-practices-ph"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Figures from other firms relayed second hand; the base counts all installations, not only exposed ones, so they differ from the Censys service counts (cur40-itadmin-censys-32-4m).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-zscaler-unpatchable",
+  "claim": "About a third of PHP sites run PHP 7 or older, which have no official fix; about 2.24 million internet-facing hosts advertise PHP, and 59% of those that report a version run a branch with no official security release; PHP 8.2 loses security support on 31 December 2026",
+  "by": "Zscaler blog",
+  "sources": [
+   "zscaler-fr-blogs-cybersecurity-best-practices-ph"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A vendor's estimate, unsourced in the post; the 8.2 end date matches cur26-bitmat-php82-eol.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-csd-ambest-systemic",
+  "claim": "AM Best researchers said in a report released on Tuesday 27 October that the PHP vulnerability is a scenario of systemic risk that has long worried cyber insurers and made them reluctant to aggressively expand their risk models, and that financial risk could extend beyond cyber insurance to liability for directors and officers",
+  "by": "Cybersecurity Dive (citing AM Best)",
+  "sources": [
+   "cybersecuritydive-news-insurance-industry-risk-php2shell-8"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A rating agency's view of a risk scenario, not a loss figure.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-csd-cybercube-watershed",
+  "claim": "CyberCube called PHP2Shell a 'watershed moment' for how AI-driven discovery of software flaws could play out, said the industry may have avoided a near-term catastrophe but the crisis could slowly evolve into a long-tail event, and said slow-burning campaigns like this are treated as attritional losses",
+  "by": "Cybersecurity Dive (citing CyberCube)",
+  "sources": [
+   "cybersecuritydive-news-insurance-industry-risk-php2shell-8"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A risk-analytics firm's assessment as of 28 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-csd-limited-impact",
+  "claim": "Researchers say the actual impact of PHP2Shell has been very limited so far, although numerous government agencies, private companies and critical infrastructure providers disconnected their sites, and CISA added the flaws to its Known Exploited Vulnerabilities catalog on Monday",
+  "by": "Cybersecurity Dive",
+  "sources": [
+   "cybersecuritydive-news-insurance-industry-risk-php2shell-8"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "As of 28 October, before the Dream Research report of attacks on firewalls (cur36-innovatopia-dream-chain); 'limited impact' is the article's summary, not a measurement.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-blasting-organisational-lesson",
+  "claim": "A Wiz executive stressed that containment work continues after the alarm leaves the news, and the article concludes that manual patching is unsustainable at this scale and that asset inventory, risk prioritisation and updates should run as continuous processes",
+  "by": "Blasting News (opinion, citing a Wiz executive)",
+  "sources": [
+   "it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Opinion and a vendor executive's view; not a finding.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-blasting-cve-115560",
+  "claim": "The PHP security team reported a new remote-code-execution flaw, CVE-2026-115560, tied to the session upload-progress mechanism, which will not get an emergency patch because exploiting it needs a rare combination of configuration and application code, with the suggested mitigation of switching that feature off until the next ordinary bugfix release",
+  "by": "Blasting News (relaying the PHP security team)",
+  "sources": [
+   "it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "The third flaw recorded in cur24-cybersecbr-third-flaw, cur25-sbircia-advisory-23oct and cur30-cio-third-flaw-no-fix; the conditions are not repeated here.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-jeonmae-dream-scope",
+  "claim": "Dream Research said attacks on firewalls in Korea, the United States, Japan and Taiwan took place on 23 and 24 October, that the attacker scanned about 19,000 firewalls and chose 240 devices, gained top administrator rights on 24 firewalls and left web shells on 22, and that at a US government-related organisation two firewalls and an internal management server were attacked, 25 in all, with the extent of data leakage and further compromise unconfirmed and no Korean damage yet established",
+  "by": "Jeonmae (relaying Dream Research)",
+  "sources": [
+   "jeonmae-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "compromise",
+  "note": "A fourth relay of one report, not independent; Korean damage 'not yet established' as of 29 October.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-jeonmae-china-indicators",
+  "claim": "Dream Research pointed to signs hinting at a Chinese link: targets concentrated in Korea, the US, Japan and Taiwan, use of a Chinese asset-search engine and a China-developed network tool, an infrastructure time zone matching China Standard Time, and Chinese-language prompts in an AI security platform's logs",
+  "by": "Jeonmae (relaying Dream Research)",
+  "sources": [
+   "jeonmae-news-articleview-html"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "Indicators, not an attribution; Dream names no actor (cur38-taiwannews-attribution-indicators).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-jeonmae-no-ai-proof",
+  "claim": "Dream Research found traces of an AI coding tool and settings for Chinese AI models in the attacker's infrastructure and noted the consistent structure of about 40 attack scripts, but says no evidence has been obtained that AI wrote the attack code and the operation does not appear to have run autonomously end to end",
+  "by": "Jeonmae (relaying Dream Research)",
+  "sources": [
+   "jeonmae-news-articleview-html"
+  ],
+  "status": "unverified",
+  "topic": "actors",
+  "note": "Agrees with cur36-innovatopia-ai-tooling and cur37-orcarouter-ai-unconfirmed: the presence of AI tools is not evidence of an AI-run attack.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-12punto-censys-23oct",
+  "claim": "Censys's PHP2Shell dashboard, about two days after disclosure, showed 41,433,822 services identified as using affected PHP versions since 21 October, 33,500,304 still on an affected version, and 7,943,892 moved to fixed versions, 7,241,171 of them in the last 24 hours",
+  "by": "12punto (citing the Censys dashboard)",
+  "sources": [
+   "12punto-bilim-teknoloji-php2shell-aciklarinda-tu"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A service-count snapshot of about 23 October; the 26 October snapshot is in cur40-itadmin-censys-32-4m (about 32.4 million still vulnerable), which shows the pace slowing. Censys counts services, not unique servers or sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur42-12punto-turkey",
+  "claim": "For Turkey the Censys dashboard listed 364,237 PHP services on affected versions, 92.9% of Turkish services that reveal a version, ranking 19th of 233 countries and territories, with the caveat that distributions backporting fixes without changing the version number can make patched systems appear affected",
+  "by": "12punto (citing the Censys dashboard)",
+  "sources": [
+   "12punto-bilim-teknoloji-php2shell-aciklarinda-tu"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A version-banner share for one country, not a count of vulnerable or compromised systems.",
+  "agent": "curator@php.newsroom"
  }
 ]

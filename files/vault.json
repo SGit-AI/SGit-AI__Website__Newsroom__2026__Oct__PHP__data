@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "bf3d556267d7",
-  "subject": "curator@php.newsroom: batch 41, one source from the source watch (Panamericana TV): 3 claims cur41-  +8 ~3  [blobs:+11 trees:+7]",
+  "commit": "5bef54c11ba8",
+  "subject": "curator@php.newsroom: batch 42, five sources from the source watch (Zscaler, Cybersecurity Dive, Blasting News, Jeonmae, 12punto): 13 claims cur42-  +40 ~3  [blobs:+43 trees:+19]",
   "commits": 50
  },
- "sources": 719,
- "captures": 785,
- "hashed_files": 4586,
+ "sources": 724,
+ "captures": 790,
+ "hashed_files": 4616,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-31T14:42Z",
+ "latest_capture": "2026-11-02T09:43Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
