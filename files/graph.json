@@ -1,7 +1,7 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.55",
- "vault_commit": "2f80607e87ad",
+ "version": "0.22.56",
+ "vault_commit": "b79970cfb056",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
  "ontology": {
@@ -6339,6 +6339,49 @@
     {
      "name": "text.txt",
      "sha256": "b00b4ee3ceb08beabe4387d853d6715bb89202536a3ad1a038d737e35cd83bec"
+    }
+   ]
+  },
+  {
+   "id": "source:24h-cong-nghe-thong-tin-website-toan-cau-hun",
+   "kind": "source",
+   "label": "Tin tức 24h: Website toàn cầu hứng chịu hàng triệu nỗ lực tấn công, khai thác lỗ hổng PHP",
+   "href": "sources/24h-cong-nghe-thong-tin-website-toan-cau-hun/index.html",
+   "url": "https://www.24h.com.vn/cong-nghe-thong-tin/website-toan-cau-hung-chiu-hang-trieu-no-luc-tan-cong-khai-thac-lo-hong-php-c55a1805111.html",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:24h-cong-nghe-thong-tin-website-toan-cau-hun/20261031T071303Z",
+   "kind": "capture",
+   "label": "Tin tức 24h, captured 20261031T071303Z",
+   "href": "sources/24h-cong-nghe-thong-tin-website-toan-cau-hun/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "a6a35f2b6ff092893e071b8ab7fa6d6ecef2b7d45150335cbc9e7531e6bbbc6f"
+    },
+    {
+     "name": "page.html",
+     "sha256": "b41fcbde4a322dfe8846380cc1155db9394d09435b0cf518f6c3446c66d75824"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "12775b17ce3c566fb0dd87a0a93a4f8dd74fe59787a6298cab79c208151392f9"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "cfadec1ac040c493d3411ebdb67db1334192ca136c24da404aac84892d878da3"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "64472d16a112107ba8b1f54d23f4977b7dd11508aa05273b7228e2b4fe8129c4"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "88c714f119295000afb0dc84d4411373c711ccd182620d00ce31f2b1b33d5255"
     }
    ]
   },
@@ -19943,6 +19986,49 @@
    ]
   },
   {
+   "id": "source:it-administrator-php2shell-patchtempo-altversionen",
+   "kind": "source",
+   "label": "IT-Administrator: PHP2Shell: Altlasten bremsen Patches | IT-Administrator",
+   "href": "sources/it-administrator-php2shell-patchtempo-altversionen/index.html",
+   "url": "https://www.it-administrator.de/php2shell-patchtempo-altversionen",
+   "primary": false,
+   "published": "2026-10-26",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:it-administrator-php2shell-patchtempo-altversionen/20261031T094210Z",
+   "kind": "capture",
+   "label": "IT-Administrator, captured 20261031T094210Z",
+   "href": "sources/it-administrator-php2shell-patchtempo-altversionen/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "3955de5873153e86eca2374a80ce5cf69690e7cfd2a05e8988ab4659b776d16c"
+    },
+    {
+     "name": "page.html",
+     "sha256": "88687151553392690b6abff15cfd8668be3b27203a162d2e3258d9c39ba97691"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "392affe056363d86e88eed17ee463b035f24b937987445d194cfc857a1e16402"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "66db137e7651492d1385bd679ce93637c7aeb2eca57bf78595dd4aa5143c0f3b"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "1cd70ffccd8a6f73c82d65b88d2da703b0430b15422799b0223b88500970e91d"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "3c3a81e0f2454a5dc0ce53496d5737d809e3cf0f7878d477d65cfcb8db054770"
+    }
+   ]
+  },
+  {
    "id": "source:it-daily-shortnews-php2shell-die-aktuelle-lage",
    "kind": "source",
    "label": "it-daily.net: PHP2Shell: Die aktuelle Lage nach dem Patch",
@@ -29476,6 +29562,49 @@
     {
      "name": "text.txt",
      "sha256": "9c8bc44b157ad4c12dd5b38c06b69f4622f866c3ceadfa5fe0eb5d0cb1bb7767"
+    }
+   ]
+  },
+  {
+   "id": "source:safestate-post-php2shell-vulnerability-how-the-php",
+   "kind": "source",
+   "label": "safestate.com: PHP2Shell Vulnerability: How the PHP Emergency Unfolded",
+   "href": "sources/safestate-post-php2shell-vulnerability-how-the-php/index.html",
+   "url": "https://www.safestate.com/post/php2shell-vulnerability-how-the-php-emergency-unfolded",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:safestate-post-php2shell-vulnerability-how-the-php/20261031T071303Z",
+   "kind": "capture",
+   "label": "safestate.com, captured 20261031T071303Z",
+   "href": "sources/safestate-post-php2shell-vulnerability-how-the-php/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "d1d898b0fc455d2487387f31800a0102e6d91443adfc91518df4a8ae5bc8f860"
+    },
+    {
+     "name": "page.html",
+     "sha256": "155b6eb56eec7215599ea73b24a0a4080983331b0ff3ed0fbcd9f0d5b4b7b879"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "9fbeaf127e8c86002aac5d299711d01082c86bebabce6af4941832b95445b1a4"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "02647b0a699ce4f00300c459fff881c781b4b565293740d16a2403ffe8a5944f"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "3f5bf70cdbede4e98458413794cee9874b4dc461e9208a6b7709189b1a058992"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "ef2a6a3f12968a837b2007a683f80c337d5775e2883775b1e7ffee308a27e65d"
     }
    ]
   },
@@ -40800,6 +40929,11 @@
    "to": "capture:24-article-969853-ai-php-70/20261023T160435Z"
   },
   {
+   "from": "source:24h-cong-nghe-thong-tin-website-toan-cau-hun",
+   "verb": "captured_in",
+   "to": "capture:24h-cong-nghe-thong-tin-website-toan-cau-hun/20261031T071303Z"
+  },
+  {
    "from": "source:24heures-php2shell-qui-est-affecte-par-la-faille",
    "verb": "published_by",
    "to": "party:24heures"
@@ -43787,6 +43921,11 @@
    "to": "capture:istanbulticaretgazetesi-siber-guvenlik-baskanligindan-php2shell/20261025T120459Z"
   },
   {
+   "from": "source:it-administrator-php2shell-patchtempo-altversionen",
+   "verb": "captured_in",
+   "to": "capture:it-administrator-php2shell-patchtempo-altversionen/20261031T094210Z"
+  },
+  {
    "from": "source:it-daily-shortnews-php2shell-die-aktuelle-lage",
    "verb": "published_by",
    "to": "party:it-daily-net"
@@ -45838,6 +45977,11 @@
    "from": "source:safeguard-waf-rules-limits",
    "verb": "captured_in",
    "to": "capture:safeguard-waf-rules-limits/20261023T160435Z"
+  },
+  {
+   "from": "source:safestate-post-php2shell-vulnerability-how-the-php",
+   "verb": "captured_in",
+   "to": "capture:safestate-post-php2shell-vulnerability-how-the-php/20261031T071303Z"
   },
   {
    "from": "source:salesforce-general-message-20000267",
@@ -53015,6 +53159,9 @@
   "IBM": [
    "ibm-node-7294053"
   ],
+  "IT-Administrator": [
+   "it-administrator-php2shell-patchtempo-altversionen"
+  ],
   "ITforBusiness.fr": [
    "itforbusiness-php2shell-mea-culpa-php-foundation-10899"
   ],
@@ -53133,6 +53280,9 @@
   "The Hindu BusinessLine": [
    "thehindubusinessline-companies-what-is-the-php2shell-threat-a"
   ],
+  "Tin tức 24h": [
+   "24h-cong-nghe-thong-tin-website-toan-cau-hun"
+  ],
   "Tivi": [
    "tivi-uutiset-a-76dfed20-ffb8-48e7-ad18-12f44a"
   ],
@@ -53183,6 +53333,9 @@
   ],
   "orcarouter.ai": [
    "orcarouter-blog-cve-2026-46300-fragnesia-php2shell"
+  ],
+  "safestate.com": [
+   "safestate-post-php2shell-vulnerability-how-the-php"
   ],
   "techflowpost": [
    "techflowpost-article-35013"

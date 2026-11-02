@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.55",
+"site": "0.22.56",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -127,11 +127,11 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "9022552281d3",
-"v": 20,
+"hash": "ea630369eff3",
+"v": 21,
 "first": "0.1.0",
-"changed": "0.22.55",
-"date": "2026-10-31",
+"changed": "0.22.56",
+"date": "2026-11-02",
 "history": "versions/page-method/index.html"
 },
 "briefing-board": {
@@ -1243,11 +1243,11 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "b74f81b23f1d",
-"v": 23,
+"hash": "dacd405bead8",
+"v": 24,
 "first": "0.3.1",
-"changed": "0.22.55",
-"date": "2026-10-31",
+"changed": "0.22.56",
+"date": "2026-11-02",
 "history": "versions/page-summary/index.html"
 },
 "front-now": {
@@ -2159,6 +2159,17 @@
 "first": "0.14.30",
 "changed": "0.14.30",
 "date": "2026-10-23T16:04Z"
+},
+"src-24h-cong-nghe-thong-tin-website-toan-cau-hun": {
+"kind": "source",
+"zone": "research",
+"title": "Tin tức 24h: Website toàn cầu hứng chịu hàng triệu nỗ lực tấn công, khai thác lỗ hổng PHP",
+"path": "sources/24h-cong-nghe-thong-tin-website-toan-cau-hun/index.html",
+"hash": "7d2a025875b8",
+"v": 1,
+"first": "0.22.56",
+"changed": "0.22.56",
+"date": "2026-10-31T07:13Z"
 },
 "src-24heures-php2shell-qui-est-affecte-par-la-faille": {
 "kind": "source",
@@ -5548,6 +5559,17 @@
 "changed": "0.22.24",
 "date": "2026-10-25T12:04Z"
 },
+"src-it-administrator-php2shell-patchtempo-altversionen": {
+"kind": "source",
+"zone": "research",
+"title": "IT-Administrator: PHP2Shell: Altlasten bremsen Patches | IT-Administrator",
+"path": "sources/it-administrator-php2shell-patchtempo-altversionen/index.html",
+"hash": "0a7ab42354e1",
+"v": 1,
+"first": "0.22.56",
+"changed": "0.22.56",
+"date": "2026-10-31T09:42Z"
+},
 "src-it-daily-shortnews-php2shell-die-aktuelle-lage": {
 "kind": "source",
 "zone": "research",
@@ -7835,6 +7857,17 @@
 "first": "0.4.1",
 "changed": "0.15.19",
 "date": "2026-10-24"
+},
+"src-safestate-post-php2shell-vulnerability-how-the-php": {
+"kind": "source",
+"zone": "research",
+"title": "safestate.com: PHP2Shell Vulnerability: How the PHP Emergency Unfolded",
+"path": "sources/safestate-post-php2shell-vulnerability-how-the-php/index.html",
+"hash": "ba28418c2f91",
+"v": 1,
+"first": "0.22.56",
+"changed": "0.22.56",
+"date": "2026-10-31T07:13Z"
 },
 "src-salesforce-general-message-20000267": {
 "kind": "source",
