@@ -7145,6 +7145,39 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-10-31T11:12Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur41-panamericana-eu-isolate",
+   "verdict": "noted",
+   "reason": "Capture checked (Spanish, 31 October): the EU's cybersecurity authorities recommended installing the PHP updates immediately and, for organisations that cannot, temporarily isolating servers exposed to the internet. Isolating, not taking offline, as CERT-EU and ENISA say (cur36-weekend-enisa-isolate; offline-allies stays disputed). The authorities' own texts are not in the vault. Not used.",
+   "sources": [
+    "panamericana-tecnologia-476200-alerta-mundial-fallas"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur41-panamericana-precautionary-disconnections",
+   "verdict": "noted",
+   "reason": "Capture checked: German federal bodies suspended portals, France disconnected administrative pages, Belgium recorded interruptions to institutional services, and in the Netherlands sports organisations, parties, hospitals and the Port of Rotterdam took similar measures; the page stresses these do not mean the systems were attacked. Precautionary outages, no organisation named as compromised. The Dutch list rests on the press and the site's nl-offline claim already holds its DigiD and MijnOverheid part as overstated in part; this page does not name them. Not used.",
+   "sources": [
+    "panamericana-tecnologia-476200-alerta-mundial-fallas"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur41-panamericana-calif-11aug",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Calif, in collaboration with OpenAI, identified one of the vulnerabilities on 11 August, while Wiz ... independently detected the flaws and reported their findings'. 11 August is the date Calif reported the first flaw to PHP (cur28-okdiario-calif-timeline, cur34-arabnet5-calif-august), not the date it found it (1 August, cur27-infoarenales-calif-1aug), so 'identified on 11 August' misdates the discovery. Not stated as worded; the Wiz line agrees with the site's wiz-independent claim.",
+   "sources": [
+    "panamericana-tecnologia-476200-alerta-mundial-fallas"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T08:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
