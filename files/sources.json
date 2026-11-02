@@ -9393,6 +9393,56 @@
   "notes_md": "# Stealien推出“PHP2Shell”免费在线检测服务\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `kr/news/digitaltoday/cn-view-118322-stealien-launches-free-php2shell-vulnerabilit`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nDigitalToday (Chinese edition), 22 October: the AI security company Stealien announced a free online PHP2Shell check where users enter a site URL for a first indication of whether it has the related vulnerability risk; Stealien warns an online check cannot replace patching. The curator did not use the service: it would mean sending URLs to a third party.\n\n> AI安全公司Stealien宣布推出“PHP2Shell”免费在线检测服务，用户可在指定页面输入网站URL，初步判断网站是否存在相关漏洞风险。\n\n_Curator's translation:_ \"The AI security company Stealien announced it is launching a free online 'PHP2Shell' detection service where users enter a site URL on a designated page to make a preliminary judgement on whether the site has related vulnerability risk.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Stealien推出“PHP2Shell”免费在线检测服务\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `zh-CN`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "digitech-news-digital-01-11-2026-php2shell-vulnerabili",
+  "url": "https://www.digitech.news/digital/01/11/2026/php2shell-vulnerabilita-siti-web-rischi/",
+  "publisher": "digitech",
+  "kind": "news",
+  "title": "Allarme PHP, siti offline e servizi storici verso la chiusura",
+  "published": "2026-11-01",
+  "captures": [
+   {
+    "stamp": "20261102T122013Z",
+    "files": {
+     "headers.json": {
+      "sha256": "88cc3f3dc68db3bd69a69fbcdc48a52a3bde05fe0951b4d527db80392a843203",
+      "bytes": 716
+     },
+     "page.html": {
+      "sha256": "2dddd54c32cb0594f58eb92232f100307bf9c38a04b8e86a486583544b85516f",
+      "bytes": 108552
+     },
+     "provenance.json": {
+      "sha256": "e51863337618a52c3908e47a419fe2a699570e2b78c7fe7eff4dd95c3558be1b",
+      "bytes": 1756
+     },
+     "rendered.html": {
+      "sha256": "6666b40eefe45635d5369f21d7dabb97b5ca23721ef54a6f0ada6663788070cb",
+      "bytes": 182920
+     },
+     "screenshot.jpg": {
+      "sha256": "9560b3545eb42b73aab691d600b96aa5be426a3dac52f31e0cde69963c08f7bd",
+      "bytes": 580383
+     },
+     "text.txt": {
+      "sha256": "538848b2cb9e52425a39b0e223e05f95e43fd5a173303eb0488442df332984b8",
+      "bytes": 7164
+     }
+    },
+    "started_utc": "2026-11-02T12:38:21.263Z",
+    "status": 200,
+    "final_url": "https://www.digitech.news/digital/01/11/2026/php2shell-vulnerabilita-siti-web-rischi/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "it-IT",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T122013Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). An Italian tech-news item (Digitech, 1 November), relaying The Verge, on the PHP flaws' reach and the trouble they cause for legacy systems. It says D...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Allarme PHP, siti offline e servizi storici verso la chiusura\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `it/news/digitech-news/digital-01-11-2026-php2shell-vulnerabilita-siti-web-rischi`, snapshot `20261102T122013Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T122013Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Italian tech-news item (Digitech, 1 November), relaying The Verge, on the PHP flaws' reach and the trouble they cause for legacy systems. It says DeviantArt and 4Chan suspended activity temporarily, Dutch and Finnish government agencies' sites were taken offline as a precaution, the Internet Archive briefly stopped its service and platforms tied to the Pokémon ecosystem were switched off; that Cloudflare's chief executive said exploitation attempts rose from thousands in the ten hours before the announcement to hundreds of thousands in the following two hours and millions by evening; that two old Japanese mobile games, World Quest and Save My Demonic World, announced closure because they rely on technology their developers cannot update to apply the fix; and that, per The Verge, authorities' advice where updating is not immediately possible is to consider temporarily suspending exposed services. It also says the flaw has been present for about twenty years, and that GPT-5.6 Sol was used to find a critical flaw.\n\n> Due vecchi giochi mobile giapponesi, World Quest e Save My Demonic World, hanno annunciato la chiusura proprio perché basati su tecnologie che gli sviluppatori non riescono ad aggiornare per applicare la correzione.\n\n_Curator's translation:_ \"Two old Japanese mobile games, World Quest and Save My Demonic World, have announced their closure precisely because they are based on technology the developers cannot update to apply the fix.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Allarme PHP, siti offline e servizi storici verso la chiusura\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `it-IT`. Secondhand on The Verge, whose own text is not in the vault. The page ends with unrelated technology headlines. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "distributique-actualites-lire-php-des-failles-critique",
   "url": "https://www.distributique.com/actualites/lire-php-des-failles-critiques-mettent-des-milliers-de-sites-sous-pression-37446.html",
   "publisher": "Distributique",
@@ -26344,6 +26394,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell Exploitation: Two Critical PHP Flaws Explained\n\nCaptured by claude-story-site. Status: captured. Vendor explainer.\n\n- Captured for the record.\n"
+ },
+ {
+  "slug": "redusers-noticias-publicaciones-pllhp2she",
+  "url": "https://www.redusers.com/noticias/publicaciones/pllhp2she/",
+  "publisher": "RedUSERS",
+  "kind": "news",
+  "title": "PHP2Shell: LA FALLA QUE DEJÓ 22 MILLONES DE SERVIDORES EXPUESTOS - RedUSERS",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261102T122013Z",
+    "files": {
+     "headers.json": {
+      "sha256": "7f790398fc52fa015d4e800f1560d50a2da81734e6d6671a891bc65aa53179ad",
+      "bytes": 1122
+     },
+     "page.html": {
+      "sha256": "0ea848aee6be53b0a787b18e15727025c2d2f1bc3ac1f5c929a4ee63fd1d5867",
+      "bytes": 68024
+     },
+     "provenance.json": {
+      "sha256": "f108e929aa4fd2739bb711764239748c4c13839018a4a12c8ca746b69b707606",
+      "bytes": 1642
+     },
+     "rendered.html": {
+      "sha256": "618046e06bcc2247bcc5dda15803d48d19c8189fd7012bcb1025b61caff8c5e7",
+      "bytes": 131141
+     },
+     "screenshot.jpg": {
+      "sha256": "3b7ae3524488293efa75942133d20b741dd2c6d7b694a01b333bed1a96e9a2c5",
+      "bytes": 592784
+     },
+     "text.txt": {
+      "sha256": "b0ffb1e130195a9f7846c4cb7fa96ba230c1294ab292bc83ac2f45d50240b002",
+      "bytes": 5805
+     }
+    },
+    "started_utc": "2026-11-02T12:22:04.344Z",
+    "status": 200,
+    "final_url": "https://www.redusers.com/noticias/publicaciones/pllhp2she/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "es",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T122013Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). An Argentine IT-magazine summary (RedUSERS) of a longer paid guide on PHP2Shell, which it says left 22 million servers exposed. It says the two CVE id...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP2Shell: LA FALLA QUE DEJÓ 22 MILLONES DE SERVIDORES EXPUESTOS - RedUSERS\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `ar/news/redusers/noticias-publicaciones-pllhp2she`, snapshot `20261102T122013Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T122013Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nAn Argentine IT-magazine summary (RedUSERS) of a longer paid guide on PHP2Shell, which it says left 22 million servers exposed. It says the two CVE ids group four core PHP errors with a common cause, that three teams reached the same flaw separately in August with the help of AI agents, that there were leaks before the 21 October patch and more than a hundred Dutch organisations took sites down, among them DigiD, and that the closing was messy. Practical points: many distributions fix without changing the version number so the full package string must be compared; the console's PHP can differ from the web server's; updating a package does not help until services restart; the corrected versions have known problems, among them an error with SimpleXML objects, so logs should be watched in the first hours; and updating does not clean a previous intrusion, so logs and upload folders should be checked for signs of one.\n\n> Por último, actualizar no limpia una intrusión previa.\n\n_Curator's translation:_ \"Lastly, updating does not clean up a previous intrusion.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell: LA FALLA QUE DEJÓ 22 MILLONES DE SERVIDORES EXPUESTOS - RedUSERS\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es`. The capture shows no publication date. A summary of a paid guide, with the full technical detail behind a subscription; the description of how the errors work, one variant's behaviour and the temporary configuration measures are not copied. The page ends with unrelated promotions. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "repubblica-tecnologia-2026-10-21-news-php2shell-ia",

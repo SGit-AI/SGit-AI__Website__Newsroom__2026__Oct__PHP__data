@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "5bef54c11ba8",
-  "subject": "curator@php.newsroom: batch 42, five sources from the source watch (Zscaler, Cybersecurity Dive, Blasting News, Jeonmae, 12punto): 13 claims cur42-  +40 ~3  [blobs:+43 trees:+19]",
+  "commit": "edfc9a499efb",
+  "subject": "curator@php.newsroom: batch 43, two sources from the source watch (RedUSERS, Digitech): 6 claims cur43-  +16 ~3  [blobs:+19 trees:+10]",
   "commits": 50
  },
- "sources": 724,
- "captures": 790,
- "hashed_files": 4616,
+ "sources": 726,
+ "captures": 792,
+ "hashed_files": 4628,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-11-02T09:43Z",
+ "latest_capture": "2026-11-02T12:20Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

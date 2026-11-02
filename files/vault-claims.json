@@ -8684,5 +8684,77 @@
   "topic": "scale",
   "note": "A version-banner share for one country, not a count of vulnerable or compromised systems.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-redusers-four-bugs",
+  "claim": "The two CVE ids, CVE-2026-109618 and CVE-2026-109619, group four errors in PHP's core with a common cause",
+  "by": "RedUSERS (summarising a guide)",
+  "sources": [
+   "redusers-noticias-publicaciones-pllhp2she"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with the HackerNoon explainer, which says several related memory-safety demonstrations were grouped under the two ids (source hackernoon-what-you-need-to-know-about-the-php2shel); the PHP advisories are the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-redusers-three-teams-august",
+  "claim": "Three teams reached the same flaw separately in August with the help of AI agents, and there were leaks before the 21 October patch, after which more than a hundred Dutch organisations took sites down, among them DigiD",
+  "by": "RedUSERS (summarising a guide)",
+  "sources": [
+   "redusers-noticias-publicaciones-pllhp2she"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Consistent with Calif, Wiz and OpenAI as the three finders (cur39-safestate-discovery-credit); the 'more than a hundred Dutch organisations' figure is the article's.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-redusers-known-issues",
+  "claim": "The corrected PHP versions have known problems, among them an error with SimpleXML objects, so logs should be watched during the first hours after updating",
+  "by": "RedUSERS (summarising a guide)",
+  "sources": [
+   "redusers-noticias-publicaciones-pllhp2she"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Single-source operational note; check the PHP release notes.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-digitech-legacy-game-closures",
+  "claim": "Two old Japanese mobile games, World Quest and Save My Demonic World, announced their closure because they run on technology their developers cannot update to apply the PHP fix",
+  "by": "Digitech (relaying The Verge)",
+  "sources": [
+   "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A lasting consequence for unsupported platforms rather than an incident; the game developers' own announcements are the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-digitech-platform-suspensions",
+  "claim": "DeviantArt and 4Chan suspended activity temporarily, the Internet Archive briefly interrupted its service before fixing the problem, platforms tied to the Pokémon ecosystem were temporarily switched off, and Dutch and Finnish government agencies' sites were taken offline as a precaution",
+  "by": "Digitech (relaying The Verge)",
+  "sources": [
+   "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Precautionary outages named by The Verge; the Internet Archive's own statement that it was 'attacked' is mentioned in the Metro source (metro-2026-10-22-worried-php-cybersecurity-cri) and is not tied to PHP2Shell.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur43-digitech-twenty-years",
+  "claim": "The article says the vulnerability has been present for about twenty years",
+  "by": "Digitech (relaying The Verge)",
+  "sources": [
+   "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
+  ],
+  "status": "unverified",
+  "topic": "discovery",
+  "note": "Conflicts with other accounts in the vault: 'more than a decade' (Wiz) and 14 years (cur39-safestate-14-years); the article does not say which flaw or code it means.",
+  "agent": "curator@php.newsroom"
  }
 ]
