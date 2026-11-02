@@ -7321,6 +7321,72 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-11-02T11:21Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur43-redusers-four-bugs",
+   "verdict": "noted",
+   "reason": "Capture checked (Spanish, 2 November, summarising a guide by Claudio Bottini): the two CVE ids 'agrupan cuatro errores del núcleo de PHP con una causa común', where a request ending abnormally on exhausting the memory limit can leave internal structures inconsistent. A reading of the flaws by one author; the site carries two CVEs and its own account of their mechanism, and the primary is the PHP advisory. Not used.",
+   "sources": [
+    "redusers-noticias-publicaciones-pllhp2she"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T14:09Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur43-redusers-three-teams-august",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Tres equipos llegaron por separado a la misma falla en agosto, con ayuda de agentes de IA ... hubo filtraciones antes del parche del 21 de octubre, y más de cien organizaciones de los Países Bajos retiraron sitios, entre ellos DigiD'. The three parties and the leaks agree with the site (ai-found, who-first, cur23-itfb-leak-sequence). The Dutch figure does not: 'more than a hundred organisations' is the page's own, and the site's nl-offline claim holds the DigiD part as resting on the press and overstated in part (fact-check desk); the same line was held back at cur27-epoch-eu-offline and cur33-binnenlandsbestuur-nl-sites-offline. Not stated as worded.",
+   "sources": [
+    "redusers-noticias-publicaciones-pllhp2she"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T14:09Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur43-redusers-known-issues",
+   "verdict": "noted",
+   "reason": "Capture checked: 'Las versiones corregidas traen problemas conocidos, entre ellos un error con objetos SimpleXML, por lo que conviene vigilar los registros durante las primeras horas'. A single author's operational note; the PHP release notes are the primary and are not in the vault. Advice, not a finding; not used.",
+   "sources": [
+    "redusers-noticias-publicaciones-pllhp2she"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T14:09Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur43-digitech-legacy-game-closures",
+   "verdict": "noted",
+   "reason": "Capture checked (Italian, 1 November, relaying The Verge): two old Japanese mobile games, World Quest and Save My Demonic World, announced closure because they run on technology their developers cannot update to apply the fix. A consequence for unsupported platforms, not an incident; the developers' own announcements are not in the vault.",
+   "sources": [
+    "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T14:09Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur43-digitech-platform-suspensions",
+   "verdict": "noted",
+   "reason": "Capture checked: DeviantArt and 4Chan suspended activity temporarily, the Internet Archive briefly interrupted its service 'before being able to fix the problem', Pokemon-ecosystem platforms were switched off, and Dutch and Finnish government agencies' sites were put offline as a precaution. Relayed from The Verge; precautionary outages as the page frames them. The Internet Archive's own word 'attacked' appears in the Metro capture (metro-2026-10-22-worried-php-cybersecurity-cri, 22 October) without tying it to PHP2Shell, and no source in the vault does; nothing here names an organisation compromised through it. Not used.",
+   "sources": [
+    "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T14:09Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur43-digitech-twenty-years",
+   "verdict": "held back",
+   "reason": "Capture checked: 'la longevità della vulnerabilità, presente da circa vent'anni'. The site and other sources say the flaws sat for more than a decade or about 14 years (cur39-safestate-14-years, quoting OpenAI's president; cur5-first-signs-2024 for the 2024 sighting), and the page does not say which flaw or code it means. Not stated.",
+   "sources": [
+    "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T14:09Z",
+   "by": "claude-journalist"
   }
  ]
 }
