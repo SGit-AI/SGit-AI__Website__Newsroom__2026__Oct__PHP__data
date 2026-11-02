@@ -8492,5 +8492,41 @@
   "topic": "appliances",
   "note": "As of 26 October, before the Dream Research report (cur36-innovatopia-dream-chain); a vendor's own mitigation as relayed.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur41-panamericana-eu-isolate",
+  "claim": "EU cybersecurity authorities recommended installing the PHP fixes immediately and, for organisations that cannot patch, temporarily isolating servers exposed to the internet",
+  "by": "Panamericana TV",
+  "sources": [
+   "panamericana-tecnologia-476200-alerta-mundial-fallas"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Isolation, not necessarily taking offline; consistent with cur36-weekend-enisa-isolate.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur41-panamericana-precautionary-disconnections",
+  "claim": "In Germany federal bodies suspended digital portals, France temporarily disconnected administrative pages, Belgium recorded interruptions to institutional services, and in the Netherlands sports organisations, political parties, hospitals and the Port of Rotterdam took similar measures; the article stresses these disconnections do not mean the systems were attacked",
+  "by": "Panamericana TV",
+  "sources": [
+   "panamericana-tecnologia-476200-alerta-mundial-fallas"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Precautionary outages; compare cur27-epoch-eu-offline and cur33-binnenlandsbestuur-nl-sites-offline.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur41-panamericana-calif-11aug",
+  "claim": "The article says Calif, working with OpenAI, identified one of the flaws on 11 August and that Wiz independently detected and reported the flaws",
+  "by": "Panamericana TV",
+  "sources": [
+   "panamericana-tecnologia-476200-alerta-mundial-fallas"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "11 August is the date Calif reported the first flaw to PHP in the vault's other accounts (cur28-okdiario-calif-timeline, cur34-arabnet5-calif-august), not the date of discovery (1 August).",
+  "agent": "curator@php.newsroom"
  }
 ]

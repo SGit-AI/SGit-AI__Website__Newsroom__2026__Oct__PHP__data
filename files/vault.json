@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "b79970cfb056",
-  "subject": "curator@php.newsroom: batch 40, one source from the source watch (IT-Administrator): 6 claims cur40-  +8 ~3  [blobs:+11 trees:+7]",
+  "commit": "bf3d556267d7",
+  "subject": "curator@php.newsroom: batch 41, one source from the source watch (Panamericana TV): 3 claims cur41-  +8 ~3  [blobs:+11 trees:+7]",
   "commits": 50
  },
- "sources": 718,
- "captures": 784,
- "hashed_files": 4580,
+ "sources": 719,
+ "captures": 785,
+ "hashed_files": 4586,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-10-31T09:42Z",
+ "latest_capture": "2026-10-31T14:42Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

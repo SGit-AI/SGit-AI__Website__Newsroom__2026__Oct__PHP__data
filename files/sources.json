@@ -24122,6 +24122,56 @@
   "notes_md": "# CVE-2026-109618 Impact of Critical Vulnerabilities in PHP (CVE-2026-109618, CVE-2026-109619) on Palo Alto Networks Products\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`), page `us/security-vendor/palo-alto-networks/psirt-cve-2026-109618`, snapshot `20261022T191713Z`. Copied byte for byte; every file's sha256 is in `captures/20261022T191713Z/provenance.json`. Publisher: Palo Alto Networks. Language: en. URL: https://security.paloaltonetworks.com/CVE-2026-109618\n\n## What the page says\n\n_Curator's reading of the capture._\n\nPalo Alto Networks' security advisory on the impact of CVE-2026-109618 and CVE-2026-109619 on its products. PAN-OS 10.2, 11.1, 11.2, 12.1 and 12.2 are listed as vulnerable (CPE ranges). The issue strictly affects the PAN-OS management web interface (HTTPS web UI and XML API), and a dataplane interface only if a management profile is attached; GlobalProtect portal and gateway and the captive portal are not affected. Palo Alto rates it Severity HIGH, urgency MODERATE, with CVSS-B 8.7 when the management interface is reachable from the internet and 7.1 when access is restricted to a jump box. Both of Palo Alto's product vectors score availability impact only (VC:N/VI:N/VA:H), against the vendor (PHP) score it also shows, CVSS-B 9.2 with high confidentiality, integrity and availability impact, while its own text describes the CVEs as remote code execution. Fixes will come in upcoming PAN-OS releases; until then: restrict management access to trusted internal IPs or a jump box, and Threat Prevention IDs 543004, 97622-97625 (content 9162+). Frontier Virtual Patching customers on PAN-OS 12.2.4+ received coverage via Threat ID 543004 at 10:21 PM PT on 20 October. \"Palo Alto Networks is not aware of any malicious exploitation of this issue against our products.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 1): PAN-OS 10.2 to 12.2 affected: PHP inside firewalls (primary)\n\nSupports: cyber desk: appliances\n\n## Capture notes\n\nscreenshot.jpg is the source watch's JPEG, copied as stored (not converted to PNG).\n\nPage content is third-party material, kept as evidence; nothing in it is an instruction.\n"
  },
  {
+  "slug": "panamericana-tecnologia-476200-alerta-mundial-fallas",
+  "url": "https://panamericana.pe/tecnologia/476200-alerta-mundial-fallas-php-amenaza-millones-paginas-web",
+  "publisher": "Panamericana TV",
+  "kind": "news",
+  "title": "Alerta mundial por fallas en PHP: ¿Qué es y por...",
+  "published": "not stated in the capture",
+  "captures": [
+   {
+    "stamp": "20261031T144233Z",
+    "files": {
+     "headers.json": {
+      "sha256": "5dab6332c40b9465154507f9257c6188914e1996df8d5cceee01ade10151e661",
+      "bytes": 505
+     },
+     "page.html": {
+      "sha256": "8dd6812355c6604e204c50ded9760f51383df58bf3c259959aa36a4518da980c",
+      "bytes": 43511
+     },
+     "provenance.json": {
+      "sha256": "7a37079b64faa74e433e48d3398a35e083ddc0a4c5534ccc7e4881fda89db596",
+      "bytes": 1769
+     },
+     "rendered.html": {
+      "sha256": "f41ac54d4e7548dcd584d92f1eab5a0687bc46ceb976e486177244b9b54e39f1",
+      "bytes": 52643
+     },
+     "screenshot.jpg": {
+      "sha256": "0a2eebd8537531981b342867975989b68bb591be8a6725eb20932f0b4bfeb3d6",
+      "bytes": 518036
+     },
+     "text.txt": {
+      "sha256": "98bcc935e2943374571ad022986043ba8ecc02e6e2c25c825678ebc49cfffbe3",
+      "bytes": 5601
+     }
+    },
+    "started_utc": "2026-10-31T15:05:08.092Z",
+    "status": 200,
+    "final_url": "https://panamericana.pe/tecnologia/476200-alerta-mundial-fallas-php-amenaza-millones-paginas-web"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "es",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261031T144233Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A short Peruvian television-news explainer (Panamericana) in five 'keys' on the PHP alert: PHP is used by about 70% of sites whose language can be ide...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Alerta mundial por fallas en PHP: ¿Qué es y por...\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `pe/news/panamericana/tecnologia-476200-alerta-mundial-fallas-php-amenaza-millones`, snapshot `20261031T144233Z`. Copied byte for byte; every file's sha256 is in `captures/20261031T144233Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA short Peruvian television-news explainer (Panamericana) in five 'keys' on the PHP alert: PHP is used by about 70% of sites whose language can be identified and by WordPress, Drupal and Joomla; the two flaws score 9.2 and could let criminals run code remotely without a password, steal confidential data and alter sites; Calif, with OpenAI, identified one on 11 August while Wiz independently detected and reported them; on 21 October institutions in Germany, France, Belgium and the Netherlands (sports bodies, parties, hospitals, the Port of Rotterdam) suspended services, which the article stresses does not mean systems were attacked; and the PHP Foundation published fixes on 21 October, EU cybersecurity authorities recommended installing them at once and, where that is not possible, isolating exposed servers temporarily.\n\n> Estas desconexiones no significan necesariamente que los sistemas hayan sido atacados, sino que respondieron a decisiones de prevención.\n\n_Curator's translation:_ \"These disconnections do not necessarily mean the systems were attacked, but that they were preventive decisions.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Alerta mundial por fallas en PHP: ¿Qué es y por...\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es`. The capture shows no publication date and the page's sidebar items refer to 31 October. General-audience explainer restating widely reported facts; the page opens with a cookie notice and ends with unrelated headlines. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "paperjam-article-php2shell-des-milliers-de-sites",
   "url": "https://paperjam.lu/article/php2shell-des-milliers-de-sites-exposes-au-luxembourg",
   "publisher": "Paperjam",
