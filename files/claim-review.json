@@ -7387,6 +7387,61 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-11-02T14:09Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur44-letsai-wiz-67pct",
+   "verdict": "held back",
+   "reason": "Capture checked (Hebrew, 28 October reading): 'in a report of 27 October Wiz reported a fall of about 67% in the number of exposed, vulnerable machines in its own measurement'; the page itself says the figure is Wiz's own measurement, the fall may come from updates, closing systems or restricting access, and it says nothing about any site; a chart caption cites a 47.9% fall in the share of organisations 'significantly affected', undefined. Wiz's report is not in the vault and the site carries no such figure. A vendor's telemetry with no basis shown and a caption nobody defines. Not stated.",
+   "sources": [
+    "letsai-php2shell-security-flaws"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur44-letsai-outage-notices",
+   "verdict": "noted",
+   "reason": "Capture checked: on 21 October the government of Newfoundland and Labrador said it was temporarily taking down sites and some services as a precaution; Latvia limited access from abroad to some government services the same day (CERT.LV noting attempts seen and no successful attacks reported); on 22 October Lancashire County Council closed some sites (school admissions, libraries, museums) on the NCSC's advice. The Latvian line agrees with the site's latvia-offline (confirmed) and latvia-attempts; Newfoundland and Lancashire are not on the site and rest on this relay; precautionary outages, which the page says do not prove an attacker got in. Not used.",
+   "sources": [
+    "letsai-php2shell-security-flaws"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur44-letsai-calif-video",
+   "verdict": "agrees",
+   "reason": "Capture checked: on the evening of 20 October Calif mistakenly published a video demonstrating exploitation; it was removed but copied and, per the PHP Foundation, helped speed other proof-of-concept demonstrations. Agrees with the site's leak-video claim and cur23-itfb-calif-video; the Foundation's own post is the primary.",
+   "sources": [
+    "letsai-php2shell-security-flaws"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur44-letsai-chainguard-early",
+   "verdict": "agrees",
+   "reason": "Capture checked: on 21 October Chainguard published packages already containing the fix more than six hours before the agreed time, so anyone researching the flaw could compare the new package while other users waited. Agrees with cur24-hackernoon-chainguard-embargo and the site's Chainguard claims (cur8-chainguard-early-images, agrees); this page relays the Foundation's side and, as there, the dispute with Chainguard is not settled and is not stated as fact.",
+   "sources": [
+    "letsai-php2shell-security-flaws"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T18:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur44-letsai-brotli-windows",
+   "verdict": "agrees",
+   "reason": "Capture checked: on 26 October Windows packages of PHP were published with a separate security fix in the Brotli compression component without changing the PHP version number, so a Windows host should confirm that update too. Agrees with the Windows-build reading in brk2-thn-brotli-windows and the KEV note on CVE-2026-111497 (a different flaw, which reaches PHP only in its Windows builds); not part of PHP2Shell.",
+   "sources": [
+    "letsai-php2shell-security-flaws"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-02T18:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
