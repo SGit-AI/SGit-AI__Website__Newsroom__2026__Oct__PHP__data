@@ -18598,6 +18598,56 @@
   "has_notes": false
  },
  {
+  "slug": "letsai-php2shell-security-flaws",
+  "url": "https://letsai.co.il/php2shell-security-flaws/",
+  "publisher": "Let's AI",
+  "kind": "news",
+  "title": "מה השתבש באירוע PHP2Shell ולמה נסגרו אתרים? | Let's AI בינה מלאכותית",
+  "published": "2026-10-29",
+  "captures": [
+   {
+    "stamp": "20261102T155746Z",
+    "files": {
+     "headers.json": {
+      "sha256": "a6ccb9e9bfed7dc29a02f8f030e6d38e56b7e8b4c6e9723fa149b14c45fa77ca",
+      "bytes": 392
+     },
+     "page.html": {
+      "sha256": "0c1d9d66953cdbd051cde531c39227b36682c73e121be8e25864b8ae5de48e87",
+      "bytes": 486429
+     },
+     "provenance.json": {
+      "sha256": "55c8cf50afd150d92831d1cf9916400643f20069a57b31a3a43795ffad535731",
+      "bytes": 1619
+     },
+     "rendered.html": {
+      "sha256": "5ec8785f31b406eaf4654f287dda8a206c605e729a31bc7edace6903583186f2",
+      "bytes": 512318
+     },
+     "screenshot.jpg": {
+      "sha256": "8355824bf0630bc67cb96fa5b03ebbf53f56f08c6f7eba54e26cc720159bd19c",
+      "bytes": 822375
+     },
+     "text.txt": {
+      "sha256": "287891a809b4b07aec269cf2df43f51f7d026c6ff8ac2c2b5c52b6e11a39df62",
+      "bytes": 21234
+     }
+    },
+    "started_utc": "2026-11-02T16:13:07.941Z",
+    "status": 200,
+    "final_url": "https://letsai.co.il/php2shell-security-flaws/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "he",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261102T155746Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Hebrew-language explainer on an Israeli AI-community site (Let's AI, 29 October) written for business owners on what went wrong in the PHP2Shell epi...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# מה השתבש באירוע PHP2Shell ולמה נסגרו אתרים? | Let's AI בינה מלאכותית\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `il/news/letsai/php2shell-security-flaws`, snapshot `20261102T155746Z`. Copied byte for byte; every file's sha256 is in `captures/20261102T155746Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Hebrew-language explainer on an Israeli AI-community site (Let's AI, 29 October) written for business owners on what went wrong in the PHP2Shell episode and how to check a site is protected. It recaps the 2024 first signs, Calif's GPT-5.6 Sol-assisted work and Wiz's separate finding, the early circulation of the CVE numbers on 20 October with wrong severity and date information, Calif's mistakenly published demonstration video, Chainguard's early packages more than six hours before the agreed time, and Amazon's honeypot attempt on 17 October. It lists precautionary outages (the government of Newfoundland and Labrador on 21 October, a limit on access from abroad to some Latvian government services the same day, Lancashire County Council's closure of some sites on 22 October on the NCSC's advice), stresses that an outage does not prove an intrusion, and notes CISA's KEV listing on 26 October and Palo Alto's report of exploitation against exposed PAN-OS management interfaces. It cites a Wiz report of 27 October showing about a 67% fall in exposed vulnerable machines in Wiz's own measurement, cautioning that the fall may come from updates, shutdowns or access limits and does not show what happened at any site, and adds that on 26 October Windows packages were published with a separate fix in the Brotli component without changing PHP's version number. It ends with steps for site owners: list all sites and systems, get written answers from each provider, and decide with a professional how to limit access until a fix is in.\n\n> עצם זה שאתר ירד מהאוויר לא מוכיח שתוקף נכנס אליו.\n\n_Curator's translation:_ \"The mere fact that a site went offline does not prove that an attacker got in.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"מה השתבש באירוע PHP2Shell ולמה נסגרו אתרים? | Let's AI בינה מלאכותית\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `he`. Secondhand and aimed at non-specialists. The page carries a newsletter-and-community sign-up and a chart caption whose figure (a 47.9% fall in the share of organisations significantly affected) is attributed to Wiz without a definition. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "libertatea-stiri-ce-este-vulnerabilitatea-php-care",
   "url": "https://www.libertatea.ro/stiri/ce-este-vulnerabilitatea-php-care-loveste-70percent-din-site-urile-lumii-si-expune-platformele-wordpress-la-atacuri-masive-0e14ssx",
   "publisher": "Libertatea",

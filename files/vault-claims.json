@@ -8756,5 +8756,65 @@
   "topic": "discovery",
   "note": "Conflicts with other accounts in the vault: 'more than a decade' (Wiz) and 14 years (cur39-safestate-14-years); the article does not say which flaw or code it means.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur44-letsai-wiz-67pct",
+  "claim": "In a report of 27 October Wiz reported a fall of about 67% in the number of exposed, vulnerable machines in its own measurement; the article cautions that the fall may come from updates, from closing systems or from restricting access, and does not show what happened at any particular site",
+  "by": "Let's AI (citing Wiz)",
+  "sources": [
+   "letsai-php2shell-security-flaws"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "A vendor's measurement of its own telemetry; a chart caption in the page also cites a 47.9% fall in the share of organisations significantly affected, without defining it.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur44-letsai-outage-notices",
+  "claim": "On 21 October the government of Newfoundland and Labrador (Canada) said it was temporarily taking down sites and some online services as a precaution, Latvia limited access from abroad to some government services the same day, and on 22 October Lancashire County Council (UK) closed some sites, among them school-admission, library and museum services, on the NCSC's advice",
+  "by": "Let's AI",
+  "sources": [
+   "letsai-php2shell-security-flaws"
+  ],
+  "status": "reported",
+  "topic": "response",
+  "note": "Precautionary outages; the article stresses that an outage does not prove an attacker got in.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur44-letsai-calif-video",
+  "claim": "On the evening of 20 October Calif mistakenly published a video demonstrating exploitation of the flaws, which was removed but copied and, according to the PHP Foundation, helped speed the development of other proof-of-concept demonstrations",
+  "by": "Let's AI (relaying the PHP Foundation)",
+  "sources": [
+   "letsai-php2shell-security-flaws"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with cur23-itfb-calif-video; the Foundation's own post-mortem is the primary.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur44-letsai-chainguard-early",
+  "claim": "On 21 October Chainguard published packages that already contained the fix more than six hours before the agreed time, so anyone researching the flaw could compare the new package while other users still waited for the update",
+  "by": "Let's AI (relaying the PHP Foundation)",
+  "sources": [
+   "letsai-php2shell-security-flaws"
+  ],
+  "status": "reported",
+  "topic": "disclosure",
+  "note": "Consistent with cur24-hackernoon-chainguard-embargo, which also records Chainguard's own defence.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur44-letsai-brotli-windows",
+  "claim": "On 26 October Windows packages of PHP were published with a separate security fix in the Brotli compression component, without changing the PHP version number, so a Windows host should confirm that update as well as the PHP2Shell fixes",
+  "by": "Let's AI",
+  "sources": [
+   "letsai-php2shell-security-flaws"
+  ],
+  "status": "reported",
+  "topic": "patches",
+  "note": "A separate fix in another component, not part of PHP2Shell; the PHP release notes are the primary.",
+  "agent": "curator@php.newsroom"
  }
 ]

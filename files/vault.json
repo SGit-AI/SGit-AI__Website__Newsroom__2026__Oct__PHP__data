@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "edfc9a499efb",
-  "subject": "curator@php.newsroom: batch 43, two sources from the source watch (RedUSERS, Digitech): 6 claims cur43-  +16 ~3  [blobs:+19 trees:+10]",
+  "commit": "e4bbd16da443",
+  "subject": "curator@php.newsroom: batch 44, one source from the source watch (Let's AI): 5 claims cur44-  +8 ~3  [blobs:+11 trees:+7]",
   "commits": 50
  },
- "sources": 726,
- "captures": 792,
- "hashed_files": 4628,
+ "sources": 727,
+ "captures": 793,
+ "hashed_files": 4634,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-11-02T12:20Z",
+ "latest_capture": "2026-11-02T15:57Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }
