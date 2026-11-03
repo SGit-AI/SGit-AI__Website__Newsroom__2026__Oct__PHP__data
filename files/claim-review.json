@@ -7640,6 +7640,61 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-11-03T11:14Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur46-dcod-honeypot-35",
+   "verdict": "agrees",
+   "reason": "Capture checked (French, 2 November, relaying SecurityAffairs and Slashdot): honeypot environments recorded 35 successful executions of arbitrary commands on targets running the PHP engine, a technical report on GitHub documenting it, shells launched under the Apache process. Agrees with cur18-europeinfos-honeypot-35-shells, brk2-thn-honeypot-rce (used) and cur27-muycomputerpro-honeypot-24oct; honeypots, not production victims, so no-confirmed-compromise is unchanged. The GitHub report is not in the vault.",
+   "sources": [
+    "dcod-2026-11-02-failles-php2shell-exploitees"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur46-dcod-slow-scanning",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Des détections spécialisées ont repéré des assaillants qui inspectent méthodiquement plus de deux cents serveurs vulnérables en relayant leurs sondes depuis des systèmes relais pour éviter les blocages.' Undated, unsourced detections relayed from other outlets; the page names no detector. Nothing on the site; not stated.",
+   "sources": [
+    "dcod-2026-11-02-failles-php2shell-exploitees"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur46-publimetro-75pct",
+   "verdict": "held back",
+   "reason": "Capture checked (Spanish, 22 October): the headline says the flaw threatens '75% de la web'. The site carries about 70% of websites whose language is known (scale-70pc-websites; 69.3% in cur24-tecnoandroid-69pct); 75% also appears at cur30-kswnews-w3techs-75 (held back) and the page gives no source for it. A different figure without a basis; not stated.",
+   "sources": [
+    "publimetro-tecnologia-2026-10-22-php2shell-ia-descu"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur46-publimetro-two-months",
+   "verdict": "agrees",
+   "reason": "Capture checked: OpenAI's Patch the Planet 'reunió durante dos meses a desarrolladores de PHP, expertos independientes y proveedores de infraestructura para parchear las vulnerabilidades antes de su divulgación pública'. Agrees with the roughly two months of private preparation in cur39-safestate-14-years' source and the Calif and Wiz timelines (30 July and August to 21 October).",
+   "sources": [
+    "publimetro-tecnologia-2026-10-22-php2shell-ia-descu"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T13:43Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur46-it24hrs-embedded-php",
+   "verdict": "agrees",
+   "reason": "Capture checked (Thai, 27 October): PHP may be embedded in network equipment, device-management systems or software products whose users cannot update PHP themselves, so administrators may wait for the maker's firmware or patch; the page adds that this does not mean every site on such platforms was compromised. Agrees with ANSSI's warning about third-party products (cur35-tf1-anssi-third-party), the EU joint statement (cur38-spiceworks-eu-joint-statement) and Palo Alto's own advisory (paloalto-psirt-cve-2026-109618, PAN-OS affected).",
+   "sources": [
+    "it24hrs-2026-php2shell-php-hacker"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T13:43Z",
+   "by": "claude-journalist"
   }
  ]
 }
