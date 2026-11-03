@@ -7442,6 +7442,204 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-11-02T18:42Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-next-fr-scan-250k",
+   "verdict": "noted",
+   "reason": "Capture checked (Next, French, 2 November; the page is paywalled, 47% unread): Next interrogated the 4.6 million .fr domain names that existed in September 2026; about 1.2 million returned no HTTP status, nearly 2.6 million answered without a PHP version, leaving nearly 500,000 servers with a response carrying one; the lede says at least 250,000 .fr domains announce a vulnerable version. An outlet's own version-banner scan of one country code, which the page itself says cannot see PHP behind silent responses and, by its design, backported fixes; the method detail is read, the rest is behind the wall. Not used.",
+   "sources": [
+    "next-264756-failles-php2shell-on-a-scanne-tou"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-next-certfr-attempts",
+   "verdict": "noted",
+   "reason": "Capture checked: CERT-FR 'had noted exploitation attempts' of both CVEs against specific PHP deployments the previous week. Attempts, not compromises; consistent with the site's attempts-not-compromises claims. CERT-FR's own statement is not in the vault.",
+   "sources": [
+    "next-264756-failles-php2shell-on-a-scanne-tou"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-next-third-flaw-certfr",
+   "verdict": "agrees",
+   "reason": "Capture checked: the page quotes CERT-FR on CVE-2026-115560: arbitrary remote code execution, but the vendor judges the exploitation conditions to need an unlikely combination of configuration options and application code, so the fix comes in a later update. Agrees with cur6-third-flaw-115560 (used), cur25-sbircia-advisory-23oct and cur42-blasting-cve-115560.",
+   "sources": [
+    "next-264756-failles-php2shell-on-a-scanne-tou"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-memeburn-timeline",
+   "verdict": "agrees",
+   "reason": "Capture checked (Memeburn, 24 October): 2024 Quarkslab audit leads a core developer to the out-of-memory problem with no exploit path found; Calif starts auditing on 30 July under Patch the Planet; Calif reports on 11 August; Wiz found its first bug and confirmed remote code execution on Drupal and WordPress between 19 and 21 August; the ids leaked and Calif mistakenly published a video on 20 October; patched releases shipped at 14:00 UTC on 21 October, a day earlier than planned. Agrees with cur28-okdiario-calif-timeline, cur28-okdiario-wiz-timeline, cur30-cio-wiz-dates and cur44-letsai-calif-video. The table also lists an early-2026 Alpha-Omega scan, which the claim leaves out.",
+   "sources": [
+    "memeburn-php2shell-ai-found-php-flaws-put-million"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-memeburn-foundation-failure",
+   "verdict": "noted",
+   "reason": "Capture checked: the Foundation calls the delay 'a structural failure, caused by both the security team's decision process and its lack of resources', says the team decided by consensus with only a few engineers knowing the engine deeply so work 'stalled and restarted repeatedly', and says decisions can now be by majority vote with leadership stepping in earlier. The Foundation's own account relayed; its post-mortem is not in the vault. Not used.",
+   "sources": [
+    "memeburn-php2shell-ai-found-php-flaws-put-million"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-memeburn-amazon-hours",
+   "verdict": "agrees",
+   "reason": "Capture checked: Amazon recorded an exploitation attempt against MadPot on 17 October, four days before disclosure, says it is unclear how the actor obtained exploit information, saw more attempts on 21 October from multiple actors without knowing whether any would have worked on real systems, and argues fixes for critical internet-facing flaws should be measured in hours. Agrees with the site's amazon-honeypot claim, cur24-hackernoon-amazon-17oct and cur39-safestate-amazon-17oct-12h; attempts against honeypots, not compromises.",
+   "sources": [
+    "memeburn-php2shell-ai-found-php-flaws-put-million"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-memeburn-48pct",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Memeburn calculated that about 48% of PHP sites with a known version run PHP 8.1 or older'. The outlet's own arithmetic from a share the page does not source or date; it sits beside other measures (cur40-itadmin-branch-rates: about 24 of 43 million services on 8.1 or older, a different base) and the site carries none. Not stated.",
+   "sources": [
+    "memeburn-php2shell-ai-found-php-flaws-put-million"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-cisco-snortml-24h",
+   "verdict": "noted",
+   "reason": "Capture checked (Cisco blog): in less than 24 hours after disclosure SnortML 'caught a novel exploit attempt in customer firewall telemetry'; customers 'had PHP2Shell coverage for exploit attempts before disclosure, signatures ready on day-zero, and advanced detections in Splunk'. A vendor's claim about its own product and telemetry: an attempt on customer firewalls, not a confirmed compromise, and no victim named. Not used.",
+   "sources": [
+    "blogs-cisco-security-php2shell-how-cisco-helps-custo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-cisco-chaining-forecast",
+   "verdict": "noted",
+   "reason": "Capture checked: Cisco expects threat actors to keep chaining PHP2Shell with other vulnerabilities and says customers have more than ten Splunk detections for post-exploit activity. A forecast and a product statement; Dream's chained attack on firewalls is carried on the site as reported, not independently confirmed (cur36-innovatopia-dream-chain). Not used.",
+   "sources": [
+    "blogs-cisco-security-php2shell-how-cisco-helps-custo"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-secinsider-hn-leak-1520",
+   "verdict": "noted",
+   "reason": "Capture checked (German, citing reports): around 15:20 UTC on 20 October a user on Hacker News wrote about two embargoed PHP flaws, naming the two CVE ids and 'ab PHP 5' (which he called unconfirmed), and the post was removed; PHP only that evening announced the update for 21 October. Hacker News is now named by three outlets (cur34-arabnet5-hackernews-leak, cur39-safestate-hn-leak and this one, which may share sources), with a time that agrees with the ids circulating at about 15:00 UTC (cur24-hackernoon-disclosure-utc), against a fourth account of the php.net homepage and Spiceworks (cur38-spiceworks-leak-channel); the post itself and the PHP team's own statement are not in the vault, and the page names the poster, left out here. Reported, not used on a page; the earlier held-back verdicts on the channel stand until a primary is captured.",
+   "sources": [
+    "security-insider-kritische-php-schwachstellen-behoerden-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-secinsider-no-zero-day-proof",
+   "verdict": "noted",
+   "reason": "Capture checked: the sources do not prove exploitation before the patch though it cannot be excluded because details were public in advance; Huntress and Watchtowr had seen no attacks on real systems at the time of their reports; Sansec's expectation of mass attacks after release was a forecast; PHP's own notice names no observed attacks. A careful point-in-time reading from about 21 to 22 October, before CISA's listing of 26 October and the honeypot confirmations; consistent with the site's no-exploitation and amazon-honeypot claims. Not used.",
+   "sources": [
+    "security-insider-kritische-php-schwachstellen-behoerden-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-secinsider-5-4-unconfirmed",
+   "verdict": "agrees",
+   "reason": "Capture checked: Wiz says every PHP version of the past ten years back to 5.4 is affected by at least one flaw, PHP has not confirmed this, and PHP lists only the series before 8.5.12, 8.4.27, 8.3.36 and 8.2.35 as vulnerable; older versions get no updates, so how they are affected stays open. Agrees with the site's versions-old claim (disputed: the CVE records list only 8.2 to 8.5), cur24-hackernoon-patched-versions and cur28-okdiario-versions-scope read with that caveat.",
+   "sources": [
+    "security-insider-kritische-php-schwachstellen-behoerden-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-secinsider-ncsc-certeu-offline",
+   "verdict": "held back",
+   "reason": "Capture checked: 'Das britische NCSC rät zudem, alle Systeme mit PHP zu identifizieren, internetfähige zuerst, und solche, die sich nicht zügig absichern lassen, vom Netz zu nehmen. Das empfiehlt auch ... CERT-EU.' A German outlet's paraphrase of two agencies. The site's offline-allies claim is disputed because CERT-EU's own page says isolate exposed applications, not take offline (cur25-sbircia-certeu-ncsc-isolate), and the NCSC's offline sentence is not on its page as captured on 22 October (offline-ncsc, disputed); a paraphrase does not settle either. Not stated.",
+   "sources": [
+    "security-insider-kritische-php-schwachstellen-behoerden-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-secinsider-de-outages",
+   "verdict": "noted",
+   "reason": "Capture checked: on 21 October, per dpa, Baden-Wuerttemberg's state government took its ministries' and regional councils' sites offline temporarily for 'vorsorglicher Schutz der Infrastruktur'; several universities and the university hospitals of Heidelberg and Mannheim did the same, stressing it was not a cyberattack and patient care was unaffected; Mainz switched off several municipal services and mainz.de after the federal warning. Precautionary outages; the Mainz line agrees with cur30-boerse-mainz-offline. Not used.",
+   "sources": [
+    "security-insider-kritische-php-schwachstellen-behoerden-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-secinsider-discovery-unclear",
+   "verdict": "noted",
+   "reason": "Capture checked: Wiz claims its team found the first flaw on 19 August 2026 with AI models and reported it on 24 August, which the PHP project confirmed on 21 September, thanking Calif and OpenAI; other reports name Calif.io and a user as the author of the exploit tool 'PHP2Shell'. Wiz's own dates agree with cur28-okdiario-wiz-timeline and cur30-cio-wiz-dates; the 21 September confirmation date is in no other source in the vault. Not used.",
+   "sources": [
+    "security-insider-kritische-php-schwachstellen-behoerden-o"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-onlarissa-checkpoint-regions",
+   "verdict": "held back",
+   "reason": "Capture checked (Greek, 24 October): Check Point says Europe is the most exposed region, 14% of its organisations 'affected' by the vulnerabilities, more than double North America, Latin America and Asia-Pacific (6%), with the lowest, Africa, at 4%, and the strongest hourly intensity around midnight. A vendor's note, not Check Point's own text; 'affected' is undefined (attack attempts or targeting versus compromise), the base is not defined (see cur36-3rd-checkpoint-targeting) and the site carries no such figure. Read as compromise it would be false: no organisation is named as compromised. Not stated.",
+   "sources": [
+    "onlarissa-2026-10-24-php2shell-enas-stous-deka-org"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-onlarissa-checkpoint-sectors",
+   "verdict": "held back",
+   "reason": "Capture checked: telecommunications highest at 20% of organisations 'affected', education 18%, media and entertainment and non-profits 16%, agriculture and transport and logistics 14%, software and healthcare 13%, IT 12% and biotech and pharmaceuticals lowest of 23 sectors at 5%. Same vendor note and the same undefined word 'affected' and base as the regional figures. Not stated.",
+   "sources": [
+    "onlarissa-2026-10-24-php2shell-enas-stous-deka-org"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur45-onlarissa-checkpoint-countries",
+   "verdict": "held back",
+   "reason": "Capture checked: Hungary highest at 38%, Denmark 32%, Austria 28%, Sweden and Romania 22%, Portugal, Serbia and Thailand 17%, Germany 16%, the Netherlands 15% and India 14%, with 13 of the 15 most affected countries in Europe. The Hungary, Denmark, Austria order agrees with cur36-3rd-checkpoint-targeting; the same undefined 'affected' and base, and naming countries with percentages would read as a finding about compromise. Not stated.",
+   "sources": [
+    "onlarissa-2026-10-24-php2shell-enas-stous-deka-org"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-03T11:14Z",
+   "by": "claude-journalist"
   }
  ]
 }
