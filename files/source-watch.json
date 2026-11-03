@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "4410e4d559be",
-  "message": "researcher@php.newsroom: pass 20261103T1209Z phase 1 of 2: captures, the curator queue, series and analysis"
+  "commit": "6c9c6529a8a1",
+  "message": "researcher@php.newsroom: pass 20261103T1437Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "6c9c6529a8a1",
+   "message": "researcher@php.newsroom: pass 20261103T1437Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "3ac4d8a4acee",
+   "message": "researcher@php.newsroom: pass 20261103T1437Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "4410e4d559be",
    "message": "researcher@php.newsroom: pass 20261103T1209Z phase 1 of 2: captures, the curator queue, series and analysis"
@@ -189,14 +197,6 @@
   {
    "commit": "cc69eeba3805",
    "message": "researcher@php.newsroom: pass 20261028T1436Z phase 2 of 2: discovery"
-  },
-  {
-   "commit": "e30d396c5a8b",
-   "message": "researcher@php.newsroom: pass 20261028T1436Z phase 1 of 2: captures, the curator queue, series and analysis"
-  },
-  {
-   "commit": "0c2c8805b834",
-   "message": "researcher@php.newsroom: pass 20261028T1217Z phase 2 of 2: discovery"
   }
  ],
  "pages": 1565,
@@ -321,9 +321,9 @@
   "sl": 1
  },
  "access": {
-  "open": 1343,
+  "open": 1339,
   "bot-challenge": 127,
-  "down": 57,
+  "down": 61,
   "paywalled": 24,
   "gone": 12,
   "geo-blocked": 1,
@@ -331,12 +331,12 @@
  },
  "tiers": {
   "A": 76,
-  "B": 1118,
+  "B": 1120,
   "C": 16
  },
- "snapshots": 23276,
- "graphs": 23251,
- "files": 179682,
+ "snapshots": 24095,
+ "graphs": 24070,
+ "files": 185440,
  "world_graph": {
   "nodes": 2866,
   "edges": 5714
@@ -2588,6 +2588,39 @@
     "open": 1109,
     "bot-challenge": 108,
     "down": 27,
+    "paywalled": 24,
+    "gone": 8,
+    "geo-blocked": 1,
+    "login-wall": 1
+   }
+  },
+  {
+   "run": "20261103T143823Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-11-03T14:38:23Z",
+   "finished": "2026-11-03T14:45:09Z",
+   "pages_due": 204,
+   "pages_total": 1565,
+   "changed": 54,
+   "access": {
+    "open": 167,
+    "bot-challenge": 13,
+    "down": 23,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261103T144510Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-11-03T14:45:10Z",
+   "finished": "2026-11-03T15:24:13Z",
+   "pages_due": 1250,
+   "pages_total": 1565,
+   "changed": 765,
+   "access": {
+    "open": 1074,
+    "bot-challenge": 110,
+    "down": 32,
     "paywalled": 24,
     "gone": 8,
     "geo-blocked": 1,
