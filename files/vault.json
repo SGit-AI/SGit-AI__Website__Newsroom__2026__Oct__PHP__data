@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "f4da0844be73",
-  "subject": "curator@php.newsroom: batch 45, five sources from the source watch (Next, Memeburn, Cisco, Security-Insider, Onlarissa): 18 claims cur45-  +40 ~3  [blobs:+43 trees:+19]",
+  "commit": "a8e4e3dc5490",
+  "subject": "curator@php.newsroom: batch 46, three sources from the source watch (dcod, Publimetro, iT24Hrs): 5 claims cur46-  +24 ~3  [blobs:+27 trees:+13]",
   "commits": 50
  },
- "sources": 732,
- "captures": 798,
- "hashed_files": 4664,
+ "sources": 735,
+ "captures": 801,
+ "hashed_files": 4682,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-11-03T09:44Z",
+ "latest_capture": "2026-11-03T12:16Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

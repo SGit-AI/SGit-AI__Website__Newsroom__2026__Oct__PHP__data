@@ -9032,5 +9032,65 @@
   "topic": "exploitation",
   "note": "The same caveat as the regional figures; consistent with the Hungary, Denmark and Austria order in cur36-3rd-checkpoint-targeting.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur46-dcod-honeypot-35",
+  "claim": "Honeypot environments recorded 35 successful executions of arbitrary commands on 24 October, documented in a technical report published on GitHub, with attackers launching command shells under the Apache server process",
+  "by": "dcod (relaying SecurityAffairs, Slashdot and a GitHub report)",
+  "sources": [
+   "dcod-2026-11-02-failles-php2shell-exploitees"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Honeypots, not production victims; the GitHub report itself is not in the vault. Compare cur27-muycomputerpro-honeypot-24oct, the same period's honeypot confirmation.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur46-dcod-slow-scanning",
+  "claim": "Attacker groups are scanning the web at low frequency and methodically probing more than two hundred still-exposed vulnerable servers, relaying their probes through intermediate systems to avoid blocking",
+  "by": "dcod (relaying other outlets)",
+  "sources": [
+   "dcod-2026-11-02-failles-php2shell-exploitees"
+  ],
+  "status": "reported",
+  "topic": "actors",
+  "note": "Detections as relayed, undated and unsourced in the page; compare the slow-scanning campaign in cur24-cybersecbr-cyfirma-216.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur46-publimetro-75pct",
+  "claim": "PHP drives about 75% of websites whose technology can be identified",
+  "by": "Publimetro Chile",
+  "sources": [
+   "publimetro-tecnologia-2026-10-22-php2shell-ia-descu"
+  ],
+  "status": "reported",
+  "topic": "scale",
+  "note": "Another outlet's share, differing from the 69.3% to 70% quoted by W3Techs-based sources (cur24-tecnoandroid-69pct) and close to the Korean journal's 75% (cur30-kswnews-w3techs-75); a presence share, not a count of vulnerable sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur46-publimetro-two-months",
+  "claim": "OpenAI's Patch the Planet programme brought PHP developers, independent experts and infrastructure providers together for two months to patch the vulnerabilities before public disclosure",
+  "by": "Publimetro Chile",
+  "sources": [
+   "publimetro-tecnologia-2026-10-22-php2shell-ia-descu"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Consistent with the Foundation's account of roughly two months of private preparation (cur23-itfb-ai-discovery).",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur46-it24hrs-embedded-php",
+  "claim": "PHP may be embedded in network equipment, device-management systems or software products whose owners do not know they run PHP, so non-website devices and systems may also be affected",
+  "by": "iT24Hrs",
+  "sources": [
+   "it24hrs-2026-php2shell-php-hacker"
+  ],
+  "status": "reported",
+  "topic": "appliances",
+  "note": "General warning; consistent with the appliance exposure in cur35-tf1-anssi-third-party and cur38-spiceworks-eu-joint-statement.",
+  "agent": "curator@php.newsroom"
  }
 ]
