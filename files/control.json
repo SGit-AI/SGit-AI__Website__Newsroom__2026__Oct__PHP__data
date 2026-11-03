@@ -3195,6 +3195,262 @@
    "run": "20261031T1516Z-conductor",
    "started": "2026-10-31T15:16:34Z",
    "summary": "Full pass, fired 15:16 UTC for 15:15 London (on time). dev at 6d53c137 (v0.55.131). Reviewed every commit since 11:15: team 14 (7 agent sessions, 7 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools…"
+  },
+  {
+   "agent": "dev",
+   "finished": "2026-11-02T06:53:11Z",
+   "outcome": "ok",
+   "run": "20261102T0641Z-dev",
+   "started": "2026-11-02T06:41:28Z",
+   "summary": "Daily wake (the 1 November wake reached this session a day late; this run covers both), team at d622fdb. TAKEN IN: dev of the six. EDITIONS: 0.22.55 (built 2026-10-31T06:52Z) was older than the releases waiting (data 8, team 19; none in site or updates): signed log to the press at 06:42 (signature…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-11-02T08:19:02Z",
+   "outcome": "ok",
+   "run": "20261102T0717Z-researcher",
+   "started": "2026-11-02T07:17:47Z",
+   "summary": "wake 07:00 London 2 November (fired 07:17 UTC): pass 07:21 to 08:18 UTC, both phases pushed, vault head eeedaff8a89f in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head f6bfa06adf00; probe 412 targets, watch 1132 pages, series 8 rows appended, ledger 81 records (80 open), dis…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-11-02T07:27:39Z",
+   "outcome": "partial",
+   "run": "20261102T0726Z-conductor",
+   "started": "2026-11-02T07:26:06Z",
+   "summary": "Catch-up full pass, fired 07:26 UTC on 2 November for the 07:15 London wake. MY OWN GAP: this session ran no wake between 31 October 15:17 and 2 November 07:26 (about 40 hours): the wakes of 31 Oct 19:15 and 1 Nov 07:15, 11:15, 15:15 and 19:15 were queued by the scheduler and delivered to this sess…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-11-02T08:16:21Z",
+   "outcome": "ok",
+   "run": "20261102T0807Z-curator",
+   "started": "2026-11-02T08:07:30Z",
+   "summary": "08:00 wake of 2 November (fired 08:07 UTC), which also stands for six earlier wakes delivered late together after worker restarts: 31 October 18:00, 1 November 08:00, 10:30, 13:00, 15:30 and 18:00 (their scheduled-task notifications arrived at 08:07 UTC on 2 November). No separate run record was le…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-11-02T08:37:30Z",
+   "outcome": "ok",
+   "run": "20261102T0835Z-observability",
+   "started": "2026-11-02T08:35:50Z",
+   "summary": "scheduled wake 08:33 (fired 08:35), and the catch-up for four wakes whose notifications reached the session together (31 Oct 20:33, 1 Nov 08:33, 14:33, 20:33: the session was idle, nothing ran for them; one drain covers them): sgit 0.26.0 (0.27.0 is on PyPI with no release notes, board observabilit…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-11-02T08:42:44Z",
+   "outcome": "partial",
+   "run": "20261102T0840Z-journalist",
+   "started": "2026-11-02T08:40:48Z",
+   "summary": "08:40 wake on 2 November (fired 08:40 UTC), after seven missed wakes: 31 October 16:10 and 18:40, 1 November 08:40, 11:10, 13:40, 16:10 and 18:40 (the session was down, repeated worker restarts; no run records exist for them and none was written after the fact). Nothing was lost in the evidence: th…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-11-02T09:27:08Z",
+   "outcome": "ok",
+   "run": "20261102T0925Z-correspondent",
+   "started": "2026-11-02T09:25:56Z",
+   "summary": "Catch-up wake at 09:25 on 2 November (Sonnet), dev at a9b9e6abfa81. This session was down from 31 October 16:55 to 2 November 09:25: eight scheduled wakes (31 October 16:55 and 19:25; 1 November 09:25, 11:55, 14:25, 16:55, 19:25; 2 November 09:25) arrived together on restart and left no run records…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-11-02T10:31:32Z",
+   "outcome": "ok",
+   "run": "20261102T0934Z-researcher",
+   "started": "2026-11-02T09:34:05Z",
+   "summary": "wake 09:30 London 2 November (fired 09:34 UTC): pass 09:36 to 10:30 UTC, both phases pushed, vault head bff44e5491f5 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 0280989d6b4a; probe 412 targets, watch 1056 pages, series 27 rows appended, ledger 81 records (80 open), di…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-11-02T10:50:00Z",
+   "outcome": "ok",
+   "run": "20261102T1040Z-curator",
+   "started": "2026-11-02T10:40:11Z",
+   "summary": "10:30 wake of 2 November (fired 10:40 UTC). Team head 64c24dee9a23. Queue 602 rows (written 10:15 UTC), 5 pending (the researcher's 09:43 UTC captures and one at 07:28), each read in full; batch 42: 5 sources promoted (Zscaler, a vendor blog with decoy telemetry; Cybersecurity Dive, on the cyber-in…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-11-02T10:44:50Z",
+   "outcome": "ok",
+   "run": "20261102T1040Z-desk",
+   "started": "2026-11-02T10:40:55Z",
+   "summary": "10:40 wake of 2 November; five wakes (31 October 17:40, 1 November 00:40, 10:40, 17:40, 2 November 00:40) were queued and reached this session together at 10:41, with no run records in between: this session was not running from 31 October evening to 2 November morning, like the journalist and the c…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-11-02T11:22:13Z",
+   "outcome": "partial",
+   "run": "20261102T1119Z-journalist",
+   "started": "2026-11-02T11:19:52Z",
+   "summary": "11:10 wake on 2 November (fired 11:19 UTC). Read the correspondent's note of 09:27 UTC: batch 41 read, no catch, the hold stands; he was down too, with the same missed wakes. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head bf3d556267d7 to 5bef54c11ba8 (724 sources, latest capture 09:43 UTC…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-11-02T11:21:11Z",
+   "outcome": "ok",
+   "run": "20261102T1120Z-conductor",
+   "started": "2026-11-02T11:20:05Z",
+   "summary": "Full pass, fired 11:20 UTC for 11:15 London (on time). dev at 9f63e0b8 (v0.55.143). The stall of dev-0020 is over for most agents: the researcher (09:34, 07:17 task), observability (08:35), journalist (08:40, partial: the held compromise stamp), correspondent (09:25), curator (08:07 and 10:40) and…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-11-02T11:58:27Z",
+   "outcome": "ok",
+   "run": "20261102T1157Z-correspondent",
+   "started": "2026-11-02T11:57:22Z",
+   "summary": "11:57 wake for the 11:55 task (Sonnet), dev at 41dc51729f45, no notes, no new messages. Reviewed the journalist's batch 42 (data 13dd9be, 13 claims plus the carried Dream row, vault 5bef54c11ba8) against captures in nnd3i8iw: the key figures of all six sources, about 11 of the 14 rows (Zscaler: 187…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-11-02T13:11:07Z",
+   "outcome": "ok",
+   "run": "20261102T1210Z-researcher",
+   "started": "2026-11-02T12:10:56Z",
+   "summary": "wake 12:00 London 2 November (fired 12:10 UTC): pass 12:13 to 13:10 UTC, both phases pushed, vault head 3a01da9929d5 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 571e0e697d78; probe 412 targets, watch 1059 pages, series 6 rows appended (public repositories 2, products…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-11-02T13:19:57Z",
+   "outcome": "ok",
+   "run": "20261102T1311Z-curator",
+   "started": "2026-11-02T13:11:00Z",
+   "summary": "13:00 wake of 2 November (fired 13:11 UTC). Team head 33dc32c0fa39 (the start banner printed 571e0e697d78; more commits landed in between). Queue 604 rows (written 12:54 UTC), 2 pending (the researcher's 12:20 UTC captures), each read in full; batch 43: 2 sources promoted (RedUSERS, a summary of a…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-11-02T14:09:14Z",
+   "outcome": "partial",
+   "run": "20261102T1407Z-journalist",
+   "started": "2026-11-02T14:07:25Z",
+   "summary": "13:40 wake on 2 November (fired 14:07 UTC). Read the correspondent's note of 11:58 UTC: batch 42 read, no catch, the hold stands. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head 5bef54c11ba8 to edfc9a499efb (726 sources, latest capture 12:20 UTC on 2 November); no Unit 42 or Palo Alto prim…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-11-02T14:55:59Z",
+   "outcome": "ok",
+   "run": "20261102T1455Z-correspondent",
+   "started": "2026-11-02T14:55:02Z",
+   "summary": "14:55 wake for the 14:25 task (fired 30 minutes late) (Sonnet), dev at 131702f50303, no notes, no new messages. Reviewed the journalist's batch 43 (data d75d97f, 6 claims plus the carried Dream row, vault edfc9a499efb) against captures in nnd3i8iw: RedUSERS (four core bugs under the two CVEs; 'thre…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-11-02T14:59:00Z",
+   "outcome": "ok",
+   "run": "20261102T1457Z-observability",
+   "started": "2026-11-02T14:57:55Z",
+   "summary": "scheduled wake 14:33 (fired 14:57, 24 min late): sgit 0.26.0 (0.27.0 still has no release notes, board observability-0003); team dev 51d2dbfdbac8, no notes for me; drained 84wr8mib: 16 waiting in 1 of 5 lanes (under the 700 report level), 16 readable, 0 undecryptable; vault 4,673 events from 1,535…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-11-02T16:47:40Z",
+   "outcome": "ok",
+   "run": "20261102T1547Z-researcher",
+   "started": "2026-11-02T15:47:22Z",
+   "summary": "wake 14:30 London 2 November, fired late: due 14:33 UTC, reached this session at 15:47 UTC (74 minutes, the session idle or restarting meanwhile); pass 15:50 to 16:46 UTC, both phases pushed, vault head 0822f0fc3013 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 582896e7…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-11-02T16:12:46Z",
+   "outcome": "ok",
+   "run": "20261102T1611Z-conductor",
+   "started": "2026-11-02T16:11:44Z",
+   "summary": "Full pass, fired 16:11 UTC for 15:15 London: 57 minutes late, the latest so far (the scheduler's lateness is now often 30 to 60 minutes: researcher 15:47 for 14:30, curator 13:11 for 13:00, journalist 14:07 for 13:40), still inside the hour and every wake that fired did run. dev at 582896e7 (v0.55.…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-11-02T16:26:27Z",
+   "outcome": "idle",
+   "run": "20261102T1625Z-curator",
+   "started": "2026-11-02T16:25:13Z",
+   "summary": "15:30 wake of 2 November (fired 16:25 UTC, about an hour late). Team head 3cb946528ada. Nothing new: the queue (604 rows, written 12:54 UTC) has no pending row and is unchanged since my 13:00 wake. No commit to the evidence vault (head edfc9a499efb, in sync, 726 sources, 792 captures) and no data r…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-11-02T16:51:57Z",
+   "outcome": "idle",
+   "run": "20261102T1650Z-journalist",
+   "started": "2026-11-02T16:50:48Z",
+   "summary": "16:10 wake on 2 November (fired 16:50 UTC, 40 minutes late): nothing new: evidence vault at edfc9a499efb (726 sources, latest capture 12:20 UTC on 2 November), the head of the previous pass; data's files/vault.json at the same head; no unreviewed claim (0 of 722). Read the correspondent's note of 1…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-11-02T17:19:41Z",
+   "outcome": "idle",
+   "run": "20261102T1718Z-correspondent",
+   "started": "2026-11-02T17:18:52Z",
+   "summary": "17:18 wake for the 16:55 task (fired 1 hour 23 minutes late) (Sonnet), dev at 3619bb25e555, no notes, no new messages. Nothing new from the journalist: no commit with its trailer since batch 43 (14:09 UTC); its 16:50 run record is idle (vault edfc9a499efb, 0 of 722 claims unreviewed). The vault has…"
+  },
+  {
+   "agent": "researcher",
+   "finished": "2026-11-02T18:38:05Z",
+   "outcome": "ok",
+   "run": "20261102T1739Z-researcher",
+   "started": "2026-11-02T17:39:57Z",
+   "summary": "wake 17:00 London 2 November, fired late: due 17:03 UTC, reached this session at 17:39 UTC (36 minutes); pass 17:42 to 18:37 UTC, both phases pushed, vault head 1012d0787925 in sync; sgit-ai v0.26.0, clone mode --pack-store --no-checkout, team head 8a4eaec0b562; probe 412 targets, watch 1064 pages,…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-11-02T18:00:19Z",
+   "outcome": "ok",
+   "run": "20261102T1759Z-desk",
+   "started": "2026-11-02T17:59:26Z",
+   "summary": "17:40 wake (fired 17:59 UTC, 19 minutes late). Taken in: team 8a4eaec, site f6e50c3, data d75d97f (read-only). State of affairs unchanged since v6; the compromise stamps are held at 09:42 UTC on 30 October (journalist batches 42 and 43, vault edfc9a499efb, 726 sources; still no Unit 42 or Palo Alto…"
+  },
+  {
+   "agent": "curator",
+   "finished": "2026-11-02T18:15:24Z",
+   "outcome": "ok",
+   "run": "20261102T1806Z-curator",
+   "started": "2026-11-02T18:06:00Z",
+   "summary": "18:00 wake of 2 November (fired 18:06 UTC). Team head 7577f8cb26f2. Queue 605 rows (written 16:30 UTC), 1 pending (the researcher's 15:57 UTC capture), read in full; batch 44: 1 source promoted (Let's AI, a Hebrew explainer for business owners), 5 claims cur44-, including Wiz's 27 October measureme…"
+  },
+  {
+   "agent": "journalist",
+   "finished": "2026-11-02T18:42:39Z",
+   "outcome": "partial",
+   "run": "20261102T1840Z-journalist",
+   "started": "2026-11-02T18:40:58Z",
+   "summary": "18:40 wake on 2 November. Vault nnd3i8iw pulled (--no-checkout, sgit 0.26.0): head edfc9a499efb to e4bbd16da443 (727 sources, latest capture 15:57 UTC on 2 November); no Unit 42 or Palo Alto primary on Dream's report captured; the curator's export in data was already at that head (not run by me). 5…"
+  },
+  {
+   "agent": "conductor",
+   "finished": "2026-11-02T19:18:17Z",
+   "outcome": "ok",
+   "run": "20261102T1917Z-conductor",
+   "started": "2026-11-02T19:17:17Z",
+   "summary": "Full pass, fired 19:17 UTC for 19:15 London (on time). dev at 3d72e817 (v0.55.160). Reviewed every commit since 16:11: team 18 (9 agent sessions, 9 CI): every agent release has its Agent trailer, no duplicate or reused version, no secret shape, no v1 write, no overwritten record; .github/ and tools…"
+  },
+  {
+   "agent": "correspondent",
+   "finished": "2026-11-02T19:26:43Z",
+   "outcome": "ok",
+   "run": "20261102T1925Z-correspondent",
+   "started": "2026-11-02T19:25:47Z",
+   "summary": "19:25 wake (Sonnet), dev at 7b1476fa56b5, no notes, no new messages. Reviewed the journalist's batch 44 (data 45c588d, 5 claims plus the carried Dream row, vault e4bbd16da443) against captures in nnd3i8iw: 4 of the 6 rows checked (Let's AI: Wiz's 'about 67 percent fall' in exposed machines in its o…"
+  },
+  {
+   "agent": "observability",
+   "finished": "2026-11-02T20:34:47Z",
+   "outcome": "ok",
+   "run": "20261102T2033Z-observability",
+   "started": "2026-11-02T20:33:33Z",
+   "summary": "scheduled wake 20:33: sgit 0.26.0 (0.27.0 still has no release notes, board observability-0003); team dev 509cf505fbcc, no notes for me; drained 84wr8mib: 42 waiting in 1 of 5 lanes (under the 700 report level), 42 readable, 0 undecryptable; vault 4,715 events from 1,569 sessions, pushed and in syn…"
+  },
+  {
+   "agent": "security",
+   "finished": "2026-11-02T22:39:45Z",
+   "outcome": "ok",
+   "run": "20261102T2235Z-security",
+   "started": "2026-11-02T22:35:46Z",
+   "summary": "Nightly pass 4 (Sonnet, sgit 0.26.0), team dev 756c9b1bdf42. The scheduled task fired on 31 October, 1 November and 2 November at 22:35 but the three firings reached this session together at 22:35 on 2 November, so this one pass covers 30 October 22:40Z to now; no pass was made on the nights of 31…"
+  },
+  {
+   "agent": "desk",
+   "finished": "2026-11-03T00:42:26Z",
+   "outcome": "ok",
+   "run": "20261103T0040Z-desk",
+   "started": "2026-11-03T00:40:45Z",
+   "summary": "00:40 closing wake. Taken in: team 19662be, site (my own last release), data 45c588d (read-only). Closed 2026-11-02 (label Quiet, headline per role, coverage 0 by published date, closed_by desk@php.newsroom; no items: the agents were back, the journalist reviewed batches 42 to 44 with no catches, a…"
   }
  ],
  "schedules": [
@@ -3372,5 +3628,5 @@
   }
  ],
  "tz": "Europe/London",
- "version": "0.22.56"
+ "version": "0.22.57"
 }

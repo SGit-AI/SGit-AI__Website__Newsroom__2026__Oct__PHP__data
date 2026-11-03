@@ -1,7 +1,7 @@
 {
  "site": "php.oct.2026.newsroom.sgit.ai",
- "version": "0.22.56",
- "vault_commit": "b79970cfb056",
+ "version": "0.22.57",
+ "vault_commit": "e4bbd16da443",
  "title": "The story graph",
  "note": "A node means what its edges say about it. Every edge is a verb from data/ontology.json with a named inverse; there is no generic association edge. Parties are resolved through data/entities.json and data/attribution.json; relays are derived, so many outlets passing on one statement count as one origin.",
  "ontology": {
@@ -6172,6 +6172,49 @@
     {
      "name": "text.txt",
      "sha256": "7f962c4324c29bcf638323ac398a6f0acfffe054c449b2dfe19b6cf946add33b"
+    }
+   ]
+  },
+  {
+   "id": "source:12punto-bilim-teknoloji-php2shell-aciklarinda-tu",
+   "kind": "source",
+   "label": "12punto: PHP2Shell açıklarında Türkiye alarmı: Censys’e göre sürümünü açıklayan PHP hizmetlerinin yüzde 92,9’u riskli",
+   "href": "sources/12punto-bilim-teknoloji-php2shell-aciklarinda-tu/index.html",
+   "url": "https://12punto.com.tr/bilim-teknoloji/php2shell-aciklarinda-turkiye-alarmi-censyse-gore-surumunu-aciklayan-php-hizmetlerinin-yuzde-929u-riskli-156728",
+   "primary": false,
+   "published": "2026-10-23",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:12punto-bilim-teknoloji-php2shell-aciklarinda-tu/20261102T094333Z",
+   "kind": "capture",
+   "label": "12punto, captured 20261102T094333Z",
+   "href": "sources/12punto-bilim-teknoloji-php2shell-aciklarinda-tu/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "6edb934ac7785e9dd045d5bf88e258f6b51d8819fac21d6bc61ef11a6cd58063"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c27234d1ef7702a28f8520a966459e4877650de9fbe8e72073c348d9fce15472"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "32433c68c6924b1646cb69a86f3bcf64804c34146f7d99090efc87542076e478"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "38a15567d636295d48be24e1a0707ddb841ece2ef65e6fd813fe18f53dd9ee62"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "d641eb1bef36d875af0f57d2a3b592c9d95dfd535ffbb407e1f0a3aa703f9f24"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "3d12c1583394e5a804efbd3316a8147fc7c44d34a1484393a87d09238efdab89"
     }
    ]
   },
@@ -13280,6 +13323,49 @@
    ]
   },
   {
+   "id": "source:cybersecuritydive-news-insurance-industry-risk-php2shell-8",
+   "kind": "source",
+   "label": "Cybersecurity Dive: Insurance industry fears potential impacts from PHP2Shell | Cybersecurity Dive",
+   "href": "sources/cybersecuritydive-news-insurance-industry-risk-php2shell-8/index.html",
+   "url": "https://www.cybersecuritydive.com/news/insurance-industry-risk-php2shell/873044/",
+   "primary": false,
+   "published": "2026-10-28",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:cybersecuritydive-news-insurance-industry-risk-php2shell-8/20261102T094333Z",
+   "kind": "capture",
+   "label": "Cybersecurity Dive, captured 20261102T094333Z",
+   "href": "sources/cybersecuritydive-news-insurance-industry-risk-php2shell-8/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "e9d18383f235426aa009a63cb31250e68153aa7f009b15863778e9caf5dc96fb"
+    },
+    {
+     "name": "page.html",
+     "sha256": "4c5fec473a4bdb8d1c6cefbc7ff81aa5bbebff0f4c6d18a88358a90412ba7239"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "9214ab3c585648aa1ea13b35c4e477ecd6399248cf0c10ca3c168c96900d41ea"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "cb8373cdd3bca1f3bf71abc21b0788142ac8c2afe5094ee1bf89cb89309c6dc5"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "296f6d2e63dea67332ea51e730ae69d957f462408990a89844cb5fef9cb06d81"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "0d48586f2e2820c576d4aabc3abf7ca7ea54f175d3599b2e9c544e785ecf5438"
+    }
+   ]
+  },
+  {
    "id": "source:cybersecuritynews-critical-php2shell-exploit-code",
    "kind": "source",
    "label": "Cyber Security News: Critical PHP2Shell Exploit Code Goes Public as Hackers Attempt to Deploy Botnet Malware",
@@ -14225,6 +14311,49 @@
     {
      "name": "text.txt",
      "sha256": "7f84b5032782b4e06f6746e048d773e2586f5a11402bdec9fa11cbff0e1343fb"
+    }
+   ]
+  },
+  {
+   "id": "source:digitech-news-digital-01-11-2026-php2shell-vulnerabili",
+   "kind": "source",
+   "label": "digitech: Allarme PHP, siti offline e servizi storici verso la chiusura",
+   "href": "sources/digitech-news-digital-01-11-2026-php2shell-vulnerabili/index.html",
+   "url": "https://www.digitech.news/digital/01/11/2026/php2shell-vulnerabilita-siti-web-rischi/",
+   "primary": false,
+   "published": "2026-11-01",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:digitech-news-digital-01-11-2026-php2shell-vulnerabili/20261102T122013Z",
+   "kind": "capture",
+   "label": "digitech, captured 20261102T122013Z",
+   "href": "sources/digitech-news-digital-01-11-2026-php2shell-vulnerabili/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "88cc3f3dc68db3bd69a69fbcdc48a52a3bde05fe0951b4d527db80392a843203"
+    },
+    {
+     "name": "page.html",
+     "sha256": "2dddd54c32cb0594f58eb92232f100307bf9c38a04b8e86a486583544b85516f"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "e51863337618a52c3908e47a419fe2a699570e2b78c7fe7eff4dd95c3558be1b"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "6666b40eefe45635d5369f21d7dabb97b5ca23721ef54a6f0ada6663788070cb"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "9560b3545eb42b73aab691d600b96aa5be426a3dac52f31e0cde69963c08f7bd"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "538848b2cb9e52425a39b0e223e05f95e43fd5a173303eb0488442df332984b8"
     }
    ]
   },
@@ -20029,6 +20158,49 @@
    ]
   },
   {
+   "id": "source:it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri",
+   "kind": "source",
+   "label": "Blasting News: La crisi PHP2Shell rivela i limiti delle patch manuali: serve automazione",
+   "href": "sources/it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri/index.html",
+   "url": "https://it.blastingnews.com/tecnologia/2026/10/la-crisi-php2shell-rivela-i-limiti-delle-patch-manuali-serve-automazione-004196305.html",
+   "primary": false,
+   "published": "2026-10-28",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri/20261102T094333Z",
+   "kind": "capture",
+   "label": "Blasting News, captured 20261102T094333Z",
+   "href": "sources/it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "3a5b8cc61ddf476a5f042d56a824eced56ca3ada87e48a2d33ebe35aa33a2f59"
+    },
+    {
+     "name": "page.html",
+     "sha256": "0bfd235819766cfc660194010bb245c6d42d8d175780647be987eedf9c003a90"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "673e92bdee71b5a017057c4f12d7d33777c4ee1d2aabf12b6bed85e80d79e641"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "9c3e7d5679668c70243ba059e47589658e27447097af8382ddf2dfb3addc0084"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "2f47b6f1c2e08254631773ab2eb1da1b735f30709b823ddba02f8b7043b4d436"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "dd0ff0301363335ed36765fdd69f0cf03dd30e9257b61ccf05833b034e2e919c"
+    }
+   ]
+  },
+  {
    "id": "source:it-daily-shortnews-php2shell-die-aktuelle-lage",
    "kind": "source",
    "label": "it-daily.net: PHP2Shell: Die aktuelle Lage nach dem Patch",
@@ -20695,6 +20867,49 @@
     {
      "name": "text.txt",
      "sha256": "2754c8748f2b7f9f29581bbb88cb2c6a26211bcaeb2e2b32d67600fc4407d983"
+    }
+   ]
+  },
+  {
+   "id": "source:jeonmae-news-articleview-html",
+   "kind": "source",
+   "label": "전국매일신문: PHP 취약점 악용 사이버 공격…미국 정부 관련 시스템 등 서버 25대 장악 정황 - 전국매일신문 - 전국의 생생한 뉴스를 ‘한눈에’",
+   "href": "sources/jeonmae-news-articleview-html/index.html",
+   "url": "https://www.jeonmae.co.kr/news/articleView.html?idxno=1306439",
+   "primary": false,
+   "published": "2026-10-29",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:jeonmae-news-articleview-html/20261102T094333Z",
+   "kind": "capture",
+   "label": "전국매일신문, captured 20261102T094333Z",
+   "href": "sources/jeonmae-news-articleview-html/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "bbfe20997e1f5f9b7780eb7f9e06e46dc82d7e774e09354e1e7d2cd2f21ca6f4"
+    },
+    {
+     "name": "page.html",
+     "sha256": "c844016518e44ef78e4eb51f11e79fd5ed435af29f1298f93c9527b486e05988"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "12549be44aa0d3fdc687f598a4146b810785aba89cac4cc366485568a45ecc57"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "0b8f0f37adbdc455feda7125bdb3f5b840013df629a5b70d7ffdf64536efc1f2"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "03c4d58bc1c3e6c40c316ed35a0e3fe28ac8f79f0d27fdeedeed058d84d5b2be"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "fd7150ff3635b6523b72a72faf50ad4615f370240b513d3ddc4e228316ccb972"
     }
    ]
   },
@@ -22093,6 +22308,49 @@
     {
      "name": "text.txt",
      "sha256": "4330f33c3b6763a95df44d21cfc602ec5f9bfd9df6141e863545c6a9a276cf4e"
+    }
+   ]
+  },
+  {
+   "id": "source:letsai-php2shell-security-flaws",
+   "kind": "source",
+   "label": "Let's AI: מה השתבש באירוע PHP2Shell ולמה נסגרו אתרים? | Let's AI בינה מלאכותית",
+   "href": "sources/letsai-php2shell-security-flaws/index.html",
+   "url": "https://letsai.co.il/php2shell-security-flaws/",
+   "primary": false,
+   "published": "2026-10-29",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:letsai-php2shell-security-flaws/20261102T155746Z",
+   "kind": "capture",
+   "label": "Let's AI, captured 20261102T155746Z",
+   "href": "sources/letsai-php2shell-security-flaws/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "a6ccb9e9bfed7dc29a02f8f030e6d38e56b7e8b4c6e9723fa149b14c45fa77ca"
+    },
+    {
+     "name": "page.html",
+     "sha256": "0c1d9d66953cdbd051cde531c39227b36682c73e121be8e25864b8ae5de48e87"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "55c8cf50afd150d92831d1cf9916400643f20069a57b31a3a43795ffad535731"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "5ec8785f31b406eaf4654f287dda8a206c605e729a31bc7edace6903583186f2"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "8355824bf0630bc67cb96fa5b03ebbf53f56f08c6f7eba54e26cc720159bd19c"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "287891a809b4b07aec269cf2df43f51f7d026c6ff8ac2c2b5c52b6e11a39df62"
     }
    ]
   },
@@ -27124,6 +27382,49 @@
    ]
   },
   {
+   "id": "source:panamericana-tecnologia-476200-alerta-mundial-fallas",
+   "kind": "source",
+   "label": "Panamericana TV: Alerta mundial por fallas en PHP: ¿Qué es y por...",
+   "href": "sources/panamericana-tecnologia-476200-alerta-mundial-fallas/index.html",
+   "url": "https://panamericana.pe/tecnologia/476200-alerta-mundial-fallas-php-amenaza-millones-paginas-web",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:panamericana-tecnologia-476200-alerta-mundial-fallas/20261031T144233Z",
+   "kind": "capture",
+   "label": "Panamericana TV, captured 20261031T144233Z",
+   "href": "sources/panamericana-tecnologia-476200-alerta-mundial-fallas/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "5dab6332c40b9465154507f9257c6188914e1996df8d5cceee01ade10151e661"
+    },
+    {
+     "name": "page.html",
+     "sha256": "8dd6812355c6604e204c50ded9760f51383df58bf3c259959aa36a4518da980c"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "7a37079b64faa74e433e48d3398a35e083ddc0a4c5534ccc7e4881fda89db596"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "f41ac54d4e7548dcd584d92f1eab5a0687bc46ceb976e486177244b9b54e39f1"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "0a2eebd8537531981b342867975989b68bb591be8a6725eb20932f0b4bfeb3d6"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "98bcc935e2943374571ad022986043ba8ecc02e6e2c25c825678ebc49cfffbe3"
+    }
+   ]
+  },
+  {
    "id": "source:paperjam-article-php2shell-des-milliers-de-sites",
    "kind": "source",
    "label": "Paperjam: PHP2Shell: des milliers de sites exposés au Luxembourg | Paperjam News",
@@ -28885,6 +29186,49 @@
     {
      "name": "text.txt",
      "sha256": "455f6f3614b4acfb45ef4b051f2db40c015a61a3e797016042ca5ff9c0a00f9f"
+    }
+   ]
+  },
+  {
+   "id": "source:redusers-noticias-publicaciones-pllhp2she",
+   "kind": "source",
+   "label": "RedUSERS: PHP2Shell: LA FALLA QUE DEJÓ 22 MILLONES DE SERVIDORES EXPUESTOS - RedUSERS",
+   "href": "sources/redusers-noticias-publicaciones-pllhp2she/index.html",
+   "url": "https://www.redusers.com/noticias/publicaciones/pllhp2she/",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:redusers-noticias-publicaciones-pllhp2she/20261102T122013Z",
+   "kind": "capture",
+   "label": "RedUSERS, captured 20261102T122013Z",
+   "href": "sources/redusers-noticias-publicaciones-pllhp2she/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "7f790398fc52fa015d4e800f1560d50a2da81734e6d6671a891bc65aa53179ad"
+    },
+    {
+     "name": "page.html",
+     "sha256": "0ea848aee6be53b0a787b18e15727025c2d2f1bc3ac1f5c929a4ee63fd1d5867"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "f108e929aa4fd2739bb711764239748c4c13839018a4a12c8ca746b69b707606"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "618046e06bcc2247bcc5dda15803d48d19c8189fd7012bcb1025b61caff8c5e7"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "3b7ae3524488293efa75942133d20b741dd2c6d7b694a01b333bed1a96e9a2c5"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "b0ffb1e130195a9f7846c4cb7fa96ba230c1294ab292bc83ac2f45d50240b002"
     }
    ]
   },
@@ -38609,6 +38953,49 @@
    ]
   },
   {
+   "id": "source:zscaler-fr-blogs-cybersecurity-best-practices-ph",
+   "kind": "source",
+   "label": "Zscaler: PHP2Shell Response | SecOps Remediation Playbook | Zscaler",
+   "href": "sources/zscaler-fr-blogs-cybersecurity-best-practices-ph/index.html",
+   "url": "https://www.zscaler.com/fr/blogs/cybersecurity-best-practices/php2shell-and-limits-patching-secops-playbook-layered-response",
+   "primary": false,
+   "published": "not stated in the capture",
+   "source_kind": "news"
+  },
+  {
+   "id": "capture:zscaler-fr-blogs-cybersecurity-best-practices-ph/20261102T072810Z",
+   "kind": "capture",
+   "label": "Zscaler, captured 20261102T072810Z",
+   "href": "sources/zscaler-fr-blogs-cybersecurity-best-practices-ph/index.html",
+   "http_status": 200,
+   "files": [
+    {
+     "name": "headers.json",
+     "sha256": "44870fc3e002bcf2d4b868e3e3c7352cdb6543ef18bb3254d4f018357d8ef8cd"
+    },
+    {
+     "name": "page.html",
+     "sha256": "636afa9c757f76c9bc8a3e0b837f6568a18a95be4cf4003e76053ffef4ced608"
+    },
+    {
+     "name": "provenance.json",
+     "sha256": "14fc14be1c64b9d3244bd22fe73c31eecefd9f3d1fe5a5ba019a70b5c20cd731"
+    },
+    {
+     "name": "rendered.html",
+     "sha256": "b5b1257ee44a0aa42c6fc60cd6846c4dcfdde559e4bbfe8228b8cd356cd5180f"
+    },
+    {
+     "name": "screenshot.jpg",
+     "sha256": "4d4d964c9a32dac185ef2a4733a5e793d8d4552d9e2991af72cc42ad5511f78f"
+    },
+    {
+     "name": "text.txt",
+     "sha256": "7cabdeaedd5c18012a5465fd9ec8a5cb18fa6c0d230a9953dfa83195fbe4714f"
+    }
+   ]
+  },
+  {
    "id": "cve:CVE-2024-4577",
    "kind": "cve",
    "label": "CVE-2024-4577",
@@ -40889,6 +41276,11 @@
    "to": "capture:01net-actualites-failles-php-pourquoi-cest-vra/20261023T160435Z"
   },
   {
+   "from": "source:12punto-bilim-teknoloji-php2shell-aciklarinda-tu",
+   "verb": "captured_in",
+   "to": "capture:12punto-bilim-teknoloji-php2shell-aciklarinda-tu/20261102T094333Z"
+  },
+  {
    "from": "source:20-minuten-20min-fr-suisse-romande",
    "verb": "published_by",
    "to": "party:20-minuten"
@@ -42460,6 +42852,11 @@
    "to": "capture:cybersecurity360-nuove-minacce-php2shell-due-vulnerabilit/20261023T160435Z"
   },
   {
+   "from": "source:cybersecuritydive-news-insurance-industry-risk-php2shell-8",
+   "verb": "captured_in",
+   "to": "capture:cybersecuritydive-news-insurance-industry-risk-php2shell-8/20261102T094333Z"
+  },
+  {
    "from": "source:cybersecuritynews-critical-php2shell-exploit-code",
    "verb": "published_by",
    "to": "party:cybersecuritynews"
@@ -42658,6 +43055,11 @@
    "from": "source:digitaltoday-cn-view-118322-stealien-launches-free-ph",
    "verb": "captured_in",
    "to": "capture:digitaltoday-cn-view-118322-stealien-launches-free-ph/20261023T160435Z"
+  },
+  {
+   "from": "source:digitech-news-digital-01-11-2026-php2shell-vulnerabili",
+   "verb": "captured_in",
+   "to": "capture:digitech-news-digital-01-11-2026-php2shell-vulnerabili/20261102T122013Z"
   },
   {
    "from": "source:distributique-actualites-lire-php-des-failles-critique",
@@ -43926,6 +44328,11 @@
    "to": "capture:it-administrator-php2shell-patchtempo-altversionen/20261031T094210Z"
   },
   {
+   "from": "source:it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri",
+   "verb": "captured_in",
+   "to": "capture:it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri/20261102T094333Z"
+  },
+  {
    "from": "source:it-daily-shortnews-php2shell-die-aktuelle-lage",
    "verb": "published_by",
    "to": "party:it-daily-net"
@@ -44069,6 +44476,11 @@
    "from": "source:jawapos-teknologi-2610230446-celah-php2shell-anc",
    "verb": "captured_in",
    "to": "capture:jawapos-teknologi-2610230446-celah-php2shell-anc/20261024T133450Z"
+  },
+  {
+   "from": "source:jeonmae-news-articleview-html",
+   "verb": "captured_in",
+   "to": "capture:jeonmae-news-articleview-html/20261102T094333Z"
   },
   {
    "from": "source:jeuxvideo-news-2110338-une-faille-critique-dans-ph",
@@ -44384,6 +44796,11 @@
    "from": "source:letemps-php-sites-debranches",
    "verb": "captured_in",
    "to": "capture:letemps-php-sites-debranches/20261022T081413Z"
+  },
+  {
+   "from": "source:letsai-php2shell-security-flaws",
+   "verb": "captured_in",
+   "to": "capture:letsai-php2shell-security-flaws/20261102T155746Z"
   },
   {
    "from": "source:libertatea-stiri-ce-este-vulnerabilitatea-php-care",
@@ -45421,6 +45838,11 @@
    "to": "capture:paloalto-psirt-cve-2026-109618/20261022T191713Z"
   },
   {
+   "from": "source:panamericana-tecnologia-476200-alerta-mundial-fallas",
+   "verb": "captured_in",
+   "to": "capture:panamericana-tecnologia-476200-alerta-mundial-fallas/20261031T144233Z"
+  },
+  {
    "from": "source:paperjam-article-php2shell-des-milliers-de-sites",
    "verb": "published_by",
    "to": "party:paperjam"
@@ -45819,6 +46241,11 @@
    "from": "source:recordedfuture-php2shell",
    "verb": "captured_in",
    "to": "capture:recordedfuture-php2shell/20261023T232528Z"
+  },
+  {
+   "from": "source:redusers-noticias-publicaciones-pllhp2she",
+   "verb": "captured_in",
+   "to": "capture:redusers-noticias-publicaciones-pllhp2she/20261102T122013Z"
   },
   {
    "from": "source:repubblica-tecnologia-2026-10-21-news-php2shell-ia",
@@ -47931,6 +48358,11 @@
    "from": "source:zoomtecnologico-2026-10-26-php-php2shell-chile",
    "verb": "captured_in",
    "to": "capture:zoomtecnologico-2026-10-26-php-php2shell-chile/20261027T121358Z"
+  },
+  {
+   "from": "source:zscaler-fr-blogs-cybersecurity-best-practices-ph",
+   "verb": "captured_in",
+   "to": "capture:zscaler-fr-blogs-cybersecurity-best-practices-ph/20261102T072810Z"
   },
   {
    "from": "party:php-group",
@@ -53079,6 +53511,9 @@
   "party:washington-post"
  ],
  "unmapped_publishers": {
+  "12punto": [
+   "12punto-bilim-teknoloji-php2shell-aciklarinda-tu"
+  ],
   "ActualAPP": [
    "actualapp-tutoriales-vulnerabilidad-critica-php-we"
   ],
@@ -53093,6 +53528,9 @@
   ],
   "BitMAT": [
    "bitmat-news-caso-php2shell-la-vera-sfida-e-nell"
+  ],
+  "Blasting News": [
+   "it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri"
   ],
   "Börse Online": [
    "boerse-online-nachrichten-aktien-riesige-php-sicherhei"
@@ -53114,6 +53552,9 @@
   ],
   "CybersecAsia": [
    "cybersecasia-tips-understanding-php2shell-vulnerabili"
+  ],
+  "Cybersecurity Dive": [
+   "cybersecuritydive-news-insurance-industry-risk-php2shell-8"
   ],
   "Der Standard": [
    "derstandard-story-3000000345274-warnung-vor-extrem-g"
@@ -53180,6 +53621,9 @@
   "Lensa Banten": [
    "lensabanten-waspada-php2shell-diskominfo-kota-tanger"
   ],
+  "Let's AI": [
+   "letsai-php2shell-security-flaws"
+  ],
   "Metro.co.uk": [
    "metro-2026-10-22-worried-php-cybersecurity-cri"
   ],
@@ -53215,6 +53659,12 @@
   ],
   "Okta": [
    "okta-access-gateway-php"
+  ],
+  "Panamericana TV": [
+   "panamericana-tecnologia-476200-alerta-mundial-fallas"
+  ],
+  "RedUSERS": [
+   "redusers-noticias-publicaciones-pllhp2she"
   ],
   "Rockwell Automation": [
    "rockwell-automation-rockwell-sd1802"
@@ -53298,6 +53748,9 @@
   "WordPress.org": [
    "wordpress-critical-php-security-release"
   ],
+  "Zscaler": [
+   "zscaler-fr-blogs-cybersecurity-best-practices-ph"
+  ],
   "broccoli2shell.com": [
    "broccoli2shell-com"
   ],
@@ -53306,6 +53759,9 @@
   ],
   "cybersecurity-insiders": [
    "cybersecurity-insiders-offsec-launches-free-php2shell-lab-follo"
+  ],
+  "digitech": [
+   "digitech-news-digital-01-11-2026-php2shell-vulnerabili"
   ],
   "frenchbreaches": [
    "frenchbreaches-blog-faille-php-un-hacker-diffuse-un-out"
@@ -53372,6 +53828,9 @@
   ],
   "메트로신문": [
    "metroseoul-article-20261029500571"
+  ],
+  "전국매일신문": [
+   "jeonmae-news-articleview-html"
   ],
   "조선비즈": [
    "biz-chosun-it-science-ict-2026-10-27-4r6jyu5n2fclbj"

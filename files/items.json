@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.56",
+"site": "0.22.57",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -127,11 +127,11 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "ea630369eff3",
-"v": 21,
+"hash": "df9ab42ab783",
+"v": 22,
 "first": "0.1.0",
-"changed": "0.22.56",
-"date": "2026-11-02",
+"changed": "0.22.57",
+"date": "2026-11-03",
 "history": "versions/page-method/index.html"
 },
 "briefing-board": {
@@ -1243,11 +1243,11 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "dacd405bead8",
-"v": 24,
+"hash": "64fe071c0700",
+"v": 25,
 "first": "0.3.1",
-"changed": "0.22.56",
-"date": "2026-11-02",
+"changed": "0.22.57",
+"date": "2026-11-03",
 "history": "versions/page-summary/index.html"
 },
 "front-now": {
@@ -2115,6 +2115,17 @@
 "first": "0.10.19",
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
+},
+"src-12punto-bilim-teknoloji-php2shell-aciklarinda-tu": {
+"kind": "source",
+"zone": "research",
+"title": "12punto: PHP2Shell açıklarında Türkiye alarmı: Censys’e göre sürümünü açıklayan PHP hizmetlerinin yüzde 92,9’u riskli",
+"path": "sources/12punto-bilim-teknoloji-php2shell-aciklarinda-tu/index.html",
+"hash": "2ba8c4fbb16a",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T09:43Z"
 },
 "src-20-minuten-20min-fr-suisse-romande": {
 "kind": "source",
@@ -3898,6 +3909,17 @@
 "changed": "0.15.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-cybersecuritydive-news-insurance-industry-risk-php2shell-8": {
+"kind": "source",
+"zone": "research",
+"title": "Cybersecurity Dive: Insurance industry fears potential impacts from PHP2Shell | Cybersecurity Dive",
+"path": "sources/cybersecuritydive-news-insurance-industry-risk-php2shell-8/index.html",
+"hash": "d76f9ecd8142",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T09:43Z"
+},
 "src-cybersecuritynews-critical-php2shell-exploit-code": {
 "kind": "source",
 "zone": "research",
@@ -4128,6 +4150,17 @@
 "first": "0.15.19",
 "changed": "0.15.19",
 "date": "2026-10-23T16:04Z"
+},
+"src-digitech-news-digital-01-11-2026-php2shell-vulnerabili": {
+"kind": "source",
+"zone": "research",
+"title": "digitech: Allarme PHP, siti offline e servizi storici verso la chiusura",
+"path": "sources/digitech-news-digital-01-11-2026-php2shell-vulnerabili/index.html",
+"hash": "0a0e7664e4c8",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T12:20Z"
 },
 "src-distributique-actualites-lire-php-des-failles-critique": {
 "kind": "source",
@@ -5570,6 +5603,17 @@
 "changed": "0.22.56",
 "date": "2026-10-31T09:42Z"
 },
+"src-it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri": {
+"kind": "source",
+"zone": "research",
+"title": "Blasting News: La crisi PHP2Shell rivela i limiti delle patch manuali: serve automazione",
+"path": "sources/it-blastingnews-tecnologia-2026-10-la-crisi-php2shell-ri/index.html",
+"hash": "05616f557455",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T09:43Z"
+},
 "src-it-daily-shortnews-php2shell-die-aktuelle-lage": {
 "kind": "source",
 "zone": "research",
@@ -5734,6 +5778,17 @@
 "first": "0.19.2",
 "changed": "0.19.2",
 "date": "2026-10-24T13:34Z"
+},
+"src-jeonmae-news-articleview-html": {
+"kind": "source",
+"zone": "research",
+"title": "전국매일신문: PHP 취약점 악용 사이버 공격…미국 정부 관련 시스템 등 서버 25대 장악 정황 - 전국매일신문 - 전국의 생생한 뉴스를 ‘한눈에’",
+"path": "sources/jeonmae-news-articleview-html/index.html",
+"hash": "6780ebf7b035",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T09:43Z"
 },
 "src-jeuxvideo-news-2110338-une-faille-critique-dans-ph": {
 "kind": "source",
@@ -6097,6 +6152,17 @@
 "first": "0.10.3",
 "changed": "0.10.3",
 "date": "2026-10-22T08:14Z"
+},
+"src-letsai-php2shell-security-flaws": {
+"kind": "source",
+"zone": "research",
+"title": "Let's AI: מה השתבש באירוע PHP2Shell ולמה נסגרו אתרים? | Let's AI בינה מלאכותית",
+"path": "sources/letsai-php2shell-security-flaws/index.html",
+"hash": "9268bde16418",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T15:57Z"
 },
 "src-libertatea-stiri-ce-este-vulnerabilitatea-php-care": {
 "kind": "source",
@@ -7308,6 +7374,17 @@
 "changed": "0.10.3",
 "date": "2026-10-22T19:17Z"
 },
+"src-panamericana-tecnologia-476200-alerta-mundial-fallas": {
+"kind": "source",
+"zone": "research",
+"title": "Panamericana TV: Alerta mundial por fallas en PHP: ¿Qué es y por...",
+"path": "sources/panamericana-tecnologia-476200-alerta-mundial-fallas/index.html",
+"hash": "d53a99107193",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-10-31T14:42Z"
+},
 "src-paperjam-article-php2shell-des-milliers-de-sites": {
 "kind": "source",
 "zone": "research",
@@ -7714,6 +7791,17 @@
 "first": "0.4.1",
 "changed": "0.15.19",
 "date": "2026-10-24"
+},
+"src-redusers-noticias-publicaciones-pllhp2she": {
+"kind": "source",
+"zone": "research",
+"title": "RedUSERS: PHP2Shell: LA FALLA QUE DEJÓ 22 MILLONES DE SERVIDORES EXPUESTOS - RedUSERS",
+"path": "sources/redusers-noticias-publicaciones-pllhp2she/index.html",
+"hash": "39e083fc579b",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T12:20Z"
 },
 "src-repubblica-tecnologia-2026-10-21-news-php2shell-ia": {
 "kind": "source",
@@ -10002,6 +10090,17 @@
 "first": "0.22.46",
 "changed": "0.22.46",
 "date": "2026-10-27T12:13Z"
+},
+"src-zscaler-fr-blogs-cybersecurity-best-practices-ph": {
+"kind": "source",
+"zone": "research",
+"title": "Zscaler: PHP2Shell Response | SecOps Remediation Playbook | Zscaler",
+"path": "sources/zscaler-fr-blogs-cybersecurity-best-practices-ph/index.html",
+"hash": "16a5fc297775",
+"v": 1,
+"first": "0.22.57",
+"changed": "0.22.57",
+"date": "2026-11-02T07:28Z"
 },
 "home-moments": {
 "kind": "front",
