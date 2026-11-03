@@ -2,10 +2,18 @@
  "about": "The public shape of the source watch, exported by admin/build/export_watch.py. Counts and vocabularies only: no capture is copied.",
  "vault_id": "7r83qic5",
  "head": {
-  "commit": "7414e9eaf401",
-  "message": "researcher@php.newsroom: pass 20261103T0708Z phase 2 of 2: discovery"
+  "commit": "ed50208d75fb",
+  "message": "researcher@php.newsroom: pass 20261103T0937Z phase 2 of 2: discovery"
  },
  "commits": [
+  {
+   "commit": "ed50208d75fb",
+   "message": "researcher@php.newsroom: pass 20261103T0937Z phase 2 of 2: discovery"
+  },
+  {
+   "commit": "93a1b1ed71e3",
+   "message": "researcher@php.newsroom: pass 20261103T0937Z phase 1 of 2: captures, the curator queue, series and analysis"
+  },
   {
    "commit": "7414e9eaf401",
    "message": "researcher@php.newsroom: pass 20261103T0708Z phase 2 of 2: discovery"
@@ -193,27 +201,19 @@
   {
    "commit": "25115838a673",
    "message": "researcher@php.newsroom: pass 20261028T0938Z phase 2 of 2: discovery"
-  },
-  {
-   "commit": "bac9b122b0d3",
-   "message": "researcher@php.newsroom: pass 20261028T0938Z phase 1 of 2: captures, the curator queue, series and analysis"
-  },
-  {
-   "commit": "a030e66ad0c4",
-   "message": "researcher@php.newsroom: pass 20261028T0703Z phase 2 of 2: discovery"
   }
  ],
- "pages": 1559,
- "publishers": 1182,
+ "pages": 1562,
+ "publishers": 1185,
  "country": {
   "us": 320,
-  "int": 240,
+  "int": 241,
   "nl": 85,
   "de": 72,
   "gb": 58,
   "fr": 57,
   "kr": 56,
-  "au": 50,
+  "au": 51,
   "jp": 46,
   "tr": 39,
   "it": 36,
@@ -250,11 +250,11 @@
   "cn": 5,
   "co": 5,
   "se": 5,
+  "gr": 4,
   "il": 4,
   "lu": 4,
   "ua": 4,
   "ae": 3,
-  "gr": 3,
   "uy": 3,
   "ee": 2,
   "lt": 2,
@@ -270,8 +270,8 @@
   "tn": 1
  },
  "sector": {
-  "news": 853,
-  "affected": 203,
+  "news": 855,
+  "affected": 204,
   "aggregator": 140,
   "cert": 94,
   "security-vendor": 68,
@@ -289,7 +289,7 @@
   "tool": 1
  },
  "lang": {
-  "en": 707,
+  "en": 709,
   "de": 106,
   "fr": 104,
   "es": 79,
@@ -312,8 +312,8 @@
   "hu": 9,
   "bg": 8,
   "uk": 7,
+  "el": 6,
   "sv": 6,
-  "el": 5,
   "he": 5,
   "lt": 5,
   "ms": 5,
@@ -325,25 +325,25 @@
   "sl": 1
  },
  "access": {
-  "open": 1335,
+  "open": 1346,
   "bot-challenge": 123,
-  "down": 64,
-  "paywalled": 23,
+  "down": 55,
+  "paywalled": 24,
   "gone": 12,
   "geo-blocked": 1,
   "login-wall": 1
  },
  "tiers": {
   "A": 76,
-  "B": 1114,
+  "B": 1118,
   "C": 16
  },
- "snapshots": 21646,
- "graphs": 21621,
- "files": 168106,
+ "snapshots": 22443,
+ "graphs": 22418,
+ "files": 173736,
  "world_graph": {
-  "nodes": 2854,
-  "edges": 5690
+  "nodes": 2860,
+  "edges": 5702
  },
  "access_classes": [
   {
@@ -2528,6 +2528,39 @@
     "down": 36,
     "paywalled": 23,
     "gone": 9,
+    "geo-blocked": 1,
+    "login-wall": 1
+   }
+  },
+  {
+   "run": "20261103T093829Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-11-03T09:38:29Z",
+   "finished": "2026-11-03T09:44:30Z",
+   "pages_due": 204,
+   "pages_total": 1562,
+   "changed": 64,
+   "access": {
+    "open": 165,
+    "bot-challenge": 13,
+    "down": 25,
+    "gone": 1
+   }
+  },
+  {
+   "run": "20261103T094430Z",
+   "agent": "researcher@php.newsroom",
+   "started": "2026-11-03T09:44:30Z",
+   "finished": "2026-11-03T10:15:07Z",
+   "pages_due": 1247,
+   "pages_total": 1562,
+   "changed": 733,
+   "access": {
+    "open": 1083,
+    "bot-challenge": 106,
+    "down": 24,
+    "paywalled": 24,
+    "gone": 8,
     "geo-blocked": 1,
     "login-wall": 1
    }
