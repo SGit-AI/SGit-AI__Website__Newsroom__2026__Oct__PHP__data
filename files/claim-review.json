@@ -7728,6 +7728,61 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-11-04T08:42Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur48-sisunnews-kr-not-confirmed",
+   "verdict": "noted",
+   "reason": "Capture checked (Korean, 2 November): per Dream, an attacker chained the PHP flaw with a Linux privilege-escalation flaw to take top administrator rights on 24 firewalls and 1 internal management server; Korea, the US, Japan and Taiwan firewalls were among the targets, but whether Korean systems were actually breached 'has not yet been confirmed'. A relayed statement of Dream's one report (reported by Dream, not independently confirmed); consistent with cur31-metroseoul-no-kr-damage and cur42-jeonmae-dream-scope. The page names no firewall vendor.",
+   "sources": [
+    "sisunnews-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur48-sisunnews-kr-alert-22oct",
+   "verdict": "agrees",
+   "reason": "Capture checked: the science ministry and KISA raised the private-sector cyber crisis alert from 'interest' to 'caution' on 22 October. Agrees with cur23-news1-kr-caution-alert, cur24-newstomato-kr-alert-22oct and cur30-kswnews-kr-alert-reach; one more outlet repeating the same official step.",
+   "sources": [
+    "sisunnews-news-articleview-html"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur48-hackread-calif-credit",
+   "verdict": "held back",
+   "reason": "Capture checked: the page says Calif 'later credited independent researcher @lcfr_hax with first finding PHP2Shell and developing a working exploit', quoting Calif's post of 21 October ('Let's set the record straight: ... was the first to discover php2shell and develop a working exploit. See his August 5 tweet ... His work convinced the PHP Foundation to invest in fixing this entire bug class'). 'Independent' is the outlet's word: the site already carries that handle as Calif's own reporter (four-reporters: lcfr-hax (Calif)), Calif's write-up names its researcher as that handle's owner (cur12-austin-gpt56-audit), and who-first has Calif's discovery on 1 August, a hash tweet on 5 August and the report on 11 August. The page's 'independent researcher' therefore conflicts with the site's reading; the quoted Calif post itself, which is primary and not in the vault apart from this embed, does not call him independent. Not stated as worded.",
+   "sources": [
+    "hackread-php-releases-emergency-fixe-php2shell-vu"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur48-hackread-mod-php-highest",
+   "verdict": "agrees",
+   "reason": "Capture checked: PHP maintainers consider Apache mod_php the highest-risk deployment because the attack works before the site's own code runs; an attacker gains the permissions of the process handling web requests, not automatically administrator rights over the server. Agrees with cur28-okdiario-versions-scope and Rapid7's remark (cur35-educator-rapid7-caution); it also fits why Dream's chain used a second, local privilege-escalation flaw (cur36-innovatopia-dream-chain, reported by Dream).",
+   "sources": [
+    "hackread-php-releases-emergency-fixe-php2shell-vu"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T11:12Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur48-hackread-wordpress-not-php",
+   "verdict": "noted",
+   "reason": "Capture checked: 'Updating WordPress, its plugins or themes does not replace the server's PHP installation'; website owners on managed hosting should ask the provider to confirm the PHP runtime is patched. The outlet's practical advice, not from the advisory; agrees in substance with cur25-sbircia-restart's provider questions and cur46-it24hrs-embedded-php. Not used.",
+   "sources": [
+    "hackread-php-releases-emergency-fixe-php2shell-vu"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T11:12Z",
+   "by": "claude-journalist"
   }
  ]
 }
