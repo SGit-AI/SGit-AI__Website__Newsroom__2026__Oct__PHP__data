@@ -9128,5 +9128,65 @@
   "topic": "exploitation",
   "note": "Monitoring (honeypot-type) environments, not production victims; the analysis itself is not in the vault and the page gives no counts. Compare cur27-muycomputerpro-honeypot-24oct and cur46-dcod-honeypot-35.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur48-sisunnews-kr-not-confirmed",
+  "claim": "Whether Korean systems were actually compromised had not been confirmed as of 2 November, although firewalls in Korea were among the targets in the Dream Research report",
+  "by": "Sisun News (relaying Dream Research)",
+  "sources": [
+   "sisunnews-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "A relayed statement, not independent confirmation; the 25-server count is the same Dream Research report as cur31-metroseoul-dream-research and cur38-taiwannews-dream-25, which also say the scope is firewalls and a management server, not general PHP sites.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur48-sisunnews-kr-alert-22oct",
+  "claim": "The Ministry of Science and ICT and KISA raised the private-sector cyber crisis alert from 'interest' to 'caution' on 22 October",
+  "by": "Sisun News",
+  "sources": [
+   "sisunnews-news-articleview-html"
+  ],
+  "status": "reported",
+  "topic": "agencies",
+  "note": "Consistent with cur24-newstomato-kr-alert-22oct and cur23-news1-kr-caution-alert; one more outlet repeating the same official step, not independent of them.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur48-hackread-calif-credit",
+  "claim": "Calif later credited an independent researcher with first finding PHP2Shell and developing a working exploit, saying that work persuaded the PHP Foundation to fund fixes for the entire bug class",
+  "by": "Hackread (relaying a Calif post of 21 October)",
+  "sources": [
+   "hackread-php-releases-emergency-fixe-php2shell-vu"
+  ],
+  "status": "reported",
+  "topic": "discovery",
+  "note": "Attribution of first discovery as stated by Calif; differs in emphasis from OpenAI's account that Calif found the flaw with GPT-5.6 Sol. The researcher is not named here. Compare cur23-itfb-calif-video and cur39-safestate-discovery-credit.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur48-hackread-mod-php-highest",
+  "claim": "PHP maintainers consider Apache mod_php the highest-risk deployment, and exploitation gives the rights of the process handling web requests, not automatic server administrator rights",
+  "by": "Hackread (relaying PHP's advisories)",
+  "sources": [
+   "hackread-php-releases-emergency-fixe-php2shell-vu"
+  ],
+  "status": "reported",
+  "topic": "impact",
+  "note": "Matches the advisory scope reported elsewhere in the vault; the process-rights limit is why the Dream Research chain needed a second, privilege-escalation flaw.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur48-hackread-wordpress-not-php",
+  "claim": "Updating WordPress, its plugins or themes does not replace the server's PHP installation, so site owners on managed hosting should ask their provider to confirm the PHP runtime is patched",
+  "by": "Hackread",
+  "sources": [
+   "hackread-php-releases-emergency-fixe-php2shell-vu"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Practical advice by the outlet, not from the advisory itself.",
+  "agent": "curator@php.newsroom"
  }
 ]

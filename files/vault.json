@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "b531d687926a",
-  "subject": "curator@php.newsroom: batch 47, two sources from the source watch (Excite/Scan Net Security, eSemanal): 3 claims cur47-  +16 ~3  [blobs:+19 trees:+10]",
+  "commit": "370365aa7960",
+  "subject": "curator@php.newsroom: batch 48, two sources from the source watch (Sisun News, Hackread): 5 claims cur48-  +16 ~3  [blobs:+19 trees:+10]",
   "commits": 50
  },
- "sources": 737,
- "captures": 803,
- "hashed_files": 4694,
+ "sources": 739,
+ "captures": 805,
+ "hashed_files": 4706,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-11-03T17:16Z",
+ "latest_capture": "2026-11-04T09:44Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

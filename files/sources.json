@@ -13816,6 +13816,56 @@
   "notes_md": "# What You Need to Know About the PHP2Shell Vulnerabilities | HackerNoon\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `gb/news/hackernoon/what-you-need-to-know-about-the-php2shell-vulnerabilities`, snapshot `20261028T071103Z`. Copied byte for byte; every file's sha256 is in `captures/20261028T071103Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA long plain-language explainer on HackerNoon about PHP2Shell, written without payloads or step-by-step detail. It gives the patched versions (8.5.12, 8.4.27, 8.3.36, 8.2.35), notes that PHP 8.1 and older no longer get updates from the PHP project and that php.net says there is no complete mitigation, relays Wiz's estimate that about 70% of websites run PHP (which the BBC said it could not independently verify), and sets out a UTC disclosure timeline: CVE ids circulating from about 15:00 UTC on 20 October with a wrong release time and a CVSS of 10.0, a pre-announcement at 19:30 UTC, release brought forward from 22 to 21 October at 14:00 UTC, a mistakenly published proof-of-concept video, and Chainguard's publication of built images with the fix at 07:41 UTC on 21 October, more than six hours before the coordinated release, which the PHP Foundation describes as breaking the embargo (disputed by Chainguard's leadership). It adds that Amazon's honeypots logged an exploitation attempt as early as 17 October, and describes the outages operators chose as precaution.\n\n> PHP 8.1 and older no longer get updates from the PHP project itself.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"What You Need to Know About the PHP2Shell Vulnerabilities | HackerNoon\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en`. The capture shows no publication date, so none is recorded; the text speaks of the events of 21 October. The explainer describes how the flaws work only in analogy; none of that is copied into the notes. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "hackread-php-releases-emergency-fixe-php2shell-vu",
+  "url": "https://hackread.com/php-releases-emergency-fixe-php2shell-vulnerabilities/",
+  "publisher": "Hackread",
+  "kind": "news",
+  "title": "PHP Releases Emergency Fixes for Critical PHP2Shell Vulnerabilities",
+  "published": "2026-10-21",
+  "captures": [
+   {
+    "stamp": "20261104T094423Z",
+    "files": {
+     "headers.json": {
+      "sha256": "be51a67ea50f9608c53e0343aaddb1e24bc78f7ddc05ae2729036546e6180a9c",
+      "bytes": 1332
+     },
+     "page.html": {
+      "sha256": "b1e349cac44e9aef0fe4c879b127d0c4a0d84a8dabfc39350d2a8a3370c66145",
+      "bytes": 262606
+     },
+     "provenance.json": {
+      "sha256": "bd9b6b29ed1350498bbc25703fa0e18cc8e3a8585833a5e0a602a49ddf8b2a32",
+      "bytes": 1717
+     },
+     "rendered.html": {
+      "sha256": "ba947f1c2dfe1142b8a8218110497dd4317e56496a577b85f9f9d2a0a488be97",
+      "bytes": 1847520
+     },
+     "screenshot.jpg": {
+      "sha256": "e8695ebf5fb58a19ddebe077eea6eaebd2c9687372f21a9bcdefa1cc72f7643e",
+      "bytes": 705604
+     },
+     "text.txt": {
+      "sha256": "691b3ea7699b7070cb80f69cb0ad102d508311a9ca2757668e5a3b445aa03a88",
+      "bytes": 12288
+     }
+    },
+    "started_utc": "2026-11-04T10:08:39.573Z",
+    "status": 200,
+    "final_url": "https://hackread.com/php-releases-emergency-fixe-php2shell-vulnerabilities/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "en-US",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261104T094423Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A UK security-news report (Hackread, 21 October) on the PHP project's emergency release for the two critical flaws (CVE-2026-109618, CVE-2026-109619,...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# PHP Releases Emergency Fixes for Critical PHP2Shell Vulnerabilities\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `nz/news/hackread/php-releases-emergency-fixe-php2shell-vulnerabilities`, snapshot `20261104T094423Z`. Copied byte for byte; every file's sha256 is in `captures/20261104T094423Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA UK security-news report (Hackread, 21 October) on the PHP project's emergency release for the two critical flaws (CVE-2026-109618, CVE-2026-109619, 'PHP2Shell', both CVSS v4.0 9.2): fixes released on 21 October a day after maintainers warned administrators to prepare, installations serving web requests at risk (PHP-FPM, Apache mod_php, php-cgi, FrankenPHP, LiteSpeed), mod_php the highest-risk deployment, and the attacker gaining the rights of the web-serving process rather than automatic server administrator rights. It relays OpenAI's account that Calif found a critical flaw with GPT-5.6 Sol through Patch the Planet, and Calif's later statement crediting an independent researcher with first finding PHP2Shell and building a working exploit, which persuaded the PHP Foundation to fund fixes for the whole bug class. It adds that distributions received patches in advance, that PHP 8.1 and older are outside normal support with minimal source patches supplied for 7.4, 8.0 and 8.1, that updating WordPress does not replace the server's PHP, and that the temporary configuration changes block only specific demonstrated paths.\n\n> Updating WordPress, its plugins or themes does not replace the server’s PHP installation.\n\n_Curator's translation:_ \"Updating WordPress, its plugins or themes does not replace the server’s PHP installation.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"PHP Releases Emergency Fixes for Critical PHP2Shell Vulnerabilities\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Contemporaneous report on the release day, secondhand on PHP's advisories, OpenAI and a Calif post (an embedded post from the independent researcher is not copied and the researcher's handle is left out). The page describes in general terms how the two flaws arise and names temporary controls; none of that is copied here. Most of the page after the article is sidebar headlines and a press release unrelated to PHP. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "hankyung-article-2026102423207",
   "url": "https://www.hankyung.com/article/2026102423207",
   "publisher": "한국경제",
@@ -29542,6 +29592,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell attacks began four days before patches, Amazon says, as attempts hit millions - SiliconANGLE\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `lt/news/siliconangle/2026-10-22-php2shell-attacks-began-four-days-before-patches`, snapshot `20261023T160435Z`. Copied byte for byte; every file's sha256 is in `captures/20261023T160435Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nSiliconANGLE, 22 October: Attackers began targeting the PHP2Shell vulnerabilities four days before the patches, Amazon disclosed, and exploit attempts seen by Cloudflare have since climbed into the millions. It says PHP's maintainers shipped fixes on Wednesday after details leaked, and that the bugs had sat in PHP's code for years until an August audit financed by OpenAI used an AI model to show they could be exploited.\n\n> Attackers began targeting the critical PHP2Shell vulnerabilities four days before patches were released, Amazon.com Inc. has disclosed, while exploit attempts seen by Cloudflare Inc. have since climbed into the millions.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 3): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell attacks began four days before patches, Amazon says, as attempts hit millions - SiliconANGLE\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `en-US`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "sisunnews-news-articleview-html",
+  "url": "https://www.sisunnews.co.kr/news/articleView.html?idxno=248740",
+  "publisher": "시선뉴스",
+  "kind": "news",
+  "title": "웹사이트 움직이는 핵심 언어 'PHP'란? 보안 취약점이 위험한 이유 [지식용어] < 1번 박스 < TV지식용어 < 지식‧교양 < 기사본문 - 시선뉴스",
+  "published": "2026-11-02",
+  "captures": [
+   {
+    "stamp": "20261104T094423Z",
+    "files": {
+     "headers.json": {
+      "sha256": "f06f475e02e44aed84c33ec921d2664780b601f34d967a44356c2ac1b295b4e3",
+      "bytes": 355
+     },
+     "page.html": {
+      "sha256": "489a218d77fe464ee78b82c9a21496c91e38a6aa3170963a5987df816d03b366",
+      "bytes": 165755
+     },
+     "provenance.json": {
+      "sha256": "fad645a43f394d6d61e12f099d75e8c7a568f013cb7133c5cd6c3408645e37eb",
+      "bytes": 1724
+     },
+     "rendered.html": {
+      "sha256": "b742faf2a17d79027decd7cc96714941e286b7842047b2abcbc24774b2b653f1",
+      "bytes": 213369
+     },
+     "screenshot.jpg": {
+      "sha256": "d3b9b72986ddf7cb1e16335a7e0b8b5f90493c9bbae6d78fa33d073c780fc03c",
+      "bytes": 485239
+     },
+     "text.txt": {
+      "sha256": "e3be83b37b9b302e629583c284505e64a9e408d3da30b2ca02e09f5d3d70ed61",
+      "bytes": 9854
+     }
+    },
+    "started_utc": "2026-11-04T10:06:05.057Z",
+    "status": 200,
+    "final_url": "https://www.sisunnews.co.kr/news/articleView.html?idxno=248740"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ko",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261104T094423Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Korean general-knowledge explainer (Sisun News, 2 November, 'knowledge terms' column) on what PHP is and why the PHP2Shell flaw matters. It says tha...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# 웹사이트 움직이는 핵심 언어 'PHP'란? 보안 취약점이 위험한 이유 [지식용어] < 1번 박스 < TV지식용어 < 지식‧교양 < 기사본문 - 시선뉴스\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `kr/news/sisunnews/news-articleview-html`, snapshot `20261104T094423Z`. Copied byte for byte; every file's sha256 is in `captures/20261104T094423Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Korean general-knowledge explainer (Sisun News, 2 November, 'knowledge terms' column) on what PHP is and why the PHP2Shell flaw matters. It says that the exploitation of the flaw was seen compromising 25 servers including US-government-related systems and that Korea is reported among the targets; that researchers at the Israeli firm Dream reported attackers chaining a PHP flaw with a Linux privilege-escalation flaw to obtain top administrator rights on 24 firewalls and 1 internal management server, with firewalls in Korea, the US, Japan and Taiwan among the targets but an actual compromise of Korean systems not yet confirmed; and that the Ministry of Science and ICT and KISA raised the private-sector cyber crisis alert from 'interest' to 'caution' on 22 October. It advises operators to check their PHP version and update status and to review exposed admin pages and server access rights.\n\n> 국내 시스템의 실제 침해 여부는 아직 확인되지 않았다.\n\n_Curator's translation:_ \"Whether domestic systems were actually compromised has not yet been confirmed.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"웹사이트 움직이는 핵심 언어 'PHP'란? 보안 취약점이 위험한 이유 [지식용어] < 1번 박스 < TV지식용어 < 지식‧교양 < 기사본문 - 시선뉴스\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `ko`. General-audience column relaying the Dream Research report (relayed by many outlets, so not independent of them); the page opens with an update timestamp and ends with sidebar headlines unrelated to PHP. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "sixactualites-securite-stealmybitcoin-compromis-en-19",
