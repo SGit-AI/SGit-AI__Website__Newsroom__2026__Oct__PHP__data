@@ -7695,6 +7695,39 @@
    "where": "claims/review/index.html",
    "reviewed": "2026-11-03T13:43Z",
    "by": "claude-journalist"
+  },
+  {
+   "id": "cur47-excite-ubsecure-signature",
+   "verdict": "noted",
+   "reason": "Capture checked (Japanese, 2 November): UBsecure announced on 27 October an official detection signature for the two flaws in its Vex auto-scanner, replacing a provisional version-based one of 22 October with one that sends test requests to the site and can judge sites that hide their PHP version; customers need no extra work. A vendor's own announcement relayed by a news site; nothing was tested. The page dates the PHP release to 22 October, where the site and the primary sources have 21 October (release-time, disclosure-22oct contradicted); that date is not repeated. Not used.",
+   "sources": [
+    "excite-news-article-scannetsecurity-56636"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur47-esemanal-bundled-php",
+   "verdict": "agrees",
+   "reason": "Capture checked (Spanish): per Tanium, PHP can be present in servers, containers, development tools, third-party applications and workstations, and on Windows distributed inside a folder or other software without appearing in the installed-programs list, so updating only the operating system's packages can leave a bundled vulnerable copy. Agrees with the embedded and bundled-PHP warnings (cur35-tf1-anssi-third-party, cur46-it24hrs-embedded-php, cur38-spiceworks-eu-joint-statement); inventory advice from a vendor with a product to sell.",
+   "sources": [
+    "esemanal-2026-10-fallos-en-php-movilizan-a-las-em"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T08:42Z",
+   "by": "claude-journalist"
+  },
+  {
+   "id": "cur47-esemanal-tanium-attempts",
+   "verdict": "noted",
+   "reason": "Capture checked: 'Según un análisis de Tanium, publicado el pasado 21 de octubre, ya se habían reportado intentos de explotación en entornos de monitorización', with feasibility varying by configuration and platform. The page's own words are 'monitoring environments'; reading them as honeypots is the curator's inference. Attempts, not production victims; the analysis is not in the vault and the page gives no counts. Consistent with the site's attempts-not-compromises claims; not used.",
+   "sources": [
+    "esemanal-2026-10-fallos-en-php-movilizan-a-las-em"
+   ],
+   "where": "claims/review/index.html",
+   "reviewed": "2026-11-04T08:42Z",
+   "by": "claude-journalist"
   }
  ]
 }
