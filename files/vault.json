@@ -1,12 +1,12 @@
 {
  "head": {
-  "commit": "a8e4e3dc5490",
-  "subject": "curator@php.newsroom: batch 46, three sources from the source watch (dcod, Publimetro, iT24Hrs): 5 claims cur46-  +24 ~3  [blobs:+27 trees:+13]",
+  "commit": "b531d687926a",
+  "subject": "curator@php.newsroom: batch 47, two sources from the source watch (Excite/Scan Net Security, eSemanal): 3 claims cur47-  +16 ~3  [blobs:+19 trees:+10]",
   "commits": 50
  },
- "sources": 735,
- "captures": 801,
- "hashed_files": 4682,
+ "sources": 737,
+ "captures": 803,
+ "hashed_files": 4694,
  "primary": 118,
  "blocked": 15,
  "agents": [
@@ -20,6 +20,6 @@
   "curator@php.newsroom"
  ],
  "opened": "2026-10-22T08:03Z",
- "latest_capture": "2026-11-03T12:16Z",
+ "latest_capture": "2026-11-03T17:16Z",
  "note": "The captures are third-party pages kept privately for the record and are not published. Only their hashes are."
 }

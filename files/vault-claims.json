@@ -9092,5 +9092,41 @@
   "topic": "appliances",
   "note": "General warning; consistent with the appliance exposure in cur35-tf1-anssi-third-party and cur38-spiceworks-eu-joint-statement.",
   "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur47-excite-ubsecure-signature",
+  "claim": "UBsecure added an official detection signature for the two PHP flaws to the Vex auto-scanner on 27 October, replacing a provisional version-based signature of 22 October with one that probes the site and can judge sites that hide their PHP version",
+  "by": "Excite News (Scan Net Security report)",
+  "sources": [
+   "excite-news-article-scannetsecurity-56636"
+  ],
+  "status": "reported",
+  "topic": "tooling",
+  "note": "A vendor's own announcement relayed by a news site; the detection method is described only in general terms and nothing here was tested. Compare the other scanner and detection releases in the vault, for example cur24-cybersecbr-cyfirma-216 on scanning.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur47-esemanal-bundled-php",
+  "claim": "PHP can be present in servers, containers, development tools, third-party applications and workstations, on Windows bundled in a folder or inside other software without appearing in the installed-programs list, so updating only the operating system's packages can leave a bundled vulnerable copy",
+  "by": "eSemanal (relaying Tanium)",
+  "sources": [
+   "esemanal-2026-10-fallos-en-php-movilizan-a-las-em"
+  ],
+  "status": "reported",
+  "topic": "patching",
+  "note": "Inventory advice from an endpoint-management vendor with a product to sell (the page names its Guardian content); consistent with the bundled-PHP exposure in cur35-tf1-anssi-third-party.",
+  "agent": "curator@php.newsroom"
+ },
+ {
+  "id": "cur47-esemanal-tanium-attempts",
+  "claim": "Tanium's analysis of 21 October reported exploitation attempts against monitoring environments",
+  "by": "eSemanal (relaying Tanium)",
+  "sources": [
+   "esemanal-2026-10-fallos-en-php-movilizan-a-las-em"
+  ],
+  "status": "reported",
+  "topic": "exploitation",
+  "note": "Monitoring (honeypot-type) environments, not production victims; the analysis itself is not in the vault and the page gives no counts. Compare cur27-muycomputerpro-honeypot-24oct and cur46-dcod-honeypot-35.",
+  "agent": "curator@php.newsroom"
  }
 ]

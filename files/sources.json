@@ -10953,6 +10953,56 @@
   "notes_md": "# Hackers aprovecharon las vulnerabilidades de PHP días antes de que se corrigieran | WIRED\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `ar/news/es-wired/articulos-hackers-aprovecharon-las-vulnerabilidades-de-php-d`, snapshot `20261024T133450Z`. Copied byte for byte; every file's sha256 is in `captures/20261024T133450Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nWIRED en Espanol (Spanish), 22 October: hackers took advantage of the PHP vulnerabilities days before they were fixed. It reports that Amazon Web Services recorded attempts four days earlier, and that at least one actor started trying to exploit the flaws on 17 October, four days before the public disclosures; the first public proofs of concept began to appear on Wednesday, some apparently hours before the official disclosure; and the flaws are now said to be 'widely exploited'. A Spanish edition of the WIRED story already in the vault in English.\n\n> Amazon Web Services registró hace cuatro días intentos de aprovechar las vulnerabilidades de PHP2Shell que colapsaron internet.\n\n_Curator's translation:_ \"Amazon Web Services recorded, four days ago, attempts to exploit the PHP2Shell vulnerabilities that collapsed the internet.\"\n\n_The watch reader's summary (researcher@php.newsroom, of its snapshot 20261022T171501Z, not necessarily this one):_ WIRED en Español (an adaptation of a WIRED.com article) reports AWS's finding that exploitation was attempted on 17 October, before disclosure, and quotes AWS CISO CJ Moses. It adds a comment from the PHP Foundation CEO.\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Hackers aprovecharon las vulnerabilidades de PHP días antes de que se corrigieran | WIRED\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es-MX`. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
+  "slug": "esemanal-2026-10-fallos-en-php-movilizan-a-las-em",
+  "url": "https://esemanal.mx/2026/10/fallos-en-php-movilizan-a-las-empresas-a-resguardar-instalaciones-de-ti/",
+  "publisher": "eSemanal",
+  "kind": "news",
+  "title": "Fallos en PHP movilizan a las empresas a resguardar  instalaciones de TI - eSemanal - Noticias del Canal",
+  "published": "2026-10-27",
+  "captures": [
+   {
+    "stamp": "20261103T171635Z",
+    "files": {
+     "headers.json": {
+      "sha256": "fe347fd90ffa3accc6b9191e9cbdd88628817a1f598a8e5daacbbd4101fe2039",
+      "bytes": 1275
+     },
+     "page.html": {
+      "sha256": "6cd317a4249f81ed1413bd80cfea7d31b8d293321869778bc8b7179d794c0500",
+      "bytes": 180391
+     },
+     "provenance.json": {
+      "sha256": "2d201f92e97784fbb86e936afe52ca378d39e141a68c7aacf3c98c4fa7e74294",
+      "bytes": 1817
+     },
+     "rendered.html": {
+      "sha256": "cffbe9b1593346a644c529c13c54bce9ff736b5adc1daba4e37a1ba53aa43169",
+      "bytes": 183043
+     },
+     "screenshot.jpg": {
+      "sha256": "f315a8614573a935f602c6b047f8168107c865fe869d8e26bf302f4c82902551",
+      "bytes": 531289
+     },
+     "text.txt": {
+      "sha256": "cbe1e66f1b001d9f067c67b48e4c370b9a585a859132c69e79881722c3cf1e8f",
+      "bytes": 7296
+     }
+    },
+    "started_utc": "2026-11-03T17:40:50.443Z",
+    "status": 200,
+    "final_url": "https://esemanal.mx/2026/10/fallos-en-php-movilizan-a-las-empresas-a-resguardar-instalaciones-de-ti/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "es",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261103T171635Z, queue priority 4 (mechanical selection by researcher@php.newsroom, read by the curator). A Mexican trade-news article (eSemanal, 27 October) relaying a Tanium analysis: the two PHP core flaws (CVE-2026-109618, CVE-2026-109619, 'PHP2Shell')...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Fallos en PHP movilizan a las empresas a resguardar  instalaciones de TI - eSemanal - Noticias del Canal\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `mx/news/esemanal/2026-10-fallos-en-php-movilizan-a-las-empresas-a-resguardar`, snapshot `20261103T171635Z`. Copied byte for byte; every file's sha256 is in `captures/20261103T171635Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Mexican trade-news article (eSemanal, 27 October) relaying a Tanium analysis: the two PHP core flaws (CVE-2026-109618, CVE-2026-109619, 'PHP2Shell'), with patches published on 21 October, both rated 9.2 on CVSS v4.0, with Apache mod_php installations at greatest risk, and fixed versions 8.5.12, 8.4.27, 8.3.36 and 8.2.35. Its focus is the work before patching: PHP may sit in servers, containers, development tools, third-party applications and even workstations, on Windows it may be bundled in a folder or inside other software without appearing in the installed-programs list, and updating only the operating system's packages can leave a bundled vulnerable copy. It says Tanium's 21 October analysis reported exploitation attempts in monitoring environments, advises prioritising internet-facing services (mod_php, ARM64), checking recent logs and restarting processes after the update, and notes that distribution packages may carry the fix under different version numbers.\n\n> El problema reside en el núcleo de PHP, no en un plugin o aplicación específica.\n\n_Curator's translation:_ \"The problem lies in PHP's core, not in a specific plugin or application.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"Fallos en PHP movilizan a las empresas a resguardar  instalaciones de TI - eSemanal - Noticias del Canal\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `es`. Secondhand on a Tanium analysis that is not in the vault. The page also describes in general terms how the two flaws arise; none of that is copied here. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
   "slug": "estadao-tecmundo-ciberseguranca-brecha-no-php-ja",
   "url": "https://www.estadao.com.br/tecmundo/ciberseguranca/brecha-no-php-ja-gerou-milhoes-de-tentativas-de-exploracao-revela-ceo-da-cloudflare/",
   "publisher": "Estadão",
@@ -11251,6 +11301,56 @@
   "raw_sha256": {},
   "has_notes": true,
   "notes_md": "# PHP2Shell ve ‘Kara Çarşamba’nın gösterdikleri - İsmail Gökhan Bayram - Evrensel\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `tr/news/evrensel/yazi-100236-php2shell-ve-kara-carsamba-nin-gosterdikleri`, snapshot `20261027T121358Z`. Copied byte for byte; every file's sha256 is in `captures/20261027T121358Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nEvrensel (Turkey, Turkish), an opinion column by İsmail Gökhan Bayram titled 'What PHP2Shell and the \"Black Wednesday\" showed': the IT world has begun to call last Wednesday 'Black Wednesday' for critical flaws in widely used software. It notes the two PHP2Shell flaws became public before patches were out, that critical flaws in Node.js, NGINX, Go and GitLab followed, and that an Indian certificate authority's incident was more serious than the server-side ones. It says patches were prepared in an extraordinary mobilisation and the flaws 'were solved without major harm', criticises some experts and outlets for claiming millions of sites stayed down without data, and argues open-source maintainers are drowning in sloppy contributions and tripled flaw discovery. Opinion; no new facts.\n\n> Bilgi teknolojileri dünyası yaygın kullanılan yazılımlarda keşfedilen kritik açıklar nedeni ile geçen çarşamba gününü “Kara Çarşamba” olarak anmaya başladı.\n\n_Curator's translation:_ \"The information technology world has begun to commemorate last Wednesday as 'Black Wednesday' because of critical flaws discovered in widely used software.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 4): Mentions CVE-2026-109618/109619 or php2shell: \"PHP2Shell ve ‘Kara Çarşamba’nın gösterdikleri - İsmail Gökhan Bayram - Evrensel\". Selected mechanically, not read by a person.\n\n## Capture notes\n\nLanguage `tr`. Nothing in the page addresses an AI or hides text from a reader.\n"
+ },
+ {
+  "slug": "excite-news-article-scannetsecurity-56636",
+  "url": "https://www.excite.co.jp/news/article/Scannetsecurity_56636/",
+  "publisher": "Excite エキサイト",
+  "kind": "news",
+  "title": "Vex、php2shell に対応する検査シグネチャの正式版を追加 - エキサイトニュース",
+  "published": "2026-10-27",
+  "captures": [
+   {
+    "stamp": "20261103T171635Z",
+    "files": {
+     "headers.json": {
+      "sha256": "5334bbb5da1cd83bab126ee4096488a708ede7e254d389abd9db61bf6ae3fc0c",
+      "bytes": 1528
+     },
+     "page.html": {
+      "sha256": "8fc2d64ad621a67ccfe76fecd622496c3c77ecd0d81d25950e5e65f79b38a6ff",
+      "bytes": 162497
+     },
+     "provenance.json": {
+      "sha256": "41decceeef4cdf3c9ab2ab4a42a13ad293a63b89c918fc7154ee799f41ce2c00",
+      "bytes": 1673
+     },
+     "rendered.html": {
+      "sha256": "08ca0170c3674be0eb1ecf0480fb7126f3494f263d3c2159eebc7ee5be72b02a",
+      "bytes": 178598
+     },
+     "screenshot.jpg": {
+      "sha256": "4d176c5304a08aa553c7f23e600d714f8be4dc68013666d6d399f7909342645a",
+      "bytes": 363443
+     },
+     "text.txt": {
+      "sha256": "248b384543ccb24d7afdf6cb26b2be1e4d350b1feaed2afc78b32969861b1326",
+      "bytes": 9007
+     }
+    },
+    "started_utc": "2026-11-03T17:36:41.179Z",
+    "status": 200,
+    "final_url": "https://www.excite.co.jp/news/article/Scannetsecurity_56636/"
+   }
+  ],
+  "status": "captured",
+  "primary": false,
+  "added_by": "curator@php.newsroom",
+  "lang": "ja",
+  "notes": "Promoted from the source watch (pack copy 7r83qic5), snapshot 20261103T171635Z, queue priority 2 (mechanical selection by researcher@php.newsroom, read by the curator). A Japanese security-news item (Excite News, carrying a Scan Net Security report; the page's date is not stated, the vendor's announcement is dated 27...",
+  "raw_sha256": {},
+  "has_notes": true,
+  "notes_md": "# Vex、php2shell に対応する検査シグネチャの正式版を追加 - エキサイトニュース\n\nPromoted by curator@php.newsroom from the source watch (vault `oq9gflln`, read from its pack copy `7r83qic5`), page `jp/news/excite/news-article-scannetsecurity-56636`, snapshot `20261103T171635Z`. Copied byte for byte; every file's sha256 is in `captures/20261103T171635Z/provenance.json` and was re-checked against the watch's own hashes.\n\n## What the page says\n\n_Curator's reading of the capture._\n\nA Japanese security-news item (Excite News, carrying a Scan Net Security report; the page's date is not stated, the vendor's announcement is dated 27 October) saying that UBsecure added the official release of a detection signature for the two PHP flaws (CVE-2026-109618, CVE-2026-109619, 'php2shell') to the auto-scanner of its web-application scanning tool Vex, available to existing auto-scanner customers with no extra work. It says the PHP developers published PHP 8.5.12, 8.4.27, 8.3.36 and 8.2.35 on 22 October (Japan time), both flaws allow unauthenticated remote code execution and are rated 9.2 on CVSS v4.0, and that the vendor's provisional signature of 22 October judged by PHP version information while the official one sends a probe request and reads the response, so it can also judge sites that do not display their version.\n\n> オートスキャナーを利用する顧客は、追加の作業なしで本シグネチャを利用できる。\n\n_Curator's translation:_ \"Customers who use the auto-scanner can use this signature with no additional work.\"\n\n## Why it is here\n\nFrom the promotion queue (`index/promote.json`, priority 2): Mentions CVE-2026-109618/109619 or php2shell: \"Vex、php2shell に対応する検査シグネチャの正式版を追加 - エキサイトニュース\". Selected mechanically, not read by a person. Text also matches compromise/breach terms: check for a named organisation or cause.\n\n## Capture notes\n\nLanguage `ja`. A short vendor-announcement item; the page's date is not shown (the date here is the announcement date in the text). The release date it gives for the patches (22 October) is Japan time, one day after the 21 October of most outlets. Most of the captured page is sidebar headlines unrelated to PHP. Nothing in the page addresses an AI or hides text from a reader.\n"
  },
  {
   "slug": "expresscomputer-guest-blogs-understanding-php2shell-vuln",
