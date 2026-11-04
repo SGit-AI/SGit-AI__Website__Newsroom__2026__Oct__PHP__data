@@ -1,6 +1,6 @@
 {
 "about": "Every item a reader can read on this site, with its id, zone, link and the hash of what it says now. assets/reader-state.js compares the hashes with what the reader last read, in their browser.",
-"site": "0.22.57",
+"site": "0.22.58",
 "items": {
 "page-flaws": {
 "kind": "page",
@@ -127,11 +127,11 @@
 "zone": "site",
 "title": "The method",
 "path": "method/index.html",
-"hash": "df9ab42ab783",
-"v": 22,
+"hash": "454828e7310a",
+"v": 23,
 "first": "0.1.0",
-"changed": "0.22.57",
-"date": "2026-11-03",
+"changed": "0.22.58",
+"date": "2026-11-04",
 "history": "versions/page-method/index.html"
 },
 "briefing-board": {
@@ -1243,11 +1243,11 @@
 "zone": "research",
 "title": "The specialist summary",
 "path": "summary/index.html",
-"hash": "64fe071c0700",
-"v": 25,
+"hash": "f3b12a729a2b",
+"v": 26,
 "first": "0.3.1",
-"changed": "0.22.57",
-"date": "2026-11-03",
+"changed": "0.22.58",
+"date": "2026-11-04",
 "history": "versions/page-summary/index.html"
 },
 "front-now": {
@@ -2798,6 +2798,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T16:04Z"
 },
+"src-blogs-cisco-security-php2shell-how-cisco-helps-custo": {
+"kind": "source",
+"zone": "research",
+"title": "Cisco Blogs: PHP2Shell Cisco Helps Customers Respond to AI-Accelerated Threats - Cisco Blogs",
+"path": "sources/blogs-cisco-security-php2shell-how-cisco-helps-custo/index.html",
+"hash": "6a6abbdc3aaf",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T09:44Z"
+},
 "src-bloomberg-governments-offline": {
 "kind": "source",
 "zone": "research",
@@ -4029,6 +4040,17 @@
 "first": "0.4.1",
 "changed": "0.15.19",
 "date": "2026-10-24"
+},
+"src-dcod-2026-11-02-failles-php2shell-exploitees": {
+"kind": "source",
+"zone": "research",
+"title": "dcod: Les failles critiques PHP2Shell dorénavant exploitées",
+"path": "sources/dcod-2026-11-02-failles-php2shell-exploitees/index.html",
+"hash": "1fd62a5a22f1",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T12:16Z"
 },
 "src-defesaemfoco-php2shell-falhas-gravidade-92-ameacam-se": {
 "kind": "source",
@@ -5647,6 +5669,17 @@
 "changed": "0.19.2",
 "date": "2026-10-23T16:04Z"
 },
+"src-it24hrs-2026-php2shell-php-hacker": {
+"kind": "source",
+"zone": "research",
+"title": "ไอที24ชั่วโมง: PHP2Shell ช่องโหว่ PHP ที่อาจเปิดทางให้แฮกเกอร์ยึดเซิร์ฟเวอร์ทั่วโลก - iT24Hrs",
+"path": "sources/it24hrs-2026-php2shell-php-hacker/index.html",
+"hash": "350343d6c929",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T12:16Z"
+},
 "src-itdaily-blogs-logiciel-php2shell-bug-php": {
 "kind": "source",
 "zone": "research",
@@ -6395,6 +6428,17 @@
 "changed": "0.10.19",
 "date": "2026-10-23T08:03Z"
 },
+"src-memeburn-php2shell-ai-found-php-flaws-put-million": {
+"kind": "source",
+"zone": "research",
+"title": "Memeburn: PHP2Shell: AI-Found PHP Flaws Put Millions of Sites at Risk - Memeburn",
+"path": "sources/memeburn-php2shell-ai-found-php-flaws-put-million/index.html",
+"hash": "420633216e4e",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T07:15Z"
+},
 "src-metro-2026-10-22-worried-php-cybersecurity-cri": {
 "kind": "source",
 "zone": "research",
@@ -6868,6 +6912,17 @@
 "changed": "0.15.19",
 "date": "2026-10-24"
 },
+"src-next-264756-failles-php2shell-on-a-scanne-tou": {
+"kind": "source",
+"zone": "research",
+"title": "Next: Failles PHP2Shell : on a scanné tout le .fr, 250 000 sites affichent un PHP vulnérable - Next",
+"path": "sources/next-264756-failles-php2shell-on-a-scanne-tou/index.html",
+"hash": "c01e6767629c",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T07:15Z"
+},
 "src-nguoiquansat-lo-hong-php2shell-de-doa-70-website-toan": {
 "kind": "source",
 "zone": "research",
@@ -7208,6 +7263,17 @@
 "first": "0.22.46",
 "changed": "0.22.46",
 "date": "2026-10-27T19:13Z"
+},
+"src-onlarissa-2026-10-24-php2shell-enas-stous-deka-org": {
+"kind": "source",
+"zone": "research",
+"title": "ONLARISSA.GR: PHP2Shell: Ένας στους δέκα οργανισμούς παγκοσμίως έχει ήδη επηρεαστεί - ONLARISSA.GR Νέα Ειδήσεις Λάρισα",
+"path": "sources/onlarissa-2026-10-24-php2shell-enas-stous-deka-org/index.html",
+"hash": "40e62b9a0ee7",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T09:44Z"
 },
 "src-openaccessgovernment-ncsc-issues-warning-over-critical-php-re": {
 "kind": "source",
@@ -7671,6 +7737,17 @@
 "changed": "0.22.28",
 "date": "2026-10-26T09:40Z"
 },
+"src-publimetro-tecnologia-2026-10-22-php2shell-ia-descu": {
+"kind": "source",
+"zone": "research",
+"title": "Publimetro: PHP2Shell: IA descubre falla crítica que amenaza al 75% de la web – Publimetro Chile",
+"path": "sources/publimetro-tecnologia-2026-10-22-php2shell-ia-descu/index.html",
+"hash": "b04d680edb06",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T12:16Z"
+},
 "src-qa-financial-php-security-crisis-raises-testing-stake": {
 "kind": "source",
 "zone": "research",
@@ -8088,6 +8165,17 @@
 "first": "0.22.45",
 "changed": "0.22.45",
 "date": "2026-10-27T09:43Z"
+},
+"src-security-insider-kritische-php-schwachstellen-behoerden-o": {
+"kind": "source",
+"zone": "research",
+"title": "Security-Insider: Kritische PHP-Schwachstellen: Behörden gehen offline",
+"path": "sources/security-insider-kritische-php-schwachstellen-behoerden-o/index.html",
+"hash": "c3ede1b84dd4",
+"v": 1,
+"first": "0.22.58",
+"changed": "0.22.58",
+"date": "2026-11-03T09:44Z"
 },
 "src-security-next-192013": {
 "kind": "source",
